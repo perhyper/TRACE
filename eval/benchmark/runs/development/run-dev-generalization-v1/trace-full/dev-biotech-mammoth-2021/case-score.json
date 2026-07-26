@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "trace.benchmark-case-score.v1",
+  "runId": "run-dev-generalization-v1",
+  "runnerName": "trace-full",
+  "caseId": "dev-biotech-mammoth-2021",
+  "partition": "development",
+  "status": "scored",
+  "metrics": [
+    {
+      "metricId": "evidence-supported-claim-precision",
+      "status": "scored",
+      "value": 0.333333,
+      "numerator": 3,
+      "denominator": 9,
+      "notes": []
+    },
+    {
+      "metricId": "citation-validity",
+      "status": "scored",
+      "value": 0.333333,
+      "numerator": 3,
+      "denominator": 9,
+      "notes": []
+    },
+    {
+      "metricId": "source-quality",
+      "status": "scored",
+      "value": 0.833333,
+      "numerator": 7.5,
+      "denominator": 9,
+      "notes": []
+    },
+    {
+      "metricId": "route-accuracy",
+      "status": "scored",
+      "value": 1,
+      "numerator": 3,
+      "denominator": 3,
+      "notes": []
+    },
+    {
+      "metricId": "abstention-behavior",
+      "status": "scored",
+      "value": 1,
+      "numerator": 2,
+      "denominator": 2,
+      "notes": []
+    },
+    {
+      "metricId": "valuation-separation",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": [
+        "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+      ]
+    },
+    {
+      "metricId": "historical-valuation-error",
+      "status": "skipped",
+      "numerator": 0,
+      "denominator": 0,
+      "notes": [
+        "Manifest marks this case ineligible because funding headlines and platform claims do not establish a completed valuation target."
+      ]
+    },
+    {
+      "metricId": "completeness",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": []
+    },
+    {
+      "metricId": "reproducibility",
+      "status": "skipped",
+      "numerator": 0,
+      "denominator": 0,
+      "notes": [
+        "Per-case reproducibility requires aggregate comparison across repeated runs."
+      ]
+    },
+    {
+      "metricId": "completion-status",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": []
+    },
+    {
+      "metricId": "duration",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": [
+        "durationMs=322"
+      ]
+    },
+    {
+      "metricId": "failure-records",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": []
+    }
+  ],
+  "failures": []
+}

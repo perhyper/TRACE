@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "trace.benchmark-case-score.v1",
+  "runId": "run-dev-generalization-v1",
+  "runnerName": "baseline-b",
+  "caseId": "dev-saas-figma-2022",
+  "partition": "development",
+  "status": "scored",
+  "metrics": [
+    {
+      "metricId": "evidence-supported-claim-precision",
+      "status": "scored",
+      "value": 0.222222,
+      "numerator": 2,
+      "denominator": 9,
+      "notes": []
+    },
+    {
+      "metricId": "citation-validity",
+      "status": "scored",
+      "value": 0.222222,
+      "numerator": 2,
+      "denominator": 9,
+      "notes": []
+    },
+    {
+      "metricId": "source-quality",
+      "status": "scored",
+      "value": 0.751111,
+      "numerator": 6.76,
+      "denominator": 9,
+      "notes": []
+    },
+    {
+      "metricId": "route-accuracy",
+      "status": "scored",
+      "value": 0,
+      "numerator": 0,
+      "denominator": 3,
+      "notes": [
+        "Route rationale did not cite cutoff-visible expected route evidence.",
+        "Route rationale did not satisfy the annotated rationale requirement.",
+        "Route selection was omitted."
+      ]
+    },
+    {
+      "metricId": "abstention-behavior",
+      "status": "scored",
+      "value": 0,
+      "numerator": 0,
+      "denominator": 2,
+      "notes": [
+        "figma-adobe-transaction-abstain: expected headline-valuation abstention but valuation was omitted.",
+        "figma-security-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted."
+      ]
+    },
+    {
+      "metricId": "valuation-separation",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": [
+        "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+      ]
+    },
+    {
+      "metricId": "historical-valuation-error",
+      "status": "skipped",
+      "numerator": 0,
+      "denominator": 0,
+      "notes": [
+        "Manifest marks this case ineligible because the announced Adobe acquisition did not close."
+      ]
+    },
+    {
+      "metricId": "completeness",
+      "status": "scored",
+      "value": 0.75,
+      "numerator": 0.75,
+      "denominator": 1,
+      "notes": [
+        "figma-cover-product-funding-and-leakage: topic coverage 0.5, evidence-class coverage 1."
+      ]
+    },
+    {
+      "metricId": "reproducibility",
+      "status": "skipped",
+      "numerator": 0,
+      "denominator": 0,
+      "notes": [
+        "Per-case reproducibility requires aggregate comparison across repeated runs."
+      ]
+    },
+    {
+      "metricId": "completion-status",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": []
+    },
+    {
+      "metricId": "duration",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": [
+        "durationMs=215"
+      ]
+    },
+    {
+      "metricId": "failure-records",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": []
+    }
+  ],
+  "failures": []
+}

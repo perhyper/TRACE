@@ -1,0 +1,638 @@
+{
+  "schemaVersion": "trace.benchmark-per-claim-score.v1",
+  "runId": "run-dev-generalization-v1",
+  "runnerName": "baseline-b",
+  "caseId": "dev-saas-linear-2023",
+  "partition": "development",
+  "status": "scored",
+  "claims": [
+    {
+      "claimId": "linear-pre-cutoff-legal-record-available",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "linear-pre-cutoff-legal-record-available",
+      "expectedStatement": "A pre-cutoff public legal record resolving Linear Orbit, Inc. is included as model-input evidence.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-bcee8ecd97b2"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "linear-profitable-since-2021",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "linear-profitable-since-2021",
+      "expectedStatement": "Linear said it had been operating profitably since 2021.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-7cdb351de312"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "linear-series-b-announced",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "linear-series-b-announced",
+      "expectedStatement": "Linear announced a Series B by the cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-7cdb351de312"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "claim-09998e657c3b",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-09998e657c3b",
+      "emittedStatement": "Linear said it was trusted and used by thousands of companies of all sizes.",
+      "emittedValue": "thousands of companies",
+      "emittedPeriod": {
+        "instantDate": "2023-09-14"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-7cdb351de312"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-7cdb351de312",
+          "factId": "fact-d17b91d5fa45",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-1402e8071751",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-1402e8071751",
+      "emittedStatement": "Linear said Sequoia, 01 Advisors and individual software operators participated in the Series B.",
+      "emittedValue": [
+        "Sequoia",
+        "01 Advisors",
+        "software operator angels"
+      ],
+      "emittedPeriod": {
+        "instantDate": "2023-09-14"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-7cdb351de312"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-7cdb351de312",
+          "factId": "fact-d51eadccf25b",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-4777112f2516",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-4777112f2516",
+      "emittedStatement": "Forbes named customers including Cohere, Ramp and Runway in its Linear profile.",
+      "emittedValue": [
+        "Cohere",
+        "Ramp",
+        "Runway"
+      ],
+      "emittedPeriod": {
+        "instantDate": "2023-09-14"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-d9970e2872b9"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-d9970e2872b9",
+          "factId": "fact-d6887c8e0ac0",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "news",
+          "sourceQualityCategory": "news",
+          "sourceQualityWeight": 0.58,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.58,
+        "citedSourceClasses": [
+          "news"
+        ],
+        "citedSourceQualityCategories": [
+          "news"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-5dca099bb14f",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-5dca099bb14f",
+      "emittedStatement": "Forbes reported Linear was profitable around the Series B announcement.",
+      "emittedValue": true,
+      "emittedPeriod": {
+        "instantDate": "2023-09-14"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-d9970e2872b9"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-d9970e2872b9",
+          "factId": "fact-eaeac4846793",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "news",
+          "sourceQualityCategory": "news",
+          "sourceQualityWeight": 0.58,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.58,
+        "citedSourceClasses": [
+          "news"
+        ],
+        "citedSourceQualityCategories": [
+          "news"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-caf68fe6c772",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-caf68fe6c772",
+      "emittedStatement": "Linear said it had been growing and operating profitably since 2021.",
+      "emittedValue": "profitable since 2021",
+      "emittedPeriod": {
+        "startDate": "2021-01-01",
+        "endDate": "2023-09-14"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-7cdb351de312"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-7cdb351de312",
+          "factId": "fact-66a9f955f39a",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-e01b52ef0a41",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-e01b52ef0a41",
+      "emittedStatement": "Linear said the Series B was led by Accel.",
+      "emittedValue": "Accel",
+      "emittedPeriod": {
+        "instantDate": "2023-09-14"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-7cdb351de312"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-7cdb351de312",
+          "factId": "fact-cc1ce80422d5",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "linear-headline-valuation",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "linear-headline-valuation",
+      "emittedClaimId": "claim-0c64abe2f304",
+      "expectedStatement": "Linear's Series B headline valuation was reported at about USD 400 million.",
+      "emittedStatement": "Forbes reported that the Series B valued Linear at about USD 400 million.",
+      "expectedValue": 400,
+      "emittedValue": 400,
+      "expectedUnit": "USD millions headline valuation",
+      "emittedUnit": "USD millions headline valuation",
+      "expectedPeriod": {
+        "instantDate": "2023-09-14"
+      },
+      "emittedPeriod": {
+        "instantDate": "2023-09-14"
+      },
+      "expectedEvidenceIds": [
+        "ev-d9970e2872b9"
+      ],
+      "emittedEvidenceIds": [
+        "ev-d9970e2872b9"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-d9970e2872b9",
+          "factId": "fact-78fee322f04c",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "news",
+          "sourceQualityCategory": "news",
+          "sourceQualityWeight": 0.58,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.58,
+        "citedSourceClasses": [
+          "news"
+        ],
+        "citedSourceQualityCategories": [
+          "news"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "linear-series-b-amount",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "linear-series-b-amount",
+      "emittedClaimId": "claim-060d6cd3f52d",
+      "expectedStatement": "Linear's Series B amount was USD 35 million.",
+      "emittedStatement": "Linear announced a USD 35 million Series B on 2023-09-14.",
+      "expectedValue": 35,
+      "emittedValue": 35,
+      "expectedUnit": "USD millions",
+      "emittedUnit": "USD millions",
+      "expectedPeriod": {
+        "instantDate": "2023-09-14"
+      },
+      "emittedPeriod": {
+        "instantDate": "2023-09-14"
+      },
+      "expectedEvidenceIds": [
+        "ev-7cdb351de312"
+      ],
+      "emittedEvidenceIds": [
+        "ev-7cdb351de312"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-7cdb351de312",
+          "factId": "fact-5f77f6aebc86",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "linear-team-size",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "linear-team-size",
+      "emittedClaimId": "claim-5047a4be20ed",
+      "expectedStatement": "Linear said it had a team of 50 people.",
+      "emittedStatement": "Linear said it was a team of 50 people on 2023-09-14.",
+      "expectedValue": 50,
+      "emittedValue": 50,
+      "expectedUnit": "employees",
+      "emittedUnit": "employees",
+      "expectedPeriod": {
+        "instantDate": "2023-09-14"
+      },
+      "emittedPeriod": {
+        "instantDate": "2023-09-14"
+      },
+      "expectedEvidenceIds": [
+        "ev-7cdb351de312"
+      ],
+      "emittedEvidenceIds": [
+        "ev-7cdb351de312"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-7cdb351de312",
+          "factId": "fact-d6aa9d25adad",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    }
+  ],
+  "failures": []
+}

@@ -47,3 +47,21 @@
 - Development-only verification: a scratch TRACE Full run outside the repository (`dev-routing-check-v1`) completed all six development cases with no failures. Aggregate route accuracy changed from `0.444444` to `0.925926`, abstention behavior from `0.5` to `1`, completeness from `0.854167` to `0.895833`, and evidence-supported claim precision remained `0.303571`.
 - Scoring integrity: the manifest, development fixtures, annotations, baseline runners, scorer, scoring weights, and aggregate format were not changed. The unchanged primary metric is recorded rather than optimized away.
 - Locked-test boundary: the locked-test partition was not run, no locked-test output or score was inspected, and no locked-test run artifacts were created.
+
+## 2026-07-26 - Post-adjustment development benchmark run
+
+- Run ID: `run-dev-generalization-v1`
+- Implementation commit: `e2b464e` (`Generalize routing from development benchmark`)
+- Partition: `development`
+- Runner selection: `all` (`baseline-a`, `baseline-b`, `trace-full`)
+- Command: `npm run trace -- benchmark --partition development --runner all --out eval/benchmark/runs --run-id run-dev-generalization-v1`
+- Manifest hash: `sha256:b2ef8a7504b7747286aa24daec1f571bef9d531920a797eb83ac2f8dff0943ca`
+- Development evidence fixture tree hash: `sha256:ace8ce03fd082cb02864b4a31c89e230e48018e36ce4450087c1d78ea0ae9cfa`
+- Development annotation tree hash: `sha256:73344856d3c6cd0b1001e6750506906accebe1b1c8e83e6530b17874c3d58371`
+- Development artifact tree hash: `sha256:fdbae566a74a9c19fececc7ff4e7ab769d7c3257b2713b54d00eaaa7ce7a4200`
+- Artifacts: 18 runner/case artifact directories and aggregate JSON, CSV, and Markdown under `eval/benchmark/runs/development/run-dev-generalization-v1/`.
+- Failures: none. All 18 runner/case executions completed and all 18 failure-record files are empty arrays.
+- TRACE Full result: evidence-supported claim precision `0.303571`, route accuracy `0.925926`, abstention behavior `1`, completeness `0.895833`, valuation separation `1`, and completion status `1`.
+- Baseline comparison: both baselines retained evidence-supported claim precision `0.303571`; both scored `0` for route accuracy and abstention behavior. Baseline A completeness was `0.75`; Baseline B completeness was `0.708333`.
+- Interpretation: the development-informed change fixed the observed routing and abstention defects without changing the locked manifest, fixtures, annotations, scorer, weights, or primary claim-precision result. It does not establish benchmark superiority because the frozen primary metric remains tied.
+- Locked-test boundary: the locked-test partition was not run, no locked-test output or score was inspected, and no locked-test run artifacts were created.

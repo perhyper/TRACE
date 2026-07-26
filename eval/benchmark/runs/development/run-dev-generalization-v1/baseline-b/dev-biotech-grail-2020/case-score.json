@@ -1,0 +1,124 @@
+{
+  "schemaVersion": "trace.benchmark-case-score.v1",
+  "runId": "run-dev-generalization-v1",
+  "runnerName": "baseline-b",
+  "caseId": "dev-biotech-grail-2020",
+  "partition": "development",
+  "status": "scored",
+  "metrics": [
+    {
+      "metricId": "evidence-supported-claim-precision",
+      "status": "scored",
+      "value": 0.3,
+      "numerator": 3,
+      "denominator": 10,
+      "notes": []
+    },
+    {
+      "metricId": "citation-validity",
+      "status": "scored",
+      "value": 0.3,
+      "numerator": 3,
+      "denominator": 10,
+      "notes": []
+    },
+    {
+      "metricId": "source-quality",
+      "status": "scored",
+      "value": 0.905,
+      "numerator": 9.05,
+      "denominator": 10,
+      "notes": []
+    },
+    {
+      "metricId": "route-accuracy",
+      "status": "scored",
+      "value": 0,
+      "numerator": 0,
+      "denominator": 3,
+      "notes": [
+        "Route rationale did not cite cutoff-visible expected route evidence.",
+        "Route rationale did not satisfy the annotated rationale requirement.",
+        "Route selection was omitted."
+      ]
+    },
+    {
+      "metricId": "abstention-behavior",
+      "status": "scored",
+      "value": 0,
+      "numerator": 0,
+      "denominator": 2,
+      "notes": [
+        "grail-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+        "grail-security-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted."
+      ]
+    },
+    {
+      "metricId": "valuation-separation",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": [
+        "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+      ]
+    },
+    {
+      "metricId": "historical-valuation-error",
+      "status": "scored",
+      "value": 0,
+      "numerator": 0,
+      "denominator": 1,
+      "notes": [
+        "grail-ipo-range-reference: skipped because the target is not a scalar numeric field with valid target evidence.",
+        "grail-transaction-consideration-reference: no comparable emitted valuation was available."
+      ]
+    },
+    {
+      "metricId": "completeness",
+      "status": "scored",
+      "value": 0.75,
+      "numerator": 0.75,
+      "denominator": 1,
+      "notes": [
+        "grail-cover-biotech-and-leakage: topic coverage 0.5, evidence-class coverage 1."
+      ]
+    },
+    {
+      "metricId": "reproducibility",
+      "status": "skipped",
+      "numerator": 0,
+      "denominator": 0,
+      "notes": [
+        "Per-case reproducibility requires aggregate comparison across repeated runs."
+      ]
+    },
+    {
+      "metricId": "completion-status",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": []
+    },
+    {
+      "metricId": "duration",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": [
+        "durationMs=200"
+      ]
+    },
+    {
+      "metricId": "failure-records",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": []
+    }
+  ],
+  "failures": []
+}

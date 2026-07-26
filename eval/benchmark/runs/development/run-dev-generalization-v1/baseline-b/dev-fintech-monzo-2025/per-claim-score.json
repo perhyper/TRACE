@@ -1,0 +1,634 @@
+{
+  "schemaVersion": "trace.benchmark-per-claim-score.v1",
+  "runId": "run-dev-generalization-v1",
+  "runnerName": "baseline-b",
+  "caseId": "dev-fintech-monzo-2025",
+  "partition": "development",
+  "status": "scored",
+  "claims": [
+    {
+      "claimId": "monzo-adjusted-profitable-fy2025",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "monzo-adjusted-profitable-fy2025",
+      "expectedStatement": "Monzo reported positive adjusted profit before tax in FY2025.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-e11520fb730d"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "monzo-identity-resolved",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "monzo-identity-resolved",
+      "expectedStatement": "Monzo Bank Holding Group Limited is resolved to Companies House number 14785367.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-1d808f14530d"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "monzo-security-rights-public",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "monzo-security-rights-public",
+      "expectedStatement": "The committed cutoff evidence discloses share rights and cap-table data sufficient for security-level fair value.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-1d808f14530d"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "claim-00426d99dcad",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-00426d99dcad",
+      "emittedStatement": "Monzo reported more than 12 million total customers in its 2025 annual report summary.",
+      "emittedValue": "12m+",
+      "emittedUnit": "customers",
+      "emittedPeriod": {
+        "endDate": "2025-03-31"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-e11520fb730d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-e11520fb730d",
+          "factId": "fact-29e94ca9b71f",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-3db9365a1aa1",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-3db9365a1aa1",
+      "emittedStatement": "The Companies House filing-history row reports statement-of-capital value GBP 237,479.179.",
+      "emittedValue": 237479.179,
+      "emittedUnit": "GBP",
+      "emittedPeriod": {
+        "instantDate": "2025-04-04"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-1d808f14530d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-1d808f14530d",
+          "factId": "fact-770db1075f80",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "government",
+          "sourceQualityCategory": "government",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "government"
+        ],
+        "citedSourceQualityCategories": [
+          "government"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-6a313c2768e3",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-6a313c2768e3",
+      "emittedStatement": "Companies House identifies Monzo Bank Holding Group Limited with company number 14785367.",
+      "emittedValue": "14785367",
+      "emittedUnit": "company-number",
+      "emittedPeriod": {
+        "instantDate": "2025-04-04"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-1d808f14530d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-1d808f14530d",
+          "factId": "fact-5b2c2e7c70a0",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "government",
+          "sourceQualityCategory": "government",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "government"
+        ],
+        "citedSourceQualityCategories": [
+          "government"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-7c69cd436c23",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-7c69cd436c23",
+      "emittedStatement": "Monzo reported GBP 113.9 million of adjusted profit before tax in the 2025 annual report summary.",
+      "emittedValue": 113.9,
+      "emittedUnit": "GBP millions",
+      "emittedPeriod": {
+        "endDate": "2025-03-31"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-e11520fb730d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-e11520fb730d",
+          "factId": "fact-83ea0aa62cd5",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-ada6dd19d5db",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-ada6dd19d5db",
+      "emittedStatement": "Monzo reported weekly active customers increased from 5.4 million to 6.9 million in FY2025.",
+      "emittedValue": 6.9,
+      "emittedUnit": "millions",
+      "emittedPeriod": {
+        "endDate": "2025-03-31"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-e11520fb730d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-e11520fb730d",
+          "factId": "fact-3ee1ea14a033",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-bab1b759abeb",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-bab1b759abeb",
+      "emittedStatement": "Companies House lists a 04 Apr 2025 SH01 filing for a statement of capital following an allotment of shares on 2025-03-03.",
+      "emittedValue": "SH01 filed 2025-04-04 for allotment on 2025-03-03",
+      "emittedPeriod": {
+        "instantDate": "2025-04-04"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-1d808f14530d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-1d808f14530d",
+          "factId": "fact-2b8a6b56227a",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "government",
+          "sourceQualityCategory": "government",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "government"
+        ],
+        "citedSourceQualityCategories": [
+          "government"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "monzo-fy2025-customer-deposits",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "monzo-fy2025-customer-deposits",
+      "emittedClaimId": "claim-af6c25b2d95d",
+      "expectedStatement": "FY2025 customer deposits were GBP 16.6 billion.",
+      "emittedStatement": "Monzo reported GBP 16.6 billion of customer deposits in the 2025 annual report summary.",
+      "expectedValue": 16.6,
+      "emittedValue": 16.6,
+      "expectedUnit": "GBP billions",
+      "emittedUnit": "GBP billions",
+      "expectedPeriod": {
+        "endDate": "2025-03-31"
+      },
+      "emittedPeriod": {
+        "endDate": "2025-03-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-e11520fb730d"
+      ],
+      "emittedEvidenceIds": [
+        "ev-e11520fb730d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-e11520fb730d",
+          "factId": "fact-a8537d00104b",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "monzo-fy2025-revenue",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "monzo-fy2025-revenue",
+      "emittedClaimId": "claim-710ae48202eb",
+      "expectedStatement": "FY2025 revenue was GBP 1.2 billion.",
+      "emittedStatement": "Monzo reported GBP 1.2 billion of revenue in the 2025 annual report summary.",
+      "expectedValue": 1.2,
+      "emittedValue": 1.2,
+      "expectedUnit": "GBP billions",
+      "emittedUnit": "GBP billions",
+      "expectedPeriod": {
+        "endDate": "2025-03-31"
+      },
+      "emittedPeriod": {
+        "endDate": "2025-03-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-e11520fb730d"
+      ],
+      "emittedEvidenceIds": [
+        "ev-e11520fb730d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-e11520fb730d",
+          "factId": "fact-7b003711b8cf",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "monzo-fy2025-total-assets",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "monzo-fy2025-total-assets",
+      "emittedClaimId": "claim-597a92235ea2",
+      "expectedStatement": "FY2025 total assets were GBP 18.3 billion.",
+      "emittedStatement": "Monzo reported GBP 18.3 billion of total assets in the 2025 annual report summary.",
+      "expectedValue": 18.3,
+      "emittedValue": 18.3,
+      "expectedUnit": "GBP billions",
+      "emittedUnit": "GBP billions",
+      "expectedPeriod": {
+        "endDate": "2025-03-31"
+      },
+      "emittedPeriod": {
+        "endDate": "2025-03-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-e11520fb730d"
+      ],
+      "emittedEvidenceIds": [
+        "ev-e11520fb730d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-e11520fb730d",
+          "factId": "fact-d7da14320b49",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    }
+  ],
+  "failures": []
+}

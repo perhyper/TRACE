@@ -1,0 +1,696 @@
+{
+  "schemaVersion": "trace.benchmark-per-claim-score.v1",
+  "runId": "run-dev-generalization-v1",
+  "runnerName": "baseline-a",
+  "caseId": "dev-fintech-chime-2025",
+  "partition": "development",
+  "status": "scored",
+  "claims": [
+    {
+      "claimId": "chime-bank-charter",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "chime-bank-charter",
+      "expectedStatement": "Chime itself was a bank as of the cutoff.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-5fdce7b12f43"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "chime-ipo-price-known-at-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "chime-ipo-price-known-at-cutoff",
+      "expectedStatement": "Chime's IPO share count and price range were known at the 2025-05-13 cutoff.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-4cd4b2c602cb"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "chime-s1-filed-by-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "chime-s1-filed-by-cutoff",
+      "expectedStatement": "Chime had filed a Form S-1 by the 2025-05-13 cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-4cd4b2c602cb",
+        "ev-5fdce7b12f43"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "claim-0bb134eb354d",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-0bb134eb354d",
+      "emittedStatement": "The S-1 identifies the registrant as Chime Financial, Inc., incorporated in Delaware, with CIK 0001795586.",
+      "emittedValue": "SEC-CIK-0001795586",
+      "emittedUnit": "SEC CIK",
+      "emittedPeriod": {
+        "instantDate": "2025-05-13"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-5fdce7b12f43"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-5fdce7b12f43",
+          "factId": "fact-bb4ab55ce064",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-27ad886fff2d",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-27ad886fff2d",
+      "emittedStatement": "Chime describes itself as a technology company, not a bank, with banking services provided by partner banks.",
+      "emittedValue": "technology company with partner-bank services",
+      "emittedPeriod": {
+        "instantDate": "2025-05-13"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-5fdce7b12f43"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-5fdce7b12f43",
+          "factId": "fact-692270730a92",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-599d86f68bf7",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-599d86f68bf7",
+      "emittedStatement": "As of the 2025-05-13 announcement, Chime said the number of shares and price range had not yet been determined.",
+      "emittedValue": "not determined",
+      "emittedPeriod": {
+        "instantDate": "2025-05-13"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-4cd4b2c602cb"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-4cd4b2c602cb",
+          "factId": "fact-6ae5fbdc5716",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-9c396b516da4",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-9c396b516da4",
+      "emittedStatement": "Chime reported 8.0 million Active Members for 2024.",
+      "emittedValue": 8,
+      "emittedUnit": "millions",
+      "emittedPeriod": {
+        "endDate": "2024-12-31"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-5fdce7b12f43"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-5fdce7b12f43",
+          "factId": "fact-d9fe5d576683",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-b80a7dfb38f7",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-b80a7dfb38f7",
+      "emittedStatement": "Chime said it applied to list Class A common stock on Nasdaq under ticker CHYM.",
+      "emittedValue": "CHYM",
+      "emittedUnit": "ticker",
+      "emittedPeriod": {
+        "instantDate": "2025-05-13"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-4cd4b2c602cb"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-4cd4b2c602cb",
+          "factId": "fact-08c384982e50",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-e0e90cb263b4",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-e0e90cb263b4",
+      "emittedStatement": "Chime announced on 2025-05-13 that it filed a Form S-1 for a proposed IPO.",
+      "emittedValue": "Form S-1 filed",
+      "emittedPeriod": {
+        "instantDate": "2025-05-13"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-4cd4b2c602cb"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-4cd4b2c602cb",
+          "factId": "fact-f1f3368fad1b",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-ef9adb324ad9",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-ef9adb324ad9",
+      "emittedStatement": "Chime reported that 67 percent of Active Members relied on Chime as a primary account relationship as of 2025-03-31.",
+      "emittedValue": 67,
+      "emittedUnit": "percent",
+      "emittedPeriod": {
+        "instantDate": "2025-03-31"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-5fdce7b12f43"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-5fdce7b12f43",
+          "factId": "fact-9badd0e8659f",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "chime-2024-net-loss",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "chime-2024-net-loss",
+      "emittedClaimId": "claim-81354bbacbb9",
+      "expectedStatement": "Chime reported a USD 25.3 million net loss for 2024.",
+      "emittedStatement": "Chime reported a USD 25.3 million net loss for 2024.",
+      "expectedValue": 25.3,
+      "emittedValue": 25.3,
+      "expectedUnit": "USD millions net loss",
+      "emittedUnit": "USD millions net loss",
+      "expectedPeriod": {
+        "endDate": "2024-12-31"
+      },
+      "emittedPeriod": {
+        "endDate": "2024-12-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-5fdce7b12f43"
+      ],
+      "emittedEvidenceIds": [
+        "ev-5fdce7b12f43"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-5fdce7b12f43",
+          "factId": "fact-ff95192865d0",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "chime-q1-2025-active-members",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "chime-q1-2025-active-members",
+      "emittedClaimId": "claim-072d60476fbe",
+      "expectedStatement": "Chime had 8.6 million Active Members as of 2025-03-31.",
+      "emittedStatement": "Chime reported 8.6 million Active Members as of 2025-03-31.",
+      "expectedValue": 8.6,
+      "emittedValue": 8.6,
+      "expectedUnit": "millions",
+      "emittedUnit": "millions",
+      "expectedPeriod": {
+        "instantDate": "2025-03-31"
+      },
+      "emittedPeriod": {
+        "instantDate": "2025-03-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-5fdce7b12f43"
+      ],
+      "emittedEvidenceIds": [
+        "ev-5fdce7b12f43"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-5fdce7b12f43",
+          "factId": "fact-9b87e1e0f5f2",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "chime-q1-2025-purchase-volume",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "chime-q1-2025-purchase-volume",
+      "emittedClaimId": "claim-e1c3d50a0c4b",
+      "expectedStatement": "Q1 2025 Purchase Volume was USD 34.540 billion.",
+      "emittedStatement": "Chime reported USD 34.540 billion of Purchase Volume for the three months ended 2025-03-31.",
+      "expectedValue": 34.54,
+      "emittedValue": 34.54,
+      "expectedUnit": "USD billions",
+      "emittedUnit": "USD billions",
+      "expectedPeriod": {
+        "startDate": "2025-01-01",
+        "endDate": "2025-03-31"
+      },
+      "emittedPeriod": {
+        "startDate": "2025-01-01",
+        "endDate": "2025-03-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-5fdce7b12f43"
+      ],
+      "emittedEvidenceIds": [
+        "ev-5fdce7b12f43"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-5fdce7b12f43",
+          "factId": "fact-89bd203e546f",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    }
+  ],
+  "failures": []
+}

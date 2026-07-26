@@ -1,0 +1,1103 @@
+{
+  "schemaVersion": "trace.benchmark-scorer-input.v1",
+  "runId": "run-dev-generalization-v1",
+  "runnerName": "baseline-b",
+  "caseId": "dev-biotech-grail-2020",
+  "partition": "development",
+  "caseInput": {
+    "schemaVersion": "trace.benchmark-case-input.v1",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "manifestSchemaVersion": "trace.benchmark-manifest.v1",
+    "caseId": "dev-biotech-grail-2020",
+    "partition": "development",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "GRAIL, Inc.",
+    "target": {
+      "legalName": "GRAIL, Inc.",
+      "jurisdiction": "US-DE",
+      "identifiers": [
+        {
+          "scheme": "other",
+          "value": "SEC-CIK-0001699031",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "GRAIL"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2020-09-17",
+    "cutoffDate": "2020-09-17",
+    "dataTier": "rich",
+    "sourcePolicy": {
+      "approvedPublicSourceCategories": [
+        "company-primary",
+        "government",
+        "market-data",
+        "news",
+        "peer-reviewed",
+        "regulatory-filing"
+      ],
+      "redistributionStatus": "public-urls-redistribution-not-established",
+      "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+      "onlyUrlsAndShortExcerptsMayBeCommitted": true
+    },
+    "authorityBoundary": {
+      "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+      "officialContestRulesStatus": "not-supplied",
+      "contestComplianceClaimAllowed": false,
+      "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+      "prohibitedClaims": [
+        "appraisal status",
+        "benchmark superiority",
+        "contest readiness",
+        "investment advice",
+        "official contest compliance"
+      ]
+    },
+    "sourceRecordIds": [
+      "grail-2020-09-09-ipo-filing-release",
+      "grail-2020-09-17-sec-s1a"
+    ],
+    "evidenceLedger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "GRAIL, Inc.",
+        "jurisdiction": "US-DE",
+        "identifiers": [
+          {
+            "scheme": "other",
+            "value": "SEC-CIK-0001699031",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "GRAIL"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2020-09-17",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-3e462cd1db7e",
+          "sourceUrl": "https://grail.com/press-releases/grail-announces-filing-of-registration-statement-for-proposed-initial-public-offering/",
+          "sourceTitle": "GRAIL announces filing of registration statement for proposed IPO",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2020-09-09",
+          "effectiveDate": "2020-09-09",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "GRAIL press release, 09 Sep 2020",
+          "shortExcerpt": "GRAIL announced an S-1 filing for a proposed IPO and applied to list common stock under GRAL.",
+          "observedFacts": [
+            {
+              "id": "fact-8f8e50eedb24",
+              "statement": "As of the 2020-09-09 release, GRAIL said the number of shares and price range had not yet been determined.",
+              "epistemicClass": "observed",
+              "value": "not determined",
+              "period": {
+                "instantDate": "2020-09-09"
+              }
+            },
+            {
+              "id": "fact-e97b552e0a00",
+              "statement": "GRAIL announced on 2020-09-09 that it filed a Form S-1 for a proposed IPO.",
+              "epistemicClass": "observed",
+              "value": "Form S-1 filed",
+              "period": {
+                "instantDate": "2020-09-09"
+              }
+            },
+            {
+              "id": "fact-b78f5a90c9d5",
+              "statement": "GRAIL said it applied to list common stock on Nasdaq under ticker GRAL.",
+              "epistemicClass": "observed",
+              "value": "GRAL",
+              "unit": "ticker",
+              "period": {
+                "instantDate": "2020-09-09"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-d6c3dac52c28",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1699031/000162828020013710/grails-1a1.htm",
+          "sourceTitle": "GRAIL, Inc. Form S-1/A",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2020-09-17",
+          "effectiveDate": "2020-09-17",
+          "sourceClass": "regulatory-filing",
+          "epistemicClass": "extracted",
+          "locator": "SEC accession 0001628280-20-013710",
+          "shortExcerpt": "The S-1/A identifies GRAIL, describes late-stage Galleri and DAC development, and reports no generated revenues to date.",
+          "observedFacts": [
+            {
+              "id": "fact-e16b3503320a",
+              "statement": "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30.",
+              "epistemicClass": "extracted",
+              "value": 136.4,
+              "unit": "USD millions net loss",
+              "period": {
+                "startDate": "2020-01-01",
+                "endDate": "2020-06-30"
+              }
+            },
+            {
+              "id": "fact-a6361353288e",
+              "statement": "Through 2020-06-30, GRAIL stated it had raised over USD 1.9 billion from venture and strategic partners.",
+              "epistemicClass": "extracted",
+              "value": 1.9,
+              "unit": "USD billions raised, greater than",
+              "period": {
+                "instantDate": "2020-06-30"
+              }
+            },
+            {
+              "id": "fact-83c5988f380d",
+              "statement": "GRAIL stated its foundational clinical trials had more than 115,000 subjects already enrolled.",
+              "epistemicClass": "extracted",
+              "value": 115000,
+              "unit": "subjects, greater than",
+              "period": {
+                "instantDate": "2020-08-31"
+              }
+            },
+            {
+              "id": "fact-ead691f50067",
+              "statement": "GRAIL planned to commercially launch Galleri in 2021 as a laboratory developed test.",
+              "epistemicClass": "extracted",
+              "value": "Galleri planned 2021 LDT launch",
+              "period": {
+                "instantDate": "2020-09-17"
+              }
+            },
+            {
+              "id": "fact-8d58ae2125ff",
+              "statement": "GRAIL stated it did not yet have a commercial product for sale.",
+              "epistemicClass": "extracted",
+              "value": true,
+              "period": {
+                "instantDate": "2020-09-17"
+              }
+            },
+            {
+              "id": "fact-ef2dddf69eb0",
+              "statement": "GRAIL stated it had not generated revenues to date and did not expect revenues until products were commercialized.",
+              "epistemicClass": "extracted",
+              "value": true,
+              "period": {
+                "instantDate": "2020-09-17"
+              }
+            },
+            {
+              "id": "fact-67e8d0d01cf0",
+              "statement": "The S-1/A identifies the registrant as GRAIL, Inc., incorporated in Delaware, with CIK 0001699031.",
+              "epistemicClass": "observed",
+              "value": "SEC-CIK-0001699031",
+              "unit": "SEC CIK",
+              "period": {
+                "instantDate": "2020-09-17"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "grail-2020-09-21-illumina-acquisition-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record grail-2020-09-21-illumina-acquisition-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://grail.com/press-releases/illumina-to-acquire-grail-to-launch-new-era-of-cancer-detection/",
+          "sourceTitle": "Illumina to acquire GRAIL",
+          "publishedDate": "2020-09-21",
+          "measurementDate": "2020-09-17"
+        }
+      ],
+      "failedNotes": [],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded grail-2020-09-21-illumina-acquisition-post-cutoff because publishedDate 2020-09-21 is after measurementDate 2020-09-17.",
+          "recordIds": [
+            "grail-2020-09-21-illumina-acquisition-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://grail.com/press-releases/illumina-to-acquire-grail-to-launch-new-era-of-cancer-detection/"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    }
+  },
+  "annotation": {
+    "schemaVersion": "trace.benchmark-annotation.v1",
+    "caseId": "dev-biotech-grail-2020",
+    "partition": "development",
+    "measurementDate": "2020-09-17",
+    "expectedRoute": {
+      "route": "biotech-rnpv",
+      "acceptableAlternativeRoutes": [],
+      "evidenceIds": [
+        "ev-3e462cd1db7e",
+        "ev-d6c3dac52c28"
+      ],
+      "rationale": "The cutoff evidence describes a pre-revenue diagnostics company with late-stage clinical studies and planned product launch."
+    },
+    "binaryClaims": [
+      {
+        "id": "grail-commercial-product-for-sale",
+        "statement": "GRAIL had a commercial product for sale by the cutoff.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-d6c3dac52c28"
+        ]
+      },
+      {
+        "id": "grail-illumina-deal-known-by-cutoff",
+        "statement": "The Illumina acquisition announcement was public by the 2020-09-17 cutoff.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-ec94ebd4a6cd"
+        ],
+        "sourceAvailability": "post-cutoff-excluded"
+      },
+      {
+        "id": "grail-revenue-generated",
+        "statement": "GRAIL had generated product revenue by the cutoff.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-d6c3dac52c28"
+        ]
+      },
+      {
+        "id": "grail-s1a-filed-by-cutoff",
+        "statement": "GRAIL had filed an S-1/A by the 2020-09-17 cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-d6c3dac52c28"
+        ]
+      }
+    ],
+    "observableClaims": [
+      {
+        "id": "grail-clinical-study-enrollment",
+        "statement": "GRAIL's foundational clinical trials had more than 115,000 enrolled subjects.",
+        "expectedValue": 115000,
+        "unit": "subjects, greater than",
+        "period": {
+          "instantDate": "2020-08-31"
+        },
+        "evidenceIds": [
+          "ev-d6c3dac52c28"
+        ]
+      },
+      {
+        "id": "grail-raised-through-june-2020",
+        "statement": "GRAIL had raised over USD 1.9 billion through 2020-06-30.",
+        "expectedValue": 1.9,
+        "unit": "USD billions raised, greater than",
+        "period": {
+          "instantDate": "2020-06-30"
+        },
+        "evidenceIds": [
+          "ev-d6c3dac52c28"
+        ]
+      },
+      {
+        "id": "grail-six-month-2020-net-loss",
+        "statement": "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30.",
+        "expectedValue": 136.4,
+        "unit": "USD millions net loss",
+        "period": {
+          "startDate": "2020-01-01",
+          "endDate": "2020-06-30"
+        },
+        "evidenceIds": [
+          "ev-d6c3dac52c28"
+        ]
+      }
+    ],
+    "expectedAbstentions": [
+      {
+        "id": "grail-product-rnpv-abstain",
+        "field": "enterprise-value",
+        "reasonCode": "no-product-cash-flow-forecast",
+        "description": "The cutoff evidence supports biotech-rNPV routing but lacks a public product cash-flow forecast for enterprise value.",
+        "evidenceIds": [
+          "ev-d6c3dac52c28"
+        ]
+      },
+      {
+        "id": "grail-security-fair-value-abstain",
+        "field": "security-level-fair-value",
+        "reasonCode": "missing-security-rights-and-cap-table",
+        "description": "The S-1/A and IPO announcement do not support private security-level fair value.",
+        "evidenceIds": [
+          "ev-3e462cd1db7e",
+          "ev-d6c3dac52c28"
+        ]
+      }
+    ],
+    "valuationSeparationExpectations": {
+      "allowedValuationFields": [
+        "ipo_range_reference",
+        "transaction_consideration_reference"
+      ],
+      "mustNotConflate": [
+        "IPO placeholder or range status with security-level fair value",
+        "headline transaction consideration with enterprise value",
+        "post-cutoff transaction consideration with cutoff input evidence"
+      ],
+      "notes": "The USD 8bn acquisition value is a historical post-cutoff target only."
+    },
+    "completenessExpectations": [
+      {
+        "id": "grail-cover-biotech-and-leakage",
+        "description": "A complete answer should cover pre-revenue biotech route, Galleri/DAC development, trial evidence, S-1/A status and post-cutoff Illumina leakage.",
+        "requiredEvidenceClasses": [
+          "company-primary",
+          "regulatory-filing"
+        ],
+        "requiredTopics": [
+          "biotech-rnpv route",
+          "clinical evidence",
+          "no revenue",
+          "post-cutoff transaction"
+        ],
+        "evidenceIds": [
+          "ev-3e462cd1db7e",
+          "ev-d6c3dac52c28"
+        ]
+      }
+    ],
+    "historicalValuationTargets": {
+      "eligible": true,
+      "reason": "Manifest permits historical valuation-error scoring for headline transaction and IPO-range reference fields only.",
+      "targets": [
+        {
+          "id": "grail-ipo-range-reference",
+          "eligibleField": "ipo_range_reference",
+          "targetDate": "2020-09-17",
+          "targetKind": "ipo-range-status",
+          "expectedValue": "not determined in committed cutoff evidence",
+          "unit": "not applicable",
+          "sourceEvidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "sourceAvailability": "cutoff-input-visible",
+          "scoringNotes": "The expected behavior is abstention from numeric IPO-range scoring unless a valid range is emitted with supporting evidence."
+        },
+        {
+          "id": "grail-transaction-consideration-reference",
+          "eligibleField": "transaction_consideration_reference",
+          "targetDate": "2020-09-21",
+          "targetKind": "headline-transaction-consideration",
+          "expectedValue": 8,
+          "unit": "USD billions cash-and-stock consideration",
+          "sourceEvidenceIds": [
+            "ev-ec94ebd4a6cd"
+          ],
+          "sourceAvailability": "post-cutoff-gold-only",
+          "scoringNotes": "Use only as headline acquisition consideration; do not convert to enterprise value or security-level fair value."
+        }
+      ]
+    }
+  },
+  "runnerOutput": {
+    "schemaVersion": "trace.benchmark-runner-output.v1",
+    "runnerName": "baseline-b",
+    "runId": "run-dev-generalization-v1",
+    "caseId": "dev-biotech-grail-2020",
+    "partition": "development",
+    "status": "completed",
+    "timing": {
+      "schemaVersion": "trace.benchmark-timing.v1",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.200Z",
+      "durationMs": 200
+    },
+    "rawOutput": {
+      "markdown": "# Baseline B Fixed Template: GRAIL, Inc.\n\n## Case\n| Field | Value |\n| --- | --- |\n| Case ID | dev-biotech-grail-2020 |\n| Partition | development |\n| Measurement date | 2020-09-17 |\n| Cutoff date | 2020-09-17 |\n| Data tier | rich |\n\n## Evidence Inventory\n| Evidence ID | Source | Class | Date |\n| --- | --- | --- | --- |\n| ev-3e462cd1db7e | GRAIL announces filing of registration statement for proposed IPO | company-primary | 2020-09-09 |\n| ev-d6c3dac52c28 | GRAIL, Inc. Form S-1/A | regulatory-filing | 2020-09-17 |\n\n## Claim Register\n| Claim ID | Statement | Citation |\n| --- | --- | --- |\n| claim-62229fbd675f | As of the 2020-09-09 release, GRAIL said the number of shares and price range had not yet been determined. | ev-3e462cd1db7e:fact-8f8e50eedb24 |\n| claim-c26440021557 | GRAIL announced on 2020-09-09 that it filed a Form S-1 for a proposed IPO. | ev-3e462cd1db7e:fact-e97b552e0a00 |\n| claim-6291ad5b8203 | GRAIL planned to commercially launch Galleri in 2021 as a laboratory developed test. | ev-d6c3dac52c28:fact-ead691f50067 |\n| claim-a46798ec09b9 | GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30. | ev-d6c3dac52c28:fact-e16b3503320a |\n| claim-bee7aecf2bdc | GRAIL said it applied to list common stock on Nasdaq under ticker GRAL. | ev-3e462cd1db7e:fact-b78f5a90c9d5 |\n| claim-a087687e63b1 | GRAIL stated it did not yet have a commercial product for sale. | ev-d6c3dac52c28:fact-8d58ae2125ff |\n| claim-dadac6bbf4dd | GRAIL stated it had not generated revenues to date and did not expect revenues until products were commercialized. | ev-d6c3dac52c28:fact-ef2dddf69eb0 |\n| claim-64b94703ed0f | GRAIL stated its foundational clinical trials had more than 115,000 subjects already enrolled. | ev-d6c3dac52c28:fact-83c5988f380d |\n| claim-79237a764dd0 | The S-1/A identifies the registrant as GRAIL, Inc., incorporated in Delaware, with CIK 0001699031. | ev-d6c3dac52c28:fact-67e8d0d01cf0 |\n| claim-51c1809f5919 | Through 2020-06-30, GRAIL stated it had raised over USD 1.9 billion from venture and strategic partners. | ev-d6c3dac52c28:fact-a6361353288e |\n\n## Valuation Fields\n- headline-valuation: omitted\n- enterprise-value: omitted\n- total-equity-value: omitted\n- security-level-fair-value: omitted\n\n## Limitations\n- This baseline performs deterministic evidence summarization only.\n- It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.\n- It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.\n- Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.\n",
+      "json": {
+        "schemaVersion": "trace.baseline-runner-output.v1",
+        "runnerName": "baseline-b",
+        "baselineKind": "fixed-template-report",
+        "inputFingerprint": "31fe1a09cdc9",
+        "case": {
+          "caseId": "dev-biotech-grail-2020",
+          "partition": "development",
+          "scoringRole": "scored",
+          "countedInScoring": true,
+          "companyLegalName": "GRAIL, Inc.",
+          "measurementDate": "2020-09-17",
+          "cutoffDate": "2020-09-17",
+          "dataTier": "rich",
+          "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+          "sourceRecordIds": [
+            "grail-2020-09-09-ipo-filing-release",
+            "grail-2020-09-17-sec-s1a"
+          ]
+        },
+        "sourcePolicy": {
+          "approvedPublicSourceCategories": [
+            "company-primary",
+            "government",
+            "market-data",
+            "news",
+            "peer-reviewed",
+            "regulatory-filing"
+          ],
+          "redistributionStatus": "public-urls-redistribution-not-established",
+          "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+          "onlyUrlsAndShortExcerptsMayBeCommitted": true
+        },
+        "authorityBoundary": {
+          "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+          "officialContestRulesStatus": "not-supplied",
+          "contestComplianceClaimAllowed": false,
+          "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+          "prohibitedClaims": [
+            "appraisal status",
+            "benchmark superiority",
+            "contest readiness",
+            "investment advice",
+            "official contest compliance"
+          ]
+        },
+        "evidence": [
+          {
+            "evidenceId": "ev-3e462cd1db7e",
+            "sourceTitle": "GRAIL announces filing of registration statement for proposed IPO",
+            "sourceUrl": "https://grail.com/press-releases/grail-announces-filing-of-registration-statement-for-proposed-initial-public-offering/",
+            "sourceClass": "company-primary",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2020-09-09",
+            "effectiveDate": "2020-09-09",
+            "locator": "GRAIL press release, 09 Sep 2020",
+            "shortExcerpt": "GRAIL announced an S-1 filing for a proposed IPO and applied to list common stock under GRAL.",
+            "observedFacts": [
+              {
+                "factId": "fact-8f8e50eedb24",
+                "statement": "As of the 2020-09-09 release, GRAIL said the number of shares and price range had not yet been determined.",
+                "value": "not determined",
+                "period": {
+                  "instantDate": "2020-09-09"
+                }
+              },
+              {
+                "factId": "fact-e97b552e0a00",
+                "statement": "GRAIL announced on 2020-09-09 that it filed a Form S-1 for a proposed IPO.",
+                "value": "Form S-1 filed",
+                "period": {
+                  "instantDate": "2020-09-09"
+                }
+              },
+              {
+                "factId": "fact-b78f5a90c9d5",
+                "statement": "GRAIL said it applied to list common stock on Nasdaq under ticker GRAL.",
+                "value": "GRAL",
+                "unit": "ticker",
+                "period": {
+                  "instantDate": "2020-09-09"
+                }
+              }
+            ]
+          },
+          {
+            "evidenceId": "ev-d6c3dac52c28",
+            "sourceTitle": "GRAIL, Inc. Form S-1/A",
+            "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1699031/000162828020013710/grails-1a1.htm",
+            "sourceClass": "regulatory-filing",
+            "epistemicClass": "extracted",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2020-09-17",
+            "effectiveDate": "2020-09-17",
+            "locator": "SEC accession 0001628280-20-013710",
+            "shortExcerpt": "The S-1/A identifies GRAIL, describes late-stage Galleri and DAC development, and reports no generated revenues to date.",
+            "observedFacts": [
+              {
+                "factId": "fact-ead691f50067",
+                "statement": "GRAIL planned to commercially launch Galleri in 2021 as a laboratory developed test.",
+                "value": "Galleri planned 2021 LDT launch",
+                "period": {
+                  "instantDate": "2020-09-17"
+                }
+              },
+              {
+                "factId": "fact-e16b3503320a",
+                "statement": "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30.",
+                "value": 136.4,
+                "unit": "USD millions net loss",
+                "period": {
+                  "startDate": "2020-01-01",
+                  "endDate": "2020-06-30"
+                }
+              },
+              {
+                "factId": "fact-8d58ae2125ff",
+                "statement": "GRAIL stated it did not yet have a commercial product for sale.",
+                "value": true,
+                "period": {
+                  "instantDate": "2020-09-17"
+                }
+              },
+              {
+                "factId": "fact-ef2dddf69eb0",
+                "statement": "GRAIL stated it had not generated revenues to date and did not expect revenues until products were commercialized.",
+                "value": true,
+                "period": {
+                  "instantDate": "2020-09-17"
+                }
+              },
+              {
+                "factId": "fact-83c5988f380d",
+                "statement": "GRAIL stated its foundational clinical trials had more than 115,000 subjects already enrolled.",
+                "value": 115000,
+                "unit": "subjects, greater than",
+                "period": {
+                  "instantDate": "2020-08-31"
+                }
+              },
+              {
+                "factId": "fact-67e8d0d01cf0",
+                "statement": "The S-1/A identifies the registrant as GRAIL, Inc., incorporated in Delaware, with CIK 0001699031.",
+                "value": "SEC-CIK-0001699031",
+                "unit": "SEC CIK",
+                "period": {
+                  "instantDate": "2020-09-17"
+                }
+              },
+              {
+                "factId": "fact-a6361353288e",
+                "statement": "Through 2020-06-30, GRAIL stated it had raised over USD 1.9 billion from venture and strategic partners.",
+                "value": 1.9,
+                "unit": "USD billions raised, greater than",
+                "period": {
+                  "instantDate": "2020-06-30"
+                }
+              }
+            ]
+          }
+        ],
+        "output": {
+          "template": {
+            "case": {
+              "caseId": "dev-biotech-grail-2020",
+              "partition": "development",
+              "scoringRole": "scored",
+              "countedInScoring": true,
+              "companyLegalName": "GRAIL, Inc.",
+              "measurementDate": "2020-09-17",
+              "cutoffDate": "2020-09-17",
+              "dataTier": "rich",
+              "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+              "sourceRecordIds": [
+                "grail-2020-09-09-ipo-filing-release",
+                "grail-2020-09-17-sec-s1a"
+              ]
+            },
+            "evidenceInventory": [
+              {
+                "evidenceId": "ev-3e462cd1db7e",
+                "sourceTitle": "GRAIL announces filing of registration statement for proposed IPO",
+                "sourceUrl": "https://grail.com/press-releases/grail-announces-filing-of-registration-statement-for-proposed-initial-public-offering/",
+                "sourceClass": "company-primary",
+                "epistemicClass": "observed",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2020-09-09",
+                "effectiveDate": "2020-09-09",
+                "locator": "GRAIL press release, 09 Sep 2020",
+                "shortExcerpt": "GRAIL announced an S-1 filing for a proposed IPO and applied to list common stock under GRAL.",
+                "observedFacts": [
+                  {
+                    "factId": "fact-8f8e50eedb24",
+                    "statement": "As of the 2020-09-09 release, GRAIL said the number of shares and price range had not yet been determined.",
+                    "value": "not determined",
+                    "period": {
+                      "instantDate": "2020-09-09"
+                    }
+                  },
+                  {
+                    "factId": "fact-e97b552e0a00",
+                    "statement": "GRAIL announced on 2020-09-09 that it filed a Form S-1 for a proposed IPO.",
+                    "value": "Form S-1 filed",
+                    "period": {
+                      "instantDate": "2020-09-09"
+                    }
+                  },
+                  {
+                    "factId": "fact-b78f5a90c9d5",
+                    "statement": "GRAIL said it applied to list common stock on Nasdaq under ticker GRAL.",
+                    "value": "GRAL",
+                    "unit": "ticker",
+                    "period": {
+                      "instantDate": "2020-09-09"
+                    }
+                  }
+                ]
+              },
+              {
+                "evidenceId": "ev-d6c3dac52c28",
+                "sourceTitle": "GRAIL, Inc. Form S-1/A",
+                "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1699031/000162828020013710/grails-1a1.htm",
+                "sourceClass": "regulatory-filing",
+                "epistemicClass": "extracted",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2020-09-17",
+                "effectiveDate": "2020-09-17",
+                "locator": "SEC accession 0001628280-20-013710",
+                "shortExcerpt": "The S-1/A identifies GRAIL, describes late-stage Galleri and DAC development, and reports no generated revenues to date.",
+                "observedFacts": [
+                  {
+                    "factId": "fact-ead691f50067",
+                    "statement": "GRAIL planned to commercially launch Galleri in 2021 as a laboratory developed test.",
+                    "value": "Galleri planned 2021 LDT launch",
+                    "period": {
+                      "instantDate": "2020-09-17"
+                    }
+                  },
+                  {
+                    "factId": "fact-e16b3503320a",
+                    "statement": "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30.",
+                    "value": 136.4,
+                    "unit": "USD millions net loss",
+                    "period": {
+                      "startDate": "2020-01-01",
+                      "endDate": "2020-06-30"
+                    }
+                  },
+                  {
+                    "factId": "fact-8d58ae2125ff",
+                    "statement": "GRAIL stated it did not yet have a commercial product for sale.",
+                    "value": true,
+                    "period": {
+                      "instantDate": "2020-09-17"
+                    }
+                  },
+                  {
+                    "factId": "fact-ef2dddf69eb0",
+                    "statement": "GRAIL stated it had not generated revenues to date and did not expect revenues until products were commercialized.",
+                    "value": true,
+                    "period": {
+                      "instantDate": "2020-09-17"
+                    }
+                  },
+                  {
+                    "factId": "fact-83c5988f380d",
+                    "statement": "GRAIL stated its foundational clinical trials had more than 115,000 subjects already enrolled.",
+                    "value": 115000,
+                    "unit": "subjects, greater than",
+                    "period": {
+                      "instantDate": "2020-08-31"
+                    }
+                  },
+                  {
+                    "factId": "fact-67e8d0d01cf0",
+                    "statement": "The S-1/A identifies the registrant as GRAIL, Inc., incorporated in Delaware, with CIK 0001699031.",
+                    "value": "SEC-CIK-0001699031",
+                    "unit": "SEC CIK",
+                    "period": {
+                      "instantDate": "2020-09-17"
+                    }
+                  },
+                  {
+                    "factId": "fact-a6361353288e",
+                    "statement": "Through 2020-06-30, GRAIL stated it had raised over USD 1.9 billion from venture and strategic partners.",
+                    "value": 1.9,
+                    "unit": "USD billions raised, greater than",
+                    "period": {
+                      "instantDate": "2020-06-30"
+                    }
+                  }
+                ]
+              }
+            ],
+            "claimRegister": [
+              {
+                "id": "claim-62229fbd675f",
+                "kind": "observable",
+                "statement": "As of the 2020-09-09 release, GRAIL said the number of shares and price range had not yet been determined.",
+                "value": "not determined",
+                "period": {
+                  "instantDate": "2020-09-09"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-3e462cd1db7e",
+                    "factId": "fact-8f8e50eedb24",
+                    "locator": "GRAIL press release, 09 Sep 2020"
+                  }
+                ]
+              },
+              {
+                "id": "claim-c26440021557",
+                "kind": "observable",
+                "statement": "GRAIL announced on 2020-09-09 that it filed a Form S-1 for a proposed IPO.",
+                "value": "Form S-1 filed",
+                "period": {
+                  "instantDate": "2020-09-09"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-3e462cd1db7e",
+                    "factId": "fact-e97b552e0a00",
+                    "locator": "GRAIL press release, 09 Sep 2020"
+                  }
+                ]
+              },
+              {
+                "id": "claim-6291ad5b8203",
+                "kind": "observable",
+                "statement": "GRAIL planned to commercially launch Galleri in 2021 as a laboratory developed test.",
+                "value": "Galleri planned 2021 LDT launch",
+                "period": {
+                  "instantDate": "2020-09-17"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-d6c3dac52c28",
+                    "factId": "fact-ead691f50067",
+                    "locator": "SEC accession 0001628280-20-013710"
+                  }
+                ]
+              },
+              {
+                "id": "claim-a46798ec09b9",
+                "kind": "observable",
+                "statement": "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30.",
+                "value": 136.4,
+                "unit": "USD millions net loss",
+                "period": {
+                  "startDate": "2020-01-01",
+                  "endDate": "2020-06-30"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-d6c3dac52c28",
+                    "factId": "fact-e16b3503320a",
+                    "locator": "SEC accession 0001628280-20-013710"
+                  }
+                ]
+              },
+              {
+                "id": "claim-bee7aecf2bdc",
+                "kind": "observable",
+                "statement": "GRAIL said it applied to list common stock on Nasdaq under ticker GRAL.",
+                "value": "GRAL",
+                "unit": "ticker",
+                "period": {
+                  "instantDate": "2020-09-09"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-3e462cd1db7e",
+                    "factId": "fact-b78f5a90c9d5",
+                    "locator": "GRAIL press release, 09 Sep 2020"
+                  }
+                ]
+              },
+              {
+                "id": "claim-a087687e63b1",
+                "kind": "observable",
+                "statement": "GRAIL stated it did not yet have a commercial product for sale.",
+                "value": true,
+                "period": {
+                  "instantDate": "2020-09-17"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-d6c3dac52c28",
+                    "factId": "fact-8d58ae2125ff",
+                    "locator": "SEC accession 0001628280-20-013710"
+                  }
+                ]
+              },
+              {
+                "id": "claim-dadac6bbf4dd",
+                "kind": "observable",
+                "statement": "GRAIL stated it had not generated revenues to date and did not expect revenues until products were commercialized.",
+                "value": true,
+                "period": {
+                  "instantDate": "2020-09-17"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-d6c3dac52c28",
+                    "factId": "fact-ef2dddf69eb0",
+                    "locator": "SEC accession 0001628280-20-013710"
+                  }
+                ]
+              },
+              {
+                "id": "claim-64b94703ed0f",
+                "kind": "observable",
+                "statement": "GRAIL stated its foundational clinical trials had more than 115,000 subjects already enrolled.",
+                "value": 115000,
+                "unit": "subjects, greater than",
+                "period": {
+                  "instantDate": "2020-08-31"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-d6c3dac52c28",
+                    "factId": "fact-83c5988f380d",
+                    "locator": "SEC accession 0001628280-20-013710"
+                  }
+                ]
+              },
+              {
+                "id": "claim-79237a764dd0",
+                "kind": "observable",
+                "statement": "The S-1/A identifies the registrant as GRAIL, Inc., incorporated in Delaware, with CIK 0001699031.",
+                "value": "SEC-CIK-0001699031",
+                "unit": "SEC CIK",
+                "period": {
+                  "instantDate": "2020-09-17"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-d6c3dac52c28",
+                    "factId": "fact-67e8d0d01cf0",
+                    "locator": "SEC accession 0001628280-20-013710"
+                  }
+                ]
+              },
+              {
+                "id": "claim-51c1809f5919",
+                "kind": "observable",
+                "statement": "Through 2020-06-30, GRAIL stated it had raised over USD 1.9 billion from venture and strategic partners.",
+                "value": 1.9,
+                "unit": "USD billions raised, greater than",
+                "period": {
+                  "instantDate": "2020-06-30"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-d6c3dac52c28",
+                    "factId": "fact-a6361353288e",
+                    "locator": "SEC accession 0001628280-20-013710"
+                  }
+                ]
+              }
+            ],
+            "limitations": [
+              "This baseline performs deterministic evidence summarization only.",
+              "It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.",
+              "It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.",
+              "Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established."
+            ]
+          }
+        },
+        "omittedTraceLogic": [
+          "route-selection",
+          "sufficiency-gating",
+          "valuation-engine",
+          "adversarial-review"
+        ]
+      }
+    },
+    "normalized": {
+      "claims": [
+        {
+          "id": "claim-62229fbd675f",
+          "kind": "observable",
+          "statement": "As of the 2020-09-09 release, GRAIL said the number of shares and price range had not yet been determined.",
+          "value": "not determined",
+          "period": {
+            "instantDate": "2020-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-3e462cd1db7e",
+              "factId": "fact-8f8e50eedb24",
+              "locator": "GRAIL press release, 09 Sep 2020"
+            }
+          ]
+        },
+        {
+          "id": "claim-c26440021557",
+          "kind": "observable",
+          "statement": "GRAIL announced on 2020-09-09 that it filed a Form S-1 for a proposed IPO.",
+          "value": "Form S-1 filed",
+          "period": {
+            "instantDate": "2020-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-3e462cd1db7e",
+              "factId": "fact-e97b552e0a00",
+              "locator": "GRAIL press release, 09 Sep 2020"
+            }
+          ]
+        },
+        {
+          "id": "claim-6291ad5b8203",
+          "kind": "observable",
+          "statement": "GRAIL planned to commercially launch Galleri in 2021 as a laboratory developed test.",
+          "value": "Galleri planned 2021 LDT launch",
+          "period": {
+            "instantDate": "2020-09-17"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d6c3dac52c28",
+              "factId": "fact-ead691f50067",
+              "locator": "SEC accession 0001628280-20-013710"
+            }
+          ]
+        },
+        {
+          "id": "claim-a46798ec09b9",
+          "kind": "observable",
+          "statement": "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30.",
+          "value": 136.4,
+          "unit": "USD millions net loss",
+          "period": {
+            "startDate": "2020-01-01",
+            "endDate": "2020-06-30"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d6c3dac52c28",
+              "factId": "fact-e16b3503320a",
+              "locator": "SEC accession 0001628280-20-013710"
+            }
+          ]
+        },
+        {
+          "id": "claim-bee7aecf2bdc",
+          "kind": "observable",
+          "statement": "GRAIL said it applied to list common stock on Nasdaq under ticker GRAL.",
+          "value": "GRAL",
+          "unit": "ticker",
+          "period": {
+            "instantDate": "2020-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-3e462cd1db7e",
+              "factId": "fact-b78f5a90c9d5",
+              "locator": "GRAIL press release, 09 Sep 2020"
+            }
+          ]
+        },
+        {
+          "id": "claim-a087687e63b1",
+          "kind": "observable",
+          "statement": "GRAIL stated it did not yet have a commercial product for sale.",
+          "value": true,
+          "period": {
+            "instantDate": "2020-09-17"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d6c3dac52c28",
+              "factId": "fact-8d58ae2125ff",
+              "locator": "SEC accession 0001628280-20-013710"
+            }
+          ]
+        },
+        {
+          "id": "claim-dadac6bbf4dd",
+          "kind": "observable",
+          "statement": "GRAIL stated it had not generated revenues to date and did not expect revenues until products were commercialized.",
+          "value": true,
+          "period": {
+            "instantDate": "2020-09-17"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d6c3dac52c28",
+              "factId": "fact-ef2dddf69eb0",
+              "locator": "SEC accession 0001628280-20-013710"
+            }
+          ]
+        },
+        {
+          "id": "claim-64b94703ed0f",
+          "kind": "observable",
+          "statement": "GRAIL stated its foundational clinical trials had more than 115,000 subjects already enrolled.",
+          "value": 115000,
+          "unit": "subjects, greater than",
+          "period": {
+            "instantDate": "2020-08-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d6c3dac52c28",
+              "factId": "fact-83c5988f380d",
+              "locator": "SEC accession 0001628280-20-013710"
+            }
+          ]
+        },
+        {
+          "id": "claim-79237a764dd0",
+          "kind": "observable",
+          "statement": "The S-1/A identifies the registrant as GRAIL, Inc., incorporated in Delaware, with CIK 0001699031.",
+          "value": "SEC-CIK-0001699031",
+          "unit": "SEC CIK",
+          "period": {
+            "instantDate": "2020-09-17"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d6c3dac52c28",
+              "factId": "fact-67e8d0d01cf0",
+              "locator": "SEC accession 0001628280-20-013710"
+            }
+          ]
+        },
+        {
+          "id": "claim-51c1809f5919",
+          "kind": "observable",
+          "statement": "Through 2020-06-30, GRAIL stated it had raised over USD 1.9 billion from venture and strategic partners.",
+          "value": 1.9,
+          "unit": "USD billions raised, greater than",
+          "period": {
+            "instantDate": "2020-06-30"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d6c3dac52c28",
+              "factId": "fact-a6361353288e",
+              "locator": "SEC accession 0001628280-20-013710"
+            }
+          ]
+        }
+      ],
+      "route": {
+        "status": "omitted"
+      },
+      "abstentions": [],
+      "valuations": [
+        {
+          "field": "headline-valuation",
+          "status": "omitted",
+          "evidenceIds": []
+        },
+        {
+          "field": "enterprise-value",
+          "status": "omitted",
+          "evidenceIds": []
+        },
+        {
+          "field": "total-equity-value",
+          "status": "omitted",
+          "evidenceIds": []
+        },
+        {
+          "field": "security-level-fair-value",
+          "status": "omitted",
+          "evidenceIds": []
+        }
+      ]
+    },
+    "failures": []
+  }
+}

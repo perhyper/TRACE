@@ -1,0 +1,482 @@
+{
+  "schemaVersion": "trace.baseline-runner-output.v1",
+  "runnerName": "baseline-b",
+  "baselineKind": "fixed-template-report",
+  "inputFingerprint": "ac31ae60dc5f",
+  "case": {
+    "caseId": "dev-fintech-chime-2025",
+    "partition": "development",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Chime Financial, Inc.",
+    "measurementDate": "2025-05-13",
+    "cutoffDate": "2025-05-13",
+    "dataTier": "medium",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "sourceRecordIds": [
+      "chime-2025-05-13-ipo-filing-news",
+      "chime-2025-05-13-sec-s1"
+    ]
+  },
+  "sourcePolicy": {
+    "approvedPublicSourceCategories": [
+      "company-primary",
+      "market-data",
+      "news",
+      "regulatory-filing"
+    ],
+    "redistributionStatus": "public-urls-redistribution-not-established",
+    "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+    "onlyUrlsAndShortExcerptsMayBeCommitted": true
+  },
+  "authorityBoundary": {
+    "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+    "officialContestRulesStatus": "not-supplied",
+    "contestComplianceClaimAllowed": false,
+    "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+    "prohibitedClaims": [
+      "appraisal status",
+      "benchmark superiority",
+      "contest readiness",
+      "investment advice",
+      "official contest compliance"
+    ]
+  },
+  "evidence": [
+    {
+      "evidenceId": "ev-4cd4b2c602cb",
+      "sourceTitle": "Chime files registration statement for proposed IPO",
+      "sourceUrl": "https://www.chime.com/newsroom/news/chime-files-registration-statement-for-proposed-initial-public-offering/",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2025-05-13",
+      "effectiveDate": "2025-05-13",
+      "locator": "Chime newsroom, 13 May 2025",
+      "shortExcerpt": "Chime announced the S-1 filing, applied for Nasdaq listing as CHYM, and had not yet determined shares or price range.",
+      "observedFacts": [
+        {
+          "factId": "fact-6ae5fbdc5716",
+          "statement": "As of the 2025-05-13 announcement, Chime said the number of shares and price range had not yet been determined.",
+          "value": "not determined",
+          "period": {
+            "instantDate": "2025-05-13"
+          }
+        },
+        {
+          "factId": "fact-f1f3368fad1b",
+          "statement": "Chime announced on 2025-05-13 that it filed a Form S-1 for a proposed IPO.",
+          "value": "Form S-1 filed",
+          "period": {
+            "instantDate": "2025-05-13"
+          }
+        },
+        {
+          "factId": "fact-08c384982e50",
+          "statement": "Chime said it applied to list Class A common stock on Nasdaq under ticker CHYM.",
+          "value": "CHYM",
+          "unit": "ticker",
+          "period": {
+            "instantDate": "2025-05-13"
+          }
+        }
+      ]
+    },
+    {
+      "evidenceId": "ev-5fdce7b12f43",
+      "sourceTitle": "Chime Financial, Inc. Form S-1",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1795586/000162828025025059/chimefinancialinc-sx1wq1da.htm",
+      "sourceClass": "regulatory-filing",
+      "epistemicClass": "extracted",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2025-05-13",
+      "effectiveDate": "2025-05-13",
+      "locator": "SEC accession 0001628280-25-025059",
+      "shortExcerpt": "The Form S-1 identifies Chime, reports Q1 2025 active members, 2024 operating metrics and partner-bank model limitations.",
+      "observedFacts": [
+        {
+          "factId": "fact-692270730a92",
+          "statement": "Chime describes itself as a technology company, not a bank, with banking services provided by partner banks.",
+          "value": "technology company with partner-bank services",
+          "period": {
+            "instantDate": "2025-05-13"
+          }
+        },
+        {
+          "factId": "fact-d9fe5d576683",
+          "statement": "Chime reported 8.0 million Active Members for 2024.",
+          "value": 8,
+          "unit": "millions",
+          "period": {
+            "endDate": "2024-12-31"
+          }
+        },
+        {
+          "factId": "fact-9b87e1e0f5f2",
+          "statement": "Chime reported 8.6 million Active Members as of 2025-03-31.",
+          "value": 8.6,
+          "unit": "millions",
+          "period": {
+            "instantDate": "2025-03-31"
+          }
+        },
+        {
+          "factId": "fact-89bd203e546f",
+          "statement": "Chime reported USD 34.540 billion of Purchase Volume for the three months ended 2025-03-31.",
+          "value": 34.54,
+          "unit": "USD billions",
+          "period": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-03-31"
+          }
+        },
+        {
+          "factId": "fact-ff95192865d0",
+          "statement": "Chime reported a USD 25.3 million net loss for 2024.",
+          "value": 25.3,
+          "unit": "USD millions net loss",
+          "period": {
+            "endDate": "2024-12-31"
+          }
+        },
+        {
+          "factId": "fact-9badd0e8659f",
+          "statement": "Chime reported that 67 percent of Active Members relied on Chime as a primary account relationship as of 2025-03-31.",
+          "value": 67,
+          "unit": "percent",
+          "period": {
+            "instantDate": "2025-03-31"
+          }
+        },
+        {
+          "factId": "fact-bb4ab55ce064",
+          "statement": "The S-1 identifies the registrant as Chime Financial, Inc., incorporated in Delaware, with CIK 0001795586.",
+          "value": "SEC-CIK-0001795586",
+          "unit": "SEC CIK",
+          "period": {
+            "instantDate": "2025-05-13"
+          }
+        }
+      ]
+    }
+  ],
+  "output": {
+    "template": {
+      "case": {
+        "caseId": "dev-fintech-chime-2025",
+        "partition": "development",
+        "scoringRole": "scored",
+        "countedInScoring": true,
+        "companyLegalName": "Chime Financial, Inc.",
+        "measurementDate": "2025-05-13",
+        "cutoffDate": "2025-05-13",
+        "dataTier": "medium",
+        "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+        "sourceRecordIds": [
+          "chime-2025-05-13-ipo-filing-news",
+          "chime-2025-05-13-sec-s1"
+        ]
+      },
+      "evidenceInventory": [
+        {
+          "evidenceId": "ev-4cd4b2c602cb",
+          "sourceTitle": "Chime files registration statement for proposed IPO",
+          "sourceUrl": "https://www.chime.com/newsroom/news/chime-files-registration-statement-for-proposed-initial-public-offering/",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2025-05-13",
+          "effectiveDate": "2025-05-13",
+          "locator": "Chime newsroom, 13 May 2025",
+          "shortExcerpt": "Chime announced the S-1 filing, applied for Nasdaq listing as CHYM, and had not yet determined shares or price range.",
+          "observedFacts": [
+            {
+              "factId": "fact-6ae5fbdc5716",
+              "statement": "As of the 2025-05-13 announcement, Chime said the number of shares and price range had not yet been determined.",
+              "value": "not determined",
+              "period": {
+                "instantDate": "2025-05-13"
+              }
+            },
+            {
+              "factId": "fact-f1f3368fad1b",
+              "statement": "Chime announced on 2025-05-13 that it filed a Form S-1 for a proposed IPO.",
+              "value": "Form S-1 filed",
+              "period": {
+                "instantDate": "2025-05-13"
+              }
+            },
+            {
+              "factId": "fact-08c384982e50",
+              "statement": "Chime said it applied to list Class A common stock on Nasdaq under ticker CHYM.",
+              "value": "CHYM",
+              "unit": "ticker",
+              "period": {
+                "instantDate": "2025-05-13"
+              }
+            }
+          ]
+        },
+        {
+          "evidenceId": "ev-5fdce7b12f43",
+          "sourceTitle": "Chime Financial, Inc. Form S-1",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1795586/000162828025025059/chimefinancialinc-sx1wq1da.htm",
+          "sourceClass": "regulatory-filing",
+          "epistemicClass": "extracted",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2025-05-13",
+          "effectiveDate": "2025-05-13",
+          "locator": "SEC accession 0001628280-25-025059",
+          "shortExcerpt": "The Form S-1 identifies Chime, reports Q1 2025 active members, 2024 operating metrics and partner-bank model limitations.",
+          "observedFacts": [
+            {
+              "factId": "fact-692270730a92",
+              "statement": "Chime describes itself as a technology company, not a bank, with banking services provided by partner banks.",
+              "value": "technology company with partner-bank services",
+              "period": {
+                "instantDate": "2025-05-13"
+              }
+            },
+            {
+              "factId": "fact-d9fe5d576683",
+              "statement": "Chime reported 8.0 million Active Members for 2024.",
+              "value": 8,
+              "unit": "millions",
+              "period": {
+                "endDate": "2024-12-31"
+              }
+            },
+            {
+              "factId": "fact-9b87e1e0f5f2",
+              "statement": "Chime reported 8.6 million Active Members as of 2025-03-31.",
+              "value": 8.6,
+              "unit": "millions",
+              "period": {
+                "instantDate": "2025-03-31"
+              }
+            },
+            {
+              "factId": "fact-89bd203e546f",
+              "statement": "Chime reported USD 34.540 billion of Purchase Volume for the three months ended 2025-03-31.",
+              "value": 34.54,
+              "unit": "USD billions",
+              "period": {
+                "startDate": "2025-01-01",
+                "endDate": "2025-03-31"
+              }
+            },
+            {
+              "factId": "fact-ff95192865d0",
+              "statement": "Chime reported a USD 25.3 million net loss for 2024.",
+              "value": 25.3,
+              "unit": "USD millions net loss",
+              "period": {
+                "endDate": "2024-12-31"
+              }
+            },
+            {
+              "factId": "fact-9badd0e8659f",
+              "statement": "Chime reported that 67 percent of Active Members relied on Chime as a primary account relationship as of 2025-03-31.",
+              "value": 67,
+              "unit": "percent",
+              "period": {
+                "instantDate": "2025-03-31"
+              }
+            },
+            {
+              "factId": "fact-bb4ab55ce064",
+              "statement": "The S-1 identifies the registrant as Chime Financial, Inc., incorporated in Delaware, with CIK 0001795586.",
+              "value": "SEC-CIK-0001795586",
+              "unit": "SEC CIK",
+              "period": {
+                "instantDate": "2025-05-13"
+              }
+            }
+          ]
+        }
+      ],
+      "claimRegister": [
+        {
+          "id": "claim-599d86f68bf7",
+          "kind": "observable",
+          "statement": "As of the 2025-05-13 announcement, Chime said the number of shares and price range had not yet been determined.",
+          "value": "not determined",
+          "period": {
+            "instantDate": "2025-05-13"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-4cd4b2c602cb",
+              "factId": "fact-6ae5fbdc5716",
+              "locator": "Chime newsroom, 13 May 2025"
+            }
+          ]
+        },
+        {
+          "id": "claim-e0e90cb263b4",
+          "kind": "observable",
+          "statement": "Chime announced on 2025-05-13 that it filed a Form S-1 for a proposed IPO.",
+          "value": "Form S-1 filed",
+          "period": {
+            "instantDate": "2025-05-13"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-4cd4b2c602cb",
+              "factId": "fact-f1f3368fad1b",
+              "locator": "Chime newsroom, 13 May 2025"
+            }
+          ]
+        },
+        {
+          "id": "claim-27ad886fff2d",
+          "kind": "observable",
+          "statement": "Chime describes itself as a technology company, not a bank, with banking services provided by partner banks.",
+          "value": "technology company with partner-bank services",
+          "period": {
+            "instantDate": "2025-05-13"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-5fdce7b12f43",
+              "factId": "fact-692270730a92",
+              "locator": "SEC accession 0001628280-25-025059"
+            }
+          ]
+        },
+        {
+          "id": "claim-9c396b516da4",
+          "kind": "observable",
+          "statement": "Chime reported 8.0 million Active Members for 2024.",
+          "value": 8,
+          "unit": "millions",
+          "period": {
+            "endDate": "2024-12-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-5fdce7b12f43",
+              "factId": "fact-d9fe5d576683",
+              "locator": "SEC accession 0001628280-25-025059"
+            }
+          ]
+        },
+        {
+          "id": "claim-072d60476fbe",
+          "kind": "observable",
+          "statement": "Chime reported 8.6 million Active Members as of 2025-03-31.",
+          "value": 8.6,
+          "unit": "millions",
+          "period": {
+            "instantDate": "2025-03-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-5fdce7b12f43",
+              "factId": "fact-9b87e1e0f5f2",
+              "locator": "SEC accession 0001628280-25-025059"
+            }
+          ]
+        },
+        {
+          "id": "claim-e1c3d50a0c4b",
+          "kind": "observable",
+          "statement": "Chime reported USD 34.540 billion of Purchase Volume for the three months ended 2025-03-31.",
+          "value": 34.54,
+          "unit": "USD billions",
+          "period": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-03-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-5fdce7b12f43",
+              "factId": "fact-89bd203e546f",
+              "locator": "SEC accession 0001628280-25-025059"
+            }
+          ]
+        },
+        {
+          "id": "claim-81354bbacbb9",
+          "kind": "observable",
+          "statement": "Chime reported a USD 25.3 million net loss for 2024.",
+          "value": 25.3,
+          "unit": "USD millions net loss",
+          "period": {
+            "endDate": "2024-12-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-5fdce7b12f43",
+              "factId": "fact-ff95192865d0",
+              "locator": "SEC accession 0001628280-25-025059"
+            }
+          ]
+        },
+        {
+          "id": "claim-ef9adb324ad9",
+          "kind": "observable",
+          "statement": "Chime reported that 67 percent of Active Members relied on Chime as a primary account relationship as of 2025-03-31.",
+          "value": 67,
+          "unit": "percent",
+          "period": {
+            "instantDate": "2025-03-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-5fdce7b12f43",
+              "factId": "fact-9badd0e8659f",
+              "locator": "SEC accession 0001628280-25-025059"
+            }
+          ]
+        },
+        {
+          "id": "claim-b80a7dfb38f7",
+          "kind": "observable",
+          "statement": "Chime said it applied to list Class A common stock on Nasdaq under ticker CHYM.",
+          "value": "CHYM",
+          "unit": "ticker",
+          "period": {
+            "instantDate": "2025-05-13"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-4cd4b2c602cb",
+              "factId": "fact-08c384982e50",
+              "locator": "Chime newsroom, 13 May 2025"
+            }
+          ]
+        },
+        {
+          "id": "claim-0bb134eb354d",
+          "kind": "observable",
+          "statement": "The S-1 identifies the registrant as Chime Financial, Inc., incorporated in Delaware, with CIK 0001795586.",
+          "value": "SEC-CIK-0001795586",
+          "unit": "SEC CIK",
+          "period": {
+            "instantDate": "2025-05-13"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-5fdce7b12f43",
+              "factId": "fact-bb4ab55ce064",
+              "locator": "SEC accession 0001628280-25-025059"
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "This baseline performs deterministic evidence summarization only.",
+        "It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.",
+        "It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.",
+        "Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established."
+      ]
+    }
+  },
+  "omittedTraceLogic": [
+    "route-selection",
+    "sufficiency-gating",
+    "valuation-engine",
+    "adversarial-review"
+  ]
+}

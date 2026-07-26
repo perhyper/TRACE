@@ -1,0 +1,642 @@
+{
+  "schemaVersion": "trace.benchmark-per-claim-score.v1",
+  "runId": "run-dev-generalization-v1",
+  "runnerName": "trace-full",
+  "caseId": "dev-biotech-mammoth-2021",
+  "partition": "development",
+  "status": "scored",
+  "claims": [
+    {
+      "claimId": "mammoth-financing-announced",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "mammoth-financing-announced",
+      "expectedStatement": "Mammoth announced a financing round by the cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-2df79df4d844"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "mammoth-product-cash-flow-public",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "mammoth-product-cash-flow-public",
+      "expectedStatement": "The cutoff evidence provides product-level cash-flow forecasts sufficient for rNPV valuation.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-2df79df4d844"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "mammoth-unicorn-status",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "mammoth-unicorn-status",
+      "expectedStatement": "Mammoth said the financing gave it a valuation greater than USD 1 billion.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-2df79df4d844"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "trace-claim-25764c02bff8",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-25764c02bff8",
+      "emittedStatement": "A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors.",
+      "emittedValue": "CRISPR-Cas12 SARS-CoV-2 detection",
+      "emittedPeriod": {
+        "instantDate": "2020-04-16"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-4a0498d1cfc9"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-4a0498d1cfc9",
+          "factId": "fact-00bf393f5b01",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "peer-reviewed",
+          "sourceQualityCategory": "peer-reviewed",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "peer-reviewed"
+        ],
+        "citedSourceQualityCategories": [
+          "peer-reviewed"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-7eb807cff91f",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-7eb807cff91f",
+      "emittedStatement": "Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery.",
+      "emittedValue": [
+        "Cas14",
+        "CasPhi"
+      ],
+      "emittedPeriod": {
+        "instantDate": "2021-09-09"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-2df79df4d844"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2df79df4d844",
+          "factId": "fact-f8d46db92bc2",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-835aa68426fc",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-835aa68426fc",
+      "emittedStatement": "Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics.",
+      "emittedValue": "CRISPR therapeutics and diagnostics",
+      "emittedPeriod": {
+        "instantDate": "2021-09-09"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-2df79df4d844"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2df79df4d844",
+          "factId": "fact-dc7a03de13a1",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-9015bd66e383",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-9015bd66e383",
+      "emittedStatement": "The article lists Mammoth Biosciences, Inc. affiliations for James Broughton and Janice Chen.",
+      "emittedValue": [
+        "James Broughton",
+        "Janice Chen"
+      ],
+      "emittedPeriod": {
+        "instantDate": "2020-04-16"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-4a0498d1cfc9"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-4a0498d1cfc9",
+          "factId": "fact-1de81cea2118",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "peer-reviewed",
+          "sourceQualityCategory": "peer-reviewed",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "peer-reviewed"
+        ],
+        "citedSourceQualityCategories": [
+          "peer-reviewed"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-dad8d140afea",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-dad8d140afea",
+      "emittedStatement": "Mammoth stated the financing placed the company in unicorn status with valuation greater than USD 1 billion.",
+      "emittedValue": 1,
+      "emittedUnit": "USD billions headline valuation, greater than",
+      "emittedPeriod": {
+        "instantDate": "2021-09-09"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-2df79df4d844"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2df79df4d844",
+          "factId": "fact-a242e66e0c16",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "mammoth-detectr-eua-date",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "expectedClaimId": "mammoth-detectr-eua-date",
+      "emittedClaimId": "trace-claim-7abe7502006c",
+      "expectedStatement": "FDA historical records list SARS-CoV-2 DETECTR Reagent Kit EUA issued on 2020-08-31.",
+      "emittedStatement": "FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+      "expectedValue": "2020-08-31",
+      "emittedValue": "EUA issued",
+      "expectedUnit": "EUA issue date",
+      "expectedPeriod": {
+        "instantDate": "2020-08-31"
+      },
+      "emittedPeriod": {
+        "instantDate": "2020-08-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-b73daa03700a"
+      ],
+      "emittedEvidenceIds": [
+        "ev-b73daa03700a"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-b73daa03700a",
+          "factId": "fact-110b56088c37",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "government",
+          "sourceQualityCategory": "government",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "government"
+        ],
+        "citedSourceQualityCategories": [
+          "government"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "mammoth-series-d-size",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "mammoth-series-d-size",
+      "emittedClaimId": "trace-claim-1de7cb33d34c",
+      "expectedStatement": "The Series D component was USD 150 million.",
+      "emittedStatement": "Mammoth stated the financing included a USD 150 million Series D led by Redmile Group.",
+      "expectedValue": 150,
+      "emittedValue": 150,
+      "expectedUnit": "USD millions",
+      "emittedUnit": "USD millions",
+      "expectedPeriod": {
+        "instantDate": "2021-09-09"
+      },
+      "emittedPeriod": {
+        "instantDate": "2021-09-09"
+      },
+      "expectedEvidenceIds": [
+        "ev-2df79df4d844"
+      ],
+      "emittedEvidenceIds": [
+        "ev-2df79df4d844"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2df79df4d844",
+          "factId": "fact-3c38d7c8dafd",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "mammoth-team-size",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "mammoth-team-size",
+      "emittedClaimId": "trace-claim-a1dba7341880",
+      "expectedStatement": "Mammoth had expanded to more than 100 employees.",
+      "emittedStatement": "Mammoth stated it had expanded its team to more than 100 employees.",
+      "expectedValue": 100,
+      "emittedValue": 100,
+      "expectedUnit": "employees, greater than",
+      "emittedUnit": "employees, greater than",
+      "expectedPeriod": {
+        "instantDate": "2021-09-09"
+      },
+      "emittedPeriod": {
+        "instantDate": "2021-09-09"
+      },
+      "expectedEvidenceIds": [
+        "ev-2df79df4d844"
+      ],
+      "emittedEvidenceIds": [
+        "ev-2df79df4d844"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2df79df4d844",
+          "factId": "fact-c93248473675",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "mammoth-total-financing",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "mammoth-total-financing",
+      "emittedClaimId": "trace-claim-92110798b422",
+      "expectedStatement": "The announced financing total was USD 195 million.",
+      "emittedStatement": "Mammoth announced USD 195 million of financing on 2021-09-09.",
+      "expectedValue": 195,
+      "emittedValue": 195,
+      "expectedUnit": "USD millions",
+      "emittedUnit": "USD millions",
+      "expectedPeriod": {
+        "instantDate": "2021-09-09"
+      },
+      "emittedPeriod": {
+        "instantDate": "2021-09-09"
+      },
+      "expectedEvidenceIds": [
+        "ev-2df79df4d844"
+      ],
+      "emittedEvidenceIds": [
+        "ev-2df79df4d844"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2df79df4d844",
+          "factId": "fact-11739eea8ac3",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,2458 @@
+{
+  "schemaVersion": "trace.benchmark-scorer-input.v1",
+  "runId": "run-dev-generalization-v1",
+  "runnerName": "trace-full",
+  "caseId": "dev-saas-figma-2022",
+  "partition": "development",
+  "caseInput": {
+    "schemaVersion": "trace.benchmark-case-input.v1",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "manifestSchemaVersion": "trace.benchmark-manifest.v1",
+    "caseId": "dev-saas-figma-2022",
+    "partition": "development",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Figma, Inc.",
+    "target": {
+      "legalName": "Figma, Inc.",
+      "jurisdiction": "US",
+      "identifiers": [
+        {
+          "scheme": "other",
+          "value": "figma.com",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "Figma"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2022-09-14",
+    "cutoffDate": "2022-09-14",
+    "dataTier": "medium",
+    "sourcePolicy": {
+      "approvedPublicSourceCategories": [
+        "company-primary",
+        "legal-record",
+        "news",
+        "regulatory-filing"
+      ],
+      "redistributionStatus": "public-urls-redistribution-not-established",
+      "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+      "onlyUrlsAndShortExcerptsMayBeCommitted": true
+    },
+    "authorityBoundary": {
+      "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+      "officialContestRulesStatus": "not-supplied",
+      "contestComplianceClaimAllowed": false,
+      "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+      "prohibitedClaims": [
+        "appraisal status",
+        "benchmark superiority",
+        "contest readiness",
+        "investment advice",
+        "official contest compliance"
+      ]
+    },
+    "sourceRecordIds": [
+      "figma-2021-04-21-figjam-launch",
+      "figma-2021-06-24-series-e-blog",
+      "figma-2021-06-24-series-e-value-news"
+    ],
+    "evidenceLedger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Figma, Inc.",
+        "jurisdiction": "US",
+        "identifiers": [
+          {
+            "scheme": "other",
+            "value": "figma.com",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "Figma"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2022-09-14",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-bc3049cd3474",
+          "sourceUrl": "https://www.figma.com/blog/introducing-figjam/",
+          "sourceTitle": "Introducing FigJam",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-04-21",
+          "effectiveDate": "2021-04-21",
+          "sourceClass": "company-primary",
+          "epistemicClass": "extracted",
+          "locator": "Figma blog, 21 Apr 2021",
+          "shortExcerpt": "Figma introduced FigJam as an online whiteboard for brainstorming and ideation with teams.",
+          "observedFacts": [
+            {
+              "id": "fact-17d82cf23752",
+              "statement": "FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration.",
+              "epistemicClass": "extracted",
+              "value": [
+                "sticky notes",
+                "drawing tools",
+                "shapes and connectors",
+                "stamps",
+                "cursor chats",
+                "audio collaboration"
+              ],
+              "period": {
+                "instantDate": "2021-04-21"
+              }
+            },
+            {
+              "id": "fact-6be7bbd07589",
+              "statement": "Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams.",
+              "epistemicClass": "observed",
+              "value": "FigJam launched",
+              "period": {
+                "instantDate": "2021-04-21"
+              }
+            },
+            {
+              "id": "fact-e1f9af46f128",
+              "statement": "Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month.",
+              "epistemicClass": "observed",
+              "value": [
+                "USD 3 per editor per month",
+                "USD 5 per editor per month"
+              ],
+              "period": {
+                "instantDate": "2021-04-21"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-268f1126e759",
+          "sourceUrl": "https://www.figma.com/blog/figmas-series-e/",
+          "sourceTitle": "Figma's Series E",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-06-24",
+          "effectiveDate": "2021-06-24",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Figma blog, 24 Jun 2021",
+          "shortExcerpt": "Figma announced a new funding round led by Durable Capital with Counterpoint Global joining as a new investor.",
+          "observedFacts": [
+            {
+              "id": "fact-0c4d3f19d42f",
+              "statement": "Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration.",
+              "epistemicClass": "extracted",
+              "value": "collaborative design software",
+              "period": {
+                "instantDate": "2021-06-24"
+              }
+            },
+            {
+              "id": "fact-088c05567311",
+              "statement": "Figma announced it closed a Series E financing round on 2021-06-24.",
+              "epistemicClass": "observed",
+              "value": "Series E closed",
+              "period": {
+                "instantDate": "2021-06-24"
+              }
+            },
+            {
+              "id": "fact-2ea14245213e",
+              "statement": "Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated.",
+              "epistemicClass": "observed",
+              "value": [
+                "Morgan Stanley Counterpoint Global",
+                "Index",
+                "Greylock",
+                "Kleiner Perkins",
+                "Sequoia",
+                "a16z"
+              ],
+              "period": {
+                "instantDate": "2021-06-24"
+              }
+            },
+            {
+              "id": "fact-c97da2b587dc",
+              "statement": "Figma said the Series E was led by Durable Capital Partners.",
+              "epistemicClass": "observed",
+              "value": "Durable Capital Partners",
+              "period": {
+                "instantDate": "2021-06-24"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-aeeecbc6a15d",
+          "sourceUrl": "https://www.theinformation.com/briefings/5a0e84",
+          "sourceTitle": "Figma raises USD 200 million at USD 10 billion valuation",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-06-24",
+          "effectiveDate": "2021-06-24",
+          "sourceClass": "news",
+          "epistemicClass": "observed",
+          "locator": "The Information briefing",
+          "shortExcerpt": "Public briefing reports Figma raised USD 200m Series E funding at a USD 10bn valuation.",
+          "observedFacts": [
+            {
+              "id": "fact-0df274972b4b",
+              "statement": "Public reporting described Figma's Series E amount as USD 200 million.",
+              "epistemicClass": "observed",
+              "value": 200,
+              "unit": "USD millions",
+              "period": {
+                "instantDate": "2021-06-24"
+              }
+            },
+            {
+              "id": "fact-daac40ca2bdc",
+              "statement": "Public reporting described Figma's Series E headline valuation as USD 10 billion.",
+              "epistemicClass": "observed",
+              "value": 10,
+              "unit": "USD billions headline valuation",
+              "period": {
+                "instantDate": "2021-06-24"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "figma-2022-09-15-adobe-acquisition-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record figma-2022-09-15-adobe-acquisition-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://www.businesswire.com/news/home/20220915005546/en/Adobe-to-Acquire-Figma",
+          "sourceTitle": "Adobe to acquire Figma",
+          "publishedDate": "2022-09-15",
+          "measurementDate": "2022-09-14"
+        }
+      ],
+      "failedNotes": [
+        {
+          "id": "figma-sec-cik-post-cutoff-note",
+          "stage": "extraction",
+          "sourceUrl": "https://www.sec.gov/",
+          "sourceTitle": "SEC EDGAR post-cutoff Figma filings",
+          "attemptedAt": "2026-07-26T00:00:00Z",
+          "note": "Figma's SEC CIK is available from post-cutoff public filings, but those filings are not eligible input for the 2022-09-14 case."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded figma-2022-09-15-adobe-acquisition-post-cutoff because publishedDate 2022-09-15 is after measurementDate 2022-09-14.",
+          "recordIds": [
+            "figma-2022-09-15-adobe-acquisition-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://www.businesswire.com/news/home/20220915005546/en/Adobe-to-Acquire-Figma"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    }
+  },
+  "annotation": {
+    "schemaVersion": "trace.benchmark-annotation.v1",
+    "caseId": "dev-saas-figma-2022",
+    "partition": "development",
+    "measurementDate": "2022-09-14",
+    "expectedRoute": {
+      "route": "software-saas",
+      "acceptableAlternativeRoutes": [],
+      "evidenceIds": [
+        "ev-268f1126e759",
+        "ev-aeeecbc6a15d",
+        "ev-bc3049cd3474"
+      ],
+      "rationale": "The cutoff evidence describes collaborative design software, FigJam and subscription software characteristics."
+    },
+    "binaryClaims": [
+      {
+        "id": "figma-adobe-deal-known-by-cutoff",
+        "statement": "The Adobe acquisition announcement was public by the 2022-09-14 cutoff.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-a7c03955fdff"
+        ],
+        "sourceAvailability": "post-cutoff-excluded"
+      },
+      {
+        "id": "figma-figjam-launched",
+        "statement": "Figma launched FigJam before the cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-bc3049cd3474"
+        ]
+      },
+      {
+        "id": "figma-series-e-closed",
+        "statement": "Figma closed a Series E financing before the cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-268f1126e759"
+        ]
+      }
+    ],
+    "observableClaims": [
+      {
+        "id": "figma-figjam-paid-plan-prices",
+        "statement": "Figma said FigJam would have USD 3 and USD 5 paid editor plans in 2022.",
+        "expectedValue": [
+          "USD 3 per editor per month",
+          "USD 5 per editor per month"
+        ],
+        "unit": "monthly editor plan prices",
+        "period": {
+          "instantDate": "2021-04-21"
+        },
+        "evidenceIds": [
+          "ev-bc3049cd3474"
+        ]
+      },
+      {
+        "id": "figma-series-e-amount",
+        "statement": "Figma's Series E amount was reported as USD 200 million.",
+        "expectedValue": 200,
+        "unit": "USD millions",
+        "period": {
+          "instantDate": "2021-06-24"
+        },
+        "evidenceIds": [
+          "ev-aeeecbc6a15d"
+        ]
+      },
+      {
+        "id": "figma-series-e-headline-valuation",
+        "statement": "Figma's Series E headline valuation was reported as USD 10 billion.",
+        "expectedValue": 10,
+        "unit": "USD billions headline valuation",
+        "period": {
+          "instantDate": "2021-06-24"
+        },
+        "evidenceIds": [
+          "ev-aeeecbc6a15d"
+        ]
+      }
+    ],
+    "expectedAbstentions": [
+      {
+        "id": "figma-adobe-transaction-abstain",
+        "field": "headline-valuation",
+        "reasonCode": "post-cutoff-transaction-announcement",
+        "description": "The USD 20bn Adobe announcement was published one day after the cutoff and must be excluded from input evidence.",
+        "evidenceIds": [
+          "ev-aeeecbc6a15d"
+        ]
+      },
+      {
+        "id": "figma-security-fair-value-abstain",
+        "field": "security-level-fair-value",
+        "reasonCode": "missing-security-rights-and-cap-table",
+        "description": "The Series E headline valuation does not disclose share rights, full cap table or security-level fair value.",
+        "evidenceIds": [
+          "ev-aeeecbc6a15d"
+        ]
+      }
+    ],
+    "valuationSeparationExpectations": {
+      "allowedValuationFields": [
+        "headline-valuation"
+      ],
+      "mustNotConflate": [
+        "Series E headline valuation with enterprise value",
+        "Series E headline valuation with security-level fair value",
+        "post-cutoff Adobe consideration with pre-cutoff input evidence"
+      ],
+      "notes": "The Adobe transaction did not close and is not an eligible valuation-error target."
+    },
+    "completenessExpectations": [
+      {
+        "id": "figma-cover-product-funding-and-leakage",
+        "description": "A complete answer should cover Figma product route, Series E funding, FigJam evidence, missing security rights and the post-cutoff Adobe leakage warning.",
+        "requiredEvidenceClasses": [
+          "company-primary",
+          "news"
+        ],
+        "requiredTopics": [
+          "funding context",
+          "post-cutoff exclusion",
+          "product evidence",
+          "software-saas route"
+        ],
+        "evidenceIds": [
+          "ev-268f1126e759",
+          "ev-aeeecbc6a15d",
+          "ev-bc3049cd3474"
+        ]
+      }
+    ],
+    "historicalValuationTargets": {
+      "eligible": false,
+      "reason": "Manifest marks this case ineligible because the announced Adobe acquisition did not close.",
+      "targets": []
+    }
+  },
+  "runnerOutput": {
+    "schemaVersion": "trace.benchmark-runner-output.v1",
+    "runnerName": "trace-full",
+    "runId": "run-dev-generalization-v1",
+    "caseId": "dev-saas-figma-2022",
+    "partition": "development",
+    "status": "completed",
+    "timing": {
+      "schemaVersion": "trace.benchmark-timing.v1",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.322Z",
+      "durationMs": 322
+    },
+    "rawOutput": {
+      "markdown": "# TRACE Report: Figma, Inc.\n\n## Summary\n- Company: Figma, Inc. (US; identity resolved)\n- Measurement date: 2022-09-14\n- Decision mode: full-analysis\n- Sufficiency: sufficient (0.85)\n- Route: software-saas\n- Review: warnings\n- Run ID: run-dev-generalization-v1\n\n## Evidence Ledger\n| Evidence ID | Source class | Published | Retrieved | Source | Excerpt |\n| --- | --- | --- | --- | --- | --- |\n| ev-268f1126e759 | company-primary | 2021-06-24 | 2026-07-26 | Figma's Series E (https://www.figma.com/blog/figmas-series-e/) | Figma announced a new funding round led by Durable Capital with Counterpoint Global joining as a new investor. |\n| ev-aeeecbc6a15d | news | 2021-06-24 | 2026-07-26 | Figma raises USD 200 million at USD 10 billion valuation (https://www.theinformation.com/briefings/5a0e84) | Public briefing reports Figma raised USD 200m Series E funding at a USD 10bn valuation. |\n| ev-bc3049cd3474 | company-primary | 2021-04-21 | 2026-07-26 | Introducing FigJam (https://www.figma.com/blog/introducing-figjam/) | Figma introduced FigJam as an online whiteboard for brainstorming and ideation with teams. |\n\n## Material Facts\n- FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration. value=sticky notes, drawing tools, shapes and connectors, stamps, cursor chats, audio collaboration; period=instant 2021-04-21; epistemic=extracted [ev-bc3049cd3474]\n- Figma announced it closed a Series E financing round on 2021-06-24. value=Series E closed; period=instant 2021-06-24; epistemic=observed [ev-268f1126e759]\n- Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration. value=collaborative design software; period=instant 2021-06-24; epistemic=extracted [ev-268f1126e759]\n- Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams. value=FigJam launched; period=instant 2021-04-21; epistemic=observed [ev-bc3049cd3474]\n- Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month. value=USD 3 per editor per month, USD 5 per editor per month; period=instant 2021-04-21; epistemic=observed [ev-bc3049cd3474]\n- Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated. value=Morgan Stanley Counterpoint Global, Index, Greylock, Kleiner Perkins, Sequoia, a16z; period=instant 2021-06-24; epistemic=observed [ev-268f1126e759]\n- Figma said the Series E was led by Durable Capital Partners. value=Durable Capital Partners; period=instant 2021-06-24; epistemic=observed [ev-268f1126e759]\n- Public reporting described Figma's Series E amount as USD 200 million. value=200; unit=USD millions; period=instant 2021-06-24; epistemic=observed [ev-aeeecbc6a15d]\n- Public reporting described Figma's Series E headline valuation as USD 10 billion. value=10; unit=USD billions headline valuation; period=instant 2021-06-24; epistemic=observed [ev-aeeecbc6a15d]\n\n## Inferences\n- Enterprise Value abstained: Software product, customer, funding, or qualitative traction evidence supports the software-SaaS route, but no public revenue, margin, or cash-flow statements support enterprise value. [ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474]\n- Headline Valuation abstained: TRACE excludes an acquisition, merger, or transaction announcement published after the measurement-date cutoff and does not use it as a headline-valuation input. [ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474]\n- Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474]\n- Selected route software-saas: Evidence describes software products for team collaboration, product or issue tracking, developer tools, and paid or subscription plans. [ev-268f1126e759, ev-bc3049cd3474]\n- Sufficiency is sufficient with score 0.85: Evidence coverage is sufficient for route selection before valuation.\n- Total Equity Value abstained: TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence. [ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474]\n\n## Valuation\n### Headline Valuation\n- Status: abstained\n- Reason: post-cutoff-transaction-announcement\n- Explanation: TRACE excludes an acquisition, merger, or transaction announcement published after the measurement-date cutoff and does not use it as a headline-valuation input.\n- Evidence: ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-cutoff-visible-transaction | Cutoff-visible transaction | headline-valuation | TRACE abstains from a cutoff-date headline valuation. |\n\n### Enterprise Value\n- Status: abstained\n- Reason: no-public-financial-statements\n- Explanation: Software product, customer, funding, or qualitative traction evidence supports the software-SaaS route, but no public revenue, margin, or cash-flow statements support enterprise value.\n- Evidence: ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-public-financial-statements | Public financial statements | enterprise-value | TRACE abstains from enterprise value. |\n\n### Total Equity Value\n- Status: abstained\n- Reason: missing-total-equity-capitalization\n- Explanation: TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.\n- Evidence: ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-total-equity-capitalization | Total equity capitalization | total-equity-value | TRACE abstains from total equity value. |\n\n### Security-Level Fair Value\n- Status: abstained\n- Reason: missing-security-rights-and-cap-table\n- Explanation: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- Evidence: ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-cap-table | Cap table | total-equity-value, security-level-fair-value | TRACE cannot allocate value across securities or holders. |\n| missing-dilution | Dilution | total-equity-value, security-level-fair-value | TRACE cannot convert company-level headline value into per-security fair value. |\n| missing-share-preferences | Share preferences | security-level-fair-value | TRACE cannot determine whether the security participates equally in the headline value. |\n| missing-share-rights | Share rights | security-level-fair-value | TRACE cannot assign the headline reference to a specific share class. |\n\n## Limitations\n- Evidence record figma-2022-09-15-adobe-acquisition-post-cutoff was published after the measurement date and was excluded.\n- Excluded figma-2022-09-15-adobe-acquisition-post-cutoff because publishedDate 2022-09-15 is after measurementDate 2022-09-14.\n- Software product, customer, funding, or qualitative traction evidence supports the software-SaaS route, but no public revenue, margin, or cash-flow statements support enterprise value.\n- TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.\n- TRACE excludes an acquisition, merger, or transaction announcement published after the measurement-date cutoff and does not use it as a headline-valuation input.\n- TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.\n- extraction note figma-sec-cik-post-cutoff-note: Figma's SEC CIK is available from post-cutoff public filings, but those filings are not eligible input for the 2022-09-14 case.\n\n## Conflicts\n- None identified.\n\n## Counterarguments\n- Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: financial-services, marketplace, biotech-rnpv, asset-based, recent-transaction, general-private-company.\n\n## Missing Information\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-cap-table | Cap table | total-equity-value, security-level-fair-value | TRACE cannot allocate value across securities or holders. |\n| missing-cutoff-visible-transaction | Cutoff-visible transaction | headline-valuation | TRACE abstains from a cutoff-date headline valuation. |\n| missing-dilution | Dilution | total-equity-value, security-level-fair-value | TRACE cannot convert company-level headline value into per-security fair value. |\n| missing-financial-and-operating-fact-coverage | Financial and operating fact coverage | routing, sufficiency | TRACE cannot support route selection without this evidence. |\n| missing-public-financial-statements | Public financial statements | enterprise-value | TRACE abstains from enterprise value. |\n| missing-share-preferences | Share preferences | security-level-fair-value | TRACE cannot determine whether the security participates equally in the headline value. |\n| missing-share-rights | Share rights | security-level-fair-value | TRACE cannot assign the headline reference to a specific share class. |\n| missing-total-equity-capitalization | Total equity capitalization | total-equity-value | TRACE abstains from total equity value. |\n\n## Next Diligence Questions\n- What evidence resolves Cap table for total-equity-value, security-level-fair-value?\n- What evidence resolves Cutoff-visible transaction for headline-valuation?\n- What evidence resolves Dilution for total-equity-value, security-level-fair-value?\n- What evidence resolves Financial and operating fact coverage for routing, sufficiency?\n- What evidence resolves Public financial statements for enterprise-value?\n- What evidence resolves Share preferences for security-level-fair-value?\n- What evidence resolves Share rights for security-level-fair-value?\n- What evidence resolves Total equity capitalization for total-equity-value?\n\n## Reviewer Findings\n- Reviewer version: trace-reviewer.v1\n- Status: warnings\n\n| ID | Severity | Category | Evidence | Message |\n| --- | --- | --- | --- | --- |\n| review-abstention-triggers | pass | abstention | ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474 | Abstained valuation fields include missing-information reasons, and security-level triggers are respected. |\n| review-calculation-integrity | pass | calculation | ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474 | No concluded valuation calculations were emitted; abstentions are explicit. |\n| review-citation-support | pass | evidence | ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474 | Sufficiency, route, and valuation claims cite included evidence IDs where citations are required. |\n| review-cutoff-compliance | warning | cutoff | ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474 | Post-measurement-date evidence was excluded by provider validation and remains visible in warnings. |\n| review-entity-certainty | pass | entity | ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474 | Target identity is resolved and supported by included evidence. |\n| review-evidence-coverage | pass | evidence | ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474 | Evidence coverage satisfies the sufficiency gate for route selection. |\n| review-route-appropriateness | pass | route | ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474 | Route selection is consistent with sufficiency status: software-saas. |\n| review-valuation-field-separation | pass | valuation-separation | ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474 | Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields. |\n\n## Run Metadata\n- Run ID: run-dev-generalization-v1\n- Runtime version: 0.1.0\n- Command: trace benchmark --partition development --runner trace-full --case-id dev-saas-figma-2022\n- Measurement date: 2022-09-14\n- Started at: 2026-07-26T00:00:00.000Z\n- Completed at: 2026-07-26T00:00:00.322Z\n- Duration ms: 322\n- Input path: benchmark:development:dev-saas-figma-2022\n- Output directory: benchmark-artifact:development/run-dev-generalization-v1/trace-full/dev-saas-figma-2022\n- Warnings:\n- Excluded figma-2022-09-15-adobe-acquisition-post-cutoff because publishedDate 2022-09-15 is after measurementDate 2022-09-14.\n",
+      "json": {
+        "schemaVersion": "trace.trace-full-runner-output.v1",
+        "runnerName": "trace-full",
+        "analyzerVersion": "0.1.0",
+        "inputFingerprint": "e41fd99ae434",
+        "case": {
+          "caseId": "dev-saas-figma-2022",
+          "partition": "development",
+          "scoringRole": "scored",
+          "countedInScoring": true,
+          "companyLegalName": "Figma, Inc.",
+          "measurementDate": "2022-09-14",
+          "cutoffDate": "2022-09-14",
+          "dataTier": "medium",
+          "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+          "sourceRecordIds": [
+            "figma-2021-04-21-figjam-launch",
+            "figma-2021-06-24-series-e-blog",
+            "figma-2021-06-24-series-e-value-news"
+          ]
+        },
+        "sourcePolicy": {
+          "approvedPublicSourceCategories": [
+            "company-primary",
+            "legal-record",
+            "news",
+            "regulatory-filing"
+          ],
+          "redistributionStatus": "public-urls-redistribution-not-established",
+          "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+          "onlyUrlsAndShortExcerptsMayBeCommitted": true
+        },
+        "authorityBoundary": {
+          "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+          "officialContestRulesStatus": "not-supplied",
+          "contestComplianceClaimAllowed": false,
+          "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+          "prohibitedClaims": [
+            "appraisal status",
+            "benchmark superiority",
+            "contest readiness",
+            "investment advice",
+            "official contest compliance"
+          ]
+        },
+        "analyzerPath": [
+          "evidence-ledger",
+          "sufficiency-gating",
+          "route-selection",
+          "valuation-engine",
+          "adversarial-review",
+          "report-composer"
+        ],
+        "runtimeResult": {
+          "ledger": {
+            "schemaVersion": "trace.evidence-ledger.v1",
+            "target": {
+              "legalName": "Figma, Inc.",
+              "jurisdiction": "US",
+              "identifiers": [
+                {
+                  "scheme": "other",
+                  "value": "figma.com",
+                  "jurisdiction": "US"
+                }
+              ],
+              "aliases": [
+                "Figma"
+              ],
+              "identityConfidence": "resolved"
+            },
+            "measurementDate": "2022-09-14",
+            "decisionMode": "full-analysis",
+            "evidence": [
+              {
+                "id": "ev-bc3049cd3474",
+                "sourceUrl": "https://www.figma.com/blog/introducing-figjam/",
+                "sourceTitle": "Introducing FigJam",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2021-04-21",
+                "effectiveDate": "2021-04-21",
+                "sourceClass": "company-primary",
+                "epistemicClass": "extracted",
+                "locator": "Figma blog, 21 Apr 2021",
+                "shortExcerpt": "Figma introduced FigJam as an online whiteboard for brainstorming and ideation with teams.",
+                "observedFacts": [
+                  {
+                    "id": "fact-17d82cf23752",
+                    "statement": "FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration.",
+                    "epistemicClass": "extracted",
+                    "value": [
+                      "sticky notes",
+                      "drawing tools",
+                      "shapes and connectors",
+                      "stamps",
+                      "cursor chats",
+                      "audio collaboration"
+                    ],
+                    "period": {
+                      "instantDate": "2021-04-21"
+                    }
+                  },
+                  {
+                    "id": "fact-6be7bbd07589",
+                    "statement": "Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams.",
+                    "epistemicClass": "observed",
+                    "value": "FigJam launched",
+                    "period": {
+                      "instantDate": "2021-04-21"
+                    }
+                  },
+                  {
+                    "id": "fact-e1f9af46f128",
+                    "statement": "Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month.",
+                    "epistemicClass": "observed",
+                    "value": [
+                      "USD 3 per editor per month",
+                      "USD 5 per editor per month"
+                    ],
+                    "period": {
+                      "instantDate": "2021-04-21"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ev-268f1126e759",
+                "sourceUrl": "https://www.figma.com/blog/figmas-series-e/",
+                "sourceTitle": "Figma's Series E",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2021-06-24",
+                "effectiveDate": "2021-06-24",
+                "sourceClass": "company-primary",
+                "epistemicClass": "observed",
+                "locator": "Figma blog, 24 Jun 2021",
+                "shortExcerpt": "Figma announced a new funding round led by Durable Capital with Counterpoint Global joining as a new investor.",
+                "observedFacts": [
+                  {
+                    "id": "fact-0c4d3f19d42f",
+                    "statement": "Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration.",
+                    "epistemicClass": "extracted",
+                    "value": "collaborative design software",
+                    "period": {
+                      "instantDate": "2021-06-24"
+                    }
+                  },
+                  {
+                    "id": "fact-088c05567311",
+                    "statement": "Figma announced it closed a Series E financing round on 2021-06-24.",
+                    "epistemicClass": "observed",
+                    "value": "Series E closed",
+                    "period": {
+                      "instantDate": "2021-06-24"
+                    }
+                  },
+                  {
+                    "id": "fact-2ea14245213e",
+                    "statement": "Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated.",
+                    "epistemicClass": "observed",
+                    "value": [
+                      "Morgan Stanley Counterpoint Global",
+                      "Index",
+                      "Greylock",
+                      "Kleiner Perkins",
+                      "Sequoia",
+                      "a16z"
+                    ],
+                    "period": {
+                      "instantDate": "2021-06-24"
+                    }
+                  },
+                  {
+                    "id": "fact-c97da2b587dc",
+                    "statement": "Figma said the Series E was led by Durable Capital Partners.",
+                    "epistemicClass": "observed",
+                    "value": "Durable Capital Partners",
+                    "period": {
+                      "instantDate": "2021-06-24"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ev-aeeecbc6a15d",
+                "sourceUrl": "https://www.theinformation.com/briefings/5a0e84",
+                "sourceTitle": "Figma raises USD 200 million at USD 10 billion valuation",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2021-06-24",
+                "effectiveDate": "2021-06-24",
+                "sourceClass": "news",
+                "epistemicClass": "observed",
+                "locator": "The Information briefing",
+                "shortExcerpt": "Public briefing reports Figma raised USD 200m Series E funding at a USD 10bn valuation.",
+                "observedFacts": [
+                  {
+                    "id": "fact-0df274972b4b",
+                    "statement": "Public reporting described Figma's Series E amount as USD 200 million.",
+                    "epistemicClass": "observed",
+                    "value": 200,
+                    "unit": "USD millions",
+                    "period": {
+                      "instantDate": "2021-06-24"
+                    }
+                  },
+                  {
+                    "id": "fact-daac40ca2bdc",
+                    "statement": "Public reporting described Figma's Series E headline valuation as USD 10 billion.",
+                    "epistemicClass": "observed",
+                    "value": 10,
+                    "unit": "USD billions headline valuation",
+                    "period": {
+                      "instantDate": "2021-06-24"
+                    }
+                  }
+                ]
+              }
+            ],
+            "excludedRecords": [
+              {
+                "recordId": "figma-2022-09-15-adobe-acquisition-post-cutoff",
+                "reasonCode": "published-after-measurement-date",
+                "message": "Evidence record figma-2022-09-15-adobe-acquisition-post-cutoff was published after the measurement date and was excluded.",
+                "sourceUrl": "https://www.businesswire.com/news/home/20220915005546/en/Adobe-to-Acquire-Figma",
+                "sourceTitle": "Adobe to acquire Figma",
+                "publishedDate": "2022-09-15",
+                "measurementDate": "2022-09-14"
+              }
+            ],
+            "failedNotes": [
+              {
+                "id": "figma-sec-cik-post-cutoff-note",
+                "stage": "extraction",
+                "sourceUrl": "https://www.sec.gov/",
+                "sourceTitle": "SEC EDGAR post-cutoff Figma filings",
+                "attemptedAt": "2026-07-26T00:00:00Z",
+                "note": "Figma's SEC CIK is available from post-cutoff public filings, but those filings are not eligible input for the 2022-09-14 case."
+              }
+            ],
+            "warnings": [
+              {
+                "code": "published-after-measurement-date",
+                "message": "Excluded figma-2022-09-15-adobe-acquisition-post-cutoff because publishedDate 2022-09-15 is after measurementDate 2022-09-14.",
+                "recordIds": [
+                  "figma-2022-09-15-adobe-acquisition-post-cutoff"
+                ],
+                "sourceUrls": [
+                  "https://www.businesswire.com/news/home/20220915005546/en/Adobe-to-Acquire-Figma"
+                ],
+                "evidenceIds": []
+              }
+            ]
+          },
+          "sufficiency": {
+            "status": "sufficient",
+            "score": 0.85,
+            "criteria": [
+              {
+                "criterion": "Entity resolution",
+                "status": "met",
+                "explanation": "The target identity is resolved and supported by eligible evidence.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              },
+              {
+                "criterion": "Measurement-date eligible evidence",
+                "status": "met",
+                "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              },
+              {
+                "criterion": "Source quality",
+                "status": "met",
+                "explanation": "Multiple high-authority source classes support routing.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-bc3049cd3474"
+                ]
+              },
+              {
+                "criterion": "Route-defining business-model evidence",
+                "status": "met",
+                "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              },
+              {
+                "criterion": "Financial and operating fact coverage",
+                "status": "missing",
+                "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              }
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-financial-and-operating-fact-coverage",
+                "topic": "Financial and operating fact coverage",
+                "description": "Evidence does not contain financial or operating facts usable for route selection.",
+                "consequence": "TRACE cannot support route selection without this evidence.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              }
+            ],
+            "rationale": "Evidence coverage is sufficient for route selection before valuation."
+          },
+          "route": {
+            "status": "selected",
+            "selectedRoute": "software-saas",
+            "selectedReasons": [
+              {
+                "summary": "Evidence describes software products for team collaboration, product or issue tracking, developer tools, and paid or subscription plans.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-bc3049cd3474"
+                ]
+              }
+            ],
+            "candidates": [
+              {
+                "route": "software-saas",
+                "status": "selected",
+                "score": 0.6667,
+                "reasons": [
+                  {
+                    "summary": "Evidence describes software products for team collaboration, product or issue tracking, developer tools, and paid or subscription plans.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.2,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected software saas route.",
+                    "evidenceIds": [
+                      "ev-aeeecbc6a15d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for recent transaction was considered but did not outrank the selected software saas route.",
+                    "evidenceIds": [
+                      "ev-aeeecbc6a15d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "general-private-company",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for general private company was considered but did not outrank the selected software saas route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rejectedRoutes": [
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.2,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected software saas route.",
+                    "evidenceIds": [
+                      "ev-aeeecbc6a15d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for recent transaction was considered but did not outrank the selected software saas route.",
+                    "evidenceIds": [
+                      "ev-aeeecbc6a15d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "general-private-company",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for general private company was considered but did not outrank the selected software saas route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "valuation": {
+            "headlineValuation": {
+              "status": "abstained",
+              "field": "headline-valuation",
+              "abstention": {
+                "reasonCode": "post-cutoff-transaction-announcement",
+                "explanation": "TRACE excludes an acquisition, merger, or transaction announcement published after the measurement-date cutoff and does not use it as a headline-valuation input.",
+                "missingInformation": [
+                  {
+                    "id": "missing-cutoff-visible-transaction",
+                    "topic": "Cutoff-visible transaction",
+                    "description": "The available transaction announcement was published after the measurement date and is excluded from model inputs.",
+                    "consequence": "TRACE abstains from a cutoff-date headline valuation.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              }
+            },
+            "enterpriseValue": {
+              "status": "abstained",
+              "field": "enterprise-value",
+              "abstention": {
+                "reasonCode": "no-public-financial-statements",
+                "explanation": "Software product, customer, funding, or qualitative traction evidence supports the software-SaaS route, but no public revenue, margin, or cash-flow statements support enterprise value.",
+                "missingInformation": [
+                  {
+                    "id": "missing-public-financial-statements",
+                    "topic": "Public financial statements",
+                    "description": "The evidence does not provide a public revenue, margin, cash-flow, or comparable-company base for enterprise value.",
+                    "consequence": "TRACE abstains from enterprise value.",
+                    "requiredFor": [
+                      "enterprise-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              }
+            },
+            "totalEquityValue": {
+              "status": "abstained",
+              "field": "total-equity-value",
+              "abstention": {
+                "reasonCode": "missing-total-equity-capitalization",
+                "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+                "missingInformation": [
+                  {
+                    "id": "missing-total-equity-capitalization",
+                    "topic": "Total equity capitalization",
+                    "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+                    "consequence": "TRACE abstains from total equity value.",
+                    "requiredFor": [
+                      "total-equity-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              }
+            },
+            "securityLevelFairValue": {
+              "status": "abstained",
+              "field": "security-level-fair-value",
+              "abstention": {
+                "reasonCode": "missing-security-rights-and-cap-table",
+                "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+                "missingInformation": [
+                  {
+                    "id": "missing-cap-table",
+                    "topic": "Cap table",
+                    "description": "The evidence ledger does not disclose capitalization table data.",
+                    "consequence": "TRACE cannot allocate value across securities or holders.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-dilution",
+                    "topic": "Dilution",
+                    "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                    "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-preferences",
+                    "topic": "Share preferences",
+                    "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                    "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-rights",
+                    "topic": "Share rights",
+                    "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                    "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              }
+            }
+          },
+          "review": {
+            "status": "warnings",
+            "reviewerVersion": "trace-reviewer.v1",
+            "findings": [
+              {
+                "id": "review-abstention-triggers",
+                "severity": "pass",
+                "category": "abstention",
+                "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-calculation-integrity",
+                "severity": "pass",
+                "category": "calculation",
+                "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-citation-support",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-cutoff-compliance",
+                "severity": "warning",
+                "category": "cutoff",
+                "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-entity-certainty",
+                "severity": "pass",
+                "category": "entity",
+                "message": "Target identity is resolved and supported by included evidence.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-evidence-coverage",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-route-appropriateness",
+                "severity": "pass",
+                "category": "route",
+                "message": "Route selection is consistent with sufficiency status: software-saas.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-valuation-field-separation",
+                "severity": "pass",
+                "category": "valuation-separation",
+                "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              }
+            ]
+          }
+        },
+        "report": {
+          "schemaVersion": "trace.report.v1",
+          "company": {
+            "legalName": "Figma, Inc.",
+            "jurisdiction": "US",
+            "identifiers": [
+              {
+                "scheme": "other",
+                "value": "figma.com",
+                "jurisdiction": "US"
+              }
+            ],
+            "aliases": [
+              "Figma"
+            ],
+            "identityConfidence": "resolved"
+          },
+          "measurementDate": "2022-09-14",
+          "decisionMode": "full-analysis",
+          "evidence": [
+            {
+              "id": "ev-268f1126e759",
+              "sourceUrl": "https://www.figma.com/blog/figmas-series-e/",
+              "sourceTitle": "Figma's Series E",
+              "retrievedDate": "2026-07-26",
+              "publishedDate": "2021-06-24",
+              "effectiveDate": "2021-06-24",
+              "sourceClass": "company-primary",
+              "epistemicClass": "observed",
+              "locator": "Figma blog, 24 Jun 2021",
+              "shortExcerpt": "Figma announced a new funding round led by Durable Capital with Counterpoint Global joining as a new investor.",
+              "observedFacts": [
+                {
+                  "id": "fact-0c4d3f19d42f",
+                  "statement": "Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration.",
+                  "epistemicClass": "extracted",
+                  "value": "collaborative design software",
+                  "period": {
+                    "instantDate": "2021-06-24"
+                  }
+                },
+                {
+                  "id": "fact-088c05567311",
+                  "statement": "Figma announced it closed a Series E financing round on 2021-06-24.",
+                  "epistemicClass": "observed",
+                  "value": "Series E closed",
+                  "period": {
+                    "instantDate": "2021-06-24"
+                  }
+                },
+                {
+                  "id": "fact-2ea14245213e",
+                  "statement": "Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated.",
+                  "epistemicClass": "observed",
+                  "value": [
+                    "Morgan Stanley Counterpoint Global",
+                    "Index",
+                    "Greylock",
+                    "Kleiner Perkins",
+                    "Sequoia",
+                    "a16z"
+                  ],
+                  "period": {
+                    "instantDate": "2021-06-24"
+                  }
+                },
+                {
+                  "id": "fact-c97da2b587dc",
+                  "statement": "Figma said the Series E was led by Durable Capital Partners.",
+                  "epistemicClass": "observed",
+                  "value": "Durable Capital Partners",
+                  "period": {
+                    "instantDate": "2021-06-24"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ev-aeeecbc6a15d",
+              "sourceUrl": "https://www.theinformation.com/briefings/5a0e84",
+              "sourceTitle": "Figma raises USD 200 million at USD 10 billion valuation",
+              "retrievedDate": "2026-07-26",
+              "publishedDate": "2021-06-24",
+              "effectiveDate": "2021-06-24",
+              "sourceClass": "news",
+              "epistemicClass": "observed",
+              "locator": "The Information briefing",
+              "shortExcerpt": "Public briefing reports Figma raised USD 200m Series E funding at a USD 10bn valuation.",
+              "observedFacts": [
+                {
+                  "id": "fact-0df274972b4b",
+                  "statement": "Public reporting described Figma's Series E amount as USD 200 million.",
+                  "epistemicClass": "observed",
+                  "value": 200,
+                  "unit": "USD millions",
+                  "period": {
+                    "instantDate": "2021-06-24"
+                  }
+                },
+                {
+                  "id": "fact-daac40ca2bdc",
+                  "statement": "Public reporting described Figma's Series E headline valuation as USD 10 billion.",
+                  "epistemicClass": "observed",
+                  "value": 10,
+                  "unit": "USD billions headline valuation",
+                  "period": {
+                    "instantDate": "2021-06-24"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ev-bc3049cd3474",
+              "sourceUrl": "https://www.figma.com/blog/introducing-figjam/",
+              "sourceTitle": "Introducing FigJam",
+              "retrievedDate": "2026-07-26",
+              "publishedDate": "2021-04-21",
+              "effectiveDate": "2021-04-21",
+              "sourceClass": "company-primary",
+              "epistemicClass": "extracted",
+              "locator": "Figma blog, 21 Apr 2021",
+              "shortExcerpt": "Figma introduced FigJam as an online whiteboard for brainstorming and ideation with teams.",
+              "observedFacts": [
+                {
+                  "id": "fact-17d82cf23752",
+                  "statement": "FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration.",
+                  "epistemicClass": "extracted",
+                  "value": [
+                    "sticky notes",
+                    "drawing tools",
+                    "shapes and connectors",
+                    "stamps",
+                    "cursor chats",
+                    "audio collaboration"
+                  ],
+                  "period": {
+                    "instantDate": "2021-04-21"
+                  }
+                },
+                {
+                  "id": "fact-6be7bbd07589",
+                  "statement": "Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams.",
+                  "epistemicClass": "observed",
+                  "value": "FigJam launched",
+                  "period": {
+                    "instantDate": "2021-04-21"
+                  }
+                },
+                {
+                  "id": "fact-e1f9af46f128",
+                  "statement": "Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month.",
+                  "epistemicClass": "observed",
+                  "value": [
+                    "USD 3 per editor per month",
+                    "USD 5 per editor per month"
+                  ],
+                  "period": {
+                    "instantDate": "2021-04-21"
+                  }
+                }
+              ]
+            }
+          ],
+          "sufficiency": {
+            "status": "sufficient",
+            "score": 0.85,
+            "criteria": [
+              {
+                "criterion": "Entity resolution",
+                "status": "met",
+                "explanation": "The target identity is resolved and supported by eligible evidence.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              },
+              {
+                "criterion": "Measurement-date eligible evidence",
+                "status": "met",
+                "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              },
+              {
+                "criterion": "Source quality",
+                "status": "met",
+                "explanation": "Multiple high-authority source classes support routing.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-bc3049cd3474"
+                ]
+              },
+              {
+                "criterion": "Route-defining business-model evidence",
+                "status": "met",
+                "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              },
+              {
+                "criterion": "Financial and operating fact coverage",
+                "status": "missing",
+                "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              }
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-financial-and-operating-fact-coverage",
+                "topic": "Financial and operating fact coverage",
+                "description": "Evidence does not contain financial or operating facts usable for route selection.",
+                "consequence": "TRACE cannot support route selection without this evidence.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              }
+            ],
+            "rationale": "Evidence coverage is sufficient for route selection before valuation."
+          },
+          "route": {
+            "status": "selected",
+            "selectedRoute": "software-saas",
+            "selectedReasons": [
+              {
+                "summary": "Evidence describes software products for team collaboration, product or issue tracking, developer tools, and paid or subscription plans.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-bc3049cd3474"
+                ]
+              }
+            ],
+            "candidates": [
+              {
+                "route": "software-saas",
+                "status": "selected",
+                "score": 0.6667,
+                "reasons": [
+                  {
+                    "summary": "Evidence describes software products for team collaboration, product or issue tracking, developer tools, and paid or subscription plans.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.2,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected software saas route.",
+                    "evidenceIds": [
+                      "ev-aeeecbc6a15d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for recent transaction was considered but did not outrank the selected software saas route.",
+                    "evidenceIds": [
+                      "ev-aeeecbc6a15d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "general-private-company",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for general private company was considered but did not outrank the selected software saas route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rejectedRoutes": [
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.2,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected software saas route.",
+                    "evidenceIds": [
+                      "ev-aeeecbc6a15d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for recent transaction was considered but did not outrank the selected software saas route.",
+                    "evidenceIds": [
+                      "ev-aeeecbc6a15d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "general-private-company",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for general private company was considered but did not outrank the selected software saas route.",
+                    "evidenceIds": [
+                      "ev-268f1126e759",
+                      "ev-aeeecbc6a15d",
+                      "ev-bc3049cd3474"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "valuation": {
+            "headlineValuation": {
+              "status": "abstained",
+              "field": "headline-valuation",
+              "abstention": {
+                "reasonCode": "post-cutoff-transaction-announcement",
+                "explanation": "TRACE excludes an acquisition, merger, or transaction announcement published after the measurement-date cutoff and does not use it as a headline-valuation input.",
+                "missingInformation": [
+                  {
+                    "id": "missing-cutoff-visible-transaction",
+                    "topic": "Cutoff-visible transaction",
+                    "description": "The available transaction announcement was published after the measurement date and is excluded from model inputs.",
+                    "consequence": "TRACE abstains from a cutoff-date headline valuation.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              }
+            },
+            "enterpriseValue": {
+              "status": "abstained",
+              "field": "enterprise-value",
+              "abstention": {
+                "reasonCode": "no-public-financial-statements",
+                "explanation": "Software product, customer, funding, or qualitative traction evidence supports the software-SaaS route, but no public revenue, margin, or cash-flow statements support enterprise value.",
+                "missingInformation": [
+                  {
+                    "id": "missing-public-financial-statements",
+                    "topic": "Public financial statements",
+                    "description": "The evidence does not provide a public revenue, margin, cash-flow, or comparable-company base for enterprise value.",
+                    "consequence": "TRACE abstains from enterprise value.",
+                    "requiredFor": [
+                      "enterprise-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              }
+            },
+            "totalEquityValue": {
+              "status": "abstained",
+              "field": "total-equity-value",
+              "abstention": {
+                "reasonCode": "missing-total-equity-capitalization",
+                "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+                "missingInformation": [
+                  {
+                    "id": "missing-total-equity-capitalization",
+                    "topic": "Total equity capitalization",
+                    "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+                    "consequence": "TRACE abstains from total equity value.",
+                    "requiredFor": [
+                      "total-equity-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              }
+            },
+            "securityLevelFairValue": {
+              "status": "abstained",
+              "field": "security-level-fair-value",
+              "abstention": {
+                "reasonCode": "missing-security-rights-and-cap-table",
+                "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+                "missingInformation": [
+                  {
+                    "id": "missing-cap-table",
+                    "topic": "Cap table",
+                    "description": "The evidence ledger does not disclose capitalization table data.",
+                    "consequence": "TRACE cannot allocate value across securities or holders.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-dilution",
+                    "topic": "Dilution",
+                    "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                    "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-preferences",
+                    "topic": "Share preferences",
+                    "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                    "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-rights",
+                    "topic": "Share rights",
+                    "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                    "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ]
+              }
+            }
+          },
+          "review": {
+            "status": "warnings",
+            "reviewerVersion": "trace-reviewer.v1",
+            "findings": [
+              {
+                "id": "review-abstention-triggers",
+                "severity": "pass",
+                "category": "abstention",
+                "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-calculation-integrity",
+                "severity": "pass",
+                "category": "calculation",
+                "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-citation-support",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-cutoff-compliance",
+                "severity": "warning",
+                "category": "cutoff",
+                "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-entity-certainty",
+                "severity": "pass",
+                "category": "entity",
+                "message": "Target identity is resolved and supported by included evidence.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-evidence-coverage",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-route-appropriateness",
+                "severity": "pass",
+                "category": "route",
+                "message": "Route selection is consistent with sufficiency status: software-saas.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-valuation-field-separation",
+                "severity": "pass",
+                "category": "valuation-separation",
+                "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+                "evidenceIds": [
+                  "ev-268f1126e759",
+                  "ev-aeeecbc6a15d",
+                  "ev-bc3049cd3474"
+                ],
+                "missingInformation": []
+              }
+            ]
+          },
+          "sections": {
+            "facts": [
+              "FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration. value=sticky notes, drawing tools, shapes and connectors, stamps, cursor chats, audio collaboration; period=instant 2021-04-21; epistemic=extracted [ev-bc3049cd3474]",
+              "Figma announced it closed a Series E financing round on 2021-06-24. value=Series E closed; period=instant 2021-06-24; epistemic=observed [ev-268f1126e759]",
+              "Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration. value=collaborative design software; period=instant 2021-06-24; epistemic=extracted [ev-268f1126e759]",
+              "Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams. value=FigJam launched; period=instant 2021-04-21; epistemic=observed [ev-bc3049cd3474]",
+              "Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month. value=USD 3 per editor per month, USD 5 per editor per month; period=instant 2021-04-21; epistemic=observed [ev-bc3049cd3474]",
+              "Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated. value=Morgan Stanley Counterpoint Global, Index, Greylock, Kleiner Perkins, Sequoia, a16z; period=instant 2021-06-24; epistemic=observed [ev-268f1126e759]",
+              "Figma said the Series E was led by Durable Capital Partners. value=Durable Capital Partners; period=instant 2021-06-24; epistemic=observed [ev-268f1126e759]",
+              "Public reporting described Figma's Series E amount as USD 200 million. value=200; unit=USD millions; period=instant 2021-06-24; epistemic=observed [ev-aeeecbc6a15d]",
+              "Public reporting described Figma's Series E headline valuation as USD 10 billion. value=10; unit=USD billions headline valuation; period=instant 2021-06-24; epistemic=observed [ev-aeeecbc6a15d]"
+            ],
+            "inferences": [
+              "Enterprise Value abstained: Software product, customer, funding, or qualitative traction evidence supports the software-SaaS route, but no public revenue, margin, or cash-flow statements support enterprise value. [ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474]",
+              "Headline Valuation abstained: TRACE excludes an acquisition, merger, or transaction announcement published after the measurement-date cutoff and does not use it as a headline-valuation input. [ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474]",
+              "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474]",
+              "Selected route software-saas: Evidence describes software products for team collaboration, product or issue tracking, developer tools, and paid or subscription plans. [ev-268f1126e759, ev-bc3049cd3474]",
+              "Sufficiency is sufficient with score 0.85: Evidence coverage is sufficient for route selection before valuation.",
+              "Total Equity Value abstained: TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence. [ev-268f1126e759, ev-aeeecbc6a15d, ev-bc3049cd3474]"
+            ],
+            "conflicts": [],
+            "limitations": [
+              "Evidence record figma-2022-09-15-adobe-acquisition-post-cutoff was published after the measurement date and was excluded.",
+              "Excluded figma-2022-09-15-adobe-acquisition-post-cutoff because publishedDate 2022-09-15 is after measurementDate 2022-09-14.",
+              "Software product, customer, funding, or qualitative traction evidence supports the software-SaaS route, but no public revenue, margin, or cash-flow statements support enterprise value.",
+              "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+              "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+              "TRACE excludes an acquisition, merger, or transaction announcement published after the measurement-date cutoff and does not use it as a headline-valuation input.",
+              "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.",
+              "extraction note figma-sec-cik-post-cutoff-note: Figma's SEC CIK is available from post-cutoff public filings, but those filings are not eligible input for the 2022-09-14 case."
+            ],
+            "counterarguments": [
+              "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: financial-services, marketplace, biotech-rnpv, asset-based, recent-transaction, general-private-company."
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-cap-table",
+                "topic": "Cap table",
+                "description": "The evidence ledger does not disclose capitalization table data.",
+                "consequence": "TRACE cannot allocate value across securities or holders.",
+                "requiredFor": [
+                  "total-equity-value",
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-cutoff-visible-transaction",
+                "topic": "Cutoff-visible transaction",
+                "description": "The available transaction announcement was published after the measurement date and is excluded from model inputs.",
+                "consequence": "TRACE abstains from a cutoff-date headline valuation.",
+                "requiredFor": [
+                  "headline-valuation"
+                ]
+              },
+              {
+                "id": "missing-dilution",
+                "topic": "Dilution",
+                "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                "requiredFor": [
+                  "total-equity-value",
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-financial-and-operating-fact-coverage",
+                "topic": "Financial and operating fact coverage",
+                "description": "Evidence does not contain financial or operating facts usable for route selection.",
+                "consequence": "TRACE cannot support route selection without this evidence.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              },
+              {
+                "id": "missing-public-financial-statements",
+                "topic": "Public financial statements",
+                "description": "The evidence does not provide a public revenue, margin, cash-flow, or comparable-company base for enterprise value.",
+                "consequence": "TRACE abstains from enterprise value.",
+                "requiredFor": [
+                  "enterprise-value"
+                ]
+              },
+              {
+                "id": "missing-share-preferences",
+                "topic": "Share preferences",
+                "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                "requiredFor": [
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-share-rights",
+                "topic": "Share rights",
+                "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                "requiredFor": [
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-total-equity-capitalization",
+                "topic": "Total equity capitalization",
+                "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+                "consequence": "TRACE abstains from total equity value.",
+                "requiredFor": [
+                  "total-equity-value"
+                ]
+              }
+            ],
+            "nextDiligenceQuestions": [
+              "What evidence resolves Cap table for total-equity-value, security-level-fair-value?",
+              "What evidence resolves Cutoff-visible transaction for headline-valuation?",
+              "What evidence resolves Dilution for total-equity-value, security-level-fair-value?",
+              "What evidence resolves Financial and operating fact coverage for routing, sufficiency?",
+              "What evidence resolves Public financial statements for enterprise-value?",
+              "What evidence resolves Share preferences for security-level-fair-value?",
+              "What evidence resolves Share rights for security-level-fair-value?",
+              "What evidence resolves Total equity capitalization for total-equity-value?"
+            ]
+          },
+          "run": {
+            "runId": "run-dev-generalization-v1",
+            "runtimeVersion": "0.1.0",
+            "command": "trace benchmark --partition development --runner trace-full --case-id dev-saas-figma-2022",
+            "measurementDate": "2022-09-14",
+            "startedAt": "2026-07-26T00:00:00.000Z",
+            "completedAt": "2026-07-26T00:00:00.322Z",
+            "durationMs": 322,
+            "inputPath": "benchmark:development:dev-saas-figma-2022",
+            "outputDirectory": "benchmark-artifact:development/run-dev-generalization-v1/trace-full/dev-saas-figma-2022",
+            "warnings": [
+              "Excluded figma-2022-09-15-adobe-acquisition-post-cutoff because publishedDate 2022-09-15 is after measurementDate 2022-09-14."
+            ]
+          }
+        },
+        "executionLog": {
+          "schemaVersion": "trace.execution-log.v1",
+          "runId": "run-dev-generalization-v1",
+          "runtimeVersion": "0.1.0",
+          "measurementDate": "2022-09-14",
+          "inputPath": "benchmark:development:dev-saas-figma-2022",
+          "outputPaths": {
+            "jsonReport": "benchmark-artifact:development/run-dev-generalization-v1/trace-full/dev-saas-figma-2022/raw-runner-output.json",
+            "markdownReport": "benchmark-artifact:development/run-dev-generalization-v1/trace-full/dev-saas-figma-2022/raw-runner-output.md",
+            "executionLog": "benchmark-artifact:development/run-dev-generalization-v1/trace-full/dev-saas-figma-2022/raw-runner-output.json#executionLog"
+          },
+          "startedAt": "2026-07-26T00:00:00.000Z",
+          "completedAt": "2026-07-26T00:00:00.322Z",
+          "durationMs": 322,
+          "validationWarnings": [
+            "Excluded figma-2022-09-15-adobe-acquisition-post-cutoff because publishedDate 2022-09-15 is after measurementDate 2022-09-14."
+          ],
+          "reviewerFindings": [
+            {
+              "id": "review-abstention-triggers",
+              "severity": "pass",
+              "category": "abstention",
+              "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+              "evidenceIds": [
+                "ev-268f1126e759",
+                "ev-aeeecbc6a15d",
+                "ev-bc3049cd3474"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-calculation-integrity",
+              "severity": "pass",
+              "category": "calculation",
+              "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+              "evidenceIds": [
+                "ev-268f1126e759",
+                "ev-aeeecbc6a15d",
+                "ev-bc3049cd3474"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-citation-support",
+              "severity": "pass",
+              "category": "evidence",
+              "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+              "evidenceIds": [
+                "ev-268f1126e759",
+                "ev-aeeecbc6a15d",
+                "ev-bc3049cd3474"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-cutoff-compliance",
+              "severity": "warning",
+              "category": "cutoff",
+              "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+              "evidenceIds": [
+                "ev-268f1126e759",
+                "ev-aeeecbc6a15d",
+                "ev-bc3049cd3474"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-entity-certainty",
+              "severity": "pass",
+              "category": "entity",
+              "message": "Target identity is resolved and supported by included evidence.",
+              "evidenceIds": [
+                "ev-268f1126e759",
+                "ev-aeeecbc6a15d",
+                "ev-bc3049cd3474"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-evidence-coverage",
+              "severity": "pass",
+              "category": "evidence",
+              "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+              "evidenceIds": [
+                "ev-268f1126e759",
+                "ev-aeeecbc6a15d",
+                "ev-bc3049cd3474"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-route-appropriateness",
+              "severity": "pass",
+              "category": "route",
+              "message": "Route selection is consistent with sufficiency status: software-saas.",
+              "evidenceIds": [
+                "ev-268f1126e759",
+                "ev-aeeecbc6a15d",
+                "ev-bc3049cd3474"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-valuation-field-separation",
+              "severity": "pass",
+              "category": "valuation-separation",
+              "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+              "evidenceIds": [
+                "ev-268f1126e759",
+                "ev-aeeecbc6a15d",
+                "ev-bc3049cd3474"
+              ],
+              "missingInformation": []
+            }
+          ],
+          "deterministicIdentifiers": {
+            "evidenceLedgerHash": "0369bc1890cb21e583c3045ebf1b5b8f7c3f5e4812a72e4f7ab5558cea00f523",
+            "runtimeResultHash": "da7a6075c434c7c97454ac725b820651aab4b7b8dfb0dc20782a2d5a908449c5"
+          }
+        }
+      }
+    },
+    "normalized": {
+      "claims": [
+        {
+          "id": "trace-valuation-0c0df28b8e72",
+          "kind": "abstention",
+          "statement": "Enterprise Value abstained: Software product, customer, funding, or qualitative traction evidence supports the software-SaaS route, but no public revenue, margin, or cash-flow statements support enterprise value.",
+          "value": "no-public-financial-statements",
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759"
+            },
+            {
+              "evidenceId": "ev-aeeecbc6a15d"
+            },
+            {
+              "evidenceId": "ev-bc3049cd3474"
+            }
+          ]
+        },
+        {
+          "id": "trace-valuation-e56467d606ad",
+          "kind": "abstention",
+          "statement": "Headline Valuation abstained: TRACE excludes an acquisition, merger, or transaction announcement published after the measurement-date cutoff and does not use it as a headline-valuation input.",
+          "value": "post-cutoff-transaction-announcement",
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759"
+            },
+            {
+              "evidenceId": "ev-aeeecbc6a15d"
+            },
+            {
+              "evidenceId": "ev-bc3049cd3474"
+            }
+          ]
+        },
+        {
+          "id": "trace-valuation-fec8fe290cc7",
+          "kind": "abstention",
+          "statement": "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "value": "missing-security-rights-and-cap-table",
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759"
+            },
+            {
+              "evidenceId": "ev-aeeecbc6a15d"
+            },
+            {
+              "evidenceId": "ev-bc3049cd3474"
+            }
+          ]
+        },
+        {
+          "id": "trace-valuation-78e84b8ffc68",
+          "kind": "abstention",
+          "statement": "Total Equity Value abstained: TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "value": "missing-total-equity-capitalization",
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759"
+            },
+            {
+              "evidenceId": "ev-aeeecbc6a15d"
+            },
+            {
+              "evidenceId": "ev-bc3049cd3474"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-53e524f53b1c",
+          "kind": "observable",
+          "statement": "FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration.",
+          "value": [
+            "sticky notes",
+            "drawing tools",
+            "shapes and connectors",
+            "stamps",
+            "cursor chats",
+            "audio collaboration"
+          ],
+          "period": {
+            "instantDate": "2021-04-21"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-bc3049cd3474",
+              "factId": "fact-17d82cf23752",
+              "locator": "Figma blog, 21 Apr 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-482d76dd24dd",
+          "kind": "observable",
+          "statement": "Figma announced it closed a Series E financing round on 2021-06-24.",
+          "value": "Series E closed",
+          "period": {
+            "instantDate": "2021-06-24"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759",
+              "factId": "fact-088c05567311",
+              "locator": "Figma blog, 24 Jun 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-ac2748d579e0",
+          "kind": "observable",
+          "statement": "Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration.",
+          "value": "collaborative design software",
+          "period": {
+            "instantDate": "2021-06-24"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759",
+              "factId": "fact-0c4d3f19d42f",
+              "locator": "Figma blog, 24 Jun 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-c7c61bc669b9",
+          "kind": "observable",
+          "statement": "Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams.",
+          "value": "FigJam launched",
+          "period": {
+            "instantDate": "2021-04-21"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-bc3049cd3474",
+              "factId": "fact-6be7bbd07589",
+              "locator": "Figma blog, 21 Apr 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-07a0cb3f60b4",
+          "kind": "observable",
+          "statement": "Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month.",
+          "value": [
+            "USD 3 per editor per month",
+            "USD 5 per editor per month"
+          ],
+          "period": {
+            "instantDate": "2021-04-21"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-bc3049cd3474",
+              "factId": "fact-e1f9af46f128",
+              "locator": "Figma blog, 21 Apr 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-8076fed37662",
+          "kind": "observable",
+          "statement": "Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated.",
+          "value": [
+            "Morgan Stanley Counterpoint Global",
+            "Index",
+            "Greylock",
+            "Kleiner Perkins",
+            "Sequoia",
+            "a16z"
+          ],
+          "period": {
+            "instantDate": "2021-06-24"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759",
+              "factId": "fact-2ea14245213e",
+              "locator": "Figma blog, 24 Jun 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-dd29511eb682",
+          "kind": "observable",
+          "statement": "Figma said the Series E was led by Durable Capital Partners.",
+          "value": "Durable Capital Partners",
+          "period": {
+            "instantDate": "2021-06-24"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759",
+              "factId": "fact-c97da2b587dc",
+              "locator": "Figma blog, 24 Jun 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-531d6702160b",
+          "kind": "observable",
+          "statement": "Public reporting described Figma's Series E amount as USD 200 million.",
+          "value": 200,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2021-06-24"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-aeeecbc6a15d",
+              "factId": "fact-0df274972b4b",
+              "locator": "The Information briefing"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-5e5f10d9fd51",
+          "kind": "observable",
+          "statement": "Public reporting described Figma's Series E headline valuation as USD 10 billion.",
+          "value": 10,
+          "unit": "USD billions headline valuation",
+          "period": {
+            "instantDate": "2021-06-24"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-aeeecbc6a15d",
+              "factId": "fact-daac40ca2bdc",
+              "locator": "The Information briefing"
+            }
+          ]
+        },
+        {
+          "id": "trace-sufficiency-84c0a9eb4f0d",
+          "kind": "other",
+          "statement": "TRACE sufficiency is sufficient with score 0.85: Evidence coverage is sufficient for route selection before valuation.",
+          "value": 0.85,
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759"
+            },
+            {
+              "evidenceId": "ev-aeeecbc6a15d"
+            },
+            {
+              "evidenceId": "ev-bc3049cd3474"
+            }
+          ]
+        },
+        {
+          "id": "trace-route-5b3c11a0a8ff",
+          "kind": "route",
+          "statement": "TRACE selected software-saas: Evidence describes software products for team collaboration, product or issue tracking, developer tools, and paid or subscription plans.",
+          "value": "software-saas",
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759"
+            },
+            {
+              "evidenceId": "ev-bc3049cd3474"
+            }
+          ]
+        }
+      ],
+      "route": {
+        "status": "selected",
+        "selectedRoute": "software-saas",
+        "rationale": "Evidence describes software products for team collaboration, product or issue tracking, developer tools, and paid or subscription plans.",
+        "evidenceIds": [
+          "ev-268f1126e759",
+          "ev-bc3049cd3474"
+        ]
+      },
+      "abstentions": [
+        {
+          "id": "trace-abstention-enterprise-value",
+          "field": "enterprise-value",
+          "reasonCode": "no-public-financial-statements",
+          "explanation": "Software product, customer, funding, or qualitative traction evidence supports the software-SaaS route, but no public revenue, margin, or cash-flow statements support enterprise value.",
+          "evidenceIds": [
+            "ev-268f1126e759",
+            "ev-aeeecbc6a15d",
+            "ev-bc3049cd3474"
+          ]
+        },
+        {
+          "id": "trace-abstention-headline-valuation",
+          "field": "headline-valuation",
+          "reasonCode": "post-cutoff-transaction-announcement",
+          "explanation": "TRACE excludes an acquisition, merger, or transaction announcement published after the measurement-date cutoff and does not use it as a headline-valuation input.",
+          "evidenceIds": [
+            "ev-268f1126e759",
+            "ev-aeeecbc6a15d",
+            "ev-bc3049cd3474"
+          ]
+        },
+        {
+          "id": "trace-abstention-security-level-fair-value",
+          "field": "security-level-fair-value",
+          "reasonCode": "missing-security-rights-and-cap-table",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "evidenceIds": [
+            "ev-268f1126e759",
+            "ev-aeeecbc6a15d",
+            "ev-bc3049cd3474"
+          ]
+        },
+        {
+          "id": "trace-abstention-total-equity-value",
+          "field": "total-equity-value",
+          "reasonCode": "missing-total-equity-capitalization",
+          "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "evidenceIds": [
+            "ev-268f1126e759",
+            "ev-aeeecbc6a15d",
+            "ev-bc3049cd3474"
+          ]
+        }
+      ],
+      "valuations": [
+        {
+          "field": "enterprise-value",
+          "status": "abstained",
+          "rationale": "Software product, customer, funding, or qualitative traction evidence supports the software-SaaS route, but no public revenue, margin, or cash-flow statements support enterprise value.",
+          "evidenceIds": [
+            "ev-268f1126e759",
+            "ev-aeeecbc6a15d",
+            "ev-bc3049cd3474"
+          ]
+        },
+        {
+          "field": "headline-valuation",
+          "status": "abstained",
+          "rationale": "TRACE excludes an acquisition, merger, or transaction announcement published after the measurement-date cutoff and does not use it as a headline-valuation input.",
+          "evidenceIds": [
+            "ev-268f1126e759",
+            "ev-aeeecbc6a15d",
+            "ev-bc3049cd3474"
+          ]
+        },
+        {
+          "field": "security-level-fair-value",
+          "status": "abstained",
+          "rationale": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "evidenceIds": [
+            "ev-268f1126e759",
+            "ev-aeeecbc6a15d",
+            "ev-bc3049cd3474"
+          ]
+        },
+        {
+          "field": "total-equity-value",
+          "status": "abstained",
+          "rationale": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "evidenceIds": [
+            "ev-268f1126e759",
+            "ev-aeeecbc6a15d",
+            "ev-bc3049cd3474"
+          ]
+        }
+      ]
+    },
+    "failures": []
+  }
+}

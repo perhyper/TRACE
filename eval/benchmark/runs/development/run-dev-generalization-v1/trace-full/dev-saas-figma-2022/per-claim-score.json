@@ -1,0 +1,655 @@
+{
+  "schemaVersion": "trace.benchmark-per-claim-score.v1",
+  "runId": "run-dev-generalization-v1",
+  "runnerName": "trace-full",
+  "caseId": "dev-saas-figma-2022",
+  "partition": "development",
+  "status": "scored",
+  "claims": [
+    {
+      "claimId": "figma-adobe-deal-known-by-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "figma-adobe-deal-known-by-cutoff",
+      "expectedStatement": "The Adobe acquisition announcement was public by the 2022-09-14 cutoff.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-a7c03955fdff"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "figma-figjam-launched",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "figma-figjam-launched",
+      "expectedStatement": "Figma launched FigJam before the cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-bc3049cd3474"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "figma-series-e-closed",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "figma-series-e-closed",
+      "expectedStatement": "Figma closed a Series E financing before the cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-268f1126e759"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "trace-claim-482d76dd24dd",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-482d76dd24dd",
+      "emittedStatement": "Figma announced it closed a Series E financing round on 2021-06-24.",
+      "emittedValue": "Series E closed",
+      "emittedPeriod": {
+        "instantDate": "2021-06-24"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-268f1126e759"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-268f1126e759",
+          "factId": "fact-088c05567311",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-53e524f53b1c",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-53e524f53b1c",
+      "emittedStatement": "FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration.",
+      "emittedValue": [
+        "sticky notes",
+        "drawing tools",
+        "shapes and connectors",
+        "stamps",
+        "cursor chats",
+        "audio collaboration"
+      ],
+      "emittedPeriod": {
+        "instantDate": "2021-04-21"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-bc3049cd3474"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-bc3049cd3474",
+          "factId": "fact-17d82cf23752",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-8076fed37662",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-8076fed37662",
+      "emittedStatement": "Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated.",
+      "emittedValue": [
+        "Morgan Stanley Counterpoint Global",
+        "Index",
+        "Greylock",
+        "Kleiner Perkins",
+        "Sequoia",
+        "a16z"
+      ],
+      "emittedPeriod": {
+        "instantDate": "2021-06-24"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-268f1126e759"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-268f1126e759",
+          "factId": "fact-2ea14245213e",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-ac2748d579e0",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-ac2748d579e0",
+      "emittedStatement": "Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration.",
+      "emittedValue": "collaborative design software",
+      "emittedPeriod": {
+        "instantDate": "2021-06-24"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-268f1126e759"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-268f1126e759",
+          "factId": "fact-0c4d3f19d42f",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-c7c61bc669b9",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-c7c61bc669b9",
+      "emittedStatement": "Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams.",
+      "emittedValue": "FigJam launched",
+      "emittedPeriod": {
+        "instantDate": "2021-04-21"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-bc3049cd3474"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-bc3049cd3474",
+          "factId": "fact-6be7bbd07589",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-dd29511eb682",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-dd29511eb682",
+      "emittedStatement": "Figma said the Series E was led by Durable Capital Partners.",
+      "emittedValue": "Durable Capital Partners",
+      "emittedPeriod": {
+        "instantDate": "2021-06-24"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-268f1126e759"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-268f1126e759",
+          "factId": "fact-c97da2b587dc",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "figma-figjam-paid-plan-prices",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "expectedClaimId": "figma-figjam-paid-plan-prices",
+      "emittedClaimId": "trace-claim-07a0cb3f60b4",
+      "expectedStatement": "Figma said FigJam would have USD 3 and USD 5 paid editor plans in 2022.",
+      "emittedStatement": "Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month.",
+      "expectedValue": [
+        "USD 3 per editor per month",
+        "USD 5 per editor per month"
+      ],
+      "emittedValue": [
+        "USD 3 per editor per month",
+        "USD 5 per editor per month"
+      ],
+      "expectedUnit": "monthly editor plan prices",
+      "expectedPeriod": {
+        "instantDate": "2021-04-21"
+      },
+      "emittedPeriod": {
+        "instantDate": "2021-04-21"
+      },
+      "expectedEvidenceIds": [
+        "ev-bc3049cd3474"
+      ],
+      "emittedEvidenceIds": [
+        "ev-bc3049cd3474"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-bc3049cd3474",
+          "factId": "fact-e1f9af46f128",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": false,
+          "supportsWording": true,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the expected claim unit."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "figma-series-e-amount",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "figma-series-e-amount",
+      "emittedClaimId": "trace-claim-531d6702160b",
+      "expectedStatement": "Figma's Series E amount was reported as USD 200 million.",
+      "emittedStatement": "Public reporting described Figma's Series E amount as USD 200 million.",
+      "expectedValue": 200,
+      "emittedValue": 200,
+      "expectedUnit": "USD millions",
+      "emittedUnit": "USD millions",
+      "expectedPeriod": {
+        "instantDate": "2021-06-24"
+      },
+      "emittedPeriod": {
+        "instantDate": "2021-06-24"
+      },
+      "expectedEvidenceIds": [
+        "ev-aeeecbc6a15d"
+      ],
+      "emittedEvidenceIds": [
+        "ev-aeeecbc6a15d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-aeeecbc6a15d",
+          "factId": "fact-0df274972b4b",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "news",
+          "sourceQualityCategory": "news",
+          "sourceQualityWeight": 0.58,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.58,
+        "citedSourceClasses": [
+          "news"
+        ],
+        "citedSourceQualityCategories": [
+          "news"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "figma-series-e-headline-valuation",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "figma-series-e-headline-valuation",
+      "emittedClaimId": "trace-claim-5e5f10d9fd51",
+      "expectedStatement": "Figma's Series E headline valuation was reported as USD 10 billion.",
+      "emittedStatement": "Public reporting described Figma's Series E headline valuation as USD 10 billion.",
+      "expectedValue": 10,
+      "emittedValue": 10,
+      "expectedUnit": "USD billions headline valuation",
+      "emittedUnit": "USD billions headline valuation",
+      "expectedPeriod": {
+        "instantDate": "2021-06-24"
+      },
+      "emittedPeriod": {
+        "instantDate": "2021-06-24"
+      },
+      "expectedEvidenceIds": [
+        "ev-aeeecbc6a15d"
+      ],
+      "emittedEvidenceIds": [
+        "ev-aeeecbc6a15d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-aeeecbc6a15d",
+          "factId": "fact-daac40ca2bdc",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "news",
+          "sourceQualityCategory": "news",
+          "sourceQualityWeight": 0.58,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.58,
+        "citedSourceClasses": [
+          "news"
+        ],
+        "citedSourceQualityCategories": [
+          "news"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    }
+  ],
+  "failures": []
+}
