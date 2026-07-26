@@ -1,0 +1,2376 @@
+{
+  "schemaVersion": "trace.benchmark-scorer-input.v1",
+  "runId": "run-5c191b9ced89d3c9",
+  "runnerName": "trace-full",
+  "caseId": "dev-biotech-mammoth-2021",
+  "partition": "development",
+  "caseInput": {
+    "schemaVersion": "trace.benchmark-case-input.v1",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "manifestSchemaVersion": "trace.benchmark-manifest.v1",
+    "caseId": "dev-biotech-mammoth-2021",
+    "partition": "development",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Mammoth Biosciences, Inc.",
+    "target": {
+      "legalName": "Mammoth Biosciences, Inc.",
+      "jurisdiction": "US",
+      "identifiers": [
+        {
+          "scheme": "other",
+          "value": "mammoth.bio",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "Mammoth Biosciences",
+        "Mammoth"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2021-09-09",
+    "cutoffDate": "2021-09-09",
+    "dataTier": "medium",
+    "sourcePolicy": {
+      "approvedPublicSourceCategories": [
+        "company-primary",
+        "government",
+        "news",
+        "peer-reviewed"
+      ],
+      "redistributionStatus": "public-urls-redistribution-not-established",
+      "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+      "onlyUrlsAndShortExcerptsMayBeCommitted": true
+    },
+    "authorityBoundary": {
+      "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+      "officialContestRulesStatus": "not-supplied",
+      "contestComplianceClaimAllowed": false,
+      "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+      "prohibitedClaims": [
+        "appraisal status",
+        "benchmark superiority",
+        "contest readiness",
+        "investment advice",
+        "official contest compliance"
+      ]
+    },
+    "sourceRecordIds": [
+      "mammoth-2020-04-16-detectr-peer-reviewed",
+      "mammoth-2020-08-31-fda-eua-detectr",
+      "mammoth-2021-09-09-series-c-d-businesswire"
+    ],
+    "evidenceLedger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Mammoth Biosciences, Inc.",
+        "jurisdiction": "US",
+        "identifiers": [
+          {
+            "scheme": "other",
+            "value": "mammoth.bio",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "Mammoth Biosciences",
+          "Mammoth"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2021-09-09",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-4a0498d1cfc9",
+          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/9107629/",
+          "sourceTitle": "CRISPR-Cas12-based detection of SARS-CoV-2",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2020-04-16",
+          "effectiveDate": "2020-04-16",
+          "sourceClass": "peer-reviewed",
+          "epistemicClass": "extracted",
+          "locator": "Nature Biotechnology article via PMC",
+          "shortExcerpt": "Peer-reviewed article lists Mammoth authors and describes CRISPR-Cas12-based SARS-CoV-2 detection.",
+          "observedFacts": [
+            {
+              "id": "fact-00bf393f5b01",
+              "statement": "A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors.",
+              "epistemicClass": "observed",
+              "value": "CRISPR-Cas12 SARS-CoV-2 detection",
+              "period": {
+                "instantDate": "2020-04-16"
+              }
+            },
+            {
+              "id": "fact-1de81cea2118",
+              "statement": "The article lists Mammoth Biosciences, Inc. affiliations for James Broughton and Janice Chen.",
+              "epistemicClass": "observed",
+              "value": [
+                "James Broughton",
+                "Janice Chen"
+              ],
+              "period": {
+                "instantDate": "2020-04-16"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-2df79df4d844",
+          "sourceUrl": "https://www.businesswire.com/news/home/20210909005385/en/Mammoth-Biosciences-Raises-%24195-Million-to-Build-Next-Generation-CRISPR-Products-in-Therapeutics-and-Diagnostics",
+          "sourceTitle": "Mammoth Biosciences raises USD 195 million",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-09-09",
+          "effectiveDate": "2021-09-09",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Business Wire release, 09 Sep 2021",
+          "shortExcerpt": "Mammoth announced USD 195m financing, a greater-than USD 1bn valuation, and CRISPR therapeutics and diagnostics focus.",
+          "observedFacts": [
+            {
+              "id": "fact-f8d46db92bc2",
+              "statement": "Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery.",
+              "epistemicClass": "extracted",
+              "value": [
+                "Cas14",
+                "CasPhi"
+              ],
+              "period": {
+                "instantDate": "2021-09-09"
+              }
+            },
+            {
+              "id": "fact-11739eea8ac3",
+              "statement": "Mammoth announced USD 195 million of financing on 2021-09-09.",
+              "epistemicClass": "observed",
+              "value": 195,
+              "unit": "USD millions",
+              "period": {
+                "instantDate": "2021-09-09"
+              }
+            },
+            {
+              "id": "fact-dc7a03de13a1",
+              "statement": "Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics.",
+              "epistemicClass": "observed",
+              "value": "CRISPR therapeutics and diagnostics",
+              "period": {
+                "instantDate": "2021-09-09"
+              }
+            },
+            {
+              "id": "fact-c93248473675",
+              "statement": "Mammoth stated it had expanded its team to more than 100 employees.",
+              "epistemicClass": "observed",
+              "value": 100,
+              "unit": "employees, greater than",
+              "period": {
+                "instantDate": "2021-09-09"
+              }
+            },
+            {
+              "id": "fact-3c38d7c8dafd",
+              "statement": "Mammoth stated the financing included a USD 150 million Series D led by Redmile Group.",
+              "epistemicClass": "observed",
+              "value": 150,
+              "unit": "USD millions",
+              "period": {
+                "instantDate": "2021-09-09"
+              }
+            },
+            {
+              "id": "fact-a242e66e0c16",
+              "statement": "Mammoth stated the financing placed the company in unicorn status with valuation greater than USD 1 billion.",
+              "epistemicClass": "observed",
+              "value": 1,
+              "unit": "USD billions headline valuation, greater than",
+              "period": {
+                "instantDate": "2021-09-09"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-b73daa03700a",
+          "sourceUrl": "https://www.fda.gov/medical-devices/emergency-use-authorizations-medical-devices/historical-information-about-device-emergency-use-authorizations",
+          "sourceTitle": "FDA historical device emergency use authorizations",
+          "retrievedDate": "2026-07-26",
+          "effectiveDate": "2020-08-31",
+          "sourceClass": "government",
+          "epistemicClass": "observed",
+          "locator": "SARS-CoV-2 DETECTR Reagent Kit row",
+          "shortExcerpt": "FDA historical EUA page lists SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+          "observedFacts": [
+            {
+              "id": "fact-110b56088c37",
+              "statement": "FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+              "epistemicClass": "observed",
+              "value": "EUA issued",
+              "period": {
+                "instantDate": "2020-08-31"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "mammoth-2022-01-10-bayer-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record mammoth-2022-01-10-bayer-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://www.businesswire.com/news/home/20220109005059/en/Bayer-and-Mammoth-Biosciences-to-Collaborate-on-Novel-Gene-Editing-Technology",
+          "sourceTitle": "Bayer and Mammoth Biosciences collaboration",
+          "publishedDate": "2022-01-10",
+          "measurementDate": "2021-09-09"
+        }
+      ],
+      "failedNotes": [
+        {
+          "id": "mammoth-product-cash-flow-not-public",
+          "stage": "extraction",
+          "sourceTitle": "Product-level cash-flow and cap-table evidence",
+          "attemptedAt": "2026-07-26T00:00:00Z",
+          "note": "No public product-level cash-flow, security-rights or cap-table evidence was identified for valuation-error scoring as of the cutoff."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded mammoth-2022-01-10-bayer-post-cutoff because publishedDate 2022-01-10 is after measurementDate 2021-09-09.",
+          "recordIds": [
+            "mammoth-2022-01-10-bayer-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://www.businesswire.com/news/home/20220109005059/en/Bayer-and-Mammoth-Biosciences-to-Collaborate-on-Novel-Gene-Editing-Technology"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    }
+  },
+  "annotation": {
+    "schemaVersion": "trace.benchmark-annotation.v1",
+    "caseId": "dev-biotech-mammoth-2021",
+    "partition": "development",
+    "measurementDate": "2021-09-09",
+    "expectedRoute": {
+      "route": "biotech-rnpv",
+      "acceptableAlternativeRoutes": [],
+      "evidenceIds": [
+        "ev-2df79df4d844",
+        "ev-4a0498d1cfc9",
+        "ev-b73daa03700a"
+      ],
+      "rationale": "The cutoff evidence describes a CRISPR platform company with therapeutics and diagnostics programs."
+    },
+    "binaryClaims": [
+      {
+        "id": "mammoth-financing-announced",
+        "statement": "Mammoth announced a financing round by the cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      },
+      {
+        "id": "mammoth-product-cash-flow-public",
+        "statement": "The cutoff evidence provides product-level cash-flow forecasts sufficient for rNPV valuation.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      },
+      {
+        "id": "mammoth-unicorn-status",
+        "statement": "Mammoth said the financing gave it a valuation greater than USD 1 billion.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      }
+    ],
+    "observableClaims": [
+      {
+        "id": "mammoth-detectr-eua-date",
+        "statement": "FDA historical records list SARS-CoV-2 DETECTR Reagent Kit EUA issued on 2020-08-31.",
+        "expectedValue": "2020-08-31",
+        "unit": "EUA issue date",
+        "period": {
+          "instantDate": "2020-08-31"
+        },
+        "evidenceIds": [
+          "ev-b73daa03700a"
+        ]
+      },
+      {
+        "id": "mammoth-series-d-size",
+        "statement": "The Series D component was USD 150 million.",
+        "expectedValue": 150,
+        "unit": "USD millions",
+        "period": {
+          "instantDate": "2021-09-09"
+        },
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      },
+      {
+        "id": "mammoth-team-size",
+        "statement": "Mammoth had expanded to more than 100 employees.",
+        "expectedValue": 100,
+        "unit": "employees, greater than",
+        "period": {
+          "instantDate": "2021-09-09"
+        },
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      },
+      {
+        "id": "mammoth-total-financing",
+        "statement": "The announced financing total was USD 195 million.",
+        "expectedValue": 195,
+        "unit": "USD millions",
+        "period": {
+          "instantDate": "2021-09-09"
+        },
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      }
+    ],
+    "expectedAbstentions": [
+      {
+        "id": "mammoth-product-rnpv-abstain",
+        "field": "enterprise-value",
+        "reasonCode": "no-product-cash-flow-forecast",
+        "description": "The cutoff evidence supports biotech-rNPV route selection but lacks product cash-flow forecasts, probability assumptions and commercial launch data.",
+        "evidenceIds": [
+          "ev-2df79df4d844",
+          "ev-4a0498d1cfc9"
+        ]
+      },
+      {
+        "id": "mammoth-security-fair-value-abstain",
+        "field": "security-level-fair-value",
+        "reasonCode": "missing-security-rights-and-cap-table",
+        "description": "The financing headline does not disclose share rights, preferences, cap table or security-level fair value.",
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      }
+    ],
+    "valuationSeparationExpectations": {
+      "allowedValuationFields": [
+        "headline-valuation"
+      ],
+      "mustNotConflate": [
+        "financing amount with total equity value",
+        "platform promise with product rNPV output",
+        "unicorn headline with security-level fair value"
+      ],
+      "notes": "Funding headlines do not establish a completed valuation-error target."
+    },
+    "completenessExpectations": [
+      {
+        "id": "mammoth-cover-platform-financing-and-limits",
+        "description": "A complete answer should cover CRISPR platform route, financing facts, diagnostics evidence, FDA EUA context, and rNPV limitations.",
+        "requiredEvidenceClasses": [
+          "company-primary",
+          "government",
+          "peer-reviewed"
+        ],
+        "requiredTopics": [
+          "biotech-rnpv route",
+          "financing",
+          "platform evidence",
+          "valuation abstention"
+        ],
+        "evidenceIds": [
+          "ev-2df79df4d844",
+          "ev-4a0498d1cfc9",
+          "ev-b73daa03700a"
+        ]
+      }
+    ],
+    "historicalValuationTargets": {
+      "eligible": false,
+      "reason": "Manifest marks this case ineligible because funding headlines and platform claims do not establish a completed valuation target.",
+      "targets": []
+    }
+  },
+  "runnerOutput": {
+    "schemaVersion": "trace.benchmark-runner-output.v1",
+    "runnerName": "trace-full",
+    "runId": "run-5c191b9ced89d3c9",
+    "caseId": "dev-biotech-mammoth-2021",
+    "partition": "development",
+    "status": "completed",
+    "timing": {
+      "schemaVersion": "trace.benchmark-timing.v1",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.322Z",
+      "durationMs": 322
+    },
+    "rawOutput": {
+      "markdown": "# TRACE Report: Mammoth Biosciences, Inc.\n\n## Summary\n- Company: Mammoth Biosciences, Inc. (US; identity resolved)\n- Measurement date: 2021-09-09\n- Decision mode: full-analysis\n- Sufficiency: sufficient (0.85)\n- Route: general-private-company\n- Review: warnings\n- Run ID: run-5c191b9ced89d3c9\n\n## Evidence Ledger\n| Evidence ID | Source class | Published | Retrieved | Source | Excerpt |\n| --- | --- | --- | --- | --- | --- |\n| ev-2df79df4d844 | company-primary | 2021-09-09 | 2026-07-26 | Mammoth Biosciences raises USD 195 million (https://www.businesswire.com/news/home/20210909005385/en/Mammoth-Biosciences-Raises-%24195-Million-to-Build-Next-Generation-CRISPR-Products-in-Therapeutics-and-Diagnostics) | Mammoth announced USD 195m financing, a greater-than USD 1bn valuation, and CRISPR therapeutics and diagnostics focus. |\n| ev-4a0498d1cfc9 | peer-reviewed | 2020-04-16 | 2026-07-26 | CRISPR-Cas12-based detection of SARS-CoV-2 (https://pmc.ncbi.nlm.nih.gov/articles/9107629/) | Peer-reviewed article lists Mammoth authors and describes CRISPR-Cas12-based SARS-CoV-2 detection. |\n| ev-b73daa03700a | government | n/a | 2026-07-26 | FDA historical device emergency use authorizations (https://www.fda.gov/medical-devices/emergency-use-authorizations-medical-devices/historical-information-about-device-emergency-use-authorizations) | FDA historical EUA page lists SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31. |\n\n## Material Facts\n- A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors. value=CRISPR-Cas12 SARS-CoV-2 detection; period=instant 2020-04-16; epistemic=observed [ev-4a0498d1cfc9]\n- FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31. value=EUA issued; period=instant 2020-08-31; epistemic=observed [ev-b73daa03700a]\n- Mammoth announced USD 195 million of financing on 2021-09-09. value=195; unit=USD millions; period=instant 2021-09-09; epistemic=observed [ev-2df79df4d844]\n- Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics. value=CRISPR therapeutics and diagnostics; period=instant 2021-09-09; epistemic=observed [ev-2df79df4d844]\n- Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery. value=Cas14, CasPhi; period=instant 2021-09-09; epistemic=extracted [ev-2df79df4d844]\n- Mammoth stated it had expanded its team to more than 100 employees. value=100; unit=employees, greater than; period=instant 2021-09-09; epistemic=observed [ev-2df79df4d844]\n- Mammoth stated the financing included a USD 150 million Series D led by Redmile Group. value=150; unit=USD millions; period=instant 2021-09-09; epistemic=observed [ev-2df79df4d844]\n- Mammoth stated the financing placed the company in unicorn status with valuation greater than USD 1 billion. value=1; unit=USD billions headline valuation, greater than; period=instant 2021-09-09; epistemic=observed [ev-2df79df4d844]\n- The article lists Mammoth Biosciences, Inc. affiliations for James Broughton and Janice Chen. value=James Broughton, Janice Chen; period=instant 2020-04-16; epistemic=observed [ev-4a0498d1cfc9]\n\n## Inferences\n- Enterprise Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a]\n- Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a]\n- Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- Selected route general-private-company: Eligible evidence is available, but no stronger specialized route is selected. [ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a]\n- Sufficiency is sufficient with score 0.85: Evidence coverage is sufficient for route selection before valuation.\n- Total Equity Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a]\n\n## Valuation\n### Headline Valuation\n- Status: abstained\n- Reason: recent-secondary-transaction-not-observed\n- Explanation: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- Evidence: ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n\n### Enterprise Value\n- Status: abstained\n- Reason: recent-secondary-transaction-not-observed\n- Explanation: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- Evidence: ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n\n### Total Equity Value\n- Status: abstained\n- Reason: recent-secondary-transaction-not-observed\n- Explanation: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- Evidence: ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n\n### Security-Level Fair Value\n- Status: abstained\n- Reason: security-rights-and-cap-table-not-disclosed\n- Explanation: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- Evidence: None\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-cap-table | Cap table | total-equity-value, security-level-fair-value | TRACE cannot allocate value across securities or holders. |\n| missing-dilution | Dilution | total-equity-value, security-level-fair-value | TRACE cannot convert company-level headline value into per-security fair value. |\n| missing-share-preferences | Share preferences | security-level-fair-value | TRACE cannot determine whether the security participates equally in the headline value. |\n| missing-share-rights | Share rights | security-level-fair-value | TRACE cannot assign the headline reference to a specific share class. |\n\n## Limitations\n- Evidence record mammoth-2022-01-10-bayer-post-cutoff was published after the measurement date and was excluded.\n- Excluded mammoth-2022-01-10-bayer-post-cutoff because publishedDate 2022-01-10 is after measurementDate 2021-09-09.\n- TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.\n- extraction note mammoth-product-cash-flow-not-public: No public product-level cash-flow, security-rights or cap-table evidence was identified for valuation-error scoring as of the cutoff.\n\n## Conflicts\n- None identified.\n\n## Counterarguments\n- Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: financial-services, recent-transaction, software-saas, marketplace, biotech-rnpv, asset-based.\n\n## Missing Information\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-cap-table | Cap table | total-equity-value, security-level-fair-value | TRACE cannot allocate value across securities or holders. |\n| missing-dilution | Dilution | total-equity-value, security-level-fair-value | TRACE cannot convert company-level headline value into per-security fair value. |\n| missing-financial-and-operating-fact-coverage | Financial and operating fact coverage | routing, sufficiency | TRACE cannot support route selection without this evidence. |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n| missing-share-preferences | Share preferences | security-level-fair-value | TRACE cannot determine whether the security participates equally in the headline value. |\n| missing-share-rights | Share rights | security-level-fair-value | TRACE cannot assign the headline reference to a specific share class. |\n\n## Next Diligence Questions\n- What evidence resolves Cap table for total-equity-value, security-level-fair-value?\n- What evidence resolves Dilution for total-equity-value, security-level-fair-value?\n- What evidence resolves Financial and operating fact coverage for routing, sufficiency?\n- What evidence resolves Recent secondary transaction for headline-valuation?\n- What evidence resolves Share preferences for security-level-fair-value?\n- What evidence resolves Share rights for security-level-fair-value?\n\n## Reviewer Findings\n- Reviewer version: trace-reviewer.v1\n- Status: warnings\n\n| ID | Severity | Category | Evidence | Message |\n| --- | --- | --- | --- | --- |\n| review-abstention-triggers | pass | abstention | ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a | Abstained valuation fields include missing-information reasons, and security-level triggers are respected. |\n| review-calculation-integrity | pass | calculation | ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a | No concluded valuation calculations were emitted; abstentions are explicit. |\n| review-citation-support | pass | evidence | ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a | Sufficiency, route, and valuation claims cite included evidence IDs where citations are required. |\n| review-cutoff-compliance | warning | cutoff | ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a | Post-measurement-date evidence was excluded by provider validation and remains visible in warnings. |\n| review-entity-certainty | pass | entity | ev-2df79df4d844, ev-4a0498d1cfc9 | Target identity is resolved and supported by included evidence. |\n| review-evidence-coverage | pass | evidence | ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a | Evidence coverage satisfies the sufficiency gate for route selection. |\n| review-route-appropriateness | pass | route | ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a | Route selection is consistent with sufficiency status: general-private-company. |\n| review-valuation-field-separation | pass | valuation-separation | ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a | Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields. |\n\n## Run Metadata\n- Run ID: run-5c191b9ced89d3c9\n- Runtime version: 0.1.0\n- Command: trace benchmark --partition development --runner trace-full --case-id dev-biotech-mammoth-2021\n- Measurement date: 2021-09-09\n- Started at: 2026-07-26T00:00:00.000Z\n- Completed at: 2026-07-26T00:00:00.322Z\n- Duration ms: 322\n- Input path: benchmark:development:dev-biotech-mammoth-2021\n- Output directory: benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-biotech-mammoth-2021\n- Warnings:\n- Excluded mammoth-2022-01-10-bayer-post-cutoff because publishedDate 2022-01-10 is after measurementDate 2021-09-09.\n",
+      "json": {
+        "schemaVersion": "trace.trace-full-runner-output.v1",
+        "runnerName": "trace-full",
+        "analyzerVersion": "0.1.0",
+        "inputFingerprint": "7b1cd237c4eb",
+        "case": {
+          "caseId": "dev-biotech-mammoth-2021",
+          "partition": "development",
+          "scoringRole": "scored",
+          "countedInScoring": true,
+          "companyLegalName": "Mammoth Biosciences, Inc.",
+          "measurementDate": "2021-09-09",
+          "cutoffDate": "2021-09-09",
+          "dataTier": "medium",
+          "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+          "sourceRecordIds": [
+            "mammoth-2020-04-16-detectr-peer-reviewed",
+            "mammoth-2020-08-31-fda-eua-detectr",
+            "mammoth-2021-09-09-series-c-d-businesswire"
+          ]
+        },
+        "sourcePolicy": {
+          "approvedPublicSourceCategories": [
+            "company-primary",
+            "government",
+            "news",
+            "peer-reviewed"
+          ],
+          "redistributionStatus": "public-urls-redistribution-not-established",
+          "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+          "onlyUrlsAndShortExcerptsMayBeCommitted": true
+        },
+        "authorityBoundary": {
+          "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+          "officialContestRulesStatus": "not-supplied",
+          "contestComplianceClaimAllowed": false,
+          "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+          "prohibitedClaims": [
+            "appraisal status",
+            "benchmark superiority",
+            "contest readiness",
+            "investment advice",
+            "official contest compliance"
+          ]
+        },
+        "analyzerPath": [
+          "evidence-ledger",
+          "sufficiency-gating",
+          "route-selection",
+          "valuation-engine",
+          "adversarial-review",
+          "report-composer"
+        ],
+        "runtimeResult": {
+          "ledger": {
+            "schemaVersion": "trace.evidence-ledger.v1",
+            "target": {
+              "legalName": "Mammoth Biosciences, Inc.",
+              "jurisdiction": "US",
+              "identifiers": [
+                {
+                  "scheme": "other",
+                  "value": "mammoth.bio",
+                  "jurisdiction": "US"
+                }
+              ],
+              "aliases": [
+                "Mammoth Biosciences",
+                "Mammoth"
+              ],
+              "identityConfidence": "resolved"
+            },
+            "measurementDate": "2021-09-09",
+            "decisionMode": "full-analysis",
+            "evidence": [
+              {
+                "id": "ev-4a0498d1cfc9",
+                "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/9107629/",
+                "sourceTitle": "CRISPR-Cas12-based detection of SARS-CoV-2",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2020-04-16",
+                "effectiveDate": "2020-04-16",
+                "sourceClass": "peer-reviewed",
+                "epistemicClass": "extracted",
+                "locator": "Nature Biotechnology article via PMC",
+                "shortExcerpt": "Peer-reviewed article lists Mammoth authors and describes CRISPR-Cas12-based SARS-CoV-2 detection.",
+                "observedFacts": [
+                  {
+                    "id": "fact-00bf393f5b01",
+                    "statement": "A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors.",
+                    "epistemicClass": "observed",
+                    "value": "CRISPR-Cas12 SARS-CoV-2 detection",
+                    "period": {
+                      "instantDate": "2020-04-16"
+                    }
+                  },
+                  {
+                    "id": "fact-1de81cea2118",
+                    "statement": "The article lists Mammoth Biosciences, Inc. affiliations for James Broughton and Janice Chen.",
+                    "epistemicClass": "observed",
+                    "value": [
+                      "James Broughton",
+                      "Janice Chen"
+                    ],
+                    "period": {
+                      "instantDate": "2020-04-16"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ev-2df79df4d844",
+                "sourceUrl": "https://www.businesswire.com/news/home/20210909005385/en/Mammoth-Biosciences-Raises-%24195-Million-to-Build-Next-Generation-CRISPR-Products-in-Therapeutics-and-Diagnostics",
+                "sourceTitle": "Mammoth Biosciences raises USD 195 million",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2021-09-09",
+                "effectiveDate": "2021-09-09",
+                "sourceClass": "company-primary",
+                "epistemicClass": "observed",
+                "locator": "Business Wire release, 09 Sep 2021",
+                "shortExcerpt": "Mammoth announced USD 195m financing, a greater-than USD 1bn valuation, and CRISPR therapeutics and diagnostics focus.",
+                "observedFacts": [
+                  {
+                    "id": "fact-f8d46db92bc2",
+                    "statement": "Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery.",
+                    "epistemicClass": "extracted",
+                    "value": [
+                      "Cas14",
+                      "CasPhi"
+                    ],
+                    "period": {
+                      "instantDate": "2021-09-09"
+                    }
+                  },
+                  {
+                    "id": "fact-11739eea8ac3",
+                    "statement": "Mammoth announced USD 195 million of financing on 2021-09-09.",
+                    "epistemicClass": "observed",
+                    "value": 195,
+                    "unit": "USD millions",
+                    "period": {
+                      "instantDate": "2021-09-09"
+                    }
+                  },
+                  {
+                    "id": "fact-dc7a03de13a1",
+                    "statement": "Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics.",
+                    "epistemicClass": "observed",
+                    "value": "CRISPR therapeutics and diagnostics",
+                    "period": {
+                      "instantDate": "2021-09-09"
+                    }
+                  },
+                  {
+                    "id": "fact-c93248473675",
+                    "statement": "Mammoth stated it had expanded its team to more than 100 employees.",
+                    "epistemicClass": "observed",
+                    "value": 100,
+                    "unit": "employees, greater than",
+                    "period": {
+                      "instantDate": "2021-09-09"
+                    }
+                  },
+                  {
+                    "id": "fact-3c38d7c8dafd",
+                    "statement": "Mammoth stated the financing included a USD 150 million Series D led by Redmile Group.",
+                    "epistemicClass": "observed",
+                    "value": 150,
+                    "unit": "USD millions",
+                    "period": {
+                      "instantDate": "2021-09-09"
+                    }
+                  },
+                  {
+                    "id": "fact-a242e66e0c16",
+                    "statement": "Mammoth stated the financing placed the company in unicorn status with valuation greater than USD 1 billion.",
+                    "epistemicClass": "observed",
+                    "value": 1,
+                    "unit": "USD billions headline valuation, greater than",
+                    "period": {
+                      "instantDate": "2021-09-09"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ev-b73daa03700a",
+                "sourceUrl": "https://www.fda.gov/medical-devices/emergency-use-authorizations-medical-devices/historical-information-about-device-emergency-use-authorizations",
+                "sourceTitle": "FDA historical device emergency use authorizations",
+                "retrievedDate": "2026-07-26",
+                "effectiveDate": "2020-08-31",
+                "sourceClass": "government",
+                "epistemicClass": "observed",
+                "locator": "SARS-CoV-2 DETECTR Reagent Kit row",
+                "shortExcerpt": "FDA historical EUA page lists SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+                "observedFacts": [
+                  {
+                    "id": "fact-110b56088c37",
+                    "statement": "FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+                    "epistemicClass": "observed",
+                    "value": "EUA issued",
+                    "period": {
+                      "instantDate": "2020-08-31"
+                    }
+                  }
+                ]
+              }
+            ],
+            "excludedRecords": [
+              {
+                "recordId": "mammoth-2022-01-10-bayer-post-cutoff",
+                "reasonCode": "published-after-measurement-date",
+                "message": "Evidence record mammoth-2022-01-10-bayer-post-cutoff was published after the measurement date and was excluded.",
+                "sourceUrl": "https://www.businesswire.com/news/home/20220109005059/en/Bayer-and-Mammoth-Biosciences-to-Collaborate-on-Novel-Gene-Editing-Technology",
+                "sourceTitle": "Bayer and Mammoth Biosciences collaboration",
+                "publishedDate": "2022-01-10",
+                "measurementDate": "2021-09-09"
+              }
+            ],
+            "failedNotes": [
+              {
+                "id": "mammoth-product-cash-flow-not-public",
+                "stage": "extraction",
+                "sourceTitle": "Product-level cash-flow and cap-table evidence",
+                "attemptedAt": "2026-07-26T00:00:00Z",
+                "note": "No public product-level cash-flow, security-rights or cap-table evidence was identified for valuation-error scoring as of the cutoff."
+              }
+            ],
+            "warnings": [
+              {
+                "code": "published-after-measurement-date",
+                "message": "Excluded mammoth-2022-01-10-bayer-post-cutoff because publishedDate 2022-01-10 is after measurementDate 2021-09-09.",
+                "recordIds": [
+                  "mammoth-2022-01-10-bayer-post-cutoff"
+                ],
+                "sourceUrls": [
+                  "https://www.businesswire.com/news/home/20220109005059/en/Bayer-and-Mammoth-Biosciences-to-Collaborate-on-Novel-Gene-Editing-Technology"
+                ],
+                "evidenceIds": []
+              }
+            ]
+          },
+          "sufficiency": {
+            "status": "sufficient",
+            "score": 0.85,
+            "criteria": [
+              {
+                "criterion": "Entity resolution",
+                "status": "met",
+                "explanation": "The target identity is resolved and supported by eligible evidence.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9"
+                ]
+              },
+              {
+                "criterion": "Measurement-date eligible evidence",
+                "status": "met",
+                "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ]
+              },
+              {
+                "criterion": "Source quality",
+                "status": "met",
+                "explanation": "Multiple high-authority source classes support routing.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-b73daa03700a"
+                ]
+              },
+              {
+                "criterion": "Route-defining business-model evidence",
+                "status": "met",
+                "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-b73daa03700a"
+                ]
+              },
+              {
+                "criterion": "Financial and operating fact coverage",
+                "status": "missing",
+                "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ]
+              }
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-financial-and-operating-fact-coverage",
+                "topic": "Financial and operating fact coverage",
+                "description": "Evidence does not contain financial or operating facts usable for route selection.",
+                "consequence": "TRACE cannot support route selection without this evidence.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              }
+            ],
+            "rationale": "Evidence coverage is sufficient for route selection before valuation."
+          },
+          "route": {
+            "status": "selected",
+            "selectedRoute": "general-private-company",
+            "selectedReasons": [
+              {
+                "summary": "Eligible evidence is available, but no stronger specialized route is selected.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ]
+              }
+            ],
+            "candidates": [
+              {
+                "route": "general-private-company",
+                "status": "selected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Eligible evidence is available, but no stronger specialized route is selected.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.2,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for recent transaction was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the software saas route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for biotech rnpv was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rejectedRoutes": [
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.2,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for recent transaction was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the software saas route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for biotech rnpv was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "valuation": {
+            "headlineValuation": {
+              "status": "abstained",
+              "field": "headline-valuation",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ]
+              }
+            },
+            "enterpriseValue": {
+              "status": "abstained",
+              "field": "enterprise-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ]
+              }
+            },
+            "totalEquityValue": {
+              "status": "abstained",
+              "field": "total-equity-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ]
+              }
+            },
+            "securityLevelFairValue": {
+              "status": "abstained",
+              "field": "security-level-fair-value",
+              "abstention": {
+                "reasonCode": "security-rights-and-cap-table-not-disclosed",
+                "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+                "missingInformation": [
+                  {
+                    "id": "missing-cap-table",
+                    "topic": "Cap table",
+                    "description": "The evidence ledger does not disclose capitalization table data.",
+                    "consequence": "TRACE cannot allocate value across securities or holders.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-dilution",
+                    "topic": "Dilution",
+                    "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                    "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-preferences",
+                    "topic": "Share preferences",
+                    "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                    "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-rights",
+                    "topic": "Share rights",
+                    "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                    "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": []
+              }
+            }
+          },
+          "review": {
+            "status": "warnings",
+            "reviewerVersion": "trace-reviewer.v1",
+            "findings": [
+              {
+                "id": "review-abstention-triggers",
+                "severity": "pass",
+                "category": "abstention",
+                "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-calculation-integrity",
+                "severity": "pass",
+                "category": "calculation",
+                "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-citation-support",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-cutoff-compliance",
+                "severity": "warning",
+                "category": "cutoff",
+                "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-entity-certainty",
+                "severity": "pass",
+                "category": "entity",
+                "message": "Target identity is resolved and supported by included evidence.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-evidence-coverage",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-route-appropriateness",
+                "severity": "pass",
+                "category": "route",
+                "message": "Route selection is consistent with sufficiency status: general-private-company.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-valuation-field-separation",
+                "severity": "pass",
+                "category": "valuation-separation",
+                "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              }
+            ]
+          }
+        },
+        "report": {
+          "schemaVersion": "trace.report.v1",
+          "company": {
+            "legalName": "Mammoth Biosciences, Inc.",
+            "jurisdiction": "US",
+            "identifiers": [
+              {
+                "scheme": "other",
+                "value": "mammoth.bio",
+                "jurisdiction": "US"
+              }
+            ],
+            "aliases": [
+              "Mammoth Biosciences",
+              "Mammoth"
+            ],
+            "identityConfidence": "resolved"
+          },
+          "measurementDate": "2021-09-09",
+          "decisionMode": "full-analysis",
+          "evidence": [
+            {
+              "id": "ev-2df79df4d844",
+              "sourceUrl": "https://www.businesswire.com/news/home/20210909005385/en/Mammoth-Biosciences-Raises-%24195-Million-to-Build-Next-Generation-CRISPR-Products-in-Therapeutics-and-Diagnostics",
+              "sourceTitle": "Mammoth Biosciences raises USD 195 million",
+              "retrievedDate": "2026-07-26",
+              "publishedDate": "2021-09-09",
+              "effectiveDate": "2021-09-09",
+              "sourceClass": "company-primary",
+              "epistemicClass": "observed",
+              "locator": "Business Wire release, 09 Sep 2021",
+              "shortExcerpt": "Mammoth announced USD 195m financing, a greater-than USD 1bn valuation, and CRISPR therapeutics and diagnostics focus.",
+              "observedFacts": [
+                {
+                  "id": "fact-f8d46db92bc2",
+                  "statement": "Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery.",
+                  "epistemicClass": "extracted",
+                  "value": [
+                    "Cas14",
+                    "CasPhi"
+                  ],
+                  "period": {
+                    "instantDate": "2021-09-09"
+                  }
+                },
+                {
+                  "id": "fact-11739eea8ac3",
+                  "statement": "Mammoth announced USD 195 million of financing on 2021-09-09.",
+                  "epistemicClass": "observed",
+                  "value": 195,
+                  "unit": "USD millions",
+                  "period": {
+                    "instantDate": "2021-09-09"
+                  }
+                },
+                {
+                  "id": "fact-dc7a03de13a1",
+                  "statement": "Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics.",
+                  "epistemicClass": "observed",
+                  "value": "CRISPR therapeutics and diagnostics",
+                  "period": {
+                    "instantDate": "2021-09-09"
+                  }
+                },
+                {
+                  "id": "fact-c93248473675",
+                  "statement": "Mammoth stated it had expanded its team to more than 100 employees.",
+                  "epistemicClass": "observed",
+                  "value": 100,
+                  "unit": "employees, greater than",
+                  "period": {
+                    "instantDate": "2021-09-09"
+                  }
+                },
+                {
+                  "id": "fact-3c38d7c8dafd",
+                  "statement": "Mammoth stated the financing included a USD 150 million Series D led by Redmile Group.",
+                  "epistemicClass": "observed",
+                  "value": 150,
+                  "unit": "USD millions",
+                  "period": {
+                    "instantDate": "2021-09-09"
+                  }
+                },
+                {
+                  "id": "fact-a242e66e0c16",
+                  "statement": "Mammoth stated the financing placed the company in unicorn status with valuation greater than USD 1 billion.",
+                  "epistemicClass": "observed",
+                  "value": 1,
+                  "unit": "USD billions headline valuation, greater than",
+                  "period": {
+                    "instantDate": "2021-09-09"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ev-4a0498d1cfc9",
+              "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/9107629/",
+              "sourceTitle": "CRISPR-Cas12-based detection of SARS-CoV-2",
+              "retrievedDate": "2026-07-26",
+              "publishedDate": "2020-04-16",
+              "effectiveDate": "2020-04-16",
+              "sourceClass": "peer-reviewed",
+              "epistemicClass": "extracted",
+              "locator": "Nature Biotechnology article via PMC",
+              "shortExcerpt": "Peer-reviewed article lists Mammoth authors and describes CRISPR-Cas12-based SARS-CoV-2 detection.",
+              "observedFacts": [
+                {
+                  "id": "fact-00bf393f5b01",
+                  "statement": "A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors.",
+                  "epistemicClass": "observed",
+                  "value": "CRISPR-Cas12 SARS-CoV-2 detection",
+                  "period": {
+                    "instantDate": "2020-04-16"
+                  }
+                },
+                {
+                  "id": "fact-1de81cea2118",
+                  "statement": "The article lists Mammoth Biosciences, Inc. affiliations for James Broughton and Janice Chen.",
+                  "epistemicClass": "observed",
+                  "value": [
+                    "James Broughton",
+                    "Janice Chen"
+                  ],
+                  "period": {
+                    "instantDate": "2020-04-16"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ev-b73daa03700a",
+              "sourceUrl": "https://www.fda.gov/medical-devices/emergency-use-authorizations-medical-devices/historical-information-about-device-emergency-use-authorizations",
+              "sourceTitle": "FDA historical device emergency use authorizations",
+              "retrievedDate": "2026-07-26",
+              "effectiveDate": "2020-08-31",
+              "sourceClass": "government",
+              "epistemicClass": "observed",
+              "locator": "SARS-CoV-2 DETECTR Reagent Kit row",
+              "shortExcerpt": "FDA historical EUA page lists SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+              "observedFacts": [
+                {
+                  "id": "fact-110b56088c37",
+                  "statement": "FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+                  "epistemicClass": "observed",
+                  "value": "EUA issued",
+                  "period": {
+                    "instantDate": "2020-08-31"
+                  }
+                }
+              ]
+            }
+          ],
+          "sufficiency": {
+            "status": "sufficient",
+            "score": 0.85,
+            "criteria": [
+              {
+                "criterion": "Entity resolution",
+                "status": "met",
+                "explanation": "The target identity is resolved and supported by eligible evidence.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9"
+                ]
+              },
+              {
+                "criterion": "Measurement-date eligible evidence",
+                "status": "met",
+                "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ]
+              },
+              {
+                "criterion": "Source quality",
+                "status": "met",
+                "explanation": "Multiple high-authority source classes support routing.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-b73daa03700a"
+                ]
+              },
+              {
+                "criterion": "Route-defining business-model evidence",
+                "status": "met",
+                "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-b73daa03700a"
+                ]
+              },
+              {
+                "criterion": "Financial and operating fact coverage",
+                "status": "missing",
+                "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ]
+              }
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-financial-and-operating-fact-coverage",
+                "topic": "Financial and operating fact coverage",
+                "description": "Evidence does not contain financial or operating facts usable for route selection.",
+                "consequence": "TRACE cannot support route selection without this evidence.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              }
+            ],
+            "rationale": "Evidence coverage is sufficient for route selection before valuation."
+          },
+          "route": {
+            "status": "selected",
+            "selectedRoute": "general-private-company",
+            "selectedReasons": [
+              {
+                "summary": "Eligible evidence is available, but no stronger specialized route is selected.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ]
+              }
+            ],
+            "candidates": [
+              {
+                "route": "general-private-company",
+                "status": "selected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Eligible evidence is available, but no stronger specialized route is selected.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.2,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for recent transaction was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the software saas route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for biotech rnpv was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rejectedRoutes": [
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.2,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for recent transaction was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the software saas route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for biotech rnpv was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-2df79df4d844",
+                      "ev-4a0498d1cfc9",
+                      "ev-b73daa03700a"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "valuation": {
+            "headlineValuation": {
+              "status": "abstained",
+              "field": "headline-valuation",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ]
+              }
+            },
+            "enterpriseValue": {
+              "status": "abstained",
+              "field": "enterprise-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ]
+              }
+            },
+            "totalEquityValue": {
+              "status": "abstained",
+              "field": "total-equity-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ]
+              }
+            },
+            "securityLevelFairValue": {
+              "status": "abstained",
+              "field": "security-level-fair-value",
+              "abstention": {
+                "reasonCode": "security-rights-and-cap-table-not-disclosed",
+                "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+                "missingInformation": [
+                  {
+                    "id": "missing-cap-table",
+                    "topic": "Cap table",
+                    "description": "The evidence ledger does not disclose capitalization table data.",
+                    "consequence": "TRACE cannot allocate value across securities or holders.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-dilution",
+                    "topic": "Dilution",
+                    "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                    "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-preferences",
+                    "topic": "Share preferences",
+                    "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                    "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-rights",
+                    "topic": "Share rights",
+                    "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                    "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": []
+              }
+            }
+          },
+          "review": {
+            "status": "warnings",
+            "reviewerVersion": "trace-reviewer.v1",
+            "findings": [
+              {
+                "id": "review-abstention-triggers",
+                "severity": "pass",
+                "category": "abstention",
+                "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-calculation-integrity",
+                "severity": "pass",
+                "category": "calculation",
+                "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-citation-support",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-cutoff-compliance",
+                "severity": "warning",
+                "category": "cutoff",
+                "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-entity-certainty",
+                "severity": "pass",
+                "category": "entity",
+                "message": "Target identity is resolved and supported by included evidence.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-evidence-coverage",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-route-appropriateness",
+                "severity": "pass",
+                "category": "route",
+                "message": "Route selection is consistent with sufficiency status: general-private-company.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-valuation-field-separation",
+                "severity": "pass",
+                "category": "valuation-separation",
+                "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+                "evidenceIds": [
+                  "ev-2df79df4d844",
+                  "ev-4a0498d1cfc9",
+                  "ev-b73daa03700a"
+                ],
+                "missingInformation": []
+              }
+            ]
+          },
+          "sections": {
+            "facts": [
+              "A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors. value=CRISPR-Cas12 SARS-CoV-2 detection; period=instant 2020-04-16; epistemic=observed [ev-4a0498d1cfc9]",
+              "FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31. value=EUA issued; period=instant 2020-08-31; epistemic=observed [ev-b73daa03700a]",
+              "Mammoth announced USD 195 million of financing on 2021-09-09. value=195; unit=USD millions; period=instant 2021-09-09; epistemic=observed [ev-2df79df4d844]",
+              "Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics. value=CRISPR therapeutics and diagnostics; period=instant 2021-09-09; epistemic=observed [ev-2df79df4d844]",
+              "Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery. value=Cas14, CasPhi; period=instant 2021-09-09; epistemic=extracted [ev-2df79df4d844]",
+              "Mammoth stated it had expanded its team to more than 100 employees. value=100; unit=employees, greater than; period=instant 2021-09-09; epistemic=observed [ev-2df79df4d844]",
+              "Mammoth stated the financing included a USD 150 million Series D led by Redmile Group. value=150; unit=USD millions; period=instant 2021-09-09; epistemic=observed [ev-2df79df4d844]",
+              "Mammoth stated the financing placed the company in unicorn status with valuation greater than USD 1 billion. value=1; unit=USD billions headline valuation, greater than; period=instant 2021-09-09; epistemic=observed [ev-2df79df4d844]",
+              "The article lists Mammoth Biosciences, Inc. affiliations for James Broughton and Janice Chen. value=James Broughton, Janice Chen; period=instant 2020-04-16; epistemic=observed [ev-4a0498d1cfc9]"
+            ],
+            "inferences": [
+              "Enterprise Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a]",
+              "Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a]",
+              "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+              "Selected route general-private-company: Eligible evidence is available, but no stronger specialized route is selected. [ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a]",
+              "Sufficiency is sufficient with score 0.85: Evidence coverage is sufficient for route selection before valuation.",
+              "Total Equity Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-2df79df4d844, ev-4a0498d1cfc9, ev-b73daa03700a]"
+            ],
+            "conflicts": [],
+            "limitations": [
+              "Evidence record mammoth-2022-01-10-bayer-post-cutoff was published after the measurement date and was excluded.",
+              "Excluded mammoth-2022-01-10-bayer-post-cutoff because publishedDate 2022-01-10 is after measurementDate 2021-09-09.",
+              "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+              "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+              "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.",
+              "extraction note mammoth-product-cash-flow-not-public: No public product-level cash-flow, security-rights or cap-table evidence was identified for valuation-error scoring as of the cutoff."
+            ],
+            "counterarguments": [
+              "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: financial-services, recent-transaction, software-saas, marketplace, biotech-rnpv, asset-based."
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-cap-table",
+                "topic": "Cap table",
+                "description": "The evidence ledger does not disclose capitalization table data.",
+                "consequence": "TRACE cannot allocate value across securities or holders.",
+                "requiredFor": [
+                  "total-equity-value",
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-dilution",
+                "topic": "Dilution",
+                "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                "requiredFor": [
+                  "total-equity-value",
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-financial-and-operating-fact-coverage",
+                "topic": "Financial and operating fact coverage",
+                "description": "Evidence does not contain financial or operating facts usable for route selection.",
+                "consequence": "TRACE cannot support route selection without this evidence.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              },
+              {
+                "id": "missing-recent-secondary-transaction",
+                "topic": "Recent secondary transaction",
+                "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                "requiredFor": [
+                  "headline-valuation"
+                ]
+              },
+              {
+                "id": "missing-share-preferences",
+                "topic": "Share preferences",
+                "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                "requiredFor": [
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-share-rights",
+                "topic": "Share rights",
+                "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                "requiredFor": [
+                  "security-level-fair-value"
+                ]
+              }
+            ],
+            "nextDiligenceQuestions": [
+              "What evidence resolves Cap table for total-equity-value, security-level-fair-value?",
+              "What evidence resolves Dilution for total-equity-value, security-level-fair-value?",
+              "What evidence resolves Financial and operating fact coverage for routing, sufficiency?",
+              "What evidence resolves Recent secondary transaction for headline-valuation?",
+              "What evidence resolves Share preferences for security-level-fair-value?",
+              "What evidence resolves Share rights for security-level-fair-value?"
+            ]
+          },
+          "run": {
+            "runId": "run-5c191b9ced89d3c9",
+            "runtimeVersion": "0.1.0",
+            "command": "trace benchmark --partition development --runner trace-full --case-id dev-biotech-mammoth-2021",
+            "measurementDate": "2021-09-09",
+            "startedAt": "2026-07-26T00:00:00.000Z",
+            "completedAt": "2026-07-26T00:00:00.322Z",
+            "durationMs": 322,
+            "inputPath": "benchmark:development:dev-biotech-mammoth-2021",
+            "outputDirectory": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-biotech-mammoth-2021",
+            "warnings": [
+              "Excluded mammoth-2022-01-10-bayer-post-cutoff because publishedDate 2022-01-10 is after measurementDate 2021-09-09."
+            ]
+          }
+        },
+        "executionLog": {
+          "schemaVersion": "trace.execution-log.v1",
+          "runId": "run-5c191b9ced89d3c9",
+          "runtimeVersion": "0.1.0",
+          "measurementDate": "2021-09-09",
+          "inputPath": "benchmark:development:dev-biotech-mammoth-2021",
+          "outputPaths": {
+            "jsonReport": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-biotech-mammoth-2021/raw-runner-output.json",
+            "markdownReport": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-biotech-mammoth-2021/raw-runner-output.md",
+            "executionLog": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-biotech-mammoth-2021/raw-runner-output.json#executionLog"
+          },
+          "startedAt": "2026-07-26T00:00:00.000Z",
+          "completedAt": "2026-07-26T00:00:00.322Z",
+          "durationMs": 322,
+          "validationWarnings": [
+            "Excluded mammoth-2022-01-10-bayer-post-cutoff because publishedDate 2022-01-10 is after measurementDate 2021-09-09."
+          ],
+          "reviewerFindings": [
+            {
+              "id": "review-abstention-triggers",
+              "severity": "pass",
+              "category": "abstention",
+              "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+              "evidenceIds": [
+                "ev-2df79df4d844",
+                "ev-4a0498d1cfc9",
+                "ev-b73daa03700a"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-calculation-integrity",
+              "severity": "pass",
+              "category": "calculation",
+              "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+              "evidenceIds": [
+                "ev-2df79df4d844",
+                "ev-4a0498d1cfc9",
+                "ev-b73daa03700a"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-citation-support",
+              "severity": "pass",
+              "category": "evidence",
+              "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+              "evidenceIds": [
+                "ev-2df79df4d844",
+                "ev-4a0498d1cfc9",
+                "ev-b73daa03700a"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-cutoff-compliance",
+              "severity": "warning",
+              "category": "cutoff",
+              "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+              "evidenceIds": [
+                "ev-2df79df4d844",
+                "ev-4a0498d1cfc9",
+                "ev-b73daa03700a"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-entity-certainty",
+              "severity": "pass",
+              "category": "entity",
+              "message": "Target identity is resolved and supported by included evidence.",
+              "evidenceIds": [
+                "ev-2df79df4d844",
+                "ev-4a0498d1cfc9"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-evidence-coverage",
+              "severity": "pass",
+              "category": "evidence",
+              "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+              "evidenceIds": [
+                "ev-2df79df4d844",
+                "ev-4a0498d1cfc9",
+                "ev-b73daa03700a"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-route-appropriateness",
+              "severity": "pass",
+              "category": "route",
+              "message": "Route selection is consistent with sufficiency status: general-private-company.",
+              "evidenceIds": [
+                "ev-2df79df4d844",
+                "ev-4a0498d1cfc9",
+                "ev-b73daa03700a"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-valuation-field-separation",
+              "severity": "pass",
+              "category": "valuation-separation",
+              "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+              "evidenceIds": [
+                "ev-2df79df4d844",
+                "ev-4a0498d1cfc9",
+                "ev-b73daa03700a"
+              ],
+              "missingInformation": []
+            }
+          ],
+          "deterministicIdentifiers": {
+            "evidenceLedgerHash": "d67428069577dfdc27a81c0182f2ed1729b47459c4cb96a3d4da129f1de05ff3",
+            "runtimeResultHash": "da970b7985bc70d50ce99dcb1099cdbf7426bdbb741d351f3d32ba45a948351e"
+          }
+        }
+      }
+    },
+    "normalized": {
+      "claims": [
+        {
+          "id": "trace-valuation-7e5f6771f4c5",
+          "kind": "abstention",
+          "statement": "Enterprise Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "value": "recent-secondary-transaction-not-observed",
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844"
+            },
+            {
+              "evidenceId": "ev-4a0498d1cfc9"
+            },
+            {
+              "evidenceId": "ev-b73daa03700a"
+            }
+          ]
+        },
+        {
+          "id": "trace-valuation-9e4afbf77dcb",
+          "kind": "abstention",
+          "statement": "Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "value": "recent-secondary-transaction-not-observed",
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844"
+            },
+            {
+              "evidenceId": "ev-4a0498d1cfc9"
+            },
+            {
+              "evidenceId": "ev-b73daa03700a"
+            }
+          ]
+        },
+        {
+          "id": "trace-valuation-f9da2107c9f5",
+          "kind": "abstention",
+          "statement": "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "value": "security-rights-and-cap-table-not-disclosed",
+          "citations": []
+        },
+        {
+          "id": "trace-valuation-a1d257279b90",
+          "kind": "abstention",
+          "statement": "Total Equity Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "value": "recent-secondary-transaction-not-observed",
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844"
+            },
+            {
+              "evidenceId": "ev-4a0498d1cfc9"
+            },
+            {
+              "evidenceId": "ev-b73daa03700a"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-25764c02bff8",
+          "kind": "observable",
+          "statement": "A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors.",
+          "value": "CRISPR-Cas12 SARS-CoV-2 detection",
+          "period": {
+            "instantDate": "2020-04-16"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-4a0498d1cfc9",
+              "factId": "fact-00bf393f5b01",
+              "locator": "Nature Biotechnology article via PMC"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-7abe7502006c",
+          "kind": "observable",
+          "statement": "FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+          "value": "EUA issued",
+          "period": {
+            "instantDate": "2020-08-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-b73daa03700a",
+              "factId": "fact-110b56088c37",
+              "locator": "SARS-CoV-2 DETECTR Reagent Kit row"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-92110798b422",
+          "kind": "observable",
+          "statement": "Mammoth announced USD 195 million of financing on 2021-09-09.",
+          "value": 195,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2021-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844",
+              "factId": "fact-11739eea8ac3",
+              "locator": "Business Wire release, 09 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-835aa68426fc",
+          "kind": "observable",
+          "statement": "Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics.",
+          "value": "CRISPR therapeutics and diagnostics",
+          "period": {
+            "instantDate": "2021-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844",
+              "factId": "fact-dc7a03de13a1",
+              "locator": "Business Wire release, 09 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-7eb807cff91f",
+          "kind": "observable",
+          "statement": "Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery.",
+          "value": [
+            "Cas14",
+            "CasPhi"
+          ],
+          "period": {
+            "instantDate": "2021-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844",
+              "factId": "fact-f8d46db92bc2",
+              "locator": "Business Wire release, 09 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-a1dba7341880",
+          "kind": "observable",
+          "statement": "Mammoth stated it had expanded its team to more than 100 employees.",
+          "value": 100,
+          "unit": "employees, greater than",
+          "period": {
+            "instantDate": "2021-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844",
+              "factId": "fact-c93248473675",
+              "locator": "Business Wire release, 09 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-1de7cb33d34c",
+          "kind": "observable",
+          "statement": "Mammoth stated the financing included a USD 150 million Series D led by Redmile Group.",
+          "value": 150,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2021-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844",
+              "factId": "fact-3c38d7c8dafd",
+              "locator": "Business Wire release, 09 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-dad8d140afea",
+          "kind": "observable",
+          "statement": "Mammoth stated the financing placed the company in unicorn status with valuation greater than USD 1 billion.",
+          "value": 1,
+          "unit": "USD billions headline valuation, greater than",
+          "period": {
+            "instantDate": "2021-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844",
+              "factId": "fact-a242e66e0c16",
+              "locator": "Business Wire release, 09 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-9015bd66e383",
+          "kind": "observable",
+          "statement": "The article lists Mammoth Biosciences, Inc. affiliations for James Broughton and Janice Chen.",
+          "value": [
+            "James Broughton",
+            "Janice Chen"
+          ],
+          "period": {
+            "instantDate": "2020-04-16"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-4a0498d1cfc9",
+              "factId": "fact-1de81cea2118",
+              "locator": "Nature Biotechnology article via PMC"
+            }
+          ]
+        },
+        {
+          "id": "trace-sufficiency-c24bf0f31c8a",
+          "kind": "other",
+          "statement": "TRACE sufficiency is sufficient with score 0.85: Evidence coverage is sufficient for route selection before valuation.",
+          "value": 0.85,
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844"
+            },
+            {
+              "evidenceId": "ev-4a0498d1cfc9"
+            },
+            {
+              "evidenceId": "ev-b73daa03700a"
+            }
+          ]
+        },
+        {
+          "id": "trace-route-c4c80390898a",
+          "kind": "route",
+          "statement": "TRACE selected general-private-company: Eligible evidence is available, but no stronger specialized route is selected.",
+          "value": "general-private-company",
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844"
+            },
+            {
+              "evidenceId": "ev-4a0498d1cfc9"
+            },
+            {
+              "evidenceId": "ev-b73daa03700a"
+            }
+          ]
+        }
+      ],
+      "route": {
+        "status": "selected",
+        "selectedRoute": "general-private-company",
+        "rationale": "Eligible evidence is available, but no stronger specialized route is selected.",
+        "evidenceIds": [
+          "ev-2df79df4d844",
+          "ev-4a0498d1cfc9",
+          "ev-b73daa03700a"
+        ]
+      },
+      "abstentions": [
+        {
+          "id": "trace-abstention-enterprise-value",
+          "field": "enterprise-value",
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-2df79df4d844",
+            "ev-4a0498d1cfc9",
+            "ev-b73daa03700a"
+          ]
+        },
+        {
+          "id": "trace-abstention-headline-valuation",
+          "field": "headline-valuation",
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-2df79df4d844",
+            "ev-4a0498d1cfc9",
+            "ev-b73daa03700a"
+          ]
+        },
+        {
+          "id": "trace-abstention-security-level-fair-value",
+          "field": "security-level-fair-value",
+          "reasonCode": "security-rights-and-cap-table-not-disclosed",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "evidenceIds": []
+        },
+        {
+          "id": "trace-abstention-total-equity-value",
+          "field": "total-equity-value",
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-2df79df4d844",
+            "ev-4a0498d1cfc9",
+            "ev-b73daa03700a"
+          ]
+        }
+      ],
+      "valuations": [
+        {
+          "field": "enterprise-value",
+          "status": "abstained",
+          "rationale": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-2df79df4d844",
+            "ev-4a0498d1cfc9",
+            "ev-b73daa03700a"
+          ]
+        },
+        {
+          "field": "headline-valuation",
+          "status": "abstained",
+          "rationale": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-2df79df4d844",
+            "ev-4a0498d1cfc9",
+            "ev-b73daa03700a"
+          ]
+        },
+        {
+          "field": "security-level-fair-value",
+          "status": "abstained",
+          "rationale": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "evidenceIds": []
+        },
+        {
+          "field": "total-equity-value",
+          "status": "abstained",
+          "rationale": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-2df79df4d844",
+            "ev-4a0498d1cfc9",
+            "ev-b73daa03700a"
+          ]
+        }
+      ]
+    },
+    "failures": []
+  }
+}

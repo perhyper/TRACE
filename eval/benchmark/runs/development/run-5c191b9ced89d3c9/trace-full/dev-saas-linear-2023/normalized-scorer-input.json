@@ -1,0 +1,2281 @@
+{
+  "schemaVersion": "trace.benchmark-scorer-input.v1",
+  "runId": "run-5c191b9ced89d3c9",
+  "runnerName": "trace-full",
+  "caseId": "dev-saas-linear-2023",
+  "partition": "development",
+  "caseInput": {
+    "schemaVersion": "trace.benchmark-case-input.v1",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "manifestSchemaVersion": "trace.benchmark-manifest.v1",
+    "caseId": "dev-saas-linear-2023",
+    "partition": "development",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Linear Orbit, Inc.",
+    "target": {
+      "legalName": "Linear Orbit, Inc.",
+      "jurisdiction": "US",
+      "identifiers": [
+        {
+          "scheme": "other",
+          "value": "linear.app",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "Linear"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2023-09-14",
+    "cutoffDate": "2023-09-14",
+    "dataTier": "sparse",
+    "sourcePolicy": {
+      "approvedPublicSourceCategories": [
+        "company-primary",
+        "legal-record",
+        "news"
+      ],
+      "redistributionStatus": "public-urls-redistribution-not-established",
+      "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+      "onlyUrlsAndShortExcerptsMayBeCommitted": true
+    },
+    "authorityBoundary": {
+      "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+      "officialContestRulesStatus": "not-supplied",
+      "contestComplianceClaimAllowed": false,
+      "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+      "prohibitedClaims": [
+        "appraisal status",
+        "benchmark superiority",
+        "contest readiness",
+        "investment advice",
+        "official contest compliance"
+      ]
+    },
+    "sourceRecordIds": [
+      "linear-2023-09-14-forbes-profile",
+      "linear-2023-09-14-series-b-blog"
+    ],
+    "evidenceLedger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Linear Orbit, Inc.",
+        "jurisdiction": "US",
+        "identifiers": [
+          {
+            "scheme": "other",
+            "value": "linear.app",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "Linear"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2023-09-14",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-7cdb351de312",
+          "sourceUrl": "https://linear.app/now/series-b",
+          "sourceTitle": "Linear raises USD 35M Series B led by Accel",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2023-09-14",
+          "effectiveDate": "2023-09-14",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Linear Now, 14 Sep 2023",
+          "shortExcerpt": "Linear announced a USD 35m Series B led by Accel with Sequoia and 01 Advisors participating.",
+          "observedFacts": [
+            {
+              "id": "fact-66a9f955f39a",
+              "statement": "Linear said it had been growing and operating profitably since 2021.",
+              "epistemicClass": "observed",
+              "value": "profitable since 2021",
+              "period": {
+                "startDate": "2021-01-01",
+                "endDate": "2023-09-14"
+              }
+            },
+            {
+              "id": "fact-5f77f6aebc86",
+              "statement": "Linear announced a USD 35 million Series B on 2023-09-14.",
+              "epistemicClass": "observed",
+              "value": 35,
+              "unit": "USD millions",
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            },
+            {
+              "id": "fact-d51eadccf25b",
+              "statement": "Linear said Sequoia, 01 Advisors and individual software operators participated in the Series B.",
+              "epistemicClass": "observed",
+              "value": [
+                "Sequoia",
+                "01 Advisors",
+                "software operator angels"
+              ],
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            },
+            {
+              "id": "fact-d6aa9d25adad",
+              "statement": "Linear said it was a team of 50 people on 2023-09-14.",
+              "epistemicClass": "observed",
+              "value": 50,
+              "unit": "employees",
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            },
+            {
+              "id": "fact-d17b91d5fa45",
+              "statement": "Linear said it was trusted and used by thousands of companies of all sizes.",
+              "epistemicClass": "observed",
+              "value": "thousands of companies",
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            },
+            {
+              "id": "fact-cc1ce80422d5",
+              "statement": "Linear said the Series B was led by Accel.",
+              "epistemicClass": "observed",
+              "value": "Accel",
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-d9970e2872b9",
+          "sourceUrl": "https://www.forbes.com/sites/alexkonrad/2023/09/14/linear-developer-tools-raises-35-million-series-b/",
+          "sourceTitle": "Linear developer tools raise USD 35 million Series B",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2023-09-14",
+          "effectiveDate": "2023-09-14",
+          "sourceClass": "news",
+          "epistemicClass": "observed",
+          "locator": "Forbes, 14 Sep 2023",
+          "shortExcerpt": "Forbes reported Linear's Series B valued the company at about USD 400m and described the company as profitable.",
+          "observedFacts": [
+            {
+              "id": "fact-d6887c8e0ac0",
+              "statement": "Forbes named customers including Cohere, Ramp and Runway in its Linear profile.",
+              "epistemicClass": "observed",
+              "value": [
+                "Cohere",
+                "Ramp",
+                "Runway"
+              ],
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            },
+            {
+              "id": "fact-eaeac4846793",
+              "statement": "Forbes reported Linear was profitable around the Series B announcement.",
+              "epistemicClass": "observed",
+              "value": true,
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            },
+            {
+              "id": "fact-78fee322f04c",
+              "statement": "Forbes reported that the Series B valued Linear at about USD 400 million.",
+              "epistemicClass": "observed",
+              "value": 400,
+              "unit": "USD millions headline valuation",
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "linear-2026-06-09-terms-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record linear-2026-06-09-terms-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://linear.app/terms",
+          "sourceTitle": "Linear Terms of Service",
+          "publishedDate": "2026-06-09",
+          "measurementDate": "2023-09-14"
+        }
+      ],
+      "failedNotes": [
+        {
+          "id": "linear-pre-cutoff-legal-record-not-found",
+          "stage": "access",
+          "sourceTitle": "Pre-cutoff Linear legal identity record",
+          "attemptedAt": "2026-07-26T00:00:00Z",
+          "note": "No pre-cutoff public legal record resolving Linear Orbit, Inc. was approved for commit; post-cutoff terms are recorded only as excluded evidence."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded linear-2026-06-09-terms-post-cutoff because publishedDate 2026-06-09 is after measurementDate 2023-09-14.",
+          "recordIds": [
+            "linear-2026-06-09-terms-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://linear.app/terms"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    }
+  },
+  "annotation": {
+    "schemaVersion": "trace.benchmark-annotation.v1",
+    "caseId": "dev-saas-linear-2023",
+    "partition": "development",
+    "measurementDate": "2023-09-14",
+    "expectedRoute": {
+      "route": "software-saas",
+      "acceptableAlternativeRoutes": [],
+      "evidenceIds": [
+        "ev-7cdb351de312",
+        "ev-d9970e2872b9"
+      ],
+      "rationale": "The cutoff evidence describes product and issue tracking software sold to software teams."
+    },
+    "binaryClaims": [
+      {
+        "id": "linear-pre-cutoff-legal-record-available",
+        "statement": "A pre-cutoff public legal record resolving Linear Orbit, Inc. is included as model-input evidence.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-bcee8ecd97b2"
+        ],
+        "sourceAvailability": "post-cutoff-excluded"
+      },
+      {
+        "id": "linear-profitable-since-2021",
+        "statement": "Linear said it had been operating profitably since 2021.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-7cdb351de312"
+        ]
+      },
+      {
+        "id": "linear-series-b-announced",
+        "statement": "Linear announced a Series B by the cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-7cdb351de312"
+        ]
+      }
+    ],
+    "observableClaims": [
+      {
+        "id": "linear-headline-valuation",
+        "statement": "Linear's Series B headline valuation was reported at about USD 400 million.",
+        "expectedValue": 400,
+        "unit": "USD millions headline valuation",
+        "period": {
+          "instantDate": "2023-09-14"
+        },
+        "evidenceIds": [
+          "ev-d9970e2872b9"
+        ]
+      },
+      {
+        "id": "linear-series-b-amount",
+        "statement": "Linear's Series B amount was USD 35 million.",
+        "expectedValue": 35,
+        "unit": "USD millions",
+        "period": {
+          "instantDate": "2023-09-14"
+        },
+        "evidenceIds": [
+          "ev-7cdb351de312"
+        ]
+      },
+      {
+        "id": "linear-team-size",
+        "statement": "Linear said it had a team of 50 people.",
+        "expectedValue": 50,
+        "unit": "employees",
+        "period": {
+          "instantDate": "2023-09-14"
+        },
+        "evidenceIds": [
+          "ev-7cdb351de312"
+        ]
+      }
+    ],
+    "expectedAbstentions": [
+      {
+        "id": "linear-financial-statements-abstain",
+        "field": "enterprise-value",
+        "reasonCode": "no-public-financial-statements",
+        "description": "The cutoff evidence gives funding and qualitative traction but no audited revenue, margin or cash-flow base.",
+        "evidenceIds": [
+          "ev-7cdb351de312"
+        ]
+      },
+      {
+        "id": "linear-security-level-fair-value-abstain",
+        "field": "security-level-fair-value",
+        "reasonCode": "missing-security-rights-and-cap-table",
+        "description": "The funding announcement and news profile do not disclose security rights or cap table.",
+        "evidenceIds": [
+          "ev-7cdb351de312",
+          "ev-d9970e2872b9"
+        ]
+      }
+    ],
+    "valuationSeparationExpectations": {
+      "allowedValuationFields": [
+        "headline-valuation"
+      ],
+      "mustNotConflate": [
+        "Series B headline valuation with enterprise value",
+        "Series B headline valuation with security-level fair value",
+        "funding amount with total equity value"
+      ],
+      "notes": "Sparse SaaS case; valuation evidence is a reported headline funding valuation only."
+    },
+    "completenessExpectations": [
+      {
+        "id": "linear-cover-sparse-saas-limitations",
+        "description": "A complete answer should cover product route, Series B facts, reported profitability, customer examples, and sparse-data abstentions.",
+        "requiredEvidenceClasses": [
+          "company-primary",
+          "news"
+        ],
+        "requiredTopics": [
+          "funding",
+          "missing financials",
+          "software-saas route",
+          "traction"
+        ],
+        "evidenceIds": [
+          "ev-7cdb351de312",
+          "ev-d9970e2872b9"
+        ]
+      }
+    ],
+    "historicalValuationTargets": {
+      "eligible": false,
+      "reason": "Manifest marks this case ineligible because the cutoff evidence lacks a completed valuation target, share rights, cap table or public financials.",
+      "targets": []
+    }
+  },
+  "runnerOutput": {
+    "schemaVersion": "trace.benchmark-runner-output.v1",
+    "runnerName": "trace-full",
+    "runId": "run-5c191b9ced89d3c9",
+    "caseId": "dev-saas-linear-2023",
+    "partition": "development",
+    "status": "completed",
+    "timing": {
+      "schemaVersion": "trace.benchmark-timing.v1",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.299Z",
+      "durationMs": 299
+    },
+    "rawOutput": {
+      "markdown": "# TRACE Report: Linear Orbit, Inc.\n\n## Summary\n- Company: Linear Orbit, Inc. (US; identity resolved)\n- Measurement date: 2023-09-14\n- Decision mode: full-analysis\n- Sufficiency: sufficient (0.85)\n- Route: general-private-company\n- Review: warnings\n- Run ID: run-5c191b9ced89d3c9\n\n## Evidence Ledger\n| Evidence ID | Source class | Published | Retrieved | Source | Excerpt |\n| --- | --- | --- | --- | --- | --- |\n| ev-7cdb351de312 | company-primary | 2023-09-14 | 2026-07-26 | Linear raises USD 35M Series B led by Accel (https://linear.app/now/series-b) | Linear announced a USD 35m Series B led by Accel with Sequoia and 01 Advisors participating. |\n| ev-d9970e2872b9 | news | 2023-09-14 | 2026-07-26 | Linear developer tools raise USD 35 million Series B (https://www.forbes.com/sites/alexkonrad/2023/09/14/linear-developer-tools-raises-35-million-series-b/) | Forbes reported Linear's Series B valued the company at about USD 400m and described the company as profitable. |\n\n## Material Facts\n- Forbes named customers including Cohere, Ramp and Runway in its Linear profile. value=Cohere, Ramp, Runway; period=instant 2023-09-14; epistemic=observed [ev-d9970e2872b9]\n- Forbes reported Linear was profitable around the Series B announcement. value=true; period=instant 2023-09-14; epistemic=observed [ev-d9970e2872b9]\n- Forbes reported that the Series B valued Linear at about USD 400 million. value=400; unit=USD millions headline valuation; period=instant 2023-09-14; epistemic=observed [ev-d9970e2872b9]\n- Linear announced a USD 35 million Series B on 2023-09-14. value=35; unit=USD millions; period=instant 2023-09-14; epistemic=observed [ev-7cdb351de312]\n- Linear said Sequoia, 01 Advisors and individual software operators participated in the Series B. value=Sequoia, 01 Advisors, software operator angels; period=instant 2023-09-14; epistemic=observed [ev-7cdb351de312]\n- Linear said it had been growing and operating profitably since 2021. value=profitable since 2021; period=start 2021-01-01, end 2023-09-14; epistemic=observed [ev-7cdb351de312]\n- Linear said it was a team of 50 people on 2023-09-14. value=50; unit=employees; period=instant 2023-09-14; epistemic=observed [ev-7cdb351de312]\n- Linear said it was trusted and used by thousands of companies of all sizes. value=thousands of companies; period=instant 2023-09-14; epistemic=observed [ev-7cdb351de312]\n- Linear said the Series B was led by Accel. value=Accel; period=instant 2023-09-14; epistemic=observed [ev-7cdb351de312]\n\n## Inferences\n- Enterprise Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-7cdb351de312, ev-d9970e2872b9]\n- Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-7cdb351de312, ev-d9970e2872b9]\n- Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- Selected route general-private-company: Eligible evidence is available, but no stronger specialized route is selected. [ev-7cdb351de312, ev-d9970e2872b9]\n- Sufficiency is sufficient with score 0.85: Evidence coverage is sufficient for route selection before valuation.\n- Total Equity Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-7cdb351de312, ev-d9970e2872b9]\n\n## Valuation\n### Headline Valuation\n- Status: abstained\n- Reason: recent-secondary-transaction-not-observed\n- Explanation: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- Evidence: ev-7cdb351de312, ev-d9970e2872b9\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n\n### Enterprise Value\n- Status: abstained\n- Reason: recent-secondary-transaction-not-observed\n- Explanation: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- Evidence: ev-7cdb351de312, ev-d9970e2872b9\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n\n### Total Equity Value\n- Status: abstained\n- Reason: recent-secondary-transaction-not-observed\n- Explanation: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- Evidence: ev-7cdb351de312, ev-d9970e2872b9\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n\n### Security-Level Fair Value\n- Status: abstained\n- Reason: security-rights-and-cap-table-not-disclosed\n- Explanation: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- Evidence: None\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-cap-table | Cap table | total-equity-value, security-level-fair-value | TRACE cannot allocate value across securities or holders. |\n| missing-dilution | Dilution | total-equity-value, security-level-fair-value | TRACE cannot convert company-level headline value into per-security fair value. |\n| missing-share-preferences | Share preferences | security-level-fair-value | TRACE cannot determine whether the security participates equally in the headline value. |\n| missing-share-rights | Share rights | security-level-fair-value | TRACE cannot assign the headline reference to a specific share class. |\n\n## Limitations\n- Evidence record linear-2026-06-09-terms-post-cutoff was published after the measurement date and was excluded.\n- Excluded linear-2026-06-09-terms-post-cutoff because publishedDate 2026-06-09 is after measurementDate 2023-09-14.\n- TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.\n- access note linear-pre-cutoff-legal-record-not-found: No pre-cutoff public legal record resolving Linear Orbit, Inc. was approved for commit; post-cutoff terms are recorded only as excluded evidence.\n\n## Conflicts\n- None identified.\n\n## Counterarguments\n- Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: financial-services, recent-transaction, software-saas, marketplace, biotech-rnpv, asset-based.\n\n## Missing Information\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-cap-table | Cap table | total-equity-value, security-level-fair-value | TRACE cannot allocate value across securities or holders. |\n| missing-dilution | Dilution | total-equity-value, security-level-fair-value | TRACE cannot convert company-level headline value into per-security fair value. |\n| missing-financial-and-operating-fact-coverage | Financial and operating fact coverage | routing, sufficiency | TRACE treats this as a routing limitation unless stronger evidence is supplied. |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n| missing-share-preferences | Share preferences | security-level-fair-value | TRACE cannot determine whether the security participates equally in the headline value. |\n| missing-share-rights | Share rights | security-level-fair-value | TRACE cannot assign the headline reference to a specific share class. |\n| missing-source-quality | Source quality | routing, sufficiency | TRACE treats this as a routing limitation unless stronger evidence is supplied. |\n\n## Next Diligence Questions\n- What evidence resolves Cap table for total-equity-value, security-level-fair-value?\n- What evidence resolves Dilution for total-equity-value, security-level-fair-value?\n- What evidence resolves Financial and operating fact coverage for routing, sufficiency?\n- What evidence resolves Recent secondary transaction for headline-valuation?\n- What evidence resolves Share preferences for security-level-fair-value?\n- What evidence resolves Share rights for security-level-fair-value?\n- What evidence resolves Source quality for routing, sufficiency?\n\n## Reviewer Findings\n- Reviewer version: trace-reviewer.v1\n- Status: warnings\n\n| ID | Severity | Category | Evidence | Message |\n| --- | --- | --- | --- | --- |\n| review-abstention-triggers | pass | abstention | ev-7cdb351de312, ev-d9970e2872b9 | Abstained valuation fields include missing-information reasons, and security-level triggers are respected. |\n| review-calculation-integrity | pass | calculation | ev-7cdb351de312, ev-d9970e2872b9 | No concluded valuation calculations were emitted; abstentions are explicit. |\n| review-citation-support | pass | evidence | ev-7cdb351de312, ev-d9970e2872b9 | Sufficiency, route, and valuation claims cite included evidence IDs where citations are required. |\n| review-cutoff-compliance | warning | cutoff | ev-7cdb351de312, ev-d9970e2872b9 | Post-measurement-date evidence was excluded by provider validation and remains visible in warnings. |\n| review-entity-certainty | pass | entity | ev-7cdb351de312, ev-d9970e2872b9 | Target identity is resolved and supported by included evidence. |\n| review-evidence-coverage | pass | evidence | ev-7cdb351de312, ev-d9970e2872b9 | Evidence coverage satisfies the sufficiency gate for route selection. |\n| review-route-appropriateness | pass | route | ev-7cdb351de312, ev-d9970e2872b9 | Route selection is consistent with sufficiency status: general-private-company. |\n| review-valuation-field-separation | pass | valuation-separation | ev-7cdb351de312, ev-d9970e2872b9 | Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields. |\n\n## Run Metadata\n- Run ID: run-5c191b9ced89d3c9\n- Runtime version: 0.1.0\n- Command: trace benchmark --partition development --runner trace-full --case-id dev-saas-linear-2023\n- Measurement date: 2023-09-14\n- Started at: 2026-07-26T00:00:00.000Z\n- Completed at: 2026-07-26T00:00:00.299Z\n- Duration ms: 299\n- Input path: benchmark:development:dev-saas-linear-2023\n- Output directory: benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-saas-linear-2023\n- Warnings:\n- Excluded linear-2026-06-09-terms-post-cutoff because publishedDate 2026-06-09 is after measurementDate 2023-09-14.\n",
+      "json": {
+        "schemaVersion": "trace.trace-full-runner-output.v1",
+        "runnerName": "trace-full",
+        "analyzerVersion": "0.1.0",
+        "inputFingerprint": "1a0b3b0cacf1",
+        "case": {
+          "caseId": "dev-saas-linear-2023",
+          "partition": "development",
+          "scoringRole": "scored",
+          "countedInScoring": true,
+          "companyLegalName": "Linear Orbit, Inc.",
+          "measurementDate": "2023-09-14",
+          "cutoffDate": "2023-09-14",
+          "dataTier": "sparse",
+          "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+          "sourceRecordIds": [
+            "linear-2023-09-14-forbes-profile",
+            "linear-2023-09-14-series-b-blog"
+          ]
+        },
+        "sourcePolicy": {
+          "approvedPublicSourceCategories": [
+            "company-primary",
+            "legal-record",
+            "news"
+          ],
+          "redistributionStatus": "public-urls-redistribution-not-established",
+          "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+          "onlyUrlsAndShortExcerptsMayBeCommitted": true
+        },
+        "authorityBoundary": {
+          "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+          "officialContestRulesStatus": "not-supplied",
+          "contestComplianceClaimAllowed": false,
+          "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+          "prohibitedClaims": [
+            "appraisal status",
+            "benchmark superiority",
+            "contest readiness",
+            "investment advice",
+            "official contest compliance"
+          ]
+        },
+        "analyzerPath": [
+          "evidence-ledger",
+          "sufficiency-gating",
+          "route-selection",
+          "valuation-engine",
+          "adversarial-review",
+          "report-composer"
+        ],
+        "runtimeResult": {
+          "ledger": {
+            "schemaVersion": "trace.evidence-ledger.v1",
+            "target": {
+              "legalName": "Linear Orbit, Inc.",
+              "jurisdiction": "US",
+              "identifiers": [
+                {
+                  "scheme": "other",
+                  "value": "linear.app",
+                  "jurisdiction": "US"
+                }
+              ],
+              "aliases": [
+                "Linear"
+              ],
+              "identityConfidence": "resolved"
+            },
+            "measurementDate": "2023-09-14",
+            "decisionMode": "full-analysis",
+            "evidence": [
+              {
+                "id": "ev-7cdb351de312",
+                "sourceUrl": "https://linear.app/now/series-b",
+                "sourceTitle": "Linear raises USD 35M Series B led by Accel",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2023-09-14",
+                "effectiveDate": "2023-09-14",
+                "sourceClass": "company-primary",
+                "epistemicClass": "observed",
+                "locator": "Linear Now, 14 Sep 2023",
+                "shortExcerpt": "Linear announced a USD 35m Series B led by Accel with Sequoia and 01 Advisors participating.",
+                "observedFacts": [
+                  {
+                    "id": "fact-66a9f955f39a",
+                    "statement": "Linear said it had been growing and operating profitably since 2021.",
+                    "epistemicClass": "observed",
+                    "value": "profitable since 2021",
+                    "period": {
+                      "startDate": "2021-01-01",
+                      "endDate": "2023-09-14"
+                    }
+                  },
+                  {
+                    "id": "fact-5f77f6aebc86",
+                    "statement": "Linear announced a USD 35 million Series B on 2023-09-14.",
+                    "epistemicClass": "observed",
+                    "value": 35,
+                    "unit": "USD millions",
+                    "period": {
+                      "instantDate": "2023-09-14"
+                    }
+                  },
+                  {
+                    "id": "fact-d51eadccf25b",
+                    "statement": "Linear said Sequoia, 01 Advisors and individual software operators participated in the Series B.",
+                    "epistemicClass": "observed",
+                    "value": [
+                      "Sequoia",
+                      "01 Advisors",
+                      "software operator angels"
+                    ],
+                    "period": {
+                      "instantDate": "2023-09-14"
+                    }
+                  },
+                  {
+                    "id": "fact-d6aa9d25adad",
+                    "statement": "Linear said it was a team of 50 people on 2023-09-14.",
+                    "epistemicClass": "observed",
+                    "value": 50,
+                    "unit": "employees",
+                    "period": {
+                      "instantDate": "2023-09-14"
+                    }
+                  },
+                  {
+                    "id": "fact-d17b91d5fa45",
+                    "statement": "Linear said it was trusted and used by thousands of companies of all sizes.",
+                    "epistemicClass": "observed",
+                    "value": "thousands of companies",
+                    "period": {
+                      "instantDate": "2023-09-14"
+                    }
+                  },
+                  {
+                    "id": "fact-cc1ce80422d5",
+                    "statement": "Linear said the Series B was led by Accel.",
+                    "epistemicClass": "observed",
+                    "value": "Accel",
+                    "period": {
+                      "instantDate": "2023-09-14"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ev-d9970e2872b9",
+                "sourceUrl": "https://www.forbes.com/sites/alexkonrad/2023/09/14/linear-developer-tools-raises-35-million-series-b/",
+                "sourceTitle": "Linear developer tools raise USD 35 million Series B",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2023-09-14",
+                "effectiveDate": "2023-09-14",
+                "sourceClass": "news",
+                "epistemicClass": "observed",
+                "locator": "Forbes, 14 Sep 2023",
+                "shortExcerpt": "Forbes reported Linear's Series B valued the company at about USD 400m and described the company as profitable.",
+                "observedFacts": [
+                  {
+                    "id": "fact-d6887c8e0ac0",
+                    "statement": "Forbes named customers including Cohere, Ramp and Runway in its Linear profile.",
+                    "epistemicClass": "observed",
+                    "value": [
+                      "Cohere",
+                      "Ramp",
+                      "Runway"
+                    ],
+                    "period": {
+                      "instantDate": "2023-09-14"
+                    }
+                  },
+                  {
+                    "id": "fact-eaeac4846793",
+                    "statement": "Forbes reported Linear was profitable around the Series B announcement.",
+                    "epistemicClass": "observed",
+                    "value": true,
+                    "period": {
+                      "instantDate": "2023-09-14"
+                    }
+                  },
+                  {
+                    "id": "fact-78fee322f04c",
+                    "statement": "Forbes reported that the Series B valued Linear at about USD 400 million.",
+                    "epistemicClass": "observed",
+                    "value": 400,
+                    "unit": "USD millions headline valuation",
+                    "period": {
+                      "instantDate": "2023-09-14"
+                    }
+                  }
+                ]
+              }
+            ],
+            "excludedRecords": [
+              {
+                "recordId": "linear-2026-06-09-terms-post-cutoff",
+                "reasonCode": "published-after-measurement-date",
+                "message": "Evidence record linear-2026-06-09-terms-post-cutoff was published after the measurement date and was excluded.",
+                "sourceUrl": "https://linear.app/terms",
+                "sourceTitle": "Linear Terms of Service",
+                "publishedDate": "2026-06-09",
+                "measurementDate": "2023-09-14"
+              }
+            ],
+            "failedNotes": [
+              {
+                "id": "linear-pre-cutoff-legal-record-not-found",
+                "stage": "access",
+                "sourceTitle": "Pre-cutoff Linear legal identity record",
+                "attemptedAt": "2026-07-26T00:00:00Z",
+                "note": "No pre-cutoff public legal record resolving Linear Orbit, Inc. was approved for commit; post-cutoff terms are recorded only as excluded evidence."
+              }
+            ],
+            "warnings": [
+              {
+                "code": "published-after-measurement-date",
+                "message": "Excluded linear-2026-06-09-terms-post-cutoff because publishedDate 2026-06-09 is after measurementDate 2023-09-14.",
+                "recordIds": [
+                  "linear-2026-06-09-terms-post-cutoff"
+                ],
+                "sourceUrls": [
+                  "https://linear.app/terms"
+                ],
+                "evidenceIds": []
+              }
+            ]
+          },
+          "sufficiency": {
+            "status": "sufficient",
+            "score": 0.85,
+            "criteria": [
+              {
+                "criterion": "Entity resolution",
+                "status": "met",
+                "explanation": "The target identity is resolved and supported by eligible evidence.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              },
+              {
+                "criterion": "Measurement-date eligible evidence",
+                "status": "met",
+                "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              },
+              {
+                "criterion": "Source quality",
+                "status": "partial",
+                "explanation": "One high-authority source class supports routing.",
+                "evidenceIds": [
+                  "ev-7cdb351de312"
+                ]
+              },
+              {
+                "criterion": "Route-defining business-model evidence",
+                "status": "met",
+                "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              },
+              {
+                "criterion": "Financial and operating fact coverage",
+                "status": "partial",
+                "explanation": "Evidence contains one financial or operating fact usable for route selection.",
+                "evidenceIds": [
+                  "ev-d9970e2872b9"
+                ]
+              }
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-source-quality",
+                "topic": "Source quality",
+                "description": "One high-authority source class supports routing.",
+                "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              },
+              {
+                "id": "missing-financial-and-operating-fact-coverage",
+                "topic": "Financial and operating fact coverage",
+                "description": "Evidence contains one financial or operating fact usable for route selection.",
+                "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              }
+            ],
+            "rationale": "Evidence coverage is sufficient for route selection before valuation."
+          },
+          "route": {
+            "status": "selected",
+            "selectedRoute": "general-private-company",
+            "selectedReasons": [
+              {
+                "summary": "Eligible evidence is available, but no stronger specialized route is selected.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              }
+            ],
+            "candidates": [
+              {
+                "route": "general-private-company",
+                "status": "selected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Eligible evidence is available, but no stronger specialized route is selected.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for recent transaction was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for software saas was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rejectedRoutes": [
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for recent transaction was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for software saas was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "valuation": {
+            "headlineValuation": {
+              "status": "abstained",
+              "field": "headline-valuation",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              }
+            },
+            "enterpriseValue": {
+              "status": "abstained",
+              "field": "enterprise-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              }
+            },
+            "totalEquityValue": {
+              "status": "abstained",
+              "field": "total-equity-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              }
+            },
+            "securityLevelFairValue": {
+              "status": "abstained",
+              "field": "security-level-fair-value",
+              "abstention": {
+                "reasonCode": "security-rights-and-cap-table-not-disclosed",
+                "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+                "missingInformation": [
+                  {
+                    "id": "missing-cap-table",
+                    "topic": "Cap table",
+                    "description": "The evidence ledger does not disclose capitalization table data.",
+                    "consequence": "TRACE cannot allocate value across securities or holders.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-dilution",
+                    "topic": "Dilution",
+                    "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                    "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-preferences",
+                    "topic": "Share preferences",
+                    "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                    "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-rights",
+                    "topic": "Share rights",
+                    "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                    "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": []
+              }
+            }
+          },
+          "review": {
+            "status": "warnings",
+            "reviewerVersion": "trace-reviewer.v1",
+            "findings": [
+              {
+                "id": "review-abstention-triggers",
+                "severity": "pass",
+                "category": "abstention",
+                "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-calculation-integrity",
+                "severity": "pass",
+                "category": "calculation",
+                "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-citation-support",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-cutoff-compliance",
+                "severity": "warning",
+                "category": "cutoff",
+                "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-entity-certainty",
+                "severity": "pass",
+                "category": "entity",
+                "message": "Target identity is resolved and supported by included evidence.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-evidence-coverage",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-route-appropriateness",
+                "severity": "pass",
+                "category": "route",
+                "message": "Route selection is consistent with sufficiency status: general-private-company.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-valuation-field-separation",
+                "severity": "pass",
+                "category": "valuation-separation",
+                "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              }
+            ]
+          }
+        },
+        "report": {
+          "schemaVersion": "trace.report.v1",
+          "company": {
+            "legalName": "Linear Orbit, Inc.",
+            "jurisdiction": "US",
+            "identifiers": [
+              {
+                "scheme": "other",
+                "value": "linear.app",
+                "jurisdiction": "US"
+              }
+            ],
+            "aliases": [
+              "Linear"
+            ],
+            "identityConfidence": "resolved"
+          },
+          "measurementDate": "2023-09-14",
+          "decisionMode": "full-analysis",
+          "evidence": [
+            {
+              "id": "ev-7cdb351de312",
+              "sourceUrl": "https://linear.app/now/series-b",
+              "sourceTitle": "Linear raises USD 35M Series B led by Accel",
+              "retrievedDate": "2026-07-26",
+              "publishedDate": "2023-09-14",
+              "effectiveDate": "2023-09-14",
+              "sourceClass": "company-primary",
+              "epistemicClass": "observed",
+              "locator": "Linear Now, 14 Sep 2023",
+              "shortExcerpt": "Linear announced a USD 35m Series B led by Accel with Sequoia and 01 Advisors participating.",
+              "observedFacts": [
+                {
+                  "id": "fact-66a9f955f39a",
+                  "statement": "Linear said it had been growing and operating profitably since 2021.",
+                  "epistemicClass": "observed",
+                  "value": "profitable since 2021",
+                  "period": {
+                    "startDate": "2021-01-01",
+                    "endDate": "2023-09-14"
+                  }
+                },
+                {
+                  "id": "fact-5f77f6aebc86",
+                  "statement": "Linear announced a USD 35 million Series B on 2023-09-14.",
+                  "epistemicClass": "observed",
+                  "value": 35,
+                  "unit": "USD millions",
+                  "period": {
+                    "instantDate": "2023-09-14"
+                  }
+                },
+                {
+                  "id": "fact-d51eadccf25b",
+                  "statement": "Linear said Sequoia, 01 Advisors and individual software operators participated in the Series B.",
+                  "epistemicClass": "observed",
+                  "value": [
+                    "Sequoia",
+                    "01 Advisors",
+                    "software operator angels"
+                  ],
+                  "period": {
+                    "instantDate": "2023-09-14"
+                  }
+                },
+                {
+                  "id": "fact-d6aa9d25adad",
+                  "statement": "Linear said it was a team of 50 people on 2023-09-14.",
+                  "epistemicClass": "observed",
+                  "value": 50,
+                  "unit": "employees",
+                  "period": {
+                    "instantDate": "2023-09-14"
+                  }
+                },
+                {
+                  "id": "fact-d17b91d5fa45",
+                  "statement": "Linear said it was trusted and used by thousands of companies of all sizes.",
+                  "epistemicClass": "observed",
+                  "value": "thousands of companies",
+                  "period": {
+                    "instantDate": "2023-09-14"
+                  }
+                },
+                {
+                  "id": "fact-cc1ce80422d5",
+                  "statement": "Linear said the Series B was led by Accel.",
+                  "epistemicClass": "observed",
+                  "value": "Accel",
+                  "period": {
+                    "instantDate": "2023-09-14"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ev-d9970e2872b9",
+              "sourceUrl": "https://www.forbes.com/sites/alexkonrad/2023/09/14/linear-developer-tools-raises-35-million-series-b/",
+              "sourceTitle": "Linear developer tools raise USD 35 million Series B",
+              "retrievedDate": "2026-07-26",
+              "publishedDate": "2023-09-14",
+              "effectiveDate": "2023-09-14",
+              "sourceClass": "news",
+              "epistemicClass": "observed",
+              "locator": "Forbes, 14 Sep 2023",
+              "shortExcerpt": "Forbes reported Linear's Series B valued the company at about USD 400m and described the company as profitable.",
+              "observedFacts": [
+                {
+                  "id": "fact-d6887c8e0ac0",
+                  "statement": "Forbes named customers including Cohere, Ramp and Runway in its Linear profile.",
+                  "epistemicClass": "observed",
+                  "value": [
+                    "Cohere",
+                    "Ramp",
+                    "Runway"
+                  ],
+                  "period": {
+                    "instantDate": "2023-09-14"
+                  }
+                },
+                {
+                  "id": "fact-eaeac4846793",
+                  "statement": "Forbes reported Linear was profitable around the Series B announcement.",
+                  "epistemicClass": "observed",
+                  "value": true,
+                  "period": {
+                    "instantDate": "2023-09-14"
+                  }
+                },
+                {
+                  "id": "fact-78fee322f04c",
+                  "statement": "Forbes reported that the Series B valued Linear at about USD 400 million.",
+                  "epistemicClass": "observed",
+                  "value": 400,
+                  "unit": "USD millions headline valuation",
+                  "period": {
+                    "instantDate": "2023-09-14"
+                  }
+                }
+              ]
+            }
+          ],
+          "sufficiency": {
+            "status": "sufficient",
+            "score": 0.85,
+            "criteria": [
+              {
+                "criterion": "Entity resolution",
+                "status": "met",
+                "explanation": "The target identity is resolved and supported by eligible evidence.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              },
+              {
+                "criterion": "Measurement-date eligible evidence",
+                "status": "met",
+                "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              },
+              {
+                "criterion": "Source quality",
+                "status": "partial",
+                "explanation": "One high-authority source class supports routing.",
+                "evidenceIds": [
+                  "ev-7cdb351de312"
+                ]
+              },
+              {
+                "criterion": "Route-defining business-model evidence",
+                "status": "met",
+                "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              },
+              {
+                "criterion": "Financial and operating fact coverage",
+                "status": "partial",
+                "explanation": "Evidence contains one financial or operating fact usable for route selection.",
+                "evidenceIds": [
+                  "ev-d9970e2872b9"
+                ]
+              }
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-source-quality",
+                "topic": "Source quality",
+                "description": "One high-authority source class supports routing.",
+                "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              },
+              {
+                "id": "missing-financial-and-operating-fact-coverage",
+                "topic": "Financial and operating fact coverage",
+                "description": "Evidence contains one financial or operating fact usable for route selection.",
+                "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              }
+            ],
+            "rationale": "Evidence coverage is sufficient for route selection before valuation."
+          },
+          "route": {
+            "status": "selected",
+            "selectedRoute": "general-private-company",
+            "selectedReasons": [
+              {
+                "summary": "Eligible evidence is available, but no stronger specialized route is selected.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              }
+            ],
+            "candidates": [
+              {
+                "route": "general-private-company",
+                "status": "selected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Eligible evidence is available, but no stronger specialized route is selected.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for recent transaction was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for software saas was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rejectedRoutes": [
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for recent transaction was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0.3333,
+                "reasons": [
+                  {
+                    "summary": "Evidence for software saas was considered but did not outrank the selected general private company route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-7cdb351de312",
+                      "ev-d9970e2872b9"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "valuation": {
+            "headlineValuation": {
+              "status": "abstained",
+              "field": "headline-valuation",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              }
+            },
+            "enterpriseValue": {
+              "status": "abstained",
+              "field": "enterprise-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              }
+            },
+            "totalEquityValue": {
+              "status": "abstained",
+              "field": "total-equity-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ]
+              }
+            },
+            "securityLevelFairValue": {
+              "status": "abstained",
+              "field": "security-level-fair-value",
+              "abstention": {
+                "reasonCode": "security-rights-and-cap-table-not-disclosed",
+                "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+                "missingInformation": [
+                  {
+                    "id": "missing-cap-table",
+                    "topic": "Cap table",
+                    "description": "The evidence ledger does not disclose capitalization table data.",
+                    "consequence": "TRACE cannot allocate value across securities or holders.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-dilution",
+                    "topic": "Dilution",
+                    "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                    "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-preferences",
+                    "topic": "Share preferences",
+                    "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                    "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-rights",
+                    "topic": "Share rights",
+                    "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                    "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": []
+              }
+            }
+          },
+          "review": {
+            "status": "warnings",
+            "reviewerVersion": "trace-reviewer.v1",
+            "findings": [
+              {
+                "id": "review-abstention-triggers",
+                "severity": "pass",
+                "category": "abstention",
+                "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-calculation-integrity",
+                "severity": "pass",
+                "category": "calculation",
+                "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-citation-support",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-cutoff-compliance",
+                "severity": "warning",
+                "category": "cutoff",
+                "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-entity-certainty",
+                "severity": "pass",
+                "category": "entity",
+                "message": "Target identity is resolved and supported by included evidence.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-evidence-coverage",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-route-appropriateness",
+                "severity": "pass",
+                "category": "route",
+                "message": "Route selection is consistent with sufficiency status: general-private-company.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-valuation-field-separation",
+                "severity": "pass",
+                "category": "valuation-separation",
+                "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+                "evidenceIds": [
+                  "ev-7cdb351de312",
+                  "ev-d9970e2872b9"
+                ],
+                "missingInformation": []
+              }
+            ]
+          },
+          "sections": {
+            "facts": [
+              "Forbes named customers including Cohere, Ramp and Runway in its Linear profile. value=Cohere, Ramp, Runway; period=instant 2023-09-14; epistemic=observed [ev-d9970e2872b9]",
+              "Forbes reported Linear was profitable around the Series B announcement. value=true; period=instant 2023-09-14; epistemic=observed [ev-d9970e2872b9]",
+              "Forbes reported that the Series B valued Linear at about USD 400 million. value=400; unit=USD millions headline valuation; period=instant 2023-09-14; epistemic=observed [ev-d9970e2872b9]",
+              "Linear announced a USD 35 million Series B on 2023-09-14. value=35; unit=USD millions; period=instant 2023-09-14; epistemic=observed [ev-7cdb351de312]",
+              "Linear said Sequoia, 01 Advisors and individual software operators participated in the Series B. value=Sequoia, 01 Advisors, software operator angels; period=instant 2023-09-14; epistemic=observed [ev-7cdb351de312]",
+              "Linear said it had been growing and operating profitably since 2021. value=profitable since 2021; period=start 2021-01-01, end 2023-09-14; epistemic=observed [ev-7cdb351de312]",
+              "Linear said it was a team of 50 people on 2023-09-14. value=50; unit=employees; period=instant 2023-09-14; epistemic=observed [ev-7cdb351de312]",
+              "Linear said it was trusted and used by thousands of companies of all sizes. value=thousands of companies; period=instant 2023-09-14; epistemic=observed [ev-7cdb351de312]",
+              "Linear said the Series B was led by Accel. value=Accel; period=instant 2023-09-14; epistemic=observed [ev-7cdb351de312]"
+            ],
+            "inferences": [
+              "Enterprise Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-7cdb351de312, ev-d9970e2872b9]",
+              "Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-7cdb351de312, ev-d9970e2872b9]",
+              "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+              "Selected route general-private-company: Eligible evidence is available, but no stronger specialized route is selected. [ev-7cdb351de312, ev-d9970e2872b9]",
+              "Sufficiency is sufficient with score 0.85: Evidence coverage is sufficient for route selection before valuation.",
+              "Total Equity Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-7cdb351de312, ev-d9970e2872b9]"
+            ],
+            "conflicts": [],
+            "limitations": [
+              "Evidence record linear-2026-06-09-terms-post-cutoff was published after the measurement date and was excluded.",
+              "Excluded linear-2026-06-09-terms-post-cutoff because publishedDate 2026-06-09 is after measurementDate 2023-09-14.",
+              "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+              "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+              "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.",
+              "access note linear-pre-cutoff-legal-record-not-found: No pre-cutoff public legal record resolving Linear Orbit, Inc. was approved for commit; post-cutoff terms are recorded only as excluded evidence."
+            ],
+            "counterarguments": [
+              "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: financial-services, recent-transaction, software-saas, marketplace, biotech-rnpv, asset-based."
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-cap-table",
+                "topic": "Cap table",
+                "description": "The evidence ledger does not disclose capitalization table data.",
+                "consequence": "TRACE cannot allocate value across securities or holders.",
+                "requiredFor": [
+                  "total-equity-value",
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-dilution",
+                "topic": "Dilution",
+                "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                "requiredFor": [
+                  "total-equity-value",
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-financial-and-operating-fact-coverage",
+                "topic": "Financial and operating fact coverage",
+                "description": "Evidence contains one financial or operating fact usable for route selection.",
+                "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              },
+              {
+                "id": "missing-recent-secondary-transaction",
+                "topic": "Recent secondary transaction",
+                "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                "requiredFor": [
+                  "headline-valuation"
+                ]
+              },
+              {
+                "id": "missing-share-preferences",
+                "topic": "Share preferences",
+                "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                "requiredFor": [
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-share-rights",
+                "topic": "Share rights",
+                "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                "requiredFor": [
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-source-quality",
+                "topic": "Source quality",
+                "description": "One high-authority source class supports routing.",
+                "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              }
+            ],
+            "nextDiligenceQuestions": [
+              "What evidence resolves Cap table for total-equity-value, security-level-fair-value?",
+              "What evidence resolves Dilution for total-equity-value, security-level-fair-value?",
+              "What evidence resolves Financial and operating fact coverage for routing, sufficiency?",
+              "What evidence resolves Recent secondary transaction for headline-valuation?",
+              "What evidence resolves Share preferences for security-level-fair-value?",
+              "What evidence resolves Share rights for security-level-fair-value?",
+              "What evidence resolves Source quality for routing, sufficiency?"
+            ]
+          },
+          "run": {
+            "runId": "run-5c191b9ced89d3c9",
+            "runtimeVersion": "0.1.0",
+            "command": "trace benchmark --partition development --runner trace-full --case-id dev-saas-linear-2023",
+            "measurementDate": "2023-09-14",
+            "startedAt": "2026-07-26T00:00:00.000Z",
+            "completedAt": "2026-07-26T00:00:00.299Z",
+            "durationMs": 299,
+            "inputPath": "benchmark:development:dev-saas-linear-2023",
+            "outputDirectory": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-saas-linear-2023",
+            "warnings": [
+              "Excluded linear-2026-06-09-terms-post-cutoff because publishedDate 2026-06-09 is after measurementDate 2023-09-14."
+            ]
+          }
+        },
+        "executionLog": {
+          "schemaVersion": "trace.execution-log.v1",
+          "runId": "run-5c191b9ced89d3c9",
+          "runtimeVersion": "0.1.0",
+          "measurementDate": "2023-09-14",
+          "inputPath": "benchmark:development:dev-saas-linear-2023",
+          "outputPaths": {
+            "jsonReport": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-saas-linear-2023/raw-runner-output.json",
+            "markdownReport": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-saas-linear-2023/raw-runner-output.md",
+            "executionLog": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-saas-linear-2023/raw-runner-output.json#executionLog"
+          },
+          "startedAt": "2026-07-26T00:00:00.000Z",
+          "completedAt": "2026-07-26T00:00:00.299Z",
+          "durationMs": 299,
+          "validationWarnings": [
+            "Excluded linear-2026-06-09-terms-post-cutoff because publishedDate 2026-06-09 is after measurementDate 2023-09-14."
+          ],
+          "reviewerFindings": [
+            {
+              "id": "review-abstention-triggers",
+              "severity": "pass",
+              "category": "abstention",
+              "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+              "evidenceIds": [
+                "ev-7cdb351de312",
+                "ev-d9970e2872b9"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-calculation-integrity",
+              "severity": "pass",
+              "category": "calculation",
+              "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+              "evidenceIds": [
+                "ev-7cdb351de312",
+                "ev-d9970e2872b9"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-citation-support",
+              "severity": "pass",
+              "category": "evidence",
+              "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+              "evidenceIds": [
+                "ev-7cdb351de312",
+                "ev-d9970e2872b9"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-cutoff-compliance",
+              "severity": "warning",
+              "category": "cutoff",
+              "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+              "evidenceIds": [
+                "ev-7cdb351de312",
+                "ev-d9970e2872b9"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-entity-certainty",
+              "severity": "pass",
+              "category": "entity",
+              "message": "Target identity is resolved and supported by included evidence.",
+              "evidenceIds": [
+                "ev-7cdb351de312",
+                "ev-d9970e2872b9"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-evidence-coverage",
+              "severity": "pass",
+              "category": "evidence",
+              "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+              "evidenceIds": [
+                "ev-7cdb351de312",
+                "ev-d9970e2872b9"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-route-appropriateness",
+              "severity": "pass",
+              "category": "route",
+              "message": "Route selection is consistent with sufficiency status: general-private-company.",
+              "evidenceIds": [
+                "ev-7cdb351de312",
+                "ev-d9970e2872b9"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-valuation-field-separation",
+              "severity": "pass",
+              "category": "valuation-separation",
+              "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+              "evidenceIds": [
+                "ev-7cdb351de312",
+                "ev-d9970e2872b9"
+              ],
+              "missingInformation": []
+            }
+          ],
+          "deterministicIdentifiers": {
+            "evidenceLedgerHash": "c0a037864ed1297915868dec02a55f05639c796da53d474975d60f2d7d5dc204",
+            "runtimeResultHash": "62e918900331d72bfa71359faf44f98a364d03550aa3660e220203b91cccf9c0"
+          }
+        }
+      }
+    },
+    "normalized": {
+      "claims": [
+        {
+          "id": "trace-valuation-26e98734952b",
+          "kind": "abstention",
+          "statement": "Enterprise Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "value": "recent-secondary-transaction-not-observed",
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312"
+            },
+            {
+              "evidenceId": "ev-d9970e2872b9"
+            }
+          ]
+        },
+        {
+          "id": "trace-valuation-6ad3caa72c11",
+          "kind": "abstention",
+          "statement": "Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "value": "recent-secondary-transaction-not-observed",
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312"
+            },
+            {
+              "evidenceId": "ev-d9970e2872b9"
+            }
+          ]
+        },
+        {
+          "id": "trace-valuation-00e4fba0e318",
+          "kind": "abstention",
+          "statement": "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "value": "security-rights-and-cap-table-not-disclosed",
+          "citations": []
+        },
+        {
+          "id": "trace-valuation-2e92f88f69e6",
+          "kind": "abstention",
+          "statement": "Total Equity Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "value": "recent-secondary-transaction-not-observed",
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312"
+            },
+            {
+              "evidenceId": "ev-d9970e2872b9"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-f5d1ad3ec898",
+          "kind": "observable",
+          "statement": "Forbes named customers including Cohere, Ramp and Runway in its Linear profile.",
+          "value": [
+            "Cohere",
+            "Ramp",
+            "Runway"
+          ],
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d9970e2872b9",
+              "factId": "fact-d6887c8e0ac0",
+              "locator": "Forbes, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-ed33fe71f609",
+          "kind": "observable",
+          "statement": "Forbes reported Linear was profitable around the Series B announcement.",
+          "value": true,
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d9970e2872b9",
+              "factId": "fact-eaeac4846793",
+              "locator": "Forbes, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-53c4ca498a87",
+          "kind": "observable",
+          "statement": "Forbes reported that the Series B valued Linear at about USD 400 million.",
+          "value": 400,
+          "unit": "USD millions headline valuation",
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d9970e2872b9",
+              "factId": "fact-78fee322f04c",
+              "locator": "Forbes, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-df8a5630ecc9",
+          "kind": "observable",
+          "statement": "Linear announced a USD 35 million Series B on 2023-09-14.",
+          "value": 35,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312",
+              "factId": "fact-5f77f6aebc86",
+              "locator": "Linear Now, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-b010eccaca7f",
+          "kind": "observable",
+          "statement": "Linear said Sequoia, 01 Advisors and individual software operators participated in the Series B.",
+          "value": [
+            "Sequoia",
+            "01 Advisors",
+            "software operator angels"
+          ],
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312",
+              "factId": "fact-d51eadccf25b",
+              "locator": "Linear Now, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-94ac91719dcc",
+          "kind": "observable",
+          "statement": "Linear said it had been growing and operating profitably since 2021.",
+          "value": "profitable since 2021",
+          "period": {
+            "startDate": "2021-01-01",
+            "endDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312",
+              "factId": "fact-66a9f955f39a",
+              "locator": "Linear Now, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-73c3b8f7431c",
+          "kind": "observable",
+          "statement": "Linear said it was a team of 50 people on 2023-09-14.",
+          "value": 50,
+          "unit": "employees",
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312",
+              "factId": "fact-d6aa9d25adad",
+              "locator": "Linear Now, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-027d56aed424",
+          "kind": "observable",
+          "statement": "Linear said it was trusted and used by thousands of companies of all sizes.",
+          "value": "thousands of companies",
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312",
+              "factId": "fact-d17b91d5fa45",
+              "locator": "Linear Now, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-2178e21f683c",
+          "kind": "observable",
+          "statement": "Linear said the Series B was led by Accel.",
+          "value": "Accel",
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312",
+              "factId": "fact-cc1ce80422d5",
+              "locator": "Linear Now, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "trace-sufficiency-1858453ca929",
+          "kind": "other",
+          "statement": "TRACE sufficiency is sufficient with score 0.85: Evidence coverage is sufficient for route selection before valuation.",
+          "value": 0.85,
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312"
+            },
+            {
+              "evidenceId": "ev-d9970e2872b9"
+            }
+          ]
+        },
+        {
+          "id": "trace-route-994e84993e3c",
+          "kind": "route",
+          "statement": "TRACE selected general-private-company: Eligible evidence is available, but no stronger specialized route is selected.",
+          "value": "general-private-company",
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312"
+            },
+            {
+              "evidenceId": "ev-d9970e2872b9"
+            }
+          ]
+        }
+      ],
+      "route": {
+        "status": "selected",
+        "selectedRoute": "general-private-company",
+        "rationale": "Eligible evidence is available, but no stronger specialized route is selected.",
+        "evidenceIds": [
+          "ev-7cdb351de312",
+          "ev-d9970e2872b9"
+        ]
+      },
+      "abstentions": [
+        {
+          "id": "trace-abstention-enterprise-value",
+          "field": "enterprise-value",
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-7cdb351de312",
+            "ev-d9970e2872b9"
+          ]
+        },
+        {
+          "id": "trace-abstention-headline-valuation",
+          "field": "headline-valuation",
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-7cdb351de312",
+            "ev-d9970e2872b9"
+          ]
+        },
+        {
+          "id": "trace-abstention-security-level-fair-value",
+          "field": "security-level-fair-value",
+          "reasonCode": "security-rights-and-cap-table-not-disclosed",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "evidenceIds": []
+        },
+        {
+          "id": "trace-abstention-total-equity-value",
+          "field": "total-equity-value",
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-7cdb351de312",
+            "ev-d9970e2872b9"
+          ]
+        }
+      ],
+      "valuations": [
+        {
+          "field": "enterprise-value",
+          "status": "abstained",
+          "rationale": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-7cdb351de312",
+            "ev-d9970e2872b9"
+          ]
+        },
+        {
+          "field": "headline-valuation",
+          "status": "abstained",
+          "rationale": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-7cdb351de312",
+            "ev-d9970e2872b9"
+          ]
+        },
+        {
+          "field": "security-level-fair-value",
+          "status": "abstained",
+          "rationale": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "evidenceIds": []
+        },
+        {
+          "field": "total-equity-value",
+          "status": "abstained",
+          "rationale": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-7cdb351de312",
+            "ev-d9970e2872b9"
+          ]
+        }
+      ]
+    },
+    "failures": []
+  }
+}

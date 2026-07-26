@@ -1,0 +1,1477 @@
+{
+  "schemaVersion": "trace.trace-full-runner-output.v1",
+  "runnerName": "trace-full",
+  "analyzerVersion": "0.1.0",
+  "inputFingerprint": "31fe1a09cdc9",
+  "case": {
+    "caseId": "dev-biotech-grail-2020",
+    "partition": "development",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "GRAIL, Inc.",
+    "measurementDate": "2020-09-17",
+    "cutoffDate": "2020-09-17",
+    "dataTier": "rich",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "sourceRecordIds": [
+      "grail-2020-09-09-ipo-filing-release",
+      "grail-2020-09-17-sec-s1a"
+    ]
+  },
+  "sourcePolicy": {
+    "approvedPublicSourceCategories": [
+      "company-primary",
+      "government",
+      "market-data",
+      "news",
+      "peer-reviewed",
+      "regulatory-filing"
+    ],
+    "redistributionStatus": "public-urls-redistribution-not-established",
+    "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+    "onlyUrlsAndShortExcerptsMayBeCommitted": true
+  },
+  "authorityBoundary": {
+    "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+    "officialContestRulesStatus": "not-supplied",
+    "contestComplianceClaimAllowed": false,
+    "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+    "prohibitedClaims": [
+      "appraisal status",
+      "benchmark superiority",
+      "contest readiness",
+      "investment advice",
+      "official contest compliance"
+    ]
+  },
+  "analyzerPath": [
+    "evidence-ledger",
+    "sufficiency-gating",
+    "route-selection",
+    "valuation-engine",
+    "adversarial-review",
+    "report-composer"
+  ],
+  "runtimeResult": {
+    "ledger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "GRAIL, Inc.",
+        "jurisdiction": "US-DE",
+        "identifiers": [
+          {
+            "scheme": "other",
+            "value": "SEC-CIK-0001699031",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "GRAIL"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2020-09-17",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-3e462cd1db7e",
+          "sourceUrl": "https://grail.com/press-releases/grail-announces-filing-of-registration-statement-for-proposed-initial-public-offering/",
+          "sourceTitle": "GRAIL announces filing of registration statement for proposed IPO",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2020-09-09",
+          "effectiveDate": "2020-09-09",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "GRAIL press release, 09 Sep 2020",
+          "shortExcerpt": "GRAIL announced an S-1 filing for a proposed IPO and applied to list common stock under GRAL.",
+          "observedFacts": [
+            {
+              "id": "fact-8f8e50eedb24",
+              "statement": "As of the 2020-09-09 release, GRAIL said the number of shares and price range had not yet been determined.",
+              "epistemicClass": "observed",
+              "value": "not determined",
+              "period": {
+                "instantDate": "2020-09-09"
+              }
+            },
+            {
+              "id": "fact-e97b552e0a00",
+              "statement": "GRAIL announced on 2020-09-09 that it filed a Form S-1 for a proposed IPO.",
+              "epistemicClass": "observed",
+              "value": "Form S-1 filed",
+              "period": {
+                "instantDate": "2020-09-09"
+              }
+            },
+            {
+              "id": "fact-b78f5a90c9d5",
+              "statement": "GRAIL said it applied to list common stock on Nasdaq under ticker GRAL.",
+              "epistemicClass": "observed",
+              "value": "GRAL",
+              "unit": "ticker",
+              "period": {
+                "instantDate": "2020-09-09"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-d6c3dac52c28",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1699031/000162828020013710/grails-1a1.htm",
+          "sourceTitle": "GRAIL, Inc. Form S-1/A",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2020-09-17",
+          "effectiveDate": "2020-09-17",
+          "sourceClass": "regulatory-filing",
+          "epistemicClass": "extracted",
+          "locator": "SEC accession 0001628280-20-013710",
+          "shortExcerpt": "The S-1/A identifies GRAIL, describes late-stage Galleri and DAC development, and reports no generated revenues to date.",
+          "observedFacts": [
+            {
+              "id": "fact-e16b3503320a",
+              "statement": "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30.",
+              "epistemicClass": "extracted",
+              "value": 136.4,
+              "unit": "USD millions net loss",
+              "period": {
+                "startDate": "2020-01-01",
+                "endDate": "2020-06-30"
+              }
+            },
+            {
+              "id": "fact-a6361353288e",
+              "statement": "Through 2020-06-30, GRAIL stated it had raised over USD 1.9 billion from venture and strategic partners.",
+              "epistemicClass": "extracted",
+              "value": 1.9,
+              "unit": "USD billions raised, greater than",
+              "period": {
+                "instantDate": "2020-06-30"
+              }
+            },
+            {
+              "id": "fact-83c5988f380d",
+              "statement": "GRAIL stated its foundational clinical trials had more than 115,000 subjects already enrolled.",
+              "epistemicClass": "extracted",
+              "value": 115000,
+              "unit": "subjects, greater than",
+              "period": {
+                "instantDate": "2020-08-31"
+              }
+            },
+            {
+              "id": "fact-ead691f50067",
+              "statement": "GRAIL planned to commercially launch Galleri in 2021 as a laboratory developed test.",
+              "epistemicClass": "extracted",
+              "value": "Galleri planned 2021 LDT launch",
+              "period": {
+                "instantDate": "2020-09-17"
+              }
+            },
+            {
+              "id": "fact-8d58ae2125ff",
+              "statement": "GRAIL stated it did not yet have a commercial product for sale.",
+              "epistemicClass": "extracted",
+              "value": true,
+              "period": {
+                "instantDate": "2020-09-17"
+              }
+            },
+            {
+              "id": "fact-ef2dddf69eb0",
+              "statement": "GRAIL stated it had not generated revenues to date and did not expect revenues until products were commercialized.",
+              "epistemicClass": "extracted",
+              "value": true,
+              "period": {
+                "instantDate": "2020-09-17"
+              }
+            },
+            {
+              "id": "fact-67e8d0d01cf0",
+              "statement": "The S-1/A identifies the registrant as GRAIL, Inc., incorporated in Delaware, with CIK 0001699031.",
+              "epistemicClass": "observed",
+              "value": "SEC-CIK-0001699031",
+              "unit": "SEC CIK",
+              "period": {
+                "instantDate": "2020-09-17"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "grail-2020-09-21-illumina-acquisition-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record grail-2020-09-21-illumina-acquisition-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://grail.com/press-releases/illumina-to-acquire-grail-to-launch-new-era-of-cancer-detection/",
+          "sourceTitle": "Illumina to acquire GRAIL",
+          "publishedDate": "2020-09-21",
+          "measurementDate": "2020-09-17"
+        }
+      ],
+      "failedNotes": [],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded grail-2020-09-21-illumina-acquisition-post-cutoff because publishedDate 2020-09-21 is after measurementDate 2020-09-17.",
+          "recordIds": [
+            "grail-2020-09-21-illumina-acquisition-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://grail.com/press-releases/illumina-to-acquire-grail-to-launch-new-era-of-cancer-detection/"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    },
+    "sufficiency": {
+      "status": "insufficient",
+      "score": 0.6,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "met",
+          "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "met",
+          "explanation": "Multiple high-authority source classes support routing.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "missing",
+          "explanation": "Evidence does not contain business-model facts sufficient for routing.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "missing",
+          "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        }
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-route-defining-business-model-evidence",
+          "topic": "Route-defining business-model evidence",
+          "description": "Evidence does not contain business-model facts sufficient for routing.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "rationale": "Evidence coverage is not sufficient for a supported analysis route; TRACE abstains before valuation."
+    },
+    "route": {
+      "status": "abstained",
+      "abstention": {
+        "reasonCode": "insufficient-route-evidence",
+        "explanation": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+        "missingInformation": [
+          {
+            "id": "missing-route-defining-business-model-evidence",
+            "topic": "Route-defining business-model evidence",
+            "description": "Evidence does not contain business-model facts sufficient for routing.",
+            "consequence": "TRACE cannot support route selection without this evidence.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          },
+          {
+            "id": "missing-financial-and-operating-fact-coverage",
+            "topic": "Financial and operating fact coverage",
+            "description": "Evidence does not contain financial or operating facts usable for route selection.",
+            "consequence": "TRACE cannot support route selection without this evidence.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          }
+        ],
+        "evidenceIds": [
+          "ev-3e462cd1db7e",
+          "ev-d6c3dac52c28"
+        ]
+      },
+      "candidates": [
+        {
+          "route": "insufficient-evidence",
+          "status": "selected",
+          "score": 1,
+          "reasons": [
+            {
+              "summary": "Available evidence does not meet TRACE sufficiency criteria for route selection.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the financial services route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected insufficient evidence route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-headline-valuation",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support headline-valuation while route selection is abstained.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-enterprise-value",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support enterprise-value while route selection is abstained.",
+              "requiredFor": [
+                "enterprise-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-total-equity-value",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support total-equity-value while route selection is abstained.",
+              "requiredFor": [
+                "total-equity-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-security-level-fair-value",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support security-level-fair-value while route selection is abstained.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        }
+      }
+    },
+    "review": {
+      "status": "warnings",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "warning",
+          "category": "cutoff",
+          "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "warning",
+          "category": "evidence",
+          "message": "Evidence coverage is insufficient for a supported analysis route.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": [
+            {
+              "id": "missing-financial-and-operating-fact-coverage",
+              "topic": "Financial and operating fact coverage",
+              "description": "Evidence does not contain financial or operating facts usable for route selection.",
+              "consequence": "TRACE cannot support route selection without this evidence.",
+              "requiredFor": [
+                "routing",
+                "sufficiency"
+              ]
+            },
+            {
+              "id": "missing-route-defining-business-model-evidence",
+              "topic": "Route-defining business-model evidence",
+              "description": "Evidence does not contain business-model facts sufficient for routing.",
+              "consequence": "TRACE cannot support route selection without this evidence.",
+              "requiredFor": [
+                "routing",
+                "sufficiency"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route abstention is consistent with insufficient evidence coverage.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        }
+      ]
+    }
+  },
+  "report": {
+    "schemaVersion": "trace.report.v1",
+    "company": {
+      "legalName": "GRAIL, Inc.",
+      "jurisdiction": "US-DE",
+      "identifiers": [
+        {
+          "scheme": "other",
+          "value": "SEC-CIK-0001699031",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "GRAIL"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2020-09-17",
+    "decisionMode": "full-analysis",
+    "evidence": [
+      {
+        "id": "ev-3e462cd1db7e",
+        "sourceUrl": "https://grail.com/press-releases/grail-announces-filing-of-registration-statement-for-proposed-initial-public-offering/",
+        "sourceTitle": "GRAIL announces filing of registration statement for proposed IPO",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2020-09-09",
+        "effectiveDate": "2020-09-09",
+        "sourceClass": "company-primary",
+        "epistemicClass": "observed",
+        "locator": "GRAIL press release, 09 Sep 2020",
+        "shortExcerpt": "GRAIL announced an S-1 filing for a proposed IPO and applied to list common stock under GRAL.",
+        "observedFacts": [
+          {
+            "id": "fact-8f8e50eedb24",
+            "statement": "As of the 2020-09-09 release, GRAIL said the number of shares and price range had not yet been determined.",
+            "epistemicClass": "observed",
+            "value": "not determined",
+            "period": {
+              "instantDate": "2020-09-09"
+            }
+          },
+          {
+            "id": "fact-e97b552e0a00",
+            "statement": "GRAIL announced on 2020-09-09 that it filed a Form S-1 for a proposed IPO.",
+            "epistemicClass": "observed",
+            "value": "Form S-1 filed",
+            "period": {
+              "instantDate": "2020-09-09"
+            }
+          },
+          {
+            "id": "fact-b78f5a90c9d5",
+            "statement": "GRAIL said it applied to list common stock on Nasdaq under ticker GRAL.",
+            "epistemicClass": "observed",
+            "value": "GRAL",
+            "unit": "ticker",
+            "period": {
+              "instantDate": "2020-09-09"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ev-d6c3dac52c28",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1699031/000162828020013710/grails-1a1.htm",
+        "sourceTitle": "GRAIL, Inc. Form S-1/A",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2020-09-17",
+        "effectiveDate": "2020-09-17",
+        "sourceClass": "regulatory-filing",
+        "epistemicClass": "extracted",
+        "locator": "SEC accession 0001628280-20-013710",
+        "shortExcerpt": "The S-1/A identifies GRAIL, describes late-stage Galleri and DAC development, and reports no generated revenues to date.",
+        "observedFacts": [
+          {
+            "id": "fact-e16b3503320a",
+            "statement": "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30.",
+            "epistemicClass": "extracted",
+            "value": 136.4,
+            "unit": "USD millions net loss",
+            "period": {
+              "startDate": "2020-01-01",
+              "endDate": "2020-06-30"
+            }
+          },
+          {
+            "id": "fact-a6361353288e",
+            "statement": "Through 2020-06-30, GRAIL stated it had raised over USD 1.9 billion from venture and strategic partners.",
+            "epistemicClass": "extracted",
+            "value": 1.9,
+            "unit": "USD billions raised, greater than",
+            "period": {
+              "instantDate": "2020-06-30"
+            }
+          },
+          {
+            "id": "fact-83c5988f380d",
+            "statement": "GRAIL stated its foundational clinical trials had more than 115,000 subjects already enrolled.",
+            "epistemicClass": "extracted",
+            "value": 115000,
+            "unit": "subjects, greater than",
+            "period": {
+              "instantDate": "2020-08-31"
+            }
+          },
+          {
+            "id": "fact-ead691f50067",
+            "statement": "GRAIL planned to commercially launch Galleri in 2021 as a laboratory developed test.",
+            "epistemicClass": "extracted",
+            "value": "Galleri planned 2021 LDT launch",
+            "period": {
+              "instantDate": "2020-09-17"
+            }
+          },
+          {
+            "id": "fact-8d58ae2125ff",
+            "statement": "GRAIL stated it did not yet have a commercial product for sale.",
+            "epistemicClass": "extracted",
+            "value": true,
+            "period": {
+              "instantDate": "2020-09-17"
+            }
+          },
+          {
+            "id": "fact-ef2dddf69eb0",
+            "statement": "GRAIL stated it had not generated revenues to date and did not expect revenues until products were commercialized.",
+            "epistemicClass": "extracted",
+            "value": true,
+            "period": {
+              "instantDate": "2020-09-17"
+            }
+          },
+          {
+            "id": "fact-67e8d0d01cf0",
+            "statement": "The S-1/A identifies the registrant as GRAIL, Inc., incorporated in Delaware, with CIK 0001699031.",
+            "epistemicClass": "observed",
+            "value": "SEC-CIK-0001699031",
+            "unit": "SEC CIK",
+            "period": {
+              "instantDate": "2020-09-17"
+            }
+          }
+        ]
+      }
+    ],
+    "sufficiency": {
+      "status": "insufficient",
+      "score": 0.6,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "met",
+          "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "met",
+          "explanation": "Multiple high-authority source classes support routing.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "missing",
+          "explanation": "Evidence does not contain business-model facts sufficient for routing.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "missing",
+          "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        }
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-route-defining-business-model-evidence",
+          "topic": "Route-defining business-model evidence",
+          "description": "Evidence does not contain business-model facts sufficient for routing.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "rationale": "Evidence coverage is not sufficient for a supported analysis route; TRACE abstains before valuation."
+    },
+    "route": {
+      "status": "abstained",
+      "abstention": {
+        "reasonCode": "insufficient-route-evidence",
+        "explanation": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+        "missingInformation": [
+          {
+            "id": "missing-route-defining-business-model-evidence",
+            "topic": "Route-defining business-model evidence",
+            "description": "Evidence does not contain business-model facts sufficient for routing.",
+            "consequence": "TRACE cannot support route selection without this evidence.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          },
+          {
+            "id": "missing-financial-and-operating-fact-coverage",
+            "topic": "Financial and operating fact coverage",
+            "description": "Evidence does not contain financial or operating facts usable for route selection.",
+            "consequence": "TRACE cannot support route selection without this evidence.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          }
+        ],
+        "evidenceIds": [
+          "ev-3e462cd1db7e",
+          "ev-d6c3dac52c28"
+        ]
+      },
+      "candidates": [
+        {
+          "route": "insufficient-evidence",
+          "status": "selected",
+          "score": 1,
+          "reasons": [
+            {
+              "summary": "Available evidence does not meet TRACE sufficiency criteria for route selection.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the financial services route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected insufficient evidence route.",
+              "evidenceIds": [
+                "ev-3e462cd1db7e",
+                "ev-d6c3dac52c28"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-headline-valuation",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support headline-valuation while route selection is abstained.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-enterprise-value",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support enterprise-value while route selection is abstained.",
+              "requiredFor": [
+                "enterprise-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-total-equity-value",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support total-equity-value while route selection is abstained.",
+              "requiredFor": [
+                "total-equity-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-security-level-fair-value",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support security-level-fair-value while route selection is abstained.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ]
+        }
+      }
+    },
+    "review": {
+      "status": "warnings",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "warning",
+          "category": "cutoff",
+          "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "warning",
+          "category": "evidence",
+          "message": "Evidence coverage is insufficient for a supported analysis route.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": [
+            {
+              "id": "missing-financial-and-operating-fact-coverage",
+              "topic": "Financial and operating fact coverage",
+              "description": "Evidence does not contain financial or operating facts usable for route selection.",
+              "consequence": "TRACE cannot support route selection without this evidence.",
+              "requiredFor": [
+                "routing",
+                "sufficiency"
+              ]
+            },
+            {
+              "id": "missing-route-defining-business-model-evidence",
+              "topic": "Route-defining business-model evidence",
+              "description": "Evidence does not contain business-model facts sufficient for routing.",
+              "consequence": "TRACE cannot support route selection without this evidence.",
+              "requiredFor": [
+                "routing",
+                "sufficiency"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route abstention is consistent with insufficient evidence coverage.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-3e462cd1db7e",
+            "ev-d6c3dac52c28"
+          ],
+          "missingInformation": []
+        }
+      ]
+    },
+    "sections": {
+      "facts": [
+        "As of the 2020-09-09 release, GRAIL said the number of shares and price range had not yet been determined. value=not determined; period=instant 2020-09-09; epistemic=observed [ev-3e462cd1db7e]",
+        "GRAIL announced on 2020-09-09 that it filed a Form S-1 for a proposed IPO. value=Form S-1 filed; period=instant 2020-09-09; epistemic=observed [ev-3e462cd1db7e]",
+        "GRAIL planned to commercially launch Galleri in 2021 as a laboratory developed test. value=Galleri planned 2021 LDT launch; period=instant 2020-09-17; epistemic=extracted [ev-d6c3dac52c28]",
+        "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30. value=136.4; unit=USD millions net loss; period=start 2020-01-01, end 2020-06-30; epistemic=extracted [ev-d6c3dac52c28]",
+        "GRAIL said it applied to list common stock on Nasdaq under ticker GRAL. value=GRAL; unit=ticker; period=instant 2020-09-09; epistemic=observed [ev-3e462cd1db7e]",
+        "GRAIL stated it did not yet have a commercial product for sale. value=true; period=instant 2020-09-17; epistemic=extracted [ev-d6c3dac52c28]",
+        "GRAIL stated it had not generated revenues to date and did not expect revenues until products were commercialized. value=true; period=instant 2020-09-17; epistemic=extracted [ev-d6c3dac52c28]",
+        "GRAIL stated its foundational clinical trials had more than 115,000 subjects already enrolled. value=115000; unit=subjects, greater than; period=instant 2020-08-31; epistemic=extracted [ev-d6c3dac52c28]",
+        "The S-1/A identifies the registrant as GRAIL, Inc., incorporated in Delaware, with CIK 0001699031. value=SEC-CIK-0001699031; unit=SEC CIK; period=instant 2020-09-17; epistemic=observed [ev-d6c3dac52c28]",
+        "Through 2020-06-30, GRAIL stated it had raised over USD 1.9 billion from venture and strategic partners. value=1.9; unit=USD billions raised, greater than; period=instant 2020-06-30; epistemic=extracted [ev-d6c3dac52c28]"
+      ],
+      "inferences": [
+        "Enterprise Value abstained: TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route. [ev-3e462cd1db7e, ev-d6c3dac52c28]",
+        "Headline Valuation abstained: TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route. [ev-3e462cd1db7e, ev-d6c3dac52c28]",
+        "Route abstained: TRACE abstains from selecting an analysis route because required evidence coverage is missing. [ev-3e462cd1db7e, ev-d6c3dac52c28]",
+        "Security-Level Fair Value abstained: TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route. [ev-3e462cd1db7e, ev-d6c3dac52c28]",
+        "Sufficiency is insufficient with score 0.6: Evidence coverage is not sufficient for a supported analysis route; TRACE abstains before valuation.",
+        "Total Equity Value abstained: TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route. [ev-3e462cd1db7e, ev-d6c3dac52c28]"
+      ],
+      "conflicts": [],
+      "limitations": [
+        "Evidence record grail-2020-09-21-illumina-acquisition-post-cutoff was published after the measurement date and was excluded.",
+        "Excluded grail-2020-09-21-illumina-acquisition-post-cutoff because publishedDate 2020-09-21 is after measurementDate 2020-09-17.",
+        "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+        "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied."
+      ],
+      "counterarguments": [],
+      "missingInformation": [
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-route-defining-business-model-evidence",
+          "topic": "Route-defining business-model evidence",
+          "description": "Evidence does not contain business-model facts sufficient for routing.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-selected-route-for-enterprise-value",
+          "topic": "Selected analysis route",
+          "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+          "consequence": "TRACE cannot support enterprise-value while route selection is abstained.",
+          "requiredFor": [
+            "enterprise-value"
+          ]
+        },
+        {
+          "id": "missing-selected-route-for-headline-valuation",
+          "topic": "Selected analysis route",
+          "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+          "consequence": "TRACE cannot support headline-valuation while route selection is abstained.",
+          "requiredFor": [
+            "headline-valuation"
+          ]
+        },
+        {
+          "id": "missing-selected-route-for-security-level-fair-value",
+          "topic": "Selected analysis route",
+          "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+          "consequence": "TRACE cannot support security-level-fair-value while route selection is abstained.",
+          "requiredFor": [
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-selected-route-for-total-equity-value",
+          "topic": "Selected analysis route",
+          "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+          "consequence": "TRACE cannot support total-equity-value while route selection is abstained.",
+          "requiredFor": [
+            "total-equity-value"
+          ]
+        }
+      ],
+      "nextDiligenceQuestions": [
+        "What evidence resolves Financial and operating fact coverage for routing, sufficiency?",
+        "What evidence resolves Route-defining business-model evidence for routing, sufficiency?",
+        "What evidence resolves Selected analysis route for enterprise-value?",
+        "What evidence resolves Selected analysis route for headline-valuation?",
+        "What evidence resolves Selected analysis route for security-level-fair-value?",
+        "What evidence resolves Selected analysis route for total-equity-value?"
+      ]
+    },
+    "run": {
+      "runId": "run-5c191b9ced89d3c9",
+      "runtimeVersion": "0.1.0",
+      "command": "trace benchmark --partition development --runner trace-full --case-id dev-biotech-grail-2020",
+      "measurementDate": "2020-09-17",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.301Z",
+      "durationMs": 301,
+      "inputPath": "benchmark:development:dev-biotech-grail-2020",
+      "outputDirectory": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-biotech-grail-2020",
+      "warnings": [
+        "Excluded grail-2020-09-21-illumina-acquisition-post-cutoff because publishedDate 2020-09-21 is after measurementDate 2020-09-17."
+      ]
+    }
+  },
+  "executionLog": {
+    "schemaVersion": "trace.execution-log.v1",
+    "runId": "run-5c191b9ced89d3c9",
+    "runtimeVersion": "0.1.0",
+    "measurementDate": "2020-09-17",
+    "inputPath": "benchmark:development:dev-biotech-grail-2020",
+    "outputPaths": {
+      "jsonReport": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-biotech-grail-2020/raw-runner-output.json",
+      "markdownReport": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-biotech-grail-2020/raw-runner-output.md",
+      "executionLog": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-biotech-grail-2020/raw-runner-output.json#executionLog"
+    },
+    "startedAt": "2026-07-26T00:00:00.000Z",
+    "completedAt": "2026-07-26T00:00:00.301Z",
+    "durationMs": 301,
+    "validationWarnings": [
+      "Excluded grail-2020-09-21-illumina-acquisition-post-cutoff because publishedDate 2020-09-21 is after measurementDate 2020-09-17."
+    ],
+    "reviewerFindings": [
+      {
+        "id": "review-abstention-triggers",
+        "severity": "pass",
+        "category": "abstention",
+        "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+        "evidenceIds": [
+          "ev-3e462cd1db7e",
+          "ev-d6c3dac52c28"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-calculation-integrity",
+        "severity": "pass",
+        "category": "calculation",
+        "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+        "evidenceIds": [
+          "ev-3e462cd1db7e",
+          "ev-d6c3dac52c28"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-citation-support",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+        "evidenceIds": [
+          "ev-3e462cd1db7e",
+          "ev-d6c3dac52c28"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-cutoff-compliance",
+        "severity": "warning",
+        "category": "cutoff",
+        "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+        "evidenceIds": [
+          "ev-3e462cd1db7e",
+          "ev-d6c3dac52c28"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-entity-certainty",
+        "severity": "pass",
+        "category": "entity",
+        "message": "Target identity is resolved and supported by included evidence.",
+        "evidenceIds": [
+          "ev-3e462cd1db7e",
+          "ev-d6c3dac52c28"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-evidence-coverage",
+        "severity": "warning",
+        "category": "evidence",
+        "message": "Evidence coverage is insufficient for a supported analysis route.",
+        "evidenceIds": [
+          "ev-3e462cd1db7e",
+          "ev-d6c3dac52c28"
+        ],
+        "missingInformation": [
+          {
+            "id": "missing-financial-and-operating-fact-coverage",
+            "topic": "Financial and operating fact coverage",
+            "description": "Evidence does not contain financial or operating facts usable for route selection.",
+            "consequence": "TRACE cannot support route selection without this evidence.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          },
+          {
+            "id": "missing-route-defining-business-model-evidence",
+            "topic": "Route-defining business-model evidence",
+            "description": "Evidence does not contain business-model facts sufficient for routing.",
+            "consequence": "TRACE cannot support route selection without this evidence.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "review-route-appropriateness",
+        "severity": "pass",
+        "category": "route",
+        "message": "Route abstention is consistent with insufficient evidence coverage.",
+        "evidenceIds": [
+          "ev-3e462cd1db7e",
+          "ev-d6c3dac52c28"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-valuation-field-separation",
+        "severity": "pass",
+        "category": "valuation-separation",
+        "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+        "evidenceIds": [
+          "ev-3e462cd1db7e",
+          "ev-d6c3dac52c28"
+        ],
+        "missingInformation": []
+      }
+    ],
+    "deterministicIdentifiers": {
+      "evidenceLedgerHash": "1fc5502bcaad66d26030812b0cb8656014ceb3414094b7bbc84a4cec8e191c22",
+      "runtimeResultHash": "6ebacf1b6d8efa8746e3d82b9053d43945c8d10a1ac4ce8ae77c8d0bedc68312"
+    }
+  }
+}

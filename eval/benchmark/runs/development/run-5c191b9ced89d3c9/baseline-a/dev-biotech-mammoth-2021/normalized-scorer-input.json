@@ -1,0 +1,788 @@
+{
+  "schemaVersion": "trace.benchmark-scorer-input.v1",
+  "runId": "run-5c191b9ced89d3c9",
+  "runnerName": "baseline-a",
+  "caseId": "dev-biotech-mammoth-2021",
+  "partition": "development",
+  "caseInput": {
+    "schemaVersion": "trace.benchmark-case-input.v1",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "manifestSchemaVersion": "trace.benchmark-manifest.v1",
+    "caseId": "dev-biotech-mammoth-2021",
+    "partition": "development",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Mammoth Biosciences, Inc.",
+    "target": {
+      "legalName": "Mammoth Biosciences, Inc.",
+      "jurisdiction": "US",
+      "identifiers": [
+        {
+          "scheme": "other",
+          "value": "mammoth.bio",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "Mammoth Biosciences",
+        "Mammoth"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2021-09-09",
+    "cutoffDate": "2021-09-09",
+    "dataTier": "medium",
+    "sourcePolicy": {
+      "approvedPublicSourceCategories": [
+        "company-primary",
+        "government",
+        "news",
+        "peer-reviewed"
+      ],
+      "redistributionStatus": "public-urls-redistribution-not-established",
+      "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+      "onlyUrlsAndShortExcerptsMayBeCommitted": true
+    },
+    "authorityBoundary": {
+      "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+      "officialContestRulesStatus": "not-supplied",
+      "contestComplianceClaimAllowed": false,
+      "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+      "prohibitedClaims": [
+        "appraisal status",
+        "benchmark superiority",
+        "contest readiness",
+        "investment advice",
+        "official contest compliance"
+      ]
+    },
+    "sourceRecordIds": [
+      "mammoth-2020-04-16-detectr-peer-reviewed",
+      "mammoth-2020-08-31-fda-eua-detectr",
+      "mammoth-2021-09-09-series-c-d-businesswire"
+    ],
+    "evidenceLedger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Mammoth Biosciences, Inc.",
+        "jurisdiction": "US",
+        "identifiers": [
+          {
+            "scheme": "other",
+            "value": "mammoth.bio",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "Mammoth Biosciences",
+          "Mammoth"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2021-09-09",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-4a0498d1cfc9",
+          "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/9107629/",
+          "sourceTitle": "CRISPR-Cas12-based detection of SARS-CoV-2",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2020-04-16",
+          "effectiveDate": "2020-04-16",
+          "sourceClass": "peer-reviewed",
+          "epistemicClass": "extracted",
+          "locator": "Nature Biotechnology article via PMC",
+          "shortExcerpt": "Peer-reviewed article lists Mammoth authors and describes CRISPR-Cas12-based SARS-CoV-2 detection.",
+          "observedFacts": [
+            {
+              "id": "fact-00bf393f5b01",
+              "statement": "A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors.",
+              "epistemicClass": "observed",
+              "value": "CRISPR-Cas12 SARS-CoV-2 detection",
+              "period": {
+                "instantDate": "2020-04-16"
+              }
+            },
+            {
+              "id": "fact-1de81cea2118",
+              "statement": "The article lists Mammoth Biosciences, Inc. affiliations for James Broughton and Janice Chen.",
+              "epistemicClass": "observed",
+              "value": [
+                "James Broughton",
+                "Janice Chen"
+              ],
+              "period": {
+                "instantDate": "2020-04-16"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-2df79df4d844",
+          "sourceUrl": "https://www.businesswire.com/news/home/20210909005385/en/Mammoth-Biosciences-Raises-%24195-Million-to-Build-Next-Generation-CRISPR-Products-in-Therapeutics-and-Diagnostics",
+          "sourceTitle": "Mammoth Biosciences raises USD 195 million",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-09-09",
+          "effectiveDate": "2021-09-09",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Business Wire release, 09 Sep 2021",
+          "shortExcerpt": "Mammoth announced USD 195m financing, a greater-than USD 1bn valuation, and CRISPR therapeutics and diagnostics focus.",
+          "observedFacts": [
+            {
+              "id": "fact-f8d46db92bc2",
+              "statement": "Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery.",
+              "epistemicClass": "extracted",
+              "value": [
+                "Cas14",
+                "CasPhi"
+              ],
+              "period": {
+                "instantDate": "2021-09-09"
+              }
+            },
+            {
+              "id": "fact-11739eea8ac3",
+              "statement": "Mammoth announced USD 195 million of financing on 2021-09-09.",
+              "epistemicClass": "observed",
+              "value": 195,
+              "unit": "USD millions",
+              "period": {
+                "instantDate": "2021-09-09"
+              }
+            },
+            {
+              "id": "fact-dc7a03de13a1",
+              "statement": "Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics.",
+              "epistemicClass": "observed",
+              "value": "CRISPR therapeutics and diagnostics",
+              "period": {
+                "instantDate": "2021-09-09"
+              }
+            },
+            {
+              "id": "fact-c93248473675",
+              "statement": "Mammoth stated it had expanded its team to more than 100 employees.",
+              "epistemicClass": "observed",
+              "value": 100,
+              "unit": "employees, greater than",
+              "period": {
+                "instantDate": "2021-09-09"
+              }
+            },
+            {
+              "id": "fact-3c38d7c8dafd",
+              "statement": "Mammoth stated the financing included a USD 150 million Series D led by Redmile Group.",
+              "epistemicClass": "observed",
+              "value": 150,
+              "unit": "USD millions",
+              "period": {
+                "instantDate": "2021-09-09"
+              }
+            },
+            {
+              "id": "fact-a242e66e0c16",
+              "statement": "Mammoth stated the financing placed the company in unicorn status with valuation greater than USD 1 billion.",
+              "epistemicClass": "observed",
+              "value": 1,
+              "unit": "USD billions headline valuation, greater than",
+              "period": {
+                "instantDate": "2021-09-09"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-b73daa03700a",
+          "sourceUrl": "https://www.fda.gov/medical-devices/emergency-use-authorizations-medical-devices/historical-information-about-device-emergency-use-authorizations",
+          "sourceTitle": "FDA historical device emergency use authorizations",
+          "retrievedDate": "2026-07-26",
+          "effectiveDate": "2020-08-31",
+          "sourceClass": "government",
+          "epistemicClass": "observed",
+          "locator": "SARS-CoV-2 DETECTR Reagent Kit row",
+          "shortExcerpt": "FDA historical EUA page lists SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+          "observedFacts": [
+            {
+              "id": "fact-110b56088c37",
+              "statement": "FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+              "epistemicClass": "observed",
+              "value": "EUA issued",
+              "period": {
+                "instantDate": "2020-08-31"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "mammoth-2022-01-10-bayer-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record mammoth-2022-01-10-bayer-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://www.businesswire.com/news/home/20220109005059/en/Bayer-and-Mammoth-Biosciences-to-Collaborate-on-Novel-Gene-Editing-Technology",
+          "sourceTitle": "Bayer and Mammoth Biosciences collaboration",
+          "publishedDate": "2022-01-10",
+          "measurementDate": "2021-09-09"
+        }
+      ],
+      "failedNotes": [
+        {
+          "id": "mammoth-product-cash-flow-not-public",
+          "stage": "extraction",
+          "sourceTitle": "Product-level cash-flow and cap-table evidence",
+          "attemptedAt": "2026-07-26T00:00:00Z",
+          "note": "No public product-level cash-flow, security-rights or cap-table evidence was identified for valuation-error scoring as of the cutoff."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded mammoth-2022-01-10-bayer-post-cutoff because publishedDate 2022-01-10 is after measurementDate 2021-09-09.",
+          "recordIds": [
+            "mammoth-2022-01-10-bayer-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://www.businesswire.com/news/home/20220109005059/en/Bayer-and-Mammoth-Biosciences-to-Collaborate-on-Novel-Gene-Editing-Technology"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    }
+  },
+  "annotation": {
+    "schemaVersion": "trace.benchmark-annotation.v1",
+    "caseId": "dev-biotech-mammoth-2021",
+    "partition": "development",
+    "measurementDate": "2021-09-09",
+    "expectedRoute": {
+      "route": "biotech-rnpv",
+      "acceptableAlternativeRoutes": [],
+      "evidenceIds": [
+        "ev-2df79df4d844",
+        "ev-4a0498d1cfc9",
+        "ev-b73daa03700a"
+      ],
+      "rationale": "The cutoff evidence describes a CRISPR platform company with therapeutics and diagnostics programs."
+    },
+    "binaryClaims": [
+      {
+        "id": "mammoth-financing-announced",
+        "statement": "Mammoth announced a financing round by the cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      },
+      {
+        "id": "mammoth-product-cash-flow-public",
+        "statement": "The cutoff evidence provides product-level cash-flow forecasts sufficient for rNPV valuation.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      },
+      {
+        "id": "mammoth-unicorn-status",
+        "statement": "Mammoth said the financing gave it a valuation greater than USD 1 billion.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      }
+    ],
+    "observableClaims": [
+      {
+        "id": "mammoth-detectr-eua-date",
+        "statement": "FDA historical records list SARS-CoV-2 DETECTR Reagent Kit EUA issued on 2020-08-31.",
+        "expectedValue": "2020-08-31",
+        "unit": "EUA issue date",
+        "period": {
+          "instantDate": "2020-08-31"
+        },
+        "evidenceIds": [
+          "ev-b73daa03700a"
+        ]
+      },
+      {
+        "id": "mammoth-series-d-size",
+        "statement": "The Series D component was USD 150 million.",
+        "expectedValue": 150,
+        "unit": "USD millions",
+        "period": {
+          "instantDate": "2021-09-09"
+        },
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      },
+      {
+        "id": "mammoth-team-size",
+        "statement": "Mammoth had expanded to more than 100 employees.",
+        "expectedValue": 100,
+        "unit": "employees, greater than",
+        "period": {
+          "instantDate": "2021-09-09"
+        },
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      },
+      {
+        "id": "mammoth-total-financing",
+        "statement": "The announced financing total was USD 195 million.",
+        "expectedValue": 195,
+        "unit": "USD millions",
+        "period": {
+          "instantDate": "2021-09-09"
+        },
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      }
+    ],
+    "expectedAbstentions": [
+      {
+        "id": "mammoth-product-rnpv-abstain",
+        "field": "enterprise-value",
+        "reasonCode": "no-product-cash-flow-forecast",
+        "description": "The cutoff evidence supports biotech-rNPV route selection but lacks product cash-flow forecasts, probability assumptions and commercial launch data.",
+        "evidenceIds": [
+          "ev-2df79df4d844",
+          "ev-4a0498d1cfc9"
+        ]
+      },
+      {
+        "id": "mammoth-security-fair-value-abstain",
+        "field": "security-level-fair-value",
+        "reasonCode": "missing-security-rights-and-cap-table",
+        "description": "The financing headline does not disclose share rights, preferences, cap table or security-level fair value.",
+        "evidenceIds": [
+          "ev-2df79df4d844"
+        ]
+      }
+    ],
+    "valuationSeparationExpectations": {
+      "allowedValuationFields": [
+        "headline-valuation"
+      ],
+      "mustNotConflate": [
+        "financing amount with total equity value",
+        "platform promise with product rNPV output",
+        "unicorn headline with security-level fair value"
+      ],
+      "notes": "Funding headlines do not establish a completed valuation-error target."
+    },
+    "completenessExpectations": [
+      {
+        "id": "mammoth-cover-platform-financing-and-limits",
+        "description": "A complete answer should cover CRISPR platform route, financing facts, diagnostics evidence, FDA EUA context, and rNPV limitations.",
+        "requiredEvidenceClasses": [
+          "company-primary",
+          "government",
+          "peer-reviewed"
+        ],
+        "requiredTopics": [
+          "biotech-rnpv route",
+          "financing",
+          "platform evidence",
+          "valuation abstention"
+        ],
+        "evidenceIds": [
+          "ev-2df79df4d844",
+          "ev-4a0498d1cfc9",
+          "ev-b73daa03700a"
+        ]
+      }
+    ],
+    "historicalValuationTargets": {
+      "eligible": false,
+      "reason": "Manifest marks this case ineligible because funding headlines and platform claims do not establish a completed valuation target.",
+      "targets": []
+    }
+  },
+  "runnerOutput": {
+    "schemaVersion": "trace.benchmark-runner-output.v1",
+    "runnerName": "baseline-a",
+    "runId": "run-5c191b9ced89d3c9",
+    "caseId": "dev-biotech-mammoth-2021",
+    "partition": "development",
+    "status": "completed",
+    "timing": {
+      "schemaVersion": "trace.benchmark-timing.v1",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.202Z",
+      "durationMs": 202
+    },
+    "rawOutput": {
+      "markdown": "# Baseline A Narrative Synthesis: Mammoth Biosciences, Inc.\n\nCase: dev-biotech-mammoth-2021\nCutoff: 2021-09-09\nInput fingerprint: 7b1cd237c4eb\n\n## Narrative\n- Mammoth Biosciences, Inc. is summarized from 3 cutoff-visible public evidence records dated on or before 2021-09-09.\n- The normalized claim list contains 9 cited observations from source classes: company-primary, government, peer-reviewed.\n- A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors.\n- FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.\n- Mammoth announced USD 195 million of financing on 2021-09-09.\n- Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics.\n- Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery.\n\n## Evidence Notes\n- CRISPR-Cas12-based detection of SARS-CoV-2 [ev-4a0498d1cfc9]\n  - A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors. (value=CRISPR-Cas12 SARS-CoV-2 detection; period=instant 2020-04-16)\n  - The article lists Mammoth Biosciences, Inc. affiliations for James Broughton and Janice Chen. (value=James Broughton, Janice Chen; period=instant 2020-04-16)\n- Mammoth Biosciences raises USD 195 million [ev-2df79df4d844]\n  - Mammoth announced USD 195 million of financing on 2021-09-09. (value=195; unit=USD millions; period=instant 2021-09-09)\n  - Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics. (value=CRISPR therapeutics and diagnostics; period=instant 2021-09-09)\n  - Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery. (value=Cas14, CasPhi; period=instant 2021-09-09)\n  - Mammoth stated it had expanded its team to more than 100 employees. (value=100; unit=employees, greater than; period=instant 2021-09-09)\n  - Mammoth stated the financing included a USD 150 million Series D led by Redmile Group. (value=150; unit=USD millions; period=instant 2021-09-09)\n  - Mammoth stated the financing placed the company in unicorn status with valuation greater than USD 1 billion. (value=1; unit=USD billions headline valuation, greater than; period=instant 2021-09-09)\n- FDA historical device emergency use authorizations [ev-b73daa03700a]\n  - FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31. (value=EUA issued; period=instant 2020-08-31)\n\n## Limitations\n- This baseline performs deterministic evidence summarization only.\n- It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.\n- It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.\n- Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.\n",
+      "json": {
+        "schemaVersion": "trace.baseline-runner-output.v1",
+        "runnerName": "baseline-a",
+        "baselineKind": "general-narrative-synthesis",
+        "inputFingerprint": "7b1cd237c4eb",
+        "case": {
+          "caseId": "dev-biotech-mammoth-2021",
+          "partition": "development",
+          "scoringRole": "scored",
+          "countedInScoring": true,
+          "companyLegalName": "Mammoth Biosciences, Inc.",
+          "measurementDate": "2021-09-09",
+          "cutoffDate": "2021-09-09",
+          "dataTier": "medium",
+          "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+          "sourceRecordIds": [
+            "mammoth-2020-04-16-detectr-peer-reviewed",
+            "mammoth-2020-08-31-fda-eua-detectr",
+            "mammoth-2021-09-09-series-c-d-businesswire"
+          ]
+        },
+        "sourcePolicy": {
+          "approvedPublicSourceCategories": [
+            "company-primary",
+            "government",
+            "news",
+            "peer-reviewed"
+          ],
+          "redistributionStatus": "public-urls-redistribution-not-established",
+          "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+          "onlyUrlsAndShortExcerptsMayBeCommitted": true
+        },
+        "authorityBoundary": {
+          "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+          "officialContestRulesStatus": "not-supplied",
+          "contestComplianceClaimAllowed": false,
+          "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+          "prohibitedClaims": [
+            "appraisal status",
+            "benchmark superiority",
+            "contest readiness",
+            "investment advice",
+            "official contest compliance"
+          ]
+        },
+        "evidence": [
+          {
+            "evidenceId": "ev-4a0498d1cfc9",
+            "sourceTitle": "CRISPR-Cas12-based detection of SARS-CoV-2",
+            "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/9107629/",
+            "sourceClass": "peer-reviewed",
+            "epistemicClass": "extracted",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2020-04-16",
+            "effectiveDate": "2020-04-16",
+            "locator": "Nature Biotechnology article via PMC",
+            "shortExcerpt": "Peer-reviewed article lists Mammoth authors and describes CRISPR-Cas12-based SARS-CoV-2 detection.",
+            "observedFacts": [
+              {
+                "factId": "fact-00bf393f5b01",
+                "statement": "A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors.",
+                "value": "CRISPR-Cas12 SARS-CoV-2 detection",
+                "period": {
+                  "instantDate": "2020-04-16"
+                }
+              },
+              {
+                "factId": "fact-1de81cea2118",
+                "statement": "The article lists Mammoth Biosciences, Inc. affiliations for James Broughton and Janice Chen.",
+                "value": [
+                  "James Broughton",
+                  "Janice Chen"
+                ],
+                "period": {
+                  "instantDate": "2020-04-16"
+                }
+              }
+            ]
+          },
+          {
+            "evidenceId": "ev-2df79df4d844",
+            "sourceTitle": "Mammoth Biosciences raises USD 195 million",
+            "sourceUrl": "https://www.businesswire.com/news/home/20210909005385/en/Mammoth-Biosciences-Raises-%24195-Million-to-Build-Next-Generation-CRISPR-Products-in-Therapeutics-and-Diagnostics",
+            "sourceClass": "company-primary",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2021-09-09",
+            "effectiveDate": "2021-09-09",
+            "locator": "Business Wire release, 09 Sep 2021",
+            "shortExcerpt": "Mammoth announced USD 195m financing, a greater-than USD 1bn valuation, and CRISPR therapeutics and diagnostics focus.",
+            "observedFacts": [
+              {
+                "factId": "fact-11739eea8ac3",
+                "statement": "Mammoth announced USD 195 million of financing on 2021-09-09.",
+                "value": 195,
+                "unit": "USD millions",
+                "period": {
+                  "instantDate": "2021-09-09"
+                }
+              },
+              {
+                "factId": "fact-dc7a03de13a1",
+                "statement": "Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics.",
+                "value": "CRISPR therapeutics and diagnostics",
+                "period": {
+                  "instantDate": "2021-09-09"
+                }
+              },
+              {
+                "factId": "fact-f8d46db92bc2",
+                "statement": "Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery.",
+                "value": [
+                  "Cas14",
+                  "CasPhi"
+                ],
+                "period": {
+                  "instantDate": "2021-09-09"
+                }
+              },
+              {
+                "factId": "fact-c93248473675",
+                "statement": "Mammoth stated it had expanded its team to more than 100 employees.",
+                "value": 100,
+                "unit": "employees, greater than",
+                "period": {
+                  "instantDate": "2021-09-09"
+                }
+              },
+              {
+                "factId": "fact-3c38d7c8dafd",
+                "statement": "Mammoth stated the financing included a USD 150 million Series D led by Redmile Group.",
+                "value": 150,
+                "unit": "USD millions",
+                "period": {
+                  "instantDate": "2021-09-09"
+                }
+              },
+              {
+                "factId": "fact-a242e66e0c16",
+                "statement": "Mammoth stated the financing placed the company in unicorn status with valuation greater than USD 1 billion.",
+                "value": 1,
+                "unit": "USD billions headline valuation, greater than",
+                "period": {
+                  "instantDate": "2021-09-09"
+                }
+              }
+            ]
+          },
+          {
+            "evidenceId": "ev-b73daa03700a",
+            "sourceTitle": "FDA historical device emergency use authorizations",
+            "sourceUrl": "https://www.fda.gov/medical-devices/emergency-use-authorizations-medical-devices/historical-information-about-device-emergency-use-authorizations",
+            "sourceClass": "government",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "effectiveDate": "2020-08-31",
+            "locator": "SARS-CoV-2 DETECTR Reagent Kit row",
+            "shortExcerpt": "FDA historical EUA page lists SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+            "observedFacts": [
+              {
+                "factId": "fact-110b56088c37",
+                "statement": "FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+                "value": "EUA issued",
+                "period": {
+                  "instantDate": "2020-08-31"
+                }
+              }
+            ]
+          }
+        ],
+        "output": {
+          "narrative": [
+            "Mammoth Biosciences, Inc. is summarized from 3 cutoff-visible public evidence records dated on or before 2021-09-09.",
+            "The normalized claim list contains 9 cited observations from source classes: company-primary, government, peer-reviewed.",
+            "A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors.",
+            "FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+            "Mammoth announced USD 195 million of financing on 2021-09-09.",
+            "Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics.",
+            "Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery."
+          ],
+          "limitations": [
+            "This baseline performs deterministic evidence summarization only.",
+            "It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.",
+            "It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.",
+            "Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established."
+          ],
+          "warnings": [
+            "Excluded mammoth-2022-01-10-bayer-post-cutoff because publishedDate 2022-01-10 is after measurementDate 2021-09-09."
+          ],
+          "failedNotes": [
+            "No public product-level cash-flow, security-rights or cap-table evidence was identified for valuation-error scoring as of the cutoff."
+          ],
+          "excludedRecords": [
+            "Evidence record mammoth-2022-01-10-bayer-post-cutoff was published after the measurement date and was excluded."
+          ]
+        },
+        "omittedTraceLogic": [
+          "route-selection",
+          "sufficiency-gating",
+          "valuation-engine",
+          "adversarial-review"
+        ]
+      }
+    },
+    "normalized": {
+      "claims": [
+        {
+          "id": "claim-8bfecbffc905",
+          "kind": "observable",
+          "statement": "A peer-reviewed Nature Biotechnology article described CRISPR-Cas12-based SARS-CoV-2 detection work involving Mammoth authors.",
+          "value": "CRISPR-Cas12 SARS-CoV-2 detection",
+          "period": {
+            "instantDate": "2020-04-16"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-4a0498d1cfc9",
+              "factId": "fact-00bf393f5b01",
+              "locator": "Nature Biotechnology article via PMC"
+            }
+          ]
+        },
+        {
+          "id": "claim-2d6b3d8ebe7a",
+          "kind": "observable",
+          "statement": "FDA historical EUA records list the SARS-CoV-2 DETECTR Reagent Kit with EUA issued on 2020-08-31.",
+          "value": "EUA issued",
+          "period": {
+            "instantDate": "2020-08-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-b73daa03700a",
+              "factId": "fact-110b56088c37",
+              "locator": "SARS-CoV-2 DETECTR Reagent Kit row"
+            }
+          ]
+        },
+        {
+          "id": "claim-fe9d01774c13",
+          "kind": "observable",
+          "statement": "Mammoth announced USD 195 million of financing on 2021-09-09.",
+          "value": 195,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2021-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844",
+              "factId": "fact-11739eea8ac3",
+              "locator": "Business Wire release, 09 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-db4adf142dfd",
+          "kind": "observable",
+          "statement": "Mammoth described its platform as next-generation CRISPR products for therapeutics and diagnostics.",
+          "value": "CRISPR therapeutics and diagnostics",
+          "period": {
+            "instantDate": "2021-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844",
+              "factId": "fact-dc7a03de13a1",
+              "locator": "Business Wire release, 09 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-31435cd92e1e",
+          "kind": "observable",
+          "statement": "Mammoth said it was focusing on Cas14 and CasPhi systems for in vivo genome editing delivery.",
+          "value": [
+            "Cas14",
+            "CasPhi"
+          ],
+          "period": {
+            "instantDate": "2021-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844",
+              "factId": "fact-f8d46db92bc2",
+              "locator": "Business Wire release, 09 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-47d81bae0013",
+          "kind": "observable",
+          "statement": "Mammoth stated it had expanded its team to more than 100 employees.",
+          "value": 100,
+          "unit": "employees, greater than",
+          "period": {
+            "instantDate": "2021-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844",
+              "factId": "fact-c93248473675",
+              "locator": "Business Wire release, 09 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-2948a96fa5de",
+          "kind": "observable",
+          "statement": "Mammoth stated the financing included a USD 150 million Series D led by Redmile Group.",
+          "value": 150,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2021-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844",
+              "factId": "fact-3c38d7c8dafd",
+              "locator": "Business Wire release, 09 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-d5216fc3eb0c",
+          "kind": "observable",
+          "statement": "Mammoth stated the financing placed the company in unicorn status with valuation greater than USD 1 billion.",
+          "value": 1,
+          "unit": "USD billions headline valuation, greater than",
+          "period": {
+            "instantDate": "2021-09-09"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2df79df4d844",
+              "factId": "fact-a242e66e0c16",
+              "locator": "Business Wire release, 09 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-c64c70a656e7",
+          "kind": "observable",
+          "statement": "The article lists Mammoth Biosciences, Inc. affiliations for James Broughton and Janice Chen.",
+          "value": [
+            "James Broughton",
+            "Janice Chen"
+          ],
+          "period": {
+            "instantDate": "2020-04-16"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-4a0498d1cfc9",
+              "factId": "fact-1de81cea2118",
+              "locator": "Nature Biotechnology article via PMC"
+            }
+          ]
+        }
+      ],
+      "route": {
+        "status": "omitted"
+      },
+      "abstentions": [],
+      "valuations": []
+    },
+    "failures": []
+  }
+}

@@ -1,0 +1,1605 @@
+{
+  "schemaVersion": "trace.trace-full-runner-output.v1",
+  "runnerName": "trace-full",
+  "analyzerVersion": "0.1.0",
+  "inputFingerprint": "ac31ae60dc5f",
+  "case": {
+    "caseId": "dev-fintech-chime-2025",
+    "partition": "development",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Chime Financial, Inc.",
+    "measurementDate": "2025-05-13",
+    "cutoffDate": "2025-05-13",
+    "dataTier": "medium",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "sourceRecordIds": [
+      "chime-2025-05-13-ipo-filing-news",
+      "chime-2025-05-13-sec-s1"
+    ]
+  },
+  "sourcePolicy": {
+    "approvedPublicSourceCategories": [
+      "company-primary",
+      "market-data",
+      "news",
+      "regulatory-filing"
+    ],
+    "redistributionStatus": "public-urls-redistribution-not-established",
+    "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+    "onlyUrlsAndShortExcerptsMayBeCommitted": true
+  },
+  "authorityBoundary": {
+    "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+    "officialContestRulesStatus": "not-supplied",
+    "contestComplianceClaimAllowed": false,
+    "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+    "prohibitedClaims": [
+      "appraisal status",
+      "benchmark superiority",
+      "contest readiness",
+      "investment advice",
+      "official contest compliance"
+    ]
+  },
+  "analyzerPath": [
+    "evidence-ledger",
+    "sufficiency-gating",
+    "route-selection",
+    "valuation-engine",
+    "adversarial-review",
+    "report-composer"
+  ],
+  "runtimeResult": {
+    "ledger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Chime Financial, Inc.",
+        "jurisdiction": "US-DE",
+        "identifiers": [
+          {
+            "scheme": "other",
+            "value": "SEC-CIK-0001795586",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "Chime"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2025-05-13",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-4cd4b2c602cb",
+          "sourceUrl": "https://www.chime.com/newsroom/news/chime-files-registration-statement-for-proposed-initial-public-offering/",
+          "sourceTitle": "Chime files registration statement for proposed IPO",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2025-05-13",
+          "effectiveDate": "2025-05-13",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Chime newsroom, 13 May 2025",
+          "shortExcerpt": "Chime announced the S-1 filing, applied for Nasdaq listing as CHYM, and had not yet determined shares or price range.",
+          "observedFacts": [
+            {
+              "id": "fact-6ae5fbdc5716",
+              "statement": "As of the 2025-05-13 announcement, Chime said the number of shares and price range had not yet been determined.",
+              "epistemicClass": "observed",
+              "value": "not determined",
+              "period": {
+                "instantDate": "2025-05-13"
+              }
+            },
+            {
+              "id": "fact-f1f3368fad1b",
+              "statement": "Chime announced on 2025-05-13 that it filed a Form S-1 for a proposed IPO.",
+              "epistemicClass": "observed",
+              "value": "Form S-1 filed",
+              "period": {
+                "instantDate": "2025-05-13"
+              }
+            },
+            {
+              "id": "fact-08c384982e50",
+              "statement": "Chime said it applied to list Class A common stock on Nasdaq under ticker CHYM.",
+              "epistemicClass": "observed",
+              "value": "CHYM",
+              "unit": "ticker",
+              "period": {
+                "instantDate": "2025-05-13"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-5fdce7b12f43",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1795586/000162828025025059/chimefinancialinc-sx1wq1da.htm",
+          "sourceTitle": "Chime Financial, Inc. Form S-1",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2025-05-13",
+          "effectiveDate": "2025-05-13",
+          "sourceClass": "regulatory-filing",
+          "epistemicClass": "extracted",
+          "locator": "SEC accession 0001628280-25-025059",
+          "shortExcerpt": "The Form S-1 identifies Chime, reports Q1 2025 active members, 2024 operating metrics and partner-bank model limitations.",
+          "observedFacts": [
+            {
+              "id": "fact-d9fe5d576683",
+              "statement": "Chime reported 8.0 million Active Members for 2024.",
+              "epistemicClass": "extracted",
+              "value": 8,
+              "unit": "millions",
+              "period": {
+                "endDate": "2024-12-31"
+              }
+            },
+            {
+              "id": "fact-ff95192865d0",
+              "statement": "Chime reported a USD 25.3 million net loss for 2024.",
+              "epistemicClass": "extracted",
+              "value": 25.3,
+              "unit": "USD millions net loss",
+              "period": {
+                "endDate": "2024-12-31"
+              }
+            },
+            {
+              "id": "fact-89bd203e546f",
+              "statement": "Chime reported USD 34.540 billion of Purchase Volume for the three months ended 2025-03-31.",
+              "epistemicClass": "extracted",
+              "value": 34.54,
+              "unit": "USD billions",
+              "period": {
+                "startDate": "2025-01-01",
+                "endDate": "2025-03-31"
+              }
+            },
+            {
+              "id": "fact-9b87e1e0f5f2",
+              "statement": "Chime reported 8.6 million Active Members as of 2025-03-31.",
+              "epistemicClass": "extracted",
+              "value": 8.6,
+              "unit": "millions",
+              "period": {
+                "instantDate": "2025-03-31"
+              }
+            },
+            {
+              "id": "fact-9badd0e8659f",
+              "statement": "Chime reported that 67 percent of Active Members relied on Chime as a primary account relationship as of 2025-03-31.",
+              "epistemicClass": "extracted",
+              "value": 67,
+              "unit": "percent",
+              "period": {
+                "instantDate": "2025-03-31"
+              }
+            },
+            {
+              "id": "fact-692270730a92",
+              "statement": "Chime describes itself as a technology company, not a bank, with banking services provided by partner banks.",
+              "epistemicClass": "extracted",
+              "value": "technology company with partner-bank services",
+              "period": {
+                "instantDate": "2025-05-13"
+              }
+            },
+            {
+              "id": "fact-bb4ab55ce064",
+              "statement": "The S-1 identifies the registrant as Chime Financial, Inc., incorporated in Delaware, with CIK 0001795586.",
+              "epistemicClass": "observed",
+              "value": "SEC-CIK-0001795586",
+              "unit": "SEC CIK",
+              "period": {
+                "instantDate": "2025-05-13"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "chime-2025-06-11-ipo-pricing-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record chime-2025-06-11-ipo-pricing-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://investors.chime.com/news-releases/news-release-details/chime-announces-pricing-initial-public-offering",
+          "sourceTitle": "Chime announces pricing of initial public offering",
+          "publishedDate": "2025-06-11",
+          "measurementDate": "2025-05-13"
+        },
+        {
+          "recordId": "chime-2025-06-11-reuters-ipo-value-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record chime-2025-06-11-reuters-ipo-value-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://www.investing.com/news/stock-market-news/chime-prices-us-ipo-at-27-per-share-to-raise-864-million-4092169",
+          "sourceTitle": "Reuters report on Chime IPO pricing",
+          "publishedDate": "2025-06-11",
+          "measurementDate": "2025-05-13"
+        }
+      ],
+      "failedNotes": [],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded chime-2025-06-11-ipo-pricing-post-cutoff because publishedDate 2025-06-11 is after measurementDate 2025-05-13.",
+          "recordIds": [
+            "chime-2025-06-11-ipo-pricing-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://investors.chime.com/news-releases/news-release-details/chime-announces-pricing-initial-public-offering"
+          ],
+          "evidenceIds": []
+        },
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded chime-2025-06-11-reuters-ipo-value-post-cutoff because publishedDate 2025-06-11 is after measurementDate 2025-05-13.",
+          "recordIds": [
+            "chime-2025-06-11-reuters-ipo-value-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://www.investing.com/news/stock-market-news/chime-prices-us-ipo-at-27-per-share-to-raise-864-million-4092169"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    },
+    "sufficiency": {
+      "status": "sufficient",
+      "score": 0.725,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "met",
+          "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "met",
+          "explanation": "Multiple high-authority source classes support routing.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "partial",
+          "explanation": "Evidence contains one business-model fact relevant to routing.",
+          "evidenceIds": [
+            "ev-5fdce7b12f43"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "missing",
+          "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        }
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-route-defining-business-model-evidence",
+          "topic": "Route-defining business-model evidence",
+          "description": "Evidence contains one business-model fact relevant to routing.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "rationale": "Evidence coverage is sufficient for route selection before valuation."
+    },
+    "route": {
+      "status": "selected",
+      "selectedRoute": "general-private-company",
+      "selectedReasons": [
+        {
+          "summary": "Eligible evidence is available, but no stronger specialized route is selected.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        }
+      ],
+      "candidates": [
+        {
+          "route": "general-private-company",
+          "status": "selected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Eligible evidence is available, but no stronger specialized route is selected.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0.2,
+          "reasons": [
+            {
+              "summary": "Evidence for financial services was considered but did not outrank the selected general private company route.",
+              "evidenceIds": [
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        }
+      ],
+      "rejectedRoutes": [
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0.2,
+          "reasons": [
+            {
+              "summary": "Evidence for financial services was considered but did not outrank the selected general private company route.",
+              "evidenceIds": [
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "missingInformation": [
+            {
+              "id": "missing-recent-secondary-transaction",
+              "topic": "Recent secondary transaction",
+              "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+              "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "missingInformation": [
+            {
+              "id": "missing-recent-secondary-transaction",
+              "topic": "Recent secondary transaction",
+              "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+              "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "missingInformation": [
+            {
+              "id": "missing-recent-secondary-transaction",
+              "topic": "Recent secondary transaction",
+              "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+              "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "security-rights-and-cap-table-not-disclosed",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "missingInformation": [
+            {
+              "id": "missing-cap-table",
+              "topic": "Cap table",
+              "description": "The evidence ledger does not disclose capitalization table data.",
+              "consequence": "TRACE cannot allocate value across securities or holders.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-dilution",
+              "topic": "Dilution",
+              "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+              "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-preferences",
+              "topic": "Share preferences",
+              "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+              "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-rights",
+              "topic": "Share rights",
+              "description": "The evidence ledger does not disclose rights attached to the specific security.",
+              "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": []
+        }
+      }
+    },
+    "review": {
+      "status": "warnings",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "warning",
+          "category": "cutoff",
+          "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route selection is consistent with sufficiency status: general-private-company.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        }
+      ]
+    }
+  },
+  "report": {
+    "schemaVersion": "trace.report.v1",
+    "company": {
+      "legalName": "Chime Financial, Inc.",
+      "jurisdiction": "US-DE",
+      "identifiers": [
+        {
+          "scheme": "other",
+          "value": "SEC-CIK-0001795586",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "Chime"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2025-05-13",
+    "decisionMode": "full-analysis",
+    "evidence": [
+      {
+        "id": "ev-4cd4b2c602cb",
+        "sourceUrl": "https://www.chime.com/newsroom/news/chime-files-registration-statement-for-proposed-initial-public-offering/",
+        "sourceTitle": "Chime files registration statement for proposed IPO",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2025-05-13",
+        "effectiveDate": "2025-05-13",
+        "sourceClass": "company-primary",
+        "epistemicClass": "observed",
+        "locator": "Chime newsroom, 13 May 2025",
+        "shortExcerpt": "Chime announced the S-1 filing, applied for Nasdaq listing as CHYM, and had not yet determined shares or price range.",
+        "observedFacts": [
+          {
+            "id": "fact-6ae5fbdc5716",
+            "statement": "As of the 2025-05-13 announcement, Chime said the number of shares and price range had not yet been determined.",
+            "epistemicClass": "observed",
+            "value": "not determined",
+            "period": {
+              "instantDate": "2025-05-13"
+            }
+          },
+          {
+            "id": "fact-f1f3368fad1b",
+            "statement": "Chime announced on 2025-05-13 that it filed a Form S-1 for a proposed IPO.",
+            "epistemicClass": "observed",
+            "value": "Form S-1 filed",
+            "period": {
+              "instantDate": "2025-05-13"
+            }
+          },
+          {
+            "id": "fact-08c384982e50",
+            "statement": "Chime said it applied to list Class A common stock on Nasdaq under ticker CHYM.",
+            "epistemicClass": "observed",
+            "value": "CHYM",
+            "unit": "ticker",
+            "period": {
+              "instantDate": "2025-05-13"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ev-5fdce7b12f43",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1795586/000162828025025059/chimefinancialinc-sx1wq1da.htm",
+        "sourceTitle": "Chime Financial, Inc. Form S-1",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2025-05-13",
+        "effectiveDate": "2025-05-13",
+        "sourceClass": "regulatory-filing",
+        "epistemicClass": "extracted",
+        "locator": "SEC accession 0001628280-25-025059",
+        "shortExcerpt": "The Form S-1 identifies Chime, reports Q1 2025 active members, 2024 operating metrics and partner-bank model limitations.",
+        "observedFacts": [
+          {
+            "id": "fact-d9fe5d576683",
+            "statement": "Chime reported 8.0 million Active Members for 2024.",
+            "epistemicClass": "extracted",
+            "value": 8,
+            "unit": "millions",
+            "period": {
+              "endDate": "2024-12-31"
+            }
+          },
+          {
+            "id": "fact-ff95192865d0",
+            "statement": "Chime reported a USD 25.3 million net loss for 2024.",
+            "epistemicClass": "extracted",
+            "value": 25.3,
+            "unit": "USD millions net loss",
+            "period": {
+              "endDate": "2024-12-31"
+            }
+          },
+          {
+            "id": "fact-89bd203e546f",
+            "statement": "Chime reported USD 34.540 billion of Purchase Volume for the three months ended 2025-03-31.",
+            "epistemicClass": "extracted",
+            "value": 34.54,
+            "unit": "USD billions",
+            "period": {
+              "startDate": "2025-01-01",
+              "endDate": "2025-03-31"
+            }
+          },
+          {
+            "id": "fact-9b87e1e0f5f2",
+            "statement": "Chime reported 8.6 million Active Members as of 2025-03-31.",
+            "epistemicClass": "extracted",
+            "value": 8.6,
+            "unit": "millions",
+            "period": {
+              "instantDate": "2025-03-31"
+            }
+          },
+          {
+            "id": "fact-9badd0e8659f",
+            "statement": "Chime reported that 67 percent of Active Members relied on Chime as a primary account relationship as of 2025-03-31.",
+            "epistemicClass": "extracted",
+            "value": 67,
+            "unit": "percent",
+            "period": {
+              "instantDate": "2025-03-31"
+            }
+          },
+          {
+            "id": "fact-692270730a92",
+            "statement": "Chime describes itself as a technology company, not a bank, with banking services provided by partner banks.",
+            "epistemicClass": "extracted",
+            "value": "technology company with partner-bank services",
+            "period": {
+              "instantDate": "2025-05-13"
+            }
+          },
+          {
+            "id": "fact-bb4ab55ce064",
+            "statement": "The S-1 identifies the registrant as Chime Financial, Inc., incorporated in Delaware, with CIK 0001795586.",
+            "epistemicClass": "observed",
+            "value": "SEC-CIK-0001795586",
+            "unit": "SEC CIK",
+            "period": {
+              "instantDate": "2025-05-13"
+            }
+          }
+        ]
+      }
+    ],
+    "sufficiency": {
+      "status": "sufficient",
+      "score": 0.725,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "met",
+          "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "met",
+          "explanation": "Multiple high-authority source classes support routing.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "partial",
+          "explanation": "Evidence contains one business-model fact relevant to routing.",
+          "evidenceIds": [
+            "ev-5fdce7b12f43"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "missing",
+          "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        }
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-route-defining-business-model-evidence",
+          "topic": "Route-defining business-model evidence",
+          "description": "Evidence contains one business-model fact relevant to routing.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "rationale": "Evidence coverage is sufficient for route selection before valuation."
+    },
+    "route": {
+      "status": "selected",
+      "selectedRoute": "general-private-company",
+      "selectedReasons": [
+        {
+          "summary": "Eligible evidence is available, but no stronger specialized route is selected.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        }
+      ],
+      "candidates": [
+        {
+          "route": "general-private-company",
+          "status": "selected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Eligible evidence is available, but no stronger specialized route is selected.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0.2,
+          "reasons": [
+            {
+              "summary": "Evidence for financial services was considered but did not outrank the selected general private company route.",
+              "evidenceIds": [
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        }
+      ],
+      "rejectedRoutes": [
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0.2,
+          "reasons": [
+            {
+              "summary": "Evidence for financial services was considered but did not outrank the selected general private company route.",
+              "evidenceIds": [
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-4cd4b2c602cb",
+                "ev-5fdce7b12f43"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "missingInformation": [
+            {
+              "id": "missing-recent-secondary-transaction",
+              "topic": "Recent secondary transaction",
+              "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+              "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "missingInformation": [
+            {
+              "id": "missing-recent-secondary-transaction",
+              "topic": "Recent secondary transaction",
+              "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+              "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "missingInformation": [
+            {
+              "id": "missing-recent-secondary-transaction",
+              "topic": "Recent secondary transaction",
+              "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+              "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "security-rights-and-cap-table-not-disclosed",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "missingInformation": [
+            {
+              "id": "missing-cap-table",
+              "topic": "Cap table",
+              "description": "The evidence ledger does not disclose capitalization table data.",
+              "consequence": "TRACE cannot allocate value across securities or holders.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-dilution",
+              "topic": "Dilution",
+              "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+              "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-preferences",
+              "topic": "Share preferences",
+              "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+              "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-rights",
+              "topic": "Share rights",
+              "description": "The evidence ledger does not disclose rights attached to the specific security.",
+              "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": []
+        }
+      }
+    },
+    "review": {
+      "status": "warnings",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "warning",
+          "category": "cutoff",
+          "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route selection is consistent with sufficiency status: general-private-company.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-4cd4b2c602cb",
+            "ev-5fdce7b12f43"
+          ],
+          "missingInformation": []
+        }
+      ]
+    },
+    "sections": {
+      "facts": [
+        "As of the 2025-05-13 announcement, Chime said the number of shares and price range had not yet been determined. value=not determined; period=instant 2025-05-13; epistemic=observed [ev-4cd4b2c602cb]",
+        "Chime announced on 2025-05-13 that it filed a Form S-1 for a proposed IPO. value=Form S-1 filed; period=instant 2025-05-13; epistemic=observed [ev-4cd4b2c602cb]",
+        "Chime describes itself as a technology company, not a bank, with banking services provided by partner banks. value=technology company with partner-bank services; period=instant 2025-05-13; epistemic=extracted [ev-5fdce7b12f43]",
+        "Chime reported 8.0 million Active Members for 2024. value=8; unit=millions; period=end 2024-12-31; epistemic=extracted [ev-5fdce7b12f43]",
+        "Chime reported 8.6 million Active Members as of 2025-03-31. value=8.6; unit=millions; period=instant 2025-03-31; epistemic=extracted [ev-5fdce7b12f43]",
+        "Chime reported USD 34.540 billion of Purchase Volume for the three months ended 2025-03-31. value=34.54; unit=USD billions; period=start 2025-01-01, end 2025-03-31; epistemic=extracted [ev-5fdce7b12f43]",
+        "Chime reported a USD 25.3 million net loss for 2024. value=25.3; unit=USD millions net loss; period=end 2024-12-31; epistemic=extracted [ev-5fdce7b12f43]",
+        "Chime reported that 67 percent of Active Members relied on Chime as a primary account relationship as of 2025-03-31. value=67; unit=percent; period=instant 2025-03-31; epistemic=extracted [ev-5fdce7b12f43]",
+        "Chime said it applied to list Class A common stock on Nasdaq under ticker CHYM. value=CHYM; unit=ticker; period=instant 2025-05-13; epistemic=observed [ev-4cd4b2c602cb]",
+        "The S-1 identifies the registrant as Chime Financial, Inc., incorporated in Delaware, with CIK 0001795586. value=SEC-CIK-0001795586; unit=SEC CIK; period=instant 2025-05-13; epistemic=observed [ev-5fdce7b12f43]"
+      ],
+      "inferences": [
+        "Enterprise Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-4cd4b2c602cb, ev-5fdce7b12f43]",
+        "Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-4cd4b2c602cb, ev-5fdce7b12f43]",
+        "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+        "Selected route general-private-company: Eligible evidence is available, but no stronger specialized route is selected. [ev-4cd4b2c602cb, ev-5fdce7b12f43]",
+        "Sufficiency is sufficient with score 0.725: Evidence coverage is sufficient for route selection before valuation.",
+        "Total Equity Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-4cd4b2c602cb, ev-5fdce7b12f43]"
+      ],
+      "conflicts": [],
+      "limitations": [
+        "Evidence record chime-2025-06-11-ipo-pricing-post-cutoff was published after the measurement date and was excluded.",
+        "Evidence record chime-2025-06-11-reuters-ipo-value-post-cutoff was published after the measurement date and was excluded.",
+        "Excluded chime-2025-06-11-ipo-pricing-post-cutoff because publishedDate 2025-06-11 is after measurementDate 2025-05-13.",
+        "Excluded chime-2025-06-11-reuters-ipo-value-post-cutoff because publishedDate 2025-06-11 is after measurementDate 2025-05-13.",
+        "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+        "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+        "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied."
+      ],
+      "counterarguments": [
+        "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: financial-services, recent-transaction, software-saas, marketplace, biotech-rnpv, asset-based."
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-cap-table",
+          "topic": "Cap table",
+          "description": "The evidence ledger does not disclose capitalization table data.",
+          "consequence": "TRACE cannot allocate value across securities or holders.",
+          "requiredFor": [
+            "total-equity-value",
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-dilution",
+          "topic": "Dilution",
+          "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+          "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+          "requiredFor": [
+            "total-equity-value",
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-recent-secondary-transaction",
+          "topic": "Recent secondary transaction",
+          "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+          "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+          "requiredFor": [
+            "headline-valuation"
+          ]
+        },
+        {
+          "id": "missing-route-defining-business-model-evidence",
+          "topic": "Route-defining business-model evidence",
+          "description": "Evidence contains one business-model fact relevant to routing.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-share-preferences",
+          "topic": "Share preferences",
+          "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+          "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+          "requiredFor": [
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-share-rights",
+          "topic": "Share rights",
+          "description": "The evidence ledger does not disclose rights attached to the specific security.",
+          "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+          "requiredFor": [
+            "security-level-fair-value"
+          ]
+        }
+      ],
+      "nextDiligenceQuestions": [
+        "What evidence resolves Cap table for total-equity-value, security-level-fair-value?",
+        "What evidence resolves Dilution for total-equity-value, security-level-fair-value?",
+        "What evidence resolves Financial and operating fact coverage for routing, sufficiency?",
+        "What evidence resolves Recent secondary transaction for headline-valuation?",
+        "What evidence resolves Route-defining business-model evidence for routing, sufficiency?",
+        "What evidence resolves Share preferences for security-level-fair-value?",
+        "What evidence resolves Share rights for security-level-fair-value?"
+      ]
+    },
+    "run": {
+      "runId": "run-5c191b9ced89d3c9",
+      "runtimeVersion": "0.1.0",
+      "command": "trace benchmark --partition development --runner trace-full --case-id dev-fintech-chime-2025",
+      "measurementDate": "2025-05-13",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.306Z",
+      "durationMs": 306,
+      "inputPath": "benchmark:development:dev-fintech-chime-2025",
+      "outputDirectory": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-fintech-chime-2025",
+      "warnings": [
+        "Excluded chime-2025-06-11-ipo-pricing-post-cutoff because publishedDate 2025-06-11 is after measurementDate 2025-05-13.",
+        "Excluded chime-2025-06-11-reuters-ipo-value-post-cutoff because publishedDate 2025-06-11 is after measurementDate 2025-05-13."
+      ]
+    }
+  },
+  "executionLog": {
+    "schemaVersion": "trace.execution-log.v1",
+    "runId": "run-5c191b9ced89d3c9",
+    "runtimeVersion": "0.1.0",
+    "measurementDate": "2025-05-13",
+    "inputPath": "benchmark:development:dev-fintech-chime-2025",
+    "outputPaths": {
+      "jsonReport": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-fintech-chime-2025/raw-runner-output.json",
+      "markdownReport": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-fintech-chime-2025/raw-runner-output.md",
+      "executionLog": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-fintech-chime-2025/raw-runner-output.json#executionLog"
+    },
+    "startedAt": "2026-07-26T00:00:00.000Z",
+    "completedAt": "2026-07-26T00:00:00.306Z",
+    "durationMs": 306,
+    "validationWarnings": [
+      "Excluded chime-2025-06-11-ipo-pricing-post-cutoff because publishedDate 2025-06-11 is after measurementDate 2025-05-13.",
+      "Excluded chime-2025-06-11-reuters-ipo-value-post-cutoff because publishedDate 2025-06-11 is after measurementDate 2025-05-13."
+    ],
+    "reviewerFindings": [
+      {
+        "id": "review-abstention-triggers",
+        "severity": "pass",
+        "category": "abstention",
+        "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+        "evidenceIds": [
+          "ev-4cd4b2c602cb",
+          "ev-5fdce7b12f43"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-calculation-integrity",
+        "severity": "pass",
+        "category": "calculation",
+        "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+        "evidenceIds": [
+          "ev-4cd4b2c602cb",
+          "ev-5fdce7b12f43"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-citation-support",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+        "evidenceIds": [
+          "ev-4cd4b2c602cb",
+          "ev-5fdce7b12f43"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-cutoff-compliance",
+        "severity": "warning",
+        "category": "cutoff",
+        "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+        "evidenceIds": [
+          "ev-4cd4b2c602cb",
+          "ev-5fdce7b12f43"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-entity-certainty",
+        "severity": "pass",
+        "category": "entity",
+        "message": "Target identity is resolved and supported by included evidence.",
+        "evidenceIds": [
+          "ev-4cd4b2c602cb",
+          "ev-5fdce7b12f43"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-evidence-coverage",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+        "evidenceIds": [
+          "ev-4cd4b2c602cb",
+          "ev-5fdce7b12f43"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-route-appropriateness",
+        "severity": "pass",
+        "category": "route",
+        "message": "Route selection is consistent with sufficiency status: general-private-company.",
+        "evidenceIds": [
+          "ev-4cd4b2c602cb",
+          "ev-5fdce7b12f43"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-valuation-field-separation",
+        "severity": "pass",
+        "category": "valuation-separation",
+        "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+        "evidenceIds": [
+          "ev-4cd4b2c602cb",
+          "ev-5fdce7b12f43"
+        ],
+        "missingInformation": []
+      }
+    ],
+    "deterministicIdentifiers": {
+      "evidenceLedgerHash": "c0ec1ab6d228006fb370a52a18d3591f7c5ec106e4b557483954e01ac8ba827c",
+      "runtimeResultHash": "dee3af2c9bac2bb9e44d7b922f943611b70bd6b5e4921197b54eddcad34f41f1"
+    }
+  }
+}

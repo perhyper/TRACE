@@ -1,0 +1,720 @@
+{
+  "schemaVersion": "trace.benchmark-per-claim-score.v1",
+  "runId": "run-5c191b9ced89d3c9",
+  "runnerName": "baseline-a",
+  "caseId": "dev-biotech-grail-2020",
+  "partition": "development",
+  "status": "scored",
+  "claims": [
+    {
+      "claimId": "grail-commercial-product-for-sale",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "grail-commercial-product-for-sale",
+      "expectedStatement": "GRAIL had a commercial product for sale by the cutoff.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "grail-illumina-deal-known-by-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "grail-illumina-deal-known-by-cutoff",
+      "expectedStatement": "The Illumina acquisition announcement was public by the 2020-09-17 cutoff.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-ec94ebd4a6cd"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "grail-revenue-generated",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "grail-revenue-generated",
+      "expectedStatement": "GRAIL had generated product revenue by the cutoff.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "grail-s1a-filed-by-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "grail-s1a-filed-by-cutoff",
+      "expectedStatement": "GRAIL had filed an S-1/A by the 2020-09-17 cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "claim-62229fbd675f",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-62229fbd675f",
+      "emittedStatement": "As of the 2020-09-09 release, GRAIL said the number of shares and price range had not yet been determined.",
+      "emittedValue": "not determined",
+      "emittedPeriod": {
+        "instantDate": "2020-09-09"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-3e462cd1db7e"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-3e462cd1db7e",
+          "factId": "fact-8f8e50eedb24",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-6291ad5b8203",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-6291ad5b8203",
+      "emittedStatement": "GRAIL planned to commercially launch Galleri in 2021 as a laboratory developed test.",
+      "emittedValue": "Galleri planned 2021 LDT launch",
+      "emittedPeriod": {
+        "instantDate": "2020-09-17"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-d6c3dac52c28",
+          "factId": "fact-ead691f50067",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-79237a764dd0",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-79237a764dd0",
+      "emittedStatement": "The S-1/A identifies the registrant as GRAIL, Inc., incorporated in Delaware, with CIK 0001699031.",
+      "emittedValue": "SEC-CIK-0001699031",
+      "emittedUnit": "SEC CIK",
+      "emittedPeriod": {
+        "instantDate": "2020-09-17"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-d6c3dac52c28",
+          "factId": "fact-67e8d0d01cf0",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-a087687e63b1",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-a087687e63b1",
+      "emittedStatement": "GRAIL stated it did not yet have a commercial product for sale.",
+      "emittedValue": true,
+      "emittedPeriod": {
+        "instantDate": "2020-09-17"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-d6c3dac52c28",
+          "factId": "fact-8d58ae2125ff",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-bee7aecf2bdc",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-bee7aecf2bdc",
+      "emittedStatement": "GRAIL said it applied to list common stock on Nasdaq under ticker GRAL.",
+      "emittedValue": "GRAL",
+      "emittedUnit": "ticker",
+      "emittedPeriod": {
+        "instantDate": "2020-09-09"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-3e462cd1db7e"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-3e462cd1db7e",
+          "factId": "fact-b78f5a90c9d5",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-c26440021557",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-c26440021557",
+      "emittedStatement": "GRAIL announced on 2020-09-09 that it filed a Form S-1 for a proposed IPO.",
+      "emittedValue": "Form S-1 filed",
+      "emittedPeriod": {
+        "instantDate": "2020-09-09"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-3e462cd1db7e"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-3e462cd1db7e",
+          "factId": "fact-e97b552e0a00",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-dadac6bbf4dd",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-dadac6bbf4dd",
+      "emittedStatement": "GRAIL stated it had not generated revenues to date and did not expect revenues until products were commercialized.",
+      "emittedValue": true,
+      "emittedPeriod": {
+        "instantDate": "2020-09-17"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-d6c3dac52c28",
+          "factId": "fact-ef2dddf69eb0",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "grail-clinical-study-enrollment",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "grail-clinical-study-enrollment",
+      "emittedClaimId": "claim-64b94703ed0f",
+      "expectedStatement": "GRAIL's foundational clinical trials had more than 115,000 enrolled subjects.",
+      "emittedStatement": "GRAIL stated its foundational clinical trials had more than 115,000 subjects already enrolled.",
+      "expectedValue": 115000,
+      "emittedValue": 115000,
+      "expectedUnit": "subjects, greater than",
+      "emittedUnit": "subjects, greater than",
+      "expectedPeriod": {
+        "instantDate": "2020-08-31"
+      },
+      "emittedPeriod": {
+        "instantDate": "2020-08-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "emittedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-d6c3dac52c28",
+          "factId": "fact-83c5988f380d",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "grail-raised-through-june-2020",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "grail-raised-through-june-2020",
+      "emittedClaimId": "claim-51c1809f5919",
+      "expectedStatement": "GRAIL had raised over USD 1.9 billion through 2020-06-30.",
+      "emittedStatement": "Through 2020-06-30, GRAIL stated it had raised over USD 1.9 billion from venture and strategic partners.",
+      "expectedValue": 1.9,
+      "emittedValue": 1.9,
+      "expectedUnit": "USD billions raised, greater than",
+      "emittedUnit": "USD billions raised, greater than",
+      "expectedPeriod": {
+        "instantDate": "2020-06-30"
+      },
+      "emittedPeriod": {
+        "instantDate": "2020-06-30"
+      },
+      "expectedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "emittedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-d6c3dac52c28",
+          "factId": "fact-a6361353288e",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "grail-six-month-2020-net-loss",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "grail-six-month-2020-net-loss",
+      "emittedClaimId": "claim-a46798ec09b9",
+      "expectedStatement": "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30.",
+      "emittedStatement": "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30.",
+      "expectedValue": 136.4,
+      "emittedValue": 136.4,
+      "expectedUnit": "USD millions net loss",
+      "emittedUnit": "USD millions net loss",
+      "expectedPeriod": {
+        "startDate": "2020-01-01",
+        "endDate": "2020-06-30"
+      },
+      "emittedPeriod": {
+        "startDate": "2020-01-01",
+        "endDate": "2020-06-30"
+      },
+      "expectedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "emittedEvidenceIds": [
+        "ev-d6c3dac52c28"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-d6c3dac52c28",
+          "factId": "fact-e16b3503320a",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    }
+  ],
+  "failures": []
+}

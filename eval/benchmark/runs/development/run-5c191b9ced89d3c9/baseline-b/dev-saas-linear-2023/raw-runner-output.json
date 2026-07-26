@@ -1,0 +1,461 @@
+{
+  "schemaVersion": "trace.baseline-runner-output.v1",
+  "runnerName": "baseline-b",
+  "baselineKind": "fixed-template-report",
+  "inputFingerprint": "1a0b3b0cacf1",
+  "case": {
+    "caseId": "dev-saas-linear-2023",
+    "partition": "development",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Linear Orbit, Inc.",
+    "measurementDate": "2023-09-14",
+    "cutoffDate": "2023-09-14",
+    "dataTier": "sparse",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "sourceRecordIds": [
+      "linear-2023-09-14-forbes-profile",
+      "linear-2023-09-14-series-b-blog"
+    ]
+  },
+  "sourcePolicy": {
+    "approvedPublicSourceCategories": [
+      "company-primary",
+      "legal-record",
+      "news"
+    ],
+    "redistributionStatus": "public-urls-redistribution-not-established",
+    "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+    "onlyUrlsAndShortExcerptsMayBeCommitted": true
+  },
+  "authorityBoundary": {
+    "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+    "officialContestRulesStatus": "not-supplied",
+    "contestComplianceClaimAllowed": false,
+    "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+    "prohibitedClaims": [
+      "appraisal status",
+      "benchmark superiority",
+      "contest readiness",
+      "investment advice",
+      "official contest compliance"
+    ]
+  },
+  "evidence": [
+    {
+      "evidenceId": "ev-7cdb351de312",
+      "sourceTitle": "Linear raises USD 35M Series B led by Accel",
+      "sourceUrl": "https://linear.app/now/series-b",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2023-09-14",
+      "effectiveDate": "2023-09-14",
+      "locator": "Linear Now, 14 Sep 2023",
+      "shortExcerpt": "Linear announced a USD 35m Series B led by Accel with Sequoia and 01 Advisors participating.",
+      "observedFacts": [
+        {
+          "factId": "fact-5f77f6aebc86",
+          "statement": "Linear announced a USD 35 million Series B on 2023-09-14.",
+          "value": 35,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        },
+        {
+          "factId": "fact-d51eadccf25b",
+          "statement": "Linear said Sequoia, 01 Advisors and individual software operators participated in the Series B.",
+          "value": [
+            "Sequoia",
+            "01 Advisors",
+            "software operator angels"
+          ],
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        },
+        {
+          "factId": "fact-66a9f955f39a",
+          "statement": "Linear said it had been growing and operating profitably since 2021.",
+          "value": "profitable since 2021",
+          "period": {
+            "startDate": "2021-01-01",
+            "endDate": "2023-09-14"
+          }
+        },
+        {
+          "factId": "fact-d6aa9d25adad",
+          "statement": "Linear said it was a team of 50 people on 2023-09-14.",
+          "value": 50,
+          "unit": "employees",
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        },
+        {
+          "factId": "fact-d17b91d5fa45",
+          "statement": "Linear said it was trusted and used by thousands of companies of all sizes.",
+          "value": "thousands of companies",
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        },
+        {
+          "factId": "fact-cc1ce80422d5",
+          "statement": "Linear said the Series B was led by Accel.",
+          "value": "Accel",
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        }
+      ]
+    },
+    {
+      "evidenceId": "ev-d9970e2872b9",
+      "sourceTitle": "Linear developer tools raise USD 35 million Series B",
+      "sourceUrl": "https://www.forbes.com/sites/alexkonrad/2023/09/14/linear-developer-tools-raises-35-million-series-b/",
+      "sourceClass": "news",
+      "epistemicClass": "observed",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2023-09-14",
+      "effectiveDate": "2023-09-14",
+      "locator": "Forbes, 14 Sep 2023",
+      "shortExcerpt": "Forbes reported Linear's Series B valued the company at about USD 400m and described the company as profitable.",
+      "observedFacts": [
+        {
+          "factId": "fact-d6887c8e0ac0",
+          "statement": "Forbes named customers including Cohere, Ramp and Runway in its Linear profile.",
+          "value": [
+            "Cohere",
+            "Ramp",
+            "Runway"
+          ],
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        },
+        {
+          "factId": "fact-eaeac4846793",
+          "statement": "Forbes reported Linear was profitable around the Series B announcement.",
+          "value": true,
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        },
+        {
+          "factId": "fact-78fee322f04c",
+          "statement": "Forbes reported that the Series B valued Linear at about USD 400 million.",
+          "value": 400,
+          "unit": "USD millions headline valuation",
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        }
+      ]
+    }
+  ],
+  "output": {
+    "template": {
+      "case": {
+        "caseId": "dev-saas-linear-2023",
+        "partition": "development",
+        "scoringRole": "scored",
+        "countedInScoring": true,
+        "companyLegalName": "Linear Orbit, Inc.",
+        "measurementDate": "2023-09-14",
+        "cutoffDate": "2023-09-14",
+        "dataTier": "sparse",
+        "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+        "sourceRecordIds": [
+          "linear-2023-09-14-forbes-profile",
+          "linear-2023-09-14-series-b-blog"
+        ]
+      },
+      "evidenceInventory": [
+        {
+          "evidenceId": "ev-7cdb351de312",
+          "sourceTitle": "Linear raises USD 35M Series B led by Accel",
+          "sourceUrl": "https://linear.app/now/series-b",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2023-09-14",
+          "effectiveDate": "2023-09-14",
+          "locator": "Linear Now, 14 Sep 2023",
+          "shortExcerpt": "Linear announced a USD 35m Series B led by Accel with Sequoia and 01 Advisors participating.",
+          "observedFacts": [
+            {
+              "factId": "fact-5f77f6aebc86",
+              "statement": "Linear announced a USD 35 million Series B on 2023-09-14.",
+              "value": 35,
+              "unit": "USD millions",
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            },
+            {
+              "factId": "fact-d51eadccf25b",
+              "statement": "Linear said Sequoia, 01 Advisors and individual software operators participated in the Series B.",
+              "value": [
+                "Sequoia",
+                "01 Advisors",
+                "software operator angels"
+              ],
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            },
+            {
+              "factId": "fact-66a9f955f39a",
+              "statement": "Linear said it had been growing and operating profitably since 2021.",
+              "value": "profitable since 2021",
+              "period": {
+                "startDate": "2021-01-01",
+                "endDate": "2023-09-14"
+              }
+            },
+            {
+              "factId": "fact-d6aa9d25adad",
+              "statement": "Linear said it was a team of 50 people on 2023-09-14.",
+              "value": 50,
+              "unit": "employees",
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            },
+            {
+              "factId": "fact-d17b91d5fa45",
+              "statement": "Linear said it was trusted and used by thousands of companies of all sizes.",
+              "value": "thousands of companies",
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            },
+            {
+              "factId": "fact-cc1ce80422d5",
+              "statement": "Linear said the Series B was led by Accel.",
+              "value": "Accel",
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            }
+          ]
+        },
+        {
+          "evidenceId": "ev-d9970e2872b9",
+          "sourceTitle": "Linear developer tools raise USD 35 million Series B",
+          "sourceUrl": "https://www.forbes.com/sites/alexkonrad/2023/09/14/linear-developer-tools-raises-35-million-series-b/",
+          "sourceClass": "news",
+          "epistemicClass": "observed",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2023-09-14",
+          "effectiveDate": "2023-09-14",
+          "locator": "Forbes, 14 Sep 2023",
+          "shortExcerpt": "Forbes reported Linear's Series B valued the company at about USD 400m and described the company as profitable.",
+          "observedFacts": [
+            {
+              "factId": "fact-d6887c8e0ac0",
+              "statement": "Forbes named customers including Cohere, Ramp and Runway in its Linear profile.",
+              "value": [
+                "Cohere",
+                "Ramp",
+                "Runway"
+              ],
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            },
+            {
+              "factId": "fact-eaeac4846793",
+              "statement": "Forbes reported Linear was profitable around the Series B announcement.",
+              "value": true,
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            },
+            {
+              "factId": "fact-78fee322f04c",
+              "statement": "Forbes reported that the Series B valued Linear at about USD 400 million.",
+              "value": 400,
+              "unit": "USD millions headline valuation",
+              "period": {
+                "instantDate": "2023-09-14"
+              }
+            }
+          ]
+        }
+      ],
+      "claimRegister": [
+        {
+          "id": "claim-4777112f2516",
+          "kind": "observable",
+          "statement": "Forbes named customers including Cohere, Ramp and Runway in its Linear profile.",
+          "value": [
+            "Cohere",
+            "Ramp",
+            "Runway"
+          ],
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d9970e2872b9",
+              "factId": "fact-d6887c8e0ac0",
+              "locator": "Forbes, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "claim-5dca099bb14f",
+          "kind": "observable",
+          "statement": "Forbes reported Linear was profitable around the Series B announcement.",
+          "value": true,
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d9970e2872b9",
+              "factId": "fact-eaeac4846793",
+              "locator": "Forbes, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "claim-0c64abe2f304",
+          "kind": "observable",
+          "statement": "Forbes reported that the Series B valued Linear at about USD 400 million.",
+          "value": 400,
+          "unit": "USD millions headline valuation",
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-d9970e2872b9",
+              "factId": "fact-78fee322f04c",
+              "locator": "Forbes, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "claim-060d6cd3f52d",
+          "kind": "observable",
+          "statement": "Linear announced a USD 35 million Series B on 2023-09-14.",
+          "value": 35,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312",
+              "factId": "fact-5f77f6aebc86",
+              "locator": "Linear Now, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "claim-1402e8071751",
+          "kind": "observable",
+          "statement": "Linear said Sequoia, 01 Advisors and individual software operators participated in the Series B.",
+          "value": [
+            "Sequoia",
+            "01 Advisors",
+            "software operator angels"
+          ],
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312",
+              "factId": "fact-d51eadccf25b",
+              "locator": "Linear Now, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "claim-caf68fe6c772",
+          "kind": "observable",
+          "statement": "Linear said it had been growing and operating profitably since 2021.",
+          "value": "profitable since 2021",
+          "period": {
+            "startDate": "2021-01-01",
+            "endDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312",
+              "factId": "fact-66a9f955f39a",
+              "locator": "Linear Now, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "claim-5047a4be20ed",
+          "kind": "observable",
+          "statement": "Linear said it was a team of 50 people on 2023-09-14.",
+          "value": 50,
+          "unit": "employees",
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312",
+              "factId": "fact-d6aa9d25adad",
+              "locator": "Linear Now, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "claim-09998e657c3b",
+          "kind": "observable",
+          "statement": "Linear said it was trusted and used by thousands of companies of all sizes.",
+          "value": "thousands of companies",
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312",
+              "factId": "fact-d17b91d5fa45",
+              "locator": "Linear Now, 14 Sep 2023"
+            }
+          ]
+        },
+        {
+          "id": "claim-e01b52ef0a41",
+          "kind": "observable",
+          "statement": "Linear said the Series B was led by Accel.",
+          "value": "Accel",
+          "period": {
+            "instantDate": "2023-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7cdb351de312",
+              "factId": "fact-cc1ce80422d5",
+              "locator": "Linear Now, 14 Sep 2023"
+            }
+          ]
+        }
+      ],
+      "limitations": [
+        "This baseline performs deterministic evidence summarization only.",
+        "It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.",
+        "It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.",
+        "Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established."
+      ]
+    }
+  },
+  "omittedTraceLogic": [
+    "route-selection",
+    "sufficiency-gating",
+    "valuation-engine",
+    "adversarial-review"
+  ]
+}

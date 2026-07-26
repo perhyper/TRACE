@@ -1,0 +1,2276 @@
+{
+  "schemaVersion": "trace.benchmark-scorer-input.v1",
+  "runId": "run-5c191b9ced89d3c9",
+  "runnerName": "trace-full",
+  "caseId": "dev-fintech-monzo-2025",
+  "partition": "development",
+  "caseInput": {
+    "schemaVersion": "trace.benchmark-case-input.v1",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "manifestSchemaVersion": "trace.benchmark-manifest.v1",
+    "caseId": "dev-fintech-monzo-2025",
+    "partition": "development",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Monzo Bank Holding Group Limited",
+    "target": {
+      "legalName": "Monzo Bank Holding Group Limited",
+      "jurisdiction": "GB",
+      "identifiers": [
+        {
+          "scheme": "company-number",
+          "value": "GB-14785367",
+          "jurisdiction": "GB"
+        },
+        {
+          "scheme": "lei",
+          "value": "213800WIZ7R66OO87N21"
+        }
+      ],
+      "aliases": [
+        "Monzo"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2025-12-31",
+    "cutoffDate": "2025-12-31",
+    "dataTier": "rich",
+    "sourcePolicy": {
+      "approvedPublicSourceCategories": [
+        "audited-filing",
+        "company-primary",
+        "government",
+        "news",
+        "regulatory-filing"
+      ],
+      "redistributionStatus": "public-urls-redistribution-not-established",
+      "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+      "onlyUrlsAndShortExcerptsMayBeCommitted": true
+    },
+    "authorityBoundary": {
+      "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+      "officialContestRulesStatus": "not-supplied",
+      "contestComplianceClaimAllowed": false,
+      "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+      "prohibitedClaims": [
+        "appraisal status",
+        "benchmark superiority",
+        "contest readiness",
+        "investment advice",
+        "official contest compliance"
+      ]
+    },
+    "sourceRecordIds": [
+      "monzo-annual-report-2025-web-summary",
+      "monzo-companies-house-filing-history-2025"
+    ],
+    "evidenceLedger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Monzo Bank Holding Group Limited",
+        "jurisdiction": "GB",
+        "identifiers": [
+          {
+            "scheme": "company-number",
+            "value": "GB-14785367",
+            "jurisdiction": "GB"
+          },
+          {
+            "scheme": "lei",
+            "value": "213800WIZ7R66OO87N21"
+          }
+        ],
+        "aliases": [
+          "Monzo"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2025-12-31",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-1d808f14530d",
+          "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/14785367/filing-history?page=2",
+          "sourceTitle": "Companies House filing history for Monzo Bank Holding Group Limited",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2025-04-04",
+          "effectiveDate": "2025-04-04",
+          "sourceClass": "government",
+          "epistemicClass": "observed",
+          "locator": "Company number and 04 Apr 2025 SH01 row",
+          "shortExcerpt": "Companies House identifies company number 14785367 and a 04 Apr 2025 statement of capital filing.",
+          "observedFacts": [
+            {
+              "id": "fact-5b2c2e7c70a0",
+              "statement": "Companies House identifies Monzo Bank Holding Group Limited with company number 14785367.",
+              "epistemicClass": "observed",
+              "value": "14785367",
+              "unit": "company-number",
+              "period": {
+                "instantDate": "2025-04-04"
+              }
+            },
+            {
+              "id": "fact-2b8a6b56227a",
+              "statement": "Companies House lists a 04 Apr 2025 SH01 filing for a statement of capital following an allotment of shares on 2025-03-03.",
+              "epistemicClass": "observed",
+              "value": "SH01 filed 2025-04-04 for allotment on 2025-03-03",
+              "period": {
+                "instantDate": "2025-04-04"
+              }
+            },
+            {
+              "id": "fact-770db1075f80",
+              "statement": "The Companies House filing-history row reports statement-of-capital value GBP 237,479.179.",
+              "epistemicClass": "observed",
+              "value": 237479.179,
+              "unit": "GBP",
+              "period": {
+                "instantDate": "2025-04-04"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-e11520fb730d",
+          "sourceUrl": "https://monzo.com/annual-report/2025",
+          "sourceTitle": "Monzo Annual Report 2025 web summary",
+          "retrievedDate": "2026-07-26",
+          "effectiveDate": "2025-03-31",
+          "sourceClass": "company-primary",
+          "epistemicClass": "extracted",
+          "locator": "Year in review 2025",
+          "shortExcerpt": "The 2025 annual report summary reports 12m+ customers, GBP 1.2bn revenue, GBP 16.6bn deposits and GBP 18.3bn assets.",
+          "observedFacts": [
+            {
+              "id": "fact-7b003711b8cf",
+              "statement": "Monzo reported GBP 1.2 billion of revenue in the 2025 annual report summary.",
+              "epistemicClass": "extracted",
+              "value": 1.2,
+              "unit": "GBP billions",
+              "period": {
+                "endDate": "2025-03-31"
+              }
+            },
+            {
+              "id": "fact-83ea0aa62cd5",
+              "statement": "Monzo reported GBP 113.9 million of adjusted profit before tax in the 2025 annual report summary.",
+              "epistemicClass": "extracted",
+              "value": 113.9,
+              "unit": "GBP millions",
+              "period": {
+                "endDate": "2025-03-31"
+              }
+            },
+            {
+              "id": "fact-a8537d00104b",
+              "statement": "Monzo reported GBP 16.6 billion of customer deposits in the 2025 annual report summary.",
+              "epistemicClass": "extracted",
+              "value": 16.6,
+              "unit": "GBP billions",
+              "period": {
+                "endDate": "2025-03-31"
+              }
+            },
+            {
+              "id": "fact-d7da14320b49",
+              "statement": "Monzo reported GBP 18.3 billion of total assets in the 2025 annual report summary.",
+              "epistemicClass": "extracted",
+              "value": 18.3,
+              "unit": "GBP billions",
+              "period": {
+                "endDate": "2025-03-31"
+              }
+            },
+            {
+              "id": "fact-29e94ca9b71f",
+              "statement": "Monzo reported more than 12 million total customers in its 2025 annual report summary.",
+              "epistemicClass": "extracted",
+              "value": "12m+",
+              "unit": "customers",
+              "period": {
+                "endDate": "2025-03-31"
+              }
+            },
+            {
+              "id": "fact-3ee1ea14a033",
+              "statement": "Monzo reported weekly active customers increased from 5.4 million to 6.9 million in FY2025.",
+              "epistemicClass": "extracted",
+              "value": 6.9,
+              "unit": "millions",
+              "period": {
+                "endDate": "2025-03-31"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [],
+      "failedNotes": [
+        {
+          "id": "monzo-2026-report-excluded-note",
+          "stage": "extraction",
+          "sourceUrl": "https://monzo.com/annual-report",
+          "sourceTitle": "Monzo latest annual report landing page",
+          "attemptedAt": "2026-07-26T00:00:00Z",
+          "note": "The latest Monzo annual-report landing page shows post-cutoff FY2026 material; it was not used as input for the 2025-12-31 case."
+        },
+        {
+          "id": "monzo-html-hash-not-recorded",
+          "stage": "extraction",
+          "sourceUrl": "https://monzo.com/annual-report/2025",
+          "sourceTitle": "Monzo Annual Report 2025 web summary",
+          "attemptedAt": "2026-07-26T00:00:00Z",
+          "note": "No document hash is recorded for the dynamic HTML page; raw reports and downloads remain outside Git."
+        }
+      ],
+      "warnings": []
+    }
+  },
+  "annotation": {
+    "schemaVersion": "trace.benchmark-annotation.v1",
+    "caseId": "dev-fintech-monzo-2025",
+    "partition": "development",
+    "measurementDate": "2025-12-31",
+    "expectedRoute": {
+      "route": "financial-services",
+      "acceptableAlternativeRoutes": [],
+      "evidenceIds": [
+        "ev-1d808f14530d",
+        "ev-e11520fb730d"
+      ],
+      "rationale": "The case is a banking and consumer-fintech target with deposits, assets, customers and company registry evidence."
+    },
+    "binaryClaims": [
+      {
+        "id": "monzo-adjusted-profitable-fy2025",
+        "statement": "Monzo reported positive adjusted profit before tax in FY2025.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-e11520fb730d"
+        ]
+      },
+      {
+        "id": "monzo-identity-resolved",
+        "statement": "Monzo Bank Holding Group Limited is resolved to Companies House number 14785367.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-1d808f14530d"
+        ]
+      },
+      {
+        "id": "monzo-security-rights-public",
+        "statement": "The committed cutoff evidence discloses share rights and cap-table data sufficient for security-level fair value.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-1d808f14530d"
+        ]
+      }
+    ],
+    "observableClaims": [
+      {
+        "id": "monzo-fy2025-customer-deposits",
+        "statement": "FY2025 customer deposits were GBP 16.6 billion.",
+        "expectedValue": 16.6,
+        "unit": "GBP billions",
+        "period": {
+          "endDate": "2025-03-31"
+        },
+        "evidenceIds": [
+          "ev-e11520fb730d"
+        ]
+      },
+      {
+        "id": "monzo-fy2025-revenue",
+        "statement": "FY2025 revenue was GBP 1.2 billion.",
+        "expectedValue": 1.2,
+        "unit": "GBP billions",
+        "period": {
+          "endDate": "2025-03-31"
+        },
+        "evidenceIds": [
+          "ev-e11520fb730d"
+        ]
+      },
+      {
+        "id": "monzo-fy2025-total-assets",
+        "statement": "FY2025 total assets were GBP 18.3 billion.",
+        "expectedValue": 18.3,
+        "unit": "GBP billions",
+        "period": {
+          "endDate": "2025-03-31"
+        },
+        "evidenceIds": [
+          "ev-e11520fb730d"
+        ]
+      }
+    ],
+    "expectedAbstentions": [
+      {
+        "id": "monzo-enterprise-value-abstain",
+        "field": "enterprise-value",
+        "reasonCode": "bank-balance-sheet-not-ev-input",
+        "description": "Deposits, assets and adjusted profit do not by themselves establish enterprise value.",
+        "evidenceIds": [
+          "ev-e11520fb730d"
+        ]
+      },
+      {
+        "id": "monzo-security-level-fair-value-abstain",
+        "field": "security-level-fair-value",
+        "reasonCode": "missing-security-rights-and-cap-table",
+        "description": "No committed cutoff evidence discloses share rights, preferences, dilution or a full cap table.",
+        "evidenceIds": [
+          "ev-1d808f14530d"
+        ]
+      }
+    ],
+    "valuationSeparationExpectations": {
+      "allowedValuationFields": [],
+      "mustNotConflate": [
+        "customer deposits with enterprise value",
+        "statement of capital with security-level fair value",
+        "total assets with equity value"
+      ],
+      "notes": "No historical valuation-error target is approved for Monzo."
+    },
+    "completenessExpectations": [
+      {
+        "id": "monzo-cover-identity-scale-and-limits",
+        "description": "A complete answer should cover entity identity, fintech banking route, customers, deposits, assets, profitability and missing security-rights limitations.",
+        "requiredEvidenceClasses": [
+          "company-primary",
+          "government"
+        ],
+        "requiredTopics": [
+          "identity",
+          "route",
+          "scale metrics",
+          "valuation abstention"
+        ],
+        "evidenceIds": [
+          "ev-1d808f14530d",
+          "ev-e11520fb730d"
+        ]
+      }
+    ],
+    "historicalValuationTargets": {
+      "eligible": false,
+      "reason": "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+      "targets": []
+    }
+  },
+  "runnerOutput": {
+    "schemaVersion": "trace.benchmark-runner-output.v1",
+    "runnerName": "trace-full",
+    "runId": "run-5c191b9ced89d3c9",
+    "caseId": "dev-fintech-monzo-2025",
+    "partition": "development",
+    "status": "completed",
+    "timing": {
+      "schemaVersion": "trace.benchmark-timing.v1",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.299Z",
+      "durationMs": 299
+    },
+    "rawOutput": {
+      "markdown": "# TRACE Report: Monzo Bank Holding Group Limited\n\n## Summary\n- Company: Monzo Bank Holding Group Limited (GB; identity resolved)\n- Measurement date: 2025-12-31\n- Decision mode: full-analysis\n- Sufficiency: sufficient (0.925)\n- Route: financial-services\n- Review: passed\n- Run ID: run-5c191b9ced89d3c9\n\n## Evidence Ledger\n| Evidence ID | Source class | Published | Retrieved | Source | Excerpt |\n| --- | --- | --- | --- | --- | --- |\n| ev-1d808f14530d | government | 2025-04-04 | 2026-07-26 | Companies House filing history for Monzo Bank Holding Group Limited (https://find-and-update.company-information.service.gov.uk/company/14785367/filing-history?page=2) | Companies House identifies company number 14785367 and a 04 Apr 2025 statement of capital filing. |\n| ev-e11520fb730d | company-primary | n/a | 2026-07-26 | Monzo Annual Report 2025 web summary (https://monzo.com/annual-report/2025) | The 2025 annual report summary reports 12m+ customers, GBP 1.2bn revenue, GBP 16.6bn deposits and GBP 18.3bn assets. |\n\n## Material Facts\n- Companies House identifies Monzo Bank Holding Group Limited with company number 14785367. value=14785367; unit=company-number; period=instant 2025-04-04; epistemic=observed [ev-1d808f14530d]\n- Companies House lists a 04 Apr 2025 SH01 filing for a statement of capital following an allotment of shares on 2025-03-03. value=SH01 filed 2025-04-04 for allotment on 2025-03-03; period=instant 2025-04-04; epistemic=observed [ev-1d808f14530d]\n- Monzo reported GBP 1.2 billion of revenue in the 2025 annual report summary. value=1.2; unit=GBP billions; period=end 2025-03-31; epistemic=extracted [ev-e11520fb730d]\n- Monzo reported GBP 113.9 million of adjusted profit before tax in the 2025 annual report summary. value=113.9; unit=GBP millions; period=end 2025-03-31; epistemic=extracted [ev-e11520fb730d]\n- Monzo reported GBP 16.6 billion of customer deposits in the 2025 annual report summary. value=16.6; unit=GBP billions; period=end 2025-03-31; epistemic=extracted [ev-e11520fb730d]\n- Monzo reported GBP 18.3 billion of total assets in the 2025 annual report summary. value=18.3; unit=GBP billions; period=end 2025-03-31; epistemic=extracted [ev-e11520fb730d]\n- Monzo reported more than 12 million total customers in its 2025 annual report summary. value=12m+; unit=customers; period=end 2025-03-31; epistemic=extracted [ev-e11520fb730d]\n- Monzo reported weekly active customers increased from 5.4 million to 6.9 million in FY2025. value=6.9; unit=millions; period=end 2025-03-31; epistemic=extracted [ev-e11520fb730d]\n- The Companies House filing-history row reports statement-of-capital value GBP 237,479.179. value=237479.179; unit=GBP; period=instant 2025-04-04; epistemic=observed [ev-1d808f14530d]\n\n## Inferences\n- Enterprise Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-1d808f14530d, ev-e11520fb730d]\n- Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-1d808f14530d, ev-e11520fb730d]\n- Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- Selected route financial-services: Evidence shows bank-like or deposit-led balance-sheet items. [ev-e11520fb730d]\n- Selected route financial-services: Evidence shows regulated financial activity such as banking, payments, lending, or electronic money. [ev-1d808f14530d]\n- Selected route financial-services: Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation. [ev-e11520fb730d]\n- Sufficiency is sufficient with score 0.925: Evidence coverage is sufficient for route selection before valuation.\n- Total Equity Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-1d808f14530d, ev-e11520fb730d]\n\n## Valuation\n### Headline Valuation\n- Status: abstained\n- Reason: recent-secondary-transaction-not-observed\n- Explanation: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- Evidence: ev-1d808f14530d, ev-e11520fb730d\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n\n### Enterprise Value\n- Status: abstained\n- Reason: recent-secondary-transaction-not-observed\n- Explanation: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- Evidence: ev-1d808f14530d, ev-e11520fb730d\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n\n### Total Equity Value\n- Status: abstained\n- Reason: recent-secondary-transaction-not-observed\n- Explanation: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- Evidence: ev-1d808f14530d, ev-e11520fb730d\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n\n### Security-Level Fair Value\n- Status: abstained\n- Reason: security-rights-and-cap-table-not-disclosed\n- Explanation: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- Evidence: None\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-cap-table | Cap table | total-equity-value, security-level-fair-value | TRACE cannot allocate value across securities or holders. |\n| missing-dilution | Dilution | total-equity-value, security-level-fair-value | TRACE cannot convert company-level headline value into per-security fair value. |\n| missing-share-preferences | Share preferences | security-level-fair-value | TRACE cannot determine whether the security participates equally in the headline value. |\n| missing-share-rights | Share rights | security-level-fair-value | TRACE cannot assign the headline reference to a specific share class. |\n\n## Limitations\n- TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.\n- extraction note monzo-2026-report-excluded-note: The latest Monzo annual-report landing page shows post-cutoff FY2026 material; it was not used as input for the 2025-12-31 case.\n- extraction note monzo-html-hash-not-recorded: No document hash is recorded for the dynamic HTML page; raw reports and downloads remain outside Git.\n\n## Conflicts\n- None identified.\n\n## Counterarguments\n- Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: recent-transaction, software-saas, marketplace, biotech-rnpv, asset-based, general-private-company.\n\n## Missing Information\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-cap-table | Cap table | total-equity-value, security-level-fair-value | TRACE cannot allocate value across securities or holders. |\n| missing-dilution | Dilution | total-equity-value, security-level-fair-value | TRACE cannot convert company-level headline value into per-security fair value. |\n| missing-financial-and-operating-fact-coverage | Financial and operating fact coverage | routing, sufficiency | TRACE treats this as a routing limitation unless stronger evidence is supplied. |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n| missing-share-preferences | Share preferences | security-level-fair-value | TRACE cannot determine whether the security participates equally in the headline value. |\n| missing-share-rights | Share rights | security-level-fair-value | TRACE cannot assign the headline reference to a specific share class. |\n\n## Next Diligence Questions\n- What evidence resolves Cap table for total-equity-value, security-level-fair-value?\n- What evidence resolves Dilution for total-equity-value, security-level-fair-value?\n- What evidence resolves Financial and operating fact coverage for routing, sufficiency?\n- What evidence resolves Recent secondary transaction for headline-valuation?\n- What evidence resolves Share preferences for security-level-fair-value?\n- What evidence resolves Share rights for security-level-fair-value?\n\n## Reviewer Findings\n- Reviewer version: trace-reviewer.v1\n- Status: passed\n\n| ID | Severity | Category | Evidence | Message |\n| --- | --- | --- | --- | --- |\n| review-abstention-triggers | pass | abstention | ev-1d808f14530d, ev-e11520fb730d | Abstained valuation fields include missing-information reasons, and security-level triggers are respected. |\n| review-calculation-integrity | pass | calculation | ev-1d808f14530d, ev-e11520fb730d | No concluded valuation calculations were emitted; abstentions are explicit. |\n| review-citation-support | pass | evidence | ev-1d808f14530d, ev-e11520fb730d | Sufficiency, route, and valuation claims cite included evidence IDs where citations are required. |\n| review-cutoff-compliance | pass | cutoff | ev-1d808f14530d, ev-e11520fb730d | Included evidence satisfies the measurement-date publication cutoff. |\n| review-entity-certainty | pass | entity | ev-1d808f14530d, ev-e11520fb730d | Target identity is resolved and supported by included evidence. |\n| review-evidence-coverage | pass | evidence | ev-1d808f14530d, ev-e11520fb730d | Evidence coverage satisfies the sufficiency gate for route selection. |\n| review-route-appropriateness | pass | route | ev-1d808f14530d, ev-e11520fb730d | Route selection is consistent with sufficiency status: financial-services. |\n| review-valuation-field-separation | pass | valuation-separation | ev-1d808f14530d, ev-e11520fb730d | Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields. |\n\n## Run Metadata\n- Run ID: run-5c191b9ced89d3c9\n- Runtime version: 0.1.0\n- Command: trace benchmark --partition development --runner trace-full --case-id dev-fintech-monzo-2025\n- Measurement date: 2025-12-31\n- Started at: 2026-07-26T00:00:00.000Z\n- Completed at: 2026-07-26T00:00:00.299Z\n- Duration ms: 299\n- Input path: benchmark:development:dev-fintech-monzo-2025\n- Output directory: benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-fintech-monzo-2025\n- Warnings:\n- None identified.\n",
+      "json": {
+        "schemaVersion": "trace.trace-full-runner-output.v1",
+        "runnerName": "trace-full",
+        "analyzerVersion": "0.1.0",
+        "inputFingerprint": "df0f8d552f5f",
+        "case": {
+          "caseId": "dev-fintech-monzo-2025",
+          "partition": "development",
+          "scoringRole": "scored",
+          "countedInScoring": true,
+          "companyLegalName": "Monzo Bank Holding Group Limited",
+          "measurementDate": "2025-12-31",
+          "cutoffDate": "2025-12-31",
+          "dataTier": "rich",
+          "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+          "sourceRecordIds": [
+            "monzo-annual-report-2025-web-summary",
+            "monzo-companies-house-filing-history-2025"
+          ]
+        },
+        "sourcePolicy": {
+          "approvedPublicSourceCategories": [
+            "audited-filing",
+            "company-primary",
+            "government",
+            "news",
+            "regulatory-filing"
+          ],
+          "redistributionStatus": "public-urls-redistribution-not-established",
+          "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+          "onlyUrlsAndShortExcerptsMayBeCommitted": true
+        },
+        "authorityBoundary": {
+          "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+          "officialContestRulesStatus": "not-supplied",
+          "contestComplianceClaimAllowed": false,
+          "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+          "prohibitedClaims": [
+            "appraisal status",
+            "benchmark superiority",
+            "contest readiness",
+            "investment advice",
+            "official contest compliance"
+          ]
+        },
+        "analyzerPath": [
+          "evidence-ledger",
+          "sufficiency-gating",
+          "route-selection",
+          "valuation-engine",
+          "adversarial-review",
+          "report-composer"
+        ],
+        "runtimeResult": {
+          "ledger": {
+            "schemaVersion": "trace.evidence-ledger.v1",
+            "target": {
+              "legalName": "Monzo Bank Holding Group Limited",
+              "jurisdiction": "GB",
+              "identifiers": [
+                {
+                  "scheme": "company-number",
+                  "value": "GB-14785367",
+                  "jurisdiction": "GB"
+                },
+                {
+                  "scheme": "lei",
+                  "value": "213800WIZ7R66OO87N21"
+                }
+              ],
+              "aliases": [
+                "Monzo"
+              ],
+              "identityConfidence": "resolved"
+            },
+            "measurementDate": "2025-12-31",
+            "decisionMode": "full-analysis",
+            "evidence": [
+              {
+                "id": "ev-1d808f14530d",
+                "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/14785367/filing-history?page=2",
+                "sourceTitle": "Companies House filing history for Monzo Bank Holding Group Limited",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2025-04-04",
+                "effectiveDate": "2025-04-04",
+                "sourceClass": "government",
+                "epistemicClass": "observed",
+                "locator": "Company number and 04 Apr 2025 SH01 row",
+                "shortExcerpt": "Companies House identifies company number 14785367 and a 04 Apr 2025 statement of capital filing.",
+                "observedFacts": [
+                  {
+                    "id": "fact-5b2c2e7c70a0",
+                    "statement": "Companies House identifies Monzo Bank Holding Group Limited with company number 14785367.",
+                    "epistemicClass": "observed",
+                    "value": "14785367",
+                    "unit": "company-number",
+                    "period": {
+                      "instantDate": "2025-04-04"
+                    }
+                  },
+                  {
+                    "id": "fact-2b8a6b56227a",
+                    "statement": "Companies House lists a 04 Apr 2025 SH01 filing for a statement of capital following an allotment of shares on 2025-03-03.",
+                    "epistemicClass": "observed",
+                    "value": "SH01 filed 2025-04-04 for allotment on 2025-03-03",
+                    "period": {
+                      "instantDate": "2025-04-04"
+                    }
+                  },
+                  {
+                    "id": "fact-770db1075f80",
+                    "statement": "The Companies House filing-history row reports statement-of-capital value GBP 237,479.179.",
+                    "epistemicClass": "observed",
+                    "value": 237479.179,
+                    "unit": "GBP",
+                    "period": {
+                      "instantDate": "2025-04-04"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ev-e11520fb730d",
+                "sourceUrl": "https://monzo.com/annual-report/2025",
+                "sourceTitle": "Monzo Annual Report 2025 web summary",
+                "retrievedDate": "2026-07-26",
+                "effectiveDate": "2025-03-31",
+                "sourceClass": "company-primary",
+                "epistemicClass": "extracted",
+                "locator": "Year in review 2025",
+                "shortExcerpt": "The 2025 annual report summary reports 12m+ customers, GBP 1.2bn revenue, GBP 16.6bn deposits and GBP 18.3bn assets.",
+                "observedFacts": [
+                  {
+                    "id": "fact-7b003711b8cf",
+                    "statement": "Monzo reported GBP 1.2 billion of revenue in the 2025 annual report summary.",
+                    "epistemicClass": "extracted",
+                    "value": 1.2,
+                    "unit": "GBP billions",
+                    "period": {
+                      "endDate": "2025-03-31"
+                    }
+                  },
+                  {
+                    "id": "fact-83ea0aa62cd5",
+                    "statement": "Monzo reported GBP 113.9 million of adjusted profit before tax in the 2025 annual report summary.",
+                    "epistemicClass": "extracted",
+                    "value": 113.9,
+                    "unit": "GBP millions",
+                    "period": {
+                      "endDate": "2025-03-31"
+                    }
+                  },
+                  {
+                    "id": "fact-a8537d00104b",
+                    "statement": "Monzo reported GBP 16.6 billion of customer deposits in the 2025 annual report summary.",
+                    "epistemicClass": "extracted",
+                    "value": 16.6,
+                    "unit": "GBP billions",
+                    "period": {
+                      "endDate": "2025-03-31"
+                    }
+                  },
+                  {
+                    "id": "fact-d7da14320b49",
+                    "statement": "Monzo reported GBP 18.3 billion of total assets in the 2025 annual report summary.",
+                    "epistemicClass": "extracted",
+                    "value": 18.3,
+                    "unit": "GBP billions",
+                    "period": {
+                      "endDate": "2025-03-31"
+                    }
+                  },
+                  {
+                    "id": "fact-29e94ca9b71f",
+                    "statement": "Monzo reported more than 12 million total customers in its 2025 annual report summary.",
+                    "epistemicClass": "extracted",
+                    "value": "12m+",
+                    "unit": "customers",
+                    "period": {
+                      "endDate": "2025-03-31"
+                    }
+                  },
+                  {
+                    "id": "fact-3ee1ea14a033",
+                    "statement": "Monzo reported weekly active customers increased from 5.4 million to 6.9 million in FY2025.",
+                    "epistemicClass": "extracted",
+                    "value": 6.9,
+                    "unit": "millions",
+                    "period": {
+                      "endDate": "2025-03-31"
+                    }
+                  }
+                ]
+              }
+            ],
+            "excludedRecords": [],
+            "failedNotes": [
+              {
+                "id": "monzo-2026-report-excluded-note",
+                "stage": "extraction",
+                "sourceUrl": "https://monzo.com/annual-report",
+                "sourceTitle": "Monzo latest annual report landing page",
+                "attemptedAt": "2026-07-26T00:00:00Z",
+                "note": "The latest Monzo annual-report landing page shows post-cutoff FY2026 material; it was not used as input for the 2025-12-31 case."
+              },
+              {
+                "id": "monzo-html-hash-not-recorded",
+                "stage": "extraction",
+                "sourceUrl": "https://monzo.com/annual-report/2025",
+                "sourceTitle": "Monzo Annual Report 2025 web summary",
+                "attemptedAt": "2026-07-26T00:00:00Z",
+                "note": "No document hash is recorded for the dynamic HTML page; raw reports and downloads remain outside Git."
+              }
+            ],
+            "warnings": []
+          },
+          "sufficiency": {
+            "status": "sufficient",
+            "score": 0.925,
+            "criteria": [
+              {
+                "criterion": "Entity resolution",
+                "status": "met",
+                "explanation": "The target identity is resolved and supported by eligible evidence.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              },
+              {
+                "criterion": "Measurement-date eligible evidence",
+                "status": "met",
+                "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              },
+              {
+                "criterion": "Source quality",
+                "status": "met",
+                "explanation": "Multiple high-authority source classes support routing.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              },
+              {
+                "criterion": "Route-defining business-model evidence",
+                "status": "met",
+                "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              },
+              {
+                "criterion": "Financial and operating fact coverage",
+                "status": "partial",
+                "explanation": "Evidence contains one financial or operating fact usable for route selection.",
+                "evidenceIds": [
+                  "ev-e11520fb730d"
+                ]
+              }
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-financial-and-operating-fact-coverage",
+                "topic": "Financial and operating fact coverage",
+                "description": "Evidence contains one financial or operating fact usable for route selection.",
+                "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              }
+            ],
+            "rationale": "Evidence coverage is sufficient for route selection before valuation."
+          },
+          "route": {
+            "status": "selected",
+            "selectedRoute": "financial-services",
+            "selectedReasons": [
+              {
+                "summary": "Evidence shows bank-like or deposit-led balance-sheet items.",
+                "evidenceIds": [
+                  "ev-e11520fb730d"
+                ]
+              },
+              {
+                "summary": "Evidence shows regulated financial activity such as banking, payments, lending, or electronic money.",
+                "evidenceIds": [
+                  "ev-1d808f14530d"
+                ]
+              },
+              {
+                "summary": "Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation.",
+                "evidenceIds": [
+                  "ev-e11520fb730d"
+                ]
+              }
+            ],
+            "candidates": [
+              {
+                "route": "financial-services",
+                "status": "selected",
+                "score": 0.6,
+                "reasons": [
+                  {
+                    "summary": "Evidence shows bank-like or deposit-led balance-sheet items.",
+                    "evidenceIds": [
+                      "ev-e11520fb730d"
+                    ]
+                  },
+                  {
+                    "summary": "Evidence shows regulated financial activity such as banking, payments, lending, or electronic money.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d"
+                    ]
+                  },
+                  {
+                    "summary": "Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation.",
+                    "evidenceIds": [
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "general-private-company",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rejectedRoutes": [
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "general-private-company",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "valuation": {
+            "headlineValuation": {
+              "status": "abstained",
+              "field": "headline-valuation",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              }
+            },
+            "enterpriseValue": {
+              "status": "abstained",
+              "field": "enterprise-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              }
+            },
+            "totalEquityValue": {
+              "status": "abstained",
+              "field": "total-equity-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              }
+            },
+            "securityLevelFairValue": {
+              "status": "abstained",
+              "field": "security-level-fair-value",
+              "abstention": {
+                "reasonCode": "security-rights-and-cap-table-not-disclosed",
+                "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+                "missingInformation": [
+                  {
+                    "id": "missing-cap-table",
+                    "topic": "Cap table",
+                    "description": "The evidence ledger does not disclose capitalization table data.",
+                    "consequence": "TRACE cannot allocate value across securities or holders.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-dilution",
+                    "topic": "Dilution",
+                    "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                    "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-preferences",
+                    "topic": "Share preferences",
+                    "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                    "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-rights",
+                    "topic": "Share rights",
+                    "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                    "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": []
+              }
+            }
+          },
+          "review": {
+            "status": "passed",
+            "reviewerVersion": "trace-reviewer.v1",
+            "findings": [
+              {
+                "id": "review-abstention-triggers",
+                "severity": "pass",
+                "category": "abstention",
+                "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-calculation-integrity",
+                "severity": "pass",
+                "category": "calculation",
+                "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-citation-support",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-cutoff-compliance",
+                "severity": "pass",
+                "category": "cutoff",
+                "message": "Included evidence satisfies the measurement-date publication cutoff.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-entity-certainty",
+                "severity": "pass",
+                "category": "entity",
+                "message": "Target identity is resolved and supported by included evidence.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-evidence-coverage",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-route-appropriateness",
+                "severity": "pass",
+                "category": "route",
+                "message": "Route selection is consistent with sufficiency status: financial-services.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-valuation-field-separation",
+                "severity": "pass",
+                "category": "valuation-separation",
+                "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              }
+            ]
+          }
+        },
+        "report": {
+          "schemaVersion": "trace.report.v1",
+          "company": {
+            "legalName": "Monzo Bank Holding Group Limited",
+            "jurisdiction": "GB",
+            "identifiers": [
+              {
+                "scheme": "company-number",
+                "value": "GB-14785367",
+                "jurisdiction": "GB"
+              },
+              {
+                "scheme": "lei",
+                "value": "213800WIZ7R66OO87N21"
+              }
+            ],
+            "aliases": [
+              "Monzo"
+            ],
+            "identityConfidence": "resolved"
+          },
+          "measurementDate": "2025-12-31",
+          "decisionMode": "full-analysis",
+          "evidence": [
+            {
+              "id": "ev-1d808f14530d",
+              "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/14785367/filing-history?page=2",
+              "sourceTitle": "Companies House filing history for Monzo Bank Holding Group Limited",
+              "retrievedDate": "2026-07-26",
+              "publishedDate": "2025-04-04",
+              "effectiveDate": "2025-04-04",
+              "sourceClass": "government",
+              "epistemicClass": "observed",
+              "locator": "Company number and 04 Apr 2025 SH01 row",
+              "shortExcerpt": "Companies House identifies company number 14785367 and a 04 Apr 2025 statement of capital filing.",
+              "observedFacts": [
+                {
+                  "id": "fact-5b2c2e7c70a0",
+                  "statement": "Companies House identifies Monzo Bank Holding Group Limited with company number 14785367.",
+                  "epistemicClass": "observed",
+                  "value": "14785367",
+                  "unit": "company-number",
+                  "period": {
+                    "instantDate": "2025-04-04"
+                  }
+                },
+                {
+                  "id": "fact-2b8a6b56227a",
+                  "statement": "Companies House lists a 04 Apr 2025 SH01 filing for a statement of capital following an allotment of shares on 2025-03-03.",
+                  "epistemicClass": "observed",
+                  "value": "SH01 filed 2025-04-04 for allotment on 2025-03-03",
+                  "period": {
+                    "instantDate": "2025-04-04"
+                  }
+                },
+                {
+                  "id": "fact-770db1075f80",
+                  "statement": "The Companies House filing-history row reports statement-of-capital value GBP 237,479.179.",
+                  "epistemicClass": "observed",
+                  "value": 237479.179,
+                  "unit": "GBP",
+                  "period": {
+                    "instantDate": "2025-04-04"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ev-e11520fb730d",
+              "sourceUrl": "https://monzo.com/annual-report/2025",
+              "sourceTitle": "Monzo Annual Report 2025 web summary",
+              "retrievedDate": "2026-07-26",
+              "effectiveDate": "2025-03-31",
+              "sourceClass": "company-primary",
+              "epistemicClass": "extracted",
+              "locator": "Year in review 2025",
+              "shortExcerpt": "The 2025 annual report summary reports 12m+ customers, GBP 1.2bn revenue, GBP 16.6bn deposits and GBP 18.3bn assets.",
+              "observedFacts": [
+                {
+                  "id": "fact-7b003711b8cf",
+                  "statement": "Monzo reported GBP 1.2 billion of revenue in the 2025 annual report summary.",
+                  "epistemicClass": "extracted",
+                  "value": 1.2,
+                  "unit": "GBP billions",
+                  "period": {
+                    "endDate": "2025-03-31"
+                  }
+                },
+                {
+                  "id": "fact-83ea0aa62cd5",
+                  "statement": "Monzo reported GBP 113.9 million of adjusted profit before tax in the 2025 annual report summary.",
+                  "epistemicClass": "extracted",
+                  "value": 113.9,
+                  "unit": "GBP millions",
+                  "period": {
+                    "endDate": "2025-03-31"
+                  }
+                },
+                {
+                  "id": "fact-a8537d00104b",
+                  "statement": "Monzo reported GBP 16.6 billion of customer deposits in the 2025 annual report summary.",
+                  "epistemicClass": "extracted",
+                  "value": 16.6,
+                  "unit": "GBP billions",
+                  "period": {
+                    "endDate": "2025-03-31"
+                  }
+                },
+                {
+                  "id": "fact-d7da14320b49",
+                  "statement": "Monzo reported GBP 18.3 billion of total assets in the 2025 annual report summary.",
+                  "epistemicClass": "extracted",
+                  "value": 18.3,
+                  "unit": "GBP billions",
+                  "period": {
+                    "endDate": "2025-03-31"
+                  }
+                },
+                {
+                  "id": "fact-29e94ca9b71f",
+                  "statement": "Monzo reported more than 12 million total customers in its 2025 annual report summary.",
+                  "epistemicClass": "extracted",
+                  "value": "12m+",
+                  "unit": "customers",
+                  "period": {
+                    "endDate": "2025-03-31"
+                  }
+                },
+                {
+                  "id": "fact-3ee1ea14a033",
+                  "statement": "Monzo reported weekly active customers increased from 5.4 million to 6.9 million in FY2025.",
+                  "epistemicClass": "extracted",
+                  "value": 6.9,
+                  "unit": "millions",
+                  "period": {
+                    "endDate": "2025-03-31"
+                  }
+                }
+              ]
+            }
+          ],
+          "sufficiency": {
+            "status": "sufficient",
+            "score": 0.925,
+            "criteria": [
+              {
+                "criterion": "Entity resolution",
+                "status": "met",
+                "explanation": "The target identity is resolved and supported by eligible evidence.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              },
+              {
+                "criterion": "Measurement-date eligible evidence",
+                "status": "met",
+                "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              },
+              {
+                "criterion": "Source quality",
+                "status": "met",
+                "explanation": "Multiple high-authority source classes support routing.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              },
+              {
+                "criterion": "Route-defining business-model evidence",
+                "status": "met",
+                "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              },
+              {
+                "criterion": "Financial and operating fact coverage",
+                "status": "partial",
+                "explanation": "Evidence contains one financial or operating fact usable for route selection.",
+                "evidenceIds": [
+                  "ev-e11520fb730d"
+                ]
+              }
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-financial-and-operating-fact-coverage",
+                "topic": "Financial and operating fact coverage",
+                "description": "Evidence contains one financial or operating fact usable for route selection.",
+                "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              }
+            ],
+            "rationale": "Evidence coverage is sufficient for route selection before valuation."
+          },
+          "route": {
+            "status": "selected",
+            "selectedRoute": "financial-services",
+            "selectedReasons": [
+              {
+                "summary": "Evidence shows bank-like or deposit-led balance-sheet items.",
+                "evidenceIds": [
+                  "ev-e11520fb730d"
+                ]
+              },
+              {
+                "summary": "Evidence shows regulated financial activity such as banking, payments, lending, or electronic money.",
+                "evidenceIds": [
+                  "ev-1d808f14530d"
+                ]
+              },
+              {
+                "summary": "Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation.",
+                "evidenceIds": [
+                  "ev-e11520fb730d"
+                ]
+              }
+            ],
+            "candidates": [
+              {
+                "route": "financial-services",
+                "status": "selected",
+                "score": 0.6,
+                "reasons": [
+                  {
+                    "summary": "Evidence shows bank-like or deposit-led balance-sheet items.",
+                    "evidenceIds": [
+                      "ev-e11520fb730d"
+                    ]
+                  },
+                  {
+                    "summary": "Evidence shows regulated financial activity such as banking, payments, lending, or electronic money.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d"
+                    ]
+                  },
+                  {
+                    "summary": "Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation.",
+                    "evidenceIds": [
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "general-private-company",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rejectedRoutes": [
+              {
+                "route": "recent-transaction",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "general-private-company",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+                    "evidenceIds": [
+                      "ev-1d808f14530d",
+                      "ev-e11520fb730d"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "valuation": {
+            "headlineValuation": {
+              "status": "abstained",
+              "field": "headline-valuation",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              }
+            },
+            "enterpriseValue": {
+              "status": "abstained",
+              "field": "enterprise-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              }
+            },
+            "totalEquityValue": {
+              "status": "abstained",
+              "field": "total-equity-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ]
+              }
+            },
+            "securityLevelFairValue": {
+              "status": "abstained",
+              "field": "security-level-fair-value",
+              "abstention": {
+                "reasonCode": "security-rights-and-cap-table-not-disclosed",
+                "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+                "missingInformation": [
+                  {
+                    "id": "missing-cap-table",
+                    "topic": "Cap table",
+                    "description": "The evidence ledger does not disclose capitalization table data.",
+                    "consequence": "TRACE cannot allocate value across securities or holders.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-dilution",
+                    "topic": "Dilution",
+                    "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                    "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-preferences",
+                    "topic": "Share preferences",
+                    "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                    "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-rights",
+                    "topic": "Share rights",
+                    "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                    "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": []
+              }
+            }
+          },
+          "review": {
+            "status": "passed",
+            "reviewerVersion": "trace-reviewer.v1",
+            "findings": [
+              {
+                "id": "review-abstention-triggers",
+                "severity": "pass",
+                "category": "abstention",
+                "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-calculation-integrity",
+                "severity": "pass",
+                "category": "calculation",
+                "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-citation-support",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-cutoff-compliance",
+                "severity": "pass",
+                "category": "cutoff",
+                "message": "Included evidence satisfies the measurement-date publication cutoff.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-entity-certainty",
+                "severity": "pass",
+                "category": "entity",
+                "message": "Target identity is resolved and supported by included evidence.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-evidence-coverage",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-route-appropriateness",
+                "severity": "pass",
+                "category": "route",
+                "message": "Route selection is consistent with sufficiency status: financial-services.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-valuation-field-separation",
+                "severity": "pass",
+                "category": "valuation-separation",
+                "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+                "evidenceIds": [
+                  "ev-1d808f14530d",
+                  "ev-e11520fb730d"
+                ],
+                "missingInformation": []
+              }
+            ]
+          },
+          "sections": {
+            "facts": [
+              "Companies House identifies Monzo Bank Holding Group Limited with company number 14785367. value=14785367; unit=company-number; period=instant 2025-04-04; epistemic=observed [ev-1d808f14530d]",
+              "Companies House lists a 04 Apr 2025 SH01 filing for a statement of capital following an allotment of shares on 2025-03-03. value=SH01 filed 2025-04-04 for allotment on 2025-03-03; period=instant 2025-04-04; epistemic=observed [ev-1d808f14530d]",
+              "Monzo reported GBP 1.2 billion of revenue in the 2025 annual report summary. value=1.2; unit=GBP billions; period=end 2025-03-31; epistemic=extracted [ev-e11520fb730d]",
+              "Monzo reported GBP 113.9 million of adjusted profit before tax in the 2025 annual report summary. value=113.9; unit=GBP millions; period=end 2025-03-31; epistemic=extracted [ev-e11520fb730d]",
+              "Monzo reported GBP 16.6 billion of customer deposits in the 2025 annual report summary. value=16.6; unit=GBP billions; period=end 2025-03-31; epistemic=extracted [ev-e11520fb730d]",
+              "Monzo reported GBP 18.3 billion of total assets in the 2025 annual report summary. value=18.3; unit=GBP billions; period=end 2025-03-31; epistemic=extracted [ev-e11520fb730d]",
+              "Monzo reported more than 12 million total customers in its 2025 annual report summary. value=12m+; unit=customers; period=end 2025-03-31; epistemic=extracted [ev-e11520fb730d]",
+              "Monzo reported weekly active customers increased from 5.4 million to 6.9 million in FY2025. value=6.9; unit=millions; period=end 2025-03-31; epistemic=extracted [ev-e11520fb730d]",
+              "The Companies House filing-history row reports statement-of-capital value GBP 237,479.179. value=237479.179; unit=GBP; period=instant 2025-04-04; epistemic=observed [ev-1d808f14530d]"
+            ],
+            "inferences": [
+              "Enterprise Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-1d808f14530d, ev-e11520fb730d]",
+              "Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-1d808f14530d, ev-e11520fb730d]",
+              "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+              "Selected route financial-services: Evidence shows bank-like or deposit-led balance-sheet items. [ev-e11520fb730d]",
+              "Selected route financial-services: Evidence shows regulated financial activity such as banking, payments, lending, or electronic money. [ev-1d808f14530d]",
+              "Selected route financial-services: Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation. [ev-e11520fb730d]",
+              "Sufficiency is sufficient with score 0.925: Evidence coverage is sufficient for route selection before valuation.",
+              "Total Equity Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-1d808f14530d, ev-e11520fb730d]"
+            ],
+            "conflicts": [],
+            "limitations": [
+              "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+              "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+              "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.",
+              "extraction note monzo-2026-report-excluded-note: The latest Monzo annual-report landing page shows post-cutoff FY2026 material; it was not used as input for the 2025-12-31 case.",
+              "extraction note monzo-html-hash-not-recorded: No document hash is recorded for the dynamic HTML page; raw reports and downloads remain outside Git."
+            ],
+            "counterarguments": [
+              "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: recent-transaction, software-saas, marketplace, biotech-rnpv, asset-based, general-private-company."
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-cap-table",
+                "topic": "Cap table",
+                "description": "The evidence ledger does not disclose capitalization table data.",
+                "consequence": "TRACE cannot allocate value across securities or holders.",
+                "requiredFor": [
+                  "total-equity-value",
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-dilution",
+                "topic": "Dilution",
+                "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                "requiredFor": [
+                  "total-equity-value",
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-financial-and-operating-fact-coverage",
+                "topic": "Financial and operating fact coverage",
+                "description": "Evidence contains one financial or operating fact usable for route selection.",
+                "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+                "requiredFor": [
+                  "routing",
+                  "sufficiency"
+                ]
+              },
+              {
+                "id": "missing-recent-secondary-transaction",
+                "topic": "Recent secondary transaction",
+                "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                "requiredFor": [
+                  "headline-valuation"
+                ]
+              },
+              {
+                "id": "missing-share-preferences",
+                "topic": "Share preferences",
+                "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                "requiredFor": [
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-share-rights",
+                "topic": "Share rights",
+                "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                "requiredFor": [
+                  "security-level-fair-value"
+                ]
+              }
+            ],
+            "nextDiligenceQuestions": [
+              "What evidence resolves Cap table for total-equity-value, security-level-fair-value?",
+              "What evidence resolves Dilution for total-equity-value, security-level-fair-value?",
+              "What evidence resolves Financial and operating fact coverage for routing, sufficiency?",
+              "What evidence resolves Recent secondary transaction for headline-valuation?",
+              "What evidence resolves Share preferences for security-level-fair-value?",
+              "What evidence resolves Share rights for security-level-fair-value?"
+            ]
+          },
+          "run": {
+            "runId": "run-5c191b9ced89d3c9",
+            "runtimeVersion": "0.1.0",
+            "command": "trace benchmark --partition development --runner trace-full --case-id dev-fintech-monzo-2025",
+            "measurementDate": "2025-12-31",
+            "startedAt": "2026-07-26T00:00:00.000Z",
+            "completedAt": "2026-07-26T00:00:00.299Z",
+            "durationMs": 299,
+            "inputPath": "benchmark:development:dev-fintech-monzo-2025",
+            "outputDirectory": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-fintech-monzo-2025",
+            "warnings": []
+          }
+        },
+        "executionLog": {
+          "schemaVersion": "trace.execution-log.v1",
+          "runId": "run-5c191b9ced89d3c9",
+          "runtimeVersion": "0.1.0",
+          "measurementDate": "2025-12-31",
+          "inputPath": "benchmark:development:dev-fintech-monzo-2025",
+          "outputPaths": {
+            "jsonReport": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-fintech-monzo-2025/raw-runner-output.json",
+            "markdownReport": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-fintech-monzo-2025/raw-runner-output.md",
+            "executionLog": "benchmark-artifact:development/run-5c191b9ced89d3c9/trace-full/dev-fintech-monzo-2025/raw-runner-output.json#executionLog"
+          },
+          "startedAt": "2026-07-26T00:00:00.000Z",
+          "completedAt": "2026-07-26T00:00:00.299Z",
+          "durationMs": 299,
+          "validationWarnings": [],
+          "reviewerFindings": [
+            {
+              "id": "review-abstention-triggers",
+              "severity": "pass",
+              "category": "abstention",
+              "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+              "evidenceIds": [
+                "ev-1d808f14530d",
+                "ev-e11520fb730d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-calculation-integrity",
+              "severity": "pass",
+              "category": "calculation",
+              "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+              "evidenceIds": [
+                "ev-1d808f14530d",
+                "ev-e11520fb730d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-citation-support",
+              "severity": "pass",
+              "category": "evidence",
+              "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+              "evidenceIds": [
+                "ev-1d808f14530d",
+                "ev-e11520fb730d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-cutoff-compliance",
+              "severity": "pass",
+              "category": "cutoff",
+              "message": "Included evidence satisfies the measurement-date publication cutoff.",
+              "evidenceIds": [
+                "ev-1d808f14530d",
+                "ev-e11520fb730d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-entity-certainty",
+              "severity": "pass",
+              "category": "entity",
+              "message": "Target identity is resolved and supported by included evidence.",
+              "evidenceIds": [
+                "ev-1d808f14530d",
+                "ev-e11520fb730d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-evidence-coverage",
+              "severity": "pass",
+              "category": "evidence",
+              "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+              "evidenceIds": [
+                "ev-1d808f14530d",
+                "ev-e11520fb730d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-route-appropriateness",
+              "severity": "pass",
+              "category": "route",
+              "message": "Route selection is consistent with sufficiency status: financial-services.",
+              "evidenceIds": [
+                "ev-1d808f14530d",
+                "ev-e11520fb730d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-valuation-field-separation",
+              "severity": "pass",
+              "category": "valuation-separation",
+              "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+              "evidenceIds": [
+                "ev-1d808f14530d",
+                "ev-e11520fb730d"
+              ],
+              "missingInformation": []
+            }
+          ],
+          "deterministicIdentifiers": {
+            "evidenceLedgerHash": "7b5d5c588faef71cdc271bbefae467b59fb45aa7690c6db8a5de6b02de472f36",
+            "runtimeResultHash": "d2f2cd5d594f9b63853b4c840e7ea593aae377f90499c69c2d706ca487d4e4c0"
+          }
+        }
+      }
+    },
+    "normalized": {
+      "claims": [
+        {
+          "id": "trace-valuation-b6244b5d6f08",
+          "kind": "abstention",
+          "statement": "Enterprise Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "value": "recent-secondary-transaction-not-observed",
+          "citations": [
+            {
+              "evidenceId": "ev-1d808f14530d"
+            },
+            {
+              "evidenceId": "ev-e11520fb730d"
+            }
+          ]
+        },
+        {
+          "id": "trace-valuation-f77f6f61288b",
+          "kind": "abstention",
+          "statement": "Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "value": "recent-secondary-transaction-not-observed",
+          "citations": [
+            {
+              "evidenceId": "ev-1d808f14530d"
+            },
+            {
+              "evidenceId": "ev-e11520fb730d"
+            }
+          ]
+        },
+        {
+          "id": "trace-valuation-09cdba8c6b43",
+          "kind": "abstention",
+          "statement": "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "value": "security-rights-and-cap-table-not-disclosed",
+          "citations": []
+        },
+        {
+          "id": "trace-valuation-41093a289999",
+          "kind": "abstention",
+          "statement": "Total Equity Value abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "value": "recent-secondary-transaction-not-observed",
+          "citations": [
+            {
+              "evidenceId": "ev-1d808f14530d"
+            },
+            {
+              "evidenceId": "ev-e11520fb730d"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-cf295192a7b7",
+          "kind": "observable",
+          "statement": "Companies House identifies Monzo Bank Holding Group Limited with company number 14785367.",
+          "value": "14785367",
+          "unit": "company-number",
+          "period": {
+            "instantDate": "2025-04-04"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-1d808f14530d",
+              "factId": "fact-5b2c2e7c70a0",
+              "locator": "Company number and 04 Apr 2025 SH01 row"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-7f59c7fa27c7",
+          "kind": "observable",
+          "statement": "Companies House lists a 04 Apr 2025 SH01 filing for a statement of capital following an allotment of shares on 2025-03-03.",
+          "value": "SH01 filed 2025-04-04 for allotment on 2025-03-03",
+          "period": {
+            "instantDate": "2025-04-04"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-1d808f14530d",
+              "factId": "fact-2b8a6b56227a",
+              "locator": "Company number and 04 Apr 2025 SH01 row"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-902a2bbe40ce",
+          "kind": "observable",
+          "statement": "Monzo reported GBP 1.2 billion of revenue in the 2025 annual report summary.",
+          "value": 1.2,
+          "unit": "GBP billions",
+          "period": {
+            "endDate": "2025-03-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-e11520fb730d",
+              "factId": "fact-7b003711b8cf",
+              "locator": "Year in review 2025"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-be130a172b66",
+          "kind": "observable",
+          "statement": "Monzo reported GBP 113.9 million of adjusted profit before tax in the 2025 annual report summary.",
+          "value": 113.9,
+          "unit": "GBP millions",
+          "period": {
+            "endDate": "2025-03-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-e11520fb730d",
+              "factId": "fact-83ea0aa62cd5",
+              "locator": "Year in review 2025"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-719bccd6000d",
+          "kind": "observable",
+          "statement": "Monzo reported GBP 16.6 billion of customer deposits in the 2025 annual report summary.",
+          "value": 16.6,
+          "unit": "GBP billions",
+          "period": {
+            "endDate": "2025-03-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-e11520fb730d",
+              "factId": "fact-a8537d00104b",
+              "locator": "Year in review 2025"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-c822a483468e",
+          "kind": "observable",
+          "statement": "Monzo reported GBP 18.3 billion of total assets in the 2025 annual report summary.",
+          "value": 18.3,
+          "unit": "GBP billions",
+          "period": {
+            "endDate": "2025-03-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-e11520fb730d",
+              "factId": "fact-d7da14320b49",
+              "locator": "Year in review 2025"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-53a77c00f98b",
+          "kind": "observable",
+          "statement": "Monzo reported more than 12 million total customers in its 2025 annual report summary.",
+          "value": "12m+",
+          "unit": "customers",
+          "period": {
+            "endDate": "2025-03-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-e11520fb730d",
+              "factId": "fact-29e94ca9b71f",
+              "locator": "Year in review 2025"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-8f59b0f4f9f7",
+          "kind": "observable",
+          "statement": "Monzo reported weekly active customers increased from 5.4 million to 6.9 million in FY2025.",
+          "value": 6.9,
+          "unit": "millions",
+          "period": {
+            "endDate": "2025-03-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-e11520fb730d",
+              "factId": "fact-3ee1ea14a033",
+              "locator": "Year in review 2025"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-532ebea87db7",
+          "kind": "observable",
+          "statement": "The Companies House filing-history row reports statement-of-capital value GBP 237,479.179.",
+          "value": 237479.179,
+          "unit": "GBP",
+          "period": {
+            "instantDate": "2025-04-04"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-1d808f14530d",
+              "factId": "fact-770db1075f80",
+              "locator": "Company number and 04 Apr 2025 SH01 row"
+            }
+          ]
+        },
+        {
+          "id": "trace-sufficiency-bd2404a5c781",
+          "kind": "other",
+          "statement": "TRACE sufficiency is sufficient with score 0.925: Evidence coverage is sufficient for route selection before valuation.",
+          "value": 0.925,
+          "citations": [
+            {
+              "evidenceId": "ev-1d808f14530d"
+            },
+            {
+              "evidenceId": "ev-e11520fb730d"
+            }
+          ]
+        },
+        {
+          "id": "trace-route-7687c99d7c73",
+          "kind": "route",
+          "statement": "TRACE selected financial-services: Evidence shows bank-like or deposit-led balance-sheet items. Evidence shows regulated financial activity such as banking, payments, lending, or electronic money. Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation.",
+          "value": "financial-services",
+          "citations": [
+            {
+              "evidenceId": "ev-1d808f14530d"
+            },
+            {
+              "evidenceId": "ev-e11520fb730d"
+            }
+          ]
+        }
+      ],
+      "route": {
+        "status": "selected",
+        "selectedRoute": "financial-services",
+        "rationale": "Evidence shows bank-like or deposit-led balance-sheet items. Evidence shows regulated financial activity such as banking, payments, lending, or electronic money. Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation.",
+        "evidenceIds": [
+          "ev-1d808f14530d",
+          "ev-e11520fb730d"
+        ]
+      },
+      "abstentions": [
+        {
+          "id": "trace-abstention-enterprise-value",
+          "field": "enterprise-value",
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-1d808f14530d",
+            "ev-e11520fb730d"
+          ]
+        },
+        {
+          "id": "trace-abstention-headline-valuation",
+          "field": "headline-valuation",
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-1d808f14530d",
+            "ev-e11520fb730d"
+          ]
+        },
+        {
+          "id": "trace-abstention-security-level-fair-value",
+          "field": "security-level-fair-value",
+          "reasonCode": "security-rights-and-cap-table-not-disclosed",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "evidenceIds": []
+        },
+        {
+          "id": "trace-abstention-total-equity-value",
+          "field": "total-equity-value",
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-1d808f14530d",
+            "ev-e11520fb730d"
+          ]
+        }
+      ],
+      "valuations": [
+        {
+          "field": "enterprise-value",
+          "status": "abstained",
+          "rationale": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-1d808f14530d",
+            "ev-e11520fb730d"
+          ]
+        },
+        {
+          "field": "headline-valuation",
+          "status": "abstained",
+          "rationale": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-1d808f14530d",
+            "ev-e11520fb730d"
+          ]
+        },
+        {
+          "field": "security-level-fair-value",
+          "status": "abstained",
+          "rationale": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "evidenceIds": []
+        },
+        {
+          "field": "total-equity-value",
+          "status": "abstained",
+          "rationale": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-1d808f14530d",
+            "ev-e11520fb730d"
+          ]
+        }
+      ]
+    },
+    "failures": []
+  }
+}

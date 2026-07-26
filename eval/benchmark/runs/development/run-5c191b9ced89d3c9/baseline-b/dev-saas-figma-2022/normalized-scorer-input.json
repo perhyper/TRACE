@@ -1,0 +1,1127 @@
+{
+  "schemaVersion": "trace.benchmark-scorer-input.v1",
+  "runId": "run-5c191b9ced89d3c9",
+  "runnerName": "baseline-b",
+  "caseId": "dev-saas-figma-2022",
+  "partition": "development",
+  "caseInput": {
+    "schemaVersion": "trace.benchmark-case-input.v1",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "manifestSchemaVersion": "trace.benchmark-manifest.v1",
+    "caseId": "dev-saas-figma-2022",
+    "partition": "development",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Figma, Inc.",
+    "target": {
+      "legalName": "Figma, Inc.",
+      "jurisdiction": "US",
+      "identifiers": [
+        {
+          "scheme": "other",
+          "value": "figma.com",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "Figma"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2022-09-14",
+    "cutoffDate": "2022-09-14",
+    "dataTier": "medium",
+    "sourcePolicy": {
+      "approvedPublicSourceCategories": [
+        "company-primary",
+        "legal-record",
+        "news",
+        "regulatory-filing"
+      ],
+      "redistributionStatus": "public-urls-redistribution-not-established",
+      "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+      "onlyUrlsAndShortExcerptsMayBeCommitted": true
+    },
+    "authorityBoundary": {
+      "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+      "officialContestRulesStatus": "not-supplied",
+      "contestComplianceClaimAllowed": false,
+      "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+      "prohibitedClaims": [
+        "appraisal status",
+        "benchmark superiority",
+        "contest readiness",
+        "investment advice",
+        "official contest compliance"
+      ]
+    },
+    "sourceRecordIds": [
+      "figma-2021-04-21-figjam-launch",
+      "figma-2021-06-24-series-e-blog",
+      "figma-2021-06-24-series-e-value-news"
+    ],
+    "evidenceLedger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Figma, Inc.",
+        "jurisdiction": "US",
+        "identifiers": [
+          {
+            "scheme": "other",
+            "value": "figma.com",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "Figma"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2022-09-14",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-bc3049cd3474",
+          "sourceUrl": "https://www.figma.com/blog/introducing-figjam/",
+          "sourceTitle": "Introducing FigJam",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-04-21",
+          "effectiveDate": "2021-04-21",
+          "sourceClass": "company-primary",
+          "epistemicClass": "extracted",
+          "locator": "Figma blog, 21 Apr 2021",
+          "shortExcerpt": "Figma introduced FigJam as an online whiteboard for brainstorming and ideation with teams.",
+          "observedFacts": [
+            {
+              "id": "fact-17d82cf23752",
+              "statement": "FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration.",
+              "epistemicClass": "extracted",
+              "value": [
+                "sticky notes",
+                "drawing tools",
+                "shapes and connectors",
+                "stamps",
+                "cursor chats",
+                "audio collaboration"
+              ],
+              "period": {
+                "instantDate": "2021-04-21"
+              }
+            },
+            {
+              "id": "fact-6be7bbd07589",
+              "statement": "Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams.",
+              "epistemicClass": "observed",
+              "value": "FigJam launched",
+              "period": {
+                "instantDate": "2021-04-21"
+              }
+            },
+            {
+              "id": "fact-e1f9af46f128",
+              "statement": "Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month.",
+              "epistemicClass": "observed",
+              "value": [
+                "USD 3 per editor per month",
+                "USD 5 per editor per month"
+              ],
+              "period": {
+                "instantDate": "2021-04-21"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-268f1126e759",
+          "sourceUrl": "https://www.figma.com/blog/figmas-series-e/",
+          "sourceTitle": "Figma's Series E",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-06-24",
+          "effectiveDate": "2021-06-24",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Figma blog, 24 Jun 2021",
+          "shortExcerpt": "Figma announced a new funding round led by Durable Capital with Counterpoint Global joining as a new investor.",
+          "observedFacts": [
+            {
+              "id": "fact-0c4d3f19d42f",
+              "statement": "Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration.",
+              "epistemicClass": "extracted",
+              "value": "collaborative design software",
+              "period": {
+                "instantDate": "2021-06-24"
+              }
+            },
+            {
+              "id": "fact-088c05567311",
+              "statement": "Figma announced it closed a Series E financing round on 2021-06-24.",
+              "epistemicClass": "observed",
+              "value": "Series E closed",
+              "period": {
+                "instantDate": "2021-06-24"
+              }
+            },
+            {
+              "id": "fact-2ea14245213e",
+              "statement": "Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated.",
+              "epistemicClass": "observed",
+              "value": [
+                "Morgan Stanley Counterpoint Global",
+                "Index",
+                "Greylock",
+                "Kleiner Perkins",
+                "Sequoia",
+                "a16z"
+              ],
+              "period": {
+                "instantDate": "2021-06-24"
+              }
+            },
+            {
+              "id": "fact-c97da2b587dc",
+              "statement": "Figma said the Series E was led by Durable Capital Partners.",
+              "epistemicClass": "observed",
+              "value": "Durable Capital Partners",
+              "period": {
+                "instantDate": "2021-06-24"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-aeeecbc6a15d",
+          "sourceUrl": "https://www.theinformation.com/briefings/5a0e84",
+          "sourceTitle": "Figma raises USD 200 million at USD 10 billion valuation",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-06-24",
+          "effectiveDate": "2021-06-24",
+          "sourceClass": "news",
+          "epistemicClass": "observed",
+          "locator": "The Information briefing",
+          "shortExcerpt": "Public briefing reports Figma raised USD 200m Series E funding at a USD 10bn valuation.",
+          "observedFacts": [
+            {
+              "id": "fact-0df274972b4b",
+              "statement": "Public reporting described Figma's Series E amount as USD 200 million.",
+              "epistemicClass": "observed",
+              "value": 200,
+              "unit": "USD millions",
+              "period": {
+                "instantDate": "2021-06-24"
+              }
+            },
+            {
+              "id": "fact-daac40ca2bdc",
+              "statement": "Public reporting described Figma's Series E headline valuation as USD 10 billion.",
+              "epistemicClass": "observed",
+              "value": 10,
+              "unit": "USD billions headline valuation",
+              "period": {
+                "instantDate": "2021-06-24"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "figma-2022-09-15-adobe-acquisition-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record figma-2022-09-15-adobe-acquisition-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://www.businesswire.com/news/home/20220915005546/en/Adobe-to-Acquire-Figma",
+          "sourceTitle": "Adobe to acquire Figma",
+          "publishedDate": "2022-09-15",
+          "measurementDate": "2022-09-14"
+        }
+      ],
+      "failedNotes": [
+        {
+          "id": "figma-sec-cik-post-cutoff-note",
+          "stage": "extraction",
+          "sourceUrl": "https://www.sec.gov/",
+          "sourceTitle": "SEC EDGAR post-cutoff Figma filings",
+          "attemptedAt": "2026-07-26T00:00:00Z",
+          "note": "Figma's SEC CIK is available from post-cutoff public filings, but those filings are not eligible input for the 2022-09-14 case."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded figma-2022-09-15-adobe-acquisition-post-cutoff because publishedDate 2022-09-15 is after measurementDate 2022-09-14.",
+          "recordIds": [
+            "figma-2022-09-15-adobe-acquisition-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://www.businesswire.com/news/home/20220915005546/en/Adobe-to-Acquire-Figma"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    }
+  },
+  "annotation": {
+    "schemaVersion": "trace.benchmark-annotation.v1",
+    "caseId": "dev-saas-figma-2022",
+    "partition": "development",
+    "measurementDate": "2022-09-14",
+    "expectedRoute": {
+      "route": "software-saas",
+      "acceptableAlternativeRoutes": [],
+      "evidenceIds": [
+        "ev-268f1126e759",
+        "ev-aeeecbc6a15d",
+        "ev-bc3049cd3474"
+      ],
+      "rationale": "The cutoff evidence describes collaborative design software, FigJam and subscription software characteristics."
+    },
+    "binaryClaims": [
+      {
+        "id": "figma-adobe-deal-known-by-cutoff",
+        "statement": "The Adobe acquisition announcement was public by the 2022-09-14 cutoff.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-a7c03955fdff"
+        ],
+        "sourceAvailability": "post-cutoff-excluded"
+      },
+      {
+        "id": "figma-figjam-launched",
+        "statement": "Figma launched FigJam before the cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-bc3049cd3474"
+        ]
+      },
+      {
+        "id": "figma-series-e-closed",
+        "statement": "Figma closed a Series E financing before the cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-268f1126e759"
+        ]
+      }
+    ],
+    "observableClaims": [
+      {
+        "id": "figma-figjam-paid-plan-prices",
+        "statement": "Figma said FigJam would have USD 3 and USD 5 paid editor plans in 2022.",
+        "expectedValue": [
+          "USD 3 per editor per month",
+          "USD 5 per editor per month"
+        ],
+        "unit": "monthly editor plan prices",
+        "period": {
+          "instantDate": "2021-04-21"
+        },
+        "evidenceIds": [
+          "ev-bc3049cd3474"
+        ]
+      },
+      {
+        "id": "figma-series-e-amount",
+        "statement": "Figma's Series E amount was reported as USD 200 million.",
+        "expectedValue": 200,
+        "unit": "USD millions",
+        "period": {
+          "instantDate": "2021-06-24"
+        },
+        "evidenceIds": [
+          "ev-aeeecbc6a15d"
+        ]
+      },
+      {
+        "id": "figma-series-e-headline-valuation",
+        "statement": "Figma's Series E headline valuation was reported as USD 10 billion.",
+        "expectedValue": 10,
+        "unit": "USD billions headline valuation",
+        "period": {
+          "instantDate": "2021-06-24"
+        },
+        "evidenceIds": [
+          "ev-aeeecbc6a15d"
+        ]
+      }
+    ],
+    "expectedAbstentions": [
+      {
+        "id": "figma-adobe-transaction-abstain",
+        "field": "headline-valuation",
+        "reasonCode": "post-cutoff-transaction-announcement",
+        "description": "The USD 20bn Adobe announcement was published one day after the cutoff and must be excluded from input evidence.",
+        "evidenceIds": [
+          "ev-aeeecbc6a15d"
+        ]
+      },
+      {
+        "id": "figma-security-fair-value-abstain",
+        "field": "security-level-fair-value",
+        "reasonCode": "missing-security-rights-and-cap-table",
+        "description": "The Series E headline valuation does not disclose share rights, full cap table or security-level fair value.",
+        "evidenceIds": [
+          "ev-aeeecbc6a15d"
+        ]
+      }
+    ],
+    "valuationSeparationExpectations": {
+      "allowedValuationFields": [
+        "headline-valuation"
+      ],
+      "mustNotConflate": [
+        "Series E headline valuation with enterprise value",
+        "Series E headline valuation with security-level fair value",
+        "post-cutoff Adobe consideration with pre-cutoff input evidence"
+      ],
+      "notes": "The Adobe transaction did not close and is not an eligible valuation-error target."
+    },
+    "completenessExpectations": [
+      {
+        "id": "figma-cover-product-funding-and-leakage",
+        "description": "A complete answer should cover Figma product route, Series E funding, FigJam evidence, missing security rights and the post-cutoff Adobe leakage warning.",
+        "requiredEvidenceClasses": [
+          "company-primary",
+          "news"
+        ],
+        "requiredTopics": [
+          "funding context",
+          "post-cutoff exclusion",
+          "product evidence",
+          "software-saas route"
+        ],
+        "evidenceIds": [
+          "ev-268f1126e759",
+          "ev-aeeecbc6a15d",
+          "ev-bc3049cd3474"
+        ]
+      }
+    ],
+    "historicalValuationTargets": {
+      "eligible": false,
+      "reason": "Manifest marks this case ineligible because the announced Adobe acquisition did not close.",
+      "targets": []
+    }
+  },
+  "runnerOutput": {
+    "schemaVersion": "trace.benchmark-runner-output.v1",
+    "runnerName": "baseline-b",
+    "runId": "run-5c191b9ced89d3c9",
+    "caseId": "dev-saas-figma-2022",
+    "partition": "development",
+    "status": "completed",
+    "timing": {
+      "schemaVersion": "trace.benchmark-timing.v1",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.215Z",
+      "durationMs": 215
+    },
+    "rawOutput": {
+      "markdown": "# Baseline B Fixed Template: Figma, Inc.\n\n## Case\n| Field | Value |\n| --- | --- |\n| Case ID | dev-saas-figma-2022 |\n| Partition | development |\n| Measurement date | 2022-09-14 |\n| Cutoff date | 2022-09-14 |\n| Data tier | medium |\n\n## Evidence Inventory\n| Evidence ID | Source | Class | Date |\n| --- | --- | --- | --- |\n| ev-bc3049cd3474 | Introducing FigJam | company-primary | 2021-04-21 |\n| ev-268f1126e759 | Figma's Series E | company-primary | 2021-06-24 |\n| ev-aeeecbc6a15d | Figma raises USD 200 million at USD 10 billion valuation | news | 2021-06-24 |\n\n## Claim Register\n| Claim ID | Statement | Citation |\n| --- | --- | --- |\n| claim-190750280c54 | FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration. | ev-bc3049cd3474:fact-17d82cf23752 |\n| claim-a04de3b9ce4e | Figma announced it closed a Series E financing round on 2021-06-24. | ev-268f1126e759:fact-088c05567311 |\n| claim-4b3bf71d693f | Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration. | ev-268f1126e759:fact-0c4d3f19d42f |\n| claim-fdbcb15df890 | Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams. | ev-bc3049cd3474:fact-6be7bbd07589 |\n| claim-bde5aae030f5 | Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month. | ev-bc3049cd3474:fact-e1f9af46f128 |\n| claim-9bac30079993 | Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated. | ev-268f1126e759:fact-2ea14245213e |\n| claim-abdfbd9b6bbb | Figma said the Series E was led by Durable Capital Partners. | ev-268f1126e759:fact-c97da2b587dc |\n| claim-a05f1ebeceb7 | Public reporting described Figma's Series E amount as USD 200 million. | ev-aeeecbc6a15d:fact-0df274972b4b |\n| claim-6bc0e529fe40 | Public reporting described Figma's Series E headline valuation as USD 10 billion. | ev-aeeecbc6a15d:fact-daac40ca2bdc |\n\n## Valuation Fields\n- headline-valuation: omitted\n- enterprise-value: omitted\n- total-equity-value: omitted\n- security-level-fair-value: omitted\n\n## Limitations\n- This baseline performs deterministic evidence summarization only.\n- It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.\n- It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.\n- Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.\n",
+      "json": {
+        "schemaVersion": "trace.baseline-runner-output.v1",
+        "runnerName": "baseline-b",
+        "baselineKind": "fixed-template-report",
+        "inputFingerprint": "e41fd99ae434",
+        "case": {
+          "caseId": "dev-saas-figma-2022",
+          "partition": "development",
+          "scoringRole": "scored",
+          "countedInScoring": true,
+          "companyLegalName": "Figma, Inc.",
+          "measurementDate": "2022-09-14",
+          "cutoffDate": "2022-09-14",
+          "dataTier": "medium",
+          "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+          "sourceRecordIds": [
+            "figma-2021-04-21-figjam-launch",
+            "figma-2021-06-24-series-e-blog",
+            "figma-2021-06-24-series-e-value-news"
+          ]
+        },
+        "sourcePolicy": {
+          "approvedPublicSourceCategories": [
+            "company-primary",
+            "legal-record",
+            "news",
+            "regulatory-filing"
+          ],
+          "redistributionStatus": "public-urls-redistribution-not-established",
+          "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+          "onlyUrlsAndShortExcerptsMayBeCommitted": true
+        },
+        "authorityBoundary": {
+          "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+          "officialContestRulesStatus": "not-supplied",
+          "contestComplianceClaimAllowed": false,
+          "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+          "prohibitedClaims": [
+            "appraisal status",
+            "benchmark superiority",
+            "contest readiness",
+            "investment advice",
+            "official contest compliance"
+          ]
+        },
+        "evidence": [
+          {
+            "evidenceId": "ev-bc3049cd3474",
+            "sourceTitle": "Introducing FigJam",
+            "sourceUrl": "https://www.figma.com/blog/introducing-figjam/",
+            "sourceClass": "company-primary",
+            "epistemicClass": "extracted",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2021-04-21",
+            "effectiveDate": "2021-04-21",
+            "locator": "Figma blog, 21 Apr 2021",
+            "shortExcerpt": "Figma introduced FigJam as an online whiteboard for brainstorming and ideation with teams.",
+            "observedFacts": [
+              {
+                "factId": "fact-17d82cf23752",
+                "statement": "FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration.",
+                "value": [
+                  "sticky notes",
+                  "drawing tools",
+                  "shapes and connectors",
+                  "stamps",
+                  "cursor chats",
+                  "audio collaboration"
+                ],
+                "period": {
+                  "instantDate": "2021-04-21"
+                }
+              },
+              {
+                "factId": "fact-6be7bbd07589",
+                "statement": "Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams.",
+                "value": "FigJam launched",
+                "period": {
+                  "instantDate": "2021-04-21"
+                }
+              },
+              {
+                "factId": "fact-e1f9af46f128",
+                "statement": "Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month.",
+                "value": [
+                  "USD 3 per editor per month",
+                  "USD 5 per editor per month"
+                ],
+                "period": {
+                  "instantDate": "2021-04-21"
+                }
+              }
+            ]
+          },
+          {
+            "evidenceId": "ev-268f1126e759",
+            "sourceTitle": "Figma's Series E",
+            "sourceUrl": "https://www.figma.com/blog/figmas-series-e/",
+            "sourceClass": "company-primary",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2021-06-24",
+            "effectiveDate": "2021-06-24",
+            "locator": "Figma blog, 24 Jun 2021",
+            "shortExcerpt": "Figma announced a new funding round led by Durable Capital with Counterpoint Global joining as a new investor.",
+            "observedFacts": [
+              {
+                "factId": "fact-088c05567311",
+                "statement": "Figma announced it closed a Series E financing round on 2021-06-24.",
+                "value": "Series E closed",
+                "period": {
+                  "instantDate": "2021-06-24"
+                }
+              },
+              {
+                "factId": "fact-0c4d3f19d42f",
+                "statement": "Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration.",
+                "value": "collaborative design software",
+                "period": {
+                  "instantDate": "2021-06-24"
+                }
+              },
+              {
+                "factId": "fact-2ea14245213e",
+                "statement": "Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated.",
+                "value": [
+                  "Morgan Stanley Counterpoint Global",
+                  "Index",
+                  "Greylock",
+                  "Kleiner Perkins",
+                  "Sequoia",
+                  "a16z"
+                ],
+                "period": {
+                  "instantDate": "2021-06-24"
+                }
+              },
+              {
+                "factId": "fact-c97da2b587dc",
+                "statement": "Figma said the Series E was led by Durable Capital Partners.",
+                "value": "Durable Capital Partners",
+                "period": {
+                  "instantDate": "2021-06-24"
+                }
+              }
+            ]
+          },
+          {
+            "evidenceId": "ev-aeeecbc6a15d",
+            "sourceTitle": "Figma raises USD 200 million at USD 10 billion valuation",
+            "sourceUrl": "https://www.theinformation.com/briefings/5a0e84",
+            "sourceClass": "news",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2021-06-24",
+            "effectiveDate": "2021-06-24",
+            "locator": "The Information briefing",
+            "shortExcerpt": "Public briefing reports Figma raised USD 200m Series E funding at a USD 10bn valuation.",
+            "observedFacts": [
+              {
+                "factId": "fact-0df274972b4b",
+                "statement": "Public reporting described Figma's Series E amount as USD 200 million.",
+                "value": 200,
+                "unit": "USD millions",
+                "period": {
+                  "instantDate": "2021-06-24"
+                }
+              },
+              {
+                "factId": "fact-daac40ca2bdc",
+                "statement": "Public reporting described Figma's Series E headline valuation as USD 10 billion.",
+                "value": 10,
+                "unit": "USD billions headline valuation",
+                "period": {
+                  "instantDate": "2021-06-24"
+                }
+              }
+            ]
+          }
+        ],
+        "output": {
+          "template": {
+            "case": {
+              "caseId": "dev-saas-figma-2022",
+              "partition": "development",
+              "scoringRole": "scored",
+              "countedInScoring": true,
+              "companyLegalName": "Figma, Inc.",
+              "measurementDate": "2022-09-14",
+              "cutoffDate": "2022-09-14",
+              "dataTier": "medium",
+              "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+              "sourceRecordIds": [
+                "figma-2021-04-21-figjam-launch",
+                "figma-2021-06-24-series-e-blog",
+                "figma-2021-06-24-series-e-value-news"
+              ]
+            },
+            "evidenceInventory": [
+              {
+                "evidenceId": "ev-bc3049cd3474",
+                "sourceTitle": "Introducing FigJam",
+                "sourceUrl": "https://www.figma.com/blog/introducing-figjam/",
+                "sourceClass": "company-primary",
+                "epistemicClass": "extracted",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2021-04-21",
+                "effectiveDate": "2021-04-21",
+                "locator": "Figma blog, 21 Apr 2021",
+                "shortExcerpt": "Figma introduced FigJam as an online whiteboard for brainstorming and ideation with teams.",
+                "observedFacts": [
+                  {
+                    "factId": "fact-17d82cf23752",
+                    "statement": "FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration.",
+                    "value": [
+                      "sticky notes",
+                      "drawing tools",
+                      "shapes and connectors",
+                      "stamps",
+                      "cursor chats",
+                      "audio collaboration"
+                    ],
+                    "period": {
+                      "instantDate": "2021-04-21"
+                    }
+                  },
+                  {
+                    "factId": "fact-6be7bbd07589",
+                    "statement": "Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams.",
+                    "value": "FigJam launched",
+                    "period": {
+                      "instantDate": "2021-04-21"
+                    }
+                  },
+                  {
+                    "factId": "fact-e1f9af46f128",
+                    "statement": "Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month.",
+                    "value": [
+                      "USD 3 per editor per month",
+                      "USD 5 per editor per month"
+                    ],
+                    "period": {
+                      "instantDate": "2021-04-21"
+                    }
+                  }
+                ]
+              },
+              {
+                "evidenceId": "ev-268f1126e759",
+                "sourceTitle": "Figma's Series E",
+                "sourceUrl": "https://www.figma.com/blog/figmas-series-e/",
+                "sourceClass": "company-primary",
+                "epistemicClass": "observed",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2021-06-24",
+                "effectiveDate": "2021-06-24",
+                "locator": "Figma blog, 24 Jun 2021",
+                "shortExcerpt": "Figma announced a new funding round led by Durable Capital with Counterpoint Global joining as a new investor.",
+                "observedFacts": [
+                  {
+                    "factId": "fact-088c05567311",
+                    "statement": "Figma announced it closed a Series E financing round on 2021-06-24.",
+                    "value": "Series E closed",
+                    "period": {
+                      "instantDate": "2021-06-24"
+                    }
+                  },
+                  {
+                    "factId": "fact-0c4d3f19d42f",
+                    "statement": "Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration.",
+                    "value": "collaborative design software",
+                    "period": {
+                      "instantDate": "2021-06-24"
+                    }
+                  },
+                  {
+                    "factId": "fact-2ea14245213e",
+                    "statement": "Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated.",
+                    "value": [
+                      "Morgan Stanley Counterpoint Global",
+                      "Index",
+                      "Greylock",
+                      "Kleiner Perkins",
+                      "Sequoia",
+                      "a16z"
+                    ],
+                    "period": {
+                      "instantDate": "2021-06-24"
+                    }
+                  },
+                  {
+                    "factId": "fact-c97da2b587dc",
+                    "statement": "Figma said the Series E was led by Durable Capital Partners.",
+                    "value": "Durable Capital Partners",
+                    "period": {
+                      "instantDate": "2021-06-24"
+                    }
+                  }
+                ]
+              },
+              {
+                "evidenceId": "ev-aeeecbc6a15d",
+                "sourceTitle": "Figma raises USD 200 million at USD 10 billion valuation",
+                "sourceUrl": "https://www.theinformation.com/briefings/5a0e84",
+                "sourceClass": "news",
+                "epistemicClass": "observed",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2021-06-24",
+                "effectiveDate": "2021-06-24",
+                "locator": "The Information briefing",
+                "shortExcerpt": "Public briefing reports Figma raised USD 200m Series E funding at a USD 10bn valuation.",
+                "observedFacts": [
+                  {
+                    "factId": "fact-0df274972b4b",
+                    "statement": "Public reporting described Figma's Series E amount as USD 200 million.",
+                    "value": 200,
+                    "unit": "USD millions",
+                    "period": {
+                      "instantDate": "2021-06-24"
+                    }
+                  },
+                  {
+                    "factId": "fact-daac40ca2bdc",
+                    "statement": "Public reporting described Figma's Series E headline valuation as USD 10 billion.",
+                    "value": 10,
+                    "unit": "USD billions headline valuation",
+                    "period": {
+                      "instantDate": "2021-06-24"
+                    }
+                  }
+                ]
+              }
+            ],
+            "claimRegister": [
+              {
+                "id": "claim-190750280c54",
+                "kind": "observable",
+                "statement": "FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration.",
+                "value": [
+                  "sticky notes",
+                  "drawing tools",
+                  "shapes and connectors",
+                  "stamps",
+                  "cursor chats",
+                  "audio collaboration"
+                ],
+                "period": {
+                  "instantDate": "2021-04-21"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-bc3049cd3474",
+                    "factId": "fact-17d82cf23752",
+                    "locator": "Figma blog, 21 Apr 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-a04de3b9ce4e",
+                "kind": "observable",
+                "statement": "Figma announced it closed a Series E financing round on 2021-06-24.",
+                "value": "Series E closed",
+                "period": {
+                  "instantDate": "2021-06-24"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-268f1126e759",
+                    "factId": "fact-088c05567311",
+                    "locator": "Figma blog, 24 Jun 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-4b3bf71d693f",
+                "kind": "observable",
+                "statement": "Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration.",
+                "value": "collaborative design software",
+                "period": {
+                  "instantDate": "2021-06-24"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-268f1126e759",
+                    "factId": "fact-0c4d3f19d42f",
+                    "locator": "Figma blog, 24 Jun 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-fdbcb15df890",
+                "kind": "observable",
+                "statement": "Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams.",
+                "value": "FigJam launched",
+                "period": {
+                  "instantDate": "2021-04-21"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-bc3049cd3474",
+                    "factId": "fact-6be7bbd07589",
+                    "locator": "Figma blog, 21 Apr 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-bde5aae030f5",
+                "kind": "observable",
+                "statement": "Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month.",
+                "value": [
+                  "USD 3 per editor per month",
+                  "USD 5 per editor per month"
+                ],
+                "period": {
+                  "instantDate": "2021-04-21"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-bc3049cd3474",
+                    "factId": "fact-e1f9af46f128",
+                    "locator": "Figma blog, 21 Apr 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-9bac30079993",
+                "kind": "observable",
+                "statement": "Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated.",
+                "value": [
+                  "Morgan Stanley Counterpoint Global",
+                  "Index",
+                  "Greylock",
+                  "Kleiner Perkins",
+                  "Sequoia",
+                  "a16z"
+                ],
+                "period": {
+                  "instantDate": "2021-06-24"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-268f1126e759",
+                    "factId": "fact-2ea14245213e",
+                    "locator": "Figma blog, 24 Jun 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-abdfbd9b6bbb",
+                "kind": "observable",
+                "statement": "Figma said the Series E was led by Durable Capital Partners.",
+                "value": "Durable Capital Partners",
+                "period": {
+                  "instantDate": "2021-06-24"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-268f1126e759",
+                    "factId": "fact-c97da2b587dc",
+                    "locator": "Figma blog, 24 Jun 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-a05f1ebeceb7",
+                "kind": "observable",
+                "statement": "Public reporting described Figma's Series E amount as USD 200 million.",
+                "value": 200,
+                "unit": "USD millions",
+                "period": {
+                  "instantDate": "2021-06-24"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-aeeecbc6a15d",
+                    "factId": "fact-0df274972b4b",
+                    "locator": "The Information briefing"
+                  }
+                ]
+              },
+              {
+                "id": "claim-6bc0e529fe40",
+                "kind": "observable",
+                "statement": "Public reporting described Figma's Series E headline valuation as USD 10 billion.",
+                "value": 10,
+                "unit": "USD billions headline valuation",
+                "period": {
+                  "instantDate": "2021-06-24"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-aeeecbc6a15d",
+                    "factId": "fact-daac40ca2bdc",
+                    "locator": "The Information briefing"
+                  }
+                ]
+              }
+            ],
+            "limitations": [
+              "This baseline performs deterministic evidence summarization only.",
+              "It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.",
+              "It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.",
+              "Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established."
+            ]
+          }
+        },
+        "omittedTraceLogic": [
+          "route-selection",
+          "sufficiency-gating",
+          "valuation-engine",
+          "adversarial-review"
+        ]
+      }
+    },
+    "normalized": {
+      "claims": [
+        {
+          "id": "claim-190750280c54",
+          "kind": "observable",
+          "statement": "FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration.",
+          "value": [
+            "sticky notes",
+            "drawing tools",
+            "shapes and connectors",
+            "stamps",
+            "cursor chats",
+            "audio collaboration"
+          ],
+          "period": {
+            "instantDate": "2021-04-21"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-bc3049cd3474",
+              "factId": "fact-17d82cf23752",
+              "locator": "Figma blog, 21 Apr 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-a04de3b9ce4e",
+          "kind": "observable",
+          "statement": "Figma announced it closed a Series E financing round on 2021-06-24.",
+          "value": "Series E closed",
+          "period": {
+            "instantDate": "2021-06-24"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759",
+              "factId": "fact-088c05567311",
+              "locator": "Figma blog, 24 Jun 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-4b3bf71d693f",
+          "kind": "observable",
+          "statement": "Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration.",
+          "value": "collaborative design software",
+          "period": {
+            "instantDate": "2021-06-24"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759",
+              "factId": "fact-0c4d3f19d42f",
+              "locator": "Figma blog, 24 Jun 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-fdbcb15df890",
+          "kind": "observable",
+          "statement": "Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams.",
+          "value": "FigJam launched",
+          "period": {
+            "instantDate": "2021-04-21"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-bc3049cd3474",
+              "factId": "fact-6be7bbd07589",
+              "locator": "Figma blog, 21 Apr 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-bde5aae030f5",
+          "kind": "observable",
+          "statement": "Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month.",
+          "value": [
+            "USD 3 per editor per month",
+            "USD 5 per editor per month"
+          ],
+          "period": {
+            "instantDate": "2021-04-21"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-bc3049cd3474",
+              "factId": "fact-e1f9af46f128",
+              "locator": "Figma blog, 21 Apr 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-9bac30079993",
+          "kind": "observable",
+          "statement": "Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated.",
+          "value": [
+            "Morgan Stanley Counterpoint Global",
+            "Index",
+            "Greylock",
+            "Kleiner Perkins",
+            "Sequoia",
+            "a16z"
+          ],
+          "period": {
+            "instantDate": "2021-06-24"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759",
+              "factId": "fact-2ea14245213e",
+              "locator": "Figma blog, 24 Jun 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-abdfbd9b6bbb",
+          "kind": "observable",
+          "statement": "Figma said the Series E was led by Durable Capital Partners.",
+          "value": "Durable Capital Partners",
+          "period": {
+            "instantDate": "2021-06-24"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-268f1126e759",
+              "factId": "fact-c97da2b587dc",
+              "locator": "Figma blog, 24 Jun 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-a05f1ebeceb7",
+          "kind": "observable",
+          "statement": "Public reporting described Figma's Series E amount as USD 200 million.",
+          "value": 200,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2021-06-24"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-aeeecbc6a15d",
+              "factId": "fact-0df274972b4b",
+              "locator": "The Information briefing"
+            }
+          ]
+        },
+        {
+          "id": "claim-6bc0e529fe40",
+          "kind": "observable",
+          "statement": "Public reporting described Figma's Series E headline valuation as USD 10 billion.",
+          "value": 10,
+          "unit": "USD billions headline valuation",
+          "period": {
+            "instantDate": "2021-06-24"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-aeeecbc6a15d",
+              "factId": "fact-daac40ca2bdc",
+              "locator": "The Information briefing"
+            }
+          ]
+        }
+      ],
+      "route": {
+        "status": "omitted"
+      },
+      "abstentions": [],
+      "valuations": [
+        {
+          "field": "headline-valuation",
+          "status": "omitted",
+          "evidenceIds": []
+        },
+        {
+          "field": "enterprise-value",
+          "status": "omitted",
+          "evidenceIds": []
+        },
+        {
+          "field": "total-equity-value",
+          "status": "omitted",
+          "evidenceIds": []
+        },
+        {
+          "field": "security-level-fair-value",
+          "status": "omitted",
+          "evidenceIds": []
+        }
+      ]
+    },
+    "failures": []
+  }
+}
