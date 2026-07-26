@@ -1,0 +1,150 @@
+{
+  "schemaVersion": "trace.benchmark-annotation.v1",
+  "caseId": "test-saas-github-2018",
+  "partition": "locked-test",
+  "measurementDate": "2018-06-03",
+  "expectedRoute": {
+    "route": "software-saas",
+    "acceptableAlternativeRoutes": [],
+    "evidenceIds": [
+      "github-2017-octoverse"
+    ],
+    "rationale": "The cutoff evidence describes a hosted developer collaboration and repository platform with user, organization and repository scale."
+  },
+  "binaryClaims": [
+    {
+      "id": "github-2017-octoverse-pre-cutoff",
+      "statement": "GitHub's 2017 Octoverse was public before the 2018-06-03 cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "github-2017-octoverse"
+      ]
+    },
+    {
+      "id": "github-msft-announced-by-cutoff",
+      "statement": "Microsoft's GitHub acquisition announcement was public by the 2018-06-03 cutoff.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "github-2018-06-04-msft-announcement-post-cutoff"
+      ],
+      "sourceAvailability": "post-cutoff-excluded"
+    },
+    {
+      "id": "github-private-financials-available",
+      "statement": "Standalone audited GitHub private-company financial statements are included as cutoff input evidence.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "github-2017-octoverse"
+      ]
+    }
+  ],
+  "observableClaims": [
+    {
+      "id": "github-2017-total-users",
+      "statement": "GitHub reported 24 million total users in the 2017 Octoverse.",
+      "expectedValue": 24,
+      "unit": "millions of users",
+      "period": {
+        "endDate": "2017-12-31"
+      },
+      "evidenceIds": [
+        "github-2017-octoverse"
+      ]
+    },
+    {
+      "id": "github-2017-total-repositories",
+      "statement": "GitHub reported 67 million total repositories in the 2017 Octoverse.",
+      "expectedValue": 67,
+      "unit": "millions of repositories",
+      "period": {
+        "endDate": "2017-12-31"
+      },
+      "evidenceIds": [
+        "github-2017-octoverse"
+      ]
+    },
+    {
+      "id": "github-2017-active-repositories",
+      "statement": "GitHub reported 25.3 million active repositories since September 2016.",
+      "expectedValue": 25.3,
+      "unit": "millions of active repositories",
+      "period": {
+        "startDate": "2016-09-01",
+        "endDate": "2017-12-31"
+      },
+      "evidenceIds": [
+        "github-2017-octoverse"
+      ]
+    }
+  ],
+  "expectedAbstentions": [
+    {
+      "id": "github-acquisition-input-abstain",
+      "field": "headline-valuation",
+      "reasonCode": "post-cutoff-transaction-not-input",
+      "description": "The Microsoft acquisition announcement and completion evidence were published after the cutoff and may be used only for gold target scoring.",
+      "evidenceIds": [
+        "github-2018-06-04-msft-announcement-post-cutoff",
+        "github-2019-08-01-msft-10k-post-cutoff"
+      ],
+      "sourceAvailability": "post-cutoff-excluded"
+    },
+    {
+      "id": "github-security-level-fair-value-abstain",
+      "field": "security-level-fair-value",
+      "reasonCode": "missing-security-rights-and-cap-table",
+      "description": "The cutoff evidence provides platform scale but not private share rights, liquidation preferences or cap-table details.",
+      "evidenceIds": [
+        "github-2017-octoverse"
+      ]
+    }
+  ],
+  "valuationSeparationExpectations": {
+    "allowedValuationFields": [
+      "completed_transaction_consideration_reference"
+    ],
+    "mustNotConflate": [
+      "post-cutoff acquisition consideration with cutoff input evidence",
+      "Microsoft stock transaction value with GitHub enterprise value",
+      "acquisition consideration with security-level fair value"
+    ],
+    "notes": "Historical valuation scoring is limited to the annotated completed acquisition consideration reference."
+  },
+  "completenessExpectations": [
+    {
+      "id": "github-cover-platform-scale-and-leakage",
+      "description": "A complete answer should cover software route, repository-platform scale, missing financials, post-cutoff acquisition leakage and security-level abstentions.",
+      "requiredEvidenceClasses": [
+        "company-primary"
+      ],
+      "requiredTopics": [
+        "software-saas route",
+        "platform scale",
+        "missing financials",
+        "post-cutoff acquisition"
+      ],
+      "evidenceIds": [
+        "github-2017-octoverse"
+      ]
+    }
+  ],
+  "historicalValuationTargets": {
+    "eligible": true,
+    "reason": "Manifest permits historical valuation-error scoring only for the completed acquisition consideration reference.",
+    "targets": [
+      {
+        "id": "github-completed-transaction-consideration-reference",
+        "eligibleField": "completed_transaction_consideration_reference",
+        "targetDate": "2018-10-25",
+        "targetKind": "completed-acquisition-stock-transaction",
+        "expectedValue": 7.5,
+        "unit": "USD billions stock transaction",
+        "sourceEvidenceIds": [
+          "github-2019-08-01-msft-10k-post-cutoff"
+        ],
+        "sourceAvailability": "post-cutoff-gold-only",
+        "scoringNotes": "Use only as completed transaction consideration; do not convert to enterprise value or security-level fair value."
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "schemaVersion": "trace.benchmark-annotation.v1",
+  "caseId": "test-saas-canva-2021",
+  "partition": "locked-test",
+  "measurementDate": "2021-09-15",
+  "expectedRoute": {
+    "route": "software-saas",
+    "acceptableAlternativeRoutes": [],
+    "evidenceIds": [
+      "canva-2021-09-15-funding-release",
+      "canva-2021-09-14-techcrunch-funding",
+      "canva-abn-lookup-identity"
+    ],
+    "rationale": "The cutoff evidence describes a global visual communication software platform with user, team and subscription adoption metrics."
+  },
+  "binaryClaims": [
+    {
+      "id": "canva-funding-public-by-cutoff",
+      "statement": "Canva's USD 200 million financing was public by the 2021-09-15 cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "canva-2021-09-15-funding-release",
+        "canva-2021-09-14-techcrunch-funding"
+      ]
+    },
+    {
+      "id": "canva-positive-free-cash-flow",
+      "statement": "Canva reported positive free cash flow at the time of the funding announcement.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "canva-2021-09-15-funding-release"
+      ]
+    },
+    {
+      "id": "canva-completed-public-exit",
+      "statement": "Canva had completed a public exit by the cutoff.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "canva-2021-09-15-funding-release"
+      ]
+    }
+  ],
+  "observableClaims": [
+    {
+      "id": "canva-2021-headline-valuation",
+      "statement": "Canva announced a USD 40 billion headline valuation.",
+      "expectedValue": 40,
+      "unit": "USD billions headline valuation",
+      "period": {
+        "instantDate": "2021-09-15"
+      },
+      "evidenceIds": [
+        "canva-2021-09-15-funding-release"
+      ]
+    },
+    {
+      "id": "canva-2021-funding-size",
+      "statement": "Canva announced a USD 200 million funding round.",
+      "expectedValue": 200,
+      "unit": "USD millions",
+      "period": {
+        "instantDate": "2021-09-15"
+      },
+      "evidenceIds": [
+        "canva-2021-09-15-funding-release"
+      ]
+    },
+    {
+      "id": "canva-2021-monthly-active-users",
+      "statement": "Canva reported more than 60 million monthly active users.",
+      "expectedValue": 60,
+      "unit": "millions monthly active users, greater than",
+      "period": {
+        "instantDate": "2021-09-15"
+      },
+      "evidenceIds": [
+        "canva-2021-09-15-funding-release"
+      ]
+    }
+  ],
+  "expectedAbstentions": [
+    {
+      "id": "canva-security-level-fair-value-abstain",
+      "field": "security-level-fair-value",
+      "reasonCode": "missing-security-rights-and-cap-table",
+      "description": "The funding release and news coverage do not disclose share rights, investor allocation or cap-table detail.",
+      "evidenceIds": [
+        "canva-2021-09-15-funding-release",
+        "canva-2021-09-14-techcrunch-funding"
+      ]
+    },
+    {
+      "id": "canva-enterprise-value-abstain",
+      "field": "enterprise-value",
+      "reasonCode": "headline-valuation-not-enterprise-value",
+      "description": "The USD 40 billion funding valuation is a headline private financing valuation and may not be treated as enterprise value.",
+      "evidenceIds": [
+        "canva-2021-09-15-funding-release"
+      ]
+    }
+  ],
+  "valuationSeparationExpectations": {
+    "allowedValuationFields": [
+      "headline-valuation"
+    ],
+    "mustNotConflate": [
+      "funding amount with total equity value",
+      "headline private financing valuation with enterprise value",
+      "headline valuation with security-level fair value"
+    ],
+    "notes": "The public evidence contains a headline funding valuation only; manifest marks historical valuation-error scoring ineligible."
+  },
+  "completenessExpectations": [
+    {
+      "id": "canva-cover-saas-scale-and-valuation-limits",
+      "description": "A complete answer should cover entity identity, software route, funding, user scale, paid teams, free cash flow and valuation-separation limits.",
+      "requiredEvidenceClasses": [
+        "company-primary",
+        "news",
+        "government"
+      ],
+      "requiredTopics": [
+        "software-saas route",
+        "funding",
+        "user scale",
+        "valuation separation"
+      ],
+      "evidenceIds": [
+        "canva-2021-09-15-funding-release",
+        "canva-2021-09-14-techcrunch-funding",
+        "canva-abn-lookup-identity"
+      ]
+    }
+  ],
+  "historicalValuationTargets": {
+    "eligible": false,
+    "reason": "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+    "targets": []
+  }
+}

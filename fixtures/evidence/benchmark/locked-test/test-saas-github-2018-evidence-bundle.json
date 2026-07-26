@@ -1,0 +1,172 @@
+{
+  "schemaVersion": "trace.evidence-bundle.v1",
+  "target": {
+    "legalName": "GitHub, Inc.",
+    "jurisdiction": "US-DE",
+    "identifiers": [
+      {
+        "scheme": "lei",
+        "value": "6354003LMZZAKOPXLX69",
+        "jurisdiction": "US"
+      },
+      {
+        "scheme": "company-number",
+        "value": "US-DE-5157550",
+        "jurisdiction": "US-DE"
+      }
+    ],
+    "aliases": [
+      "GitHub"
+    ],
+    "identityConfidence": "resolved"
+  },
+  "measurementDate": "2018-06-03",
+  "decisionMode": "full-analysis",
+  "sourceRecords": [
+    {
+      "id": "github-2017-octoverse",
+      "sourceUrl": "https://octoverse.github.com/2017/",
+      "sourceTitle": "The State of the Octoverse 2017",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2017-10-10",
+      "effectiveDate": "2017-12-31",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "GitHub Octoverse 2017",
+      "shortExcerpt": "GitHub's 2017 Octoverse reported developer, organization, repository and public activity scale before the acquisition announcement.",
+      "originatingSource": {
+        "sourceUrl": "https://octoverse.github.com/2017/",
+        "sourceTitle": "The State of the Octoverse 2017",
+        "publishedDate": "2017-10-10"
+      },
+      "observedFacts": [
+        {
+          "id": "github-2017-total-users",
+          "statement": "GitHub reported reaching 24 million total users in the 2017 Octoverse.",
+          "epistemicClass": "observed",
+          "value": 24,
+          "unit": "millions of users",
+          "period": {
+            "endDate": "2017-12-31"
+          }
+        },
+        {
+          "id": "github-2017-organizations",
+          "statement": "GitHub reported 1.5 million total organizations in the 2017 Octoverse.",
+          "epistemicClass": "observed",
+          "value": 1.5,
+          "unit": "millions of organizations",
+          "period": {
+            "endDate": "2017-12-31"
+          }
+        },
+        {
+          "id": "github-2017-total-repositories",
+          "statement": "GitHub reported 67 million total repositories in the 2017 Octoverse.",
+          "epistemicClass": "observed",
+          "value": 67,
+          "unit": "millions of repositories",
+          "period": {
+            "endDate": "2017-12-31"
+          }
+        },
+        {
+          "id": "github-2017-active-repositories",
+          "statement": "GitHub reported 25.3 million active repositories since September 2016.",
+          "epistemicClass": "observed",
+          "value": 25.3,
+          "unit": "millions of active repositories",
+          "period": {
+            "startDate": "2016-09-01",
+            "endDate": "2017-12-31"
+          }
+        }
+      ]
+    },
+    {
+      "id": "github-2018-06-04-msft-announcement-post-cutoff",
+      "sourceUrl": "https://blogs.microsoft.com/blog/2018/06/04/microsoft-github-empowering-developers/",
+      "sourceTitle": "Microsoft + GitHub = Empowering Developers",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2018-06-04",
+      "effectiveDate": "2018-06-04",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "Official Microsoft Blog, 04 Jun 2018",
+      "shortExcerpt": "Post-cutoff Microsoft announcement said it had agreed to acquire GitHub and described GitHub as a developer platform.",
+      "originatingSource": {
+        "sourceUrl": "https://blogs.microsoft.com/blog/2018/06/04/microsoft-github-empowering-developers/",
+        "sourceTitle": "Microsoft + GitHub = Empowering Developers",
+        "publishedDate": "2018-06-04"
+      },
+      "observedFacts": [
+        {
+          "id": "github-post-cutoff-msft-announcement",
+          "statement": "On 2018-06-04, after the case cutoff, Microsoft announced an agreement to acquire GitHub.",
+          "epistemicClass": "observed",
+          "value": "acquisition agreement announced",
+          "period": {
+            "instantDate": "2018-06-04"
+          }
+        },
+        {
+          "id": "github-post-cutoff-developer-scale",
+          "statement": "The post-cutoff Microsoft announcement described GitHub as serving more than 28 million developers.",
+          "epistemicClass": "observed",
+          "value": 28,
+          "unit": "millions of developers, greater than",
+          "period": {
+            "instantDate": "2018-06-04"
+          }
+        }
+      ]
+    },
+    {
+      "id": "github-2019-08-01-msft-10k-post-cutoff",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/789019/000156459019027952/msft-10k_20190630.htm",
+      "sourceTitle": "Microsoft 2019 Form 10-K",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2019-08-01",
+      "effectiveDate": "2018-10-25",
+      "sourceClass": "regulatory-filing",
+      "epistemicClass": "extracted",
+      "locator": "SEC accession 0001564590-19-027952",
+      "shortExcerpt": "Post-cutoff Microsoft Form 10-K reports completion of the GitHub acquisition and the USD 7.5bn stock transaction.",
+      "originatingSource": {
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/789019/000156459019027952/msft-10k_20190630.htm",
+        "sourceTitle": "Microsoft 2019 Form 10-K",
+        "publishedDate": "2019-08-01"
+      },
+      "observedFacts": [
+        {
+          "id": "github-post-cutoff-msft-completion",
+          "statement": "Microsoft reported that it completed the acquisition of GitHub on 2018-10-25.",
+          "epistemicClass": "extracted",
+          "value": "acquisition completed",
+          "period": {
+            "instantDate": "2018-10-25"
+          }
+        },
+        {
+          "id": "github-post-cutoff-transaction-value",
+          "statement": "Microsoft reported the GitHub acquisition as a USD 7.5 billion stock transaction inclusive of cash payments for vested equity awards and escrow.",
+          "epistemicClass": "extracted",
+          "value": 7.5,
+          "unit": "USD billions stock transaction",
+          "period": {
+            "instantDate": "2018-10-25"
+          }
+        }
+      ]
+    }
+  ],
+  "failedNotes": [
+    {
+      "id": "github-private-financials-not-public",
+      "stage": "extraction",
+      "sourceTitle": "GitHub pre-acquisition public source set",
+      "attemptedAt": "2026-07-26T00:00:00+09:00",
+      "note": "No pre-cutoff audited GitHub standalone financial statements or security-rights documents are committed."
+    }
+  ]
+}

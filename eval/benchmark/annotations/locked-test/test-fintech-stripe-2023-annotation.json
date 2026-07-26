@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "trace.benchmark-annotation.v1",
+  "caseId": "test-fintech-stripe-2023",
+  "partition": "locked-test",
+  "measurementDate": "2024-03-15",
+  "expectedRoute": {
+    "route": "financial-services",
+    "acceptableAlternativeRoutes": [
+      "software-saas"
+    ],
+    "evidenceIds": [
+      "stripe-2023-03-15-series-i-release",
+      "stripe-2024-03-13-annual-letter"
+    ],
+    "rationale": "The cutoff evidence describes internet payments infrastructure with payment volume, financial-infrastructure products and financing activity."
+  },
+  "binaryClaims": [
+    {
+      "id": "stripe-series-i-public-by-cutoff",
+      "statement": "Stripe's Series I financing was public before the 2024-03-15 cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "stripe-2023-03-15-series-i-release"
+      ]
+    },
+    {
+      "id": "stripe-2023-cash-flow-positive",
+      "statement": "Stripe reported being cash-flow positive in 2023.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "stripe-2024-03-13-annual-letter"
+      ]
+    },
+    {
+      "id": "stripe-series-i-needed-for-operations",
+      "statement": "Stripe said the Series I capital was needed to run the business.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "stripe-2023-03-15-series-i-release"
+      ]
+    }
+  ],
+  "observableClaims": [
+    {
+      "id": "stripe-series-i-valuation",
+      "statement": "Stripe's Series I was announced at a USD 50 billion headline valuation.",
+      "expectedValue": 50,
+      "unit": "USD billions headline valuation",
+      "period": {
+        "instantDate": "2023-03-15"
+      },
+      "evidenceIds": [
+        "stripe-2023-03-15-series-i-release"
+      ]
+    },
+    {
+      "id": "stripe-series-i-size",
+      "statement": "Stripe announced a Series I fundraise of more than USD 6.5 billion.",
+      "expectedValue": 6.5,
+      "unit": "USD billions raised, greater than",
+      "period": {
+        "instantDate": "2023-03-15"
+      },
+      "evidenceIds": [
+        "stripe-2023-03-15-series-i-release"
+      ]
+    },
+    {
+      "id": "stripe-2023-payment-volume",
+      "statement": "Stripe users processed USD 1 trillion through Stripe in 2023.",
+      "expectedValue": 1,
+      "unit": "USD trillions payment volume",
+      "period": {
+        "endDate": "2023-12-31"
+      },
+      "evidenceIds": [
+        "stripe-2024-03-13-annual-letter"
+      ]
+    }
+  ],
+  "expectedAbstentions": [
+    {
+      "id": "stripe-security-level-fair-value-abstain",
+      "field": "security-level-fair-value",
+      "reasonCode": "missing-security-rights-and-cap-table",
+      "description": "The Series I release and annual letter do not disclose private share rights or a cap table.",
+      "evidenceIds": [
+        "stripe-2023-03-15-series-i-release",
+        "stripe-2024-03-13-annual-letter"
+      ]
+    },
+    {
+      "id": "stripe-enterprise-value-abstain",
+      "field": "enterprise-value",
+      "reasonCode": "headline-valuation-not-enterprise-value",
+      "description": "The Series I headline valuation may not be converted into enterprise value without debt, cash, share-count and rights evidence.",
+      "evidenceIds": [
+        "stripe-2023-03-15-series-i-release"
+      ]
+    }
+  ],
+  "valuationSeparationExpectations": {
+    "allowedValuationFields": [
+      "headline-valuation"
+    ],
+    "mustNotConflate": [
+      "Series I headline valuation with enterprise value",
+      "employee liquidity funding with operating capital need",
+      "headline valuation with security-level fair value"
+    ],
+    "notes": "Manifest marks the case ineligible for historical valuation-error scoring despite a public headline financing valuation."
+  },
+  "completenessExpectations": [
+    {
+      "id": "stripe-cover-payments-scale-and-limitations",
+      "description": "A complete answer should cover payments route, payment volume, Series I financing purpose, cash-flow status and security-rights abstentions.",
+      "requiredEvidenceClasses": [
+        "company-primary"
+      ],
+      "requiredTopics": [
+        "financial-services route",
+        "payments volume",
+        "funding purpose",
+        "valuation separation"
+      ],
+      "evidenceIds": [
+        "stripe-2023-03-15-series-i-release",
+        "stripe-2024-03-13-annual-letter"
+      ]
+    }
+  ],
+  "historicalValuationTargets": {
+    "eligible": false,
+    "reason": "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+    "targets": []
+  }
+}

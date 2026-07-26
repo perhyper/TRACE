@@ -1,0 +1,147 @@
+{
+  "schemaVersion": "trace.benchmark-annotation.v1",
+  "caseId": "test-biotech-altos-2022",
+  "partition": "locked-test",
+  "measurementDate": "2022-01-19",
+  "expectedRoute": {
+    "route": "biotech-rnpv",
+    "acceptableAlternativeRoutes": [],
+    "evidenceIds": [
+      "altos-2022-01-19-launch-prnewswire",
+      "altos-2022-01-19-cira-yamanaka",
+      "altos-2022-01-19-nature-biotech-news"
+    ],
+    "rationale": "The cutoff evidence describes a biotechnology company focused on cellular rejuvenation programming and preclinical research rather than marketed products."
+  },
+  "binaryClaims": [
+    {
+      "id": "altos-launched-by-cutoff",
+      "statement": "Altos Labs publicly launched by the 2022-01-19 cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "altos-2022-01-19-launch-prnewswire"
+      ]
+    },
+    {
+      "id": "altos-yamanaka-advisor",
+      "statement": "Shinya Yamanaka was identified as a senior scientific advisor to Altos.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "altos-2022-01-19-launch-prnewswire",
+        "altos-2022-01-19-cira-yamanaka"
+      ]
+    },
+    {
+      "id": "altos-commercial-product-disclosed",
+      "statement": "Altos disclosed a commercial drug product at launch.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "altos-2022-01-19-launch-prnewswire",
+        "altos-2022-01-19-nature-biotech-news"
+      ]
+    }
+  ],
+  "observableClaims": [
+    {
+      "id": "altos-launch-funding",
+      "statement": "Altos launched with USD 3 billion of committed or initial financing.",
+      "expectedValue": 3,
+      "unit": "USD billions",
+      "period": {
+        "instantDate": "2022-01-19"
+      },
+      "evidenceIds": [
+        "altos-2022-01-19-launch-prnewswire",
+        "altos-2022-01-19-nature-biotech-news"
+      ]
+    },
+    {
+      "id": "altos-launch-locations",
+      "statement": "Altos announced initial sites in the San Francisco Bay Area, San Diego and Cambridge, UK, with Japan collaborations.",
+      "expectedValue": [
+        "San Francisco Bay Area",
+        "San Diego",
+        "Cambridge UK",
+        "Japan collaborations"
+      ],
+      "unit": "locations and collaboration geography",
+      "period": {
+        "instantDate": "2022-01-19"
+      },
+      "evidenceIds": [
+        "altos-2022-01-19-launch-prnewswire"
+      ]
+    },
+    {
+      "id": "altos-cira-research-funding",
+      "statement": "CiRA reported that Altos would fund Japan research projects in cellular rejuvenation programming.",
+      "expectedValue": "funded Japan research projects",
+      "unit": "research collaboration status",
+      "period": {
+        "instantDate": "2022-01-19"
+      },
+      "evidenceIds": [
+        "altos-2022-01-19-cira-yamanaka"
+      ]
+    }
+  ],
+  "expectedAbstentions": [
+    {
+      "id": "altos-product-rnpv-abstain",
+      "field": "enterprise-value",
+      "reasonCode": "no-product-cash-flow-forecast",
+      "description": "The launch evidence supports biotech-rNPV routing but no product-level cash-flow forecast or commercial product.",
+      "evidenceIds": [
+        "altos-2022-01-19-launch-prnewswire",
+        "altos-2022-01-19-nature-biotech-news"
+      ]
+    },
+    {
+      "id": "altos-security-level-fair-value-abstain",
+      "field": "security-level-fair-value",
+      "reasonCode": "missing-security-rights-and-cap-table",
+      "description": "The launch evidence reports committed funding but not security rights, valuation rights or cap-table details.",
+      "evidenceIds": [
+        "altos-2022-01-19-launch-prnewswire"
+      ]
+    }
+  ],
+  "valuationSeparationExpectations": {
+    "allowedValuationFields": [
+      "committed-funding"
+    ],
+    "mustNotConflate": [
+      "committed funding with enterprise value",
+      "launch financing with product rNPV",
+      "funding amount with security-level fair value"
+    ],
+    "notes": "Manifest marks the case ineligible for historical valuation-error scoring because there is no completed target or product-stage cash-flow record."
+  },
+  "completenessExpectations": [
+    {
+      "id": "altos-cover-launch-science-and-limitations",
+      "description": "A complete answer should cover launch status, cellular rejuvenation route, funding, scientific advisors, Japan collaboration and missing product-stage valuation inputs.",
+      "requiredEvidenceClasses": [
+        "company-primary",
+        "government",
+        "news"
+      ],
+      "requiredTopics": [
+        "biotech-rnpv route",
+        "launch funding",
+        "scientific advisors",
+        "product-stage abstention"
+      ],
+      "evidenceIds": [
+        "altos-2022-01-19-launch-prnewswire",
+        "altos-2022-01-19-cira-yamanaka",
+        "altos-2022-01-19-nature-biotech-news"
+      ]
+    }
+  ],
+  "historicalValuationTargets": {
+    "eligible": false,
+    "reason": "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+    "targets": []
+  }
+}

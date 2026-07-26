@@ -1,0 +1,256 @@
+{
+  "schemaVersion": "trace.evidence-bundle.v1",
+  "target": {
+    "legalName": "Zopa Group PLC",
+    "jurisdiction": "GB",
+    "identifiers": [
+      {
+        "scheme": "company-number",
+        "value": "10624955",
+        "jurisdiction": "GB"
+      }
+    ],
+    "aliases": [
+      "Zopa",
+      "Zopa Bank"
+    ],
+    "identityConfidence": "resolved"
+  },
+  "measurementDate": "2025-12-31",
+  "decisionMode": "full-analysis",
+  "sourceRecords": [
+    {
+      "id": "zopa-2025-04-24-2024-results-blog",
+      "sourceUrl": "https://www.zopa.com/blog/article/zopa-bank-doubles-full-year-profit",
+      "sourceTitle": "Zopa Bank doubles full year profit to GBP 34.2 million",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2025-04-24",
+      "effectiveDate": "2024-12-31",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "Zopa newsroom, 24 Apr 2025",
+      "shortExcerpt": "Zopa reported 2024 pre-tax profit, revenue, deposits, loans and customer growth in a company newsroom post.",
+      "originatingSource": {
+        "sourceUrl": "https://www.zopa.com/blog/article/zopa-bank-doubles-full-year-profit",
+        "sourceTitle": "Zopa Bank doubles full year profit to GBP 34.2 million",
+        "publishedDate": "2025-04-24"
+      },
+      "observedFacts": [
+        {
+          "id": "zopa-2024-pre-tax-profit",
+          "statement": "Zopa Bank reported GBP 34.2 million of pre-tax profit for the financial year ended 2024-12-31.",
+          "epistemicClass": "observed",
+          "value": 34.2,
+          "unit": "GBP millions pre-tax profit",
+          "period": {
+            "endDate": "2024-12-31"
+          }
+        },
+        {
+          "id": "zopa-2024-revenue",
+          "statement": "Zopa Bank reported GBP 303.4 million of total revenue for 2024.",
+          "epistemicClass": "observed",
+          "value": 303.4,
+          "unit": "GBP millions revenue",
+          "period": {
+            "endDate": "2024-12-31"
+          }
+        },
+        {
+          "id": "zopa-2024-customer-count",
+          "statement": "Zopa Bank reported that its customer base grew to 1.4 million in 2024.",
+          "epistemicClass": "observed",
+          "value": 1.4,
+          "unit": "millions of customers",
+          "period": {
+            "endDate": "2024-12-31"
+          }
+        },
+        {
+          "id": "zopa-2024-deposits",
+          "statement": "Zopa Bank reported GBP 5.5 billion of deposits for 2024.",
+          "epistemicClass": "observed",
+          "value": 5.5,
+          "unit": "GBP billions deposits",
+          "period": {
+            "endDate": "2024-12-31"
+          }
+        },
+        {
+          "id": "zopa-2024-loans",
+          "statement": "Zopa Bank reported GBP 3.1 billion of loans on balance sheet for 2024.",
+          "epistemicClass": "observed",
+          "value": 3.1,
+          "unit": "GBP billions loans",
+          "period": {
+            "endDate": "2024-12-31"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zopa-2025-09-02-h1-trading-update",
+      "sourceUrl": "https://www.research-tree.com/newsfeed/article/zopa-group-plc-half-year-report-2979766",
+      "sourceTitle": "Zopa Group PLC H1 2025 trading update",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2025-09-02",
+      "effectiveDate": "2025-06-30",
+      "sourceClass": "regulatory-filing",
+      "epistemicClass": "extracted",
+      "locator": "RNS 6799X, 02 Sep 2025",
+      "shortExcerpt": "The H1 2025 update reported customer count, Biscuit current account uptake, AT1 raise, profitability, loans and deposits.",
+      "originatingSource": {
+        "sourceUrl": "https://www.research-tree.com/newsfeed/article/zopa-group-plc-half-year-report-2979766",
+        "sourceTitle": "Zopa Group PLC H1 2025 trading update",
+        "publishedDate": "2025-09-02"
+      },
+      "observedFacts": [
+        {
+          "id": "zopa-h1-2025-customers",
+          "statement": "Zopa Group PLC reported serving 1.5 million customers in its H1 2025 trading update.",
+          "epistemicClass": "extracted",
+          "value": 1.5,
+          "unit": "millions of customers",
+          "period": {
+            "endDate": "2025-06-30"
+          }
+        },
+        {
+          "id": "zopa-h1-2025-biscuit-customers",
+          "statement": "Zopa reported that its Biscuit current account product had reached over 100,000 customers.",
+          "epistemicClass": "extracted",
+          "value": 100000,
+          "unit": "customers, greater than",
+          "period": {
+            "endDate": "2025-06-30"
+          }
+        },
+        {
+          "id": "zopa-h1-2025-at1-raise",
+          "statement": "Zopa reported raising GBP 80 million of Additional Tier 1 capital in May 2025.",
+          "epistemicClass": "extracted",
+          "value": 80,
+          "unit": "GBP millions AT1 capital",
+          "period": {
+            "instantDate": "2025-05-31"
+          }
+        },
+        {
+          "id": "zopa-h1-2025-profitability",
+          "statement": "Zopa reported GBP 20.7 million of H1 2025 profitability.",
+          "epistemicClass": "extracted",
+          "value": 20.7,
+          "unit": "GBP millions profitability",
+          "period": {
+            "endDate": "2025-06-30"
+          }
+        },
+        {
+          "id": "zopa-h1-2025-loans-and-deposits",
+          "statement": "Zopa reported GBP 3.4 billion of gross loans and GBP 5.4 billion of retail deposits for H1 2025.",
+          "epistemicClass": "extracted",
+          "value": [
+            "GBP 3.4 billion gross loans",
+            "GBP 5.4 billion retail deposits"
+          ],
+          "period": {
+            "endDate": "2025-06-30"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zopa-2025-companies-house-overview",
+      "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/10624955",
+      "sourceTitle": "ZOPA GROUP PLC overview",
+      "retrievedDate": "2026-07-26",
+      "effectiveDate": "2025-07-17",
+      "sourceClass": "government",
+      "epistemicClass": "observed",
+      "locator": "Companies House company 10624955",
+      "shortExcerpt": "Companies House identifies Zopa Group PLC with company number 10624955 and financial-services holding activity.",
+      "originatingSource": {
+        "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/10624955",
+        "sourceTitle": "ZOPA GROUP PLC overview"
+      },
+      "observedFacts": [
+        {
+          "id": "zopa-companies-house-number",
+          "statement": "Companies House identifies Zopa Group PLC with company number 10624955.",
+          "epistemicClass": "observed",
+          "value": "10624955",
+          "unit": "GB company number",
+          "period": {
+            "instantDate": "2025-07-17"
+          }
+        },
+        {
+          "id": "zopa-companies-house-status",
+          "statement": "Companies House records Zopa Group PLC as an active public limited company.",
+          "epistemicClass": "observed",
+          "value": "active public limited company",
+          "period": {
+            "instantDate": "2025-07-17"
+          }
+        },
+        {
+          "id": "zopa-companies-house-sic",
+          "statement": "Companies House lists Zopa Group PLC under activities of financial services holding companies.",
+          "epistemicClass": "observed",
+          "value": "64205 - Activities of financial services holding companies",
+          "period": {
+            "instantDate": "2025-07-17"
+          }
+        }
+      ]
+    },
+    {
+      "id": "zopa-2026-03-19-2025-results-post-cutoff",
+      "sourceUrl": "https://www.zopa.com/blog/article/zopa-delivers-65-million-profit-in-2025",
+      "sourceTitle": "Zopa Bank delivers GBP 65 million profit in 2025",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2026-03-19",
+      "effectiveDate": "2025-12-31",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "Zopa newsroom, 19 Mar 2026",
+      "shortExcerpt": "Post-cutoff Zopa results reported 2025 profit, revenue, deposits, loans and customer count; exclude from locked-test inputs.",
+      "originatingSource": {
+        "sourceUrl": "https://www.zopa.com/blog/article/zopa-delivers-65-million-profit-in-2025",
+        "sourceTitle": "Zopa Bank delivers GBP 65 million profit in 2025",
+        "publishedDate": "2026-03-19"
+      },
+      "observedFacts": [
+        {
+          "id": "zopa-post-cutoff-2025-profit",
+          "statement": "After the cutoff, Zopa reported GBP 65 million of underlying profit before tax for 2025.",
+          "epistemicClass": "observed",
+          "value": 65,
+          "unit": "GBP millions underlying profit before tax",
+          "period": {
+            "endDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "zopa-post-cutoff-2025-customers",
+          "statement": "After the cutoff, Zopa reported 1.7 million customers for 2025.",
+          "epistemicClass": "observed",
+          "value": 1.7,
+          "unit": "millions of customers",
+          "period": {
+            "endDate": "2025-12-31"
+          }
+        }
+      ]
+    }
+  ],
+  "failedNotes": [
+    {
+      "id": "zopa-security-rights-not-public",
+      "stage": "extraction",
+      "sourceTitle": "Zopa public source set",
+      "attemptedAt": "2026-07-26T00:00:00+09:00",
+      "note": "No public cap table or security-rights source was approved for committed locked-test inputs."
+    }
+  ]
+}

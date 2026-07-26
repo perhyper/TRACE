@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "trace.benchmark-annotation.v1",
+  "caseId": "test-fintech-zopa-2025",
+  "partition": "locked-test",
+  "measurementDate": "2025-12-31",
+  "expectedRoute": {
+    "route": "financial-services",
+    "acceptableAlternativeRoutes": [],
+    "evidenceIds": [
+      "zopa-2025-04-24-2024-results-blog",
+      "zopa-2025-09-02-h1-trading-update",
+      "zopa-2025-companies-house-overview"
+    ],
+    "rationale": "The cutoff evidence describes a UK regulated digital bank and financial-services holding group with deposits, loans, customers and profitability metrics."
+  },
+  "binaryClaims": [
+    {
+      "id": "zopa-bank-profitable-2024",
+      "statement": "Zopa Bank reported full-year pre-tax profit for 2024.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "zopa-2025-04-24-2024-results-blog"
+      ]
+    },
+    {
+      "id": "zopa-h1-2025-update-public-by-cutoff",
+      "statement": "Zopa's H1 2025 trading update was public before the 2025-12-31 cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "zopa-2025-09-02-h1-trading-update"
+      ]
+    },
+    {
+      "id": "zopa-2025-final-results-input-visible",
+      "statement": "Zopa's final 2025 results were available as model-input evidence at the cutoff.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "zopa-2026-03-19-2025-results-post-cutoff"
+      ],
+      "sourceAvailability": "post-cutoff-excluded"
+    }
+  ],
+  "observableClaims": [
+    {
+      "id": "zopa-2024-pre-tax-profit",
+      "statement": "Zopa Bank reported GBP 34.2 million of pre-tax profit for 2024.",
+      "expectedValue": 34.2,
+      "unit": "GBP millions pre-tax profit",
+      "period": {
+        "endDate": "2024-12-31"
+      },
+      "evidenceIds": [
+        "zopa-2025-04-24-2024-results-blog"
+      ]
+    },
+    {
+      "id": "zopa-h1-2025-customers",
+      "statement": "Zopa reported 1.5 million customers in H1 2025.",
+      "expectedValue": 1.5,
+      "unit": "millions of customers",
+      "period": {
+        "endDate": "2025-06-30"
+      },
+      "evidenceIds": [
+        "zopa-2025-09-02-h1-trading-update"
+      ]
+    },
+    {
+      "id": "zopa-h1-2025-at1-capital",
+      "statement": "Zopa reported raising GBP 80 million of Additional Tier 1 capital in May 2025.",
+      "expectedValue": 80,
+      "unit": "GBP millions AT1 capital",
+      "period": {
+        "instantDate": "2025-05-31"
+      },
+      "evidenceIds": [
+        "zopa-2025-09-02-h1-trading-update"
+      ]
+    }
+  ],
+  "expectedAbstentions": [
+    {
+      "id": "zopa-security-level-fair-value-abstain",
+      "field": "security-level-fair-value",
+      "reasonCode": "missing-security-rights-and-cap-table",
+      "description": "The cutoff evidence does not disclose share rights, a cap table or private security-level fair value.",
+      "evidenceIds": [
+        "zopa-2025-04-24-2024-results-blog",
+        "zopa-2025-09-02-h1-trading-update"
+      ]
+    },
+    {
+      "id": "zopa-final-2025-results-abstain",
+      "field": "headline-valuation",
+      "reasonCode": "post-cutoff-financials-not-input",
+      "description": "The final 2025 results were published after the cutoff and may be recorded only as leakage warning metadata.",
+      "evidenceIds": [
+        "zopa-2026-03-19-2025-results-post-cutoff"
+      ],
+      "sourceAvailability": "post-cutoff-excluded"
+    }
+  ],
+  "valuationSeparationExpectations": {
+    "allowedValuationFields": [],
+    "mustNotConflate": [
+      "bank profitability with equity value",
+      "regulatory capital with enterprise value",
+      "deposit base with security-level fair value"
+    ],
+    "notes": "The locked-test source set has operating and regulatory metrics but no public valuation target approved for scoring."
+  },
+  "completenessExpectations": [
+    {
+      "id": "zopa-cover-bank-metrics-and-cutoff",
+      "description": "A complete answer should cover Zopa identity, financial-services route, profitability, loans, deposits, customers, AT1 capital and post-cutoff leakage.",
+      "requiredEvidenceClasses": [
+        "company-primary",
+        "regulatory-filing",
+        "government"
+      ],
+      "requiredTopics": [
+        "financial-services route",
+        "profitability",
+        "bank metrics",
+        "cutoff abstention"
+      ],
+      "evidenceIds": [
+        "zopa-2025-04-24-2024-results-blog",
+        "zopa-2025-09-02-h1-trading-update",
+        "zopa-2025-companies-house-overview"
+      ]
+    }
+  ],
+  "historicalValuationTargets": {
+    "eligible": false,
+    "reason": "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+    "targets": []
+  }
+}

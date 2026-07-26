@@ -1,0 +1,154 @@
+{
+  "schemaVersion": "trace.benchmark-annotation.v1",
+  "caseId": "test-biotech-recursion-2021",
+  "partition": "locked-test",
+  "measurementDate": "2021-04-15",
+  "expectedRoute": {
+    "route": "biotech-rnpv",
+    "acceptableAlternativeRoutes": [],
+    "evidenceIds": [
+      "recursion-2021-03-22-sec-s1",
+      "recursion-2021-04-15-final-prospectus"
+    ],
+    "rationale": "The cutoff evidence describes a clinical-stage biotechnology company with a technology-enabled drug-discovery platform and IPO registration evidence."
+  },
+  "binaryClaims": [
+    {
+      "id": "recursion-s1-filed-by-cutoff",
+      "statement": "Recursion filed an S-1 before the 2021-04-15 cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "recursion-2021-03-22-sec-s1"
+      ]
+    },
+    {
+      "id": "recursion-final-prospectus-by-cutoff",
+      "statement": "Recursion's final prospectus was dated at the 2021-04-15 cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "recursion-2021-04-15-final-prospectus"
+      ]
+    },
+    {
+      "id": "recursion-pricing-release-input-visible",
+      "statement": "Recursion's 2021-04-16 IPO pricing release was available as cutoff model-input evidence.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "recursion-2021-04-16-ipo-pricing-post-cutoff"
+      ],
+      "sourceAvailability": "post-cutoff-excluded"
+    }
+  ],
+  "observableClaims": [
+    {
+      "id": "recursion-ipo-public-price",
+      "statement": "The final prospectus states an IPO price of USD 18.00 per share.",
+      "expectedValue": 18,
+      "unit": "USD per share",
+      "period": {
+        "instantDate": "2021-04-15"
+      },
+      "evidenceIds": [
+        "recursion-2021-04-15-final-prospectus"
+      ]
+    },
+    {
+      "id": "recursion-ipo-shares-offered",
+      "statement": "The final prospectus states 24,242,424 Class A shares were offered.",
+      "expectedValue": 24242424,
+      "unit": "Class A shares offered",
+      "period": {
+        "instantDate": "2021-04-15"
+      },
+      "evidenceIds": [
+        "recursion-2021-04-15-final-prospectus"
+      ]
+    },
+    {
+      "id": "recursion-ipo-gross-proceeds",
+      "statement": "The final prospectus states USD 436.363632 million total initial public offering price before deductions.",
+      "expectedValue": 436.363632,
+      "unit": "USD millions gross offering value",
+      "period": {
+        "instantDate": "2021-04-15"
+      },
+      "evidenceIds": [
+        "recursion-2021-04-15-final-prospectus"
+      ]
+    }
+  ],
+  "expectedAbstentions": [
+    {
+      "id": "recursion-product-rnpv-abstain",
+      "field": "enterprise-value",
+      "reasonCode": "no-product-cash-flow-forecast",
+      "description": "The IPO documents support biotech-rNPV routing but not a public product cash-flow forecast for enterprise value.",
+      "evidenceIds": [
+        "recursion-2021-03-22-sec-s1",
+        "recursion-2021-04-15-final-prospectus"
+      ]
+    },
+    {
+      "id": "recursion-security-level-fair-value-abstain",
+      "field": "security-level-fair-value",
+      "reasonCode": "public-ipo-price-not-private-security-fair-value",
+      "description": "The public IPO price and offering size are not a private security-level fair-value target.",
+      "evidenceIds": [
+        "recursion-2021-04-15-final-prospectus"
+      ]
+    }
+  ],
+  "valuationSeparationExpectations": {
+    "allowedValuationFields": [
+      "ipo_equity_value_reference"
+    ],
+    "mustNotConflate": [
+      "IPO gross offering value with enterprise value",
+      "IPO public price with private security-level fair value",
+      "primary shares offered with total fully diluted equity value"
+    ],
+    "notes": "Historical valuation scoring is limited to annotated IPO offering-value inputs, not enterprise value or security-level fair value."
+  },
+  "completenessExpectations": [
+    {
+      "id": "recursion-cover-biotech-platform-and-ipo",
+      "description": "A complete answer should cover Recursion identity, biotechnology route, Recursion OS platform, IPO share price, offering size and valuation-separation limits.",
+      "requiredEvidenceClasses": [
+        "regulatory-filing"
+      ],
+      "requiredTopics": [
+        "biotech-rnpv route",
+        "platform evidence",
+        "IPO terms",
+        "valuation separation"
+      ],
+      "evidenceIds": [
+        "recursion-2021-03-22-sec-s1",
+        "recursion-2021-04-15-final-prospectus"
+      ]
+    }
+  ],
+  "historicalValuationTargets": {
+    "eligible": true,
+    "reason": "Manifest permits historical valuation-error scoring for IPO equity-value reference fields with disclosed share count and price evidence.",
+    "targets": [
+      {
+        "id": "recursion-ipo-equity-value-reference",
+        "eligibleField": "ipo_equity_value_reference",
+        "targetDate": "2021-04-15",
+        "targetKind": "ipo-offering-value-inputs",
+        "expectedValue": {
+          "sharesOffered": 24242424,
+          "publicOfferingPriceUsd": 18,
+          "grossOfferingValueUsdMillions": 436.363632
+        },
+        "unit": "offering shares, USD per share, USD millions gross offering value",
+        "sourceEvidenceIds": [
+          "recursion-2021-04-15-final-prospectus"
+        ],
+        "sourceAvailability": "cutoff-input-visible",
+        "scoringNotes": "Use only as the annotated IPO reference; do not treat gross offering value as enterprise value or security-level fair value."
+      }
+    ]
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "trace.evidence-bundle.v1",
+  "target": {
+    "legalName": "Stripe, Inc.",
+    "jurisdiction": "US",
+    "identifiers": [
+      {
+        "scheme": "lei",
+        "value": "549300CLHGIPTCYHQ143",
+        "jurisdiction": "US"
+      }
+    ],
+    "aliases": [
+      "Stripe"
+    ],
+    "identityConfidence": "resolved"
+  },
+  "measurementDate": "2024-03-15",
+  "decisionMode": "full-analysis",
+  "sourceRecords": [
+    {
+      "id": "stripe-2023-03-15-series-i-release",
+      "sourceUrl": "https://stripe.com/en-ch/newsroom/news/stripe-series-i-employee-liquidity",
+      "sourceTitle": "Stripe announces Series I funding and employee liquidity plan",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2023-03-15",
+      "effectiveDate": "2023-03-15",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "Stripe newsroom, 15 Mar 2023",
+      "shortExcerpt": "Stripe announced a Series I fundraise above USD 6.5bn at a USD 50bn valuation for employee liquidity and tax obligations.",
+      "originatingSource": {
+        "sourceUrl": "https://stripe.com/en-ch/newsroom/news/stripe-series-i-employee-liquidity",
+        "sourceTitle": "Stripe announces Series I funding and employee liquidity plan",
+        "publishedDate": "2023-03-15"
+      },
+      "observedFacts": [
+        {
+          "id": "stripe-series-i-size",
+          "statement": "Stripe announced a Series I fundraise of more than USD 6.5 billion on 2023-03-15.",
+          "epistemicClass": "observed",
+          "value": 6.5,
+          "unit": "USD billions raised, greater than",
+          "period": {
+            "instantDate": "2023-03-15"
+          }
+        },
+        {
+          "id": "stripe-series-i-valuation",
+          "statement": "Stripe stated that the Series I financing was at a USD 50 billion valuation.",
+          "epistemicClass": "observed",
+          "value": 50,
+          "unit": "USD billions headline valuation",
+          "period": {
+            "instantDate": "2023-03-15"
+          }
+        },
+        {
+          "id": "stripe-series-i-use-of-proceeds",
+          "statement": "Stripe said the Series I funds would provide current and former employee liquidity and address equity-award tax obligations.",
+          "epistemicClass": "observed",
+          "value": "employee liquidity and withholding tax obligations",
+          "period": {
+            "instantDate": "2023-03-15"
+          }
+        },
+        {
+          "id": "stripe-capital-not-needed-for-operations",
+          "statement": "Stripe stated that it did not need the Series I capital to run the business.",
+          "epistemicClass": "observed",
+          "value": true,
+          "period": {
+            "instantDate": "2023-03-15"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stripe-2024-03-13-annual-letter",
+      "sourceUrl": "https://stripe.com/gb/annual-updates/2023",
+      "sourceTitle": "Stripe 2023 annual letter",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2024-03-13",
+      "effectiveDate": "2023-12-31",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "Stripe annual updates archive",
+      "shortExcerpt": "Stripe's 2023 annual letter reported payment volume, cash-flow status and large-scale customer processing metrics.",
+      "originatingSource": {
+        "sourceUrl": "https://stripe.com/gb/annual-updates/2023",
+        "sourceTitle": "Stripe 2023 annual letter",
+        "publishedDate": "2024-03-13"
+      },
+      "observedFacts": [
+        {
+          "id": "stripe-2023-payment-volume",
+          "statement": "Stripe reported that users processed USD 1 trillion through Stripe in 2023.",
+          "epistemicClass": "observed",
+          "value": 1,
+          "unit": "USD trillions payment volume",
+          "period": {
+            "endDate": "2023-12-31"
+          }
+        },
+        {
+          "id": "stripe-2023-payment-volume-share-gdp",
+          "statement": "Stripe described 2023 payment volume as equivalent to roughly 1 percent of global GDP.",
+          "epistemicClass": "observed",
+          "value": 1,
+          "unit": "percent of global GDP",
+          "period": {
+            "endDate": "2023-12-31"
+          }
+        },
+        {
+          "id": "stripe-2023-cash-flow-positive",
+          "statement": "Stripe reported being robustly cash-flow positive in 2023 and expected the same in 2024.",
+          "epistemicClass": "observed",
+          "value": true,
+          "period": {
+            "endDate": "2023-12-31"
+          }
+        },
+        {
+          "id": "stripe-large-users",
+          "statement": "Stripe reported that more than 100 businesses processed over USD 1 billion each on Stripe annually.",
+          "epistemicClass": "observed",
+          "value": 100,
+          "unit": "businesses, greater than",
+          "period": {
+            "endDate": "2023-12-31"
+          }
+        }
+      ]
+    },
+    {
+      "id": "stripe-2025-02-27-annual-update-post-cutoff",
+      "sourceUrl": "https://stripe.com/en-jp/newsroom/news/stripe-2024-update",
+      "sourceTitle": "Stripe's total payment volume reaches USD 1.4T",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2025-02-27",
+      "effectiveDate": "2024-12-31",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "Stripe newsroom, 27 Feb 2025",
+      "shortExcerpt": "Post-cutoff Stripe 2024 update reported higher payment volume and profitability; it is leakage-only for this case.",
+      "originatingSource": {
+        "sourceUrl": "https://stripe.com/en-jp/newsroom/news/stripe-2024-update",
+        "sourceTitle": "Stripe's total payment volume reaches USD 1.4T",
+        "publishedDate": "2025-02-27"
+      },
+      "observedFacts": [
+        {
+          "id": "stripe-post-cutoff-2024-payment-volume",
+          "statement": "After the cutoff, Stripe reported USD 1.4 trillion of payment volume for 2024.",
+          "epistemicClass": "observed",
+          "value": 1.4,
+          "unit": "USD trillions payment volume",
+          "period": {
+            "endDate": "2024-12-31"
+          }
+        }
+      ]
+    }
+  ],
+  "failedNotes": [
+    {
+      "id": "stripe-security-rights-not-public",
+      "stage": "extraction",
+      "sourceTitle": "Stripe public source set",
+      "attemptedAt": "2026-07-26T00:00:00+09:00",
+      "note": "Public funding and annual-letter sources do not disclose private share rights, a cap table or security-level fair value."
+    }
+  ]
+}

@@ -1,0 +1,188 @@
+{
+  "schemaVersion": "trace.evidence-bundle.v1",
+  "target": {
+    "legalName": "Recursion Pharmaceuticals, Inc.",
+    "jurisdiction": "US-DE",
+    "identifiers": [
+      {
+        "scheme": "other",
+        "value": "SEC-CIK-0001601830",
+        "jurisdiction": "US"
+      }
+    ],
+    "aliases": [
+      "Recursion",
+      "Recursion Pharmaceuticals"
+    ],
+    "identityConfidence": "resolved"
+  },
+  "measurementDate": "2021-04-15",
+  "decisionMode": "full-analysis",
+  "sourceRecords": [
+    {
+      "id": "recursion-2021-03-22-sec-s1",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1601830/000119312521089610/d89478ds1.htm",
+      "sourceTitle": "Recursion Pharmaceuticals Form S-1",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2021-03-22",
+      "effectiveDate": "2021-03-22",
+      "sourceClass": "regulatory-filing",
+      "epistemicClass": "extracted",
+      "locator": "SEC accession 0001193125-21-089610",
+      "shortExcerpt": "The S-1 identifies Recursion, describes its biology-decoding platform, IPO registration and biotechnology operating model.",
+      "originatingSource": {
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1601830/000119312521089610/d89478ds1.htm",
+        "sourceTitle": "Recursion Pharmaceuticals Form S-1",
+        "publishedDate": "2021-03-22"
+      },
+      "observedFacts": [
+        {
+          "id": "recursion-sec-legal-identity",
+          "statement": "The S-1 identifies the registrant as Recursion Pharmaceuticals, Inc., incorporated in Delaware, with CIK 0001601830.",
+          "epistemicClass": "observed",
+          "value": "SEC-CIK-0001601830",
+          "unit": "SEC CIK",
+          "period": {
+            "instantDate": "2021-03-22"
+          }
+        },
+        {
+          "id": "recursion-biotech-company",
+          "statement": "Recursion described itself as a clinical-stage biotechnology company using technology to decode biology.",
+          "epistemicClass": "extracted",
+          "value": "clinical-stage biotechnology company",
+          "period": {
+            "instantDate": "2021-03-22"
+          }
+        },
+        {
+          "id": "recursion-os-platform",
+          "statement": "Recursion described the Recursion OS as combining infrastructure, biological datasets, algorithms and machine-learning tools.",
+          "epistemicClass": "extracted",
+          "value": "Recursion OS platform",
+          "period": {
+            "instantDate": "2021-03-22"
+          }
+        },
+        {
+          "id": "recursion-ipo-registration-filed",
+          "statement": "Recursion filed a Form S-1 registration statement for its initial public offering before the cutoff.",
+          "epistemicClass": "observed",
+          "value": true,
+          "period": {
+            "instantDate": "2021-03-22"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recursion-2021-04-15-final-prospectus",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1601830/000119312521119404/d89478d424b4.htm",
+      "sourceTitle": "Recursion Pharmaceuticals final prospectus",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2021-04-15",
+      "effectiveDate": "2021-04-15",
+      "sourceClass": "regulatory-filing",
+      "epistemicClass": "extracted",
+      "locator": "SEC accession 0001193125-21-119404",
+      "shortExcerpt": "The final prospectus states the Class A IPO share count, USD 18 public price, gross proceeds and dual-class stock details.",
+      "originatingSource": {
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1601830/000119312521119404/d89478d424b4.htm",
+        "sourceTitle": "Recursion Pharmaceuticals final prospectus",
+        "publishedDate": "2021-04-15"
+      },
+      "observedFacts": [
+        {
+          "id": "recursion-ipo-shares-offered",
+          "statement": "The final prospectus states Recursion was offering 24,242,424 shares of Class A common stock.",
+          "epistemicClass": "extracted",
+          "value": 24242424,
+          "unit": "Class A shares offered",
+          "period": {
+            "instantDate": "2021-04-15"
+          }
+        },
+        {
+          "id": "recursion-ipo-public-price",
+          "statement": "The final prospectus states an initial public offering price of USD 18.00 per share.",
+          "epistemicClass": "extracted",
+          "value": 18,
+          "unit": "USD per share",
+          "period": {
+            "instantDate": "2021-04-15"
+          }
+        },
+        {
+          "id": "recursion-ipo-gross-proceeds",
+          "statement": "The final prospectus states total initial public offering price of USD 436,363,632 before deductions.",
+          "epistemicClass": "extracted",
+          "value": 436.363632,
+          "unit": "USD millions gross offering value",
+          "period": {
+            "instantDate": "2021-04-15"
+          }
+        },
+        {
+          "id": "recursion-dual-class-vote-rights",
+          "statement": "The final prospectus describes Class A shares with one vote and Class B shares with ten votes per share.",
+          "epistemicClass": "extracted",
+          "value": [
+            "Class A: one vote",
+            "Class B: ten votes"
+          ],
+          "period": {
+            "instantDate": "2021-04-15"
+          }
+        }
+      ]
+    },
+    {
+      "id": "recursion-2021-04-16-ipo-pricing-post-cutoff",
+      "sourceUrl": "https://ir.recursion.com/news-releases/news-release-details/recursion-pharmaceuticals-announces-pricing-initial-public",
+      "sourceTitle": "Recursion Pharmaceuticals announces IPO pricing",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2021-04-16",
+      "effectiveDate": "2021-04-16",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "Recursion investor relations, 16 Apr 2021",
+      "shortExcerpt": "Post-cutoff IPO pricing release reported USD 18.00 per share, 24,242,424 shares and expected gross proceeds.",
+      "originatingSource": {
+        "sourceUrl": "https://ir.recursion.com/news-releases/news-release-details/recursion-pharmaceuticals-announces-pricing-initial-public",
+        "sourceTitle": "Recursion Pharmaceuticals announces IPO pricing",
+        "publishedDate": "2021-04-16"
+      },
+      "observedFacts": [
+        {
+          "id": "recursion-post-cutoff-pricing-release",
+          "statement": "After the cutoff, Recursion announced IPO pricing at USD 18.00 per share.",
+          "epistemicClass": "observed",
+          "value": 18,
+          "unit": "USD per share",
+          "period": {
+            "instantDate": "2021-04-16"
+          }
+        },
+        {
+          "id": "recursion-post-cutoff-pricing-shares",
+          "statement": "After the cutoff, Recursion announced it was offering 24,242,424 Class A shares.",
+          "epistemicClass": "observed",
+          "value": 24242424,
+          "unit": "Class A shares offered",
+          "period": {
+            "instantDate": "2021-04-16"
+          }
+        }
+      ]
+    }
+  ],
+  "failedNotes": [
+    {
+      "id": "recursion-product-cash-flow-not-public",
+      "stage": "extraction",
+      "sourceTitle": "Recursion IPO source set",
+      "attemptedAt": "2026-07-26T00:00:00+09:00",
+      "note": "The IPO sources support route and offering-value references but not product-level rNPV cash-flow forecasts."
+    }
+  ]
+}
