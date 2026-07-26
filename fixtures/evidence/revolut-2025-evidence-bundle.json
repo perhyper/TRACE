@@ -1,0 +1,295 @@
+{
+  "schemaVersion": "trace.evidence-bundle.v1",
+  "target": {
+    "legalName": "Revolut Group Holdings Ltd",
+    "jurisdiction": "GB",
+    "identifiers": [
+      {
+        "scheme": "company-number",
+        "value": "GB-12743269",
+        "jurisdiction": "GB"
+      }
+    ],
+    "aliases": [
+      "Revolut"
+    ],
+    "identityConfidence": "resolved"
+  },
+  "measurementDate": "2026-03-24",
+  "decisionMode": "valuation-review",
+  "sourceRecords": [
+    {
+      "id": "revolut-annual-report-2025-audited-statements",
+      "sourceUrl": "https://assets.revolut.com/pdf/annualreport2025.pdf",
+      "sourceTitle": "Revolut Group Holdings Ltd Annual Report 2025",
+      "retrievedDate": "2026-07-26",
+      "effectiveDate": "2025-12-31",
+      "sourceClass": "audited-filing",
+      "epistemicClass": "extracted",
+      "locator": "pp. 1, 94-101, 131",
+      "shortExcerpt": "The audited statements cover 2025 and report revenue, profit, total assets and customer liabilities.",
+      "observedFacts": [
+        {
+          "id": "annual-report-legal-identity",
+          "statement": "Revolut Group Holdings Ltd is the annual-report reporting entity and registered number 12743269 identifies the company.",
+          "epistemicClass": "observed",
+          "value": "GB-12743269",
+          "unit": "company-number",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "annual-report-audit-opinion",
+          "statement": "BDO LLP audited the 2025 financial statements and gave a true-and-fair-view opinion for the Group and Parent Company.",
+          "epistemicClass": "extracted",
+          "value": true,
+          "period": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "annual-report-revenue",
+          "statement": "Revenue for the year ended 2025-12-31 was GBP 4,515,770 thousand.",
+          "epistemicClass": "extracted",
+          "value": 4515770,
+          "unit": "GBP thousands",
+          "period": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "annual-report-profit-before-tax",
+          "statement": "Profit before tax for the year ended 2025-12-31 was GBP 1,713,273 thousand.",
+          "epistemicClass": "extracted",
+          "value": 1713273,
+          "unit": "GBP thousands",
+          "period": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "annual-report-net-profit",
+          "statement": "Net profit for the year ended 2025-12-31 was GBP 1,304,628 thousand.",
+          "epistemicClass": "extracted",
+          "value": 1304628,
+          "unit": "GBP thousands",
+          "period": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "annual-report-total-assets",
+          "statement": "At 2025-12-31, the consolidated statement of financial position reported total assets of GBP 43,024,390 thousand.",
+          "epistemicClass": "extracted",
+          "value": 43024390,
+          "unit": "GBP thousands",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "annual-report-cash-and-treasury",
+          "statement": "At 2025-12-31, cash and cash equivalents were GBP 21,021,729 thousand and treasury investments were GBP 17,614,303 thousand.",
+          "epistemicClass": "extracted",
+          "value": [
+            "cash and cash equivalents GBP 21,021,729 thousand",
+            "treasury investments GBP 17,614,303 thousand"
+          ],
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "annual-report-customer-liabilities",
+          "statement": "At 2025-12-31, customer liabilities were GBP 36,880,199 thousand.",
+          "epistemicClass": "extracted",
+          "value": 36880199,
+          "unit": "GBP thousands",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "annual-report-customer-loans",
+          "statement": "At 2025-12-31, loans and advances to customers were GBP 2,150,128 thousand.",
+          "epistemicClass": "extracted",
+          "value": 2150128,
+          "unit": "GBP thousands",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "annual-report-safeguarded-customer-funds",
+          "statement": "Restricted cash and term deposits held in respect of customers include safeguarded funds related to regulated e-money and wealth services.",
+          "epistemicClass": "extracted",
+          "value": "safeguarded funds for regulated e-money and wealth services",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        }
+      ],
+      "documentHash": {
+        "algorithm": "sha256",
+        "value": "969dd74a7213513ef92c02d64d6427fec03adaec6b1f5470602f9872725e5e24",
+        "contentType": "application/pdf",
+        "byteLength": 12279247
+      }
+    },
+    {
+      "id": "revolut-annual-report-2025-primary-context",
+      "sourceUrl": "https://assets.revolut.com/pdf/annualreport2025.pdf",
+      "sourceTitle": "Revolut Group Holdings Ltd Annual Report 2025 - strategic and APM sections",
+      "retrievedDate": "2026-07-26",
+      "effectiveDate": "2025-12-31",
+      "sourceClass": "company-primary",
+      "epistemicClass": "extracted",
+      "locator": "pp. 4, 199-200",
+      "shortExcerpt": "APM sections describe customer balances and explain non-IFRS measures used by management.",
+      "observedFacts": [
+        {
+          "id": "annual-report-retail-customers",
+          "statement": "The annual report reports 68.3 million retail customers for 2025.",
+          "epistemicClass": "extracted",
+          "value": 68.3,
+          "unit": "millions",
+          "period": {
+            "endDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "annual-report-total-customer-balances",
+          "statement": "At 2025-12-31, total customer balances were GBP 50,182,946 thousand.",
+          "epistemicClass": "extracted",
+          "value": 50182946,
+          "unit": "GBP thousands",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "annual-report-customer-deposits",
+          "statement": "At 2025-12-31, customer deposits were GBP 36,142,908 thousand.",
+          "epistemicClass": "extracted",
+          "value": 36142908,
+          "unit": "GBP thousands",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "annual-report-qualitative-peer-context",
+          "statement": "TRACE selects peers qualitatively from the banking, payments, multi-currency account, and consumer-fintech context described in the annual report; no peer metrics are supplied.",
+          "epistemicClass": "inferred",
+          "value": [
+            "Wise plc - qualitative context only for cross-border money movement and multi-currency account functionality.",
+            "Monzo Bank Holding Group Ltd - qualitative context only for UK app-based banking and consumer current-account services.",
+            "Starling Bank Ltd - qualitative context only for UK digital banking and business-account services.",
+            "Klarna Bank AB - qualitative context only for European consumer fintech, checkout payments, and credit products."
+          ]
+        }
+      ],
+      "documentHash": {
+        "algorithm": "sha256",
+        "value": "969dd74a7213513ef92c02d64d6427fec03adaec6b1f5470602f9872725e5e24",
+        "contentType": "application/pdf",
+        "byteLength": 12279247
+      }
+    },
+    {
+      "id": "revolut-2025-11-24-share-sale-announcement",
+      "sourceUrl": "https://www.revolut.com/news/revolut_completes_fundraising_process_establishing_75_billion_valuation/",
+      "sourceTitle": "Revolut Completes Fundraising Process Establishing $75 Billion Valuation",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2025-11-24",
+      "effectiveDate": "2025-11-24",
+      "sourceClass": "company-primary",
+      "epistemicClass": "extracted",
+      "locator": "Newsroom article, Corporate, 24 November 2025",
+      "shortExcerpt": "Revolut announced completion of a share sale, valuing the company at $75 billion.",
+      "observedFacts": [
+        {
+          "id": "share-sale-transaction-date",
+          "statement": "Revolut announced completion of the share sale on 2025-11-24.",
+          "epistemicClass": "observed",
+          "value": "2025-11-24",
+          "period": {
+            "instantDate": "2025-11-24"
+          }
+        },
+        {
+          "id": "share-sale-headline-valuation",
+          "statement": "The share sale established an implied headline valuation of USD 75 billion.",
+          "epistemicClass": "observed",
+          "value": 75,
+          "unit": "USD billions",
+          "period": {
+            "instantDate": "2025-11-24"
+          }
+        },
+        {
+          "id": "share-sale-employee-secondary",
+          "statement": "Current employees were given the opportunity to sell as part of the employee share sale.",
+          "epistemicClass": "extracted",
+          "value": "employee share sale",
+          "period": {
+            "instantDate": "2025-11-24"
+          }
+        },
+        {
+          "id": "share-sale-investor-participation",
+          "statement": "The transaction was led by Coatue, Greenoaks, Dragoneer, and Fidelity Management & Research Company, with NVentures also participating.",
+          "epistemicClass": "extracted",
+          "value": [
+            "Coatue",
+            "Greenoaks",
+            "Dragoneer",
+            "Fidelity Management & Research Company",
+            "NVentures"
+          ],
+          "period": {
+            "instantDate": "2025-11-24"
+          }
+        },
+        {
+          "id": "share-sale-disclosure-limitations",
+          "statement": "Transaction terms, share rights, preferences, dilution, discounts, transaction volume, and cap-table data were not disclosed.",
+          "epistemicClass": "inferred",
+          "value": "not disclosed",
+          "period": {
+            "instantDate": "2025-11-24"
+          }
+        }
+      ]
+    },
+    {
+      "id": "federal-reserve-h10-gbp-usd-2026-03-24",
+      "sourceUrl": "https://www.federalreserve.gov/releases/h10/hist/dat00_uk.htm",
+      "sourceTitle": "Federal Reserve H.10 historical GBP rate",
+      "retrievedDate": "2026-07-26",
+      "effectiveDate": "2026-03-24",
+      "sourceClass": "government",
+      "epistemicClass": "extracted",
+      "locator": "Historical Rates for the Great British Pound, row 24-MAR-26",
+      "shortExcerpt": "Rates are in U.S. dollars per Great British Pound; 24-MAR-26 is 1.3383.",
+      "observedFacts": [
+        {
+          "id": "fed-h10-gbp-usd-rate",
+          "statement": "Federal Reserve H.10 GBP/USD USD per GBP observation for 2026-03-24 was 1.3383.",
+          "epistemicClass": "observed",
+          "value": 1.3383,
+          "unit": "USD per GBP",
+          "period": {
+            "instantDate": "2026-03-24"
+          }
+        }
+      ]
+    }
+  ],
+  "failedNotes": []
+}
