@@ -1,0 +1,1194 @@
+{
+  "schemaVersion": "trace.benchmark-scorer-input.v1",
+  "runId": "run-locked-test-v1",
+  "runnerName": "baseline-b",
+  "caseId": "test-saas-canva-2021",
+  "partition": "locked-test",
+  "caseInput": {
+    "schemaVersion": "trace.benchmark-case-input.v1",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "manifestSchemaVersion": "trace.benchmark-manifest.v1",
+    "caseId": "test-saas-canva-2021",
+    "partition": "locked-test",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Canva Pty Ltd",
+    "target": {
+      "legalName": "Canva Pty Ltd",
+      "jurisdiction": "AU",
+      "identifiers": [
+        {
+          "scheme": "tax-id",
+          "value": "ABN-80-158-929-938",
+          "jurisdiction": "AU"
+        },
+        {
+          "scheme": "company-number",
+          "value": "ACN-158-929-938",
+          "jurisdiction": "AU"
+        }
+      ],
+      "aliases": [
+        "Canva"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2021-09-15",
+    "cutoffDate": "2021-09-15",
+    "dataTier": "medium",
+    "sourcePolicy": {
+      "approvedPublicSourceCategories": [
+        "company-primary",
+        "government",
+        "market-data",
+        "news"
+      ],
+      "redistributionStatus": "public-urls-redistribution-not-established",
+      "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+      "onlyUrlsAndShortExcerptsMayBeCommitted": true
+    },
+    "authorityBoundary": {
+      "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+      "officialContestRulesStatus": "not-supplied",
+      "contestComplianceClaimAllowed": false,
+      "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+      "prohibitedClaims": [
+        "appraisal status",
+        "benchmark superiority",
+        "contest readiness",
+        "investment advice",
+        "official contest compliance"
+      ]
+    },
+    "sourceRecordIds": [
+      "canva-2021-09-14-techcrunch-funding",
+      "canva-2021-09-15-funding-release",
+      "canva-abn-lookup-identity"
+    ],
+    "evidenceLedger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Canva Pty Ltd",
+        "jurisdiction": "AU",
+        "identifiers": [
+          {
+            "scheme": "tax-id",
+            "value": "ABN-80-158-929-938",
+            "jurisdiction": "AU"
+          },
+          {
+            "scheme": "company-number",
+            "value": "ACN-158-929-938",
+            "jurisdiction": "AU"
+          }
+        ],
+        "aliases": [
+          "Canva"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2021-09-15",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-6a1dc4f6277d",
+          "sourceUrl": "https://techcrunch.com/2021/09/14/canva-raises-200-million-at-a-40-billion-valuation/",
+          "sourceTitle": "Canva raises USD 200 million at a USD 40 billion valuation",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-09-14",
+          "effectiveDate": "2021-09-14",
+          "sourceClass": "news",
+          "epistemicClass": "observed",
+          "locator": "TechCrunch, 14 Sep 2021",
+          "shortExcerpt": "News coverage before the measurement date reported Canva's funding amount, valuation, user scale and enterprise adoption.",
+          "observedFacts": [
+            {
+              "id": "fact-41556e11f809",
+              "statement": "News coverage described Canva as having a team of about 2,000 people.",
+              "epistemicClass": "observed",
+              "value": 2000,
+              "unit": "employees",
+              "period": {
+                "instantDate": "2021-09-14"
+              }
+            },
+            {
+              "id": "fact-a4716e883c0a",
+              "statement": "News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers.",
+              "epistemicClass": "observed",
+              "value": [
+                "Salesforce",
+                "Marriott International",
+                "PayPal",
+                "American Airlines"
+              ],
+              "period": {
+                "instantDate": "2021-09-14"
+              }
+            },
+            {
+              "id": "fact-a2fd5df385e4",
+              "statement": "News coverage reported more than 500,000 teams paying for Canva.",
+              "epistemicClass": "observed",
+              "value": 500000,
+              "unit": "paying teams, greater than",
+              "period": {
+                "instantDate": "2021-09-14"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-2eb623901f43",
+          "sourceUrl": "https://www.canva.com/newsroom/news/canva-announces-usd-40-billion-valuation-fueled-global-demand-visual-communication/",
+          "sourceTitle": "Canva announces USD 40 billion valuation",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-09-15",
+          "effectiveDate": "2021-09-15",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Canva newsroom, 15 Sep 2021",
+          "shortExcerpt": "Canva announced a USD 200m funding round, USD 40bn valuation, more than 60m monthly users and positive free cash flow.",
+          "observedFacts": [
+            {
+              "id": "fact-dd824711cfc6",
+              "statement": "Canva announced a USD 200 million funding round on 2021-09-15.",
+              "epistemicClass": "observed",
+              "value": 200,
+              "unit": "USD millions",
+              "period": {
+                "instantDate": "2021-09-15"
+              }
+            },
+            {
+              "id": "fact-ed0f54b1af89",
+              "statement": "Canva announced a USD 40 billion headline valuation after the funding round.",
+              "epistemicClass": "observed",
+              "value": 40,
+              "unit": "USD billions headline valuation",
+              "period": {
+                "instantDate": "2021-09-15"
+              }
+            },
+            {
+              "id": "fact-af53fd093bd5",
+              "statement": "Canva reported generating positive free cash flow at the time of the September 2021 announcement.",
+              "epistemicClass": "observed",
+              "value": true,
+              "period": {
+                "instantDate": "2021-09-15"
+              }
+            },
+            {
+              "id": "fact-2732a8f8f195",
+              "statement": "Canva reported more than 60 million monthly active users at the time of the funding announcement.",
+              "epistemicClass": "observed",
+              "value": 60,
+              "unit": "millions monthly active users, greater than",
+              "period": {
+                "instantDate": "2021-09-15"
+              }
+            },
+            {
+              "id": "fact-384491328ff2",
+              "statement": "Canva reported users in 190 countries at the time of the funding announcement.",
+              "epistemicClass": "observed",
+              "value": 190,
+              "unit": "countries",
+              "period": {
+                "instantDate": "2021-09-15"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-2b2ee9738bd3",
+          "sourceUrl": "https://abr.business.gov.au/ABN/View?abn=80158929938",
+          "sourceTitle": "Current details for ABN 80 158 929 938",
+          "retrievedDate": "2026-07-26",
+          "effectiveDate": "2012-06-12",
+          "sourceClass": "government",
+          "epistemicClass": "observed",
+          "locator": "Australian Business Register ABN 80 158 929 938",
+          "shortExcerpt": "ABN Lookup identifies Canva Pty Ltd as an active Australian private company with ABN and ACN metadata.",
+          "observedFacts": [
+            {
+              "id": "fact-67e9d3108cc0",
+              "statement": "ABN Lookup identifies the entity name as CANVA PTY LTD.",
+              "epistemicClass": "observed",
+              "value": "CANVA PTY LTD",
+              "period": {
+                "instantDate": "2012-06-12"
+              }
+            },
+            {
+              "id": "fact-a5860c904b69",
+              "statement": "ABN Lookup links Canva Pty Ltd to ACN 158 929 938.",
+              "epistemicClass": "observed",
+              "value": "158 929 938",
+              "unit": "Australian company number",
+              "period": {
+                "instantDate": "2012-06-12"
+              }
+            },
+            {
+              "id": "fact-6fe9275ffc5b",
+              "statement": "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12.",
+              "epistemicClass": "observed",
+              "value": "2012-06-12",
+              "unit": "ABN active date",
+              "period": {
+                "instantDate": "2012-06-12"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [],
+      "failedNotes": [
+        {
+          "id": "canva-security-rights-not-public",
+          "stage": "extraction",
+          "sourceTitle": "Canva public source set",
+          "attemptedAt": "2026-07-26T00:00:00+09:00",
+          "note": "Funding coverage does not disclose security rights, cap table or a completed exit valuation target."
+        }
+      ],
+      "warnings": []
+    }
+  },
+  "annotation": {
+    "schemaVersion": "trace.benchmark-annotation.v1",
+    "caseId": "test-saas-canva-2021",
+    "partition": "locked-test",
+    "measurementDate": "2021-09-15",
+    "expectedRoute": {
+      "route": "software-saas",
+      "acceptableAlternativeRoutes": [],
+      "evidenceIds": [
+        "ev-2b2ee9738bd3",
+        "ev-2eb623901f43",
+        "ev-6a1dc4f6277d"
+      ],
+      "rationale": "The cutoff evidence describes a global visual communication software platform with user, team and subscription adoption metrics."
+    },
+    "binaryClaims": [
+      {
+        "id": "canva-completed-public-exit",
+        "statement": "Canva had completed a public exit by the cutoff.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-2eb623901f43"
+        ]
+      },
+      {
+        "id": "canva-funding-public-by-cutoff",
+        "statement": "Canva's USD 200 million financing was public by the 2021-09-15 cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-2eb623901f43",
+          "ev-6a1dc4f6277d"
+        ]
+      },
+      {
+        "id": "canva-positive-free-cash-flow",
+        "statement": "Canva reported positive free cash flow at the time of the funding announcement.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-2eb623901f43"
+        ]
+      }
+    ],
+    "observableClaims": [
+      {
+        "id": "canva-2021-funding-size",
+        "statement": "Canva announced a USD 200 million funding round.",
+        "expectedValue": 200,
+        "unit": "USD millions",
+        "period": {
+          "instantDate": "2021-09-15"
+        },
+        "evidenceIds": [
+          "ev-2eb623901f43"
+        ]
+      },
+      {
+        "id": "canva-2021-headline-valuation",
+        "statement": "Canva announced a USD 40 billion headline valuation.",
+        "expectedValue": 40,
+        "unit": "USD billions headline valuation",
+        "period": {
+          "instantDate": "2021-09-15"
+        },
+        "evidenceIds": [
+          "ev-2eb623901f43"
+        ]
+      },
+      {
+        "id": "canva-2021-monthly-active-users",
+        "statement": "Canva reported more than 60 million monthly active users.",
+        "expectedValue": 60,
+        "unit": "millions monthly active users, greater than",
+        "period": {
+          "instantDate": "2021-09-15"
+        },
+        "evidenceIds": [
+          "ev-2eb623901f43"
+        ]
+      }
+    ],
+    "expectedAbstentions": [
+      {
+        "id": "canva-enterprise-value-abstain",
+        "field": "enterprise-value",
+        "reasonCode": "headline-valuation-not-enterprise-value",
+        "description": "The USD 40 billion funding valuation is a headline private financing valuation and may not be treated as enterprise value.",
+        "evidenceIds": [
+          "ev-2eb623901f43"
+        ]
+      },
+      {
+        "id": "canva-security-level-fair-value-abstain",
+        "field": "security-level-fair-value",
+        "reasonCode": "missing-security-rights-and-cap-table",
+        "description": "The funding release and news coverage do not disclose share rights, investor allocation or cap-table detail.",
+        "evidenceIds": [
+          "ev-2eb623901f43",
+          "ev-6a1dc4f6277d"
+        ]
+      }
+    ],
+    "valuationSeparationExpectations": {
+      "allowedValuationFields": [
+        "headline-valuation"
+      ],
+      "mustNotConflate": [
+        "funding amount with total equity value",
+        "headline private financing valuation with enterprise value",
+        "headline valuation with security-level fair value"
+      ],
+      "notes": "The public evidence contains a headline funding valuation only; manifest marks historical valuation-error scoring ineligible."
+    },
+    "completenessExpectations": [
+      {
+        "id": "canva-cover-saas-scale-and-valuation-limits",
+        "description": "A complete answer should cover entity identity, software route, funding, user scale, paid teams, free cash flow and valuation-separation limits.",
+        "requiredEvidenceClasses": [
+          "company-primary",
+          "government",
+          "news"
+        ],
+        "requiredTopics": [
+          "funding",
+          "software-saas route",
+          "user scale",
+          "valuation separation"
+        ],
+        "evidenceIds": [
+          "ev-2b2ee9738bd3",
+          "ev-2eb623901f43",
+          "ev-6a1dc4f6277d"
+        ]
+      }
+    ],
+    "historicalValuationTargets": {
+      "eligible": false,
+      "reason": "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+      "targets": []
+    }
+  },
+  "runnerOutput": {
+    "schemaVersion": "trace.benchmark-runner-output.v1",
+    "runnerName": "baseline-b",
+    "runId": "run-locked-test-v1",
+    "caseId": "test-saas-canva-2021",
+    "partition": "locked-test",
+    "status": "completed",
+    "timing": {
+      "schemaVersion": "trace.benchmark-timing.v1",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.222Z",
+      "durationMs": 222
+    },
+    "rawOutput": {
+      "markdown": "# Baseline B Fixed Template: Canva Pty Ltd\n\n## Case\n| Field | Value |\n| --- | --- |\n| Case ID | test-saas-canva-2021 |\n| Partition | locked-test |\n| Measurement date | 2021-09-15 |\n| Cutoff date | 2021-09-15 |\n| Data tier | medium |\n\n## Evidence Inventory\n| Evidence ID | Source | Class | Date |\n| --- | --- | --- | --- |\n| ev-6a1dc4f6277d | Canva raises USD 200 million at a USD 40 billion valuation | news | 2021-09-14 |\n| ev-2eb623901f43 | Canva announces USD 40 billion valuation | company-primary | 2021-09-15 |\n| ev-2b2ee9738bd3 | Current details for ABN 80 158 929 938 | government | undated |\n\n## Claim Register\n| Claim ID | Statement | Citation |\n| --- | --- | --- |\n| claim-7b6633261b2f | ABN Lookup identifies the entity name as CANVA PTY LTD. | ev-2b2ee9738bd3:fact-67e9d3108cc0 |\n| claim-33522817a7e7 | ABN Lookup links Canva Pty Ltd to ACN 158 929 938. | ev-2b2ee9738bd3:fact-a5860c904b69 |\n| claim-e358fee86086 | ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12. | ev-2b2ee9738bd3:fact-6fe9275ffc5b |\n| claim-151e20384fb3 | Canva announced a USD 200 million funding round on 2021-09-15. | ev-2eb623901f43:fact-dd824711cfc6 |\n| claim-824b758aa062 | Canva announced a USD 40 billion headline valuation after the funding round. | ev-2eb623901f43:fact-ed0f54b1af89 |\n| claim-454b0a724696 | Canva reported generating positive free cash flow at the time of the September 2021 announcement. | ev-2eb623901f43:fact-af53fd093bd5 |\n| claim-3e4f7d1cdb77 | Canva reported more than 60 million monthly active users at the time of the funding announcement. | ev-2eb623901f43:fact-2732a8f8f195 |\n| claim-3155dd111a60 | Canva reported users in 190 countries at the time of the funding announcement. | ev-2eb623901f43:fact-384491328ff2 |\n| claim-5346dd58edce | News coverage described Canva as having a team of about 2,000 people. | ev-6a1dc4f6277d:fact-41556e11f809 |\n| claim-305043b1a0d3 | News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers. | ev-6a1dc4f6277d:fact-a4716e883c0a |\n| claim-cf28d0cf5e8e | News coverage reported more than 500,000 teams paying for Canva. | ev-6a1dc4f6277d:fact-a2fd5df385e4 |\n\n## Valuation Fields\n- headline-valuation: omitted\n- enterprise-value: omitted\n- total-equity-value: omitted\n- security-level-fair-value: omitted\n\n## Limitations\n- This baseline performs deterministic evidence summarization only.\n- It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.\n- It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.\n- Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.\n",
+      "json": {
+        "schemaVersion": "trace.baseline-runner-output.v1",
+        "runnerName": "baseline-b",
+        "baselineKind": "fixed-template-report",
+        "inputFingerprint": "8761f3d875aa",
+        "case": {
+          "caseId": "test-saas-canva-2021",
+          "partition": "locked-test",
+          "scoringRole": "scored",
+          "countedInScoring": true,
+          "companyLegalName": "Canva Pty Ltd",
+          "measurementDate": "2021-09-15",
+          "cutoffDate": "2021-09-15",
+          "dataTier": "medium",
+          "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+          "sourceRecordIds": [
+            "canva-2021-09-14-techcrunch-funding",
+            "canva-2021-09-15-funding-release",
+            "canva-abn-lookup-identity"
+          ]
+        },
+        "sourcePolicy": {
+          "approvedPublicSourceCategories": [
+            "company-primary",
+            "government",
+            "market-data",
+            "news"
+          ],
+          "redistributionStatus": "public-urls-redistribution-not-established",
+          "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+          "onlyUrlsAndShortExcerptsMayBeCommitted": true
+        },
+        "authorityBoundary": {
+          "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+          "officialContestRulesStatus": "not-supplied",
+          "contestComplianceClaimAllowed": false,
+          "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+          "prohibitedClaims": [
+            "appraisal status",
+            "benchmark superiority",
+            "contest readiness",
+            "investment advice",
+            "official contest compliance"
+          ]
+        },
+        "evidence": [
+          {
+            "evidenceId": "ev-6a1dc4f6277d",
+            "sourceTitle": "Canva raises USD 200 million at a USD 40 billion valuation",
+            "sourceUrl": "https://techcrunch.com/2021/09/14/canva-raises-200-million-at-a-40-billion-valuation/",
+            "sourceClass": "news",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2021-09-14",
+            "effectiveDate": "2021-09-14",
+            "locator": "TechCrunch, 14 Sep 2021",
+            "shortExcerpt": "News coverage before the measurement date reported Canva's funding amount, valuation, user scale and enterprise adoption.",
+            "observedFacts": [
+              {
+                "factId": "fact-41556e11f809",
+                "statement": "News coverage described Canva as having a team of about 2,000 people.",
+                "value": 2000,
+                "unit": "employees",
+                "period": {
+                  "instantDate": "2021-09-14"
+                }
+              },
+              {
+                "factId": "fact-a4716e883c0a",
+                "statement": "News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers.",
+                "value": [
+                  "Salesforce",
+                  "Marriott International",
+                  "PayPal",
+                  "American Airlines"
+                ],
+                "period": {
+                  "instantDate": "2021-09-14"
+                }
+              },
+              {
+                "factId": "fact-a2fd5df385e4",
+                "statement": "News coverage reported more than 500,000 teams paying for Canva.",
+                "value": 500000,
+                "unit": "paying teams, greater than",
+                "period": {
+                  "instantDate": "2021-09-14"
+                }
+              }
+            ]
+          },
+          {
+            "evidenceId": "ev-2eb623901f43",
+            "sourceTitle": "Canva announces USD 40 billion valuation",
+            "sourceUrl": "https://www.canva.com/newsroom/news/canva-announces-usd-40-billion-valuation-fueled-global-demand-visual-communication/",
+            "sourceClass": "company-primary",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2021-09-15",
+            "effectiveDate": "2021-09-15",
+            "locator": "Canva newsroom, 15 Sep 2021",
+            "shortExcerpt": "Canva announced a USD 200m funding round, USD 40bn valuation, more than 60m monthly users and positive free cash flow.",
+            "observedFacts": [
+              {
+                "factId": "fact-dd824711cfc6",
+                "statement": "Canva announced a USD 200 million funding round on 2021-09-15.",
+                "value": 200,
+                "unit": "USD millions",
+                "period": {
+                  "instantDate": "2021-09-15"
+                }
+              },
+              {
+                "factId": "fact-ed0f54b1af89",
+                "statement": "Canva announced a USD 40 billion headline valuation after the funding round.",
+                "value": 40,
+                "unit": "USD billions headline valuation",
+                "period": {
+                  "instantDate": "2021-09-15"
+                }
+              },
+              {
+                "factId": "fact-af53fd093bd5",
+                "statement": "Canva reported generating positive free cash flow at the time of the September 2021 announcement.",
+                "value": true,
+                "period": {
+                  "instantDate": "2021-09-15"
+                }
+              },
+              {
+                "factId": "fact-2732a8f8f195",
+                "statement": "Canva reported more than 60 million monthly active users at the time of the funding announcement.",
+                "value": 60,
+                "unit": "millions monthly active users, greater than",
+                "period": {
+                  "instantDate": "2021-09-15"
+                }
+              },
+              {
+                "factId": "fact-384491328ff2",
+                "statement": "Canva reported users in 190 countries at the time of the funding announcement.",
+                "value": 190,
+                "unit": "countries",
+                "period": {
+                  "instantDate": "2021-09-15"
+                }
+              }
+            ]
+          },
+          {
+            "evidenceId": "ev-2b2ee9738bd3",
+            "sourceTitle": "Current details for ABN 80 158 929 938",
+            "sourceUrl": "https://abr.business.gov.au/ABN/View?abn=80158929938",
+            "sourceClass": "government",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "effectiveDate": "2012-06-12",
+            "locator": "Australian Business Register ABN 80 158 929 938",
+            "shortExcerpt": "ABN Lookup identifies Canva Pty Ltd as an active Australian private company with ABN and ACN metadata.",
+            "observedFacts": [
+              {
+                "factId": "fact-67e9d3108cc0",
+                "statement": "ABN Lookup identifies the entity name as CANVA PTY LTD.",
+                "value": "CANVA PTY LTD",
+                "period": {
+                  "instantDate": "2012-06-12"
+                }
+              },
+              {
+                "factId": "fact-a5860c904b69",
+                "statement": "ABN Lookup links Canva Pty Ltd to ACN 158 929 938.",
+                "value": "158 929 938",
+                "unit": "Australian company number",
+                "period": {
+                  "instantDate": "2012-06-12"
+                }
+              },
+              {
+                "factId": "fact-6fe9275ffc5b",
+                "statement": "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12.",
+                "value": "2012-06-12",
+                "unit": "ABN active date",
+                "period": {
+                  "instantDate": "2012-06-12"
+                }
+              }
+            ]
+          }
+        ],
+        "output": {
+          "template": {
+            "case": {
+              "caseId": "test-saas-canva-2021",
+              "partition": "locked-test",
+              "scoringRole": "scored",
+              "countedInScoring": true,
+              "companyLegalName": "Canva Pty Ltd",
+              "measurementDate": "2021-09-15",
+              "cutoffDate": "2021-09-15",
+              "dataTier": "medium",
+              "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+              "sourceRecordIds": [
+                "canva-2021-09-14-techcrunch-funding",
+                "canva-2021-09-15-funding-release",
+                "canva-abn-lookup-identity"
+              ]
+            },
+            "evidenceInventory": [
+              {
+                "evidenceId": "ev-6a1dc4f6277d",
+                "sourceTitle": "Canva raises USD 200 million at a USD 40 billion valuation",
+                "sourceUrl": "https://techcrunch.com/2021/09/14/canva-raises-200-million-at-a-40-billion-valuation/",
+                "sourceClass": "news",
+                "epistemicClass": "observed",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2021-09-14",
+                "effectiveDate": "2021-09-14",
+                "locator": "TechCrunch, 14 Sep 2021",
+                "shortExcerpt": "News coverage before the measurement date reported Canva's funding amount, valuation, user scale and enterprise adoption.",
+                "observedFacts": [
+                  {
+                    "factId": "fact-41556e11f809",
+                    "statement": "News coverage described Canva as having a team of about 2,000 people.",
+                    "value": 2000,
+                    "unit": "employees",
+                    "period": {
+                      "instantDate": "2021-09-14"
+                    }
+                  },
+                  {
+                    "factId": "fact-a4716e883c0a",
+                    "statement": "News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers.",
+                    "value": [
+                      "Salesforce",
+                      "Marriott International",
+                      "PayPal",
+                      "American Airlines"
+                    ],
+                    "period": {
+                      "instantDate": "2021-09-14"
+                    }
+                  },
+                  {
+                    "factId": "fact-a2fd5df385e4",
+                    "statement": "News coverage reported more than 500,000 teams paying for Canva.",
+                    "value": 500000,
+                    "unit": "paying teams, greater than",
+                    "period": {
+                      "instantDate": "2021-09-14"
+                    }
+                  }
+                ]
+              },
+              {
+                "evidenceId": "ev-2eb623901f43",
+                "sourceTitle": "Canva announces USD 40 billion valuation",
+                "sourceUrl": "https://www.canva.com/newsroom/news/canva-announces-usd-40-billion-valuation-fueled-global-demand-visual-communication/",
+                "sourceClass": "company-primary",
+                "epistemicClass": "observed",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2021-09-15",
+                "effectiveDate": "2021-09-15",
+                "locator": "Canva newsroom, 15 Sep 2021",
+                "shortExcerpt": "Canva announced a USD 200m funding round, USD 40bn valuation, more than 60m monthly users and positive free cash flow.",
+                "observedFacts": [
+                  {
+                    "factId": "fact-dd824711cfc6",
+                    "statement": "Canva announced a USD 200 million funding round on 2021-09-15.",
+                    "value": 200,
+                    "unit": "USD millions",
+                    "period": {
+                      "instantDate": "2021-09-15"
+                    }
+                  },
+                  {
+                    "factId": "fact-ed0f54b1af89",
+                    "statement": "Canva announced a USD 40 billion headline valuation after the funding round.",
+                    "value": 40,
+                    "unit": "USD billions headline valuation",
+                    "period": {
+                      "instantDate": "2021-09-15"
+                    }
+                  },
+                  {
+                    "factId": "fact-af53fd093bd5",
+                    "statement": "Canva reported generating positive free cash flow at the time of the September 2021 announcement.",
+                    "value": true,
+                    "period": {
+                      "instantDate": "2021-09-15"
+                    }
+                  },
+                  {
+                    "factId": "fact-2732a8f8f195",
+                    "statement": "Canva reported more than 60 million monthly active users at the time of the funding announcement.",
+                    "value": 60,
+                    "unit": "millions monthly active users, greater than",
+                    "period": {
+                      "instantDate": "2021-09-15"
+                    }
+                  },
+                  {
+                    "factId": "fact-384491328ff2",
+                    "statement": "Canva reported users in 190 countries at the time of the funding announcement.",
+                    "value": 190,
+                    "unit": "countries",
+                    "period": {
+                      "instantDate": "2021-09-15"
+                    }
+                  }
+                ]
+              },
+              {
+                "evidenceId": "ev-2b2ee9738bd3",
+                "sourceTitle": "Current details for ABN 80 158 929 938",
+                "sourceUrl": "https://abr.business.gov.au/ABN/View?abn=80158929938",
+                "sourceClass": "government",
+                "epistemicClass": "observed",
+                "retrievedDate": "2026-07-26",
+                "effectiveDate": "2012-06-12",
+                "locator": "Australian Business Register ABN 80 158 929 938",
+                "shortExcerpt": "ABN Lookup identifies Canva Pty Ltd as an active Australian private company with ABN and ACN metadata.",
+                "observedFacts": [
+                  {
+                    "factId": "fact-67e9d3108cc0",
+                    "statement": "ABN Lookup identifies the entity name as CANVA PTY LTD.",
+                    "value": "CANVA PTY LTD",
+                    "period": {
+                      "instantDate": "2012-06-12"
+                    }
+                  },
+                  {
+                    "factId": "fact-a5860c904b69",
+                    "statement": "ABN Lookup links Canva Pty Ltd to ACN 158 929 938.",
+                    "value": "158 929 938",
+                    "unit": "Australian company number",
+                    "period": {
+                      "instantDate": "2012-06-12"
+                    }
+                  },
+                  {
+                    "factId": "fact-6fe9275ffc5b",
+                    "statement": "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12.",
+                    "value": "2012-06-12",
+                    "unit": "ABN active date",
+                    "period": {
+                      "instantDate": "2012-06-12"
+                    }
+                  }
+                ]
+              }
+            ],
+            "claimRegister": [
+              {
+                "id": "claim-7b6633261b2f",
+                "kind": "observable",
+                "statement": "ABN Lookup identifies the entity name as CANVA PTY LTD.",
+                "value": "CANVA PTY LTD",
+                "period": {
+                  "instantDate": "2012-06-12"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-2b2ee9738bd3",
+                    "factId": "fact-67e9d3108cc0",
+                    "locator": "Australian Business Register ABN 80 158 929 938"
+                  }
+                ]
+              },
+              {
+                "id": "claim-33522817a7e7",
+                "kind": "observable",
+                "statement": "ABN Lookup links Canva Pty Ltd to ACN 158 929 938.",
+                "value": "158 929 938",
+                "unit": "Australian company number",
+                "period": {
+                  "instantDate": "2012-06-12"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-2b2ee9738bd3",
+                    "factId": "fact-a5860c904b69",
+                    "locator": "Australian Business Register ABN 80 158 929 938"
+                  }
+                ]
+              },
+              {
+                "id": "claim-e358fee86086",
+                "kind": "observable",
+                "statement": "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12.",
+                "value": "2012-06-12",
+                "unit": "ABN active date",
+                "period": {
+                  "instantDate": "2012-06-12"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-2b2ee9738bd3",
+                    "factId": "fact-6fe9275ffc5b",
+                    "locator": "Australian Business Register ABN 80 158 929 938"
+                  }
+                ]
+              },
+              {
+                "id": "claim-151e20384fb3",
+                "kind": "observable",
+                "statement": "Canva announced a USD 200 million funding round on 2021-09-15.",
+                "value": 200,
+                "unit": "USD millions",
+                "period": {
+                  "instantDate": "2021-09-15"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-2eb623901f43",
+                    "factId": "fact-dd824711cfc6",
+                    "locator": "Canva newsroom, 15 Sep 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-824b758aa062",
+                "kind": "observable",
+                "statement": "Canva announced a USD 40 billion headline valuation after the funding round.",
+                "value": 40,
+                "unit": "USD billions headline valuation",
+                "period": {
+                  "instantDate": "2021-09-15"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-2eb623901f43",
+                    "factId": "fact-ed0f54b1af89",
+                    "locator": "Canva newsroom, 15 Sep 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-454b0a724696",
+                "kind": "observable",
+                "statement": "Canva reported generating positive free cash flow at the time of the September 2021 announcement.",
+                "value": true,
+                "period": {
+                  "instantDate": "2021-09-15"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-2eb623901f43",
+                    "factId": "fact-af53fd093bd5",
+                    "locator": "Canva newsroom, 15 Sep 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-3e4f7d1cdb77",
+                "kind": "observable",
+                "statement": "Canva reported more than 60 million monthly active users at the time of the funding announcement.",
+                "value": 60,
+                "unit": "millions monthly active users, greater than",
+                "period": {
+                  "instantDate": "2021-09-15"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-2eb623901f43",
+                    "factId": "fact-2732a8f8f195",
+                    "locator": "Canva newsroom, 15 Sep 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-3155dd111a60",
+                "kind": "observable",
+                "statement": "Canva reported users in 190 countries at the time of the funding announcement.",
+                "value": 190,
+                "unit": "countries",
+                "period": {
+                  "instantDate": "2021-09-15"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-2eb623901f43",
+                    "factId": "fact-384491328ff2",
+                    "locator": "Canva newsroom, 15 Sep 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-5346dd58edce",
+                "kind": "observable",
+                "statement": "News coverage described Canva as having a team of about 2,000 people.",
+                "value": 2000,
+                "unit": "employees",
+                "period": {
+                  "instantDate": "2021-09-14"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-6a1dc4f6277d",
+                    "factId": "fact-41556e11f809",
+                    "locator": "TechCrunch, 14 Sep 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-305043b1a0d3",
+                "kind": "observable",
+                "statement": "News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers.",
+                "value": [
+                  "Salesforce",
+                  "Marriott International",
+                  "PayPal",
+                  "American Airlines"
+                ],
+                "period": {
+                  "instantDate": "2021-09-14"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-6a1dc4f6277d",
+                    "factId": "fact-a4716e883c0a",
+                    "locator": "TechCrunch, 14 Sep 2021"
+                  }
+                ]
+              },
+              {
+                "id": "claim-cf28d0cf5e8e",
+                "kind": "observable",
+                "statement": "News coverage reported more than 500,000 teams paying for Canva.",
+                "value": 500000,
+                "unit": "paying teams, greater than",
+                "period": {
+                  "instantDate": "2021-09-14"
+                },
+                "citations": [
+                  {
+                    "evidenceId": "ev-6a1dc4f6277d",
+                    "factId": "fact-a2fd5df385e4",
+                    "locator": "TechCrunch, 14 Sep 2021"
+                  }
+                ]
+              }
+            ],
+            "limitations": [
+              "This baseline performs deterministic evidence summarization only.",
+              "It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.",
+              "It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.",
+              "Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established."
+            ]
+          }
+        },
+        "omittedTraceLogic": [
+          "route-selection",
+          "sufficiency-gating",
+          "valuation-engine",
+          "adversarial-review"
+        ]
+      }
+    },
+    "normalized": {
+      "claims": [
+        {
+          "id": "claim-7b6633261b2f",
+          "kind": "observable",
+          "statement": "ABN Lookup identifies the entity name as CANVA PTY LTD.",
+          "value": "CANVA PTY LTD",
+          "period": {
+            "instantDate": "2012-06-12"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2b2ee9738bd3",
+              "factId": "fact-67e9d3108cc0",
+              "locator": "Australian Business Register ABN 80 158 929 938"
+            }
+          ]
+        },
+        {
+          "id": "claim-33522817a7e7",
+          "kind": "observable",
+          "statement": "ABN Lookup links Canva Pty Ltd to ACN 158 929 938.",
+          "value": "158 929 938",
+          "unit": "Australian company number",
+          "period": {
+            "instantDate": "2012-06-12"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2b2ee9738bd3",
+              "factId": "fact-a5860c904b69",
+              "locator": "Australian Business Register ABN 80 158 929 938"
+            }
+          ]
+        },
+        {
+          "id": "claim-e358fee86086",
+          "kind": "observable",
+          "statement": "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12.",
+          "value": "2012-06-12",
+          "unit": "ABN active date",
+          "period": {
+            "instantDate": "2012-06-12"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2b2ee9738bd3",
+              "factId": "fact-6fe9275ffc5b",
+              "locator": "Australian Business Register ABN 80 158 929 938"
+            }
+          ]
+        },
+        {
+          "id": "claim-151e20384fb3",
+          "kind": "observable",
+          "statement": "Canva announced a USD 200 million funding round on 2021-09-15.",
+          "value": 200,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2021-09-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2eb623901f43",
+              "factId": "fact-dd824711cfc6",
+              "locator": "Canva newsroom, 15 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-824b758aa062",
+          "kind": "observable",
+          "statement": "Canva announced a USD 40 billion headline valuation after the funding round.",
+          "value": 40,
+          "unit": "USD billions headline valuation",
+          "period": {
+            "instantDate": "2021-09-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2eb623901f43",
+              "factId": "fact-ed0f54b1af89",
+              "locator": "Canva newsroom, 15 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-454b0a724696",
+          "kind": "observable",
+          "statement": "Canva reported generating positive free cash flow at the time of the September 2021 announcement.",
+          "value": true,
+          "period": {
+            "instantDate": "2021-09-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2eb623901f43",
+              "factId": "fact-af53fd093bd5",
+              "locator": "Canva newsroom, 15 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-3e4f7d1cdb77",
+          "kind": "observable",
+          "statement": "Canva reported more than 60 million monthly active users at the time of the funding announcement.",
+          "value": 60,
+          "unit": "millions monthly active users, greater than",
+          "period": {
+            "instantDate": "2021-09-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2eb623901f43",
+              "factId": "fact-2732a8f8f195",
+              "locator": "Canva newsroom, 15 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-3155dd111a60",
+          "kind": "observable",
+          "statement": "Canva reported users in 190 countries at the time of the funding announcement.",
+          "value": 190,
+          "unit": "countries",
+          "period": {
+            "instantDate": "2021-09-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2eb623901f43",
+              "factId": "fact-384491328ff2",
+              "locator": "Canva newsroom, 15 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-5346dd58edce",
+          "kind": "observable",
+          "statement": "News coverage described Canva as having a team of about 2,000 people.",
+          "value": 2000,
+          "unit": "employees",
+          "period": {
+            "instantDate": "2021-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-6a1dc4f6277d",
+              "factId": "fact-41556e11f809",
+              "locator": "TechCrunch, 14 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-305043b1a0d3",
+          "kind": "observable",
+          "statement": "News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers.",
+          "value": [
+            "Salesforce",
+            "Marriott International",
+            "PayPal",
+            "American Airlines"
+          ],
+          "period": {
+            "instantDate": "2021-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-6a1dc4f6277d",
+              "factId": "fact-a4716e883c0a",
+              "locator": "TechCrunch, 14 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "claim-cf28d0cf5e8e",
+          "kind": "observable",
+          "statement": "News coverage reported more than 500,000 teams paying for Canva.",
+          "value": 500000,
+          "unit": "paying teams, greater than",
+          "period": {
+            "instantDate": "2021-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-6a1dc4f6277d",
+              "factId": "fact-a2fd5df385e4",
+              "locator": "TechCrunch, 14 Sep 2021"
+            }
+          ]
+        }
+      ],
+      "route": {
+        "status": "omitted"
+      },
+      "abstentions": [],
+      "valuations": [
+        {
+          "field": "headline-valuation",
+          "status": "omitted",
+          "evidenceIds": []
+        },
+        {
+          "field": "enterprise-value",
+          "status": "omitted",
+          "evidenceIds": []
+        },
+        {
+          "field": "total-equity-value",
+          "status": "omitted",
+          "evidenceIds": []
+        },
+        {
+          "field": "security-level-fair-value",
+          "status": "omitted",
+          "evidenceIds": []
+        }
+      ]
+    },
+    "failures": []
+  }
+}

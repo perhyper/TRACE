@@ -1,0 +1,122 @@
+{
+  "schemaVersion": "trace.benchmark-case-score.v1",
+  "runId": "run-locked-test-v1",
+  "runnerName": "baseline-a",
+  "caseId": "test-fintech-stripe-2023",
+  "partition": "locked-test",
+  "status": "scored",
+  "metrics": [
+    {
+      "metricId": "evidence-supported-claim-precision",
+      "status": "scored",
+      "value": 0.375,
+      "numerator": 3,
+      "denominator": 8,
+      "notes": []
+    },
+    {
+      "metricId": "citation-validity",
+      "status": "scored",
+      "value": 0.375,
+      "numerator": 3,
+      "denominator": 8,
+      "notes": []
+    },
+    {
+      "metricId": "source-quality",
+      "status": "scored",
+      "value": 0.8,
+      "numerator": 6.4,
+      "denominator": 8,
+      "notes": []
+    },
+    {
+      "metricId": "route-accuracy",
+      "status": "scored",
+      "value": 0,
+      "numerator": 0,
+      "denominator": 3,
+      "notes": [
+        "Route rationale did not cite cutoff-visible expected route evidence.",
+        "Route rationale did not satisfy the annotated rationale requirement.",
+        "Route selection was omitted."
+      ]
+    },
+    {
+      "metricId": "abstention-behavior",
+      "status": "scored",
+      "value": 0,
+      "numerator": 0,
+      "denominator": 2,
+      "notes": [
+        "stripe-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+        "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+      ]
+    },
+    {
+      "metricId": "valuation-separation",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": [
+        "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+      ]
+    },
+    {
+      "metricId": "historical-valuation-error",
+      "status": "skipped",
+      "numerator": 0,
+      "denominator": 0,
+      "notes": [
+        "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence."
+      ]
+    },
+    {
+      "metricId": "completeness",
+      "status": "scored",
+      "value": 0.5,
+      "numerator": 0.5,
+      "denominator": 1,
+      "notes": [
+        "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1."
+      ]
+    },
+    {
+      "metricId": "reproducibility",
+      "status": "skipped",
+      "numerator": 0,
+      "denominator": 0,
+      "notes": [
+        "Per-case reproducibility requires aggregate comparison across repeated runs."
+      ]
+    },
+    {
+      "metricId": "completion-status",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": []
+    },
+    {
+      "metricId": "duration",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": [
+        "durationMs=180"
+      ]
+    },
+    {
+      "metricId": "failure-records",
+      "status": "scored",
+      "value": 1,
+      "numerator": 1,
+      "denominator": 1,
+      "notes": []
+    }
+  ],
+  "failures": []
+}

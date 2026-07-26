@@ -1,0 +1,573 @@
+{
+  "schemaVersion": "trace.benchmark-per-claim-score.v1",
+  "runId": "run-locked-test-v1",
+  "runnerName": "trace-full",
+  "caseId": "test-biotech-recursion-2021",
+  "partition": "locked-test",
+  "status": "scored",
+  "claims": [
+    {
+      "claimId": "recursion-final-prospectus-by-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "recursion-final-prospectus-by-cutoff",
+      "expectedStatement": "Recursion's final prospectus was dated at the 2021-04-15 cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-da68c304b2cc"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "recursion-pricing-release-input-visible",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "recursion-pricing-release-input-visible",
+      "expectedStatement": "Recursion's 2021-04-16 IPO pricing release was available as cutoff model-input evidence.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-acdbbf183954"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "recursion-s1-filed-by-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "recursion-s1-filed-by-cutoff",
+      "expectedStatement": "Recursion filed an S-1 before the 2021-04-15 cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-95a848a8ee5a"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "trace-claim-29030301197a",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-29030301197a",
+      "emittedStatement": "Recursion filed a Form S-1 registration statement for its initial public offering before the cutoff.",
+      "emittedValue": true,
+      "emittedPeriod": {
+        "instantDate": "2021-03-22"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-95a848a8ee5a"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-95a848a8ee5a",
+          "factId": "fact-760052dc5bfc",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-62a47d259bd0",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-62a47d259bd0",
+      "emittedStatement": "Recursion described the Recursion OS as combining infrastructure, biological datasets, algorithms and machine-learning tools.",
+      "emittedValue": "Recursion OS platform",
+      "emittedPeriod": {
+        "instantDate": "2021-03-22"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-95a848a8ee5a"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-95a848a8ee5a",
+          "factId": "fact-513edb126016",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-63cc8027025d",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-63cc8027025d",
+      "emittedStatement": "Recursion described itself as a clinical-stage biotechnology company using technology to decode biology.",
+      "emittedValue": "clinical-stage biotechnology company",
+      "emittedPeriod": {
+        "instantDate": "2021-03-22"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-95a848a8ee5a"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-95a848a8ee5a",
+          "factId": "fact-72b50c96fb48",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-a450b9f1a91c",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-a450b9f1a91c",
+      "emittedStatement": "The S-1 identifies the registrant as Recursion Pharmaceuticals, Inc., incorporated in Delaware, with CIK 0001601830.",
+      "emittedValue": "SEC-CIK-0001601830",
+      "emittedUnit": "SEC CIK",
+      "emittedPeriod": {
+        "instantDate": "2021-03-22"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-95a848a8ee5a"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-95a848a8ee5a",
+          "factId": "fact-436d6b9d4b97",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-ece5923b25ed",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-ece5923b25ed",
+      "emittedStatement": "The final prospectus describes Class A shares with one vote and Class B shares with ten votes per share.",
+      "emittedValue": [
+        "Class A: one vote",
+        "Class B: ten votes"
+      ],
+      "emittedPeriod": {
+        "instantDate": "2021-04-15"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-da68c304b2cc"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-da68c304b2cc",
+          "factId": "fact-3f04bc86a665",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "recursion-ipo-gross-proceeds",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "recursion-ipo-gross-proceeds",
+      "emittedClaimId": "trace-claim-522e35601793",
+      "expectedStatement": "The final prospectus states USD 436.363632 million total initial public offering price before deductions.",
+      "emittedStatement": "The final prospectus states total initial public offering price of USD 436,363,632 before deductions.",
+      "expectedValue": 436.363632,
+      "emittedValue": 436.363632,
+      "expectedUnit": "USD millions gross offering value",
+      "emittedUnit": "USD millions gross offering value",
+      "expectedPeriod": {
+        "instantDate": "2021-04-15"
+      },
+      "emittedPeriod": {
+        "instantDate": "2021-04-15"
+      },
+      "expectedEvidenceIds": [
+        "ev-da68c304b2cc"
+      ],
+      "emittedEvidenceIds": [
+        "ev-da68c304b2cc"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-da68c304b2cc",
+          "factId": "fact-05fd9e45605c",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "recursion-ipo-public-price",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "recursion-ipo-public-price",
+      "emittedClaimId": "trace-claim-e7612c558534",
+      "expectedStatement": "The final prospectus states an IPO price of USD 18.00 per share.",
+      "emittedStatement": "The final prospectus states an initial public offering price of USD 18.00 per share.",
+      "expectedValue": 18,
+      "emittedValue": 18,
+      "expectedUnit": "USD per share",
+      "emittedUnit": "USD per share",
+      "expectedPeriod": {
+        "instantDate": "2021-04-15"
+      },
+      "emittedPeriod": {
+        "instantDate": "2021-04-15"
+      },
+      "expectedEvidenceIds": [
+        "ev-da68c304b2cc"
+      ],
+      "emittedEvidenceIds": [
+        "ev-da68c304b2cc"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-da68c304b2cc",
+          "factId": "fact-7f8929dbacce",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "recursion-ipo-shares-offered",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "recursion-ipo-shares-offered",
+      "emittedClaimId": "trace-claim-eb41eeb46798",
+      "expectedStatement": "The final prospectus states 24,242,424 Class A shares were offered.",
+      "emittedStatement": "The final prospectus states Recursion was offering 24,242,424 shares of Class A common stock.",
+      "expectedValue": 24242424,
+      "emittedValue": 24242424,
+      "expectedUnit": "Class A shares offered",
+      "emittedUnit": "Class A shares offered",
+      "expectedPeriod": {
+        "instantDate": "2021-04-15"
+      },
+      "emittedPeriod": {
+        "instantDate": "2021-04-15"
+      },
+      "expectedEvidenceIds": [
+        "ev-da68c304b2cc"
+      ],
+      "emittedEvidenceIds": [
+        "ev-da68c304b2cc"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-da68c304b2cc",
+          "factId": "fact-076ec5dfb0e8",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "regulatory-filing",
+          "sourceQualityCategory": "regulatory",
+          "sourceQualityWeight": 0.95,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.95,
+        "citedSourceClasses": [
+          "regulatory-filing"
+        ],
+        "citedSourceQualityCategories": [
+          "regulatory"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    }
+  ],
+  "failures": []
+}

@@ -1,0 +1,1637 @@
+{
+  "schemaVersion": "trace.trace-full-runner-output.v1",
+  "runnerName": "trace-full",
+  "analyzerVersion": "0.1.0",
+  "inputFingerprint": "77426198529d",
+  "case": {
+    "caseId": "test-biotech-altos-2022",
+    "partition": "locked-test",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Altos Labs, Inc.",
+    "measurementDate": "2022-01-19",
+    "cutoffDate": "2022-01-19",
+    "dataTier": "sparse",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "sourceRecordIds": [
+      "altos-2022-01-19-cira-yamanaka",
+      "altos-2022-01-19-launch-prnewswire",
+      "altos-2022-01-19-nature-biotech-news"
+    ]
+  },
+  "sourcePolicy": {
+    "approvedPublicSourceCategories": [
+      "company-primary",
+      "government",
+      "news",
+      "peer-reviewed"
+    ],
+    "redistributionStatus": "public-urls-redistribution-not-established",
+    "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+    "onlyUrlsAndShortExcerptsMayBeCommitted": true
+  },
+  "authorityBoundary": {
+    "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+    "officialContestRulesStatus": "not-supplied",
+    "contestComplianceClaimAllowed": false,
+    "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+    "prohibitedClaims": [
+      "appraisal status",
+      "benchmark superiority",
+      "contest readiness",
+      "investment advice",
+      "official contest compliance"
+    ]
+  },
+  "analyzerPath": [
+    "evidence-ledger",
+    "sufficiency-gating",
+    "route-selection",
+    "valuation-engine",
+    "adversarial-review",
+    "report-composer"
+  ],
+  "runtimeResult": {
+    "ledger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Altos Labs, Inc.",
+        "jurisdiction": "US",
+        "identifiers": [
+          {
+            "scheme": "other",
+            "value": "altoslabs.com",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "Altos",
+          "Altos Labs"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2022-01-19",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-7eacfac5ad8d",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/altos-labs-launches-with-the-goal-to-transform-medicine-through-cellular-rejuvenation-programming-301463541.html",
+          "sourceTitle": "Altos Labs launches with cellular rejuvenation programming goal",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2022-01-19",
+          "effectiveDate": "2022-01-19",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Altos Labs release distributed by PR Newswire, 19 Jan 2022",
+          "shortExcerpt": "Altos launched as a biotechnology company with USD 3bn committed, cellular rejuvenation focus and global institute plans.",
+          "observedFacts": [
+            {
+              "id": "fact-5eae98da6ff5",
+              "statement": "Altos Labs described its focus as cellular rejuvenation programming to restore cell health and resilience.",
+              "epistemicClass": "observed",
+              "value": "cellular rejuvenation programming",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            },
+            {
+              "id": "fact-cc7998270308",
+              "statement": "Altos Labs launched with USD 3 billion fully committed from investors.",
+              "epistemicClass": "observed",
+              "value": 3,
+              "unit": "USD billions committed funding",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            },
+            {
+              "id": "fact-f8cb0c951253",
+              "statement": "Altos Labs publicly launched on 2022-01-19.",
+              "epistemicClass": "observed",
+              "value": "public launch",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            },
+            {
+              "id": "fact-d8747d98218e",
+              "statement": "Altos said Shinya Yamanaka would serve as senior scientific advisor without remuneration.",
+              "epistemicClass": "observed",
+              "value": "Shinya Yamanaka senior scientific advisor",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            },
+            {
+              "id": "fact-31e73c0e39c2",
+              "statement": "Altos said it would initially be based in the San Francisco Bay Area, San Diego and Cambridge, UK, with collaborations in Japan.",
+              "epistemicClass": "observed",
+              "value": [
+                "San Francisco Bay Area",
+                "San Diego",
+                "Cambridge UK",
+                "Japan collaborations"
+              ],
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-4e47b1f24b3b",
+          "sourceUrl": "https://www.cira.kyoto-u.ac.jp/e/pressrelease/other/220119-160000.html",
+          "sourceTitle": "Prof. Shinya Yamanaka serves as senior scientific advisor to Altos Labs",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2022-01-19",
+          "effectiveDate": "2022-01-19",
+          "sourceClass": "government",
+          "epistemicClass": "observed",
+          "locator": "CiRA Kyoto University news, 19 Jan 2022",
+          "shortExcerpt": "Kyoto University's CiRA confirmed Yamanaka's unpaid Altos advisor role and Japan research collaboration plans.",
+          "observedFacts": [
+            {
+              "id": "fact-43540ee5f2ac",
+              "statement": "CiRA reported that Altos would provide funds for research projects in cellular rejuvenation programming in Japan.",
+              "epistemicClass": "observed",
+              "value": "funded Japan research projects",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            },
+            {
+              "id": "fact-cf564b29f7a5",
+              "statement": "CiRA reported that Shinya Yamanaka would serve as an unpaid senior scientific advisor to Altos Labs.",
+              "epistemicClass": "observed",
+              "value": "unpaid senior scientific advisor",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-5ec7f4fa2e2b",
+          "sourceUrl": "https://www.nature.com/articles/d41587-022-00002-4",
+          "sourceTitle": "Rejuvenation by controlled reprogramming is the latest gambit in anti-aging",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2022-01-19",
+          "effectiveDate": "2022-01-19",
+          "sourceClass": "news",
+          "epistemicClass": "observed",
+          "locator": "Nature Biotechnology news, 19 Jan 2022",
+          "shortExcerpt": "Nature Biotechnology covered Altos' launch, its USD 3bn initial financing and the partial reprogramming thesis.",
+          "observedFacts": [
+            {
+              "id": "fact-f03f301f51ac",
+              "statement": "Nature Biotechnology described controlled partial reprogramming as the scientific thesis behind Altos and similar ventures.",
+              "epistemicClass": "observed",
+              "value": "controlled partial reprogramming",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            },
+            {
+              "id": "fact-e9d43b08c38f",
+              "statement": "Nature Biotechnology reported Altos launched with USD 3 billion in initial financing.",
+              "epistemicClass": "observed",
+              "value": 3,
+              "unit": "USD billions initial financing",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [],
+      "failedNotes": [
+        {
+          "id": "altos-product-stage-not-public",
+          "stage": "extraction",
+          "sourceTitle": "Altos launch source set",
+          "attemptedAt": "2026-07-26T00:00:00+09:00",
+          "note": "The launch sources do not disclose product cash-flow forecasts, commercial products, clinical-stage assets or security-level terms."
+        }
+      ],
+      "warnings": []
+    },
+    "sufficiency": {
+      "status": "sufficient",
+      "score": 0.85,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "met",
+          "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "met",
+          "explanation": "Multiple high-authority source classes support routing.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-7eacfac5ad8d"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "met",
+          "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+          "evidenceIds": [
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "missing",
+          "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        }
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "rationale": "Evidence coverage is sufficient for route selection before valuation."
+    },
+    "route": {
+      "status": "selected",
+      "selectedRoute": "biotech-rnpv",
+      "selectedReasons": [
+        {
+          "summary": "Evidence describes a biotech, diagnostics, or therapeutics company with clinical studies, pipeline, FDA, CRISPR, product-launch, or rNPV facts.",
+          "evidenceIds": [
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        }
+      ],
+      "candidates": [
+        {
+          "route": "biotech-rnpv",
+          "status": "selected",
+          "score": 0.6667,
+          "reasons": [
+            {
+              "summary": "Evidence describes a biotech, diagnostics, or therapeutics company with clinical studies, pipeline, FDA, CRISPR, product-launch, or rNPV facts.",
+              "evidenceIds": [
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the financial services route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected biotech rnpv route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        }
+      ],
+      "rejectedRoutes": [
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the financial services route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected biotech rnpv route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "missingInformation": [
+            {
+              "id": "missing-recent-secondary-transaction",
+              "topic": "Recent secondary transaction",
+              "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+              "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "no-product-cash-flow-forecast",
+          "explanation": "Clinical, diagnostics, therapeutics, pipeline, or product-stage evidence supports biotech-rNPV routing, but no product cash-flow forecast and probability assumptions support enterprise value.",
+          "missingInformation": [
+            {
+              "id": "missing-product-cash-flow-forecast",
+              "topic": "Product cash-flow forecast",
+              "description": "The evidence does not provide product-level cash flows, development probabilities, milestones, and commercial timing required for rNPV.",
+              "consequence": "TRACE abstains from enterprise value.",
+              "requiredFor": [
+                "enterprise-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "missing-total-equity-capitalization",
+          "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "missingInformation": [
+            {
+              "id": "missing-total-equity-capitalization",
+              "topic": "Total equity capitalization",
+              "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+              "consequence": "TRACE abstains from total equity value.",
+              "requiredFor": [
+                "total-equity-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "missing-security-rights-and-cap-table",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "missingInformation": [
+            {
+              "id": "missing-cap-table",
+              "topic": "Cap table",
+              "description": "The evidence ledger does not disclose capitalization table data.",
+              "consequence": "TRACE cannot allocate value across securities or holders.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-dilution",
+              "topic": "Dilution",
+              "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+              "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-preferences",
+              "topic": "Share preferences",
+              "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+              "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-rights",
+              "topic": "Share rights",
+              "description": "The evidence ledger does not disclose rights attached to the specific security.",
+              "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        }
+      }
+    },
+    "review": {
+      "status": "passed",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "pass",
+          "category": "cutoff",
+          "message": "Included evidence satisfies the measurement-date publication cutoff.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route selection is consistent with sufficiency status: biotech-rnpv.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        }
+      ]
+    }
+  },
+  "report": {
+    "schemaVersion": "trace.report.v1",
+    "company": {
+      "legalName": "Altos Labs, Inc.",
+      "jurisdiction": "US",
+      "identifiers": [
+        {
+          "scheme": "other",
+          "value": "altoslabs.com",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "Altos",
+        "Altos Labs"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2022-01-19",
+    "decisionMode": "full-analysis",
+    "evidence": [
+      {
+        "id": "ev-4e47b1f24b3b",
+        "sourceUrl": "https://www.cira.kyoto-u.ac.jp/e/pressrelease/other/220119-160000.html",
+        "sourceTitle": "Prof. Shinya Yamanaka serves as senior scientific advisor to Altos Labs",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2022-01-19",
+        "effectiveDate": "2022-01-19",
+        "sourceClass": "government",
+        "epistemicClass": "observed",
+        "locator": "CiRA Kyoto University news, 19 Jan 2022",
+        "shortExcerpt": "Kyoto University's CiRA confirmed Yamanaka's unpaid Altos advisor role and Japan research collaboration plans.",
+        "observedFacts": [
+          {
+            "id": "fact-43540ee5f2ac",
+            "statement": "CiRA reported that Altos would provide funds for research projects in cellular rejuvenation programming in Japan.",
+            "epistemicClass": "observed",
+            "value": "funded Japan research projects",
+            "period": {
+              "instantDate": "2022-01-19"
+            }
+          },
+          {
+            "id": "fact-cf564b29f7a5",
+            "statement": "CiRA reported that Shinya Yamanaka would serve as an unpaid senior scientific advisor to Altos Labs.",
+            "epistemicClass": "observed",
+            "value": "unpaid senior scientific advisor",
+            "period": {
+              "instantDate": "2022-01-19"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ev-5ec7f4fa2e2b",
+        "sourceUrl": "https://www.nature.com/articles/d41587-022-00002-4",
+        "sourceTitle": "Rejuvenation by controlled reprogramming is the latest gambit in anti-aging",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2022-01-19",
+        "effectiveDate": "2022-01-19",
+        "sourceClass": "news",
+        "epistemicClass": "observed",
+        "locator": "Nature Biotechnology news, 19 Jan 2022",
+        "shortExcerpt": "Nature Biotechnology covered Altos' launch, its USD 3bn initial financing and the partial reprogramming thesis.",
+        "observedFacts": [
+          {
+            "id": "fact-f03f301f51ac",
+            "statement": "Nature Biotechnology described controlled partial reprogramming as the scientific thesis behind Altos and similar ventures.",
+            "epistemicClass": "observed",
+            "value": "controlled partial reprogramming",
+            "period": {
+              "instantDate": "2022-01-19"
+            }
+          },
+          {
+            "id": "fact-e9d43b08c38f",
+            "statement": "Nature Biotechnology reported Altos launched with USD 3 billion in initial financing.",
+            "epistemicClass": "observed",
+            "value": 3,
+            "unit": "USD billions initial financing",
+            "period": {
+              "instantDate": "2022-01-19"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ev-7eacfac5ad8d",
+        "sourceUrl": "https://www.prnewswire.com/news-releases/altos-labs-launches-with-the-goal-to-transform-medicine-through-cellular-rejuvenation-programming-301463541.html",
+        "sourceTitle": "Altos Labs launches with cellular rejuvenation programming goal",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2022-01-19",
+        "effectiveDate": "2022-01-19",
+        "sourceClass": "company-primary",
+        "epistemicClass": "observed",
+        "locator": "Altos Labs release distributed by PR Newswire, 19 Jan 2022",
+        "shortExcerpt": "Altos launched as a biotechnology company with USD 3bn committed, cellular rejuvenation focus and global institute plans.",
+        "observedFacts": [
+          {
+            "id": "fact-5eae98da6ff5",
+            "statement": "Altos Labs described its focus as cellular rejuvenation programming to restore cell health and resilience.",
+            "epistemicClass": "observed",
+            "value": "cellular rejuvenation programming",
+            "period": {
+              "instantDate": "2022-01-19"
+            }
+          },
+          {
+            "id": "fact-cc7998270308",
+            "statement": "Altos Labs launched with USD 3 billion fully committed from investors.",
+            "epistemicClass": "observed",
+            "value": 3,
+            "unit": "USD billions committed funding",
+            "period": {
+              "instantDate": "2022-01-19"
+            }
+          },
+          {
+            "id": "fact-f8cb0c951253",
+            "statement": "Altos Labs publicly launched on 2022-01-19.",
+            "epistemicClass": "observed",
+            "value": "public launch",
+            "period": {
+              "instantDate": "2022-01-19"
+            }
+          },
+          {
+            "id": "fact-d8747d98218e",
+            "statement": "Altos said Shinya Yamanaka would serve as senior scientific advisor without remuneration.",
+            "epistemicClass": "observed",
+            "value": "Shinya Yamanaka senior scientific advisor",
+            "period": {
+              "instantDate": "2022-01-19"
+            }
+          },
+          {
+            "id": "fact-31e73c0e39c2",
+            "statement": "Altos said it would initially be based in the San Francisco Bay Area, San Diego and Cambridge, UK, with collaborations in Japan.",
+            "epistemicClass": "observed",
+            "value": [
+              "San Francisco Bay Area",
+              "San Diego",
+              "Cambridge UK",
+              "Japan collaborations"
+            ],
+            "period": {
+              "instantDate": "2022-01-19"
+            }
+          }
+        ]
+      }
+    ],
+    "sufficiency": {
+      "status": "sufficient",
+      "score": 0.85,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "met",
+          "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "met",
+          "explanation": "Multiple high-authority source classes support routing.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-7eacfac5ad8d"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "met",
+          "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+          "evidenceIds": [
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "missing",
+          "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        }
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "rationale": "Evidence coverage is sufficient for route selection before valuation."
+    },
+    "route": {
+      "status": "selected",
+      "selectedRoute": "biotech-rnpv",
+      "selectedReasons": [
+        {
+          "summary": "Evidence describes a biotech, diagnostics, or therapeutics company with clinical studies, pipeline, FDA, CRISPR, product-launch, or rNPV facts.",
+          "evidenceIds": [
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        }
+      ],
+      "candidates": [
+        {
+          "route": "biotech-rnpv",
+          "status": "selected",
+          "score": 0.6667,
+          "reasons": [
+            {
+              "summary": "Evidence describes a biotech, diagnostics, or therapeutics company with clinical studies, pipeline, FDA, CRISPR, product-launch, or rNPV facts.",
+              "evidenceIds": [
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the financial services route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected biotech rnpv route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        }
+      ],
+      "rejectedRoutes": [
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the financial services route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected biotech rnpv route.",
+              "evidenceIds": [
+                "ev-4e47b1f24b3b",
+                "ev-5ec7f4fa2e2b",
+                "ev-7eacfac5ad8d"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "missingInformation": [
+            {
+              "id": "missing-recent-secondary-transaction",
+              "topic": "Recent secondary transaction",
+              "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+              "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "no-product-cash-flow-forecast",
+          "explanation": "Clinical, diagnostics, therapeutics, pipeline, or product-stage evidence supports biotech-rNPV routing, but no product cash-flow forecast and probability assumptions support enterprise value.",
+          "missingInformation": [
+            {
+              "id": "missing-product-cash-flow-forecast",
+              "topic": "Product cash-flow forecast",
+              "description": "The evidence does not provide product-level cash flows, development probabilities, milestones, and commercial timing required for rNPV.",
+              "consequence": "TRACE abstains from enterprise value.",
+              "requiredFor": [
+                "enterprise-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "missing-total-equity-capitalization",
+          "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "missingInformation": [
+            {
+              "id": "missing-total-equity-capitalization",
+              "topic": "Total equity capitalization",
+              "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+              "consequence": "TRACE abstains from total equity value.",
+              "requiredFor": [
+                "total-equity-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "missing-security-rights-and-cap-table",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "missingInformation": [
+            {
+              "id": "missing-cap-table",
+              "topic": "Cap table",
+              "description": "The evidence ledger does not disclose capitalization table data.",
+              "consequence": "TRACE cannot allocate value across securities or holders.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-dilution",
+              "topic": "Dilution",
+              "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+              "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-preferences",
+              "topic": "Share preferences",
+              "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+              "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-rights",
+              "topic": "Share rights",
+              "description": "The evidence ledger does not disclose rights attached to the specific security.",
+              "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ]
+        }
+      }
+    },
+    "review": {
+      "status": "passed",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "pass",
+          "category": "cutoff",
+          "message": "Included evidence satisfies the measurement-date publication cutoff.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route selection is consistent with sufficiency status: biotech-rnpv.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-4e47b1f24b3b",
+            "ev-5ec7f4fa2e2b",
+            "ev-7eacfac5ad8d"
+          ],
+          "missingInformation": []
+        }
+      ]
+    },
+    "sections": {
+      "facts": [
+        "Altos Labs described its focus as cellular rejuvenation programming to restore cell health and resilience. value=cellular rejuvenation programming; period=instant 2022-01-19; epistemic=observed [ev-7eacfac5ad8d]",
+        "Altos Labs launched with USD 3 billion fully committed from investors. value=3; unit=USD billions committed funding; period=instant 2022-01-19; epistemic=observed [ev-7eacfac5ad8d]",
+        "Altos Labs publicly launched on 2022-01-19. value=public launch; period=instant 2022-01-19; epistemic=observed [ev-7eacfac5ad8d]",
+        "Altos said Shinya Yamanaka would serve as senior scientific advisor without remuneration. value=Shinya Yamanaka senior scientific advisor; period=instant 2022-01-19; epistemic=observed [ev-7eacfac5ad8d]",
+        "Altos said it would initially be based in the San Francisco Bay Area, San Diego and Cambridge, UK, with collaborations in Japan. value=San Francisco Bay Area, San Diego, Cambridge UK, Japan collaborations; period=instant 2022-01-19; epistemic=observed [ev-7eacfac5ad8d]",
+        "CiRA reported that Altos would provide funds for research projects in cellular rejuvenation programming in Japan. value=funded Japan research projects; period=instant 2022-01-19; epistemic=observed [ev-4e47b1f24b3b]",
+        "CiRA reported that Shinya Yamanaka would serve as an unpaid senior scientific advisor to Altos Labs. value=unpaid senior scientific advisor; period=instant 2022-01-19; epistemic=observed [ev-4e47b1f24b3b]",
+        "Nature Biotechnology described controlled partial reprogramming as the scientific thesis behind Altos and similar ventures. value=controlled partial reprogramming; period=instant 2022-01-19; epistemic=observed [ev-5ec7f4fa2e2b]",
+        "Nature Biotechnology reported Altos launched with USD 3 billion in initial financing. value=3; unit=USD billions initial financing; period=instant 2022-01-19; epistemic=observed [ev-5ec7f4fa2e2b]"
+      ],
+      "inferences": [
+        "Enterprise Value abstained: Clinical, diagnostics, therapeutics, pipeline, or product-stage evidence supports biotech-rNPV routing, but no product cash-flow forecast and probability assumptions support enterprise value. [ev-4e47b1f24b3b, ev-5ec7f4fa2e2b, ev-7eacfac5ad8d]",
+        "Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-4e47b1f24b3b, ev-5ec7f4fa2e2b, ev-7eacfac5ad8d]",
+        "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-4e47b1f24b3b, ev-5ec7f4fa2e2b, ev-7eacfac5ad8d]",
+        "Selected route biotech-rnpv: Evidence describes a biotech, diagnostics, or therapeutics company with clinical studies, pipeline, FDA, CRISPR, product-launch, or rNPV facts. [ev-5ec7f4fa2e2b, ev-7eacfac5ad8d]",
+        "Sufficiency is sufficient with score 0.85: Evidence coverage is sufficient for route selection before valuation.",
+        "Total Equity Value abstained: TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence. [ev-4e47b1f24b3b, ev-5ec7f4fa2e2b, ev-7eacfac5ad8d]"
+      ],
+      "conflicts": [],
+      "limitations": [
+        "Clinical, diagnostics, therapeutics, pipeline, or product-stage evidence supports biotech-rNPV routing, but no product cash-flow forecast and probability assumptions support enterprise value.",
+        "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+        "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+        "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+        "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.",
+        "extraction note altos-product-stage-not-public: The launch sources do not disclose product cash-flow forecasts, commercial products, clinical-stage assets or security-level terms."
+      ],
+      "counterarguments": [
+        "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: financial-services, software-saas, marketplace, asset-based, recent-transaction, general-private-company."
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-cap-table",
+          "topic": "Cap table",
+          "description": "The evidence ledger does not disclose capitalization table data.",
+          "consequence": "TRACE cannot allocate value across securities or holders.",
+          "requiredFor": [
+            "total-equity-value",
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-dilution",
+          "topic": "Dilution",
+          "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+          "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+          "requiredFor": [
+            "total-equity-value",
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-product-cash-flow-forecast",
+          "topic": "Product cash-flow forecast",
+          "description": "The evidence does not provide product-level cash flows, development probabilities, milestones, and commercial timing required for rNPV.",
+          "consequence": "TRACE abstains from enterprise value.",
+          "requiredFor": [
+            "enterprise-value"
+          ]
+        },
+        {
+          "id": "missing-recent-secondary-transaction",
+          "topic": "Recent secondary transaction",
+          "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+          "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+          "requiredFor": [
+            "headline-valuation"
+          ]
+        },
+        {
+          "id": "missing-share-preferences",
+          "topic": "Share preferences",
+          "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+          "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+          "requiredFor": [
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-share-rights",
+          "topic": "Share rights",
+          "description": "The evidence ledger does not disclose rights attached to the specific security.",
+          "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+          "requiredFor": [
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-total-equity-capitalization",
+          "topic": "Total equity capitalization",
+          "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+          "consequence": "TRACE abstains from total equity value.",
+          "requiredFor": [
+            "total-equity-value"
+          ]
+        }
+      ],
+      "nextDiligenceQuestions": [
+        "What evidence resolves Cap table for total-equity-value, security-level-fair-value?",
+        "What evidence resolves Dilution for total-equity-value, security-level-fair-value?",
+        "What evidence resolves Financial and operating fact coverage for routing, sufficiency?",
+        "What evidence resolves Product cash-flow forecast for enterprise-value?",
+        "What evidence resolves Recent secondary transaction for headline-valuation?",
+        "What evidence resolves Share preferences for security-level-fair-value?",
+        "What evidence resolves Share rights for security-level-fair-value?",
+        "What evidence resolves Total equity capitalization for total-equity-value?"
+      ]
+    },
+    "run": {
+      "runId": "run-locked-test-v1",
+      "runtimeVersion": "0.1.0",
+      "command": "trace benchmark --partition locked-test --runner trace-full --case-id test-biotech-altos-2022",
+      "measurementDate": "2022-01-19",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.317Z",
+      "durationMs": 317,
+      "inputPath": "benchmark:locked-test:test-biotech-altos-2022",
+      "outputDirectory": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-biotech-altos-2022",
+      "warnings": []
+    }
+  },
+  "executionLog": {
+    "schemaVersion": "trace.execution-log.v1",
+    "runId": "run-locked-test-v1",
+    "runtimeVersion": "0.1.0",
+    "measurementDate": "2022-01-19",
+    "inputPath": "benchmark:locked-test:test-biotech-altos-2022",
+    "outputPaths": {
+      "jsonReport": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-biotech-altos-2022/raw-runner-output.json",
+      "markdownReport": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-biotech-altos-2022/raw-runner-output.md",
+      "executionLog": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-biotech-altos-2022/raw-runner-output.json#executionLog"
+    },
+    "startedAt": "2026-07-26T00:00:00.000Z",
+    "completedAt": "2026-07-26T00:00:00.317Z",
+    "durationMs": 317,
+    "validationWarnings": [],
+    "reviewerFindings": [
+      {
+        "id": "review-abstention-triggers",
+        "severity": "pass",
+        "category": "abstention",
+        "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+        "evidenceIds": [
+          "ev-4e47b1f24b3b",
+          "ev-5ec7f4fa2e2b",
+          "ev-7eacfac5ad8d"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-calculation-integrity",
+        "severity": "pass",
+        "category": "calculation",
+        "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+        "evidenceIds": [
+          "ev-4e47b1f24b3b",
+          "ev-5ec7f4fa2e2b",
+          "ev-7eacfac5ad8d"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-citation-support",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+        "evidenceIds": [
+          "ev-4e47b1f24b3b",
+          "ev-5ec7f4fa2e2b",
+          "ev-7eacfac5ad8d"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-cutoff-compliance",
+        "severity": "pass",
+        "category": "cutoff",
+        "message": "Included evidence satisfies the measurement-date publication cutoff.",
+        "evidenceIds": [
+          "ev-4e47b1f24b3b",
+          "ev-5ec7f4fa2e2b",
+          "ev-7eacfac5ad8d"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-entity-certainty",
+        "severity": "pass",
+        "category": "entity",
+        "message": "Target identity is resolved and supported by included evidence.",
+        "evidenceIds": [
+          "ev-4e47b1f24b3b",
+          "ev-5ec7f4fa2e2b",
+          "ev-7eacfac5ad8d"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-evidence-coverage",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+        "evidenceIds": [
+          "ev-4e47b1f24b3b",
+          "ev-5ec7f4fa2e2b",
+          "ev-7eacfac5ad8d"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-route-appropriateness",
+        "severity": "pass",
+        "category": "route",
+        "message": "Route selection is consistent with sufficiency status: biotech-rnpv.",
+        "evidenceIds": [
+          "ev-4e47b1f24b3b",
+          "ev-5ec7f4fa2e2b",
+          "ev-7eacfac5ad8d"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-valuation-field-separation",
+        "severity": "pass",
+        "category": "valuation-separation",
+        "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+        "evidenceIds": [
+          "ev-4e47b1f24b3b",
+          "ev-5ec7f4fa2e2b",
+          "ev-7eacfac5ad8d"
+        ],
+        "missingInformation": []
+      }
+    ],
+    "deterministicIdentifiers": {
+      "evidenceLedgerHash": "f7fc28a79bc529c2f2409d7dce4acf2ade34ba8884c183ced9d6c8de5f80dbf6",
+      "runtimeResultHash": "29294f134675935a8a5aa77c03a5ae2c6f9ee3f8f55855178051d6e0d756ac37"
+    }
+  }
+}

@@ -1,0 +1,668 @@
+{
+  "schemaVersion": "trace.benchmark-per-claim-score.v1",
+  "runId": "run-locked-test-v1",
+  "runnerName": "baseline-a",
+  "caseId": "test-biotech-altos-2022",
+  "partition": "locked-test",
+  "status": "scored",
+  "claims": [
+    {
+      "claimId": "altos-commercial-product-disclosed",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "altos-commercial-product-disclosed",
+      "expectedStatement": "Altos disclosed a commercial drug product at launch.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-5ec7f4fa2e2b",
+        "ev-7eacfac5ad8d"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "altos-launched-by-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "altos-launched-by-cutoff",
+      "expectedStatement": "Altos Labs publicly launched by the 2022-01-19 cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-7eacfac5ad8d"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "altos-yamanaka-advisor",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "altos-yamanaka-advisor",
+      "expectedStatement": "Shinya Yamanaka was identified as a senior scientific advisor to Altos.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-4e47b1f24b3b",
+        "ev-7eacfac5ad8d"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "claim-36886749f414",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-36886749f414",
+      "emittedStatement": "Altos Labs publicly launched on 2022-01-19.",
+      "emittedValue": "public launch",
+      "emittedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-7eacfac5ad8d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-7eacfac5ad8d",
+          "factId": "fact-f8cb0c951253",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-84b83487a3c0",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-84b83487a3c0",
+      "emittedStatement": "Altos said Shinya Yamanaka would serve as senior scientific advisor without remuneration.",
+      "emittedValue": "Shinya Yamanaka senior scientific advisor",
+      "emittedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-7eacfac5ad8d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-7eacfac5ad8d",
+          "factId": "fact-d8747d98218e",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-ac19fa27cd88",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-ac19fa27cd88",
+      "emittedStatement": "Nature Biotechnology described controlled partial reprogramming as the scientific thesis behind Altos and similar ventures.",
+      "emittedValue": "controlled partial reprogramming",
+      "emittedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-5ec7f4fa2e2b"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-5ec7f4fa2e2b",
+          "factId": "fact-f03f301f51ac",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "news",
+          "sourceQualityCategory": "news",
+          "sourceQualityWeight": 0.58,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.58,
+        "citedSourceClasses": [
+          "news"
+        ],
+        "citedSourceQualityCategories": [
+          "news"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-bb1b208b5421",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-bb1b208b5421",
+      "emittedStatement": "Altos Labs described its focus as cellular rejuvenation programming to restore cell health and resilience.",
+      "emittedValue": "cellular rejuvenation programming",
+      "emittedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-7eacfac5ad8d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-7eacfac5ad8d",
+          "factId": "fact-5eae98da6ff5",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-d6b2c12deb0c",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-d6b2c12deb0c",
+      "emittedStatement": "CiRA reported that Shinya Yamanaka would serve as an unpaid senior scientific advisor to Altos Labs.",
+      "emittedValue": "unpaid senior scientific advisor",
+      "emittedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-4e47b1f24b3b"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-4e47b1f24b3b",
+          "factId": "fact-cf564b29f7a5",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "government",
+          "sourceQualityCategory": "government",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "government"
+        ],
+        "citedSourceQualityCategories": [
+          "government"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "altos-cira-research-funding",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "expectedClaimId": "altos-cira-research-funding",
+      "emittedClaimId": "claim-f63220ba5501",
+      "expectedStatement": "CiRA reported that Altos would fund Japan research projects in cellular rejuvenation programming.",
+      "emittedStatement": "CiRA reported that Altos would provide funds for research projects in cellular rejuvenation programming in Japan.",
+      "expectedValue": "funded Japan research projects",
+      "emittedValue": "funded Japan research projects",
+      "expectedUnit": "research collaboration status",
+      "expectedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "emittedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "expectedEvidenceIds": [
+        "ev-4e47b1f24b3b"
+      ],
+      "emittedEvidenceIds": [
+        "ev-4e47b1f24b3b"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-4e47b1f24b3b",
+          "factId": "fact-43540ee5f2ac",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": false,
+          "supportsWording": true,
+          "valid": false,
+          "sourceClass": "government",
+          "sourceQualityCategory": "government",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the expected claim unit."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "government"
+        ],
+        "citedSourceQualityCategories": [
+          "government"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "altos-launch-funding",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "expectedClaimId": "altos-launch-funding",
+      "emittedClaimId": "claim-82bab934b830",
+      "expectedStatement": "Altos launched with USD 3 billion of committed or initial financing.",
+      "emittedStatement": "Nature Biotechnology reported Altos launched with USD 3 billion in initial financing.",
+      "expectedValue": 3,
+      "emittedValue": 3,
+      "expectedUnit": "USD billions",
+      "emittedUnit": "USD billions initial financing",
+      "expectedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "emittedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "expectedEvidenceIds": [
+        "ev-5ec7f4fa2e2b",
+        "ev-7eacfac5ad8d"
+      ],
+      "emittedEvidenceIds": [
+        "ev-5ec7f4fa2e2b"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-5ec7f4fa2e2b",
+          "factId": "fact-e9d43b08c38f",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": false,
+          "supportsWording": true,
+          "valid": false,
+          "sourceClass": "news",
+          "sourceQualityCategory": "news",
+          "sourceQualityWeight": 0.58,
+          "notes": [
+            "Citation does not support the expected claim unit."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.58,
+        "citedSourceClasses": [
+          "news"
+        ],
+        "citedSourceQualityCategories": [
+          "news"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "altos-launch-funding",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "expectedClaimId": "altos-launch-funding",
+      "emittedClaimId": "claim-f0ac7f15a78f",
+      "expectedStatement": "Altos launched with USD 3 billion of committed or initial financing.",
+      "emittedStatement": "Altos Labs launched with USD 3 billion fully committed from investors.",
+      "expectedValue": 3,
+      "emittedValue": 3,
+      "expectedUnit": "USD billions",
+      "emittedUnit": "USD billions committed funding",
+      "expectedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "emittedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "expectedEvidenceIds": [
+        "ev-5ec7f4fa2e2b",
+        "ev-7eacfac5ad8d"
+      ],
+      "emittedEvidenceIds": [
+        "ev-7eacfac5ad8d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-7eacfac5ad8d",
+          "factId": "fact-cc7998270308",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": false,
+          "supportsWording": true,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the expected claim unit."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "altos-launch-locations",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "expectedClaimId": "altos-launch-locations",
+      "emittedClaimId": "claim-0a26c57e076e",
+      "expectedStatement": "Altos announced initial sites in the San Francisco Bay Area, San Diego and Cambridge, UK, with Japan collaborations.",
+      "emittedStatement": "Altos said it would initially be based in the San Francisco Bay Area, San Diego and Cambridge, UK, with collaborations in Japan.",
+      "expectedValue": [
+        "San Francisco Bay Area",
+        "San Diego",
+        "Cambridge UK",
+        "Japan collaborations"
+      ],
+      "emittedValue": [
+        "San Francisco Bay Area",
+        "San Diego",
+        "Cambridge UK",
+        "Japan collaborations"
+      ],
+      "expectedUnit": "locations and collaboration geography",
+      "expectedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "emittedPeriod": {
+        "instantDate": "2022-01-19"
+      },
+      "expectedEvidenceIds": [
+        "ev-7eacfac5ad8d"
+      ],
+      "emittedEvidenceIds": [
+        "ev-7eacfac5ad8d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-7eacfac5ad8d",
+          "factId": "fact-31e73c0e39c2",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": false,
+          "supportsWording": true,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the expected claim unit."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    }
+  ],
+  "failures": []
+}

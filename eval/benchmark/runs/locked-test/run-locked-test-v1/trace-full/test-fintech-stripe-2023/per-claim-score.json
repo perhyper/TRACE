@@ -1,0 +1,577 @@
+{
+  "schemaVersion": "trace.benchmark-per-claim-score.v1",
+  "runId": "run-locked-test-v1",
+  "runnerName": "trace-full",
+  "caseId": "test-fintech-stripe-2023",
+  "partition": "locked-test",
+  "status": "scored",
+  "claims": [
+    {
+      "claimId": "stripe-2023-cash-flow-positive",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "stripe-2023-cash-flow-positive",
+      "expectedStatement": "Stripe reported being cash-flow positive in 2023.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-248f56b646df"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "stripe-series-i-needed-for-operations",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "stripe-series-i-needed-for-operations",
+      "expectedStatement": "Stripe said the Series I capital was needed to run the business.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-32cb116f912b"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "stripe-series-i-public-by-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "stripe-series-i-public-by-cutoff",
+      "expectedStatement": "Stripe's Series I financing was public before the 2024-03-15 cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-32cb116f912b"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "trace-claim-72f0f8970358",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-72f0f8970358",
+      "emittedStatement": "Stripe reported that more than 100 businesses processed over USD 1 billion each on Stripe annually.",
+      "emittedValue": 100,
+      "emittedUnit": "businesses, greater than",
+      "emittedPeriod": {
+        "endDate": "2023-12-31"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-248f56b646df"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-248f56b646df",
+          "factId": "fact-fb6209b89fb8",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-9ee06e6558b6",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-9ee06e6558b6",
+      "emittedStatement": "Stripe stated that it did not need the Series I capital to run the business.",
+      "emittedValue": true,
+      "emittedPeriod": {
+        "instantDate": "2023-03-15"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-32cb116f912b"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-32cb116f912b",
+          "factId": "fact-4535e60e5f84",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-c1dbc78179b4",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-c1dbc78179b4",
+      "emittedStatement": "Stripe reported being robustly cash-flow positive in 2023 and expected the same in 2024.",
+      "emittedValue": true,
+      "emittedPeriod": {
+        "endDate": "2023-12-31"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-248f56b646df"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-248f56b646df",
+          "factId": "fact-145c43740a61",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "trace-claim-d3a070dd0bf1",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-d3a070dd0bf1",
+      "emittedStatement": "Stripe said the Series I funds would provide current and former employee liquidity and address equity-award tax obligations.",
+      "emittedValue": "employee liquidity and withholding tax obligations",
+      "emittedPeriod": {
+        "instantDate": "2023-03-15"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-32cb116f912b"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-32cb116f912b",
+          "factId": "fact-9064ed551da9",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "stripe-2023-payment-volume",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "expectedClaimId": "stripe-2023-payment-volume",
+      "emittedClaimId": "trace-claim-ddc80b8e15a1",
+      "expectedStatement": "Stripe users processed USD 1 trillion through Stripe in 2023.",
+      "emittedStatement": "Stripe described 2023 payment volume as equivalent to roughly 1 percent of global GDP.",
+      "expectedValue": 1,
+      "emittedValue": 1,
+      "expectedUnit": "USD trillions payment volume",
+      "emittedUnit": "percent of global GDP",
+      "expectedPeriod": {
+        "endDate": "2023-12-31"
+      },
+      "emittedPeriod": {
+        "endDate": "2023-12-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-248f56b646df"
+      ],
+      "emittedEvidenceIds": [
+        "ev-248f56b646df"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-248f56b646df",
+          "factId": "fact-7e374b59f0bc",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "stripe-2023-payment-volume",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "stripe-2023-payment-volume",
+      "emittedClaimId": "trace-claim-f2499f82118c",
+      "expectedStatement": "Stripe users processed USD 1 trillion through Stripe in 2023.",
+      "emittedStatement": "Stripe reported that users processed USD 1 trillion through Stripe in 2023.",
+      "expectedValue": 1,
+      "emittedValue": 1,
+      "expectedUnit": "USD trillions payment volume",
+      "emittedUnit": "USD trillions payment volume",
+      "expectedPeriod": {
+        "endDate": "2023-12-31"
+      },
+      "emittedPeriod": {
+        "endDate": "2023-12-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-248f56b646df"
+      ],
+      "emittedEvidenceIds": [
+        "ev-248f56b646df"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-248f56b646df",
+          "factId": "fact-d391e6226b17",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "stripe-series-i-size",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "stripe-series-i-size",
+      "emittedClaimId": "trace-claim-bf543f625c05",
+      "expectedStatement": "Stripe announced a Series I fundraise of more than USD 6.5 billion.",
+      "emittedStatement": "Stripe announced a Series I fundraise of more than USD 6.5 billion on 2023-03-15.",
+      "expectedValue": 6.5,
+      "emittedValue": 6.5,
+      "expectedUnit": "USD billions raised, greater than",
+      "emittedUnit": "USD billions raised, greater than",
+      "expectedPeriod": {
+        "instantDate": "2023-03-15"
+      },
+      "emittedPeriod": {
+        "instantDate": "2023-03-15"
+      },
+      "expectedEvidenceIds": [
+        "ev-32cb116f912b"
+      ],
+      "emittedEvidenceIds": [
+        "ev-32cb116f912b"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-32cb116f912b",
+          "factId": "fact-b1f3e5239968",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "stripe-series-i-valuation",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "stripe-series-i-valuation",
+      "emittedClaimId": "trace-claim-c0dee672a8be",
+      "expectedStatement": "Stripe's Series I was announced at a USD 50 billion headline valuation.",
+      "emittedStatement": "Stripe stated that the Series I financing was at a USD 50 billion valuation.",
+      "expectedValue": 50,
+      "emittedValue": 50,
+      "expectedUnit": "USD billions headline valuation",
+      "emittedUnit": "USD billions headline valuation",
+      "expectedPeriod": {
+        "instantDate": "2023-03-15"
+      },
+      "emittedPeriod": {
+        "instantDate": "2023-03-15"
+      },
+      "expectedEvidenceIds": [
+        "ev-32cb116f912b"
+      ],
+      "emittedEvidenceIds": [
+        "ev-32cb116f912b"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-32cb116f912b",
+          "factId": "fact-1abda48ef9fe",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    }
+  ],
+  "failures": []
+}

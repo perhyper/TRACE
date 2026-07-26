@@ -84,3 +84,25 @@
 - Validation helper: `npm run trace -- validate-benchmark-freeze --freeze eval/benchmark/freeze.json`
 - No-tuning boundary: after this freeze, locked-test results may not drive source, fixture, scoring, config, or weight changes. Any run made with mismatched frozen hashes must be explicitly exploratory and marked non-authoritative.
 - Locked-test boundary: the locked-test partition was not run, no locked-test output or score was inspected, and no locked-test run artifacts were created.
+
+## 2026-07-26 - Locked-test benchmark run
+
+- Run ID: `run-locked-test-v1`
+- Freeze ID: `trace-internal-benchmark-freeze-2026-07-26-v1`
+- Basis commit before this unit: `da7752b` (`Record benchmark freeze unit completion`)
+- Partition: `locked-test`
+- Runner selection: `all` (`baseline-a`, `baseline-b`, `trace-full`)
+- Command: `npm run trace -- benchmark --partition locked-test --runner all --out eval/benchmark/runs --run-id run-locked-test-v1 --freeze eval/benchmark/freeze.json`
+- Freeze validation: authoritative validation passed before runner execution and inside the locked-test command. Manifest, benchmark source/config, development fixtures, locked-test fixtures, development annotations, locked-test annotations, and frozen development artifacts matched `eval/benchmark/freeze.json`.
+- Frozen manifest hash: `sha256:b2ef8a7504b7747286aa24daec1f571bef9d531920a797eb83ac2f8dff0943ca`
+- Frozen benchmark source/config hash: `sha256:429d7ea8a7d07777674144366dccfe1f8f91017f8057148730afcadac342e84a`
+- Frozen locked-test evidence fixture hash: `sha256:8da7eb38bcc0d1be30a3dc1c36ec7c9f479410de8d80ce5349700c1d559a9250`
+- Frozen locked-test annotation hash: `sha256:30d0faec65caefe5ef4df514ae3ea382a07e0c8c2dd63fdfad75e9de9da0edbf`
+- Locked-test artifact tree hash: `sha256:fe6aa885a991ae69877c9d3e2368b72827ee1f27cdc8974933e5ff1e0e9d30b6`
+- Artifacts: 18 runner/case artifact directories and aggregate JSON, CSV, and Markdown under `eval/benchmark/runs/locked-test/run-locked-test-v1/`.
+- Persisted fields: every runner/case directory contains raw runner output JSON and Markdown, normalized scorer input, per-claim score, case score, failure record, and timing metadata.
+- Failures and retries: none. All 18 runner/case executions completed, all 18 failure-record files are empty arrays, and no retry was performed.
+- Aggregate regeneration: regenerated locked-test aggregate JSON, CSV, and Markdown from stored locked-test normalized scorer inputs and case scores; regenerated outputs matched the stored aggregate files.
+- Overall locked-test result: evidence-supported claim precision `0.283019`, citation validity `0.283019`, source quality `0.816981`, route accuracy `0.219136`, abstention behavior `0.236111`, valuation separation `1`, historical valuation error `0`, completeness `0.798611`, completion status `1`, duration `1`, and failure-record score `1`. Reproducibility is skipped because no repeated locked-test runner/case outputs are allowed for this once-only run.
+- TRACE Full runner result: evidence-supported claim precision `0.283019`, route accuracy `0.657407`, abstention behavior `0.708333`, completeness `0.916667`, valuation separation `1`, and completion status `1`.
+- No-tuning statement: this locked-test partition was run once after the freeze. No source, fixture, annotation, runner behavior, scoring config, scoring weight, manifest membership, or aggregate format was changed after inspecting locked-test results.

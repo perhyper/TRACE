@@ -1,0 +1,696 @@
+{
+  "schemaVersion": "trace.benchmark-scorer-input.v1",
+  "runId": "run-locked-test-v1",
+  "runnerName": "baseline-a",
+  "caseId": "test-fintech-stripe-2023",
+  "partition": "locked-test",
+  "caseInput": {
+    "schemaVersion": "trace.benchmark-case-input.v1",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "manifestSchemaVersion": "trace.benchmark-manifest.v1",
+    "caseId": "test-fintech-stripe-2023",
+    "partition": "locked-test",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Stripe, Inc.",
+    "target": {
+      "legalName": "Stripe, Inc.",
+      "jurisdiction": "US",
+      "identifiers": [
+        {
+          "scheme": "lei",
+          "value": "549300CLHGIPTCYHQ143",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "Stripe"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2024-03-15",
+    "cutoffDate": "2024-03-15",
+    "dataTier": "sparse",
+    "sourcePolicy": {
+      "approvedPublicSourceCategories": [
+        "company-primary",
+        "legal-record",
+        "market-data",
+        "news"
+      ],
+      "redistributionStatus": "public-urls-redistribution-not-established",
+      "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+      "onlyUrlsAndShortExcerptsMayBeCommitted": true
+    },
+    "authorityBoundary": {
+      "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+      "officialContestRulesStatus": "not-supplied",
+      "contestComplianceClaimAllowed": false,
+      "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+      "prohibitedClaims": [
+        "appraisal status",
+        "benchmark superiority",
+        "contest readiness",
+        "investment advice",
+        "official contest compliance"
+      ]
+    },
+    "sourceRecordIds": [
+      "stripe-2023-03-15-series-i-release",
+      "stripe-2024-03-13-annual-letter"
+    ],
+    "evidenceLedger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Stripe, Inc.",
+        "jurisdiction": "US",
+        "identifiers": [
+          {
+            "scheme": "lei",
+            "value": "549300CLHGIPTCYHQ143",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "Stripe"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2024-03-15",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-32cb116f912b",
+          "sourceUrl": "https://stripe.com/en-ch/newsroom/news/stripe-series-i-employee-liquidity",
+          "sourceTitle": "Stripe announces Series I funding and employee liquidity plan",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2023-03-15",
+          "effectiveDate": "2023-03-15",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Stripe newsroom, 15 Mar 2023",
+          "shortExcerpt": "Stripe announced a Series I fundraise above USD 6.5bn at a USD 50bn valuation for employee liquidity and tax obligations.",
+          "observedFacts": [
+            {
+              "id": "fact-b1f3e5239968",
+              "statement": "Stripe announced a Series I fundraise of more than USD 6.5 billion on 2023-03-15.",
+              "epistemicClass": "observed",
+              "value": 6.5,
+              "unit": "USD billions raised, greater than",
+              "period": {
+                "instantDate": "2023-03-15"
+              }
+            },
+            {
+              "id": "fact-9064ed551da9",
+              "statement": "Stripe said the Series I funds would provide current and former employee liquidity and address equity-award tax obligations.",
+              "epistemicClass": "observed",
+              "value": "employee liquidity and withholding tax obligations",
+              "period": {
+                "instantDate": "2023-03-15"
+              }
+            },
+            {
+              "id": "fact-4535e60e5f84",
+              "statement": "Stripe stated that it did not need the Series I capital to run the business.",
+              "epistemicClass": "observed",
+              "value": true,
+              "period": {
+                "instantDate": "2023-03-15"
+              }
+            },
+            {
+              "id": "fact-1abda48ef9fe",
+              "statement": "Stripe stated that the Series I financing was at a USD 50 billion valuation.",
+              "epistemicClass": "observed",
+              "value": 50,
+              "unit": "USD billions headline valuation",
+              "period": {
+                "instantDate": "2023-03-15"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-248f56b646df",
+          "sourceUrl": "https://stripe.com/gb/annual-updates/2023",
+          "sourceTitle": "Stripe 2023 annual letter",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2024-03-13",
+          "effectiveDate": "2023-12-31",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Stripe annual updates archive",
+          "shortExcerpt": "Stripe's 2023 annual letter reported payment volume, cash-flow status and large-scale customer processing metrics.",
+          "observedFacts": [
+            {
+              "id": "fact-7e374b59f0bc",
+              "statement": "Stripe described 2023 payment volume as equivalent to roughly 1 percent of global GDP.",
+              "epistemicClass": "observed",
+              "value": 1,
+              "unit": "percent of global GDP",
+              "period": {
+                "endDate": "2023-12-31"
+              }
+            },
+            {
+              "id": "fact-145c43740a61",
+              "statement": "Stripe reported being robustly cash-flow positive in 2023 and expected the same in 2024.",
+              "epistemicClass": "observed",
+              "value": true,
+              "period": {
+                "endDate": "2023-12-31"
+              }
+            },
+            {
+              "id": "fact-fb6209b89fb8",
+              "statement": "Stripe reported that more than 100 businesses processed over USD 1 billion each on Stripe annually.",
+              "epistemicClass": "observed",
+              "value": 100,
+              "unit": "businesses, greater than",
+              "period": {
+                "endDate": "2023-12-31"
+              }
+            },
+            {
+              "id": "fact-d391e6226b17",
+              "statement": "Stripe reported that users processed USD 1 trillion through Stripe in 2023.",
+              "epistemicClass": "observed",
+              "value": 1,
+              "unit": "USD trillions payment volume",
+              "period": {
+                "endDate": "2023-12-31"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "stripe-2025-02-27-annual-update-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record stripe-2025-02-27-annual-update-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://stripe.com/en-jp/newsroom/news/stripe-2024-update",
+          "sourceTitle": "Stripe's total payment volume reaches USD 1.4T",
+          "publishedDate": "2025-02-27",
+          "measurementDate": "2024-03-15"
+        }
+      ],
+      "failedNotes": [
+        {
+          "id": "stripe-security-rights-not-public",
+          "stage": "extraction",
+          "sourceTitle": "Stripe public source set",
+          "attemptedAt": "2026-07-26T00:00:00+09:00",
+          "note": "Public funding and annual-letter sources do not disclose private share rights, a cap table or security-level fair value."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded stripe-2025-02-27-annual-update-post-cutoff because publishedDate 2025-02-27 is after measurementDate 2024-03-15.",
+          "recordIds": [
+            "stripe-2025-02-27-annual-update-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://stripe.com/en-jp/newsroom/news/stripe-2024-update"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    }
+  },
+  "annotation": {
+    "schemaVersion": "trace.benchmark-annotation.v1",
+    "caseId": "test-fintech-stripe-2023",
+    "partition": "locked-test",
+    "measurementDate": "2024-03-15",
+    "expectedRoute": {
+      "route": "financial-services",
+      "acceptableAlternativeRoutes": [
+        "software-saas"
+      ],
+      "evidenceIds": [
+        "ev-248f56b646df",
+        "ev-32cb116f912b"
+      ],
+      "rationale": "The cutoff evidence describes internet payments infrastructure with payment volume, financial-infrastructure products and financing activity."
+    },
+    "binaryClaims": [
+      {
+        "id": "stripe-2023-cash-flow-positive",
+        "statement": "Stripe reported being cash-flow positive in 2023.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-248f56b646df"
+        ]
+      },
+      {
+        "id": "stripe-series-i-needed-for-operations",
+        "statement": "Stripe said the Series I capital was needed to run the business.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-32cb116f912b"
+        ]
+      },
+      {
+        "id": "stripe-series-i-public-by-cutoff",
+        "statement": "Stripe's Series I financing was public before the 2024-03-15 cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-32cb116f912b"
+        ]
+      }
+    ],
+    "observableClaims": [
+      {
+        "id": "stripe-2023-payment-volume",
+        "statement": "Stripe users processed USD 1 trillion through Stripe in 2023.",
+        "expectedValue": 1,
+        "unit": "USD trillions payment volume",
+        "period": {
+          "endDate": "2023-12-31"
+        },
+        "evidenceIds": [
+          "ev-248f56b646df"
+        ]
+      },
+      {
+        "id": "stripe-series-i-size",
+        "statement": "Stripe announced a Series I fundraise of more than USD 6.5 billion.",
+        "expectedValue": 6.5,
+        "unit": "USD billions raised, greater than",
+        "period": {
+          "instantDate": "2023-03-15"
+        },
+        "evidenceIds": [
+          "ev-32cb116f912b"
+        ]
+      },
+      {
+        "id": "stripe-series-i-valuation",
+        "statement": "Stripe's Series I was announced at a USD 50 billion headline valuation.",
+        "expectedValue": 50,
+        "unit": "USD billions headline valuation",
+        "period": {
+          "instantDate": "2023-03-15"
+        },
+        "evidenceIds": [
+          "ev-32cb116f912b"
+        ]
+      }
+    ],
+    "expectedAbstentions": [
+      {
+        "id": "stripe-enterprise-value-abstain",
+        "field": "enterprise-value",
+        "reasonCode": "headline-valuation-not-enterprise-value",
+        "description": "The Series I headline valuation may not be converted into enterprise value without debt, cash, share-count and rights evidence.",
+        "evidenceIds": [
+          "ev-32cb116f912b"
+        ]
+      },
+      {
+        "id": "stripe-security-level-fair-value-abstain",
+        "field": "security-level-fair-value",
+        "reasonCode": "missing-security-rights-and-cap-table",
+        "description": "The Series I release and annual letter do not disclose private share rights or a cap table.",
+        "evidenceIds": [
+          "ev-248f56b646df",
+          "ev-32cb116f912b"
+        ]
+      }
+    ],
+    "valuationSeparationExpectations": {
+      "allowedValuationFields": [
+        "headline-valuation"
+      ],
+      "mustNotConflate": [
+        "Series I headline valuation with enterprise value",
+        "employee liquidity funding with operating capital need",
+        "headline valuation with security-level fair value"
+      ],
+      "notes": "Manifest marks the case ineligible for historical valuation-error scoring despite a public headline financing valuation."
+    },
+    "completenessExpectations": [
+      {
+        "id": "stripe-cover-payments-scale-and-limitations",
+        "description": "A complete answer should cover payments route, payment volume, Series I financing purpose, cash-flow status and security-rights abstentions.",
+        "requiredEvidenceClasses": [
+          "company-primary"
+        ],
+        "requiredTopics": [
+          "financial-services route",
+          "funding purpose",
+          "payments volume",
+          "valuation separation"
+        ],
+        "evidenceIds": [
+          "ev-248f56b646df",
+          "ev-32cb116f912b"
+        ]
+      }
+    ],
+    "historicalValuationTargets": {
+      "eligible": false,
+      "reason": "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+      "targets": []
+    }
+  },
+  "runnerOutput": {
+    "schemaVersion": "trace.benchmark-runner-output.v1",
+    "runnerName": "baseline-a",
+    "runId": "run-locked-test-v1",
+    "caseId": "test-fintech-stripe-2023",
+    "partition": "locked-test",
+    "status": "completed",
+    "timing": {
+      "schemaVersion": "trace.benchmark-timing.v1",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.180Z",
+      "durationMs": 180
+    },
+    "rawOutput": {
+      "markdown": "# Baseline A Narrative Synthesis: Stripe, Inc.\n\nCase: test-fintech-stripe-2023\nCutoff: 2024-03-15\nInput fingerprint: 8983eeceb243\n\n## Narrative\n- Stripe, Inc. is summarized from 2 cutoff-visible public evidence records dated on or before 2024-03-15.\n- The normalized claim list contains 8 cited observations from source classes: company-primary.\n- Stripe announced a Series I fundraise of more than USD 6.5 billion on 2023-03-15.\n- Stripe described 2023 payment volume as equivalent to roughly 1 percent of global GDP.\n- Stripe reported being robustly cash-flow positive in 2023 and expected the same in 2024.\n- Stripe reported that more than 100 businesses processed over USD 1 billion each on Stripe annually.\n- Stripe reported that users processed USD 1 trillion through Stripe in 2023.\n\n## Evidence Notes\n- Stripe announces Series I funding and employee liquidity plan [ev-32cb116f912b]\n  - Stripe announced a Series I fundraise of more than USD 6.5 billion on 2023-03-15. (value=6.5; unit=USD billions raised, greater than; period=instant 2023-03-15)\n  - Stripe said the Series I funds would provide current and former employee liquidity and address equity-award tax obligations. (value=employee liquidity and withholding tax obligations; period=instant 2023-03-15)\n  - Stripe stated that it did not need the Series I capital to run the business. (value=true; period=instant 2023-03-15)\n  - Stripe stated that the Series I financing was at a USD 50 billion valuation. (value=50; unit=USD billions headline valuation; period=instant 2023-03-15)\n- Stripe 2023 annual letter [ev-248f56b646df]\n  - Stripe described 2023 payment volume as equivalent to roughly 1 percent of global GDP. (value=1; unit=percent of global GDP; period=end 2023-12-31)\n  - Stripe reported being robustly cash-flow positive in 2023 and expected the same in 2024. (value=true; period=end 2023-12-31)\n  - Stripe reported that more than 100 businesses processed over USD 1 billion each on Stripe annually. (value=100; unit=businesses, greater than; period=end 2023-12-31)\n  - Stripe reported that users processed USD 1 trillion through Stripe in 2023. (value=1; unit=USD trillions payment volume; period=end 2023-12-31)\n\n## Limitations\n- This baseline performs deterministic evidence summarization only.\n- It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.\n- It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.\n- Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.\n",
+      "json": {
+        "schemaVersion": "trace.baseline-runner-output.v1",
+        "runnerName": "baseline-a",
+        "baselineKind": "general-narrative-synthesis",
+        "inputFingerprint": "8983eeceb243",
+        "case": {
+          "caseId": "test-fintech-stripe-2023",
+          "partition": "locked-test",
+          "scoringRole": "scored",
+          "countedInScoring": true,
+          "companyLegalName": "Stripe, Inc.",
+          "measurementDate": "2024-03-15",
+          "cutoffDate": "2024-03-15",
+          "dataTier": "sparse",
+          "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+          "sourceRecordIds": [
+            "stripe-2023-03-15-series-i-release",
+            "stripe-2024-03-13-annual-letter"
+          ]
+        },
+        "sourcePolicy": {
+          "approvedPublicSourceCategories": [
+            "company-primary",
+            "legal-record",
+            "market-data",
+            "news"
+          ],
+          "redistributionStatus": "public-urls-redistribution-not-established",
+          "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+          "onlyUrlsAndShortExcerptsMayBeCommitted": true
+        },
+        "authorityBoundary": {
+          "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+          "officialContestRulesStatus": "not-supplied",
+          "contestComplianceClaimAllowed": false,
+          "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+          "prohibitedClaims": [
+            "appraisal status",
+            "benchmark superiority",
+            "contest readiness",
+            "investment advice",
+            "official contest compliance"
+          ]
+        },
+        "evidence": [
+          {
+            "evidenceId": "ev-32cb116f912b",
+            "sourceTitle": "Stripe announces Series I funding and employee liquidity plan",
+            "sourceUrl": "https://stripe.com/en-ch/newsroom/news/stripe-series-i-employee-liquidity",
+            "sourceClass": "company-primary",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2023-03-15",
+            "effectiveDate": "2023-03-15",
+            "locator": "Stripe newsroom, 15 Mar 2023",
+            "shortExcerpt": "Stripe announced a Series I fundraise above USD 6.5bn at a USD 50bn valuation for employee liquidity and tax obligations.",
+            "observedFacts": [
+              {
+                "factId": "fact-b1f3e5239968",
+                "statement": "Stripe announced a Series I fundraise of more than USD 6.5 billion on 2023-03-15.",
+                "value": 6.5,
+                "unit": "USD billions raised, greater than",
+                "period": {
+                  "instantDate": "2023-03-15"
+                }
+              },
+              {
+                "factId": "fact-9064ed551da9",
+                "statement": "Stripe said the Series I funds would provide current and former employee liquidity and address equity-award tax obligations.",
+                "value": "employee liquidity and withholding tax obligations",
+                "period": {
+                  "instantDate": "2023-03-15"
+                }
+              },
+              {
+                "factId": "fact-4535e60e5f84",
+                "statement": "Stripe stated that it did not need the Series I capital to run the business.",
+                "value": true,
+                "period": {
+                  "instantDate": "2023-03-15"
+                }
+              },
+              {
+                "factId": "fact-1abda48ef9fe",
+                "statement": "Stripe stated that the Series I financing was at a USD 50 billion valuation.",
+                "value": 50,
+                "unit": "USD billions headline valuation",
+                "period": {
+                  "instantDate": "2023-03-15"
+                }
+              }
+            ]
+          },
+          {
+            "evidenceId": "ev-248f56b646df",
+            "sourceTitle": "Stripe 2023 annual letter",
+            "sourceUrl": "https://stripe.com/gb/annual-updates/2023",
+            "sourceClass": "company-primary",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2024-03-13",
+            "effectiveDate": "2023-12-31",
+            "locator": "Stripe annual updates archive",
+            "shortExcerpt": "Stripe's 2023 annual letter reported payment volume, cash-flow status and large-scale customer processing metrics.",
+            "observedFacts": [
+              {
+                "factId": "fact-7e374b59f0bc",
+                "statement": "Stripe described 2023 payment volume as equivalent to roughly 1 percent of global GDP.",
+                "value": 1,
+                "unit": "percent of global GDP",
+                "period": {
+                  "endDate": "2023-12-31"
+                }
+              },
+              {
+                "factId": "fact-145c43740a61",
+                "statement": "Stripe reported being robustly cash-flow positive in 2023 and expected the same in 2024.",
+                "value": true,
+                "period": {
+                  "endDate": "2023-12-31"
+                }
+              },
+              {
+                "factId": "fact-fb6209b89fb8",
+                "statement": "Stripe reported that more than 100 businesses processed over USD 1 billion each on Stripe annually.",
+                "value": 100,
+                "unit": "businesses, greater than",
+                "period": {
+                  "endDate": "2023-12-31"
+                }
+              },
+              {
+                "factId": "fact-d391e6226b17",
+                "statement": "Stripe reported that users processed USD 1 trillion through Stripe in 2023.",
+                "value": 1,
+                "unit": "USD trillions payment volume",
+                "period": {
+                  "endDate": "2023-12-31"
+                }
+              }
+            ]
+          }
+        ],
+        "output": {
+          "narrative": [
+            "Stripe, Inc. is summarized from 2 cutoff-visible public evidence records dated on or before 2024-03-15.",
+            "The normalized claim list contains 8 cited observations from source classes: company-primary.",
+            "Stripe announced a Series I fundraise of more than USD 6.5 billion on 2023-03-15.",
+            "Stripe described 2023 payment volume as equivalent to roughly 1 percent of global GDP.",
+            "Stripe reported being robustly cash-flow positive in 2023 and expected the same in 2024.",
+            "Stripe reported that more than 100 businesses processed over USD 1 billion each on Stripe annually.",
+            "Stripe reported that users processed USD 1 trillion through Stripe in 2023."
+          ],
+          "limitations": [
+            "This baseline performs deterministic evidence summarization only.",
+            "It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.",
+            "It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.",
+            "Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established."
+          ],
+          "warnings": [
+            "Excluded stripe-2025-02-27-annual-update-post-cutoff because publishedDate 2025-02-27 is after measurementDate 2024-03-15."
+          ],
+          "failedNotes": [
+            "Public funding and annual-letter sources do not disclose private share rights, a cap table or security-level fair value."
+          ],
+          "excludedRecords": [
+            "Evidence record stripe-2025-02-27-annual-update-post-cutoff was published after the measurement date and was excluded."
+          ]
+        },
+        "omittedTraceLogic": [
+          "route-selection",
+          "sufficiency-gating",
+          "valuation-engine",
+          "adversarial-review"
+        ]
+      }
+    },
+    "normalized": {
+      "claims": [
+        {
+          "id": "claim-4e5cff781acd",
+          "kind": "observable",
+          "statement": "Stripe announced a Series I fundraise of more than USD 6.5 billion on 2023-03-15.",
+          "value": 6.5,
+          "unit": "USD billions raised, greater than",
+          "period": {
+            "instantDate": "2023-03-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-32cb116f912b",
+              "factId": "fact-b1f3e5239968",
+              "locator": "Stripe newsroom, 15 Mar 2023"
+            }
+          ]
+        },
+        {
+          "id": "claim-0284607f5b3f",
+          "kind": "observable",
+          "statement": "Stripe described 2023 payment volume as equivalent to roughly 1 percent of global GDP.",
+          "value": 1,
+          "unit": "percent of global GDP",
+          "period": {
+            "endDate": "2023-12-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-248f56b646df",
+              "factId": "fact-7e374b59f0bc",
+              "locator": "Stripe annual updates archive"
+            }
+          ]
+        },
+        {
+          "id": "claim-98f93ee2319b",
+          "kind": "observable",
+          "statement": "Stripe reported being robustly cash-flow positive in 2023 and expected the same in 2024.",
+          "value": true,
+          "period": {
+            "endDate": "2023-12-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-248f56b646df",
+              "factId": "fact-145c43740a61",
+              "locator": "Stripe annual updates archive"
+            }
+          ]
+        },
+        {
+          "id": "claim-db655dfa270f",
+          "kind": "observable",
+          "statement": "Stripe reported that more than 100 businesses processed over USD 1 billion each on Stripe annually.",
+          "value": 100,
+          "unit": "businesses, greater than",
+          "period": {
+            "endDate": "2023-12-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-248f56b646df",
+              "factId": "fact-fb6209b89fb8",
+              "locator": "Stripe annual updates archive"
+            }
+          ]
+        },
+        {
+          "id": "claim-9c893dab38c0",
+          "kind": "observable",
+          "statement": "Stripe reported that users processed USD 1 trillion through Stripe in 2023.",
+          "value": 1,
+          "unit": "USD trillions payment volume",
+          "period": {
+            "endDate": "2023-12-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-248f56b646df",
+              "factId": "fact-d391e6226b17",
+              "locator": "Stripe annual updates archive"
+            }
+          ]
+        },
+        {
+          "id": "claim-ed22ad34212e",
+          "kind": "observable",
+          "statement": "Stripe said the Series I funds would provide current and former employee liquidity and address equity-award tax obligations.",
+          "value": "employee liquidity and withholding tax obligations",
+          "period": {
+            "instantDate": "2023-03-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-32cb116f912b",
+              "factId": "fact-9064ed551da9",
+              "locator": "Stripe newsroom, 15 Mar 2023"
+            }
+          ]
+        },
+        {
+          "id": "claim-ac3ca71c00c3",
+          "kind": "observable",
+          "statement": "Stripe stated that it did not need the Series I capital to run the business.",
+          "value": true,
+          "period": {
+            "instantDate": "2023-03-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-32cb116f912b",
+              "factId": "fact-4535e60e5f84",
+              "locator": "Stripe newsroom, 15 Mar 2023"
+            }
+          ]
+        },
+        {
+          "id": "claim-44ed29075d4f",
+          "kind": "observable",
+          "statement": "Stripe stated that the Series I financing was at a USD 50 billion valuation.",
+          "value": 50,
+          "unit": "USD billions headline valuation",
+          "period": {
+            "instantDate": "2023-03-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-32cb116f912b",
+              "factId": "fact-1abda48ef9fe",
+              "locator": "Stripe newsroom, 15 Mar 2023"
+            }
+          ]
+        }
+      ],
+      "route": {
+        "status": "omitted"
+      },
+      "abstentions": [],
+      "valuations": []
+    },
+    "failures": []
+  }
+}

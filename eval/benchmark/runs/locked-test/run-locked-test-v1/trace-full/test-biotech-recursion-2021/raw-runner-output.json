@@ -1,0 +1,1582 @@
+{
+  "schemaVersion": "trace.trace-full-runner-output.v1",
+  "runnerName": "trace-full",
+  "analyzerVersion": "0.1.0",
+  "inputFingerprint": "1b39a39cf696",
+  "case": {
+    "caseId": "test-biotech-recursion-2021",
+    "partition": "locked-test",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Recursion Pharmaceuticals, Inc.",
+    "measurementDate": "2021-04-15",
+    "cutoffDate": "2021-04-15",
+    "dataTier": "rich",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "sourceRecordIds": [
+      "recursion-2021-03-22-sec-s1",
+      "recursion-2021-04-15-final-prospectus"
+    ]
+  },
+  "sourcePolicy": {
+    "approvedPublicSourceCategories": [
+      "company-primary",
+      "government",
+      "market-data",
+      "news",
+      "peer-reviewed",
+      "regulatory-filing"
+    ],
+    "redistributionStatus": "public-urls-redistribution-not-established",
+    "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+    "onlyUrlsAndShortExcerptsMayBeCommitted": true
+  },
+  "authorityBoundary": {
+    "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+    "officialContestRulesStatus": "not-supplied",
+    "contestComplianceClaimAllowed": false,
+    "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+    "prohibitedClaims": [
+      "appraisal status",
+      "benchmark superiority",
+      "contest readiness",
+      "investment advice",
+      "official contest compliance"
+    ]
+  },
+  "analyzerPath": [
+    "evidence-ledger",
+    "sufficiency-gating",
+    "route-selection",
+    "valuation-engine",
+    "adversarial-review",
+    "report-composer"
+  ],
+  "runtimeResult": {
+    "ledger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Recursion Pharmaceuticals, Inc.",
+        "jurisdiction": "US-DE",
+        "identifiers": [
+          {
+            "scheme": "other",
+            "value": "SEC-CIK-0001601830",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "Recursion",
+          "Recursion Pharmaceuticals"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2021-04-15",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-95a848a8ee5a",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1601830/000119312521089610/d89478ds1.htm",
+          "sourceTitle": "Recursion Pharmaceuticals Form S-1",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-03-22",
+          "effectiveDate": "2021-03-22",
+          "sourceClass": "regulatory-filing",
+          "epistemicClass": "extracted",
+          "locator": "SEC accession 0001193125-21-089610",
+          "shortExcerpt": "The S-1 identifies Recursion, describes its biology-decoding platform, IPO registration and biotechnology operating model.",
+          "observedFacts": [
+            {
+              "id": "fact-72b50c96fb48",
+              "statement": "Recursion described itself as a clinical-stage biotechnology company using technology to decode biology.",
+              "epistemicClass": "extracted",
+              "value": "clinical-stage biotechnology company",
+              "period": {
+                "instantDate": "2021-03-22"
+              }
+            },
+            {
+              "id": "fact-513edb126016",
+              "statement": "Recursion described the Recursion OS as combining infrastructure, biological datasets, algorithms and machine-learning tools.",
+              "epistemicClass": "extracted",
+              "value": "Recursion OS platform",
+              "period": {
+                "instantDate": "2021-03-22"
+              }
+            },
+            {
+              "id": "fact-760052dc5bfc",
+              "statement": "Recursion filed a Form S-1 registration statement for its initial public offering before the cutoff.",
+              "epistemicClass": "observed",
+              "value": true,
+              "period": {
+                "instantDate": "2021-03-22"
+              }
+            },
+            {
+              "id": "fact-436d6b9d4b97",
+              "statement": "The S-1 identifies the registrant as Recursion Pharmaceuticals, Inc., incorporated in Delaware, with CIK 0001601830.",
+              "epistemicClass": "observed",
+              "value": "SEC-CIK-0001601830",
+              "unit": "SEC CIK",
+              "period": {
+                "instantDate": "2021-03-22"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-da68c304b2cc",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1601830/000119312521119404/d89478d424b4.htm",
+          "sourceTitle": "Recursion Pharmaceuticals final prospectus",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-04-15",
+          "effectiveDate": "2021-04-15",
+          "sourceClass": "regulatory-filing",
+          "epistemicClass": "extracted",
+          "locator": "SEC accession 0001193125-21-119404",
+          "shortExcerpt": "The final prospectus states the Class A IPO share count, USD 18 public price, gross proceeds and dual-class stock details.",
+          "observedFacts": [
+            {
+              "id": "fact-3f04bc86a665",
+              "statement": "The final prospectus describes Class A shares with one vote and Class B shares with ten votes per share.",
+              "epistemicClass": "extracted",
+              "value": [
+                "Class A: one vote",
+                "Class B: ten votes"
+              ],
+              "period": {
+                "instantDate": "2021-04-15"
+              }
+            },
+            {
+              "id": "fact-076ec5dfb0e8",
+              "statement": "The final prospectus states Recursion was offering 24,242,424 shares of Class A common stock.",
+              "epistemicClass": "extracted",
+              "value": 24242424,
+              "unit": "Class A shares offered",
+              "period": {
+                "instantDate": "2021-04-15"
+              }
+            },
+            {
+              "id": "fact-7f8929dbacce",
+              "statement": "The final prospectus states an initial public offering price of USD 18.00 per share.",
+              "epistemicClass": "extracted",
+              "value": 18,
+              "unit": "USD per share",
+              "period": {
+                "instantDate": "2021-04-15"
+              }
+            },
+            {
+              "id": "fact-05fd9e45605c",
+              "statement": "The final prospectus states total initial public offering price of USD 436,363,632 before deductions.",
+              "epistemicClass": "extracted",
+              "value": 436.363632,
+              "unit": "USD millions gross offering value",
+              "period": {
+                "instantDate": "2021-04-15"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "recursion-2021-04-16-ipo-pricing-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record recursion-2021-04-16-ipo-pricing-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://ir.recursion.com/news-releases/news-release-details/recursion-pharmaceuticals-announces-pricing-initial-public",
+          "sourceTitle": "Recursion Pharmaceuticals announces IPO pricing",
+          "publishedDate": "2021-04-16",
+          "measurementDate": "2021-04-15"
+        }
+      ],
+      "failedNotes": [
+        {
+          "id": "recursion-product-cash-flow-not-public",
+          "stage": "extraction",
+          "sourceTitle": "Recursion IPO source set",
+          "attemptedAt": "2026-07-26T00:00:00+09:00",
+          "note": "The IPO sources support route and offering-value references but not product-level rNPV cash-flow forecasts."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded recursion-2021-04-16-ipo-pricing-post-cutoff because publishedDate 2021-04-16 is after measurementDate 2021-04-15.",
+          "recordIds": [
+            "recursion-2021-04-16-ipo-pricing-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://ir.recursion.com/news-releases/news-release-details/recursion-pharmaceuticals-announces-pricing-initial-public"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    },
+    "sufficiency": {
+      "status": "sufficient",
+      "score": 0.725,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "met",
+          "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "met",
+          "explanation": "Multiple high-authority source classes support routing.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "partial",
+          "explanation": "Evidence contains one business-model fact relevant to routing.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "missing",
+          "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        }
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-route-defining-business-model-evidence",
+          "topic": "Route-defining business-model evidence",
+          "description": "Evidence contains one business-model fact relevant to routing.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "rationale": "Evidence coverage is sufficient for route selection before valuation."
+    },
+    "route": {
+      "status": "selected",
+      "selectedRoute": "biotech-rnpv",
+      "selectedReasons": [
+        {
+          "summary": "Evidence describes a biotech, diagnostics, or therapeutics company with clinical studies, pipeline, FDA, CRISPR, product-launch, or rNPV facts.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a"
+          ]
+        }
+      ],
+      "candidates": [
+        {
+          "route": "biotech-rnpv",
+          "status": "selected",
+          "score": 0.3333,
+          "reasons": [
+            {
+              "summary": "Evidence describes a biotech, diagnostics, or therapeutics company with clinical studies, pipeline, FDA, CRISPR, product-launch, or rNPV facts.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the financial services route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected biotech rnpv route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        }
+      ],
+      "rejectedRoutes": [
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the financial services route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected biotech rnpv route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "post-cutoff-pricing-not-input",
+          "explanation": "TRACE excludes IPO pricing or fully diluted value published after the measurement-date cutoff and does not use it as a headline-valuation input.",
+          "missingInformation": [
+            {
+              "id": "missing-cutoff-visible-pricing",
+              "topic": "Cutoff-visible pricing",
+              "description": "The available pricing reference was published after the measurement date and is excluded from model inputs.",
+              "consequence": "TRACE abstains from a cutoff-date headline valuation.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "no-product-cash-flow-forecast",
+          "explanation": "Clinical, diagnostics, therapeutics, pipeline, or product-stage evidence supports biotech-rNPV routing, but no product cash-flow forecast and probability assumptions support enterprise value.",
+          "missingInformation": [
+            {
+              "id": "missing-product-cash-flow-forecast",
+              "topic": "Product cash-flow forecast",
+              "description": "The evidence does not provide product-level cash flows, development probabilities, milestones, and commercial timing required for rNPV.",
+              "consequence": "TRACE abstains from enterprise value.",
+              "requiredFor": [
+                "enterprise-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "missing-total-equity-capitalization",
+          "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "missingInformation": [
+            {
+              "id": "missing-total-equity-capitalization",
+              "topic": "Total equity capitalization",
+              "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+              "consequence": "TRACE abstains from total equity value.",
+              "requiredFor": [
+                "total-equity-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "missing-security-rights-and-cap-table",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "missingInformation": [
+            {
+              "id": "missing-cap-table",
+              "topic": "Cap table",
+              "description": "The evidence ledger does not disclose capitalization table data.",
+              "consequence": "TRACE cannot allocate value across securities or holders.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-dilution",
+              "topic": "Dilution",
+              "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+              "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-preferences",
+              "topic": "Share preferences",
+              "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+              "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-rights",
+              "topic": "Share rights",
+              "description": "The evidence ledger does not disclose rights attached to the specific security.",
+              "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        }
+      }
+    },
+    "review": {
+      "status": "warnings",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "warning",
+          "category": "cutoff",
+          "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route selection is consistent with sufficiency status: biotech-rnpv.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        }
+      ]
+    }
+  },
+  "report": {
+    "schemaVersion": "trace.report.v1",
+    "company": {
+      "legalName": "Recursion Pharmaceuticals, Inc.",
+      "jurisdiction": "US-DE",
+      "identifiers": [
+        {
+          "scheme": "other",
+          "value": "SEC-CIK-0001601830",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "Recursion",
+        "Recursion Pharmaceuticals"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2021-04-15",
+    "decisionMode": "full-analysis",
+    "evidence": [
+      {
+        "id": "ev-95a848a8ee5a",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1601830/000119312521089610/d89478ds1.htm",
+        "sourceTitle": "Recursion Pharmaceuticals Form S-1",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2021-03-22",
+        "effectiveDate": "2021-03-22",
+        "sourceClass": "regulatory-filing",
+        "epistemicClass": "extracted",
+        "locator": "SEC accession 0001193125-21-089610",
+        "shortExcerpt": "The S-1 identifies Recursion, describes its biology-decoding platform, IPO registration and biotechnology operating model.",
+        "observedFacts": [
+          {
+            "id": "fact-72b50c96fb48",
+            "statement": "Recursion described itself as a clinical-stage biotechnology company using technology to decode biology.",
+            "epistemicClass": "extracted",
+            "value": "clinical-stage biotechnology company",
+            "period": {
+              "instantDate": "2021-03-22"
+            }
+          },
+          {
+            "id": "fact-513edb126016",
+            "statement": "Recursion described the Recursion OS as combining infrastructure, biological datasets, algorithms and machine-learning tools.",
+            "epistemicClass": "extracted",
+            "value": "Recursion OS platform",
+            "period": {
+              "instantDate": "2021-03-22"
+            }
+          },
+          {
+            "id": "fact-760052dc5bfc",
+            "statement": "Recursion filed a Form S-1 registration statement for its initial public offering before the cutoff.",
+            "epistemicClass": "observed",
+            "value": true,
+            "period": {
+              "instantDate": "2021-03-22"
+            }
+          },
+          {
+            "id": "fact-436d6b9d4b97",
+            "statement": "The S-1 identifies the registrant as Recursion Pharmaceuticals, Inc., incorporated in Delaware, with CIK 0001601830.",
+            "epistemicClass": "observed",
+            "value": "SEC-CIK-0001601830",
+            "unit": "SEC CIK",
+            "period": {
+              "instantDate": "2021-03-22"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ev-da68c304b2cc",
+        "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1601830/000119312521119404/d89478d424b4.htm",
+        "sourceTitle": "Recursion Pharmaceuticals final prospectus",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2021-04-15",
+        "effectiveDate": "2021-04-15",
+        "sourceClass": "regulatory-filing",
+        "epistemicClass": "extracted",
+        "locator": "SEC accession 0001193125-21-119404",
+        "shortExcerpt": "The final prospectus states the Class A IPO share count, USD 18 public price, gross proceeds and dual-class stock details.",
+        "observedFacts": [
+          {
+            "id": "fact-3f04bc86a665",
+            "statement": "The final prospectus describes Class A shares with one vote and Class B shares with ten votes per share.",
+            "epistemicClass": "extracted",
+            "value": [
+              "Class A: one vote",
+              "Class B: ten votes"
+            ],
+            "period": {
+              "instantDate": "2021-04-15"
+            }
+          },
+          {
+            "id": "fact-076ec5dfb0e8",
+            "statement": "The final prospectus states Recursion was offering 24,242,424 shares of Class A common stock.",
+            "epistemicClass": "extracted",
+            "value": 24242424,
+            "unit": "Class A shares offered",
+            "period": {
+              "instantDate": "2021-04-15"
+            }
+          },
+          {
+            "id": "fact-7f8929dbacce",
+            "statement": "The final prospectus states an initial public offering price of USD 18.00 per share.",
+            "epistemicClass": "extracted",
+            "value": 18,
+            "unit": "USD per share",
+            "period": {
+              "instantDate": "2021-04-15"
+            }
+          },
+          {
+            "id": "fact-05fd9e45605c",
+            "statement": "The final prospectus states total initial public offering price of USD 436,363,632 before deductions.",
+            "epistemicClass": "extracted",
+            "value": 436.363632,
+            "unit": "USD millions gross offering value",
+            "period": {
+              "instantDate": "2021-04-15"
+            }
+          }
+        ]
+      }
+    ],
+    "sufficiency": {
+      "status": "sufficient",
+      "score": 0.725,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "met",
+          "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "met",
+          "explanation": "Multiple high-authority source classes support routing.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "partial",
+          "explanation": "Evidence contains one business-model fact relevant to routing.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "missing",
+          "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        }
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-route-defining-business-model-evidence",
+          "topic": "Route-defining business-model evidence",
+          "description": "Evidence contains one business-model fact relevant to routing.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "rationale": "Evidence coverage is sufficient for route selection before valuation."
+    },
+    "route": {
+      "status": "selected",
+      "selectedRoute": "biotech-rnpv",
+      "selectedReasons": [
+        {
+          "summary": "Evidence describes a biotech, diagnostics, or therapeutics company with clinical studies, pipeline, FDA, CRISPR, product-launch, or rNPV facts.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a"
+          ]
+        }
+      ],
+      "candidates": [
+        {
+          "route": "biotech-rnpv",
+          "status": "selected",
+          "score": 0.3333,
+          "reasons": [
+            {
+              "summary": "Evidence describes a biotech, diagnostics, or therapeutics company with clinical studies, pipeline, FDA, CRISPR, product-launch, or rNPV facts.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the financial services route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected biotech rnpv route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        }
+      ],
+      "rejectedRoutes": [
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the financial services route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected biotech rnpv route.",
+              "evidenceIds": [
+                "ev-95a848a8ee5a",
+                "ev-da68c304b2cc"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "post-cutoff-pricing-not-input",
+          "explanation": "TRACE excludes IPO pricing or fully diluted value published after the measurement-date cutoff and does not use it as a headline-valuation input.",
+          "missingInformation": [
+            {
+              "id": "missing-cutoff-visible-pricing",
+              "topic": "Cutoff-visible pricing",
+              "description": "The available pricing reference was published after the measurement date and is excluded from model inputs.",
+              "consequence": "TRACE abstains from a cutoff-date headline valuation.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "no-product-cash-flow-forecast",
+          "explanation": "Clinical, diagnostics, therapeutics, pipeline, or product-stage evidence supports biotech-rNPV routing, but no product cash-flow forecast and probability assumptions support enterprise value.",
+          "missingInformation": [
+            {
+              "id": "missing-product-cash-flow-forecast",
+              "topic": "Product cash-flow forecast",
+              "description": "The evidence does not provide product-level cash flows, development probabilities, milestones, and commercial timing required for rNPV.",
+              "consequence": "TRACE abstains from enterprise value.",
+              "requiredFor": [
+                "enterprise-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "missing-total-equity-capitalization",
+          "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "missingInformation": [
+            {
+              "id": "missing-total-equity-capitalization",
+              "topic": "Total equity capitalization",
+              "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+              "consequence": "TRACE abstains from total equity value.",
+              "requiredFor": [
+                "total-equity-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "missing-security-rights-and-cap-table",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "missingInformation": [
+            {
+              "id": "missing-cap-table",
+              "topic": "Cap table",
+              "description": "The evidence ledger does not disclose capitalization table data.",
+              "consequence": "TRACE cannot allocate value across securities or holders.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-dilution",
+              "topic": "Dilution",
+              "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+              "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-preferences",
+              "topic": "Share preferences",
+              "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+              "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-rights",
+              "topic": "Share rights",
+              "description": "The evidence ledger does not disclose rights attached to the specific security.",
+              "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ]
+        }
+      }
+    },
+    "review": {
+      "status": "warnings",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "warning",
+          "category": "cutoff",
+          "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route selection is consistent with sufficiency status: biotech-rnpv.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-95a848a8ee5a",
+            "ev-da68c304b2cc"
+          ],
+          "missingInformation": []
+        }
+      ]
+    },
+    "sections": {
+      "facts": [
+        "Recursion described itself as a clinical-stage biotechnology company using technology to decode biology. value=clinical-stage biotechnology company; period=instant 2021-03-22; epistemic=extracted [ev-95a848a8ee5a]",
+        "Recursion described the Recursion OS as combining infrastructure, biological datasets, algorithms and machine-learning tools. value=Recursion OS platform; period=instant 2021-03-22; epistemic=extracted [ev-95a848a8ee5a]",
+        "Recursion filed a Form S-1 registration statement for its initial public offering before the cutoff. value=true; period=instant 2021-03-22; epistemic=observed [ev-95a848a8ee5a]",
+        "The S-1 identifies the registrant as Recursion Pharmaceuticals, Inc., incorporated in Delaware, with CIK 0001601830. value=SEC-CIK-0001601830; unit=SEC CIK; period=instant 2021-03-22; epistemic=observed [ev-95a848a8ee5a]",
+        "The final prospectus describes Class A shares with one vote and Class B shares with ten votes per share. value=Class A: one vote, Class B: ten votes; period=instant 2021-04-15; epistemic=extracted [ev-da68c304b2cc]",
+        "The final prospectus states Recursion was offering 24,242,424 shares of Class A common stock. value=24242424; unit=Class A shares offered; period=instant 2021-04-15; epistemic=extracted [ev-da68c304b2cc]",
+        "The final prospectus states an initial public offering price of USD 18.00 per share. value=18; unit=USD per share; period=instant 2021-04-15; epistemic=extracted [ev-da68c304b2cc]",
+        "The final prospectus states total initial public offering price of USD 436,363,632 before deductions. value=436.363632; unit=USD millions gross offering value; period=instant 2021-04-15; epistemic=extracted [ev-da68c304b2cc]"
+      ],
+      "inferences": [
+        "Enterprise Value abstained: Clinical, diagnostics, therapeutics, pipeline, or product-stage evidence supports biotech-rNPV routing, but no product cash-flow forecast and probability assumptions support enterprise value. [ev-95a848a8ee5a, ev-da68c304b2cc]",
+        "Headline Valuation abstained: TRACE excludes IPO pricing or fully diluted value published after the measurement-date cutoff and does not use it as a headline-valuation input. [ev-95a848a8ee5a, ev-da68c304b2cc]",
+        "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-95a848a8ee5a, ev-da68c304b2cc]",
+        "Selected route biotech-rnpv: Evidence describes a biotech, diagnostics, or therapeutics company with clinical studies, pipeline, FDA, CRISPR, product-launch, or rNPV facts. [ev-95a848a8ee5a]",
+        "Sufficiency is sufficient with score 0.725: Evidence coverage is sufficient for route selection before valuation.",
+        "Total Equity Value abstained: TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence. [ev-95a848a8ee5a, ev-da68c304b2cc]"
+      ],
+      "conflicts": [],
+      "limitations": [
+        "Clinical, diagnostics, therapeutics, pipeline, or product-stage evidence supports biotech-rNPV routing, but no product cash-flow forecast and probability assumptions support enterprise value.",
+        "Evidence record recursion-2021-04-16-ipo-pricing-post-cutoff was published after the measurement date and was excluded.",
+        "Excluded recursion-2021-04-16-ipo-pricing-post-cutoff because publishedDate 2021-04-16 is after measurementDate 2021-04-15.",
+        "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+        "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+        "TRACE excludes IPO pricing or fully diluted value published after the measurement-date cutoff and does not use it as a headline-valuation input.",
+        "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.",
+        "extraction note recursion-product-cash-flow-not-public: The IPO sources support route and offering-value references but not product-level rNPV cash-flow forecasts."
+      ],
+      "counterarguments": [
+        "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: financial-services, software-saas, marketplace, asset-based, recent-transaction, general-private-company."
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-cap-table",
+          "topic": "Cap table",
+          "description": "The evidence ledger does not disclose capitalization table data.",
+          "consequence": "TRACE cannot allocate value across securities or holders.",
+          "requiredFor": [
+            "total-equity-value",
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-cutoff-visible-pricing",
+          "topic": "Cutoff-visible pricing",
+          "description": "The available pricing reference was published after the measurement date and is excluded from model inputs.",
+          "consequence": "TRACE abstains from a cutoff-date headline valuation.",
+          "requiredFor": [
+            "headline-valuation"
+          ]
+        },
+        {
+          "id": "missing-dilution",
+          "topic": "Dilution",
+          "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+          "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+          "requiredFor": [
+            "total-equity-value",
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-product-cash-flow-forecast",
+          "topic": "Product cash-flow forecast",
+          "description": "The evidence does not provide product-level cash flows, development probabilities, milestones, and commercial timing required for rNPV.",
+          "consequence": "TRACE abstains from enterprise value.",
+          "requiredFor": [
+            "enterprise-value"
+          ]
+        },
+        {
+          "id": "missing-route-defining-business-model-evidence",
+          "topic": "Route-defining business-model evidence",
+          "description": "Evidence contains one business-model fact relevant to routing.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-share-preferences",
+          "topic": "Share preferences",
+          "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+          "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+          "requiredFor": [
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-share-rights",
+          "topic": "Share rights",
+          "description": "The evidence ledger does not disclose rights attached to the specific security.",
+          "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+          "requiredFor": [
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-total-equity-capitalization",
+          "topic": "Total equity capitalization",
+          "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+          "consequence": "TRACE abstains from total equity value.",
+          "requiredFor": [
+            "total-equity-value"
+          ]
+        }
+      ],
+      "nextDiligenceQuestions": [
+        "What evidence resolves Cap table for total-equity-value, security-level-fair-value?",
+        "What evidence resolves Cutoff-visible pricing for headline-valuation?",
+        "What evidence resolves Dilution for total-equity-value, security-level-fair-value?",
+        "What evidence resolves Financial and operating fact coverage for routing, sufficiency?",
+        "What evidence resolves Product cash-flow forecast for enterprise-value?",
+        "What evidence resolves Route-defining business-model evidence for routing, sufficiency?",
+        "What evidence resolves Share preferences for security-level-fair-value?",
+        "What evidence resolves Share rights for security-level-fair-value?",
+        "What evidence resolves Total equity capitalization for total-equity-value?"
+      ]
+    },
+    "run": {
+      "runId": "run-locked-test-v1",
+      "runtimeVersion": "0.1.0",
+      "command": "trace benchmark --partition locked-test --runner trace-full --case-id test-biotech-recursion-2021",
+      "measurementDate": "2021-04-15",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.292Z",
+      "durationMs": 292,
+      "inputPath": "benchmark:locked-test:test-biotech-recursion-2021",
+      "outputDirectory": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-biotech-recursion-2021",
+      "warnings": [
+        "Excluded recursion-2021-04-16-ipo-pricing-post-cutoff because publishedDate 2021-04-16 is after measurementDate 2021-04-15."
+      ]
+    }
+  },
+  "executionLog": {
+    "schemaVersion": "trace.execution-log.v1",
+    "runId": "run-locked-test-v1",
+    "runtimeVersion": "0.1.0",
+    "measurementDate": "2021-04-15",
+    "inputPath": "benchmark:locked-test:test-biotech-recursion-2021",
+    "outputPaths": {
+      "jsonReport": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-biotech-recursion-2021/raw-runner-output.json",
+      "markdownReport": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-biotech-recursion-2021/raw-runner-output.md",
+      "executionLog": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-biotech-recursion-2021/raw-runner-output.json#executionLog"
+    },
+    "startedAt": "2026-07-26T00:00:00.000Z",
+    "completedAt": "2026-07-26T00:00:00.292Z",
+    "durationMs": 292,
+    "validationWarnings": [
+      "Excluded recursion-2021-04-16-ipo-pricing-post-cutoff because publishedDate 2021-04-16 is after measurementDate 2021-04-15."
+    ],
+    "reviewerFindings": [
+      {
+        "id": "review-abstention-triggers",
+        "severity": "pass",
+        "category": "abstention",
+        "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+        "evidenceIds": [
+          "ev-95a848a8ee5a",
+          "ev-da68c304b2cc"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-calculation-integrity",
+        "severity": "pass",
+        "category": "calculation",
+        "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+        "evidenceIds": [
+          "ev-95a848a8ee5a",
+          "ev-da68c304b2cc"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-citation-support",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+        "evidenceIds": [
+          "ev-95a848a8ee5a",
+          "ev-da68c304b2cc"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-cutoff-compliance",
+        "severity": "warning",
+        "category": "cutoff",
+        "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+        "evidenceIds": [
+          "ev-95a848a8ee5a",
+          "ev-da68c304b2cc"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-entity-certainty",
+        "severity": "pass",
+        "category": "entity",
+        "message": "Target identity is resolved and supported by included evidence.",
+        "evidenceIds": [
+          "ev-95a848a8ee5a",
+          "ev-da68c304b2cc"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-evidence-coverage",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+        "evidenceIds": [
+          "ev-95a848a8ee5a",
+          "ev-da68c304b2cc"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-route-appropriateness",
+        "severity": "pass",
+        "category": "route",
+        "message": "Route selection is consistent with sufficiency status: biotech-rnpv.",
+        "evidenceIds": [
+          "ev-95a848a8ee5a",
+          "ev-da68c304b2cc"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-valuation-field-separation",
+        "severity": "pass",
+        "category": "valuation-separation",
+        "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+        "evidenceIds": [
+          "ev-95a848a8ee5a",
+          "ev-da68c304b2cc"
+        ],
+        "missingInformation": []
+      }
+    ],
+    "deterministicIdentifiers": {
+      "evidenceLedgerHash": "40a5786514cf3760c6d9b5837b375304cf2eb27af8f21f5470923cd6f2cbc0d6",
+      "runtimeResultHash": "a0189aa14e093ccd71721900ff785ef552e235fbb05dfb99e70341cd2edd53ce"
+    }
+  }
+}

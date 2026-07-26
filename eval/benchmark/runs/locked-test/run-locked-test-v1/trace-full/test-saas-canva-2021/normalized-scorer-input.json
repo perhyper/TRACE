@@ -1,0 +1,2451 @@
+{
+  "schemaVersion": "trace.benchmark-scorer-input.v1",
+  "runId": "run-locked-test-v1",
+  "runnerName": "trace-full",
+  "caseId": "test-saas-canva-2021",
+  "partition": "locked-test",
+  "caseInput": {
+    "schemaVersion": "trace.benchmark-case-input.v1",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "manifestSchemaVersion": "trace.benchmark-manifest.v1",
+    "caseId": "test-saas-canva-2021",
+    "partition": "locked-test",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Canva Pty Ltd",
+    "target": {
+      "legalName": "Canva Pty Ltd",
+      "jurisdiction": "AU",
+      "identifiers": [
+        {
+          "scheme": "tax-id",
+          "value": "ABN-80-158-929-938",
+          "jurisdiction": "AU"
+        },
+        {
+          "scheme": "company-number",
+          "value": "ACN-158-929-938",
+          "jurisdiction": "AU"
+        }
+      ],
+      "aliases": [
+        "Canva"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2021-09-15",
+    "cutoffDate": "2021-09-15",
+    "dataTier": "medium",
+    "sourcePolicy": {
+      "approvedPublicSourceCategories": [
+        "company-primary",
+        "government",
+        "market-data",
+        "news"
+      ],
+      "redistributionStatus": "public-urls-redistribution-not-established",
+      "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+      "onlyUrlsAndShortExcerptsMayBeCommitted": true
+    },
+    "authorityBoundary": {
+      "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+      "officialContestRulesStatus": "not-supplied",
+      "contestComplianceClaimAllowed": false,
+      "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+      "prohibitedClaims": [
+        "appraisal status",
+        "benchmark superiority",
+        "contest readiness",
+        "investment advice",
+        "official contest compliance"
+      ]
+    },
+    "sourceRecordIds": [
+      "canva-2021-09-14-techcrunch-funding",
+      "canva-2021-09-15-funding-release",
+      "canva-abn-lookup-identity"
+    ],
+    "evidenceLedger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Canva Pty Ltd",
+        "jurisdiction": "AU",
+        "identifiers": [
+          {
+            "scheme": "tax-id",
+            "value": "ABN-80-158-929-938",
+            "jurisdiction": "AU"
+          },
+          {
+            "scheme": "company-number",
+            "value": "ACN-158-929-938",
+            "jurisdiction": "AU"
+          }
+        ],
+        "aliases": [
+          "Canva"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2021-09-15",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-6a1dc4f6277d",
+          "sourceUrl": "https://techcrunch.com/2021/09/14/canva-raises-200-million-at-a-40-billion-valuation/",
+          "sourceTitle": "Canva raises USD 200 million at a USD 40 billion valuation",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-09-14",
+          "effectiveDate": "2021-09-14",
+          "sourceClass": "news",
+          "epistemicClass": "observed",
+          "locator": "TechCrunch, 14 Sep 2021",
+          "shortExcerpt": "News coverage before the measurement date reported Canva's funding amount, valuation, user scale and enterprise adoption.",
+          "observedFacts": [
+            {
+              "id": "fact-41556e11f809",
+              "statement": "News coverage described Canva as having a team of about 2,000 people.",
+              "epistemicClass": "observed",
+              "value": 2000,
+              "unit": "employees",
+              "period": {
+                "instantDate": "2021-09-14"
+              }
+            },
+            {
+              "id": "fact-a4716e883c0a",
+              "statement": "News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers.",
+              "epistemicClass": "observed",
+              "value": [
+                "Salesforce",
+                "Marriott International",
+                "PayPal",
+                "American Airlines"
+              ],
+              "period": {
+                "instantDate": "2021-09-14"
+              }
+            },
+            {
+              "id": "fact-a2fd5df385e4",
+              "statement": "News coverage reported more than 500,000 teams paying for Canva.",
+              "epistemicClass": "observed",
+              "value": 500000,
+              "unit": "paying teams, greater than",
+              "period": {
+                "instantDate": "2021-09-14"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-2eb623901f43",
+          "sourceUrl": "https://www.canva.com/newsroom/news/canva-announces-usd-40-billion-valuation-fueled-global-demand-visual-communication/",
+          "sourceTitle": "Canva announces USD 40 billion valuation",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2021-09-15",
+          "effectiveDate": "2021-09-15",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Canva newsroom, 15 Sep 2021",
+          "shortExcerpt": "Canva announced a USD 200m funding round, USD 40bn valuation, more than 60m monthly users and positive free cash flow.",
+          "observedFacts": [
+            {
+              "id": "fact-dd824711cfc6",
+              "statement": "Canva announced a USD 200 million funding round on 2021-09-15.",
+              "epistemicClass": "observed",
+              "value": 200,
+              "unit": "USD millions",
+              "period": {
+                "instantDate": "2021-09-15"
+              }
+            },
+            {
+              "id": "fact-ed0f54b1af89",
+              "statement": "Canva announced a USD 40 billion headline valuation after the funding round.",
+              "epistemicClass": "observed",
+              "value": 40,
+              "unit": "USD billions headline valuation",
+              "period": {
+                "instantDate": "2021-09-15"
+              }
+            },
+            {
+              "id": "fact-af53fd093bd5",
+              "statement": "Canva reported generating positive free cash flow at the time of the September 2021 announcement.",
+              "epistemicClass": "observed",
+              "value": true,
+              "period": {
+                "instantDate": "2021-09-15"
+              }
+            },
+            {
+              "id": "fact-2732a8f8f195",
+              "statement": "Canva reported more than 60 million monthly active users at the time of the funding announcement.",
+              "epistemicClass": "observed",
+              "value": 60,
+              "unit": "millions monthly active users, greater than",
+              "period": {
+                "instantDate": "2021-09-15"
+              }
+            },
+            {
+              "id": "fact-384491328ff2",
+              "statement": "Canva reported users in 190 countries at the time of the funding announcement.",
+              "epistemicClass": "observed",
+              "value": 190,
+              "unit": "countries",
+              "period": {
+                "instantDate": "2021-09-15"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-2b2ee9738bd3",
+          "sourceUrl": "https://abr.business.gov.au/ABN/View?abn=80158929938",
+          "sourceTitle": "Current details for ABN 80 158 929 938",
+          "retrievedDate": "2026-07-26",
+          "effectiveDate": "2012-06-12",
+          "sourceClass": "government",
+          "epistemicClass": "observed",
+          "locator": "Australian Business Register ABN 80 158 929 938",
+          "shortExcerpt": "ABN Lookup identifies Canva Pty Ltd as an active Australian private company with ABN and ACN metadata.",
+          "observedFacts": [
+            {
+              "id": "fact-67e9d3108cc0",
+              "statement": "ABN Lookup identifies the entity name as CANVA PTY LTD.",
+              "epistemicClass": "observed",
+              "value": "CANVA PTY LTD",
+              "period": {
+                "instantDate": "2012-06-12"
+              }
+            },
+            {
+              "id": "fact-a5860c904b69",
+              "statement": "ABN Lookup links Canva Pty Ltd to ACN 158 929 938.",
+              "epistemicClass": "observed",
+              "value": "158 929 938",
+              "unit": "Australian company number",
+              "period": {
+                "instantDate": "2012-06-12"
+              }
+            },
+            {
+              "id": "fact-6fe9275ffc5b",
+              "statement": "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12.",
+              "epistemicClass": "observed",
+              "value": "2012-06-12",
+              "unit": "ABN active date",
+              "period": {
+                "instantDate": "2012-06-12"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [],
+      "failedNotes": [
+        {
+          "id": "canva-security-rights-not-public",
+          "stage": "extraction",
+          "sourceTitle": "Canva public source set",
+          "attemptedAt": "2026-07-26T00:00:00+09:00",
+          "note": "Funding coverage does not disclose security rights, cap table or a completed exit valuation target."
+        }
+      ],
+      "warnings": []
+    }
+  },
+  "annotation": {
+    "schemaVersion": "trace.benchmark-annotation.v1",
+    "caseId": "test-saas-canva-2021",
+    "partition": "locked-test",
+    "measurementDate": "2021-09-15",
+    "expectedRoute": {
+      "route": "software-saas",
+      "acceptableAlternativeRoutes": [],
+      "evidenceIds": [
+        "ev-2b2ee9738bd3",
+        "ev-2eb623901f43",
+        "ev-6a1dc4f6277d"
+      ],
+      "rationale": "The cutoff evidence describes a global visual communication software platform with user, team and subscription adoption metrics."
+    },
+    "binaryClaims": [
+      {
+        "id": "canva-completed-public-exit",
+        "statement": "Canva had completed a public exit by the cutoff.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-2eb623901f43"
+        ]
+      },
+      {
+        "id": "canva-funding-public-by-cutoff",
+        "statement": "Canva's USD 200 million financing was public by the 2021-09-15 cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-2eb623901f43",
+          "ev-6a1dc4f6277d"
+        ]
+      },
+      {
+        "id": "canva-positive-free-cash-flow",
+        "statement": "Canva reported positive free cash flow at the time of the funding announcement.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-2eb623901f43"
+        ]
+      }
+    ],
+    "observableClaims": [
+      {
+        "id": "canva-2021-funding-size",
+        "statement": "Canva announced a USD 200 million funding round.",
+        "expectedValue": 200,
+        "unit": "USD millions",
+        "period": {
+          "instantDate": "2021-09-15"
+        },
+        "evidenceIds": [
+          "ev-2eb623901f43"
+        ]
+      },
+      {
+        "id": "canva-2021-headline-valuation",
+        "statement": "Canva announced a USD 40 billion headline valuation.",
+        "expectedValue": 40,
+        "unit": "USD billions headline valuation",
+        "period": {
+          "instantDate": "2021-09-15"
+        },
+        "evidenceIds": [
+          "ev-2eb623901f43"
+        ]
+      },
+      {
+        "id": "canva-2021-monthly-active-users",
+        "statement": "Canva reported more than 60 million monthly active users.",
+        "expectedValue": 60,
+        "unit": "millions monthly active users, greater than",
+        "period": {
+          "instantDate": "2021-09-15"
+        },
+        "evidenceIds": [
+          "ev-2eb623901f43"
+        ]
+      }
+    ],
+    "expectedAbstentions": [
+      {
+        "id": "canva-enterprise-value-abstain",
+        "field": "enterprise-value",
+        "reasonCode": "headline-valuation-not-enterprise-value",
+        "description": "The USD 40 billion funding valuation is a headline private financing valuation and may not be treated as enterprise value.",
+        "evidenceIds": [
+          "ev-2eb623901f43"
+        ]
+      },
+      {
+        "id": "canva-security-level-fair-value-abstain",
+        "field": "security-level-fair-value",
+        "reasonCode": "missing-security-rights-and-cap-table",
+        "description": "The funding release and news coverage do not disclose share rights, investor allocation or cap-table detail.",
+        "evidenceIds": [
+          "ev-2eb623901f43",
+          "ev-6a1dc4f6277d"
+        ]
+      }
+    ],
+    "valuationSeparationExpectations": {
+      "allowedValuationFields": [
+        "headline-valuation"
+      ],
+      "mustNotConflate": [
+        "funding amount with total equity value",
+        "headline private financing valuation with enterprise value",
+        "headline valuation with security-level fair value"
+      ],
+      "notes": "The public evidence contains a headline funding valuation only; manifest marks historical valuation-error scoring ineligible."
+    },
+    "completenessExpectations": [
+      {
+        "id": "canva-cover-saas-scale-and-valuation-limits",
+        "description": "A complete answer should cover entity identity, software route, funding, user scale, paid teams, free cash flow and valuation-separation limits.",
+        "requiredEvidenceClasses": [
+          "company-primary",
+          "government",
+          "news"
+        ],
+        "requiredTopics": [
+          "funding",
+          "software-saas route",
+          "user scale",
+          "valuation separation"
+        ],
+        "evidenceIds": [
+          "ev-2b2ee9738bd3",
+          "ev-2eb623901f43",
+          "ev-6a1dc4f6277d"
+        ]
+      }
+    ],
+    "historicalValuationTargets": {
+      "eligible": false,
+      "reason": "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+      "targets": []
+    }
+  },
+  "runnerOutput": {
+    "schemaVersion": "trace.benchmark-runner-output.v1",
+    "runnerName": "trace-full",
+    "runId": "run-locked-test-v1",
+    "caseId": "test-saas-canva-2021",
+    "partition": "locked-test",
+    "status": "completed",
+    "timing": {
+      "schemaVersion": "trace.benchmark-timing.v1",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.331Z",
+      "durationMs": 331
+    },
+    "rawOutput": {
+      "markdown": "# TRACE Report: Canva Pty Ltd\n\n## Summary\n- Company: Canva Pty Ltd (AU; identity resolved)\n- Measurement date: 2021-09-15\n- Decision mode: full-analysis\n- Sufficiency: sufficient (1)\n- Route: recent-transaction\n- Review: passed\n- Run ID: run-locked-test-v1\n\n## Evidence Ledger\n| Evidence ID | Source class | Published | Retrieved | Source | Excerpt |\n| --- | --- | --- | --- | --- | --- |\n| ev-2b2ee9738bd3 | government | n/a | 2026-07-26 | Current details for ABN 80 158 929 938 (https://abr.business.gov.au/ABN/View?abn=80158929938) | ABN Lookup identifies Canva Pty Ltd as an active Australian private company with ABN and ACN metadata. |\n| ev-2eb623901f43 | company-primary | 2021-09-15 | 2026-07-26 | Canva announces USD 40 billion valuation (https://www.canva.com/newsroom/news/canva-announces-usd-40-billion-valuation-fueled-global-demand-visual-communication/) | Canva announced a USD 200m funding round, USD 40bn valuation, more than 60m monthly users and positive free cash flow. |\n| ev-6a1dc4f6277d | news | 2021-09-14 | 2026-07-26 | Canva raises USD 200 million at a USD 40 billion valuation (https://techcrunch.com/2021/09/14/canva-raises-200-million-at-a-40-billion-valuation/) | News coverage before the measurement date reported Canva's funding amount, valuation, user scale and enterprise adoption. |\n\n## Material Facts\n- ABN Lookup identifies the entity name as CANVA PTY LTD. value=CANVA PTY LTD; period=instant 2012-06-12; epistemic=observed [ev-2b2ee9738bd3]\n- ABN Lookup links Canva Pty Ltd to ACN 158 929 938. value=158 929 938; unit=Australian company number; period=instant 2012-06-12; epistemic=observed [ev-2b2ee9738bd3]\n- ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12. value=2012-06-12; unit=ABN active date; period=instant 2012-06-12; epistemic=observed [ev-2b2ee9738bd3]\n- Canva announced a USD 200 million funding round on 2021-09-15. value=200; unit=USD millions; period=instant 2021-09-15; epistemic=observed [ev-2eb623901f43]\n- Canva announced a USD 40 billion headline valuation after the funding round. value=40; unit=USD billions headline valuation; period=instant 2021-09-15; epistemic=observed [ev-2eb623901f43]\n- Canva reported generating positive free cash flow at the time of the September 2021 announcement. value=true; period=instant 2021-09-15; epistemic=observed [ev-2eb623901f43]\n- Canva reported more than 60 million monthly active users at the time of the funding announcement. value=60; unit=millions monthly active users, greater than; period=instant 2021-09-15; epistemic=observed [ev-2eb623901f43]\n- Canva reported users in 190 countries at the time of the funding announcement. value=190; unit=countries; period=instant 2021-09-15; epistemic=observed [ev-2eb623901f43]\n- News coverage described Canva as having a team of about 2,000 people. value=2000; unit=employees; period=instant 2021-09-14; epistemic=observed [ev-6a1dc4f6277d]\n- News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers. value=Salesforce, Marriott International, PayPal, American Airlines; period=instant 2021-09-14; epistemic=observed [ev-6a1dc4f6277d]\n- News coverage reported more than 500,000 teams paying for Canva. value=500000; unit=paying teams, greater than; period=instant 2021-09-14; epistemic=observed [ev-6a1dc4f6277d]\n\n## Inferences\n- Enterprise Value abstained: TRACE cannot calibrate a company valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d]\n- Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d]\n- Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d]\n- Selected route recent-transaction: Evidence includes a recent transaction or headline valuation reference. [ev-2eb623901f43, ev-6a1dc4f6277d]\n- Sufficiency is sufficient with score 1: Evidence coverage is sufficient for route selection before valuation.\n- Total Equity Value abstained: TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence. [ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d]\n\n## Valuation\n### Headline Valuation\n- Status: abstained\n- Reason: recent-secondary-transaction-not-observed\n- Explanation: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- Evidence: ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-recent-secondary-transaction | Recent secondary transaction | headline-valuation | TRACE cannot support the recent-secondary calibration pathway. |\n\n### Enterprise Value\n- Status: abstained\n- Reason: recent-secondary-transaction-not-observed\n- Explanation: TRACE cannot calibrate a company valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- Evidence: ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-recent-secondary-transaction | Recent secondary transaction | enterprise-value | TRACE cannot support the recent-secondary calibration pathway. |\n\n### Total Equity Value\n- Status: abstained\n- Reason: missing-total-equity-capitalization\n- Explanation: TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.\n- Evidence: ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-total-equity-capitalization | Total equity capitalization | total-equity-value | TRACE abstains from total equity value. |\n\n### Security-Level Fair Value\n- Status: abstained\n- Reason: missing-security-rights-and-cap-table\n- Explanation: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- Evidence: ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d\n- Missing information:\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-cap-table | Cap table | total-equity-value, security-level-fair-value | TRACE cannot allocate value across securities or holders. |\n| missing-dilution | Dilution | total-equity-value, security-level-fair-value | TRACE cannot convert company-level headline value into per-security fair value. |\n| missing-share-preferences | Share preferences | security-level-fair-value | TRACE cannot determine whether the security participates equally in the headline value. |\n| missing-share-rights | Share rights | security-level-fair-value | TRACE cannot assign the headline reference to a specific share class. |\n\n## Limitations\n- TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.\n- TRACE cannot calibrate a company valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.\n- TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.\n- TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.\n- extraction note canva-security-rights-not-public: Funding coverage does not disclose security rights, cap table or a completed exit valuation target.\n\n## Conflicts\n- None identified.\n\n## Counterarguments\n- Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: financial-services, software-saas, marketplace, biotech-rnpv, asset-based, general-private-company.\n\n## Missing Information\n| ID | Topic | Required for | Consequence |\n| --- | --- | --- | --- |\n| missing-cap-table | Cap table | total-equity-value, security-level-fair-value | TRACE cannot allocate value across securities or holders. |\n| missing-dilution | Dilution | total-equity-value, security-level-fair-value | TRACE cannot convert company-level headline value into per-security fair value. |\n| missing-recent-secondary-transaction | Recent secondary transaction | enterprise-value | TRACE cannot support the recent-secondary calibration pathway. |\n| missing-share-preferences | Share preferences | security-level-fair-value | TRACE cannot determine whether the security participates equally in the headline value. |\n| missing-share-rights | Share rights | security-level-fair-value | TRACE cannot assign the headline reference to a specific share class. |\n| missing-total-equity-capitalization | Total equity capitalization | total-equity-value | TRACE abstains from total equity value. |\n\n## Next Diligence Questions\n- What evidence resolves Cap table for total-equity-value, security-level-fair-value?\n- What evidence resolves Dilution for total-equity-value, security-level-fair-value?\n- What evidence resolves Recent secondary transaction for enterprise-value?\n- What evidence resolves Share preferences for security-level-fair-value?\n- What evidence resolves Share rights for security-level-fair-value?\n- What evidence resolves Total equity capitalization for total-equity-value?\n\n## Reviewer Findings\n- Reviewer version: trace-reviewer.v1\n- Status: passed\n\n| ID | Severity | Category | Evidence | Message |\n| --- | --- | --- | --- | --- |\n| review-abstention-triggers | pass | abstention | ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d | Abstained valuation fields include missing-information reasons, and security-level triggers are respected. |\n| review-calculation-integrity | pass | calculation | ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d | No concluded valuation calculations were emitted; abstentions are explicit. |\n| review-citation-support | pass | evidence | ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d | Sufficiency, route, and valuation claims cite included evidence IDs where citations are required. |\n| review-cutoff-compliance | pass | cutoff | ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d | Included evidence satisfies the measurement-date publication cutoff. |\n| review-entity-certainty | pass | entity | ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d | Target identity is resolved and supported by included evidence. |\n| review-evidence-coverage | pass | evidence | ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d | Evidence coverage satisfies the sufficiency gate for route selection. |\n| review-route-appropriateness | pass | route | ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d | Route selection is consistent with sufficiency status: recent-transaction. |\n| review-valuation-field-separation | pass | valuation-separation | ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d | Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields. |\n\n## Run Metadata\n- Run ID: run-locked-test-v1\n- Runtime version: 0.1.0\n- Command: trace benchmark --partition locked-test --runner trace-full --case-id test-saas-canva-2021\n- Measurement date: 2021-09-15\n- Started at: 2026-07-26T00:00:00.000Z\n- Completed at: 2026-07-26T00:00:00.331Z\n- Duration ms: 331\n- Input path: benchmark:locked-test:test-saas-canva-2021\n- Output directory: benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-saas-canva-2021\n- Warnings:\n- None identified.\n",
+      "json": {
+        "schemaVersion": "trace.trace-full-runner-output.v1",
+        "runnerName": "trace-full",
+        "analyzerVersion": "0.1.0",
+        "inputFingerprint": "8761f3d875aa",
+        "case": {
+          "caseId": "test-saas-canva-2021",
+          "partition": "locked-test",
+          "scoringRole": "scored",
+          "countedInScoring": true,
+          "companyLegalName": "Canva Pty Ltd",
+          "measurementDate": "2021-09-15",
+          "cutoffDate": "2021-09-15",
+          "dataTier": "medium",
+          "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+          "sourceRecordIds": [
+            "canva-2021-09-14-techcrunch-funding",
+            "canva-2021-09-15-funding-release",
+            "canva-abn-lookup-identity"
+          ]
+        },
+        "sourcePolicy": {
+          "approvedPublicSourceCategories": [
+            "company-primary",
+            "government",
+            "market-data",
+            "news"
+          ],
+          "redistributionStatus": "public-urls-redistribution-not-established",
+          "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+          "onlyUrlsAndShortExcerptsMayBeCommitted": true
+        },
+        "authorityBoundary": {
+          "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+          "officialContestRulesStatus": "not-supplied",
+          "contestComplianceClaimAllowed": false,
+          "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+          "prohibitedClaims": [
+            "appraisal status",
+            "benchmark superiority",
+            "contest readiness",
+            "investment advice",
+            "official contest compliance"
+          ]
+        },
+        "analyzerPath": [
+          "evidence-ledger",
+          "sufficiency-gating",
+          "route-selection",
+          "valuation-engine",
+          "adversarial-review",
+          "report-composer"
+        ],
+        "runtimeResult": {
+          "ledger": {
+            "schemaVersion": "trace.evidence-ledger.v1",
+            "target": {
+              "legalName": "Canva Pty Ltd",
+              "jurisdiction": "AU",
+              "identifiers": [
+                {
+                  "scheme": "tax-id",
+                  "value": "ABN-80-158-929-938",
+                  "jurisdiction": "AU"
+                },
+                {
+                  "scheme": "company-number",
+                  "value": "ACN-158-929-938",
+                  "jurisdiction": "AU"
+                }
+              ],
+              "aliases": [
+                "Canva"
+              ],
+              "identityConfidence": "resolved"
+            },
+            "measurementDate": "2021-09-15",
+            "decisionMode": "full-analysis",
+            "evidence": [
+              {
+                "id": "ev-6a1dc4f6277d",
+                "sourceUrl": "https://techcrunch.com/2021/09/14/canva-raises-200-million-at-a-40-billion-valuation/",
+                "sourceTitle": "Canva raises USD 200 million at a USD 40 billion valuation",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2021-09-14",
+                "effectiveDate": "2021-09-14",
+                "sourceClass": "news",
+                "epistemicClass": "observed",
+                "locator": "TechCrunch, 14 Sep 2021",
+                "shortExcerpt": "News coverage before the measurement date reported Canva's funding amount, valuation, user scale and enterprise adoption.",
+                "observedFacts": [
+                  {
+                    "id": "fact-41556e11f809",
+                    "statement": "News coverage described Canva as having a team of about 2,000 people.",
+                    "epistemicClass": "observed",
+                    "value": 2000,
+                    "unit": "employees",
+                    "period": {
+                      "instantDate": "2021-09-14"
+                    }
+                  },
+                  {
+                    "id": "fact-a4716e883c0a",
+                    "statement": "News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers.",
+                    "epistemicClass": "observed",
+                    "value": [
+                      "Salesforce",
+                      "Marriott International",
+                      "PayPal",
+                      "American Airlines"
+                    ],
+                    "period": {
+                      "instantDate": "2021-09-14"
+                    }
+                  },
+                  {
+                    "id": "fact-a2fd5df385e4",
+                    "statement": "News coverage reported more than 500,000 teams paying for Canva.",
+                    "epistemicClass": "observed",
+                    "value": 500000,
+                    "unit": "paying teams, greater than",
+                    "period": {
+                      "instantDate": "2021-09-14"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ev-2eb623901f43",
+                "sourceUrl": "https://www.canva.com/newsroom/news/canva-announces-usd-40-billion-valuation-fueled-global-demand-visual-communication/",
+                "sourceTitle": "Canva announces USD 40 billion valuation",
+                "retrievedDate": "2026-07-26",
+                "publishedDate": "2021-09-15",
+                "effectiveDate": "2021-09-15",
+                "sourceClass": "company-primary",
+                "epistemicClass": "observed",
+                "locator": "Canva newsroom, 15 Sep 2021",
+                "shortExcerpt": "Canva announced a USD 200m funding round, USD 40bn valuation, more than 60m monthly users and positive free cash flow.",
+                "observedFacts": [
+                  {
+                    "id": "fact-dd824711cfc6",
+                    "statement": "Canva announced a USD 200 million funding round on 2021-09-15.",
+                    "epistemicClass": "observed",
+                    "value": 200,
+                    "unit": "USD millions",
+                    "period": {
+                      "instantDate": "2021-09-15"
+                    }
+                  },
+                  {
+                    "id": "fact-ed0f54b1af89",
+                    "statement": "Canva announced a USD 40 billion headline valuation after the funding round.",
+                    "epistemicClass": "observed",
+                    "value": 40,
+                    "unit": "USD billions headline valuation",
+                    "period": {
+                      "instantDate": "2021-09-15"
+                    }
+                  },
+                  {
+                    "id": "fact-af53fd093bd5",
+                    "statement": "Canva reported generating positive free cash flow at the time of the September 2021 announcement.",
+                    "epistemicClass": "observed",
+                    "value": true,
+                    "period": {
+                      "instantDate": "2021-09-15"
+                    }
+                  },
+                  {
+                    "id": "fact-2732a8f8f195",
+                    "statement": "Canva reported more than 60 million monthly active users at the time of the funding announcement.",
+                    "epistemicClass": "observed",
+                    "value": 60,
+                    "unit": "millions monthly active users, greater than",
+                    "period": {
+                      "instantDate": "2021-09-15"
+                    }
+                  },
+                  {
+                    "id": "fact-384491328ff2",
+                    "statement": "Canva reported users in 190 countries at the time of the funding announcement.",
+                    "epistemicClass": "observed",
+                    "value": 190,
+                    "unit": "countries",
+                    "period": {
+                      "instantDate": "2021-09-15"
+                    }
+                  }
+                ]
+              },
+              {
+                "id": "ev-2b2ee9738bd3",
+                "sourceUrl": "https://abr.business.gov.au/ABN/View?abn=80158929938",
+                "sourceTitle": "Current details for ABN 80 158 929 938",
+                "retrievedDate": "2026-07-26",
+                "effectiveDate": "2012-06-12",
+                "sourceClass": "government",
+                "epistemicClass": "observed",
+                "locator": "Australian Business Register ABN 80 158 929 938",
+                "shortExcerpt": "ABN Lookup identifies Canva Pty Ltd as an active Australian private company with ABN and ACN metadata.",
+                "observedFacts": [
+                  {
+                    "id": "fact-67e9d3108cc0",
+                    "statement": "ABN Lookup identifies the entity name as CANVA PTY LTD.",
+                    "epistemicClass": "observed",
+                    "value": "CANVA PTY LTD",
+                    "period": {
+                      "instantDate": "2012-06-12"
+                    }
+                  },
+                  {
+                    "id": "fact-a5860c904b69",
+                    "statement": "ABN Lookup links Canva Pty Ltd to ACN 158 929 938.",
+                    "epistemicClass": "observed",
+                    "value": "158 929 938",
+                    "unit": "Australian company number",
+                    "period": {
+                      "instantDate": "2012-06-12"
+                    }
+                  },
+                  {
+                    "id": "fact-6fe9275ffc5b",
+                    "statement": "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12.",
+                    "epistemicClass": "observed",
+                    "value": "2012-06-12",
+                    "unit": "ABN active date",
+                    "period": {
+                      "instantDate": "2012-06-12"
+                    }
+                  }
+                ]
+              }
+            ],
+            "excludedRecords": [],
+            "failedNotes": [
+              {
+                "id": "canva-security-rights-not-public",
+                "stage": "extraction",
+                "sourceTitle": "Canva public source set",
+                "attemptedAt": "2026-07-26T00:00:00+09:00",
+                "note": "Funding coverage does not disclose security rights, cap table or a completed exit valuation target."
+              }
+            ],
+            "warnings": []
+          },
+          "sufficiency": {
+            "status": "sufficient",
+            "score": 1,
+            "criteria": [
+              {
+                "criterion": "Entity resolution",
+                "status": "met",
+                "explanation": "The target identity is resolved and supported by eligible evidence.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              },
+              {
+                "criterion": "Measurement-date eligible evidence",
+                "status": "met",
+                "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              },
+              {
+                "criterion": "Source quality",
+                "status": "met",
+                "explanation": "Multiple high-authority source classes support routing.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43"
+                ]
+              },
+              {
+                "criterion": "Route-defining business-model evidence",
+                "status": "met",
+                "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+                "evidenceIds": [
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              },
+              {
+                "criterion": "Financial and operating fact coverage",
+                "status": "met",
+                "explanation": "Evidence contains multiple financial or operating facts usable for route selection.",
+                "evidenceIds": [
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              }
+            ],
+            "missingInformation": [],
+            "rationale": "Evidence coverage is sufficient for route selection before valuation."
+          },
+          "route": {
+            "status": "selected",
+            "selectedRoute": "recent-transaction",
+            "selectedReasons": [
+              {
+                "summary": "Evidence includes a recent transaction or headline valuation reference.",
+                "evidenceIds": [
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              }
+            ],
+            "candidates": [
+              {
+                "route": "recent-transaction",
+                "status": "selected",
+                "score": 0.6667,
+                "reasons": [
+                  {
+                    "summary": "Evidence includes a recent transaction or headline valuation reference.",
+                    "evidenceIds": [
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected recent transaction route.",
+                    "evidenceIds": [
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the software saas route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "general-private-company",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for general private company was considered but did not outrank the selected recent transaction route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rejectedRoutes": [
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected recent transaction route.",
+                    "evidenceIds": [
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the software saas route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "general-private-company",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for general private company was considered but did not outrank the selected recent transaction route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "valuation": {
+            "headlineValuation": {
+              "status": "abstained",
+              "field": "headline-valuation",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              }
+            },
+            "enterpriseValue": {
+              "status": "abstained",
+              "field": "enterprise-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a company valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "enterprise-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              }
+            },
+            "totalEquityValue": {
+              "status": "abstained",
+              "field": "total-equity-value",
+              "abstention": {
+                "reasonCode": "missing-total-equity-capitalization",
+                "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+                "missingInformation": [
+                  {
+                    "id": "missing-total-equity-capitalization",
+                    "topic": "Total equity capitalization",
+                    "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+                    "consequence": "TRACE abstains from total equity value.",
+                    "requiredFor": [
+                      "total-equity-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              }
+            },
+            "securityLevelFairValue": {
+              "status": "abstained",
+              "field": "security-level-fair-value",
+              "abstention": {
+                "reasonCode": "missing-security-rights-and-cap-table",
+                "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+                "missingInformation": [
+                  {
+                    "id": "missing-cap-table",
+                    "topic": "Cap table",
+                    "description": "The evidence ledger does not disclose capitalization table data.",
+                    "consequence": "TRACE cannot allocate value across securities or holders.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-dilution",
+                    "topic": "Dilution",
+                    "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                    "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-preferences",
+                    "topic": "Share preferences",
+                    "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                    "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-rights",
+                    "topic": "Share rights",
+                    "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                    "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              }
+            }
+          },
+          "review": {
+            "status": "passed",
+            "reviewerVersion": "trace-reviewer.v1",
+            "findings": [
+              {
+                "id": "review-abstention-triggers",
+                "severity": "pass",
+                "category": "abstention",
+                "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-calculation-integrity",
+                "severity": "pass",
+                "category": "calculation",
+                "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-citation-support",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-cutoff-compliance",
+                "severity": "pass",
+                "category": "cutoff",
+                "message": "Included evidence satisfies the measurement-date publication cutoff.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-entity-certainty",
+                "severity": "pass",
+                "category": "entity",
+                "message": "Target identity is resolved and supported by included evidence.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-evidence-coverage",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-route-appropriateness",
+                "severity": "pass",
+                "category": "route",
+                "message": "Route selection is consistent with sufficiency status: recent-transaction.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-valuation-field-separation",
+                "severity": "pass",
+                "category": "valuation-separation",
+                "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              }
+            ]
+          }
+        },
+        "report": {
+          "schemaVersion": "trace.report.v1",
+          "company": {
+            "legalName": "Canva Pty Ltd",
+            "jurisdiction": "AU",
+            "identifiers": [
+              {
+                "scheme": "tax-id",
+                "value": "ABN-80-158-929-938",
+                "jurisdiction": "AU"
+              },
+              {
+                "scheme": "company-number",
+                "value": "ACN-158-929-938",
+                "jurisdiction": "AU"
+              }
+            ],
+            "aliases": [
+              "Canva"
+            ],
+            "identityConfidence": "resolved"
+          },
+          "measurementDate": "2021-09-15",
+          "decisionMode": "full-analysis",
+          "evidence": [
+            {
+              "id": "ev-2b2ee9738bd3",
+              "sourceUrl": "https://abr.business.gov.au/ABN/View?abn=80158929938",
+              "sourceTitle": "Current details for ABN 80 158 929 938",
+              "retrievedDate": "2026-07-26",
+              "effectiveDate": "2012-06-12",
+              "sourceClass": "government",
+              "epistemicClass": "observed",
+              "locator": "Australian Business Register ABN 80 158 929 938",
+              "shortExcerpt": "ABN Lookup identifies Canva Pty Ltd as an active Australian private company with ABN and ACN metadata.",
+              "observedFacts": [
+                {
+                  "id": "fact-67e9d3108cc0",
+                  "statement": "ABN Lookup identifies the entity name as CANVA PTY LTD.",
+                  "epistemicClass": "observed",
+                  "value": "CANVA PTY LTD",
+                  "period": {
+                    "instantDate": "2012-06-12"
+                  }
+                },
+                {
+                  "id": "fact-a5860c904b69",
+                  "statement": "ABN Lookup links Canva Pty Ltd to ACN 158 929 938.",
+                  "epistemicClass": "observed",
+                  "value": "158 929 938",
+                  "unit": "Australian company number",
+                  "period": {
+                    "instantDate": "2012-06-12"
+                  }
+                },
+                {
+                  "id": "fact-6fe9275ffc5b",
+                  "statement": "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12.",
+                  "epistemicClass": "observed",
+                  "value": "2012-06-12",
+                  "unit": "ABN active date",
+                  "period": {
+                    "instantDate": "2012-06-12"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ev-2eb623901f43",
+              "sourceUrl": "https://www.canva.com/newsroom/news/canva-announces-usd-40-billion-valuation-fueled-global-demand-visual-communication/",
+              "sourceTitle": "Canva announces USD 40 billion valuation",
+              "retrievedDate": "2026-07-26",
+              "publishedDate": "2021-09-15",
+              "effectiveDate": "2021-09-15",
+              "sourceClass": "company-primary",
+              "epistemicClass": "observed",
+              "locator": "Canva newsroom, 15 Sep 2021",
+              "shortExcerpt": "Canva announced a USD 200m funding round, USD 40bn valuation, more than 60m monthly users and positive free cash flow.",
+              "observedFacts": [
+                {
+                  "id": "fact-dd824711cfc6",
+                  "statement": "Canva announced a USD 200 million funding round on 2021-09-15.",
+                  "epistemicClass": "observed",
+                  "value": 200,
+                  "unit": "USD millions",
+                  "period": {
+                    "instantDate": "2021-09-15"
+                  }
+                },
+                {
+                  "id": "fact-ed0f54b1af89",
+                  "statement": "Canva announced a USD 40 billion headline valuation after the funding round.",
+                  "epistemicClass": "observed",
+                  "value": 40,
+                  "unit": "USD billions headline valuation",
+                  "period": {
+                    "instantDate": "2021-09-15"
+                  }
+                },
+                {
+                  "id": "fact-af53fd093bd5",
+                  "statement": "Canva reported generating positive free cash flow at the time of the September 2021 announcement.",
+                  "epistemicClass": "observed",
+                  "value": true,
+                  "period": {
+                    "instantDate": "2021-09-15"
+                  }
+                },
+                {
+                  "id": "fact-2732a8f8f195",
+                  "statement": "Canva reported more than 60 million monthly active users at the time of the funding announcement.",
+                  "epistemicClass": "observed",
+                  "value": 60,
+                  "unit": "millions monthly active users, greater than",
+                  "period": {
+                    "instantDate": "2021-09-15"
+                  }
+                },
+                {
+                  "id": "fact-384491328ff2",
+                  "statement": "Canva reported users in 190 countries at the time of the funding announcement.",
+                  "epistemicClass": "observed",
+                  "value": 190,
+                  "unit": "countries",
+                  "period": {
+                    "instantDate": "2021-09-15"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "ev-6a1dc4f6277d",
+              "sourceUrl": "https://techcrunch.com/2021/09/14/canva-raises-200-million-at-a-40-billion-valuation/",
+              "sourceTitle": "Canva raises USD 200 million at a USD 40 billion valuation",
+              "retrievedDate": "2026-07-26",
+              "publishedDate": "2021-09-14",
+              "effectiveDate": "2021-09-14",
+              "sourceClass": "news",
+              "epistemicClass": "observed",
+              "locator": "TechCrunch, 14 Sep 2021",
+              "shortExcerpt": "News coverage before the measurement date reported Canva's funding amount, valuation, user scale and enterprise adoption.",
+              "observedFacts": [
+                {
+                  "id": "fact-41556e11f809",
+                  "statement": "News coverage described Canva as having a team of about 2,000 people.",
+                  "epistemicClass": "observed",
+                  "value": 2000,
+                  "unit": "employees",
+                  "period": {
+                    "instantDate": "2021-09-14"
+                  }
+                },
+                {
+                  "id": "fact-a4716e883c0a",
+                  "statement": "News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers.",
+                  "epistemicClass": "observed",
+                  "value": [
+                    "Salesforce",
+                    "Marriott International",
+                    "PayPal",
+                    "American Airlines"
+                  ],
+                  "period": {
+                    "instantDate": "2021-09-14"
+                  }
+                },
+                {
+                  "id": "fact-a2fd5df385e4",
+                  "statement": "News coverage reported more than 500,000 teams paying for Canva.",
+                  "epistemicClass": "observed",
+                  "value": 500000,
+                  "unit": "paying teams, greater than",
+                  "period": {
+                    "instantDate": "2021-09-14"
+                  }
+                }
+              ]
+            }
+          ],
+          "sufficiency": {
+            "status": "sufficient",
+            "score": 1,
+            "criteria": [
+              {
+                "criterion": "Entity resolution",
+                "status": "met",
+                "explanation": "The target identity is resolved and supported by eligible evidence.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              },
+              {
+                "criterion": "Measurement-date eligible evidence",
+                "status": "met",
+                "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              },
+              {
+                "criterion": "Source quality",
+                "status": "met",
+                "explanation": "Multiple high-authority source classes support routing.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43"
+                ]
+              },
+              {
+                "criterion": "Route-defining business-model evidence",
+                "status": "met",
+                "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+                "evidenceIds": [
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              },
+              {
+                "criterion": "Financial and operating fact coverage",
+                "status": "met",
+                "explanation": "Evidence contains multiple financial or operating facts usable for route selection.",
+                "evidenceIds": [
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              }
+            ],
+            "missingInformation": [],
+            "rationale": "Evidence coverage is sufficient for route selection before valuation."
+          },
+          "route": {
+            "status": "selected",
+            "selectedRoute": "recent-transaction",
+            "selectedReasons": [
+              {
+                "summary": "Evidence includes a recent transaction or headline valuation reference.",
+                "evidenceIds": [
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              }
+            ],
+            "candidates": [
+              {
+                "route": "recent-transaction",
+                "status": "selected",
+                "score": 0.6667,
+                "reasons": [
+                  {
+                    "summary": "Evidence includes a recent transaction or headline valuation reference.",
+                    "evidenceIds": [
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected recent transaction route.",
+                    "evidenceIds": [
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the software saas route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "general-private-company",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for general private company was considered but did not outrank the selected recent transaction route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "rejectedRoutes": [
+              {
+                "route": "financial-services",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for financial services was considered but did not outrank the selected recent transaction route.",
+                    "evidenceIds": [
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "software-saas",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the software saas route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "marketplace",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the marketplace route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "biotech-rnpv",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the biotech rnpv route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "asset-based",
+                "status": "rejected",
+                "score": 0,
+                "reasons": [
+                  {
+                    "summary": "Available evidence does not support the asset based route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              },
+              {
+                "route": "general-private-company",
+                "status": "rejected",
+                "score": 0.4,
+                "reasons": [
+                  {
+                    "summary": "Evidence for general private company was considered but did not outrank the selected recent transaction route.",
+                    "evidenceIds": [
+                      "ev-2b2ee9738bd3",
+                      "ev-2eb623901f43",
+                      "ev-6a1dc4f6277d"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "valuation": {
+            "headlineValuation": {
+              "status": "abstained",
+              "field": "headline-valuation",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "headline-valuation"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              }
+            },
+            "enterpriseValue": {
+              "status": "abstained",
+              "field": "enterprise-value",
+              "abstention": {
+                "reasonCode": "recent-secondary-transaction-not-observed",
+                "explanation": "TRACE cannot calibrate a company valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+                "missingInformation": [
+                  {
+                    "id": "missing-recent-secondary-transaction",
+                    "topic": "Recent secondary transaction",
+                    "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                    "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                    "requiredFor": [
+                      "enterprise-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              }
+            },
+            "totalEquityValue": {
+              "status": "abstained",
+              "field": "total-equity-value",
+              "abstention": {
+                "reasonCode": "missing-total-equity-capitalization",
+                "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+                "missingInformation": [
+                  {
+                    "id": "missing-total-equity-capitalization",
+                    "topic": "Total equity capitalization",
+                    "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+                    "consequence": "TRACE abstains from total equity value.",
+                    "requiredFor": [
+                      "total-equity-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              }
+            },
+            "securityLevelFairValue": {
+              "status": "abstained",
+              "field": "security-level-fair-value",
+              "abstention": {
+                "reasonCode": "missing-security-rights-and-cap-table",
+                "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+                "missingInformation": [
+                  {
+                    "id": "missing-cap-table",
+                    "topic": "Cap table",
+                    "description": "The evidence ledger does not disclose capitalization table data.",
+                    "consequence": "TRACE cannot allocate value across securities or holders.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-dilution",
+                    "topic": "Dilution",
+                    "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                    "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                    "requiredFor": [
+                      "total-equity-value",
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-preferences",
+                    "topic": "Share preferences",
+                    "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                    "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  },
+                  {
+                    "id": "missing-share-rights",
+                    "topic": "Share rights",
+                    "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                    "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                    "requiredFor": [
+                      "security-level-fair-value"
+                    ]
+                  }
+                ],
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ]
+              }
+            }
+          },
+          "review": {
+            "status": "passed",
+            "reviewerVersion": "trace-reviewer.v1",
+            "findings": [
+              {
+                "id": "review-abstention-triggers",
+                "severity": "pass",
+                "category": "abstention",
+                "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-calculation-integrity",
+                "severity": "pass",
+                "category": "calculation",
+                "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-citation-support",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-cutoff-compliance",
+                "severity": "pass",
+                "category": "cutoff",
+                "message": "Included evidence satisfies the measurement-date publication cutoff.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-entity-certainty",
+                "severity": "pass",
+                "category": "entity",
+                "message": "Target identity is resolved and supported by included evidence.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-evidence-coverage",
+                "severity": "pass",
+                "category": "evidence",
+                "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-route-appropriateness",
+                "severity": "pass",
+                "category": "route",
+                "message": "Route selection is consistent with sufficiency status: recent-transaction.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              },
+              {
+                "id": "review-valuation-field-separation",
+                "severity": "pass",
+                "category": "valuation-separation",
+                "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+                "evidenceIds": [
+                  "ev-2b2ee9738bd3",
+                  "ev-2eb623901f43",
+                  "ev-6a1dc4f6277d"
+                ],
+                "missingInformation": []
+              }
+            ]
+          },
+          "sections": {
+            "facts": [
+              "ABN Lookup identifies the entity name as CANVA PTY LTD. value=CANVA PTY LTD; period=instant 2012-06-12; epistemic=observed [ev-2b2ee9738bd3]",
+              "ABN Lookup links Canva Pty Ltd to ACN 158 929 938. value=158 929 938; unit=Australian company number; period=instant 2012-06-12; epistemic=observed [ev-2b2ee9738bd3]",
+              "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12. value=2012-06-12; unit=ABN active date; period=instant 2012-06-12; epistemic=observed [ev-2b2ee9738bd3]",
+              "Canva announced a USD 200 million funding round on 2021-09-15. value=200; unit=USD millions; period=instant 2021-09-15; epistemic=observed [ev-2eb623901f43]",
+              "Canva announced a USD 40 billion headline valuation after the funding round. value=40; unit=USD billions headline valuation; period=instant 2021-09-15; epistemic=observed [ev-2eb623901f43]",
+              "Canva reported generating positive free cash flow at the time of the September 2021 announcement. value=true; period=instant 2021-09-15; epistemic=observed [ev-2eb623901f43]",
+              "Canva reported more than 60 million monthly active users at the time of the funding announcement. value=60; unit=millions monthly active users, greater than; period=instant 2021-09-15; epistemic=observed [ev-2eb623901f43]",
+              "Canva reported users in 190 countries at the time of the funding announcement. value=190; unit=countries; period=instant 2021-09-15; epistemic=observed [ev-2eb623901f43]",
+              "News coverage described Canva as having a team of about 2,000 people. value=2000; unit=employees; period=instant 2021-09-14; epistemic=observed [ev-6a1dc4f6277d]",
+              "News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers. value=Salesforce, Marriott International, PayPal, American Airlines; period=instant 2021-09-14; epistemic=observed [ev-6a1dc4f6277d]",
+              "News coverage reported more than 500,000 teams paying for Canva. value=500000; unit=paying teams, greater than; period=instant 2021-09-14; epistemic=observed [ev-6a1dc4f6277d]"
+            ],
+            "inferences": [
+              "Enterprise Value abstained: TRACE cannot calibrate a company valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d]",
+              "Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d]",
+              "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d]",
+              "Selected route recent-transaction: Evidence includes a recent transaction or headline valuation reference. [ev-2eb623901f43, ev-6a1dc4f6277d]",
+              "Sufficiency is sufficient with score 1: Evidence coverage is sufficient for route selection before valuation.",
+              "Total Equity Value abstained: TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence. [ev-2b2ee9738bd3, ev-2eb623901f43, ev-6a1dc4f6277d]"
+            ],
+            "conflicts": [],
+            "limitations": [
+              "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+              "TRACE cannot calibrate a company valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+              "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+              "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+              "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.",
+              "extraction note canva-security-rights-not-public: Funding coverage does not disclose security rights, cap table or a completed exit valuation target."
+            ],
+            "counterarguments": [
+              "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: financial-services, software-saas, marketplace, biotech-rnpv, asset-based, general-private-company."
+            ],
+            "missingInformation": [
+              {
+                "id": "missing-cap-table",
+                "topic": "Cap table",
+                "description": "The evidence ledger does not disclose capitalization table data.",
+                "consequence": "TRACE cannot allocate value across securities or holders.",
+                "requiredFor": [
+                  "total-equity-value",
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-dilution",
+                "topic": "Dilution",
+                "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+                "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+                "requiredFor": [
+                  "total-equity-value",
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-recent-secondary-transaction",
+                "topic": "Recent secondary transaction",
+                "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+                "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+                "requiredFor": [
+                  "enterprise-value"
+                ]
+              },
+              {
+                "id": "missing-share-preferences",
+                "topic": "Share preferences",
+                "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+                "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+                "requiredFor": [
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-share-rights",
+                "topic": "Share rights",
+                "description": "The evidence ledger does not disclose rights attached to the specific security.",
+                "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+                "requiredFor": [
+                  "security-level-fair-value"
+                ]
+              },
+              {
+                "id": "missing-total-equity-capitalization",
+                "topic": "Total equity capitalization",
+                "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+                "consequence": "TRACE abstains from total equity value.",
+                "requiredFor": [
+                  "total-equity-value"
+                ]
+              }
+            ],
+            "nextDiligenceQuestions": [
+              "What evidence resolves Cap table for total-equity-value, security-level-fair-value?",
+              "What evidence resolves Dilution for total-equity-value, security-level-fair-value?",
+              "What evidence resolves Recent secondary transaction for enterprise-value?",
+              "What evidence resolves Share preferences for security-level-fair-value?",
+              "What evidence resolves Share rights for security-level-fair-value?",
+              "What evidence resolves Total equity capitalization for total-equity-value?"
+            ]
+          },
+          "run": {
+            "runId": "run-locked-test-v1",
+            "runtimeVersion": "0.1.0",
+            "command": "trace benchmark --partition locked-test --runner trace-full --case-id test-saas-canva-2021",
+            "measurementDate": "2021-09-15",
+            "startedAt": "2026-07-26T00:00:00.000Z",
+            "completedAt": "2026-07-26T00:00:00.331Z",
+            "durationMs": 331,
+            "inputPath": "benchmark:locked-test:test-saas-canva-2021",
+            "outputDirectory": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-saas-canva-2021",
+            "warnings": []
+          }
+        },
+        "executionLog": {
+          "schemaVersion": "trace.execution-log.v1",
+          "runId": "run-locked-test-v1",
+          "runtimeVersion": "0.1.0",
+          "measurementDate": "2021-09-15",
+          "inputPath": "benchmark:locked-test:test-saas-canva-2021",
+          "outputPaths": {
+            "jsonReport": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-saas-canva-2021/raw-runner-output.json",
+            "markdownReport": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-saas-canva-2021/raw-runner-output.md",
+            "executionLog": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-saas-canva-2021/raw-runner-output.json#executionLog"
+          },
+          "startedAt": "2026-07-26T00:00:00.000Z",
+          "completedAt": "2026-07-26T00:00:00.331Z",
+          "durationMs": 331,
+          "validationWarnings": [],
+          "reviewerFindings": [
+            {
+              "id": "review-abstention-triggers",
+              "severity": "pass",
+              "category": "abstention",
+              "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+              "evidenceIds": [
+                "ev-2b2ee9738bd3",
+                "ev-2eb623901f43",
+                "ev-6a1dc4f6277d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-calculation-integrity",
+              "severity": "pass",
+              "category": "calculation",
+              "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+              "evidenceIds": [
+                "ev-2b2ee9738bd3",
+                "ev-2eb623901f43",
+                "ev-6a1dc4f6277d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-citation-support",
+              "severity": "pass",
+              "category": "evidence",
+              "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+              "evidenceIds": [
+                "ev-2b2ee9738bd3",
+                "ev-2eb623901f43",
+                "ev-6a1dc4f6277d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-cutoff-compliance",
+              "severity": "pass",
+              "category": "cutoff",
+              "message": "Included evidence satisfies the measurement-date publication cutoff.",
+              "evidenceIds": [
+                "ev-2b2ee9738bd3",
+                "ev-2eb623901f43",
+                "ev-6a1dc4f6277d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-entity-certainty",
+              "severity": "pass",
+              "category": "entity",
+              "message": "Target identity is resolved and supported by included evidence.",
+              "evidenceIds": [
+                "ev-2b2ee9738bd3",
+                "ev-2eb623901f43",
+                "ev-6a1dc4f6277d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-evidence-coverage",
+              "severity": "pass",
+              "category": "evidence",
+              "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+              "evidenceIds": [
+                "ev-2b2ee9738bd3",
+                "ev-2eb623901f43",
+                "ev-6a1dc4f6277d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-route-appropriateness",
+              "severity": "pass",
+              "category": "route",
+              "message": "Route selection is consistent with sufficiency status: recent-transaction.",
+              "evidenceIds": [
+                "ev-2b2ee9738bd3",
+                "ev-2eb623901f43",
+                "ev-6a1dc4f6277d"
+              ],
+              "missingInformation": []
+            },
+            {
+              "id": "review-valuation-field-separation",
+              "severity": "pass",
+              "category": "valuation-separation",
+              "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+              "evidenceIds": [
+                "ev-2b2ee9738bd3",
+                "ev-2eb623901f43",
+                "ev-6a1dc4f6277d"
+              ],
+              "missingInformation": []
+            }
+          ],
+          "deterministicIdentifiers": {
+            "evidenceLedgerHash": "b04cb164e4ce6009991218f6accdbd2fb8eab0db7e50dcaa9e2e16f9a8920c3f",
+            "runtimeResultHash": "d311e39ac56803c976093e5f163b28b5324000dfc9dbbe359b80c721c33a934f"
+          }
+        }
+      }
+    },
+    "normalized": {
+      "claims": [
+        {
+          "id": "trace-valuation-6f413f97d7a4",
+          "kind": "abstention",
+          "statement": "Enterprise Value abstained: TRACE cannot calibrate a company valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "value": "recent-secondary-transaction-not-observed",
+          "citations": [
+            {
+              "evidenceId": "ev-2b2ee9738bd3"
+            },
+            {
+              "evidenceId": "ev-2eb623901f43"
+            },
+            {
+              "evidenceId": "ev-6a1dc4f6277d"
+            }
+          ]
+        },
+        {
+          "id": "trace-valuation-ba98ae8616f9",
+          "kind": "abstention",
+          "statement": "Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "value": "recent-secondary-transaction-not-observed",
+          "citations": [
+            {
+              "evidenceId": "ev-2b2ee9738bd3"
+            },
+            {
+              "evidenceId": "ev-2eb623901f43"
+            },
+            {
+              "evidenceId": "ev-6a1dc4f6277d"
+            }
+          ]
+        },
+        {
+          "id": "trace-valuation-63bb5f26aa28",
+          "kind": "abstention",
+          "statement": "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "value": "missing-security-rights-and-cap-table",
+          "citations": [
+            {
+              "evidenceId": "ev-2b2ee9738bd3"
+            },
+            {
+              "evidenceId": "ev-2eb623901f43"
+            },
+            {
+              "evidenceId": "ev-6a1dc4f6277d"
+            }
+          ]
+        },
+        {
+          "id": "trace-valuation-b175082e1435",
+          "kind": "abstention",
+          "statement": "Total Equity Value abstained: TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "value": "missing-total-equity-capitalization",
+          "citations": [
+            {
+              "evidenceId": "ev-2b2ee9738bd3"
+            },
+            {
+              "evidenceId": "ev-2eb623901f43"
+            },
+            {
+              "evidenceId": "ev-6a1dc4f6277d"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-8e4e741edf3c",
+          "kind": "observable",
+          "statement": "ABN Lookup identifies the entity name as CANVA PTY LTD.",
+          "value": "CANVA PTY LTD",
+          "period": {
+            "instantDate": "2012-06-12"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2b2ee9738bd3",
+              "factId": "fact-67e9d3108cc0",
+              "locator": "Australian Business Register ABN 80 158 929 938"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-19cc1095308c",
+          "kind": "observable",
+          "statement": "ABN Lookup links Canva Pty Ltd to ACN 158 929 938.",
+          "value": "158 929 938",
+          "unit": "Australian company number",
+          "period": {
+            "instantDate": "2012-06-12"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2b2ee9738bd3",
+              "factId": "fact-a5860c904b69",
+              "locator": "Australian Business Register ABN 80 158 929 938"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-0c3baed3c088",
+          "kind": "observable",
+          "statement": "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12.",
+          "value": "2012-06-12",
+          "unit": "ABN active date",
+          "period": {
+            "instantDate": "2012-06-12"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2b2ee9738bd3",
+              "factId": "fact-6fe9275ffc5b",
+              "locator": "Australian Business Register ABN 80 158 929 938"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-3908a42ca691",
+          "kind": "observable",
+          "statement": "Canva announced a USD 200 million funding round on 2021-09-15.",
+          "value": 200,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2021-09-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2eb623901f43",
+              "factId": "fact-dd824711cfc6",
+              "locator": "Canva newsroom, 15 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-86fb467daf3c",
+          "kind": "observable",
+          "statement": "Canva announced a USD 40 billion headline valuation after the funding round.",
+          "value": 40,
+          "unit": "USD billions headline valuation",
+          "period": {
+            "instantDate": "2021-09-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2eb623901f43",
+              "factId": "fact-ed0f54b1af89",
+              "locator": "Canva newsroom, 15 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-edba343e18a9",
+          "kind": "observable",
+          "statement": "Canva reported generating positive free cash flow at the time of the September 2021 announcement.",
+          "value": true,
+          "period": {
+            "instantDate": "2021-09-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2eb623901f43",
+              "factId": "fact-af53fd093bd5",
+              "locator": "Canva newsroom, 15 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-c1e0cc1fe12b",
+          "kind": "observable",
+          "statement": "Canva reported more than 60 million monthly active users at the time of the funding announcement.",
+          "value": 60,
+          "unit": "millions monthly active users, greater than",
+          "period": {
+            "instantDate": "2021-09-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2eb623901f43",
+              "factId": "fact-2732a8f8f195",
+              "locator": "Canva newsroom, 15 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-558b886edbe3",
+          "kind": "observable",
+          "statement": "Canva reported users in 190 countries at the time of the funding announcement.",
+          "value": 190,
+          "unit": "countries",
+          "period": {
+            "instantDate": "2021-09-15"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-2eb623901f43",
+              "factId": "fact-384491328ff2",
+              "locator": "Canva newsroom, 15 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-8d41aae21380",
+          "kind": "observable",
+          "statement": "News coverage described Canva as having a team of about 2,000 people.",
+          "value": 2000,
+          "unit": "employees",
+          "period": {
+            "instantDate": "2021-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-6a1dc4f6277d",
+              "factId": "fact-41556e11f809",
+              "locator": "TechCrunch, 14 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-cf665b1726b2",
+          "kind": "observable",
+          "statement": "News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers.",
+          "value": [
+            "Salesforce",
+            "Marriott International",
+            "PayPal",
+            "American Airlines"
+          ],
+          "period": {
+            "instantDate": "2021-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-6a1dc4f6277d",
+              "factId": "fact-a4716e883c0a",
+              "locator": "TechCrunch, 14 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-claim-0fb6188f5b70",
+          "kind": "observable",
+          "statement": "News coverage reported more than 500,000 teams paying for Canva.",
+          "value": 500000,
+          "unit": "paying teams, greater than",
+          "period": {
+            "instantDate": "2021-09-14"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-6a1dc4f6277d",
+              "factId": "fact-a2fd5df385e4",
+              "locator": "TechCrunch, 14 Sep 2021"
+            }
+          ]
+        },
+        {
+          "id": "trace-sufficiency-5d8f2a294098",
+          "kind": "other",
+          "statement": "TRACE sufficiency is sufficient with score 1: Evidence coverage is sufficient for route selection before valuation.",
+          "value": 1,
+          "citations": [
+            {
+              "evidenceId": "ev-2b2ee9738bd3"
+            },
+            {
+              "evidenceId": "ev-2eb623901f43"
+            },
+            {
+              "evidenceId": "ev-6a1dc4f6277d"
+            }
+          ]
+        },
+        {
+          "id": "trace-route-8643c732f4c0",
+          "kind": "route",
+          "statement": "TRACE selected recent-transaction: Evidence includes a recent transaction or headline valuation reference.",
+          "value": "recent-transaction",
+          "citations": [
+            {
+              "evidenceId": "ev-2eb623901f43"
+            },
+            {
+              "evidenceId": "ev-6a1dc4f6277d"
+            }
+          ]
+        }
+      ],
+      "route": {
+        "status": "selected",
+        "selectedRoute": "recent-transaction",
+        "rationale": "Evidence includes a recent transaction or headline valuation reference.",
+        "evidenceIds": [
+          "ev-2eb623901f43",
+          "ev-6a1dc4f6277d"
+        ]
+      },
+      "abstentions": [
+        {
+          "id": "trace-abstention-enterprise-value",
+          "field": "enterprise-value",
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a company valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-2b2ee9738bd3",
+            "ev-2eb623901f43",
+            "ev-6a1dc4f6277d"
+          ]
+        },
+        {
+          "id": "trace-abstention-headline-valuation",
+          "field": "headline-valuation",
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-2b2ee9738bd3",
+            "ev-2eb623901f43",
+            "ev-6a1dc4f6277d"
+          ]
+        },
+        {
+          "id": "trace-abstention-security-level-fair-value",
+          "field": "security-level-fair-value",
+          "reasonCode": "missing-security-rights-and-cap-table",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "evidenceIds": [
+            "ev-2b2ee9738bd3",
+            "ev-2eb623901f43",
+            "ev-6a1dc4f6277d"
+          ]
+        },
+        {
+          "id": "trace-abstention-total-equity-value",
+          "field": "total-equity-value",
+          "reasonCode": "missing-total-equity-capitalization",
+          "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "evidenceIds": [
+            "ev-2b2ee9738bd3",
+            "ev-2eb623901f43",
+            "ev-6a1dc4f6277d"
+          ]
+        }
+      ],
+      "valuations": [
+        {
+          "field": "enterprise-value",
+          "status": "abstained",
+          "rationale": "TRACE cannot calibrate a company valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-2b2ee9738bd3",
+            "ev-2eb623901f43",
+            "ev-6a1dc4f6277d"
+          ]
+        },
+        {
+          "field": "headline-valuation",
+          "status": "abstained",
+          "rationale": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "evidenceIds": [
+            "ev-2b2ee9738bd3",
+            "ev-2eb623901f43",
+            "ev-6a1dc4f6277d"
+          ]
+        },
+        {
+          "field": "security-level-fair-value",
+          "status": "abstained",
+          "rationale": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "evidenceIds": [
+            "ev-2b2ee9738bd3",
+            "ev-2eb623901f43",
+            "ev-6a1dc4f6277d"
+          ]
+        },
+        {
+          "field": "total-equity-value",
+          "status": "abstained",
+          "rationale": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "evidenceIds": [
+            "ev-2b2ee9738bd3",
+            "ev-2eb623901f43",
+            "ev-6a1dc4f6277d"
+          ]
+        }
+      ]
+    },
+    "failures": []
+  }
+}

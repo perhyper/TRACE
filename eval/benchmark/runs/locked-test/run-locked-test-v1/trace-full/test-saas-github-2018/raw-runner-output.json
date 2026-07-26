@@ -1,0 +1,1476 @@
+{
+  "schemaVersion": "trace.trace-full-runner-output.v1",
+  "runnerName": "trace-full",
+  "analyzerVersion": "0.1.0",
+  "inputFingerprint": "dcc31c9a621d",
+  "case": {
+    "caseId": "test-saas-github-2018",
+    "partition": "locked-test",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "GitHub, Inc.",
+    "measurementDate": "2018-06-03",
+    "cutoffDate": "2018-06-03",
+    "dataTier": "sparse",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "sourceRecordIds": [
+      "github-2017-octoverse"
+    ]
+  },
+  "sourcePolicy": {
+    "approvedPublicSourceCategories": [
+      "company-primary",
+      "legal-record",
+      "market-data",
+      "news",
+      "regulatory-filing"
+    ],
+    "redistributionStatus": "public-urls-redistribution-not-established",
+    "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+    "onlyUrlsAndShortExcerptsMayBeCommitted": true
+  },
+  "authorityBoundary": {
+    "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+    "officialContestRulesStatus": "not-supplied",
+    "contestComplianceClaimAllowed": false,
+    "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+    "prohibitedClaims": [
+      "appraisal status",
+      "benchmark superiority",
+      "contest readiness",
+      "investment advice",
+      "official contest compliance"
+    ]
+  },
+  "analyzerPath": [
+    "evidence-ledger",
+    "sufficiency-gating",
+    "route-selection",
+    "valuation-engine",
+    "adversarial-review",
+    "report-composer"
+  ],
+  "runtimeResult": {
+    "ledger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "GitHub, Inc.",
+        "jurisdiction": "US-DE",
+        "identifiers": [
+          {
+            "scheme": "lei",
+            "value": "6354003LMZZAKOPXLX69",
+            "jurisdiction": "US"
+          },
+          {
+            "scheme": "company-number",
+            "value": "US-DE-5157550",
+            "jurisdiction": "US-DE"
+          }
+        ],
+        "aliases": [
+          "GitHub"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2018-06-03",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-8eb66461a842",
+          "sourceUrl": "https://octoverse.github.com/2017/",
+          "sourceTitle": "The State of the Octoverse 2017",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2017-10-10",
+          "effectiveDate": "2017-12-31",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "GitHub Octoverse 2017",
+          "shortExcerpt": "GitHub's 2017 Octoverse reported developer, organization, repository and public activity scale before the acquisition announcement.",
+          "observedFacts": [
+            {
+              "id": "fact-6cf979722fc3",
+              "statement": "GitHub reported 25.3 million active repositories since September 2016.",
+              "epistemicClass": "observed",
+              "value": 25.3,
+              "unit": "millions of active repositories",
+              "period": {
+                "startDate": "2016-09-01",
+                "endDate": "2017-12-31"
+              }
+            },
+            {
+              "id": "fact-22c986281555",
+              "statement": "GitHub reported 1.5 million total organizations in the 2017 Octoverse.",
+              "epistemicClass": "observed",
+              "value": 1.5,
+              "unit": "millions of organizations",
+              "period": {
+                "endDate": "2017-12-31"
+              }
+            },
+            {
+              "id": "fact-39325eadb7e6",
+              "statement": "GitHub reported 67 million total repositories in the 2017 Octoverse.",
+              "epistemicClass": "observed",
+              "value": 67,
+              "unit": "millions of repositories",
+              "period": {
+                "endDate": "2017-12-31"
+              }
+            },
+            {
+              "id": "fact-67545efe01fe",
+              "statement": "GitHub reported reaching 24 million total users in the 2017 Octoverse.",
+              "epistemicClass": "observed",
+              "value": 24,
+              "unit": "millions of users",
+              "period": {
+                "endDate": "2017-12-31"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "github-2018-06-04-msft-announcement-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record github-2018-06-04-msft-announcement-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://blogs.microsoft.com/blog/2018/06/04/microsoft-github-empowering-developers/",
+          "sourceTitle": "Microsoft + GitHub = Empowering Developers",
+          "publishedDate": "2018-06-04",
+          "measurementDate": "2018-06-03"
+        },
+        {
+          "recordId": "github-2019-08-01-msft-10k-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record github-2019-08-01-msft-10k-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/789019/000156459019027952/msft-10k_20190630.htm",
+          "sourceTitle": "Microsoft 2019 Form 10-K",
+          "publishedDate": "2019-08-01",
+          "measurementDate": "2018-06-03"
+        }
+      ],
+      "failedNotes": [
+        {
+          "id": "github-private-financials-not-public",
+          "stage": "extraction",
+          "sourceTitle": "GitHub pre-acquisition public source set",
+          "attemptedAt": "2026-07-26T00:00:00+09:00",
+          "note": "No pre-cutoff audited GitHub standalone financial statements or security-rights documents are committed."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded github-2018-06-04-msft-announcement-post-cutoff because publishedDate 2018-06-04 is after measurementDate 2018-06-03.",
+          "recordIds": [
+            "github-2018-06-04-msft-announcement-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://blogs.microsoft.com/blog/2018/06/04/microsoft-github-empowering-developers/"
+          ],
+          "evidenceIds": []
+        },
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded github-2019-08-01-msft-10k-post-cutoff because publishedDate 2019-08-01 is after measurementDate 2018-06-03.",
+          "recordIds": [
+            "github-2019-08-01-msft-10k-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://www.sec.gov/Archives/edgar/data/789019/000156459019027952/msft-10k_20190630.htm"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    },
+    "sufficiency": {
+      "status": "insufficient",
+      "score": 0.425,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "partial",
+          "explanation": "Only one eligible evidence record remains after cutoff filtering.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "partial",
+          "explanation": "One high-authority source class supports routing.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "missing",
+          "explanation": "Evidence does not contain business-model facts sufficient for routing.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "missing",
+          "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        }
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-measurement-date-eligible-evidence",
+          "topic": "Measurement-date eligible evidence",
+          "description": "Only one eligible evidence record remains after cutoff filtering.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-source-quality",
+          "topic": "Source quality",
+          "description": "One high-authority source class supports routing.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-route-defining-business-model-evidence",
+          "topic": "Route-defining business-model evidence",
+          "description": "Evidence does not contain business-model facts sufficient for routing.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "rationale": "Evidence coverage is not sufficient for a supported analysis route; TRACE abstains before valuation."
+    },
+    "route": {
+      "status": "abstained",
+      "abstention": {
+        "reasonCode": "insufficient-route-evidence",
+        "explanation": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+        "missingInformation": [
+          {
+            "id": "missing-measurement-date-eligible-evidence",
+            "topic": "Measurement-date eligible evidence",
+            "description": "Only one eligible evidence record remains after cutoff filtering.",
+            "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          },
+          {
+            "id": "missing-source-quality",
+            "topic": "Source quality",
+            "description": "One high-authority source class supports routing.",
+            "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          },
+          {
+            "id": "missing-route-defining-business-model-evidence",
+            "topic": "Route-defining business-model evidence",
+            "description": "Evidence does not contain business-model facts sufficient for routing.",
+            "consequence": "TRACE cannot support route selection without this evidence.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          },
+          {
+            "id": "missing-financial-and-operating-fact-coverage",
+            "topic": "Financial and operating fact coverage",
+            "description": "Evidence does not contain financial or operating facts usable for route selection.",
+            "consequence": "TRACE cannot support route selection without this evidence.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          }
+        ],
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ]
+      },
+      "candidates": [
+        {
+          "route": "insufficient-evidence",
+          "status": "selected",
+          "score": 1,
+          "reasons": [
+            {
+              "summary": "Available evidence does not meet TRACE sufficiency criteria for route selection.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the financial services route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected insufficient evidence route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-headline-valuation",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support headline-valuation while route selection is abstained.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-enterprise-value",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support enterprise-value while route selection is abstained.",
+              "requiredFor": [
+                "enterprise-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-total-equity-value",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support total-equity-value while route selection is abstained.",
+              "requiredFor": [
+                "total-equity-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-security-level-fair-value",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support security-level-fair-value while route selection is abstained.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        }
+      }
+    },
+    "review": {
+      "status": "warnings",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "warning",
+          "category": "cutoff",
+          "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "warning",
+          "category": "evidence",
+          "message": "Evidence coverage is insufficient for a supported analysis route.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": [
+            {
+              "id": "missing-financial-and-operating-fact-coverage",
+              "topic": "Financial and operating fact coverage",
+              "description": "Evidence does not contain financial or operating facts usable for route selection.",
+              "consequence": "TRACE cannot support route selection without this evidence.",
+              "requiredFor": [
+                "routing",
+                "sufficiency"
+              ]
+            },
+            {
+              "id": "missing-measurement-date-eligible-evidence",
+              "topic": "Measurement-date eligible evidence",
+              "description": "Only one eligible evidence record remains after cutoff filtering.",
+              "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+              "requiredFor": [
+                "routing",
+                "sufficiency"
+              ]
+            },
+            {
+              "id": "missing-route-defining-business-model-evidence",
+              "topic": "Route-defining business-model evidence",
+              "description": "Evidence does not contain business-model facts sufficient for routing.",
+              "consequence": "TRACE cannot support route selection without this evidence.",
+              "requiredFor": [
+                "routing",
+                "sufficiency"
+              ]
+            },
+            {
+              "id": "missing-source-quality",
+              "topic": "Source quality",
+              "description": "One high-authority source class supports routing.",
+              "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+              "requiredFor": [
+                "routing",
+                "sufficiency"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route abstention is consistent with insufficient evidence coverage.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        }
+      ]
+    }
+  },
+  "report": {
+    "schemaVersion": "trace.report.v1",
+    "company": {
+      "legalName": "GitHub, Inc.",
+      "jurisdiction": "US-DE",
+      "identifiers": [
+        {
+          "scheme": "lei",
+          "value": "6354003LMZZAKOPXLX69",
+          "jurisdiction": "US"
+        },
+        {
+          "scheme": "company-number",
+          "value": "US-DE-5157550",
+          "jurisdiction": "US-DE"
+        }
+      ],
+      "aliases": [
+        "GitHub"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2018-06-03",
+    "decisionMode": "full-analysis",
+    "evidence": [
+      {
+        "id": "ev-8eb66461a842",
+        "sourceUrl": "https://octoverse.github.com/2017/",
+        "sourceTitle": "The State of the Octoverse 2017",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2017-10-10",
+        "effectiveDate": "2017-12-31",
+        "sourceClass": "company-primary",
+        "epistemicClass": "observed",
+        "locator": "GitHub Octoverse 2017",
+        "shortExcerpt": "GitHub's 2017 Octoverse reported developer, organization, repository and public activity scale before the acquisition announcement.",
+        "observedFacts": [
+          {
+            "id": "fact-6cf979722fc3",
+            "statement": "GitHub reported 25.3 million active repositories since September 2016.",
+            "epistemicClass": "observed",
+            "value": 25.3,
+            "unit": "millions of active repositories",
+            "period": {
+              "startDate": "2016-09-01",
+              "endDate": "2017-12-31"
+            }
+          },
+          {
+            "id": "fact-22c986281555",
+            "statement": "GitHub reported 1.5 million total organizations in the 2017 Octoverse.",
+            "epistemicClass": "observed",
+            "value": 1.5,
+            "unit": "millions of organizations",
+            "period": {
+              "endDate": "2017-12-31"
+            }
+          },
+          {
+            "id": "fact-39325eadb7e6",
+            "statement": "GitHub reported 67 million total repositories in the 2017 Octoverse.",
+            "epistemicClass": "observed",
+            "value": 67,
+            "unit": "millions of repositories",
+            "period": {
+              "endDate": "2017-12-31"
+            }
+          },
+          {
+            "id": "fact-67545efe01fe",
+            "statement": "GitHub reported reaching 24 million total users in the 2017 Octoverse.",
+            "epistemicClass": "observed",
+            "value": 24,
+            "unit": "millions of users",
+            "period": {
+              "endDate": "2017-12-31"
+            }
+          }
+        ]
+      }
+    ],
+    "sufficiency": {
+      "status": "insufficient",
+      "score": 0.425,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "partial",
+          "explanation": "Only one eligible evidence record remains after cutoff filtering.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "partial",
+          "explanation": "One high-authority source class supports routing.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "missing",
+          "explanation": "Evidence does not contain business-model facts sufficient for routing.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "missing",
+          "explanation": "Evidence does not contain financial or operating facts usable for route selection.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        }
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-measurement-date-eligible-evidence",
+          "topic": "Measurement-date eligible evidence",
+          "description": "Only one eligible evidence record remains after cutoff filtering.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-source-quality",
+          "topic": "Source quality",
+          "description": "One high-authority source class supports routing.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-route-defining-business-model-evidence",
+          "topic": "Route-defining business-model evidence",
+          "description": "Evidence does not contain business-model facts sufficient for routing.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "rationale": "Evidence coverage is not sufficient for a supported analysis route; TRACE abstains before valuation."
+    },
+    "route": {
+      "status": "abstained",
+      "abstention": {
+        "reasonCode": "insufficient-route-evidence",
+        "explanation": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+        "missingInformation": [
+          {
+            "id": "missing-measurement-date-eligible-evidence",
+            "topic": "Measurement-date eligible evidence",
+            "description": "Only one eligible evidence record remains after cutoff filtering.",
+            "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          },
+          {
+            "id": "missing-source-quality",
+            "topic": "Source quality",
+            "description": "One high-authority source class supports routing.",
+            "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          },
+          {
+            "id": "missing-route-defining-business-model-evidence",
+            "topic": "Route-defining business-model evidence",
+            "description": "Evidence does not contain business-model facts sufficient for routing.",
+            "consequence": "TRACE cannot support route selection without this evidence.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          },
+          {
+            "id": "missing-financial-and-operating-fact-coverage",
+            "topic": "Financial and operating fact coverage",
+            "description": "Evidence does not contain financial or operating facts usable for route selection.",
+            "consequence": "TRACE cannot support route selection without this evidence.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          }
+        ],
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ]
+      },
+      "candidates": [
+        {
+          "route": "insufficient-evidence",
+          "status": "selected",
+          "score": 1,
+          "reasons": [
+            {
+              "summary": "Available evidence does not meet TRACE sufficiency criteria for route selection.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "financial-services",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the financial services route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the software saas route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the recent transaction route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected insufficient evidence route.",
+              "evidenceIds": [
+                "ev-8eb66461a842"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-headline-valuation",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support headline-valuation while route selection is abstained.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-enterprise-value",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support enterprise-value while route selection is abstained.",
+              "requiredFor": [
+                "enterprise-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-total-equity-value",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support total-equity-value while route selection is abstained.",
+              "requiredFor": [
+                "total-equity-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "route-abstained",
+          "explanation": "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+          "missingInformation": [
+            {
+              "id": "missing-selected-route-for-security-level-fair-value",
+              "topic": "Selected analysis route",
+              "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+              "consequence": "TRACE cannot support security-level-fair-value while route selection is abstained.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ]
+        }
+      }
+    },
+    "review": {
+      "status": "warnings",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "warning",
+          "category": "cutoff",
+          "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "warning",
+          "category": "evidence",
+          "message": "Evidence coverage is insufficient for a supported analysis route.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": [
+            {
+              "id": "missing-financial-and-operating-fact-coverage",
+              "topic": "Financial and operating fact coverage",
+              "description": "Evidence does not contain financial or operating facts usable for route selection.",
+              "consequence": "TRACE cannot support route selection without this evidence.",
+              "requiredFor": [
+                "routing",
+                "sufficiency"
+              ]
+            },
+            {
+              "id": "missing-measurement-date-eligible-evidence",
+              "topic": "Measurement-date eligible evidence",
+              "description": "Only one eligible evidence record remains after cutoff filtering.",
+              "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+              "requiredFor": [
+                "routing",
+                "sufficiency"
+              ]
+            },
+            {
+              "id": "missing-route-defining-business-model-evidence",
+              "topic": "Route-defining business-model evidence",
+              "description": "Evidence does not contain business-model facts sufficient for routing.",
+              "consequence": "TRACE cannot support route selection without this evidence.",
+              "requiredFor": [
+                "routing",
+                "sufficiency"
+              ]
+            },
+            {
+              "id": "missing-source-quality",
+              "topic": "Source quality",
+              "description": "One high-authority source class supports routing.",
+              "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+              "requiredFor": [
+                "routing",
+                "sufficiency"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route abstention is consistent with insufficient evidence coverage.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-8eb66461a842"
+          ],
+          "missingInformation": []
+        }
+      ]
+    },
+    "sections": {
+      "facts": [
+        "GitHub reported 1.5 million total organizations in the 2017 Octoverse. value=1.5; unit=millions of organizations; period=end 2017-12-31; epistemic=observed [ev-8eb66461a842]",
+        "GitHub reported 25.3 million active repositories since September 2016. value=25.3; unit=millions of active repositories; period=start 2016-09-01, end 2017-12-31; epistemic=observed [ev-8eb66461a842]",
+        "GitHub reported 67 million total repositories in the 2017 Octoverse. value=67; unit=millions of repositories; period=end 2017-12-31; epistemic=observed [ev-8eb66461a842]",
+        "GitHub reported reaching 24 million total users in the 2017 Octoverse. value=24; unit=millions of users; period=end 2017-12-31; epistemic=observed [ev-8eb66461a842]"
+      ],
+      "inferences": [
+        "Enterprise Value abstained: TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route. [ev-8eb66461a842]",
+        "Headline Valuation abstained: TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route. [ev-8eb66461a842]",
+        "Route abstained: TRACE abstains from selecting an analysis route because required evidence coverage is missing. [ev-8eb66461a842]",
+        "Security-Level Fair Value abstained: TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route. [ev-8eb66461a842]",
+        "Sufficiency is insufficient with score 0.425: Evidence coverage is not sufficient for a supported analysis route; TRACE abstains before valuation.",
+        "Total Equity Value abstained: TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route. [ev-8eb66461a842]"
+      ],
+      "conflicts": [],
+      "limitations": [
+        "Evidence record github-2018-06-04-msft-announcement-post-cutoff was published after the measurement date and was excluded.",
+        "Evidence record github-2019-08-01-msft-10k-post-cutoff was published after the measurement date and was excluded.",
+        "Excluded github-2018-06-04-msft-announcement-post-cutoff because publishedDate 2018-06-04 is after measurementDate 2018-06-03.",
+        "Excluded github-2019-08-01-msft-10k-post-cutoff because publishedDate 2019-08-01 is after measurementDate 2018-06-03.",
+        "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
+        "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.",
+        "extraction note github-private-financials-not-public: No pre-cutoff audited GitHub standalone financial statements or security-rights documents are committed."
+      ],
+      "counterarguments": [],
+      "missingInformation": [
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence does not contain financial or operating facts usable for route selection.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-measurement-date-eligible-evidence",
+          "topic": "Measurement-date eligible evidence",
+          "description": "Only one eligible evidence record remains after cutoff filtering.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-route-defining-business-model-evidence",
+          "topic": "Route-defining business-model evidence",
+          "description": "Evidence does not contain business-model facts sufficient for routing.",
+          "consequence": "TRACE cannot support route selection without this evidence.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-selected-route-for-enterprise-value",
+          "topic": "Selected analysis route",
+          "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+          "consequence": "TRACE cannot support enterprise-value while route selection is abstained.",
+          "requiredFor": [
+            "enterprise-value"
+          ]
+        },
+        {
+          "id": "missing-selected-route-for-headline-valuation",
+          "topic": "Selected analysis route",
+          "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+          "consequence": "TRACE cannot support headline-valuation while route selection is abstained.",
+          "requiredFor": [
+            "headline-valuation"
+          ]
+        },
+        {
+          "id": "missing-selected-route-for-security-level-fair-value",
+          "topic": "Selected analysis route",
+          "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+          "consequence": "TRACE cannot support security-level-fair-value while route selection is abstained.",
+          "requiredFor": [
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-selected-route-for-total-equity-value",
+          "topic": "Selected analysis route",
+          "description": "TRACE abstains from selecting an analysis route because required evidence coverage is missing.",
+          "consequence": "TRACE cannot support total-equity-value while route selection is abstained.",
+          "requiredFor": [
+            "total-equity-value"
+          ]
+        },
+        {
+          "id": "missing-source-quality",
+          "topic": "Source quality",
+          "description": "One high-authority source class supports routing.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "nextDiligenceQuestions": [
+        "What evidence resolves Financial and operating fact coverage for routing, sufficiency?",
+        "What evidence resolves Measurement-date eligible evidence for routing, sufficiency?",
+        "What evidence resolves Route-defining business-model evidence for routing, sufficiency?",
+        "What evidence resolves Selected analysis route for enterprise-value?",
+        "What evidence resolves Selected analysis route for headline-valuation?",
+        "What evidence resolves Selected analysis route for security-level-fair-value?",
+        "What evidence resolves Selected analysis route for total-equity-value?",
+        "What evidence resolves Source quality for routing, sufficiency?"
+      ]
+    },
+    "run": {
+      "runId": "run-locked-test-v1",
+      "runtimeVersion": "0.1.0",
+      "command": "trace benchmark --partition locked-test --runner trace-full --case-id test-saas-github-2018",
+      "measurementDate": "2018-06-03",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.246Z",
+      "durationMs": 246,
+      "inputPath": "benchmark:locked-test:test-saas-github-2018",
+      "outputDirectory": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-saas-github-2018",
+      "warnings": [
+        "Excluded github-2018-06-04-msft-announcement-post-cutoff because publishedDate 2018-06-04 is after measurementDate 2018-06-03.",
+        "Excluded github-2019-08-01-msft-10k-post-cutoff because publishedDate 2019-08-01 is after measurementDate 2018-06-03."
+      ]
+    }
+  },
+  "executionLog": {
+    "schemaVersion": "trace.execution-log.v1",
+    "runId": "run-locked-test-v1",
+    "runtimeVersion": "0.1.0",
+    "measurementDate": "2018-06-03",
+    "inputPath": "benchmark:locked-test:test-saas-github-2018",
+    "outputPaths": {
+      "jsonReport": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-saas-github-2018/raw-runner-output.json",
+      "markdownReport": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-saas-github-2018/raw-runner-output.md",
+      "executionLog": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-saas-github-2018/raw-runner-output.json#executionLog"
+    },
+    "startedAt": "2026-07-26T00:00:00.000Z",
+    "completedAt": "2026-07-26T00:00:00.246Z",
+    "durationMs": 246,
+    "validationWarnings": [
+      "Excluded github-2018-06-04-msft-announcement-post-cutoff because publishedDate 2018-06-04 is after measurementDate 2018-06-03.",
+      "Excluded github-2019-08-01-msft-10k-post-cutoff because publishedDate 2019-08-01 is after measurementDate 2018-06-03."
+    ],
+    "reviewerFindings": [
+      {
+        "id": "review-abstention-triggers",
+        "severity": "pass",
+        "category": "abstention",
+        "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-calculation-integrity",
+        "severity": "pass",
+        "category": "calculation",
+        "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-citation-support",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-cutoff-compliance",
+        "severity": "warning",
+        "category": "cutoff",
+        "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-entity-certainty",
+        "severity": "pass",
+        "category": "entity",
+        "message": "Target identity is resolved and supported by included evidence.",
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-evidence-coverage",
+        "severity": "warning",
+        "category": "evidence",
+        "message": "Evidence coverage is insufficient for a supported analysis route.",
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ],
+        "missingInformation": [
+          {
+            "id": "missing-financial-and-operating-fact-coverage",
+            "topic": "Financial and operating fact coverage",
+            "description": "Evidence does not contain financial or operating facts usable for route selection.",
+            "consequence": "TRACE cannot support route selection without this evidence.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          },
+          {
+            "id": "missing-measurement-date-eligible-evidence",
+            "topic": "Measurement-date eligible evidence",
+            "description": "Only one eligible evidence record remains after cutoff filtering.",
+            "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          },
+          {
+            "id": "missing-route-defining-business-model-evidence",
+            "topic": "Route-defining business-model evidence",
+            "description": "Evidence does not contain business-model facts sufficient for routing.",
+            "consequence": "TRACE cannot support route selection without this evidence.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          },
+          {
+            "id": "missing-source-quality",
+            "topic": "Source quality",
+            "description": "One high-authority source class supports routing.",
+            "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+            "requiredFor": [
+              "routing",
+              "sufficiency"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "review-route-appropriateness",
+        "severity": "pass",
+        "category": "route",
+        "message": "Route abstention is consistent with insufficient evidence coverage.",
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-valuation-field-separation",
+        "severity": "pass",
+        "category": "valuation-separation",
+        "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ],
+        "missingInformation": []
+      }
+    ],
+    "deterministicIdentifiers": {
+      "evidenceLedgerHash": "8985c180514821a6c137c5978578d3bfd6a73b4cb026730b6ca7c4a3cb58a325",
+      "runtimeResultHash": "3ea68780ed68bad5a62c87a046eb084774b67449af33804c6aa49287fbf575ef"
+    }
+  }
+}

@@ -1,0 +1,332 @@
+{
+  "schemaVersion": "trace.benchmark-per-claim-score.v1",
+  "runId": "run-locked-test-v1",
+  "runnerName": "trace-full",
+  "caseId": "test-saas-github-2018",
+  "partition": "locked-test",
+  "status": "scored",
+  "claims": [
+    {
+      "claimId": "github-2017-octoverse-pre-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "github-2017-octoverse-pre-cutoff",
+      "expectedStatement": "GitHub's 2017 Octoverse was public before the 2018-06-03 cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-8eb66461a842"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "github-msft-announced-by-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "github-msft-announced-by-cutoff",
+      "expectedStatement": "Microsoft's GitHub acquisition announcement was public by the 2018-06-03 cutoff.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-082fbc83eee7"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "github-private-financials-available",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "github-private-financials-available",
+      "expectedStatement": "Standalone audited GitHub private-company financial statements are included as cutoff input evidence.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-8eb66461a842"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "trace-claim-0ad7ca88ae63",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "trace-claim-0ad7ca88ae63",
+      "emittedStatement": "GitHub reported 1.5 million total organizations in the 2017 Octoverse.",
+      "emittedValue": 1.5,
+      "emittedUnit": "millions of organizations",
+      "emittedPeriod": {
+        "endDate": "2017-12-31"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-8eb66461a842"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-8eb66461a842",
+          "factId": "fact-22c986281555",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "github-2017-active-repositories",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "github-2017-active-repositories",
+      "emittedClaimId": "trace-claim-5bf0317d0c4a",
+      "expectedStatement": "GitHub reported 25.3 million active repositories since September 2016.",
+      "emittedStatement": "GitHub reported 25.3 million active repositories since September 2016.",
+      "expectedValue": 25.3,
+      "emittedValue": 25.3,
+      "expectedUnit": "millions of active repositories",
+      "emittedUnit": "millions of active repositories",
+      "expectedPeriod": {
+        "startDate": "2016-09-01",
+        "endDate": "2017-12-31"
+      },
+      "emittedPeriod": {
+        "startDate": "2016-09-01",
+        "endDate": "2017-12-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-8eb66461a842"
+      ],
+      "emittedEvidenceIds": [
+        "ev-8eb66461a842"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-8eb66461a842",
+          "factId": "fact-6cf979722fc3",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "github-2017-total-repositories",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "github-2017-total-repositories",
+      "emittedClaimId": "trace-claim-5f4def80c4ff",
+      "expectedStatement": "GitHub reported 67 million total repositories in the 2017 Octoverse.",
+      "emittedStatement": "GitHub reported 67 million total repositories in the 2017 Octoverse.",
+      "expectedValue": 67,
+      "emittedValue": 67,
+      "expectedUnit": "millions of repositories",
+      "emittedUnit": "millions of repositories",
+      "expectedPeriod": {
+        "endDate": "2017-12-31"
+      },
+      "emittedPeriod": {
+        "endDate": "2017-12-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-8eb66461a842"
+      ],
+      "emittedEvidenceIds": [
+        "ev-8eb66461a842"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-8eb66461a842",
+          "factId": "fact-39325eadb7e6",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "github-2017-total-users",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "github-2017-total-users",
+      "emittedClaimId": "trace-claim-9631ee195a70",
+      "expectedStatement": "GitHub reported 24 million total users in the 2017 Octoverse.",
+      "emittedStatement": "GitHub reported reaching 24 million total users in the 2017 Octoverse.",
+      "expectedValue": 24,
+      "emittedValue": 24,
+      "expectedUnit": "millions of users",
+      "emittedUnit": "millions of users",
+      "expectedPeriod": {
+        "endDate": "2017-12-31"
+      },
+      "emittedPeriod": {
+        "endDate": "2017-12-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-8eb66461a842"
+      ],
+      "emittedEvidenceIds": [
+        "ev-8eb66461a842"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-8eb66461a842",
+          "factId": "fact-67545efe01fe",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    }
+  ],
+  "failures": []
+}

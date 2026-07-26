@@ -1,0 +1,580 @@
+{
+  "schemaVersion": "trace.benchmark-scorer-input.v1",
+  "runId": "run-locked-test-v1",
+  "runnerName": "baseline-a",
+  "caseId": "test-saas-github-2018",
+  "partition": "locked-test",
+  "caseInput": {
+    "schemaVersion": "trace.benchmark-case-input.v1",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "manifestSchemaVersion": "trace.benchmark-manifest.v1",
+    "caseId": "test-saas-github-2018",
+    "partition": "locked-test",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "GitHub, Inc.",
+    "target": {
+      "legalName": "GitHub, Inc.",
+      "jurisdiction": "US-DE",
+      "identifiers": [
+        {
+          "scheme": "lei",
+          "value": "6354003LMZZAKOPXLX69",
+          "jurisdiction": "US"
+        },
+        {
+          "scheme": "company-number",
+          "value": "US-DE-5157550",
+          "jurisdiction": "US-DE"
+        }
+      ],
+      "aliases": [
+        "GitHub"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2018-06-03",
+    "cutoffDate": "2018-06-03",
+    "dataTier": "sparse",
+    "sourcePolicy": {
+      "approvedPublicSourceCategories": [
+        "company-primary",
+        "legal-record",
+        "market-data",
+        "news",
+        "regulatory-filing"
+      ],
+      "redistributionStatus": "public-urls-redistribution-not-established",
+      "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+      "onlyUrlsAndShortExcerptsMayBeCommitted": true
+    },
+    "authorityBoundary": {
+      "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+      "officialContestRulesStatus": "not-supplied",
+      "contestComplianceClaimAllowed": false,
+      "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+      "prohibitedClaims": [
+        "appraisal status",
+        "benchmark superiority",
+        "contest readiness",
+        "investment advice",
+        "official contest compliance"
+      ]
+    },
+    "sourceRecordIds": [
+      "github-2017-octoverse"
+    ],
+    "evidenceLedger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "GitHub, Inc.",
+        "jurisdiction": "US-DE",
+        "identifiers": [
+          {
+            "scheme": "lei",
+            "value": "6354003LMZZAKOPXLX69",
+            "jurisdiction": "US"
+          },
+          {
+            "scheme": "company-number",
+            "value": "US-DE-5157550",
+            "jurisdiction": "US-DE"
+          }
+        ],
+        "aliases": [
+          "GitHub"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2018-06-03",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-8eb66461a842",
+          "sourceUrl": "https://octoverse.github.com/2017/",
+          "sourceTitle": "The State of the Octoverse 2017",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2017-10-10",
+          "effectiveDate": "2017-12-31",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "GitHub Octoverse 2017",
+          "shortExcerpt": "GitHub's 2017 Octoverse reported developer, organization, repository and public activity scale before the acquisition announcement.",
+          "observedFacts": [
+            {
+              "id": "fact-6cf979722fc3",
+              "statement": "GitHub reported 25.3 million active repositories since September 2016.",
+              "epistemicClass": "observed",
+              "value": 25.3,
+              "unit": "millions of active repositories",
+              "period": {
+                "startDate": "2016-09-01",
+                "endDate": "2017-12-31"
+              }
+            },
+            {
+              "id": "fact-22c986281555",
+              "statement": "GitHub reported 1.5 million total organizations in the 2017 Octoverse.",
+              "epistemicClass": "observed",
+              "value": 1.5,
+              "unit": "millions of organizations",
+              "period": {
+                "endDate": "2017-12-31"
+              }
+            },
+            {
+              "id": "fact-39325eadb7e6",
+              "statement": "GitHub reported 67 million total repositories in the 2017 Octoverse.",
+              "epistemicClass": "observed",
+              "value": 67,
+              "unit": "millions of repositories",
+              "period": {
+                "endDate": "2017-12-31"
+              }
+            },
+            {
+              "id": "fact-67545efe01fe",
+              "statement": "GitHub reported reaching 24 million total users in the 2017 Octoverse.",
+              "epistemicClass": "observed",
+              "value": 24,
+              "unit": "millions of users",
+              "period": {
+                "endDate": "2017-12-31"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "github-2018-06-04-msft-announcement-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record github-2018-06-04-msft-announcement-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://blogs.microsoft.com/blog/2018/06/04/microsoft-github-empowering-developers/",
+          "sourceTitle": "Microsoft + GitHub = Empowering Developers",
+          "publishedDate": "2018-06-04",
+          "measurementDate": "2018-06-03"
+        },
+        {
+          "recordId": "github-2019-08-01-msft-10k-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record github-2019-08-01-msft-10k-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://www.sec.gov/Archives/edgar/data/789019/000156459019027952/msft-10k_20190630.htm",
+          "sourceTitle": "Microsoft 2019 Form 10-K",
+          "publishedDate": "2019-08-01",
+          "measurementDate": "2018-06-03"
+        }
+      ],
+      "failedNotes": [
+        {
+          "id": "github-private-financials-not-public",
+          "stage": "extraction",
+          "sourceTitle": "GitHub pre-acquisition public source set",
+          "attemptedAt": "2026-07-26T00:00:00+09:00",
+          "note": "No pre-cutoff audited GitHub standalone financial statements or security-rights documents are committed."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded github-2018-06-04-msft-announcement-post-cutoff because publishedDate 2018-06-04 is after measurementDate 2018-06-03.",
+          "recordIds": [
+            "github-2018-06-04-msft-announcement-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://blogs.microsoft.com/blog/2018/06/04/microsoft-github-empowering-developers/"
+          ],
+          "evidenceIds": []
+        },
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded github-2019-08-01-msft-10k-post-cutoff because publishedDate 2019-08-01 is after measurementDate 2018-06-03.",
+          "recordIds": [
+            "github-2019-08-01-msft-10k-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://www.sec.gov/Archives/edgar/data/789019/000156459019027952/msft-10k_20190630.htm"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    }
+  },
+  "annotation": {
+    "schemaVersion": "trace.benchmark-annotation.v1",
+    "caseId": "test-saas-github-2018",
+    "partition": "locked-test",
+    "measurementDate": "2018-06-03",
+    "expectedRoute": {
+      "route": "software-saas",
+      "acceptableAlternativeRoutes": [],
+      "evidenceIds": [
+        "ev-8eb66461a842"
+      ],
+      "rationale": "The cutoff evidence describes a hosted developer collaboration and repository platform with user, organization and repository scale."
+    },
+    "binaryClaims": [
+      {
+        "id": "github-2017-octoverse-pre-cutoff",
+        "statement": "GitHub's 2017 Octoverse was public before the 2018-06-03 cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ]
+      },
+      {
+        "id": "github-msft-announced-by-cutoff",
+        "statement": "Microsoft's GitHub acquisition announcement was public by the 2018-06-03 cutoff.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-082fbc83eee7"
+        ],
+        "sourceAvailability": "post-cutoff-excluded"
+      },
+      {
+        "id": "github-private-financials-available",
+        "statement": "Standalone audited GitHub private-company financial statements are included as cutoff input evidence.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ]
+      }
+    ],
+    "observableClaims": [
+      {
+        "id": "github-2017-active-repositories",
+        "statement": "GitHub reported 25.3 million active repositories since September 2016.",
+        "expectedValue": 25.3,
+        "unit": "millions of active repositories",
+        "period": {
+          "startDate": "2016-09-01",
+          "endDate": "2017-12-31"
+        },
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ]
+      },
+      {
+        "id": "github-2017-total-repositories",
+        "statement": "GitHub reported 67 million total repositories in the 2017 Octoverse.",
+        "expectedValue": 67,
+        "unit": "millions of repositories",
+        "period": {
+          "endDate": "2017-12-31"
+        },
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ]
+      },
+      {
+        "id": "github-2017-total-users",
+        "statement": "GitHub reported 24 million total users in the 2017 Octoverse.",
+        "expectedValue": 24,
+        "unit": "millions of users",
+        "period": {
+          "endDate": "2017-12-31"
+        },
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ]
+      }
+    ],
+    "expectedAbstentions": [
+      {
+        "id": "github-acquisition-input-abstain",
+        "field": "headline-valuation",
+        "reasonCode": "post-cutoff-transaction-not-input",
+        "description": "The Microsoft acquisition announcement and completion evidence were published after the cutoff and may be used only for gold target scoring.",
+        "evidenceIds": [
+          "ev-082fbc83eee7",
+          "ev-cb2db7489fad"
+        ],
+        "sourceAvailability": "post-cutoff-excluded"
+      },
+      {
+        "id": "github-security-level-fair-value-abstain",
+        "field": "security-level-fair-value",
+        "reasonCode": "missing-security-rights-and-cap-table",
+        "description": "The cutoff evidence provides platform scale but not private share rights, liquidation preferences or cap-table details.",
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ]
+      }
+    ],
+    "valuationSeparationExpectations": {
+      "allowedValuationFields": [
+        "completed_transaction_consideration_reference"
+      ],
+      "mustNotConflate": [
+        "Microsoft stock transaction value with GitHub enterprise value",
+        "acquisition consideration with security-level fair value",
+        "post-cutoff acquisition consideration with cutoff input evidence"
+      ],
+      "notes": "Historical valuation scoring is limited to the annotated completed acquisition consideration reference."
+    },
+    "completenessExpectations": [
+      {
+        "id": "github-cover-platform-scale-and-leakage",
+        "description": "A complete answer should cover software route, repository-platform scale, missing financials, post-cutoff acquisition leakage and security-level abstentions.",
+        "requiredEvidenceClasses": [
+          "company-primary"
+        ],
+        "requiredTopics": [
+          "missing financials",
+          "platform scale",
+          "post-cutoff acquisition",
+          "software-saas route"
+        ],
+        "evidenceIds": [
+          "ev-8eb66461a842"
+        ]
+      }
+    ],
+    "historicalValuationTargets": {
+      "eligible": true,
+      "reason": "Manifest permits historical valuation-error scoring only for the completed acquisition consideration reference.",
+      "targets": [
+        {
+          "id": "github-completed-transaction-consideration-reference",
+          "eligibleField": "completed_transaction_consideration_reference",
+          "targetDate": "2018-10-25",
+          "targetKind": "completed-acquisition-stock-transaction",
+          "expectedValue": 7.5,
+          "unit": "USD billions stock transaction",
+          "sourceEvidenceIds": [
+            "ev-cb2db7489fad"
+          ],
+          "sourceAvailability": "post-cutoff-gold-only",
+          "scoringNotes": "Use only as completed transaction consideration; do not convert to enterprise value or security-level fair value."
+        }
+      ]
+    }
+  },
+  "runnerOutput": {
+    "schemaVersion": "trace.benchmark-runner-output.v1",
+    "runnerName": "baseline-a",
+    "runId": "run-locked-test-v1",
+    "caseId": "test-saas-github-2018",
+    "partition": "locked-test",
+    "status": "completed",
+    "timing": {
+      "schemaVersion": "trace.benchmark-timing.v1",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.146Z",
+      "durationMs": 146
+    },
+    "rawOutput": {
+      "markdown": "# Baseline A Narrative Synthesis: GitHub, Inc.\n\nCase: test-saas-github-2018\nCutoff: 2018-06-03\nInput fingerprint: dcc31c9a621d\n\n## Narrative\n- GitHub, Inc. is summarized from 1 cutoff-visible public evidence records dated on or before 2018-06-03.\n- The normalized claim list contains 4 cited observations from source classes: company-primary.\n- GitHub reported 1.5 million total organizations in the 2017 Octoverse.\n- GitHub reported 25.3 million active repositories since September 2016.\n- GitHub reported 67 million total repositories in the 2017 Octoverse.\n- GitHub reported reaching 24 million total users in the 2017 Octoverse.\n\n## Evidence Notes\n- The State of the Octoverse 2017 [ev-8eb66461a842]\n  - GitHub reported 1.5 million total organizations in the 2017 Octoverse. (value=1.5; unit=millions of organizations; period=end 2017-12-31)\n  - GitHub reported 25.3 million active repositories since September 2016. (value=25.3; unit=millions of active repositories; period=start 2016-09-01, end 2017-12-31)\n  - GitHub reported 67 million total repositories in the 2017 Octoverse. (value=67; unit=millions of repositories; period=end 2017-12-31)\n  - GitHub reported reaching 24 million total users in the 2017 Octoverse. (value=24; unit=millions of users; period=end 2017-12-31)\n\n## Limitations\n- This baseline performs deterministic evidence summarization only.\n- It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.\n- It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.\n- Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.\n",
+      "json": {
+        "schemaVersion": "trace.baseline-runner-output.v1",
+        "runnerName": "baseline-a",
+        "baselineKind": "general-narrative-synthesis",
+        "inputFingerprint": "dcc31c9a621d",
+        "case": {
+          "caseId": "test-saas-github-2018",
+          "partition": "locked-test",
+          "scoringRole": "scored",
+          "countedInScoring": true,
+          "companyLegalName": "GitHub, Inc.",
+          "measurementDate": "2018-06-03",
+          "cutoffDate": "2018-06-03",
+          "dataTier": "sparse",
+          "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+          "sourceRecordIds": [
+            "github-2017-octoverse"
+          ]
+        },
+        "sourcePolicy": {
+          "approvedPublicSourceCategories": [
+            "company-primary",
+            "legal-record",
+            "market-data",
+            "news",
+            "regulatory-filing"
+          ],
+          "redistributionStatus": "public-urls-redistribution-not-established",
+          "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+          "onlyUrlsAndShortExcerptsMayBeCommitted": true
+        },
+        "authorityBoundary": {
+          "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+          "officialContestRulesStatus": "not-supplied",
+          "contestComplianceClaimAllowed": false,
+          "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+          "prohibitedClaims": [
+            "appraisal status",
+            "benchmark superiority",
+            "contest readiness",
+            "investment advice",
+            "official contest compliance"
+          ]
+        },
+        "evidence": [
+          {
+            "evidenceId": "ev-8eb66461a842",
+            "sourceTitle": "The State of the Octoverse 2017",
+            "sourceUrl": "https://octoverse.github.com/2017/",
+            "sourceClass": "company-primary",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2017-10-10",
+            "effectiveDate": "2017-12-31",
+            "locator": "GitHub Octoverse 2017",
+            "shortExcerpt": "GitHub's 2017 Octoverse reported developer, organization, repository and public activity scale before the acquisition announcement.",
+            "observedFacts": [
+              {
+                "factId": "fact-22c986281555",
+                "statement": "GitHub reported 1.5 million total organizations in the 2017 Octoverse.",
+                "value": 1.5,
+                "unit": "millions of organizations",
+                "period": {
+                  "endDate": "2017-12-31"
+                }
+              },
+              {
+                "factId": "fact-6cf979722fc3",
+                "statement": "GitHub reported 25.3 million active repositories since September 2016.",
+                "value": 25.3,
+                "unit": "millions of active repositories",
+                "period": {
+                  "startDate": "2016-09-01",
+                  "endDate": "2017-12-31"
+                }
+              },
+              {
+                "factId": "fact-39325eadb7e6",
+                "statement": "GitHub reported 67 million total repositories in the 2017 Octoverse.",
+                "value": 67,
+                "unit": "millions of repositories",
+                "period": {
+                  "endDate": "2017-12-31"
+                }
+              },
+              {
+                "factId": "fact-67545efe01fe",
+                "statement": "GitHub reported reaching 24 million total users in the 2017 Octoverse.",
+                "value": 24,
+                "unit": "millions of users",
+                "period": {
+                  "endDate": "2017-12-31"
+                }
+              }
+            ]
+          }
+        ],
+        "output": {
+          "narrative": [
+            "GitHub, Inc. is summarized from 1 cutoff-visible public evidence records dated on or before 2018-06-03.",
+            "The normalized claim list contains 4 cited observations from source classes: company-primary.",
+            "GitHub reported 1.5 million total organizations in the 2017 Octoverse.",
+            "GitHub reported 25.3 million active repositories since September 2016.",
+            "GitHub reported 67 million total repositories in the 2017 Octoverse.",
+            "GitHub reported reaching 24 million total users in the 2017 Octoverse."
+          ],
+          "limitations": [
+            "This baseline performs deterministic evidence summarization only.",
+            "It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.",
+            "It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.",
+            "Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established."
+          ],
+          "warnings": [
+            "Excluded github-2018-06-04-msft-announcement-post-cutoff because publishedDate 2018-06-04 is after measurementDate 2018-06-03.",
+            "Excluded github-2019-08-01-msft-10k-post-cutoff because publishedDate 2019-08-01 is after measurementDate 2018-06-03."
+          ],
+          "failedNotes": [
+            "No pre-cutoff audited GitHub standalone financial statements or security-rights documents are committed."
+          ],
+          "excludedRecords": [
+            "Evidence record github-2018-06-04-msft-announcement-post-cutoff was published after the measurement date and was excluded.",
+            "Evidence record github-2019-08-01-msft-10k-post-cutoff was published after the measurement date and was excluded."
+          ]
+        },
+        "omittedTraceLogic": [
+          "route-selection",
+          "sufficiency-gating",
+          "valuation-engine",
+          "adversarial-review"
+        ]
+      }
+    },
+    "normalized": {
+      "claims": [
+        {
+          "id": "claim-b9d4c8579273",
+          "kind": "observable",
+          "statement": "GitHub reported 1.5 million total organizations in the 2017 Octoverse.",
+          "value": 1.5,
+          "unit": "millions of organizations",
+          "period": {
+            "endDate": "2017-12-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-8eb66461a842",
+              "factId": "fact-22c986281555",
+              "locator": "GitHub Octoverse 2017"
+            }
+          ]
+        },
+        {
+          "id": "claim-df1a61339033",
+          "kind": "observable",
+          "statement": "GitHub reported 25.3 million active repositories since September 2016.",
+          "value": 25.3,
+          "unit": "millions of active repositories",
+          "period": {
+            "startDate": "2016-09-01",
+            "endDate": "2017-12-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-8eb66461a842",
+              "factId": "fact-6cf979722fc3",
+              "locator": "GitHub Octoverse 2017"
+            }
+          ]
+        },
+        {
+          "id": "claim-346359414768",
+          "kind": "observable",
+          "statement": "GitHub reported 67 million total repositories in the 2017 Octoverse.",
+          "value": 67,
+          "unit": "millions of repositories",
+          "period": {
+            "endDate": "2017-12-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-8eb66461a842",
+              "factId": "fact-39325eadb7e6",
+              "locator": "GitHub Octoverse 2017"
+            }
+          ]
+        },
+        {
+          "id": "claim-e1278400199f",
+          "kind": "observable",
+          "statement": "GitHub reported reaching 24 million total users in the 2017 Octoverse.",
+          "value": 24,
+          "unit": "millions of users",
+          "period": {
+            "endDate": "2017-12-31"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-8eb66461a842",
+              "factId": "fact-67545efe01fe",
+              "locator": "GitHub Octoverse 2017"
+            }
+          ]
+        }
+      ],
+      "route": {
+        "status": "omitted"
+      },
+      "abstentions": [],
+      "valuations": []
+    },
+    "failures": []
+  }
+}

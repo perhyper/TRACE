@@ -1,0 +1,760 @@
+{
+  "schemaVersion": "trace.benchmark-per-claim-score.v1",
+  "runId": "run-locked-test-v1",
+  "runnerName": "baseline-b",
+  "caseId": "test-saas-canva-2021",
+  "partition": "locked-test",
+  "status": "scored",
+  "claims": [
+    {
+      "claimId": "canva-completed-public-exit",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "canva-completed-public-exit",
+      "expectedStatement": "Canva had completed a public exit by the cutoff.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-2eb623901f43"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "canva-funding-public-by-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "canva-funding-public-by-cutoff",
+      "expectedStatement": "Canva's USD 200 million financing was public by the 2021-09-15 cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-2eb623901f43",
+        "ev-6a1dc4f6277d"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "canva-positive-free-cash-flow",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "canva-positive-free-cash-flow",
+      "expectedStatement": "Canva reported positive free cash flow at the time of the funding announcement.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-2eb623901f43"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "claim-305043b1a0d3",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-305043b1a0d3",
+      "emittedStatement": "News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers.",
+      "emittedValue": [
+        "Salesforce",
+        "Marriott International",
+        "PayPal",
+        "American Airlines"
+      ],
+      "emittedPeriod": {
+        "instantDate": "2021-09-14"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-6a1dc4f6277d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-6a1dc4f6277d",
+          "factId": "fact-a4716e883c0a",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "news",
+          "sourceQualityCategory": "news",
+          "sourceQualityWeight": 0.58,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.58,
+        "citedSourceClasses": [
+          "news"
+        ],
+        "citedSourceQualityCategories": [
+          "news"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-3155dd111a60",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-3155dd111a60",
+      "emittedStatement": "Canva reported users in 190 countries at the time of the funding announcement.",
+      "emittedValue": 190,
+      "emittedUnit": "countries",
+      "emittedPeriod": {
+        "instantDate": "2021-09-15"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-2eb623901f43"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2eb623901f43",
+          "factId": "fact-384491328ff2",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-33522817a7e7",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-33522817a7e7",
+      "emittedStatement": "ABN Lookup links Canva Pty Ltd to ACN 158 929 938.",
+      "emittedValue": "158 929 938",
+      "emittedUnit": "Australian company number",
+      "emittedPeriod": {
+        "instantDate": "2012-06-12"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-2b2ee9738bd3"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2b2ee9738bd3",
+          "factId": "fact-a5860c904b69",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "government",
+          "sourceQualityCategory": "government",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "government"
+        ],
+        "citedSourceQualityCategories": [
+          "government"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-454b0a724696",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-454b0a724696",
+      "emittedStatement": "Canva reported generating positive free cash flow at the time of the September 2021 announcement.",
+      "emittedValue": true,
+      "emittedPeriod": {
+        "instantDate": "2021-09-15"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-2eb623901f43"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2eb623901f43",
+          "factId": "fact-af53fd093bd5",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-5346dd58edce",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-5346dd58edce",
+      "emittedStatement": "News coverage described Canva as having a team of about 2,000 people.",
+      "emittedValue": 2000,
+      "emittedUnit": "employees",
+      "emittedPeriod": {
+        "instantDate": "2021-09-14"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-6a1dc4f6277d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-6a1dc4f6277d",
+          "factId": "fact-41556e11f809",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "news",
+          "sourceQualityCategory": "news",
+          "sourceQualityWeight": 0.58,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.58,
+        "citedSourceClasses": [
+          "news"
+        ],
+        "citedSourceQualityCategories": [
+          "news"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-7b6633261b2f",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-7b6633261b2f",
+      "emittedStatement": "ABN Lookup identifies the entity name as CANVA PTY LTD.",
+      "emittedValue": "CANVA PTY LTD",
+      "emittedPeriod": {
+        "instantDate": "2012-06-12"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-2b2ee9738bd3"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2b2ee9738bd3",
+          "factId": "fact-67e9d3108cc0",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "government",
+          "sourceQualityCategory": "government",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "government"
+        ],
+        "citedSourceQualityCategories": [
+          "government"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-cf28d0cf5e8e",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-cf28d0cf5e8e",
+      "emittedStatement": "News coverage reported more than 500,000 teams paying for Canva.",
+      "emittedValue": 500000,
+      "emittedUnit": "paying teams, greater than",
+      "emittedPeriod": {
+        "instantDate": "2021-09-14"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-6a1dc4f6277d"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-6a1dc4f6277d",
+          "factId": "fact-a2fd5df385e4",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "news",
+          "sourceQualityCategory": "news",
+          "sourceQualityWeight": 0.58,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.58,
+        "citedSourceClasses": [
+          "news"
+        ],
+        "citedSourceQualityCategories": [
+          "news"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-e358fee86086",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-e358fee86086",
+      "emittedStatement": "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12.",
+      "emittedValue": "2012-06-12",
+      "emittedUnit": "ABN active date",
+      "emittedPeriod": {
+        "instantDate": "2012-06-12"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-2b2ee9738bd3"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2b2ee9738bd3",
+          "factId": "fact-6fe9275ffc5b",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "government",
+          "sourceQualityCategory": "government",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "government"
+        ],
+        "citedSourceQualityCategories": [
+          "government"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "canva-2021-funding-size",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "canva-2021-funding-size",
+      "emittedClaimId": "claim-151e20384fb3",
+      "expectedStatement": "Canva announced a USD 200 million funding round.",
+      "emittedStatement": "Canva announced a USD 200 million funding round on 2021-09-15.",
+      "expectedValue": 200,
+      "emittedValue": 200,
+      "expectedUnit": "USD millions",
+      "emittedUnit": "USD millions",
+      "expectedPeriod": {
+        "instantDate": "2021-09-15"
+      },
+      "emittedPeriod": {
+        "instantDate": "2021-09-15"
+      },
+      "expectedEvidenceIds": [
+        "ev-2eb623901f43"
+      ],
+      "emittedEvidenceIds": [
+        "ev-2eb623901f43"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2eb623901f43",
+          "factId": "fact-dd824711cfc6",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "canva-2021-headline-valuation",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "canva-2021-headline-valuation",
+      "emittedClaimId": "claim-824b758aa062",
+      "expectedStatement": "Canva announced a USD 40 billion headline valuation.",
+      "emittedStatement": "Canva announced a USD 40 billion headline valuation after the funding round.",
+      "expectedValue": 40,
+      "emittedValue": 40,
+      "expectedUnit": "USD billions headline valuation",
+      "emittedUnit": "USD billions headline valuation",
+      "expectedPeriod": {
+        "instantDate": "2021-09-15"
+      },
+      "emittedPeriod": {
+        "instantDate": "2021-09-15"
+      },
+      "expectedEvidenceIds": [
+        "ev-2eb623901f43"
+      ],
+      "emittedEvidenceIds": [
+        "ev-2eb623901f43"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2eb623901f43",
+          "factId": "fact-ed0f54b1af89",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "canva-2021-monthly-active-users",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "canva-2021-monthly-active-users",
+      "emittedClaimId": "claim-3e4f7d1cdb77",
+      "expectedStatement": "Canva reported more than 60 million monthly active users.",
+      "emittedStatement": "Canva reported more than 60 million monthly active users at the time of the funding announcement.",
+      "expectedValue": 60,
+      "emittedValue": 60,
+      "expectedUnit": "millions monthly active users, greater than",
+      "emittedUnit": "millions monthly active users, greater than",
+      "expectedPeriod": {
+        "instantDate": "2021-09-15"
+      },
+      "emittedPeriod": {
+        "instantDate": "2021-09-15"
+      },
+      "expectedEvidenceIds": [
+        "ev-2eb623901f43"
+      ],
+      "emittedEvidenceIds": [
+        "ev-2eb623901f43"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-2eb623901f43",
+          "factId": "fact-2732a8f8f195",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    }
+  ],
+  "failures": []
+}

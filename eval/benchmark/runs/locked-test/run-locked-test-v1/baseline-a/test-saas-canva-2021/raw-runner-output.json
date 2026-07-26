@@ -1,0 +1,218 @@
+{
+  "schemaVersion": "trace.baseline-runner-output.v1",
+  "runnerName": "baseline-a",
+  "baselineKind": "general-narrative-synthesis",
+  "inputFingerprint": "8761f3d875aa",
+  "case": {
+    "caseId": "test-saas-canva-2021",
+    "partition": "locked-test",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Canva Pty Ltd",
+    "measurementDate": "2021-09-15",
+    "cutoffDate": "2021-09-15",
+    "dataTier": "medium",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "sourceRecordIds": [
+      "canva-2021-09-14-techcrunch-funding",
+      "canva-2021-09-15-funding-release",
+      "canva-abn-lookup-identity"
+    ]
+  },
+  "sourcePolicy": {
+    "approvedPublicSourceCategories": [
+      "company-primary",
+      "government",
+      "market-data",
+      "news"
+    ],
+    "redistributionStatus": "public-urls-redistribution-not-established",
+    "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+    "onlyUrlsAndShortExcerptsMayBeCommitted": true
+  },
+  "authorityBoundary": {
+    "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+    "officialContestRulesStatus": "not-supplied",
+    "contestComplianceClaimAllowed": false,
+    "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+    "prohibitedClaims": [
+      "appraisal status",
+      "benchmark superiority",
+      "contest readiness",
+      "investment advice",
+      "official contest compliance"
+    ]
+  },
+  "evidence": [
+    {
+      "evidenceId": "ev-6a1dc4f6277d",
+      "sourceTitle": "Canva raises USD 200 million at a USD 40 billion valuation",
+      "sourceUrl": "https://techcrunch.com/2021/09/14/canva-raises-200-million-at-a-40-billion-valuation/",
+      "sourceClass": "news",
+      "epistemicClass": "observed",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2021-09-14",
+      "effectiveDate": "2021-09-14",
+      "locator": "TechCrunch, 14 Sep 2021",
+      "shortExcerpt": "News coverage before the measurement date reported Canva's funding amount, valuation, user scale and enterprise adoption.",
+      "observedFacts": [
+        {
+          "factId": "fact-41556e11f809",
+          "statement": "News coverage described Canva as having a team of about 2,000 people.",
+          "value": 2000,
+          "unit": "employees",
+          "period": {
+            "instantDate": "2021-09-14"
+          }
+        },
+        {
+          "factId": "fact-a4716e883c0a",
+          "statement": "News coverage listed Salesforce, Marriott International, PayPal and American Airlines as Canva enterprise customers.",
+          "value": [
+            "Salesforce",
+            "Marriott International",
+            "PayPal",
+            "American Airlines"
+          ],
+          "period": {
+            "instantDate": "2021-09-14"
+          }
+        },
+        {
+          "factId": "fact-a2fd5df385e4",
+          "statement": "News coverage reported more than 500,000 teams paying for Canva.",
+          "value": 500000,
+          "unit": "paying teams, greater than",
+          "period": {
+            "instantDate": "2021-09-14"
+          }
+        }
+      ]
+    },
+    {
+      "evidenceId": "ev-2eb623901f43",
+      "sourceTitle": "Canva announces USD 40 billion valuation",
+      "sourceUrl": "https://www.canva.com/newsroom/news/canva-announces-usd-40-billion-valuation-fueled-global-demand-visual-communication/",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2021-09-15",
+      "effectiveDate": "2021-09-15",
+      "locator": "Canva newsroom, 15 Sep 2021",
+      "shortExcerpt": "Canva announced a USD 200m funding round, USD 40bn valuation, more than 60m monthly users and positive free cash flow.",
+      "observedFacts": [
+        {
+          "factId": "fact-dd824711cfc6",
+          "statement": "Canva announced a USD 200 million funding round on 2021-09-15.",
+          "value": 200,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2021-09-15"
+          }
+        },
+        {
+          "factId": "fact-ed0f54b1af89",
+          "statement": "Canva announced a USD 40 billion headline valuation after the funding round.",
+          "value": 40,
+          "unit": "USD billions headline valuation",
+          "period": {
+            "instantDate": "2021-09-15"
+          }
+        },
+        {
+          "factId": "fact-af53fd093bd5",
+          "statement": "Canva reported generating positive free cash flow at the time of the September 2021 announcement.",
+          "value": true,
+          "period": {
+            "instantDate": "2021-09-15"
+          }
+        },
+        {
+          "factId": "fact-2732a8f8f195",
+          "statement": "Canva reported more than 60 million monthly active users at the time of the funding announcement.",
+          "value": 60,
+          "unit": "millions monthly active users, greater than",
+          "period": {
+            "instantDate": "2021-09-15"
+          }
+        },
+        {
+          "factId": "fact-384491328ff2",
+          "statement": "Canva reported users in 190 countries at the time of the funding announcement.",
+          "value": 190,
+          "unit": "countries",
+          "period": {
+            "instantDate": "2021-09-15"
+          }
+        }
+      ]
+    },
+    {
+      "evidenceId": "ev-2b2ee9738bd3",
+      "sourceTitle": "Current details for ABN 80 158 929 938",
+      "sourceUrl": "https://abr.business.gov.au/ABN/View?abn=80158929938",
+      "sourceClass": "government",
+      "epistemicClass": "observed",
+      "retrievedDate": "2026-07-26",
+      "effectiveDate": "2012-06-12",
+      "locator": "Australian Business Register ABN 80 158 929 938",
+      "shortExcerpt": "ABN Lookup identifies Canva Pty Ltd as an active Australian private company with ABN and ACN metadata.",
+      "observedFacts": [
+        {
+          "factId": "fact-67e9d3108cc0",
+          "statement": "ABN Lookup identifies the entity name as CANVA PTY LTD.",
+          "value": "CANVA PTY LTD",
+          "period": {
+            "instantDate": "2012-06-12"
+          }
+        },
+        {
+          "factId": "fact-a5860c904b69",
+          "statement": "ABN Lookup links Canva Pty Ltd to ACN 158 929 938.",
+          "value": "158 929 938",
+          "unit": "Australian company number",
+          "period": {
+            "instantDate": "2012-06-12"
+          }
+        },
+        {
+          "factId": "fact-6fe9275ffc5b",
+          "statement": "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12.",
+          "value": "2012-06-12",
+          "unit": "ABN active date",
+          "period": {
+            "instantDate": "2012-06-12"
+          }
+        }
+      ]
+    }
+  ],
+  "output": {
+    "narrative": [
+      "Canva Pty Ltd is summarized from 3 cutoff-visible public evidence records dated on or before 2021-09-15.",
+      "The normalized claim list contains 11 cited observations from source classes: company-primary, government, news.",
+      "ABN Lookup identifies the entity name as CANVA PTY LTD.",
+      "ABN Lookup links Canva Pty Ltd to ACN 158 929 938.",
+      "ABN Lookup records ABN 80 158 929 938 as active from 2012-06-12.",
+      "Canva announced a USD 200 million funding round on 2021-09-15.",
+      "Canva announced a USD 40 billion headline valuation after the funding round."
+    ],
+    "limitations": [
+      "This baseline performs deterministic evidence summarization only.",
+      "It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.",
+      "It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.",
+      "Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established."
+    ],
+    "warnings": [],
+    "failedNotes": [
+      "Funding coverage does not disclose security rights, cap table or a completed exit valuation target."
+    ],
+    "excludedRecords": []
+  },
+  "omittedTraceLogic": [
+    "route-selection",
+    "sufficiency-gating",
+    "valuation-engine",
+    "adversarial-review"
+  ]
+}

@@ -1,0 +1,879 @@
+{
+  "schemaVersion": "trace.benchmark-per-claim-score.v1",
+  "runId": "run-locked-test-v1",
+  "runnerName": "baseline-b",
+  "caseId": "test-fintech-zopa-2025",
+  "partition": "locked-test",
+  "status": "scored",
+  "claims": [
+    {
+      "claimId": "zopa-2025-final-results-input-visible",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "zopa-2025-final-results-input-visible",
+      "expectedStatement": "Zopa's final 2025 results were available as model-input evidence at the cutoff.",
+      "expectedValue": false,
+      "expectedEvidenceIds": [
+        "ev-8d74d19455e1"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "zopa-bank-profitable-2024",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "zopa-bank-profitable-2024",
+      "expectedStatement": "Zopa Bank reported full-year pre-tax profit for 2024.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-9b40616ed4f4"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "zopa-h1-2025-update-public-by-cutoff",
+      "kind": "binary",
+      "supportStatus": "not-emitted",
+      "denominatorIncluded": false,
+      "denominatorReasons": [],
+      "expectedClaimId": "zopa-h1-2025-update-public-by-cutoff",
+      "expectedStatement": "Zopa's H1 2025 trading update was public before the 2025-12-31 cutoff.",
+      "expectedValue": true,
+      "expectedEvidenceIds": [
+        "ev-40dfb2e25c8f"
+      ],
+      "emittedEvidenceIds": [],
+      "citationScores": [],
+      "sourceQuality": {
+        "score": 0,
+        "citedSourceClasses": [],
+        "citedSourceQualityCategories": [],
+        "notes": [
+          "Expected material claim was not emitted by the runner."
+        ]
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Expected material claim was not emitted by the runner."
+      ]
+    },
+    {
+      "claimId": "claim-2032460e52a0",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-2032460e52a0",
+      "emittedStatement": "Zopa reported GBP 20.7 million of H1 2025 profitability.",
+      "emittedValue": 20.7,
+      "emittedUnit": "GBP millions profitability",
+      "emittedPeriod": {
+        "endDate": "2025-06-30"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-40dfb2e25c8f"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-40dfb2e25c8f",
+          "factId": "fact-408a66a02ddd",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-3b534ba9e975",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-3b534ba9e975",
+      "emittedStatement": "Zopa Bank reported GBP 5.5 billion of deposits for 2024.",
+      "emittedValue": 5.5,
+      "emittedUnit": "GBP billions deposits",
+      "emittedPeriod": {
+        "endDate": "2024-12-31"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-9b40616ed4f4"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-9b40616ed4f4",
+          "factId": "fact-7f2a28920494",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-6dd8f8b19626",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-6dd8f8b19626",
+      "emittedStatement": "Zopa reported that its Biscuit current account product had reached over 100,000 customers.",
+      "emittedValue": 100000,
+      "emittedUnit": "customers, greater than",
+      "emittedPeriod": {
+        "endDate": "2025-06-30"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-40dfb2e25c8f"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-40dfb2e25c8f",
+          "factId": "fact-4cc4fba2771a",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-8a182009ef0d",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-8a182009ef0d",
+      "emittedStatement": "Zopa Bank reported that its customer base grew to 1.4 million in 2024.",
+      "emittedValue": 1.4,
+      "emittedUnit": "millions of customers",
+      "emittedPeriod": {
+        "endDate": "2024-12-31"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-9b40616ed4f4"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-9b40616ed4f4",
+          "factId": "fact-be20d0b0cc2e",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-9819b68d45d4",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-9819b68d45d4",
+      "emittedStatement": "Zopa Bank reported GBP 3.1 billion of loans on balance sheet for 2024.",
+      "emittedValue": 3.1,
+      "emittedUnit": "GBP billions loans",
+      "emittedPeriod": {
+        "endDate": "2024-12-31"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-9b40616ed4f4"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-9b40616ed4f4",
+          "factId": "fact-e1add824f557",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-ca9176506860",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-ca9176506860",
+      "emittedStatement": "Zopa Bank reported GBP 303.4 million of total revenue for 2024.",
+      "emittedValue": 303.4,
+      "emittedUnit": "GBP millions revenue",
+      "emittedPeriod": {
+        "endDate": "2024-12-31"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-9b40616ed4f4"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-9b40616ed4f4",
+          "factId": "fact-5e7c46a5566c",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-d2bb646ba1dc",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-d2bb646ba1dc",
+      "emittedStatement": "Companies House records Zopa Group PLC as an active public limited company.",
+      "emittedValue": "active public limited company",
+      "emittedPeriod": {
+        "instantDate": "2025-07-17"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-a5467a5b2561"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-a5467a5b2561",
+          "factId": "fact-2cda13a72505",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "government",
+          "sourceQualityCategory": "government",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "government"
+        ],
+        "citedSourceQualityCategories": [
+          "government"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-d612accf50c1",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-d612accf50c1",
+      "emittedStatement": "Companies House identifies Zopa Group PLC with company number 10624955.",
+      "emittedValue": "10624955",
+      "emittedUnit": "GB company number",
+      "emittedPeriod": {
+        "instantDate": "2025-07-17"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-a5467a5b2561"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-a5467a5b2561",
+          "factId": "fact-c327e2c3da0d",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "government",
+          "sourceQualityCategory": "government",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "government"
+        ],
+        "citedSourceQualityCategories": [
+          "government"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-ebd16a57f5cd",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-ebd16a57f5cd",
+      "emittedStatement": "Companies House lists Zopa Group PLC under activities of financial services holding companies.",
+      "emittedValue": "64205 - Activities of financial services holding companies",
+      "emittedPeriod": {
+        "instantDate": "2025-07-17"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-a5467a5b2561"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-a5467a5b2561",
+          "factId": "fact-2fa476f9c1a8",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "government",
+          "sourceQualityCategory": "government",
+          "sourceQualityWeight": 0.9,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.9,
+        "citedSourceClasses": [
+          "government"
+        ],
+        "citedSourceQualityCategories": [
+          "government"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "claim-f65a61a3c394",
+      "kind": "observable",
+      "supportStatus": "unsupported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [
+        "unsupported"
+      ],
+      "emittedClaimId": "claim-f65a61a3c394",
+      "emittedStatement": "Zopa reported GBP 3.4 billion of gross loans and GBP 5.4 billion of retail deposits for H1 2025.",
+      "emittedValue": [
+        "GBP 3.4 billion gross loans",
+        "GBP 5.4 billion retail deposits"
+      ],
+      "emittedPeriod": {
+        "endDate": "2025-06-30"
+      },
+      "expectedEvidenceIds": [],
+      "emittedEvidenceIds": [
+        "ev-40dfb2e25c8f"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-40dfb2e25c8f",
+          "factId": "fact-d5ea134ab23f",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": false,
+          "supportsPeriod": false,
+          "supportsUnit": false,
+          "supportsWording": false,
+          "valid": false,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": [
+            "Citation does not support the annotated entity/source relationship.",
+            "Citation does not support the expected claim period.",
+            "Citation does not support the expected claim unit.",
+            "Citation does not support the expected claim wording/value."
+          ]
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": [
+        "Material claim remains in the precision denominator as unsupported.",
+        "No annotation claim matched the emitted material claim.",
+        "No citation satisfied all evidence existence, cutoff, and support checks."
+      ]
+    },
+    {
+      "claimId": "zopa-2024-pre-tax-profit",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "zopa-2024-pre-tax-profit",
+      "emittedClaimId": "claim-20a73c036e62",
+      "expectedStatement": "Zopa Bank reported GBP 34.2 million of pre-tax profit for 2024.",
+      "emittedStatement": "Zopa Bank reported GBP 34.2 million of pre-tax profit for the financial year ended 2024-12-31.",
+      "expectedValue": 34.2,
+      "emittedValue": 34.2,
+      "expectedUnit": "GBP millions pre-tax profit",
+      "emittedUnit": "GBP millions pre-tax profit",
+      "expectedPeriod": {
+        "endDate": "2024-12-31"
+      },
+      "emittedPeriod": {
+        "endDate": "2024-12-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-9b40616ed4f4"
+      ],
+      "emittedEvidenceIds": [
+        "ev-9b40616ed4f4"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-9b40616ed4f4",
+          "factId": "fact-e24b04aa0e61",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "zopa-h1-2025-at1-capital",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "zopa-h1-2025-at1-capital",
+      "emittedClaimId": "claim-c592a9f13e80",
+      "expectedStatement": "Zopa reported raising GBP 80 million of Additional Tier 1 capital in May 2025.",
+      "emittedStatement": "Zopa reported raising GBP 80 million of Additional Tier 1 capital in May 2025.",
+      "expectedValue": 80,
+      "emittedValue": 80,
+      "expectedUnit": "GBP millions AT1 capital",
+      "emittedUnit": "GBP millions AT1 capital",
+      "expectedPeriod": {
+        "instantDate": "2025-05-31"
+      },
+      "emittedPeriod": {
+        "instantDate": "2025-05-31"
+      },
+      "expectedEvidenceIds": [
+        "ev-40dfb2e25c8f"
+      ],
+      "emittedEvidenceIds": [
+        "ev-40dfb2e25c8f"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-40dfb2e25c8f",
+          "factId": "fact-17529970480a",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    },
+    {
+      "claimId": "zopa-h1-2025-customers",
+      "kind": "observable",
+      "supportStatus": "supported",
+      "denominatorIncluded": true,
+      "denominatorReasons": [],
+      "expectedClaimId": "zopa-h1-2025-customers",
+      "emittedClaimId": "claim-92c947deed04",
+      "expectedStatement": "Zopa reported 1.5 million customers in H1 2025.",
+      "emittedStatement": "Zopa Group PLC reported serving 1.5 million customers in its H1 2025 trading update.",
+      "expectedValue": 1.5,
+      "emittedValue": 1.5,
+      "expectedUnit": "millions of customers",
+      "emittedUnit": "millions of customers",
+      "expectedPeriod": {
+        "endDate": "2025-06-30"
+      },
+      "emittedPeriod": {
+        "endDate": "2025-06-30"
+      },
+      "expectedEvidenceIds": [
+        "ev-40dfb2e25c8f"
+      ],
+      "emittedEvidenceIds": [
+        "ev-40dfb2e25c8f"
+      ],
+      "citationScores": [
+        {
+          "evidenceId": "ev-40dfb2e25c8f",
+          "factId": "fact-f00852acdee8",
+          "evidenceIdExists": true,
+          "retrievable": true,
+          "sourceUrlPresent": true,
+          "cutoffCompliant": true,
+          "sourceDateAligned": true,
+          "supportsEntity": true,
+          "supportsPeriod": true,
+          "supportsUnit": true,
+          "supportsWording": true,
+          "valid": true,
+          "sourceClass": "company-primary",
+          "sourceQualityCategory": "company-originated",
+          "sourceQualityWeight": 0.8,
+          "notes": []
+        }
+      ],
+      "sourceQuality": {
+        "score": 0.8,
+        "citedSourceClasses": [
+          "company-primary"
+        ],
+        "citedSourceQualityCategories": [
+          "company-originated"
+        ],
+        "notes": []
+      },
+      "duplicateEmittedClaimIds": [],
+      "notes": []
+    }
+  ],
+  "failures": []
+}

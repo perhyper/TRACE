@@ -1,0 +1,4372 @@
+{
+  "schemaVersion": "trace.benchmark-aggregate-score.v1",
+  "runId": "run-locked-test-v1",
+  "partition": "locked-test",
+  "groups": [
+    {
+      "groupId": "overall",
+      "groupKind": "overall",
+      "partition": "locked-test",
+      "caseCount": 18,
+      "scoredCaseCount": 18,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 45,
+          "denominator": 159,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 45,
+          "denominator": 159,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.816981,
+          "numerator": 129.9,
+          "denominator": 159,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.219136,
+          "numerator": 11.833334,
+          "denominator": 54,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection abstained with reason insufficient-route-evidence.",
+            "Route selection was omitted.",
+            "Selected route recent-transaction did not match expected route software-saas."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.236111,
+          "numerator": 8.5,
+          "denominator": 36,
+          "notes": [
+            "altos-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "altos-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "canva-enterprise-value-abstain: emitted reason recent-secondary-transaction-not-observed did not match headline-valuation-not-enterprise-value.",
+            "canva-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "canva-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "github-acquisition-input-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "github-acquisition-input-abstain: emitted reason route-abstained did not match post-cutoff-transaction-not-input.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention was not emitted.",
+            "github-security-level-fair-value-abstain: emitted reason route-abstained did not match missing-security-rights-and-cap-table.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "stripe-enterprise-value-abstain: emitted reason bank-balance-sheet-not-ev-input did not match headline-valuation-not-enterprise-value.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "zopa-final-2025-results-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "zopa-final-2025-results-abstain: emitted reason recent-secondary-transaction-not-observed did not match post-cutoff-financials-not-input.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention was not emitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 18,
+          "denominator": 18,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 3,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.798611,
+          "numerator": 14.375,
+          "denominator": 18,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.5, evidence-class coverage 1.",
+            "altos-cover-launch-science-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "canva-cover-saas-scale-and-valuation-limits: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.5, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.75, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.5, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.75, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "zopa-cover-bank-metrics-and-cutoff: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 18,
+          "denominator": 18,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 18,
+          "denominator": 18,
+          "notes": [
+            "durationMs=146",
+            "durationMs=159",
+            "durationMs=180",
+            "durationMs=193",
+            "durationMs=199",
+            "durationMs=209",
+            "durationMs=212",
+            "durationMs=222",
+            "durationMs=235",
+            "durationMs=246",
+            "durationMs=292",
+            "durationMs=317",
+            "durationMs=331",
+            "durationMs=350"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 18,
+          "denominator": 18,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "runner:baseline-a",
+      "groupKind": "runner",
+      "runnerName": "baseline-a",
+      "partition": "locked-test",
+      "caseCount": 6,
+      "scoredCaseCount": 6,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 15,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 15,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.816981,
+          "numerator": 43.3,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 18,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 12,
+          "notes": [
+            "altos-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "canva-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention was not emitted.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention was not emitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 1,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.75,
+          "numerator": 4.5,
+          "denominator": 6,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "canva-cover-saas-scale-and-valuation-limits: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.5, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.5, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1.",
+            "zopa-cover-bank-metrics-and-cutoff: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "durationMs=146",
+            "durationMs=180",
+            "durationMs=199",
+            "durationMs=209",
+            "durationMs=222"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "runner:baseline-b",
+      "groupKind": "runner",
+      "runnerName": "baseline-b",
+      "partition": "locked-test",
+      "caseCount": 6,
+      "scoredCaseCount": 6,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 15,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 15,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.816981,
+          "numerator": 43.3,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 18,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 12,
+          "notes": [
+            "altos-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "canva-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 1,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.729167,
+          "numerator": 4.375,
+          "denominator": 6,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.5, evidence-class coverage 1.",
+            "canva-cover-saas-scale-and-valuation-limits: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.5, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.5, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1.",
+            "zopa-cover-bank-metrics-and-cutoff: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "durationMs=159",
+            "durationMs=193",
+            "durationMs=212",
+            "durationMs=222",
+            "durationMs=235"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "runner:trace-full",
+      "groupKind": "runner",
+      "runnerName": "trace-full",
+      "partition": "locked-test",
+      "caseCount": 6,
+      "scoredCaseCount": 6,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 15,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 15,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.816981,
+          "numerator": 43.3,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.657407,
+          "numerator": 11.833334,
+          "denominator": 18,
+          "notes": [
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection abstained with reason insufficient-route-evidence.",
+            "Selected route recent-transaction did not match expected route software-saas."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.708333,
+          "numerator": 8.5,
+          "denominator": 12,
+          "notes": [
+            "canva-enterprise-value-abstain: emitted reason recent-secondary-transaction-not-observed did not match headline-valuation-not-enterprise-value.",
+            "github-acquisition-input-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "github-acquisition-input-abstain: emitted reason route-abstained did not match post-cutoff-transaction-not-input.",
+            "github-security-level-fair-value-abstain: emitted reason route-abstained did not match missing-security-rights-and-cap-table.",
+            "stripe-enterprise-value-abstain: emitted reason bank-balance-sheet-not-ev-input did not match headline-valuation-not-enterprise-value.",
+            "zopa-final-2025-results-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "zopa-final-2025-results-abstain: emitted reason recent-secondary-transaction-not-observed did not match post-cutoff-financials-not-input."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 1,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.916667,
+          "numerator": 5.5,
+          "denominator": 6,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.75, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.75, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "durationMs=246",
+            "durationMs=292",
+            "durationMs=317",
+            "durationMs=331",
+            "durationMs=350"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "partition:locked-test",
+      "groupKind": "partition",
+      "partition": "locked-test",
+      "caseCount": 18,
+      "scoredCaseCount": 18,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 45,
+          "denominator": 159,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 45,
+          "denominator": 159,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.816981,
+          "numerator": 129.9,
+          "denominator": 159,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.219136,
+          "numerator": 11.833334,
+          "denominator": 54,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection abstained with reason insufficient-route-evidence.",
+            "Route selection was omitted.",
+            "Selected route recent-transaction did not match expected route software-saas."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.236111,
+          "numerator": 8.5,
+          "denominator": 36,
+          "notes": [
+            "altos-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "altos-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "canva-enterprise-value-abstain: emitted reason recent-secondary-transaction-not-observed did not match headline-valuation-not-enterprise-value.",
+            "canva-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "canva-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "github-acquisition-input-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "github-acquisition-input-abstain: emitted reason route-abstained did not match post-cutoff-transaction-not-input.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention was not emitted.",
+            "github-security-level-fair-value-abstain: emitted reason route-abstained did not match missing-security-rights-and-cap-table.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "stripe-enterprise-value-abstain: emitted reason bank-balance-sheet-not-ev-input did not match headline-valuation-not-enterprise-value.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "zopa-final-2025-results-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "zopa-final-2025-results-abstain: emitted reason recent-secondary-transaction-not-observed did not match post-cutoff-financials-not-input.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention was not emitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 18,
+          "denominator": 18,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 3,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.798611,
+          "numerator": 14.375,
+          "denominator": 18,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.5, evidence-class coverage 1.",
+            "altos-cover-launch-science-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "canva-cover-saas-scale-and-valuation-limits: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.5, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.75, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.5, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.75, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "zopa-cover-bank-metrics-and-cutoff: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 18,
+          "denominator": 18,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 18,
+          "denominator": 18,
+          "notes": [
+            "durationMs=146",
+            "durationMs=159",
+            "durationMs=180",
+            "durationMs=193",
+            "durationMs=199",
+            "durationMs=209",
+            "durationMs=212",
+            "durationMs=222",
+            "durationMs=235",
+            "durationMs=246",
+            "durationMs=292",
+            "durationMs=317",
+            "durationMs=331",
+            "durationMs=350"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 18,
+          "denominator": 18,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "partition:locked-test:runner:baseline-a",
+      "groupKind": "partition",
+      "runnerName": "baseline-a",
+      "partition": "locked-test",
+      "caseCount": 6,
+      "scoredCaseCount": 6,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 15,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 15,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.816981,
+          "numerator": 43.3,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 18,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 12,
+          "notes": [
+            "altos-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "canva-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention was not emitted.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention was not emitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 1,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.75,
+          "numerator": 4.5,
+          "denominator": 6,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "canva-cover-saas-scale-and-valuation-limits: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.5, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.5, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1.",
+            "zopa-cover-bank-metrics-and-cutoff: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "durationMs=146",
+            "durationMs=180",
+            "durationMs=199",
+            "durationMs=209",
+            "durationMs=222"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "partition:locked-test:runner:baseline-b",
+      "groupKind": "partition",
+      "runnerName": "baseline-b",
+      "partition": "locked-test",
+      "caseCount": 6,
+      "scoredCaseCount": 6,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 15,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 15,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.816981,
+          "numerator": 43.3,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 18,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 12,
+          "notes": [
+            "altos-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "canva-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 1,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.729167,
+          "numerator": 4.375,
+          "denominator": 6,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.5, evidence-class coverage 1.",
+            "canva-cover-saas-scale-and-valuation-limits: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.5, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.5, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1.",
+            "zopa-cover-bank-metrics-and-cutoff: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "durationMs=159",
+            "durationMs=193",
+            "durationMs=212",
+            "durationMs=222",
+            "durationMs=235"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "partition:locked-test:runner:trace-full",
+      "groupKind": "partition",
+      "runnerName": "trace-full",
+      "partition": "locked-test",
+      "caseCount": 6,
+      "scoredCaseCount": 6,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 15,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.283019,
+          "numerator": 15,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.816981,
+          "numerator": 43.3,
+          "denominator": 53,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.657407,
+          "numerator": 11.833334,
+          "denominator": 18,
+          "notes": [
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection abstained with reason insufficient-route-evidence.",
+            "Selected route recent-transaction did not match expected route software-saas."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.708333,
+          "numerator": 8.5,
+          "denominator": 12,
+          "notes": [
+            "canva-enterprise-value-abstain: emitted reason recent-secondary-transaction-not-observed did not match headline-valuation-not-enterprise-value.",
+            "github-acquisition-input-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "github-acquisition-input-abstain: emitted reason route-abstained did not match post-cutoff-transaction-not-input.",
+            "github-security-level-fair-value-abstain: emitted reason route-abstained did not match missing-security-rights-and-cap-table.",
+            "stripe-enterprise-value-abstain: emitted reason bank-balance-sheet-not-ev-input did not match headline-valuation-not-enterprise-value.",
+            "zopa-final-2025-results-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "zopa-final-2025-results-abstain: emitted reason recent-secondary-transaction-not-observed did not match post-cutoff-financials-not-input."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 1,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.916667,
+          "numerator": 5.5,
+          "denominator": 6,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.75, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.75, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "durationMs=246",
+            "durationMs=292",
+            "durationMs=317",
+            "durationMs=331",
+            "durationMs=350"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "data-tier:medium",
+      "groupKind": "data-tier",
+      "partition": "locked-test",
+      "dataTier": "medium",
+      "caseCount": 3,
+      "scoredCaseCount": 3,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.272727,
+          "numerator": 9,
+          "denominator": 33,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.272727,
+          "numerator": 9,
+          "denominator": 33,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.767273,
+          "numerator": 25.32,
+          "denominator": 33,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.074074,
+          "numerator": 0.666667,
+          "denominator": 9,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted.",
+            "Selected route recent-transaction did not match expected route software-saas."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.25,
+          "numerator": 1.5,
+          "denominator": 6,
+          "notes": [
+            "canva-enterprise-value-abstain: emitted reason recent-secondary-transaction-not-observed did not match headline-valuation-not-enterprise-value.",
+            "canva-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "canva-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.916667,
+          "numerator": 2.75,
+          "denominator": 3,
+          "notes": [
+            "canva-cover-saas-scale-and-valuation-limits: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": [
+            "durationMs=209",
+            "durationMs=222",
+            "durationMs=331"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "data-tier:medium:runner:baseline-a",
+      "groupKind": "data-tier",
+      "runnerName": "baseline-a",
+      "partition": "locked-test",
+      "dataTier": "medium",
+      "caseCount": 1,
+      "scoredCaseCount": 1,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.272727,
+          "numerator": 3,
+          "denominator": 11,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.272727,
+          "numerator": 3,
+          "denominator": 11,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.767273,
+          "numerator": 8.44,
+          "denominator": 11,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 3,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 2,
+          "notes": [
+            "canva-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.875,
+          "numerator": 0.875,
+          "denominator": 1,
+          "notes": [
+            "canva-cover-saas-scale-and-valuation-limits: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": [
+            "durationMs=209"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "data-tier:medium:runner:baseline-b",
+      "groupKind": "data-tier",
+      "runnerName": "baseline-b",
+      "partition": "locked-test",
+      "dataTier": "medium",
+      "caseCount": 1,
+      "scoredCaseCount": 1,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.272727,
+          "numerator": 3,
+          "denominator": 11,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.272727,
+          "numerator": 3,
+          "denominator": 11,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.767273,
+          "numerator": 8.44,
+          "denominator": 11,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 3,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 2,
+          "notes": [
+            "canva-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.875,
+          "numerator": 0.875,
+          "denominator": 1,
+          "notes": [
+            "canva-cover-saas-scale-and-valuation-limits: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": [
+            "durationMs=222"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "data-tier:medium:runner:trace-full",
+      "groupKind": "data-tier",
+      "runnerName": "trace-full",
+      "partition": "locked-test",
+      "dataTier": "medium",
+      "caseCount": 1,
+      "scoredCaseCount": 1,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.272727,
+          "numerator": 3,
+          "denominator": 11,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.272727,
+          "numerator": 3,
+          "denominator": 11,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.767273,
+          "numerator": 8.44,
+          "denominator": 11,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.222222,
+          "numerator": 0.666667,
+          "denominator": 3,
+          "notes": [
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Selected route recent-transaction did not match expected route software-saas."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.75,
+          "numerator": 1.5,
+          "denominator": 2,
+          "notes": [
+            "canva-enterprise-value-abstain: emitted reason recent-secondary-transaction-not-observed did not match headline-valuation-not-enterprise-value."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": []
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": [
+            "durationMs=331"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 1,
+          "denominator": 1,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "data-tier:rich",
+      "groupKind": "data-tier",
+      "partition": "locked-test",
+      "dataTier": "rich",
+      "caseCount": 6,
+      "scoredCaseCount": 6,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 18,
+          "denominator": 63,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 18,
+          "denominator": 63,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.871429,
+          "numerator": 54.9,
+          "denominator": 63,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.305556,
+          "numerator": 5.5,
+          "denominator": 18,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.25,
+          "numerator": 3,
+          "denominator": 12,
+          "notes": [
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "zopa-final-2025-results-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "zopa-final-2025-results-abstain: emitted reason recent-secondary-transaction-not-observed did not match post-cutoff-financials-not-input.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention was not emitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.8125,
+          "numerator": 4.875,
+          "denominator": 6,
+          "notes": [
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.5, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.75, evidence-class coverage 1.",
+            "zopa-cover-bank-metrics-and-cutoff: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "durationMs=180",
+            "durationMs=193",
+            "durationMs=222",
+            "durationMs=235",
+            "durationMs=292",
+            "durationMs=350"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "data-tier:rich:runner:baseline-a",
+      "groupKind": "data-tier",
+      "runnerName": "baseline-a",
+      "partition": "locked-test",
+      "dataTier": "rich",
+      "caseCount": 2,
+      "scoredCaseCount": 2,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.871429,
+          "numerator": 18.3,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 6,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 4,
+          "notes": [
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention was not emitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.75,
+          "numerator": 1.5,
+          "denominator": 2,
+          "notes": [
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.5, evidence-class coverage 1.",
+            "zopa-cover-bank-metrics-and-cutoff: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "durationMs=180",
+            "durationMs=222"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "data-tier:rich:runner:baseline-b",
+      "groupKind": "data-tier",
+      "runnerName": "baseline-b",
+      "partition": "locked-test",
+      "dataTier": "rich",
+      "caseCount": 2,
+      "scoredCaseCount": 2,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.871429,
+          "numerator": 18.3,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 6,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 4,
+          "notes": [
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.75,
+          "numerator": 1.5,
+          "denominator": 2,
+          "notes": [
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.5, evidence-class coverage 1.",
+            "zopa-cover-bank-metrics-and-cutoff: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "durationMs=193",
+            "durationMs=235"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "data-tier:rich:runner:trace-full",
+      "groupKind": "data-tier",
+      "runnerName": "trace-full",
+      "partition": "locked-test",
+      "dataTier": "rich",
+      "caseCount": 2,
+      "scoredCaseCount": 2,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.871429,
+          "numerator": 18.3,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.916667,
+          "numerator": 5.5,
+          "denominator": 6,
+          "notes": []
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.75,
+          "numerator": 3,
+          "denominator": 4,
+          "notes": [
+            "zopa-final-2025-results-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "zopa-final-2025-results-abstain: emitted reason recent-secondary-transaction-not-observed did not match post-cutoff-financials-not-input."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.9375,
+          "numerator": 1.875,
+          "denominator": 2,
+          "notes": [
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "durationMs=292",
+            "durationMs=350"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "data-tier:sparse",
+      "groupKind": "data-tier",
+      "partition": "locked-test",
+      "dataTier": "sparse",
+      "caseCount": 9,
+      "scoredCaseCount": 9,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 18,
+          "denominator": 63,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 18,
+          "denominator": 63,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.788571,
+          "numerator": 49.68,
+          "denominator": 63,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.209877,
+          "numerator": 5.666667,
+          "denominator": 27,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection abstained with reason insufficient-route-evidence.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.222222,
+          "numerator": 4,
+          "denominator": 18,
+          "notes": [
+            "altos-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "altos-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "github-acquisition-input-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "github-acquisition-input-abstain: emitted reason route-abstained did not match post-cutoff-transaction-not-input.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention was not emitted.",
+            "github-security-level-fair-value-abstain: emitted reason route-abstained did not match missing-security-rights-and-cap-table.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "stripe-enterprise-value-abstain: emitted reason bank-balance-sheet-not-ev-input did not match headline-valuation-not-enterprise-value.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 9,
+          "denominator": 9,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 3,
+          "notes": [
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.75,
+          "numerator": 6.75,
+          "denominator": 9,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.5, evidence-class coverage 1.",
+            "altos-cover-launch-science-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.5, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.75, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 9,
+          "denominator": 9,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 9,
+          "denominator": 9,
+          "notes": [
+            "durationMs=146",
+            "durationMs=159",
+            "durationMs=180",
+            "durationMs=193",
+            "durationMs=199",
+            "durationMs=212",
+            "durationMs=246",
+            "durationMs=292",
+            "durationMs=317"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 9,
+          "denominator": 9,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "data-tier:sparse:runner:baseline-a",
+      "groupKind": "data-tier",
+      "runnerName": "baseline-a",
+      "partition": "locked-test",
+      "dataTier": "sparse",
+      "caseCount": 3,
+      "scoredCaseCount": 3,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.788571,
+          "numerator": 16.56,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 9,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 6,
+          "notes": [
+            "altos-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention was not emitted.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 1,
+          "notes": [
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.708333,
+          "numerator": 2.125,
+          "denominator": 3,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.5, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": [
+            "durationMs=146",
+            "durationMs=180",
+            "durationMs=199"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "data-tier:sparse:runner:baseline-b",
+      "groupKind": "data-tier",
+      "runnerName": "baseline-b",
+      "partition": "locked-test",
+      "dataTier": "sparse",
+      "caseCount": 3,
+      "scoredCaseCount": 3,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.788571,
+          "numerator": 16.56,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 9,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 6,
+          "notes": [
+            "altos-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 1,
+          "notes": [
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.666667,
+          "numerator": 2,
+          "denominator": 3,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.5, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.5, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": [
+            "durationMs=159",
+            "durationMs=193",
+            "durationMs=212"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "data-tier:sparse:runner:trace-full",
+      "groupKind": "data-tier",
+      "runnerName": "trace-full",
+      "partition": "locked-test",
+      "dataTier": "sparse",
+      "caseCount": 3,
+      "scoredCaseCount": 3,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.788571,
+          "numerator": 16.56,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.62963,
+          "numerator": 5.666667,
+          "denominator": 9,
+          "notes": [
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection abstained with reason insufficient-route-evidence."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.666667,
+          "numerator": 4,
+          "denominator": 6,
+          "notes": [
+            "github-acquisition-input-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "github-acquisition-input-abstain: emitted reason route-abstained did not match post-cutoff-transaction-not-input.",
+            "github-security-level-fair-value-abstain: emitted reason route-abstained did not match missing-security-rights-and-cap-table.",
+            "stripe-enterprise-value-abstain: emitted reason bank-balance-sheet-not-ev-input did not match headline-valuation-not-enterprise-value."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 1,
+          "notes": [
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.875,
+          "numerator": 2.625,
+          "denominator": 3,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.75, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": [
+            "durationMs=246",
+            "durationMs=292",
+            "durationMs=317"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 3,
+          "denominator": 3,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "sector-route:biotech-rnpv",
+      "groupKind": "sector-route",
+      "partition": "locked-test",
+      "sectorRoute": "biotech-rnpv",
+      "caseCount": 6,
+      "scoredCaseCount": 6,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.176471,
+          "numerator": 9,
+          "denominator": 51,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.176471,
+          "numerator": 9,
+          "denominator": 51,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.856471,
+          "numerator": 43.68,
+          "denominator": 51,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.231482,
+          "numerator": 4.166667,
+          "denominator": 18,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.333333,
+          "numerator": 4,
+          "denominator": 12,
+          "notes": [
+            "altos-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "altos-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.8125,
+          "numerator": 4.875,
+          "denominator": 6,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.5, evidence-class coverage 1.",
+            "altos-cover-launch-science-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.5, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "durationMs=180",
+            "durationMs=193",
+            "durationMs=199",
+            "durationMs=212",
+            "durationMs=292",
+            "durationMs=317"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "sector-route:biotech-rnpv:runner:baseline-a",
+      "groupKind": "sector-route",
+      "runnerName": "baseline-a",
+      "partition": "locked-test",
+      "sectorRoute": "biotech-rnpv",
+      "caseCount": 2,
+      "scoredCaseCount": 2,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.176471,
+          "numerator": 3,
+          "denominator": 17,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.176471,
+          "numerator": 3,
+          "denominator": 17,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.856471,
+          "numerator": 14.56,
+          "denominator": 17,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 6,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 4,
+          "notes": [
+            "altos-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention was not emitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.8125,
+          "numerator": 1.625,
+          "denominator": 2,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "durationMs=180",
+            "durationMs=199"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "sector-route:biotech-rnpv:runner:baseline-b",
+      "groupKind": "sector-route",
+      "runnerName": "baseline-b",
+      "partition": "locked-test",
+      "sectorRoute": "biotech-rnpv",
+      "caseCount": 2,
+      "scoredCaseCount": 2,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.176471,
+          "numerator": 3,
+          "denominator": 17,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.176471,
+          "numerator": 3,
+          "denominator": 17,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.856471,
+          "numerator": 14.56,
+          "denominator": 17,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 6,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 4,
+          "notes": [
+            "altos-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "altos-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "recursion-product-rnpv-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "recursion-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.75,
+          "numerator": 1.5,
+          "denominator": 2,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.5, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "durationMs=193",
+            "durationMs=212"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "sector-route:biotech-rnpv:runner:trace-full",
+      "groupKind": "sector-route",
+      "runnerName": "trace-full",
+      "partition": "locked-test",
+      "sectorRoute": "biotech-rnpv",
+      "caseCount": 2,
+      "scoredCaseCount": 2,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.176471,
+          "numerator": 3,
+          "denominator": 17,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.176471,
+          "numerator": 3,
+          "denominator": 17,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.856471,
+          "numerator": 14.56,
+          "denominator": 17,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.694445,
+          "numerator": 4.166667,
+          "denominator": 6,
+          "notes": [
+            "Route rationale did not satisfy the annotated rationale requirement."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 1,
+          "numerator": 4,
+          "denominator": 4,
+          "notes": []
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+            "No valid scalar historical valuation targets were available for this case.",
+            "recursion-ipo-equity-value-reference: skipped because the target is not a scalar numeric field with valid target evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.875,
+          "numerator": 1.75,
+          "denominator": 2,
+          "notes": [
+            "altos-cover-launch-science-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "recursion-cover-biotech-platform-and-ipo: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "durationMs=292",
+            "durationMs=317"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "sector-route:financial-services",
+      "groupKind": "sector-route",
+      "partition": "locked-test",
+      "sectorRoute": "financial-services",
+      "caseCount": 6,
+      "scoredCaseCount": 6,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 18,
+          "denominator": 63,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 18,
+          "denominator": 63,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.814286,
+          "numerator": 51.3,
+          "denominator": 63,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.333333,
+          "numerator": 6,
+          "denominator": 18,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.208333,
+          "numerator": 2.5,
+          "denominator": 12,
+          "notes": [
+            "stripe-enterprise-value-abstain: emitted reason bank-balance-sheet-not-ev-input did not match headline-valuation-not-enterprise-value.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "zopa-final-2025-results-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "zopa-final-2025-results-abstain: emitted reason recent-secondary-transaction-not-observed did not match post-cutoff-financials-not-input.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention was not emitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.729167,
+          "numerator": 4.375,
+          "denominator": 6,
+          "notes": [
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1.",
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0.75, evidence-class coverage 1.",
+            "zopa-cover-bank-metrics-and-cutoff: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "durationMs=180",
+            "durationMs=193",
+            "durationMs=222",
+            "durationMs=235",
+            "durationMs=292",
+            "durationMs=350"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "sector-route:financial-services:runner:baseline-a",
+      "groupKind": "sector-route",
+      "runnerName": "baseline-a",
+      "partition": "locked-test",
+      "sectorRoute": "financial-services",
+      "caseCount": 2,
+      "scoredCaseCount": 2,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.814286,
+          "numerator": 17.1,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 6,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 4,
+          "notes": [
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention was not emitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.625,
+          "numerator": 1.25,
+          "denominator": 2,
+          "notes": [
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1.",
+            "zopa-cover-bank-metrics-and-cutoff: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "durationMs=180",
+            "durationMs=222"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "sector-route:financial-services:runner:baseline-b",
+      "groupKind": "sector-route",
+      "runnerName": "baseline-b",
+      "partition": "locked-test",
+      "sectorRoute": "financial-services",
+      "caseCount": 2,
+      "scoredCaseCount": 2,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.814286,
+          "numerator": 17.1,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 6,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 4,
+          "notes": [
+            "stripe-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "stripe-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "zopa-final-2025-results-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "zopa-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.625,
+          "numerator": 1.25,
+          "denominator": 2,
+          "notes": [
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0, evidence-class coverage 1.",
+            "zopa-cover-bank-metrics-and-cutoff: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "durationMs=193",
+            "durationMs=235"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "sector-route:financial-services:runner:trace-full",
+      "groupKind": "sector-route",
+      "runnerName": "trace-full",
+      "partition": "locked-test",
+      "sectorRoute": "financial-services",
+      "caseCount": 2,
+      "scoredCaseCount": 2,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.285714,
+          "numerator": 6,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.814286,
+          "numerator": 17.1,
+          "denominator": 21,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.625,
+          "numerator": 2.5,
+          "denominator": 4,
+          "notes": [
+            "stripe-enterprise-value-abstain: emitted reason bank-balance-sheet-not-ev-input did not match headline-valuation-not-enterprise-value.",
+            "zopa-final-2025-results-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "zopa-final-2025-results-abstain: emitted reason recent-secondary-transaction-not-observed did not match post-cutoff-financials-not-input."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+            "Manifest marks this case ineligible because secondary valuations and tender references lack public share-rights and cap-table evidence."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.9375,
+          "numerator": 1.875,
+          "denominator": 2,
+          "notes": [
+            "stripe-cover-payments-scale-and-limitations: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "durationMs=292",
+            "durationMs=350"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "sector-route:software-saas",
+      "groupKind": "sector-route",
+      "partition": "locked-test",
+      "sectorRoute": "software-saas",
+      "caseCount": 6,
+      "scoredCaseCount": 6,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.4,
+          "numerator": 18,
+          "denominator": 45,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.4,
+          "numerator": 18,
+          "denominator": 45,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.776,
+          "numerator": 34.92,
+          "denominator": 45,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.092593,
+          "numerator": 1.666667,
+          "denominator": 18,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection abstained with reason insufficient-route-evidence.",
+            "Route selection was omitted.",
+            "Selected route recent-transaction did not match expected route software-saas."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.166667,
+          "numerator": 2,
+          "denominator": 12,
+          "notes": [
+            "canva-enterprise-value-abstain: emitted reason recent-secondary-transaction-not-observed did not match headline-valuation-not-enterprise-value.",
+            "canva-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "canva-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "github-acquisition-input-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "github-acquisition-input-abstain: emitted reason route-abstained did not match post-cutoff-transaction-not-input.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention was not emitted.",
+            "github-security-level-fair-value-abstain: emitted reason route-abstained did not match missing-security-rights-and-cap-table.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 3,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.854167,
+          "numerator": 5.125,
+          "denominator": 6,
+          "notes": [
+            "canva-cover-saas-scale-and-valuation-limits: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.5, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": [
+            "durationMs=146",
+            "durationMs=159",
+            "durationMs=209",
+            "durationMs=222",
+            "durationMs=246",
+            "durationMs=331"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 6,
+          "denominator": 6,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "sector-route:software-saas:runner:baseline-a",
+      "groupKind": "sector-route",
+      "runnerName": "baseline-a",
+      "partition": "locked-test",
+      "sectorRoute": "software-saas",
+      "caseCount": 2,
+      "scoredCaseCount": 2,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.4,
+          "numerator": 6,
+          "denominator": 15,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.4,
+          "numerator": 6,
+          "denominator": 15,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.776,
+          "numerator": 11.64,
+          "denominator": 15,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 6,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 4,
+          "notes": [
+            "canva-enterprise-value-abstain: expected enterprise-value abstention was not emitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention was not emitted.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention was not emitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 1,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.8125,
+          "numerator": 1.625,
+          "denominator": 2,
+          "notes": [
+            "canva-cover-saas-scale-and-valuation-limits: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "durationMs=146",
+            "durationMs=209"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "sector-route:software-saas:runner:baseline-b",
+      "groupKind": "sector-route",
+      "runnerName": "baseline-b",
+      "partition": "locked-test",
+      "sectorRoute": "software-saas",
+      "caseCount": 2,
+      "scoredCaseCount": 2,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.4,
+          "numerator": 6,
+          "denominator": 15,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.4,
+          "numerator": 6,
+          "denominator": 15,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.776,
+          "numerator": 11.64,
+          "denominator": 15,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 6,
+          "notes": [
+            "Route rationale did not cite cutoff-visible expected route evidence.",
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection was omitted."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 4,
+          "notes": [
+            "canva-enterprise-value-abstain: expected enterprise-value abstention but valuation was omitted.",
+            "canva-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted.",
+            "github-acquisition-input-abstain: expected headline-valuation abstention but valuation was omitted.",
+            "github-security-level-fair-value-abstain: expected security-level-fair-value abstention but valuation was omitted."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 1,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.8125,
+          "numerator": 1.625,
+          "denominator": 2,
+          "notes": [
+            "canva-cover-saas-scale-and-valuation-limits: topic coverage 0.75, evidence-class coverage 1.",
+            "github-cover-platform-scale-and-leakage: topic coverage 0.5, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "durationMs=159",
+            "durationMs=222"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        }
+      ]
+    },
+    {
+      "groupId": "sector-route:software-saas:runner:trace-full",
+      "groupKind": "sector-route",
+      "runnerName": "trace-full",
+      "partition": "locked-test",
+      "sectorRoute": "software-saas",
+      "caseCount": 2,
+      "scoredCaseCount": 2,
+      "failedCaseCount": 0,
+      "metrics": [
+        {
+          "metricId": "evidence-supported-claim-precision",
+          "status": "scored",
+          "value": 0.4,
+          "numerator": 6,
+          "denominator": 15,
+          "notes": []
+        },
+        {
+          "metricId": "citation-validity",
+          "status": "scored",
+          "value": 0.4,
+          "numerator": 6,
+          "denominator": 15,
+          "notes": []
+        },
+        {
+          "metricId": "source-quality",
+          "status": "scored",
+          "value": 0.776,
+          "numerator": 11.64,
+          "denominator": 15,
+          "notes": []
+        },
+        {
+          "metricId": "route-accuracy",
+          "status": "scored",
+          "value": 0.277778,
+          "numerator": 1.666667,
+          "denominator": 6,
+          "notes": [
+            "Route rationale did not satisfy the annotated rationale requirement.",
+            "Route selection abstained with reason insufficient-route-evidence.",
+            "Selected route recent-transaction did not match expected route software-saas."
+          ]
+        },
+        {
+          "metricId": "abstention-behavior",
+          "status": "scored",
+          "value": 0.5,
+          "numerator": 2,
+          "denominator": 4,
+          "notes": [
+            "canva-enterprise-value-abstain: emitted reason recent-secondary-transaction-not-observed did not match headline-valuation-not-enterprise-value.",
+            "github-acquisition-input-abstain: abstention did not cite expected cutoff-visible evidence.",
+            "github-acquisition-input-abstain: emitted reason route-abstained did not match post-cutoff-transaction-not-input.",
+            "github-security-level-fair-value-abstain: emitted reason route-abstained did not match missing-security-rights-and-cap-table."
+          ]
+        },
+        {
+          "metricId": "valuation-separation",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+          ]
+        },
+        {
+          "metricId": "historical-valuation-error",
+          "status": "scored",
+          "value": 0,
+          "numerator": 0,
+          "denominator": 1,
+          "notes": [
+            "Manifest marks this case ineligible because no completed public exit, security-rights record or audited cap table is approved.",
+            "github-completed-transaction-consideration-reference: no comparable emitted valuation was available."
+          ]
+        },
+        {
+          "metricId": "completeness",
+          "status": "scored",
+          "value": 0.9375,
+          "numerator": 1.875,
+          "denominator": 2,
+          "notes": [
+            "github-cover-platform-scale-and-leakage: topic coverage 0.75, evidence-class coverage 1."
+          ]
+        },
+        {
+          "metricId": "reproducibility",
+          "status": "skipped",
+          "numerator": 0,
+          "denominator": 0,
+          "notes": [
+            "No repeated runner/case outputs were available for reproducibility scoring."
+          ]
+        },
+        {
+          "metricId": "completion-status",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        },
+        {
+          "metricId": "duration",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": [
+            "durationMs=246",
+            "durationMs=331"
+          ]
+        },
+        {
+          "metricId": "failure-records",
+          "status": "scored",
+          "value": 1,
+          "numerator": 2,
+          "denominator": 2,
+          "notes": []
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

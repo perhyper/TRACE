@@ -1,0 +1,751 @@
+{
+  "schemaVersion": "trace.benchmark-scorer-input.v1",
+  "runId": "run-locked-test-v1",
+  "runnerName": "baseline-a",
+  "caseId": "test-biotech-altos-2022",
+  "partition": "locked-test",
+  "caseInput": {
+    "schemaVersion": "trace.benchmark-case-input.v1",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "manifestSchemaVersion": "trace.benchmark-manifest.v1",
+    "caseId": "test-biotech-altos-2022",
+    "partition": "locked-test",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Altos Labs, Inc.",
+    "target": {
+      "legalName": "Altos Labs, Inc.",
+      "jurisdiction": "US",
+      "identifiers": [
+        {
+          "scheme": "other",
+          "value": "altoslabs.com",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "Altos",
+        "Altos Labs"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2022-01-19",
+    "cutoffDate": "2022-01-19",
+    "dataTier": "sparse",
+    "sourcePolicy": {
+      "approvedPublicSourceCategories": [
+        "company-primary",
+        "government",
+        "news",
+        "peer-reviewed"
+      ],
+      "redistributionStatus": "public-urls-redistribution-not-established",
+      "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+      "onlyUrlsAndShortExcerptsMayBeCommitted": true
+    },
+    "authorityBoundary": {
+      "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+      "officialContestRulesStatus": "not-supplied",
+      "contestComplianceClaimAllowed": false,
+      "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+      "prohibitedClaims": [
+        "appraisal status",
+        "benchmark superiority",
+        "contest readiness",
+        "investment advice",
+        "official contest compliance"
+      ]
+    },
+    "sourceRecordIds": [
+      "altos-2022-01-19-cira-yamanaka",
+      "altos-2022-01-19-launch-prnewswire",
+      "altos-2022-01-19-nature-biotech-news"
+    ],
+    "evidenceLedger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Altos Labs, Inc.",
+        "jurisdiction": "US",
+        "identifiers": [
+          {
+            "scheme": "other",
+            "value": "altoslabs.com",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "Altos",
+          "Altos Labs"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2022-01-19",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-7eacfac5ad8d",
+          "sourceUrl": "https://www.prnewswire.com/news-releases/altos-labs-launches-with-the-goal-to-transform-medicine-through-cellular-rejuvenation-programming-301463541.html",
+          "sourceTitle": "Altos Labs launches with cellular rejuvenation programming goal",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2022-01-19",
+          "effectiveDate": "2022-01-19",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Altos Labs release distributed by PR Newswire, 19 Jan 2022",
+          "shortExcerpt": "Altos launched as a biotechnology company with USD 3bn committed, cellular rejuvenation focus and global institute plans.",
+          "observedFacts": [
+            {
+              "id": "fact-5eae98da6ff5",
+              "statement": "Altos Labs described its focus as cellular rejuvenation programming to restore cell health and resilience.",
+              "epistemicClass": "observed",
+              "value": "cellular rejuvenation programming",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            },
+            {
+              "id": "fact-cc7998270308",
+              "statement": "Altos Labs launched with USD 3 billion fully committed from investors.",
+              "epistemicClass": "observed",
+              "value": 3,
+              "unit": "USD billions committed funding",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            },
+            {
+              "id": "fact-f8cb0c951253",
+              "statement": "Altos Labs publicly launched on 2022-01-19.",
+              "epistemicClass": "observed",
+              "value": "public launch",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            },
+            {
+              "id": "fact-d8747d98218e",
+              "statement": "Altos said Shinya Yamanaka would serve as senior scientific advisor without remuneration.",
+              "epistemicClass": "observed",
+              "value": "Shinya Yamanaka senior scientific advisor",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            },
+            {
+              "id": "fact-31e73c0e39c2",
+              "statement": "Altos said it would initially be based in the San Francisco Bay Area, San Diego and Cambridge, UK, with collaborations in Japan.",
+              "epistemicClass": "observed",
+              "value": [
+                "San Francisco Bay Area",
+                "San Diego",
+                "Cambridge UK",
+                "Japan collaborations"
+              ],
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-4e47b1f24b3b",
+          "sourceUrl": "https://www.cira.kyoto-u.ac.jp/e/pressrelease/other/220119-160000.html",
+          "sourceTitle": "Prof. Shinya Yamanaka serves as senior scientific advisor to Altos Labs",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2022-01-19",
+          "effectiveDate": "2022-01-19",
+          "sourceClass": "government",
+          "epistemicClass": "observed",
+          "locator": "CiRA Kyoto University news, 19 Jan 2022",
+          "shortExcerpt": "Kyoto University's CiRA confirmed Yamanaka's unpaid Altos advisor role and Japan research collaboration plans.",
+          "observedFacts": [
+            {
+              "id": "fact-43540ee5f2ac",
+              "statement": "CiRA reported that Altos would provide funds for research projects in cellular rejuvenation programming in Japan.",
+              "epistemicClass": "observed",
+              "value": "funded Japan research projects",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            },
+            {
+              "id": "fact-cf564b29f7a5",
+              "statement": "CiRA reported that Shinya Yamanaka would serve as an unpaid senior scientific advisor to Altos Labs.",
+              "epistemicClass": "observed",
+              "value": "unpaid senior scientific advisor",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-5ec7f4fa2e2b",
+          "sourceUrl": "https://www.nature.com/articles/d41587-022-00002-4",
+          "sourceTitle": "Rejuvenation by controlled reprogramming is the latest gambit in anti-aging",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2022-01-19",
+          "effectiveDate": "2022-01-19",
+          "sourceClass": "news",
+          "epistemicClass": "observed",
+          "locator": "Nature Biotechnology news, 19 Jan 2022",
+          "shortExcerpt": "Nature Biotechnology covered Altos' launch, its USD 3bn initial financing and the partial reprogramming thesis.",
+          "observedFacts": [
+            {
+              "id": "fact-f03f301f51ac",
+              "statement": "Nature Biotechnology described controlled partial reprogramming as the scientific thesis behind Altos and similar ventures.",
+              "epistemicClass": "observed",
+              "value": "controlled partial reprogramming",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            },
+            {
+              "id": "fact-e9d43b08c38f",
+              "statement": "Nature Biotechnology reported Altos launched with USD 3 billion in initial financing.",
+              "epistemicClass": "observed",
+              "value": 3,
+              "unit": "USD billions initial financing",
+              "period": {
+                "instantDate": "2022-01-19"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [],
+      "failedNotes": [
+        {
+          "id": "altos-product-stage-not-public",
+          "stage": "extraction",
+          "sourceTitle": "Altos launch source set",
+          "attemptedAt": "2026-07-26T00:00:00+09:00",
+          "note": "The launch sources do not disclose product cash-flow forecasts, commercial products, clinical-stage assets or security-level terms."
+        }
+      ],
+      "warnings": []
+    }
+  },
+  "annotation": {
+    "schemaVersion": "trace.benchmark-annotation.v1",
+    "caseId": "test-biotech-altos-2022",
+    "partition": "locked-test",
+    "measurementDate": "2022-01-19",
+    "expectedRoute": {
+      "route": "biotech-rnpv",
+      "acceptableAlternativeRoutes": [],
+      "evidenceIds": [
+        "ev-4e47b1f24b3b",
+        "ev-5ec7f4fa2e2b",
+        "ev-7eacfac5ad8d"
+      ],
+      "rationale": "The cutoff evidence describes a biotechnology company focused on cellular rejuvenation programming and preclinical research rather than marketed products."
+    },
+    "binaryClaims": [
+      {
+        "id": "altos-commercial-product-disclosed",
+        "statement": "Altos disclosed a commercial drug product at launch.",
+        "expectedValue": false,
+        "evidenceIds": [
+          "ev-5ec7f4fa2e2b",
+          "ev-7eacfac5ad8d"
+        ]
+      },
+      {
+        "id": "altos-launched-by-cutoff",
+        "statement": "Altos Labs publicly launched by the 2022-01-19 cutoff.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-7eacfac5ad8d"
+        ]
+      },
+      {
+        "id": "altos-yamanaka-advisor",
+        "statement": "Shinya Yamanaka was identified as a senior scientific advisor to Altos.",
+        "expectedValue": true,
+        "evidenceIds": [
+          "ev-4e47b1f24b3b",
+          "ev-7eacfac5ad8d"
+        ]
+      }
+    ],
+    "observableClaims": [
+      {
+        "id": "altos-cira-research-funding",
+        "statement": "CiRA reported that Altos would fund Japan research projects in cellular rejuvenation programming.",
+        "expectedValue": "funded Japan research projects",
+        "unit": "research collaboration status",
+        "period": {
+          "instantDate": "2022-01-19"
+        },
+        "evidenceIds": [
+          "ev-4e47b1f24b3b"
+        ]
+      },
+      {
+        "id": "altos-launch-funding",
+        "statement": "Altos launched with USD 3 billion of committed or initial financing.",
+        "expectedValue": 3,
+        "unit": "USD billions",
+        "period": {
+          "instantDate": "2022-01-19"
+        },
+        "evidenceIds": [
+          "ev-5ec7f4fa2e2b",
+          "ev-7eacfac5ad8d"
+        ]
+      },
+      {
+        "id": "altos-launch-locations",
+        "statement": "Altos announced initial sites in the San Francisco Bay Area, San Diego and Cambridge, UK, with Japan collaborations.",
+        "expectedValue": [
+          "San Francisco Bay Area",
+          "San Diego",
+          "Cambridge UK",
+          "Japan collaborations"
+        ],
+        "unit": "locations and collaboration geography",
+        "period": {
+          "instantDate": "2022-01-19"
+        },
+        "evidenceIds": [
+          "ev-7eacfac5ad8d"
+        ]
+      }
+    ],
+    "expectedAbstentions": [
+      {
+        "id": "altos-product-rnpv-abstain",
+        "field": "enterprise-value",
+        "reasonCode": "no-product-cash-flow-forecast",
+        "description": "The launch evidence supports biotech-rNPV routing but no product-level cash-flow forecast or commercial product.",
+        "evidenceIds": [
+          "ev-5ec7f4fa2e2b",
+          "ev-7eacfac5ad8d"
+        ]
+      },
+      {
+        "id": "altos-security-level-fair-value-abstain",
+        "field": "security-level-fair-value",
+        "reasonCode": "missing-security-rights-and-cap-table",
+        "description": "The launch evidence reports committed funding but not security rights, valuation rights or cap-table details.",
+        "evidenceIds": [
+          "ev-7eacfac5ad8d"
+        ]
+      }
+    ],
+    "valuationSeparationExpectations": {
+      "allowedValuationFields": [
+        "committed-funding"
+      ],
+      "mustNotConflate": [
+        "committed funding with enterprise value",
+        "funding amount with security-level fair value",
+        "launch financing with product rNPV"
+      ],
+      "notes": "Manifest marks the case ineligible for historical valuation-error scoring because there is no completed target or product-stage cash-flow record."
+    },
+    "completenessExpectations": [
+      {
+        "id": "altos-cover-launch-science-and-limitations",
+        "description": "A complete answer should cover launch status, cellular rejuvenation route, funding, scientific advisors, Japan collaboration and missing product-stage valuation inputs.",
+        "requiredEvidenceClasses": [
+          "company-primary",
+          "government",
+          "news"
+        ],
+        "requiredTopics": [
+          "biotech-rnpv route",
+          "launch funding",
+          "product-stage abstention",
+          "scientific advisors"
+        ],
+        "evidenceIds": [
+          "ev-4e47b1f24b3b",
+          "ev-5ec7f4fa2e2b",
+          "ev-7eacfac5ad8d"
+        ]
+      }
+    ],
+    "historicalValuationTargets": {
+      "eligible": false,
+      "reason": "Manifest marks this case ineligible because no public product-stage cash-flow target, completed transaction, security-rights record or qualifying clinical-stage valuation target is approved.",
+      "targets": []
+    }
+  },
+  "runnerOutput": {
+    "schemaVersion": "trace.benchmark-runner-output.v1",
+    "runnerName": "baseline-a",
+    "runId": "run-locked-test-v1",
+    "caseId": "test-biotech-altos-2022",
+    "partition": "locked-test",
+    "status": "completed",
+    "timing": {
+      "schemaVersion": "trace.benchmark-timing.v1",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.199Z",
+      "durationMs": 199
+    },
+    "rawOutput": {
+      "markdown": "# Baseline A Narrative Synthesis: Altos Labs, Inc.\n\nCase: test-biotech-altos-2022\nCutoff: 2022-01-19\nInput fingerprint: 77426198529d\n\n## Narrative\n- Altos Labs, Inc. is summarized from 3 cutoff-visible public evidence records dated on or before 2022-01-19.\n- The normalized claim list contains 9 cited observations from source classes: company-primary, government, news.\n- Altos Labs described its focus as cellular rejuvenation programming to restore cell health and resilience.\n- Altos Labs launched with USD 3 billion fully committed from investors.\n- Altos Labs publicly launched on 2022-01-19.\n- Altos said Shinya Yamanaka would serve as senior scientific advisor without remuneration.\n- Altos said it would initially be based in the San Francisco Bay Area, San Diego and Cambridge, UK, with collaborations in Japan.\n\n## Evidence Notes\n- Altos Labs launches with cellular rejuvenation programming goal [ev-7eacfac5ad8d]\n  - Altos Labs described its focus as cellular rejuvenation programming to restore cell health and resilience. (value=cellular rejuvenation programming; period=instant 2022-01-19)\n  - Altos Labs launched with USD 3 billion fully committed from investors. (value=3; unit=USD billions committed funding; period=instant 2022-01-19)\n  - Altos Labs publicly launched on 2022-01-19. (value=public launch; period=instant 2022-01-19)\n  - Altos said Shinya Yamanaka would serve as senior scientific advisor without remuneration. (value=Shinya Yamanaka senior scientific advisor; period=instant 2022-01-19)\n  - Altos said it would initially be based in the San Francisco Bay Area, San Diego and Cambridge, UK, with collaborations in Japan. (value=San Francisco Bay Area, San Diego, Cambridge UK, Japan collaborations; period=instant 2022-01-19)\n- Prof. Shinya Yamanaka serves as senior scientific advisor to Altos Labs [ev-4e47b1f24b3b]\n  - CiRA reported that Altos would provide funds for research projects in cellular rejuvenation programming in Japan. (value=funded Japan research projects; period=instant 2022-01-19)\n  - CiRA reported that Shinya Yamanaka would serve as an unpaid senior scientific advisor to Altos Labs. (value=unpaid senior scientific advisor; period=instant 2022-01-19)\n- Rejuvenation by controlled reprogramming is the latest gambit in anti-aging [ev-5ec7f4fa2e2b]\n  - Nature Biotechnology described controlled partial reprogramming as the scientific thesis behind Altos and similar ventures. (value=controlled partial reprogramming; period=instant 2022-01-19)\n  - Nature Biotechnology reported Altos launched with USD 3 billion in initial financing. (value=3; unit=USD billions initial financing; period=instant 2022-01-19)\n\n## Limitations\n- This baseline performs deterministic evidence summarization only.\n- It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.\n- It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.\n- Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.\n",
+      "json": {
+        "schemaVersion": "trace.baseline-runner-output.v1",
+        "runnerName": "baseline-a",
+        "baselineKind": "general-narrative-synthesis",
+        "inputFingerprint": "77426198529d",
+        "case": {
+          "caseId": "test-biotech-altos-2022",
+          "partition": "locked-test",
+          "scoringRole": "scored",
+          "countedInScoring": true,
+          "companyLegalName": "Altos Labs, Inc.",
+          "measurementDate": "2022-01-19",
+          "cutoffDate": "2022-01-19",
+          "dataTier": "sparse",
+          "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+          "sourceRecordIds": [
+            "altos-2022-01-19-cira-yamanaka",
+            "altos-2022-01-19-launch-prnewswire",
+            "altos-2022-01-19-nature-biotech-news"
+          ]
+        },
+        "sourcePolicy": {
+          "approvedPublicSourceCategories": [
+            "company-primary",
+            "government",
+            "news",
+            "peer-reviewed"
+          ],
+          "redistributionStatus": "public-urls-redistribution-not-established",
+          "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+          "onlyUrlsAndShortExcerptsMayBeCommitted": true
+        },
+        "authorityBoundary": {
+          "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+          "officialContestRulesStatus": "not-supplied",
+          "contestComplianceClaimAllowed": false,
+          "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+          "prohibitedClaims": [
+            "appraisal status",
+            "benchmark superiority",
+            "contest readiness",
+            "investment advice",
+            "official contest compliance"
+          ]
+        },
+        "evidence": [
+          {
+            "evidenceId": "ev-7eacfac5ad8d",
+            "sourceTitle": "Altos Labs launches with cellular rejuvenation programming goal",
+            "sourceUrl": "https://www.prnewswire.com/news-releases/altos-labs-launches-with-the-goal-to-transform-medicine-through-cellular-rejuvenation-programming-301463541.html",
+            "sourceClass": "company-primary",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2022-01-19",
+            "effectiveDate": "2022-01-19",
+            "locator": "Altos Labs release distributed by PR Newswire, 19 Jan 2022",
+            "shortExcerpt": "Altos launched as a biotechnology company with USD 3bn committed, cellular rejuvenation focus and global institute plans.",
+            "observedFacts": [
+              {
+                "factId": "fact-5eae98da6ff5",
+                "statement": "Altos Labs described its focus as cellular rejuvenation programming to restore cell health and resilience.",
+                "value": "cellular rejuvenation programming",
+                "period": {
+                  "instantDate": "2022-01-19"
+                }
+              },
+              {
+                "factId": "fact-cc7998270308",
+                "statement": "Altos Labs launched with USD 3 billion fully committed from investors.",
+                "value": 3,
+                "unit": "USD billions committed funding",
+                "period": {
+                  "instantDate": "2022-01-19"
+                }
+              },
+              {
+                "factId": "fact-f8cb0c951253",
+                "statement": "Altos Labs publicly launched on 2022-01-19.",
+                "value": "public launch",
+                "period": {
+                  "instantDate": "2022-01-19"
+                }
+              },
+              {
+                "factId": "fact-d8747d98218e",
+                "statement": "Altos said Shinya Yamanaka would serve as senior scientific advisor without remuneration.",
+                "value": "Shinya Yamanaka senior scientific advisor",
+                "period": {
+                  "instantDate": "2022-01-19"
+                }
+              },
+              {
+                "factId": "fact-31e73c0e39c2",
+                "statement": "Altos said it would initially be based in the San Francisco Bay Area, San Diego and Cambridge, UK, with collaborations in Japan.",
+                "value": [
+                  "San Francisco Bay Area",
+                  "San Diego",
+                  "Cambridge UK",
+                  "Japan collaborations"
+                ],
+                "period": {
+                  "instantDate": "2022-01-19"
+                }
+              }
+            ]
+          },
+          {
+            "evidenceId": "ev-4e47b1f24b3b",
+            "sourceTitle": "Prof. Shinya Yamanaka serves as senior scientific advisor to Altos Labs",
+            "sourceUrl": "https://www.cira.kyoto-u.ac.jp/e/pressrelease/other/220119-160000.html",
+            "sourceClass": "government",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2022-01-19",
+            "effectiveDate": "2022-01-19",
+            "locator": "CiRA Kyoto University news, 19 Jan 2022",
+            "shortExcerpt": "Kyoto University's CiRA confirmed Yamanaka's unpaid Altos advisor role and Japan research collaboration plans.",
+            "observedFacts": [
+              {
+                "factId": "fact-43540ee5f2ac",
+                "statement": "CiRA reported that Altos would provide funds for research projects in cellular rejuvenation programming in Japan.",
+                "value": "funded Japan research projects",
+                "period": {
+                  "instantDate": "2022-01-19"
+                }
+              },
+              {
+                "factId": "fact-cf564b29f7a5",
+                "statement": "CiRA reported that Shinya Yamanaka would serve as an unpaid senior scientific advisor to Altos Labs.",
+                "value": "unpaid senior scientific advisor",
+                "period": {
+                  "instantDate": "2022-01-19"
+                }
+              }
+            ]
+          },
+          {
+            "evidenceId": "ev-5ec7f4fa2e2b",
+            "sourceTitle": "Rejuvenation by controlled reprogramming is the latest gambit in anti-aging",
+            "sourceUrl": "https://www.nature.com/articles/d41587-022-00002-4",
+            "sourceClass": "news",
+            "epistemicClass": "observed",
+            "retrievedDate": "2026-07-26",
+            "publishedDate": "2022-01-19",
+            "effectiveDate": "2022-01-19",
+            "locator": "Nature Biotechnology news, 19 Jan 2022",
+            "shortExcerpt": "Nature Biotechnology covered Altos' launch, its USD 3bn initial financing and the partial reprogramming thesis.",
+            "observedFacts": [
+              {
+                "factId": "fact-f03f301f51ac",
+                "statement": "Nature Biotechnology described controlled partial reprogramming as the scientific thesis behind Altos and similar ventures.",
+                "value": "controlled partial reprogramming",
+                "period": {
+                  "instantDate": "2022-01-19"
+                }
+              },
+              {
+                "factId": "fact-e9d43b08c38f",
+                "statement": "Nature Biotechnology reported Altos launched with USD 3 billion in initial financing.",
+                "value": 3,
+                "unit": "USD billions initial financing",
+                "period": {
+                  "instantDate": "2022-01-19"
+                }
+              }
+            ]
+          }
+        ],
+        "output": {
+          "narrative": [
+            "Altos Labs, Inc. is summarized from 3 cutoff-visible public evidence records dated on or before 2022-01-19.",
+            "The normalized claim list contains 9 cited observations from source classes: company-primary, government, news.",
+            "Altos Labs described its focus as cellular rejuvenation programming to restore cell health and resilience.",
+            "Altos Labs launched with USD 3 billion fully committed from investors.",
+            "Altos Labs publicly launched on 2022-01-19.",
+            "Altos said Shinya Yamanaka would serve as senior scientific advisor without remuneration.",
+            "Altos said it would initially be based in the San Francisco Bay Area, San Diego and Cambridge, UK, with collaborations in Japan."
+          ],
+          "limitations": [
+            "This baseline performs deterministic evidence summarization only.",
+            "It does not run TRACE route selection, sufficiency gating, valuation logic, or adversarial review.",
+            "It does not claim official contest compliance, benchmark superiority, investment advice, or appraisal status.",
+            "Source use follows the committed policy: Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established."
+          ],
+          "warnings": [],
+          "failedNotes": [
+            "The launch sources do not disclose product cash-flow forecasts, commercial products, clinical-stage assets or security-level terms."
+          ],
+          "excludedRecords": []
+        },
+        "omittedTraceLogic": [
+          "route-selection",
+          "sufficiency-gating",
+          "valuation-engine",
+          "adversarial-review"
+        ]
+      }
+    },
+    "normalized": {
+      "claims": [
+        {
+          "id": "claim-bb1b208b5421",
+          "kind": "observable",
+          "statement": "Altos Labs described its focus as cellular rejuvenation programming to restore cell health and resilience.",
+          "value": "cellular rejuvenation programming",
+          "period": {
+            "instantDate": "2022-01-19"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7eacfac5ad8d",
+              "factId": "fact-5eae98da6ff5",
+              "locator": "Altos Labs release distributed by PR Newswire, 19 Jan 2022"
+            }
+          ]
+        },
+        {
+          "id": "claim-f0ac7f15a78f",
+          "kind": "observable",
+          "statement": "Altos Labs launched with USD 3 billion fully committed from investors.",
+          "value": 3,
+          "unit": "USD billions committed funding",
+          "period": {
+            "instantDate": "2022-01-19"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7eacfac5ad8d",
+              "factId": "fact-cc7998270308",
+              "locator": "Altos Labs release distributed by PR Newswire, 19 Jan 2022"
+            }
+          ]
+        },
+        {
+          "id": "claim-36886749f414",
+          "kind": "observable",
+          "statement": "Altos Labs publicly launched on 2022-01-19.",
+          "value": "public launch",
+          "period": {
+            "instantDate": "2022-01-19"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7eacfac5ad8d",
+              "factId": "fact-f8cb0c951253",
+              "locator": "Altos Labs release distributed by PR Newswire, 19 Jan 2022"
+            }
+          ]
+        },
+        {
+          "id": "claim-84b83487a3c0",
+          "kind": "observable",
+          "statement": "Altos said Shinya Yamanaka would serve as senior scientific advisor without remuneration.",
+          "value": "Shinya Yamanaka senior scientific advisor",
+          "period": {
+            "instantDate": "2022-01-19"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7eacfac5ad8d",
+              "factId": "fact-d8747d98218e",
+              "locator": "Altos Labs release distributed by PR Newswire, 19 Jan 2022"
+            }
+          ]
+        },
+        {
+          "id": "claim-0a26c57e076e",
+          "kind": "observable",
+          "statement": "Altos said it would initially be based in the San Francisco Bay Area, San Diego and Cambridge, UK, with collaborations in Japan.",
+          "value": [
+            "San Francisco Bay Area",
+            "San Diego",
+            "Cambridge UK",
+            "Japan collaborations"
+          ],
+          "period": {
+            "instantDate": "2022-01-19"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-7eacfac5ad8d",
+              "factId": "fact-31e73c0e39c2",
+              "locator": "Altos Labs release distributed by PR Newswire, 19 Jan 2022"
+            }
+          ]
+        },
+        {
+          "id": "claim-f63220ba5501",
+          "kind": "observable",
+          "statement": "CiRA reported that Altos would provide funds for research projects in cellular rejuvenation programming in Japan.",
+          "value": "funded Japan research projects",
+          "period": {
+            "instantDate": "2022-01-19"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-4e47b1f24b3b",
+              "factId": "fact-43540ee5f2ac",
+              "locator": "CiRA Kyoto University news, 19 Jan 2022"
+            }
+          ]
+        },
+        {
+          "id": "claim-d6b2c12deb0c",
+          "kind": "observable",
+          "statement": "CiRA reported that Shinya Yamanaka would serve as an unpaid senior scientific advisor to Altos Labs.",
+          "value": "unpaid senior scientific advisor",
+          "period": {
+            "instantDate": "2022-01-19"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-4e47b1f24b3b",
+              "factId": "fact-cf564b29f7a5",
+              "locator": "CiRA Kyoto University news, 19 Jan 2022"
+            }
+          ]
+        },
+        {
+          "id": "claim-ac19fa27cd88",
+          "kind": "observable",
+          "statement": "Nature Biotechnology described controlled partial reprogramming as the scientific thesis behind Altos and similar ventures.",
+          "value": "controlled partial reprogramming",
+          "period": {
+            "instantDate": "2022-01-19"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-5ec7f4fa2e2b",
+              "factId": "fact-f03f301f51ac",
+              "locator": "Nature Biotechnology news, 19 Jan 2022"
+            }
+          ]
+        },
+        {
+          "id": "claim-82bab934b830",
+          "kind": "observable",
+          "statement": "Nature Biotechnology reported Altos launched with USD 3 billion in initial financing.",
+          "value": 3,
+          "unit": "USD billions initial financing",
+          "period": {
+            "instantDate": "2022-01-19"
+          },
+          "citations": [
+            {
+              "evidenceId": "ev-5ec7f4fa2e2b",
+              "factId": "fact-e9d43b08c38f",
+              "locator": "Nature Biotechnology news, 19 Jan 2022"
+            }
+          ]
+        }
+      ],
+      "route": {
+        "status": "omitted"
+      },
+      "abstentions": [],
+      "valuations": []
+    },
+    "failures": []
+  }
+}

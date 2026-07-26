@@ -1,0 +1,1779 @@
+{
+  "schemaVersion": "trace.trace-full-runner-output.v1",
+  "runnerName": "trace-full",
+  "analyzerVersion": "0.1.0",
+  "inputFingerprint": "cc2f1e977da6",
+  "case": {
+    "caseId": "test-fintech-zopa-2025",
+    "partition": "locked-test",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Zopa Group PLC",
+    "measurementDate": "2025-12-31",
+    "cutoffDate": "2025-12-31",
+    "dataTier": "rich",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "sourceRecordIds": [
+      "zopa-2025-04-24-2024-results-blog",
+      "zopa-2025-09-01-h1-trading-update",
+      "zopa-2025-companies-house-overview"
+    ]
+  },
+  "sourcePolicy": {
+    "approvedPublicSourceCategories": [
+      "audited-filing",
+      "company-primary",
+      "government",
+      "news",
+      "regulatory-filing"
+    ],
+    "redistributionStatus": "public-urls-redistribution-not-established",
+    "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+    "onlyUrlsAndShortExcerptsMayBeCommitted": true
+  },
+  "authorityBoundary": {
+    "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+    "officialContestRulesStatus": "not-supplied",
+    "contestComplianceClaimAllowed": false,
+    "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+    "prohibitedClaims": [
+      "appraisal status",
+      "benchmark superiority",
+      "contest readiness",
+      "investment advice",
+      "official contest compliance"
+    ]
+  },
+  "analyzerPath": [
+    "evidence-ledger",
+    "sufficiency-gating",
+    "route-selection",
+    "valuation-engine",
+    "adversarial-review",
+    "report-composer"
+  ],
+  "runtimeResult": {
+    "ledger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Zopa Group PLC",
+        "jurisdiction": "GB",
+        "identifiers": [
+          {
+            "scheme": "company-number",
+            "value": "10624955",
+            "jurisdiction": "GB"
+          }
+        ],
+        "aliases": [
+          "Zopa",
+          "Zopa Bank"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2025-12-31",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-9b40616ed4f4",
+          "sourceUrl": "https://www.zopa.com/blog/article/zopa-bank-doubles-full-year-profit",
+          "sourceTitle": "Zopa Bank doubles full year profit to GBP 34.2 million",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2025-04-24",
+          "effectiveDate": "2024-12-31",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Zopa newsroom, 24 Apr 2025",
+          "shortExcerpt": "Zopa reported 2024 pre-tax profit, revenue, deposits, loans and customer growth in a company newsroom post.",
+          "observedFacts": [
+            {
+              "id": "fact-e1add824f557",
+              "statement": "Zopa Bank reported GBP 3.1 billion of loans on balance sheet for 2024.",
+              "epistemicClass": "observed",
+              "value": 3.1,
+              "unit": "GBP billions loans",
+              "period": {
+                "endDate": "2024-12-31"
+              }
+            },
+            {
+              "id": "fact-5e7c46a5566c",
+              "statement": "Zopa Bank reported GBP 303.4 million of total revenue for 2024.",
+              "epistemicClass": "observed",
+              "value": 303.4,
+              "unit": "GBP millions revenue",
+              "period": {
+                "endDate": "2024-12-31"
+              }
+            },
+            {
+              "id": "fact-e24b04aa0e61",
+              "statement": "Zopa Bank reported GBP 34.2 million of pre-tax profit for the financial year ended 2024-12-31.",
+              "epistemicClass": "observed",
+              "value": 34.2,
+              "unit": "GBP millions pre-tax profit",
+              "period": {
+                "endDate": "2024-12-31"
+              }
+            },
+            {
+              "id": "fact-7f2a28920494",
+              "statement": "Zopa Bank reported GBP 5.5 billion of deposits for 2024.",
+              "epistemicClass": "observed",
+              "value": 5.5,
+              "unit": "GBP billions deposits",
+              "period": {
+                "endDate": "2024-12-31"
+              }
+            },
+            {
+              "id": "fact-be20d0b0cc2e",
+              "statement": "Zopa Bank reported that its customer base grew to 1.4 million in 2024.",
+              "epistemicClass": "observed",
+              "value": 1.4,
+              "unit": "millions of customers",
+              "period": {
+                "endDate": "2024-12-31"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-40dfb2e25c8f",
+          "sourceUrl": "https://www.datocms-assets.com/23873/1756718710-2025-mid-year-reporting-update-vupload.pdf",
+          "sourceTitle": "Zopa Group PLC H1 2025 Trading Update",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2025-09-01",
+          "effectiveDate": "2025-06-30",
+          "sourceClass": "company-primary",
+          "epistemicClass": "extracted",
+          "locator": "H1 2025 Update, pages 1–2",
+          "shortExcerpt": "The H1 2025 update reported customer count, Biscuit current account uptake, AT1 raise, profitability, loans and deposits.",
+          "observedFacts": [
+            {
+              "id": "fact-f00852acdee8",
+              "statement": "Zopa Group PLC reported serving 1.5 million customers in its H1 2025 trading update.",
+              "epistemicClass": "extracted",
+              "value": 1.5,
+              "unit": "millions of customers",
+              "period": {
+                "endDate": "2025-06-30"
+              }
+            },
+            {
+              "id": "fact-408a66a02ddd",
+              "statement": "Zopa reported GBP 20.7 million of H1 2025 profitability.",
+              "epistemicClass": "extracted",
+              "value": 20.7,
+              "unit": "GBP millions profitability",
+              "period": {
+                "endDate": "2025-06-30"
+              }
+            },
+            {
+              "id": "fact-d5ea134ab23f",
+              "statement": "Zopa reported GBP 3.4 billion of gross loans and GBP 5.4 billion of retail deposits for H1 2025.",
+              "epistemicClass": "extracted",
+              "value": [
+                "GBP 3.4 billion gross loans",
+                "GBP 5.4 billion retail deposits"
+              ],
+              "period": {
+                "endDate": "2025-06-30"
+              }
+            },
+            {
+              "id": "fact-4cc4fba2771a",
+              "statement": "Zopa reported that its Biscuit current account product had reached over 100,000 customers.",
+              "epistemicClass": "extracted",
+              "value": 100000,
+              "unit": "customers, greater than",
+              "period": {
+                "endDate": "2025-06-30"
+              }
+            },
+            {
+              "id": "fact-17529970480a",
+              "statement": "Zopa reported raising GBP 80 million of Additional Tier 1 capital in May 2025.",
+              "epistemicClass": "extracted",
+              "value": 80,
+              "unit": "GBP millions AT1 capital",
+              "period": {
+                "instantDate": "2025-05-31"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-a5467a5b2561",
+          "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/10624955",
+          "sourceTitle": "ZOPA GROUP PLC overview",
+          "retrievedDate": "2026-07-26",
+          "effectiveDate": "2025-07-17",
+          "sourceClass": "government",
+          "epistemicClass": "observed",
+          "locator": "Companies House company 10624955",
+          "shortExcerpt": "Companies House identifies Zopa Group PLC with company number 10624955 and financial-services holding activity.",
+          "observedFacts": [
+            {
+              "id": "fact-c327e2c3da0d",
+              "statement": "Companies House identifies Zopa Group PLC with company number 10624955.",
+              "epistemicClass": "observed",
+              "value": "10624955",
+              "unit": "GB company number",
+              "period": {
+                "instantDate": "2025-07-17"
+              }
+            },
+            {
+              "id": "fact-2fa476f9c1a8",
+              "statement": "Companies House lists Zopa Group PLC under activities of financial services holding companies.",
+              "epistemicClass": "observed",
+              "value": "64205 - Activities of financial services holding companies",
+              "period": {
+                "instantDate": "2025-07-17"
+              }
+            },
+            {
+              "id": "fact-2cda13a72505",
+              "statement": "Companies House records Zopa Group PLC as an active public limited company.",
+              "epistemicClass": "observed",
+              "value": "active public limited company",
+              "period": {
+                "instantDate": "2025-07-17"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "zopa-2026-03-19-2025-results-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record zopa-2026-03-19-2025-results-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://www.zopa.com/blog/article/zopa-delivers-65-million-profit-in-2025",
+          "sourceTitle": "Zopa Bank delivers GBP 65 million profit in 2025",
+          "publishedDate": "2026-03-19",
+          "measurementDate": "2025-12-31"
+        }
+      ],
+      "failedNotes": [
+        {
+          "id": "zopa-security-rights-not-public",
+          "stage": "extraction",
+          "sourceTitle": "Zopa public source set",
+          "attemptedAt": "2026-07-26T00:00:00+09:00",
+          "note": "No public cap table or security-rights source was approved for committed locked-test inputs."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded zopa-2026-03-19-2025-results-post-cutoff because publishedDate 2026-03-19 is after measurementDate 2025-12-31.",
+          "recordIds": [
+            "zopa-2026-03-19-2025-results-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://www.zopa.com/blog/article/zopa-delivers-65-million-profit-in-2025"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    },
+    "sufficiency": {
+      "status": "sufficient",
+      "score": 1,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "met",
+          "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "met",
+          "explanation": "Multiple high-authority source classes support routing.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "met",
+          "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "met",
+          "explanation": "Evidence contains multiple financial or operating facts usable for route selection.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4"
+          ]
+        }
+      ],
+      "missingInformation": [],
+      "rationale": "Evidence coverage is sufficient for route selection before valuation."
+    },
+    "route": {
+      "status": "selected",
+      "selectedRoute": "financial-services",
+      "selectedReasons": [
+        {
+          "summary": "Evidence shows bank-like or deposit-led balance-sheet items.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4"
+          ]
+        },
+        {
+          "summary": "Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money.",
+          "evidenceIds": [
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        },
+        {
+          "summary": "Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4"
+          ]
+        }
+      ],
+      "candidates": [
+        {
+          "route": "financial-services",
+          "status": "selected",
+          "score": 0.6,
+          "reasons": [
+            {
+              "summary": "Evidence shows bank-like or deposit-led balance-sheet items.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4"
+              ]
+            },
+            {
+              "summary": "Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money.",
+              "evidenceIds": [
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            },
+            {
+              "summary": "Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        }
+      ],
+      "rejectedRoutes": [
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "missingInformation": [
+            {
+              "id": "missing-recent-secondary-transaction",
+              "topic": "Recent secondary transaction",
+              "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+              "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "bank-balance-sheet-not-ev-input",
+          "explanation": "Banking, financial-technology, deposit, asset, customer, and operating metrics support the financial-services route but do not by themselves establish enterprise value.",
+          "missingInformation": [
+            {
+              "id": "missing-financial-services-valuation-inputs",
+              "topic": "Financial-services valuation inputs",
+              "description": "The evidence does not provide a supported financial-services valuation method and the inputs needed to apply it.",
+              "consequence": "TRACE abstains from enterprise value.",
+              "requiredFor": [
+                "enterprise-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "missing-total-equity-capitalization",
+          "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "missingInformation": [
+            {
+              "id": "missing-total-equity-capitalization",
+              "topic": "Total equity capitalization",
+              "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+              "consequence": "TRACE abstains from total equity value.",
+              "requiredFor": [
+                "total-equity-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "missing-security-rights-and-cap-table",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "missingInformation": [
+            {
+              "id": "missing-cap-table",
+              "topic": "Cap table",
+              "description": "The evidence ledger does not disclose capitalization table data.",
+              "consequence": "TRACE cannot allocate value across securities or holders.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-dilution",
+              "topic": "Dilution",
+              "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+              "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-preferences",
+              "topic": "Share preferences",
+              "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+              "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-rights",
+              "topic": "Share rights",
+              "description": "The evidence ledger does not disclose rights attached to the specific security.",
+              "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        }
+      }
+    },
+    "review": {
+      "status": "warnings",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "warning",
+          "category": "cutoff",
+          "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route selection is consistent with sufficiency status: financial-services.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        }
+      ]
+    }
+  },
+  "report": {
+    "schemaVersion": "trace.report.v1",
+    "company": {
+      "legalName": "Zopa Group PLC",
+      "jurisdiction": "GB",
+      "identifiers": [
+        {
+          "scheme": "company-number",
+          "value": "10624955",
+          "jurisdiction": "GB"
+        }
+      ],
+      "aliases": [
+        "Zopa",
+        "Zopa Bank"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2025-12-31",
+    "decisionMode": "full-analysis",
+    "evidence": [
+      {
+        "id": "ev-40dfb2e25c8f",
+        "sourceUrl": "https://www.datocms-assets.com/23873/1756718710-2025-mid-year-reporting-update-vupload.pdf",
+        "sourceTitle": "Zopa Group PLC H1 2025 Trading Update",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2025-09-01",
+        "effectiveDate": "2025-06-30",
+        "sourceClass": "company-primary",
+        "epistemicClass": "extracted",
+        "locator": "H1 2025 Update, pages 1–2",
+        "shortExcerpt": "The H1 2025 update reported customer count, Biscuit current account uptake, AT1 raise, profitability, loans and deposits.",
+        "observedFacts": [
+          {
+            "id": "fact-f00852acdee8",
+            "statement": "Zopa Group PLC reported serving 1.5 million customers in its H1 2025 trading update.",
+            "epistemicClass": "extracted",
+            "value": 1.5,
+            "unit": "millions of customers",
+            "period": {
+              "endDate": "2025-06-30"
+            }
+          },
+          {
+            "id": "fact-408a66a02ddd",
+            "statement": "Zopa reported GBP 20.7 million of H1 2025 profitability.",
+            "epistemicClass": "extracted",
+            "value": 20.7,
+            "unit": "GBP millions profitability",
+            "period": {
+              "endDate": "2025-06-30"
+            }
+          },
+          {
+            "id": "fact-d5ea134ab23f",
+            "statement": "Zopa reported GBP 3.4 billion of gross loans and GBP 5.4 billion of retail deposits for H1 2025.",
+            "epistemicClass": "extracted",
+            "value": [
+              "GBP 3.4 billion gross loans",
+              "GBP 5.4 billion retail deposits"
+            ],
+            "period": {
+              "endDate": "2025-06-30"
+            }
+          },
+          {
+            "id": "fact-4cc4fba2771a",
+            "statement": "Zopa reported that its Biscuit current account product had reached over 100,000 customers.",
+            "epistemicClass": "extracted",
+            "value": 100000,
+            "unit": "customers, greater than",
+            "period": {
+              "endDate": "2025-06-30"
+            }
+          },
+          {
+            "id": "fact-17529970480a",
+            "statement": "Zopa reported raising GBP 80 million of Additional Tier 1 capital in May 2025.",
+            "epistemicClass": "extracted",
+            "value": 80,
+            "unit": "GBP millions AT1 capital",
+            "period": {
+              "instantDate": "2025-05-31"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ev-9b40616ed4f4",
+        "sourceUrl": "https://www.zopa.com/blog/article/zopa-bank-doubles-full-year-profit",
+        "sourceTitle": "Zopa Bank doubles full year profit to GBP 34.2 million",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2025-04-24",
+        "effectiveDate": "2024-12-31",
+        "sourceClass": "company-primary",
+        "epistemicClass": "observed",
+        "locator": "Zopa newsroom, 24 Apr 2025",
+        "shortExcerpt": "Zopa reported 2024 pre-tax profit, revenue, deposits, loans and customer growth in a company newsroom post.",
+        "observedFacts": [
+          {
+            "id": "fact-e1add824f557",
+            "statement": "Zopa Bank reported GBP 3.1 billion of loans on balance sheet for 2024.",
+            "epistemicClass": "observed",
+            "value": 3.1,
+            "unit": "GBP billions loans",
+            "period": {
+              "endDate": "2024-12-31"
+            }
+          },
+          {
+            "id": "fact-5e7c46a5566c",
+            "statement": "Zopa Bank reported GBP 303.4 million of total revenue for 2024.",
+            "epistemicClass": "observed",
+            "value": 303.4,
+            "unit": "GBP millions revenue",
+            "period": {
+              "endDate": "2024-12-31"
+            }
+          },
+          {
+            "id": "fact-e24b04aa0e61",
+            "statement": "Zopa Bank reported GBP 34.2 million of pre-tax profit for the financial year ended 2024-12-31.",
+            "epistemicClass": "observed",
+            "value": 34.2,
+            "unit": "GBP millions pre-tax profit",
+            "period": {
+              "endDate": "2024-12-31"
+            }
+          },
+          {
+            "id": "fact-7f2a28920494",
+            "statement": "Zopa Bank reported GBP 5.5 billion of deposits for 2024.",
+            "epistemicClass": "observed",
+            "value": 5.5,
+            "unit": "GBP billions deposits",
+            "period": {
+              "endDate": "2024-12-31"
+            }
+          },
+          {
+            "id": "fact-be20d0b0cc2e",
+            "statement": "Zopa Bank reported that its customer base grew to 1.4 million in 2024.",
+            "epistemicClass": "observed",
+            "value": 1.4,
+            "unit": "millions of customers",
+            "period": {
+              "endDate": "2024-12-31"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ev-a5467a5b2561",
+        "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/10624955",
+        "sourceTitle": "ZOPA GROUP PLC overview",
+        "retrievedDate": "2026-07-26",
+        "effectiveDate": "2025-07-17",
+        "sourceClass": "government",
+        "epistemicClass": "observed",
+        "locator": "Companies House company 10624955",
+        "shortExcerpt": "Companies House identifies Zopa Group PLC with company number 10624955 and financial-services holding activity.",
+        "observedFacts": [
+          {
+            "id": "fact-c327e2c3da0d",
+            "statement": "Companies House identifies Zopa Group PLC with company number 10624955.",
+            "epistemicClass": "observed",
+            "value": "10624955",
+            "unit": "GB company number",
+            "period": {
+              "instantDate": "2025-07-17"
+            }
+          },
+          {
+            "id": "fact-2fa476f9c1a8",
+            "statement": "Companies House lists Zopa Group PLC under activities of financial services holding companies.",
+            "epistemicClass": "observed",
+            "value": "64205 - Activities of financial services holding companies",
+            "period": {
+              "instantDate": "2025-07-17"
+            }
+          },
+          {
+            "id": "fact-2cda13a72505",
+            "statement": "Companies House records Zopa Group PLC as an active public limited company.",
+            "epistemicClass": "observed",
+            "value": "active public limited company",
+            "period": {
+              "instantDate": "2025-07-17"
+            }
+          }
+        ]
+      }
+    ],
+    "sufficiency": {
+      "status": "sufficient",
+      "score": 1,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "met",
+          "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "met",
+          "explanation": "Multiple high-authority source classes support routing.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "met",
+          "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "met",
+          "explanation": "Evidence contains multiple financial or operating facts usable for route selection.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4"
+          ]
+        }
+      ],
+      "missingInformation": [],
+      "rationale": "Evidence coverage is sufficient for route selection before valuation."
+    },
+    "route": {
+      "status": "selected",
+      "selectedRoute": "financial-services",
+      "selectedReasons": [
+        {
+          "summary": "Evidence shows bank-like or deposit-led balance-sheet items.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4"
+          ]
+        },
+        {
+          "summary": "Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money.",
+          "evidenceIds": [
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        },
+        {
+          "summary": "Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4"
+          ]
+        }
+      ],
+      "candidates": [
+        {
+          "route": "financial-services",
+          "status": "selected",
+          "score": 0.6,
+          "reasons": [
+            {
+              "summary": "Evidence shows bank-like or deposit-led balance-sheet items.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4"
+              ]
+            },
+            {
+              "summary": "Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money.",
+              "evidenceIds": [
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            },
+            {
+              "summary": "Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        }
+      ],
+      "rejectedRoutes": [
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+              "evidenceIds": [
+                "ev-40dfb2e25c8f",
+                "ev-9b40616ed4f4",
+                "ev-a5467a5b2561"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "missingInformation": [
+            {
+              "id": "missing-recent-secondary-transaction",
+              "topic": "Recent secondary transaction",
+              "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+              "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "bank-balance-sheet-not-ev-input",
+          "explanation": "Banking, financial-technology, deposit, asset, customer, and operating metrics support the financial-services route but do not by themselves establish enterprise value.",
+          "missingInformation": [
+            {
+              "id": "missing-financial-services-valuation-inputs",
+              "topic": "Financial-services valuation inputs",
+              "description": "The evidence does not provide a supported financial-services valuation method and the inputs needed to apply it.",
+              "consequence": "TRACE abstains from enterprise value.",
+              "requiredFor": [
+                "enterprise-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "missing-total-equity-capitalization",
+          "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "missingInformation": [
+            {
+              "id": "missing-total-equity-capitalization",
+              "topic": "Total equity capitalization",
+              "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+              "consequence": "TRACE abstains from total equity value.",
+              "requiredFor": [
+                "total-equity-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "missing-security-rights-and-cap-table",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "missingInformation": [
+            {
+              "id": "missing-cap-table",
+              "topic": "Cap table",
+              "description": "The evidence ledger does not disclose capitalization table data.",
+              "consequence": "TRACE cannot allocate value across securities or holders.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-dilution",
+              "topic": "Dilution",
+              "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+              "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-preferences",
+              "topic": "Share preferences",
+              "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+              "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-rights",
+              "topic": "Share rights",
+              "description": "The evidence ledger does not disclose rights attached to the specific security.",
+              "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ]
+        }
+      }
+    },
+    "review": {
+      "status": "warnings",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "warning",
+          "category": "cutoff",
+          "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route selection is consistent with sufficiency status: financial-services.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-40dfb2e25c8f",
+            "ev-9b40616ed4f4",
+            "ev-a5467a5b2561"
+          ],
+          "missingInformation": []
+        }
+      ]
+    },
+    "sections": {
+      "facts": [
+        "Companies House identifies Zopa Group PLC with company number 10624955. value=10624955; unit=GB company number; period=instant 2025-07-17; epistemic=observed [ev-a5467a5b2561]",
+        "Companies House lists Zopa Group PLC under activities of financial services holding companies. value=64205 - Activities of financial services holding companies; period=instant 2025-07-17; epistemic=observed [ev-a5467a5b2561]",
+        "Companies House records Zopa Group PLC as an active public limited company. value=active public limited company; period=instant 2025-07-17; epistemic=observed [ev-a5467a5b2561]",
+        "Zopa Bank reported GBP 3.1 billion of loans on balance sheet for 2024. value=3.1; unit=GBP billions loans; period=end 2024-12-31; epistemic=observed [ev-9b40616ed4f4]",
+        "Zopa Bank reported GBP 303.4 million of total revenue for 2024. value=303.4; unit=GBP millions revenue; period=end 2024-12-31; epistemic=observed [ev-9b40616ed4f4]",
+        "Zopa Bank reported GBP 34.2 million of pre-tax profit for the financial year ended 2024-12-31. value=34.2; unit=GBP millions pre-tax profit; period=end 2024-12-31; epistemic=observed [ev-9b40616ed4f4]",
+        "Zopa Bank reported GBP 5.5 billion of deposits for 2024. value=5.5; unit=GBP billions deposits; period=end 2024-12-31; epistemic=observed [ev-9b40616ed4f4]",
+        "Zopa Bank reported that its customer base grew to 1.4 million in 2024. value=1.4; unit=millions of customers; period=end 2024-12-31; epistemic=observed [ev-9b40616ed4f4]",
+        "Zopa Group PLC reported serving 1.5 million customers in its H1 2025 trading update. value=1.5; unit=millions of customers; period=end 2025-06-30; epistemic=extracted [ev-40dfb2e25c8f]",
+        "Zopa reported GBP 20.7 million of H1 2025 profitability. value=20.7; unit=GBP millions profitability; period=end 2025-06-30; epistemic=extracted [ev-40dfb2e25c8f]",
+        "Zopa reported GBP 3.4 billion of gross loans and GBP 5.4 billion of retail deposits for H1 2025. value=GBP 3.4 billion gross loans, GBP 5.4 billion retail deposits; period=end 2025-06-30; epistemic=extracted [ev-40dfb2e25c8f]",
+        "Zopa reported raising GBP 80 million of Additional Tier 1 capital in May 2025. value=80; unit=GBP millions AT1 capital; period=instant 2025-05-31; epistemic=extracted [ev-40dfb2e25c8f]",
+        "Zopa reported that its Biscuit current account product had reached over 100,000 customers. value=100000; unit=customers, greater than; period=end 2025-06-30; epistemic=extracted [ev-40dfb2e25c8f]"
+      ],
+      "inferences": [
+        "Enterprise Value abstained: Banking, financial-technology, deposit, asset, customer, and operating metrics support the financial-services route but do not by themselves establish enterprise value. [ev-40dfb2e25c8f, ev-9b40616ed4f4, ev-a5467a5b2561]",
+        "Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-40dfb2e25c8f, ev-9b40616ed4f4, ev-a5467a5b2561]",
+        "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-40dfb2e25c8f, ev-9b40616ed4f4, ev-a5467a5b2561]",
+        "Selected route financial-services: Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money. [ev-9b40616ed4f4, ev-a5467a5b2561]",
+        "Selected route financial-services: Evidence shows bank-like or deposit-led balance-sheet items. [ev-40dfb2e25c8f, ev-9b40616ed4f4]",
+        "Selected route financial-services: Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation. [ev-40dfb2e25c8f, ev-9b40616ed4f4]",
+        "Sufficiency is sufficient with score 1: Evidence coverage is sufficient for route selection before valuation.",
+        "Total Equity Value abstained: TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence. [ev-40dfb2e25c8f, ev-9b40616ed4f4, ev-a5467a5b2561]"
+      ],
+      "conflicts": [],
+      "limitations": [
+        "Banking, financial-technology, deposit, asset, customer, and operating metrics support the financial-services route but do not by themselves establish enterprise value.",
+        "Evidence record zopa-2026-03-19-2025-results-post-cutoff was published after the measurement date and was excluded.",
+        "Excluded zopa-2026-03-19-2025-results-post-cutoff because publishedDate 2026-03-19 is after measurementDate 2025-12-31.",
+        "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+        "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+        "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+        "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.",
+        "extraction note zopa-security-rights-not-public: No public cap table or security-rights source was approved for committed locked-test inputs."
+      ],
+      "counterarguments": [
+        "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: software-saas, marketplace, biotech-rnpv, asset-based, recent-transaction, general-private-company."
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-cap-table",
+          "topic": "Cap table",
+          "description": "The evidence ledger does not disclose capitalization table data.",
+          "consequence": "TRACE cannot allocate value across securities or holders.",
+          "requiredFor": [
+            "total-equity-value",
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-dilution",
+          "topic": "Dilution",
+          "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+          "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+          "requiredFor": [
+            "total-equity-value",
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-financial-services-valuation-inputs",
+          "topic": "Financial-services valuation inputs",
+          "description": "The evidence does not provide a supported financial-services valuation method and the inputs needed to apply it.",
+          "consequence": "TRACE abstains from enterprise value.",
+          "requiredFor": [
+            "enterprise-value"
+          ]
+        },
+        {
+          "id": "missing-recent-secondary-transaction",
+          "topic": "Recent secondary transaction",
+          "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+          "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+          "requiredFor": [
+            "headline-valuation"
+          ]
+        },
+        {
+          "id": "missing-share-preferences",
+          "topic": "Share preferences",
+          "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+          "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+          "requiredFor": [
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-share-rights",
+          "topic": "Share rights",
+          "description": "The evidence ledger does not disclose rights attached to the specific security.",
+          "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+          "requiredFor": [
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-total-equity-capitalization",
+          "topic": "Total equity capitalization",
+          "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+          "consequence": "TRACE abstains from total equity value.",
+          "requiredFor": [
+            "total-equity-value"
+          ]
+        }
+      ],
+      "nextDiligenceQuestions": [
+        "What evidence resolves Cap table for total-equity-value, security-level-fair-value?",
+        "What evidence resolves Dilution for total-equity-value, security-level-fair-value?",
+        "What evidence resolves Financial-services valuation inputs for enterprise-value?",
+        "What evidence resolves Recent secondary transaction for headline-valuation?",
+        "What evidence resolves Share preferences for security-level-fair-value?",
+        "What evidence resolves Share rights for security-level-fair-value?",
+        "What evidence resolves Total equity capitalization for total-equity-value?"
+      ]
+    },
+    "run": {
+      "runId": "run-locked-test-v1",
+      "runtimeVersion": "0.1.0",
+      "command": "trace benchmark --partition locked-test --runner trace-full --case-id test-fintech-zopa-2025",
+      "measurementDate": "2025-12-31",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.350Z",
+      "durationMs": 350,
+      "inputPath": "benchmark:locked-test:test-fintech-zopa-2025",
+      "outputDirectory": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-fintech-zopa-2025",
+      "warnings": [
+        "Excluded zopa-2026-03-19-2025-results-post-cutoff because publishedDate 2026-03-19 is after measurementDate 2025-12-31."
+      ]
+    }
+  },
+  "executionLog": {
+    "schemaVersion": "trace.execution-log.v1",
+    "runId": "run-locked-test-v1",
+    "runtimeVersion": "0.1.0",
+    "measurementDate": "2025-12-31",
+    "inputPath": "benchmark:locked-test:test-fintech-zopa-2025",
+    "outputPaths": {
+      "jsonReport": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-fintech-zopa-2025/raw-runner-output.json",
+      "markdownReport": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-fintech-zopa-2025/raw-runner-output.md",
+      "executionLog": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-fintech-zopa-2025/raw-runner-output.json#executionLog"
+    },
+    "startedAt": "2026-07-26T00:00:00.000Z",
+    "completedAt": "2026-07-26T00:00:00.350Z",
+    "durationMs": 350,
+    "validationWarnings": [
+      "Excluded zopa-2026-03-19-2025-results-post-cutoff because publishedDate 2026-03-19 is after measurementDate 2025-12-31."
+    ],
+    "reviewerFindings": [
+      {
+        "id": "review-abstention-triggers",
+        "severity": "pass",
+        "category": "abstention",
+        "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+        "evidenceIds": [
+          "ev-40dfb2e25c8f",
+          "ev-9b40616ed4f4",
+          "ev-a5467a5b2561"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-calculation-integrity",
+        "severity": "pass",
+        "category": "calculation",
+        "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+        "evidenceIds": [
+          "ev-40dfb2e25c8f",
+          "ev-9b40616ed4f4",
+          "ev-a5467a5b2561"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-citation-support",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+        "evidenceIds": [
+          "ev-40dfb2e25c8f",
+          "ev-9b40616ed4f4",
+          "ev-a5467a5b2561"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-cutoff-compliance",
+        "severity": "warning",
+        "category": "cutoff",
+        "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+        "evidenceIds": [
+          "ev-40dfb2e25c8f",
+          "ev-9b40616ed4f4",
+          "ev-a5467a5b2561"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-entity-certainty",
+        "severity": "pass",
+        "category": "entity",
+        "message": "Target identity is resolved and supported by included evidence.",
+        "evidenceIds": [
+          "ev-40dfb2e25c8f",
+          "ev-9b40616ed4f4",
+          "ev-a5467a5b2561"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-evidence-coverage",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+        "evidenceIds": [
+          "ev-40dfb2e25c8f",
+          "ev-9b40616ed4f4",
+          "ev-a5467a5b2561"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-route-appropriateness",
+        "severity": "pass",
+        "category": "route",
+        "message": "Route selection is consistent with sufficiency status: financial-services.",
+        "evidenceIds": [
+          "ev-40dfb2e25c8f",
+          "ev-9b40616ed4f4",
+          "ev-a5467a5b2561"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-valuation-field-separation",
+        "severity": "pass",
+        "category": "valuation-separation",
+        "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+        "evidenceIds": [
+          "ev-40dfb2e25c8f",
+          "ev-9b40616ed4f4",
+          "ev-a5467a5b2561"
+        ],
+        "missingInformation": []
+      }
+    ],
+    "deterministicIdentifiers": {
+      "evidenceLedgerHash": "802996a9c59696146630b1ac7de57e9b40de27a901b40b84c949a7a49e7c6e2b",
+      "runtimeResultHash": "7d41f1f9250b9c7f3d7ca91f6686bdf4aa595ceefd39b211561c583574c7497e"
+    }
+  }
+}

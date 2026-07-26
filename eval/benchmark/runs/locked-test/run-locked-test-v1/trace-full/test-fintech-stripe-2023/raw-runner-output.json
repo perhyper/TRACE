@@ -1,0 +1,1589 @@
+{
+  "schemaVersion": "trace.trace-full-runner-output.v1",
+  "runnerName": "trace-full",
+  "analyzerVersion": "0.1.0",
+  "inputFingerprint": "8983eeceb243",
+  "case": {
+    "caseId": "test-fintech-stripe-2023",
+    "partition": "locked-test",
+    "scoringRole": "scored",
+    "countedInScoring": true,
+    "companyLegalName": "Stripe, Inc.",
+    "measurementDate": "2024-03-15",
+    "cutoffDate": "2024-03-15",
+    "dataTier": "sparse",
+    "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+    "sourceRecordIds": [
+      "stripe-2023-03-15-series-i-release",
+      "stripe-2024-03-13-annual-letter"
+    ]
+  },
+  "sourcePolicy": {
+    "approvedPublicSourceCategories": [
+      "company-primary",
+      "legal-record",
+      "market-data",
+      "news"
+    ],
+    "redistributionStatus": "public-urls-redistribution-not-established",
+    "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+    "onlyUrlsAndShortExcerptsMayBeCommitted": true
+  },
+  "authorityBoundary": {
+    "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+    "officialContestRulesStatus": "not-supplied",
+    "contestComplianceClaimAllowed": false,
+    "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+    "prohibitedClaims": [
+      "appraisal status",
+      "benchmark superiority",
+      "contest readiness",
+      "investment advice",
+      "official contest compliance"
+    ]
+  },
+  "analyzerPath": [
+    "evidence-ledger",
+    "sufficiency-gating",
+    "route-selection",
+    "valuation-engine",
+    "adversarial-review",
+    "report-composer"
+  ],
+  "runtimeResult": {
+    "ledger": {
+      "schemaVersion": "trace.evidence-ledger.v1",
+      "target": {
+        "legalName": "Stripe, Inc.",
+        "jurisdiction": "US",
+        "identifiers": [
+          {
+            "scheme": "lei",
+            "value": "549300CLHGIPTCYHQ143",
+            "jurisdiction": "US"
+          }
+        ],
+        "aliases": [
+          "Stripe"
+        ],
+        "identityConfidence": "resolved"
+      },
+      "measurementDate": "2024-03-15",
+      "decisionMode": "full-analysis",
+      "evidence": [
+        {
+          "id": "ev-32cb116f912b",
+          "sourceUrl": "https://stripe.com/en-ch/newsroom/news/stripe-series-i-employee-liquidity",
+          "sourceTitle": "Stripe announces Series I funding and employee liquidity plan",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2023-03-15",
+          "effectiveDate": "2023-03-15",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Stripe newsroom, 15 Mar 2023",
+          "shortExcerpt": "Stripe announced a Series I fundraise above USD 6.5bn at a USD 50bn valuation for employee liquidity and tax obligations.",
+          "observedFacts": [
+            {
+              "id": "fact-b1f3e5239968",
+              "statement": "Stripe announced a Series I fundraise of more than USD 6.5 billion on 2023-03-15.",
+              "epistemicClass": "observed",
+              "value": 6.5,
+              "unit": "USD billions raised, greater than",
+              "period": {
+                "instantDate": "2023-03-15"
+              }
+            },
+            {
+              "id": "fact-9064ed551da9",
+              "statement": "Stripe said the Series I funds would provide current and former employee liquidity and address equity-award tax obligations.",
+              "epistemicClass": "observed",
+              "value": "employee liquidity and withholding tax obligations",
+              "period": {
+                "instantDate": "2023-03-15"
+              }
+            },
+            {
+              "id": "fact-4535e60e5f84",
+              "statement": "Stripe stated that it did not need the Series I capital to run the business.",
+              "epistemicClass": "observed",
+              "value": true,
+              "period": {
+                "instantDate": "2023-03-15"
+              }
+            },
+            {
+              "id": "fact-1abda48ef9fe",
+              "statement": "Stripe stated that the Series I financing was at a USD 50 billion valuation.",
+              "epistemicClass": "observed",
+              "value": 50,
+              "unit": "USD billions headline valuation",
+              "period": {
+                "instantDate": "2023-03-15"
+              }
+            }
+          ]
+        },
+        {
+          "id": "ev-248f56b646df",
+          "sourceUrl": "https://stripe.com/gb/annual-updates/2023",
+          "sourceTitle": "Stripe 2023 annual letter",
+          "retrievedDate": "2026-07-26",
+          "publishedDate": "2024-03-13",
+          "effectiveDate": "2023-12-31",
+          "sourceClass": "company-primary",
+          "epistemicClass": "observed",
+          "locator": "Stripe annual updates archive",
+          "shortExcerpt": "Stripe's 2023 annual letter reported payment volume, cash-flow status and large-scale customer processing metrics.",
+          "observedFacts": [
+            {
+              "id": "fact-7e374b59f0bc",
+              "statement": "Stripe described 2023 payment volume as equivalent to roughly 1 percent of global GDP.",
+              "epistemicClass": "observed",
+              "value": 1,
+              "unit": "percent of global GDP",
+              "period": {
+                "endDate": "2023-12-31"
+              }
+            },
+            {
+              "id": "fact-145c43740a61",
+              "statement": "Stripe reported being robustly cash-flow positive in 2023 and expected the same in 2024.",
+              "epistemicClass": "observed",
+              "value": true,
+              "period": {
+                "endDate": "2023-12-31"
+              }
+            },
+            {
+              "id": "fact-fb6209b89fb8",
+              "statement": "Stripe reported that more than 100 businesses processed over USD 1 billion each on Stripe annually.",
+              "epistemicClass": "observed",
+              "value": 100,
+              "unit": "businesses, greater than",
+              "period": {
+                "endDate": "2023-12-31"
+              }
+            },
+            {
+              "id": "fact-d391e6226b17",
+              "statement": "Stripe reported that users processed USD 1 trillion through Stripe in 2023.",
+              "epistemicClass": "observed",
+              "value": 1,
+              "unit": "USD trillions payment volume",
+              "period": {
+                "endDate": "2023-12-31"
+              }
+            }
+          ]
+        }
+      ],
+      "excludedRecords": [
+        {
+          "recordId": "stripe-2025-02-27-annual-update-post-cutoff",
+          "reasonCode": "published-after-measurement-date",
+          "message": "Evidence record stripe-2025-02-27-annual-update-post-cutoff was published after the measurement date and was excluded.",
+          "sourceUrl": "https://stripe.com/en-jp/newsroom/news/stripe-2024-update",
+          "sourceTitle": "Stripe's total payment volume reaches USD 1.4T",
+          "publishedDate": "2025-02-27",
+          "measurementDate": "2024-03-15"
+        }
+      ],
+      "failedNotes": [
+        {
+          "id": "stripe-security-rights-not-public",
+          "stage": "extraction",
+          "sourceTitle": "Stripe public source set",
+          "attemptedAt": "2026-07-26T00:00:00+09:00",
+          "note": "Public funding and annual-letter sources do not disclose private share rights, a cap table or security-level fair value."
+        }
+      ],
+      "warnings": [
+        {
+          "code": "published-after-measurement-date",
+          "message": "Excluded stripe-2025-02-27-annual-update-post-cutoff because publishedDate 2025-02-27 is after measurementDate 2024-03-15.",
+          "recordIds": [
+            "stripe-2025-02-27-annual-update-post-cutoff"
+          ],
+          "sourceUrls": [
+            "https://stripe.com/en-jp/newsroom/news/stripe-2024-update"
+          ],
+          "evidenceIds": []
+        }
+      ]
+    },
+    "sufficiency": {
+      "status": "sufficient",
+      "score": 0.925,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "met",
+          "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "met",
+          "explanation": "Multiple high-authority source classes support routing.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "met",
+          "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "partial",
+          "explanation": "Evidence contains one financial or operating fact usable for route selection.",
+          "evidenceIds": [
+            "ev-248f56b646df"
+          ]
+        }
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence contains one financial or operating fact usable for route selection.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "rationale": "Evidence coverage is sufficient for route selection before valuation."
+    },
+    "route": {
+      "status": "selected",
+      "selectedRoute": "financial-services",
+      "selectedReasons": [
+        {
+          "summary": "Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money.",
+          "evidenceIds": [
+            "ev-248f56b646df"
+          ]
+        },
+        {
+          "summary": "Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation.",
+          "evidenceIds": [
+            "ev-248f56b646df"
+          ]
+        },
+        {
+          "summary": "Transaction evidence is treated as a route context and not as an enterprise-value or security-level conclusion.",
+          "evidenceIds": [
+            "ev-32cb116f912b"
+          ]
+        }
+      ],
+      "candidates": [
+        {
+          "route": "financial-services",
+          "status": "selected",
+          "score": 0.6,
+          "reasons": [
+            {
+              "summary": "Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money.",
+              "evidenceIds": [
+                "ev-248f56b646df"
+              ]
+            },
+            {
+              "summary": "Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation.",
+              "evidenceIds": [
+                "ev-248f56b646df"
+              ]
+            },
+            {
+              "summary": "Transaction evidence is treated as a route context and not as an enterprise-value or security-level conclusion.",
+              "evidenceIds": [
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0.3333,
+          "reasons": [
+            {
+              "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+              "evidenceIds": [
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        }
+      ],
+      "rejectedRoutes": [
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0.3333,
+          "reasons": [
+            {
+              "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+              "evidenceIds": [
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "missingInformation": [
+            {
+              "id": "missing-recent-secondary-transaction",
+              "topic": "Recent secondary transaction",
+              "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+              "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "bank-balance-sheet-not-ev-input",
+          "explanation": "Banking, financial-technology, deposit, asset, customer, and operating metrics support the financial-services route but do not by themselves establish enterprise value.",
+          "missingInformation": [
+            {
+              "id": "missing-financial-services-valuation-inputs",
+              "topic": "Financial-services valuation inputs",
+              "description": "The evidence does not provide a supported financial-services valuation method and the inputs needed to apply it.",
+              "consequence": "TRACE abstains from enterprise value.",
+              "requiredFor": [
+                "enterprise-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "missing-total-equity-capitalization",
+          "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "missingInformation": [
+            {
+              "id": "missing-total-equity-capitalization",
+              "topic": "Total equity capitalization",
+              "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+              "consequence": "TRACE abstains from total equity value.",
+              "requiredFor": [
+                "total-equity-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "missing-security-rights-and-cap-table",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "missingInformation": [
+            {
+              "id": "missing-cap-table",
+              "topic": "Cap table",
+              "description": "The evidence ledger does not disclose capitalization table data.",
+              "consequence": "TRACE cannot allocate value across securities or holders.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-dilution",
+              "topic": "Dilution",
+              "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+              "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-preferences",
+              "topic": "Share preferences",
+              "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+              "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-rights",
+              "topic": "Share rights",
+              "description": "The evidence ledger does not disclose rights attached to the specific security.",
+              "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        }
+      }
+    },
+    "review": {
+      "status": "warnings",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "warning",
+          "category": "cutoff",
+          "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route selection is consistent with sufficiency status: financial-services.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        }
+      ]
+    }
+  },
+  "report": {
+    "schemaVersion": "trace.report.v1",
+    "company": {
+      "legalName": "Stripe, Inc.",
+      "jurisdiction": "US",
+      "identifiers": [
+        {
+          "scheme": "lei",
+          "value": "549300CLHGIPTCYHQ143",
+          "jurisdiction": "US"
+        }
+      ],
+      "aliases": [
+        "Stripe"
+      ],
+      "identityConfidence": "resolved"
+    },
+    "measurementDate": "2024-03-15",
+    "decisionMode": "full-analysis",
+    "evidence": [
+      {
+        "id": "ev-248f56b646df",
+        "sourceUrl": "https://stripe.com/gb/annual-updates/2023",
+        "sourceTitle": "Stripe 2023 annual letter",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2024-03-13",
+        "effectiveDate": "2023-12-31",
+        "sourceClass": "company-primary",
+        "epistemicClass": "observed",
+        "locator": "Stripe annual updates archive",
+        "shortExcerpt": "Stripe's 2023 annual letter reported payment volume, cash-flow status and large-scale customer processing metrics.",
+        "observedFacts": [
+          {
+            "id": "fact-7e374b59f0bc",
+            "statement": "Stripe described 2023 payment volume as equivalent to roughly 1 percent of global GDP.",
+            "epistemicClass": "observed",
+            "value": 1,
+            "unit": "percent of global GDP",
+            "period": {
+              "endDate": "2023-12-31"
+            }
+          },
+          {
+            "id": "fact-145c43740a61",
+            "statement": "Stripe reported being robustly cash-flow positive in 2023 and expected the same in 2024.",
+            "epistemicClass": "observed",
+            "value": true,
+            "period": {
+              "endDate": "2023-12-31"
+            }
+          },
+          {
+            "id": "fact-fb6209b89fb8",
+            "statement": "Stripe reported that more than 100 businesses processed over USD 1 billion each on Stripe annually.",
+            "epistemicClass": "observed",
+            "value": 100,
+            "unit": "businesses, greater than",
+            "period": {
+              "endDate": "2023-12-31"
+            }
+          },
+          {
+            "id": "fact-d391e6226b17",
+            "statement": "Stripe reported that users processed USD 1 trillion through Stripe in 2023.",
+            "epistemicClass": "observed",
+            "value": 1,
+            "unit": "USD trillions payment volume",
+            "period": {
+              "endDate": "2023-12-31"
+            }
+          }
+        ]
+      },
+      {
+        "id": "ev-32cb116f912b",
+        "sourceUrl": "https://stripe.com/en-ch/newsroom/news/stripe-series-i-employee-liquidity",
+        "sourceTitle": "Stripe announces Series I funding and employee liquidity plan",
+        "retrievedDate": "2026-07-26",
+        "publishedDate": "2023-03-15",
+        "effectiveDate": "2023-03-15",
+        "sourceClass": "company-primary",
+        "epistemicClass": "observed",
+        "locator": "Stripe newsroom, 15 Mar 2023",
+        "shortExcerpt": "Stripe announced a Series I fundraise above USD 6.5bn at a USD 50bn valuation for employee liquidity and tax obligations.",
+        "observedFacts": [
+          {
+            "id": "fact-b1f3e5239968",
+            "statement": "Stripe announced a Series I fundraise of more than USD 6.5 billion on 2023-03-15.",
+            "epistemicClass": "observed",
+            "value": 6.5,
+            "unit": "USD billions raised, greater than",
+            "period": {
+              "instantDate": "2023-03-15"
+            }
+          },
+          {
+            "id": "fact-9064ed551da9",
+            "statement": "Stripe said the Series I funds would provide current and former employee liquidity and address equity-award tax obligations.",
+            "epistemicClass": "observed",
+            "value": "employee liquidity and withholding tax obligations",
+            "period": {
+              "instantDate": "2023-03-15"
+            }
+          },
+          {
+            "id": "fact-4535e60e5f84",
+            "statement": "Stripe stated that it did not need the Series I capital to run the business.",
+            "epistemicClass": "observed",
+            "value": true,
+            "period": {
+              "instantDate": "2023-03-15"
+            }
+          },
+          {
+            "id": "fact-1abda48ef9fe",
+            "statement": "Stripe stated that the Series I financing was at a USD 50 billion valuation.",
+            "epistemicClass": "observed",
+            "value": 50,
+            "unit": "USD billions headline valuation",
+            "period": {
+              "instantDate": "2023-03-15"
+            }
+          }
+        ]
+      }
+    ],
+    "sufficiency": {
+      "status": "sufficient",
+      "score": 0.925,
+      "criteria": [
+        {
+          "criterion": "Entity resolution",
+          "status": "met",
+          "explanation": "The target identity is resolved and supported by eligible evidence.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        },
+        {
+          "criterion": "Measurement-date eligible evidence",
+          "status": "met",
+          "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        },
+        {
+          "criterion": "Source quality",
+          "status": "met",
+          "explanation": "Multiple high-authority source classes support routing.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        },
+        {
+          "criterion": "Route-defining business-model evidence",
+          "status": "met",
+          "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        },
+        {
+          "criterion": "Financial and operating fact coverage",
+          "status": "partial",
+          "explanation": "Evidence contains one financial or operating fact usable for route selection.",
+          "evidenceIds": [
+            "ev-248f56b646df"
+          ]
+        }
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence contains one financial or operating fact usable for route selection.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        }
+      ],
+      "rationale": "Evidence coverage is sufficient for route selection before valuation."
+    },
+    "route": {
+      "status": "selected",
+      "selectedRoute": "financial-services",
+      "selectedReasons": [
+        {
+          "summary": "Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money.",
+          "evidenceIds": [
+            "ev-248f56b646df"
+          ]
+        },
+        {
+          "summary": "Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation.",
+          "evidenceIds": [
+            "ev-248f56b646df"
+          ]
+        },
+        {
+          "summary": "Transaction evidence is treated as a route context and not as an enterprise-value or security-level conclusion.",
+          "evidenceIds": [
+            "ev-32cb116f912b"
+          ]
+        }
+      ],
+      "candidates": [
+        {
+          "route": "financial-services",
+          "status": "selected",
+          "score": 0.6,
+          "reasons": [
+            {
+              "summary": "Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money.",
+              "evidenceIds": [
+                "ev-248f56b646df"
+              ]
+            },
+            {
+              "summary": "Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation.",
+              "evidenceIds": [
+                "ev-248f56b646df"
+              ]
+            },
+            {
+              "summary": "Transaction evidence is treated as a route context and not as an enterprise-value or security-level conclusion.",
+              "evidenceIds": [
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0.3333,
+          "reasons": [
+            {
+              "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+              "evidenceIds": [
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        }
+      ],
+      "rejectedRoutes": [
+        {
+          "route": "software-saas",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "marketplace",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the marketplace route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "biotech-rnpv",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the biotech rnpv route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "asset-based",
+          "status": "rejected",
+          "score": 0,
+          "reasons": [
+            {
+              "summary": "Available evidence does not support the asset based route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "recent-transaction",
+          "status": "rejected",
+          "score": 0.3333,
+          "reasons": [
+            {
+              "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+              "evidenceIds": [
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        },
+        {
+          "route": "general-private-company",
+          "status": "rejected",
+          "score": 0.4,
+          "reasons": [
+            {
+              "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+              "evidenceIds": [
+                "ev-248f56b646df",
+                "ev-32cb116f912b"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "valuation": {
+      "headlineValuation": {
+        "status": "abstained",
+        "field": "headline-valuation",
+        "abstention": {
+          "reasonCode": "recent-secondary-transaction-not-observed",
+          "explanation": "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+          "missingInformation": [
+            {
+              "id": "missing-recent-secondary-transaction",
+              "topic": "Recent secondary transaction",
+              "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+              "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+              "requiredFor": [
+                "headline-valuation"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        }
+      },
+      "enterpriseValue": {
+        "status": "abstained",
+        "field": "enterprise-value",
+        "abstention": {
+          "reasonCode": "bank-balance-sheet-not-ev-input",
+          "explanation": "Banking, financial-technology, deposit, asset, customer, and operating metrics support the financial-services route but do not by themselves establish enterprise value.",
+          "missingInformation": [
+            {
+              "id": "missing-financial-services-valuation-inputs",
+              "topic": "Financial-services valuation inputs",
+              "description": "The evidence does not provide a supported financial-services valuation method and the inputs needed to apply it.",
+              "consequence": "TRACE abstains from enterprise value.",
+              "requiredFor": [
+                "enterprise-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        }
+      },
+      "totalEquityValue": {
+        "status": "abstained",
+        "field": "total-equity-value",
+        "abstention": {
+          "reasonCode": "missing-total-equity-capitalization",
+          "explanation": "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+          "missingInformation": [
+            {
+              "id": "missing-total-equity-capitalization",
+              "topic": "Total equity capitalization",
+              "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+              "consequence": "TRACE abstains from total equity value.",
+              "requiredFor": [
+                "total-equity-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        }
+      },
+      "securityLevelFairValue": {
+        "status": "abstained",
+        "field": "security-level-fair-value",
+        "abstention": {
+          "reasonCode": "missing-security-rights-and-cap-table",
+          "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+          "missingInformation": [
+            {
+              "id": "missing-cap-table",
+              "topic": "Cap table",
+              "description": "The evidence ledger does not disclose capitalization table data.",
+              "consequence": "TRACE cannot allocate value across securities or holders.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-dilution",
+              "topic": "Dilution",
+              "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+              "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+              "requiredFor": [
+                "total-equity-value",
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-preferences",
+              "topic": "Share preferences",
+              "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+              "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            },
+            {
+              "id": "missing-share-rights",
+              "topic": "Share rights",
+              "description": "The evidence ledger does not disclose rights attached to the specific security.",
+              "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+              "requiredFor": [
+                "security-level-fair-value"
+              ]
+            }
+          ],
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ]
+        }
+      }
+    },
+    "review": {
+      "status": "warnings",
+      "reviewerVersion": "trace-reviewer.v1",
+      "findings": [
+        {
+          "id": "review-abstention-triggers",
+          "severity": "pass",
+          "category": "abstention",
+          "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-calculation-integrity",
+          "severity": "pass",
+          "category": "calculation",
+          "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-citation-support",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-cutoff-compliance",
+          "severity": "warning",
+          "category": "cutoff",
+          "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-entity-certainty",
+          "severity": "pass",
+          "category": "entity",
+          "message": "Target identity is resolved and supported by included evidence.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-evidence-coverage",
+          "severity": "pass",
+          "category": "evidence",
+          "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-route-appropriateness",
+          "severity": "pass",
+          "category": "route",
+          "message": "Route selection is consistent with sufficiency status: financial-services.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        },
+        {
+          "id": "review-valuation-field-separation",
+          "severity": "pass",
+          "category": "valuation-separation",
+          "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+          "evidenceIds": [
+            "ev-248f56b646df",
+            "ev-32cb116f912b"
+          ],
+          "missingInformation": []
+        }
+      ]
+    },
+    "sections": {
+      "facts": [
+        "Stripe announced a Series I fundraise of more than USD 6.5 billion on 2023-03-15. value=6.5; unit=USD billions raised, greater than; period=instant 2023-03-15; epistemic=observed [ev-32cb116f912b]",
+        "Stripe described 2023 payment volume as equivalent to roughly 1 percent of global GDP. value=1; unit=percent of global GDP; period=end 2023-12-31; epistemic=observed [ev-248f56b646df]",
+        "Stripe reported being robustly cash-flow positive in 2023 and expected the same in 2024. value=true; period=end 2023-12-31; epistemic=observed [ev-248f56b646df]",
+        "Stripe reported that more than 100 businesses processed over USD 1 billion each on Stripe annually. value=100; unit=businesses, greater than; period=end 2023-12-31; epistemic=observed [ev-248f56b646df]",
+        "Stripe reported that users processed USD 1 trillion through Stripe in 2023. value=1; unit=USD trillions payment volume; period=end 2023-12-31; epistemic=observed [ev-248f56b646df]",
+        "Stripe said the Series I funds would provide current and former employee liquidity and address equity-award tax obligations. value=employee liquidity and withholding tax obligations; period=instant 2023-03-15; epistemic=observed [ev-32cb116f912b]",
+        "Stripe stated that it did not need the Series I capital to run the business. value=true; period=instant 2023-03-15; epistemic=observed [ev-32cb116f912b]",
+        "Stripe stated that the Series I financing was at a USD 50 billion valuation. value=50; unit=USD billions headline valuation; period=instant 2023-03-15; epistemic=observed [ev-32cb116f912b]"
+      ],
+      "inferences": [
+        "Enterprise Value abstained: Banking, financial-technology, deposit, asset, customer, and operating metrics support the financial-services route but do not by themselves establish enterprise value. [ev-248f56b646df, ev-32cb116f912b]",
+        "Headline Valuation abstained: TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed. [ev-248f56b646df, ev-32cb116f912b]",
+        "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-248f56b646df, ev-32cb116f912b]",
+        "Selected route financial-services: Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money. [ev-248f56b646df]",
+        "Selected route financial-services: Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation. [ev-248f56b646df]",
+        "Selected route financial-services: Transaction evidence is treated as a route context and not as an enterprise-value or security-level conclusion. [ev-32cb116f912b]",
+        "Sufficiency is sufficient with score 0.925: Evidence coverage is sufficient for route selection before valuation.",
+        "Total Equity Value abstained: TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence. [ev-248f56b646df, ev-32cb116f912b]"
+      ],
+      "conflicts": [],
+      "limitations": [
+        "Banking, financial-technology, deposit, asset, customer, and operating metrics support the financial-services route but do not by themselves establish enterprise value.",
+        "Evidence record stripe-2025-02-27-annual-update-post-cutoff was published after the measurement date and was excluded.",
+        "Excluded stripe-2025-02-27-annual-update-post-cutoff because publishedDate 2025-02-27 is after measurementDate 2024-03-15.",
+        "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+        "TRACE cannot calibrate a headline valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+        "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+        "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.",
+        "extraction note stripe-security-rights-not-public: Public funding and annual-letter sources do not disclose private share rights, a cap table or security-level fair value."
+      ],
+      "counterarguments": [
+        "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: software-saas, marketplace, biotech-rnpv, asset-based, recent-transaction, general-private-company."
+      ],
+      "missingInformation": [
+        {
+          "id": "missing-cap-table",
+          "topic": "Cap table",
+          "description": "The evidence ledger does not disclose capitalization table data.",
+          "consequence": "TRACE cannot allocate value across securities or holders.",
+          "requiredFor": [
+            "total-equity-value",
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-dilution",
+          "topic": "Dilution",
+          "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+          "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+          "requiredFor": [
+            "total-equity-value",
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-financial-and-operating-fact-coverage",
+          "topic": "Financial and operating fact coverage",
+          "description": "Evidence contains one financial or operating fact usable for route selection.",
+          "consequence": "TRACE treats this as a routing limitation unless stronger evidence is supplied.",
+          "requiredFor": [
+            "routing",
+            "sufficiency"
+          ]
+        },
+        {
+          "id": "missing-financial-services-valuation-inputs",
+          "topic": "Financial-services valuation inputs",
+          "description": "The evidence does not provide a supported financial-services valuation method and the inputs needed to apply it.",
+          "consequence": "TRACE abstains from enterprise value.",
+          "requiredFor": [
+            "enterprise-value"
+          ]
+        },
+        {
+          "id": "missing-recent-secondary-transaction",
+          "topic": "Recent secondary transaction",
+          "description": "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+          "consequence": "TRACE cannot support the recent-secondary calibration pathway.",
+          "requiredFor": [
+            "headline-valuation"
+          ]
+        },
+        {
+          "id": "missing-share-preferences",
+          "topic": "Share preferences",
+          "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+          "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+          "requiredFor": [
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-share-rights",
+          "topic": "Share rights",
+          "description": "The evidence ledger does not disclose rights attached to the specific security.",
+          "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+          "requiredFor": [
+            "security-level-fair-value"
+          ]
+        },
+        {
+          "id": "missing-total-equity-capitalization",
+          "topic": "Total equity capitalization",
+          "description": "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+          "consequence": "TRACE abstains from total equity value.",
+          "requiredFor": [
+            "total-equity-value"
+          ]
+        }
+      ],
+      "nextDiligenceQuestions": [
+        "What evidence resolves Cap table for total-equity-value, security-level-fair-value?",
+        "What evidence resolves Dilution for total-equity-value, security-level-fair-value?",
+        "What evidence resolves Financial and operating fact coverage for routing, sufficiency?",
+        "What evidence resolves Financial-services valuation inputs for enterprise-value?",
+        "What evidence resolves Recent secondary transaction for headline-valuation?",
+        "What evidence resolves Share preferences for security-level-fair-value?",
+        "What evidence resolves Share rights for security-level-fair-value?",
+        "What evidence resolves Total equity capitalization for total-equity-value?"
+      ]
+    },
+    "run": {
+      "runId": "run-locked-test-v1",
+      "runtimeVersion": "0.1.0",
+      "command": "trace benchmark --partition locked-test --runner trace-full --case-id test-fintech-stripe-2023",
+      "measurementDate": "2024-03-15",
+      "startedAt": "2026-07-26T00:00:00.000Z",
+      "completedAt": "2026-07-26T00:00:00.292Z",
+      "durationMs": 292,
+      "inputPath": "benchmark:locked-test:test-fintech-stripe-2023",
+      "outputDirectory": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-fintech-stripe-2023",
+      "warnings": [
+        "Excluded stripe-2025-02-27-annual-update-post-cutoff because publishedDate 2025-02-27 is after measurementDate 2024-03-15."
+      ]
+    }
+  },
+  "executionLog": {
+    "schemaVersion": "trace.execution-log.v1",
+    "runId": "run-locked-test-v1",
+    "runtimeVersion": "0.1.0",
+    "measurementDate": "2024-03-15",
+    "inputPath": "benchmark:locked-test:test-fintech-stripe-2023",
+    "outputPaths": {
+      "jsonReport": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-fintech-stripe-2023/raw-runner-output.json",
+      "markdownReport": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-fintech-stripe-2023/raw-runner-output.md",
+      "executionLog": "benchmark-artifact:locked-test/run-locked-test-v1/trace-full/test-fintech-stripe-2023/raw-runner-output.json#executionLog"
+    },
+    "startedAt": "2026-07-26T00:00:00.000Z",
+    "completedAt": "2026-07-26T00:00:00.292Z",
+    "durationMs": 292,
+    "validationWarnings": [
+      "Excluded stripe-2025-02-27-annual-update-post-cutoff because publishedDate 2025-02-27 is after measurementDate 2024-03-15."
+    ],
+    "reviewerFindings": [
+      {
+        "id": "review-abstention-triggers",
+        "severity": "pass",
+        "category": "abstention",
+        "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+        "evidenceIds": [
+          "ev-248f56b646df",
+          "ev-32cb116f912b"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-calculation-integrity",
+        "severity": "pass",
+        "category": "calculation",
+        "message": "No concluded valuation calculations were emitted; abstentions are explicit.",
+        "evidenceIds": [
+          "ev-248f56b646df",
+          "ev-32cb116f912b"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-citation-support",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+        "evidenceIds": [
+          "ev-248f56b646df",
+          "ev-32cb116f912b"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-cutoff-compliance",
+        "severity": "warning",
+        "category": "cutoff",
+        "message": "Post-measurement-date evidence was excluded by provider validation and remains visible in warnings.",
+        "evidenceIds": [
+          "ev-248f56b646df",
+          "ev-32cb116f912b"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-entity-certainty",
+        "severity": "pass",
+        "category": "entity",
+        "message": "Target identity is resolved and supported by included evidence.",
+        "evidenceIds": [
+          "ev-248f56b646df",
+          "ev-32cb116f912b"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-evidence-coverage",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+        "evidenceIds": [
+          "ev-248f56b646df",
+          "ev-32cb116f912b"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-route-appropriateness",
+        "severity": "pass",
+        "category": "route",
+        "message": "Route selection is consistent with sufficiency status: financial-services.",
+        "evidenceIds": [
+          "ev-248f56b646df",
+          "ev-32cb116f912b"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-valuation-field-separation",
+        "severity": "pass",
+        "category": "valuation-separation",
+        "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+        "evidenceIds": [
+          "ev-248f56b646df",
+          "ev-32cb116f912b"
+        ],
+        "missingInformation": []
+      }
+    ],
+    "deterministicIdentifiers": {
+      "evidenceLedgerHash": "0dc6a9fe7175856646273f15c9b67924a538e27f00edc6ff52738b78ad4ad8f7",
+      "runtimeResultHash": "df3fd44b4f27b03674d02e466c7912f8c1ce41013129712f0977c735074c06d6"
+    }
+  }
+}
