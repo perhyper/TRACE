@@ -34,6 +34,9 @@ import {
 import type {
   BenchmarkRunnerAdapter
 } from "../benchmark/runners.js";
+import {
+  scoreBenchmarkCase
+} from "../benchmark/scoring.js";
 
 export interface BenchmarkRunOptions {
   readonly rootDir?: string;
@@ -151,11 +154,14 @@ export async function writeBenchmarkCaseArtifacts(options: {
     compiledCase: options.compiledCase,
     runnerOutput: options.runnerOutput
   });
+  const scoreOutput = scoreBenchmarkCase(scorerInput);
 
   await mkdir(layout.caseDirectory, { recursive: true });
   await writeJson(layout.rawRunnerOutputJson, rawRunnerOutputJson(options.runnerOutput));
   await writeFile(layout.rawRunnerOutputMarkdown, rawRunnerOutputMarkdown(options.runnerOutput), "utf8");
   await writeJson(layout.normalizedScorerInput, scorerInput);
+  await writeJson(layout.perClaimScore, scoreOutput.perClaimScore);
+  await writeJson(layout.caseScore, scoreOutput.caseScore);
   await writeJson(layout.failureRecord, options.runnerOutput.failures);
   await writeJson(layout.timingMetadata, options.runnerOutput.timing);
 

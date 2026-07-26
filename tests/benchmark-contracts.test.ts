@@ -17,6 +17,7 @@ import {
   benchmarkCaseInputSchema,
   benchmarkCaseScoreOutputSchema,
   benchmarkFailureRecordSchema,
+  benchmarkPerClaimScoreOutputSchema,
   benchmarkRunnerNameSchema,
   benchmarkRunnerOutputSchema,
   type BenchmarkCaseInput,
@@ -184,6 +185,62 @@ describe("benchmark shared contracts", () => {
     expect(scorerInput.caseId).toBe(compiledCase.caseId);
 
     expect(
+      benchmarkPerClaimScoreOutputSchema.parse({
+        schemaVersion: "trace.benchmark-per-claim-score.v1",
+        runId: runnerOutput.runId,
+        runnerName: runnerOutput.runnerName,
+        caseId: runnerOutput.caseId,
+        partition: scorerInput.partition,
+        status: "scored",
+        claims: [
+          {
+            claimId: "claim-001",
+            kind: "observable",
+            supportStatus: "supported",
+            denominatorIncluded: true,
+            denominatorReasons: [],
+            expectedClaimId: "claim-001",
+            emittedClaimId: "claim-001",
+            expectedStatement: "The runner emitted one normalized observable claim.",
+            emittedStatement: "The runner emitted one normalized observable claim.",
+            expectedValue: true,
+            emittedValue: true,
+            expectedEvidenceIds: [firstEvidenceId(compiledCase.runnerInput)],
+            emittedEvidenceIds: [firstEvidenceId(compiledCase.runnerInput)],
+            citationScores: [
+              {
+                evidenceId: firstEvidenceId(compiledCase.runnerInput),
+                evidenceIdExists: true,
+                retrievable: true,
+                sourceUrlPresent: true,
+                cutoffCompliant: true,
+                sourceDateAligned: true,
+                supportsEntity: true,
+                supportsPeriod: true,
+                supportsUnit: true,
+                supportsWording: true,
+                valid: true,
+                sourceClass: "company-primary",
+                sourceQualityCategory: "company-originated",
+                sourceQualityWeight: 0.8,
+                notes: []
+              }
+            ],
+            sourceQuality: {
+              score: 0.8,
+              citedSourceClasses: ["company-primary"],
+              citedSourceQualityCategories: ["company-originated"],
+              notes: []
+            },
+            duplicateEmittedClaimIds: [],
+            notes: []
+          }
+        ],
+        failures: []
+      }).schemaVersion
+    ).toBe("trace.benchmark-per-claim-score.v1");
+
+    expect(
       benchmarkCaseScoreOutputSchema.parse({
         schemaVersion: "trace.benchmark-case-score.v1",
         runId: runnerOutput.runId,
@@ -261,6 +318,12 @@ describe("benchmark shared contracts", () => {
     );
     expect(layout.normalizedScorerInput).toBe(
       join(expectedCaseDirectory, benchmarkArtifactFileNames.normalizedScorerInput)
+    );
+    expect(layout.perClaimScore).toBe(
+      join(expectedCaseDirectory, benchmarkArtifactFileNames.perClaimScore)
+    );
+    expect(layout.caseScore).toBe(
+      join(expectedCaseDirectory, benchmarkArtifactFileNames.caseScore)
     );
     expect(layout.failureRecord).toBe(
       join(expectedCaseDirectory, benchmarkArtifactFileNames.failureRecord)

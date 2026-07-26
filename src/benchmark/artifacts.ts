@@ -19,6 +19,8 @@ export const benchmarkArtifactFileNames = {
   rawRunnerOutputJson: "raw-runner-output.json",
   rawRunnerOutputMarkdown: "raw-runner-output.md",
   normalizedScorerInput: "normalized-scorer-input.json",
+  perClaimScore: "per-claim-score.json",
+  caseScore: "case-score.json",
   failureRecord: "failure-record.json",
   timingMetadata: "timing-metadata.json"
 } as const;
@@ -35,6 +37,8 @@ export const benchmarkArtifactLayoutSchema = z
     rawRunnerOutputJson: nonEmptyStringSchema,
     rawRunnerOutputMarkdown: nonEmptyStringSchema,
     normalizedScorerInput: nonEmptyStringSchema,
+    perClaimScore: nonEmptyStringSchema,
+    caseScore: nonEmptyStringSchema,
     failureRecord: nonEmptyStringSchema,
     timingMetadata: nonEmptyStringSchema
   })
@@ -77,6 +81,8 @@ export function benchmarkCaseArtifactLayout(
       caseDirectory,
       benchmarkArtifactFileNames.normalizedScorerInput
     ),
+    perClaimScore: join(caseDirectory, benchmarkArtifactFileNames.perClaimScore),
+    caseScore: join(caseDirectory, benchmarkArtifactFileNames.caseScore),
     failureRecord: join(caseDirectory, benchmarkArtifactFileNames.failureRecord),
     timingMetadata: join(caseDirectory, benchmarkArtifactFileNames.timingMetadata)
   });

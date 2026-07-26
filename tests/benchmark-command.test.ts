@@ -6,6 +6,8 @@ import { describe, expect, it } from "vitest";
 
 import { runBenchmark } from "../src/commands/benchmark.js";
 import {
+  benchmarkCaseScoreOutputSchema,
+  benchmarkPerClaimScoreOutputSchema,
   benchmarkScorerInputSchema,
   benchmarkTimingMetadataSchema
 } from "../src/benchmark/contracts.js";
@@ -44,6 +46,12 @@ describe("benchmark command runner", () => {
       const scorerInput = benchmarkScorerInputSchema.parse(
         await readJson(artifact.layout.normalizedScorerInput)
       );
+      const perClaimScore = benchmarkPerClaimScoreOutputSchema.parse(
+        await readJson(artifact.layout.perClaimScore)
+      );
+      const caseScore = benchmarkCaseScoreOutputSchema.parse(
+        await readJson(artifact.layout.caseScore)
+      );
       const failureRecords = await readJson(artifact.layout.failureRecord);
       const timing = benchmarkTimingMetadataSchema.parse(
         await readJson(artifact.layout.timingMetadata)
@@ -58,6 +66,15 @@ describe("benchmark command runner", () => {
       expect(scorerInput.runnerName).toBe(artifact.runnerName);
       expect(scorerInput.caseId).toBe("dev-fintech-chime-2025");
       expect(scorerInput.runnerOutput.runId).toBe("integration-run");
+      expect(perClaimScore.runnerName).toBe(artifact.runnerName);
+      expect(perClaimScore.caseId).toBe("dev-fintech-chime-2025");
+      expect(caseScore.runnerName).toBe(artifact.runnerName);
+      expect(caseScore.caseId).toBe("dev-fintech-chime-2025");
+      expect(caseScore.metrics.map((scoreMetric) => scoreMetric.metricId)).toEqual([
+        "evidence-supported-claim-precision",
+        "citation-validity",
+        "source-quality"
+      ]);
       expect(failureRecords).toEqual([]);
       expect(timing.schemaVersion).toBe("trace.benchmark-timing.v1");
     }

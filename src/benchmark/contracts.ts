@@ -677,6 +677,104 @@ export const benchmarkMetricScoreSchema = z
     }
   });
 
+export const benchmarkScoredClaimKindSchema = z.enum(["binary", "observable"]);
+
+export const benchmarkClaimSupportStatusSchema = z.enum([
+  "supported",
+  "unsupported",
+  "uncited",
+  "citation-mismatched",
+  "post-cutoff",
+  "non-retrievable",
+  "not-emitted"
+]);
+
+export const benchmarkSourceQualityCategorySchema = z.enum([
+  "audited",
+  "regulatory",
+  "government",
+  "legal",
+  "company-originated",
+  "market-data",
+  "news",
+  "expert",
+  "peer-reviewed",
+  "commercial",
+  "other"
+]);
+
+export const benchmarkCitationScoreSchema = z
+  .object({
+    evidenceId: evidenceIdSchema,
+    factId: evidenceIdSchema.optional(),
+    evidenceIdExists: z.boolean(),
+    retrievable: z.boolean(),
+    sourceUrlPresent: z.boolean(),
+    cutoffCompliant: z.boolean(),
+    sourceDateAligned: z.boolean(),
+    supportsEntity: z.boolean(),
+    supportsPeriod: z.boolean(),
+    supportsUnit: z.boolean(),
+    supportsWording: z.boolean(),
+    valid: z.boolean(),
+    sourceClass: sourceClassSchema.optional(),
+    sourceQualityCategory: benchmarkSourceQualityCategorySchema.optional(),
+    sourceQualityWeight: z.number().min(0).max(1).optional(),
+    notes: z.array(nonEmptyStringSchema.max(1_000))
+  })
+  .strict();
+
+export const benchmarkClaimSourceQualityScoreSchema = z
+  .object({
+    score: z.number().min(0).max(1),
+    citedSourceClasses: z.array(sourceClassSchema),
+    citedSourceQualityCategories: z.array(benchmarkSourceQualityCategorySchema),
+    notes: z.array(nonEmptyStringSchema.max(1_000))
+  })
+  .strict();
+
+export const benchmarkClaimScoreSchema = z
+  .object({
+    claimId: benchmarkIdSchema,
+    kind: benchmarkScoredClaimKindSchema,
+    supportStatus: benchmarkClaimSupportStatusSchema,
+    denominatorIncluded: z.boolean(),
+    denominatorReasons: z.array(benchmarkClaimSupportStatusSchema),
+    expectedClaimId: benchmarkIdSchema.optional(),
+    emittedClaimId: benchmarkIdSchema.optional(),
+    expectedStatement: nonEmptyStringSchema.max(1_500).optional(),
+    emittedStatement: nonEmptyStringSchema.max(2_000).optional(),
+    expectedValue: factValueSchema.optional(),
+    emittedValue: factValueSchema.optional(),
+    expectedUnit: nonEmptyStringSchema.max(120).optional(),
+    emittedUnit: nonEmptyStringSchema.max(120).optional(),
+    expectedPeriod: factPeriodSchema.optional(),
+    emittedPeriod: factPeriodSchema.optional(),
+    expectedEvidenceIds: z.array(evidenceIdSchema),
+    emittedEvidenceIds: z.array(evidenceIdSchema),
+    citationScores: z.array(benchmarkCitationScoreSchema),
+    sourceQuality: benchmarkClaimSourceQualityScoreSchema,
+    duplicateEmittedClaimIds: z.array(benchmarkIdSchema),
+    notes: z.array(nonEmptyStringSchema.max(1_000))
+  })
+  .strict()
+  .superRefine((claim, context) => {
+    if (claim.expectedClaimId === undefined && claim.emittedClaimId === undefined) {
+      context.addIssue({
+        code: "custom",
+        message: "Claim scores must preserve at least one expected or emitted claim id"
+      });
+    }
+
+    if (claim.supportStatus === "not-emitted" && claim.denominatorIncluded) {
+      context.addIssue({
+        code: "custom",
+        path: ["denominatorIncluded"],
+        message: "Not-emitted expected claims are not precision denominator items"
+      });
+    }
+  });
+
 export const benchmarkCaseScoreOutputSchema = z
   .object({
     schemaVersion: z.literal("trace.benchmark-case-score.v1"),
@@ -686,6 +784,19 @@ export const benchmarkCaseScoreOutputSchema = z
     partition: benchmarkPartitionSchema,
     status: z.enum(["scored", "failed", "skipped"]),
     metrics: z.array(benchmarkMetricScoreSchema),
+    failures: z.array(benchmarkFailureRecordSchema)
+  })
+  .strict();
+
+export const benchmarkPerClaimScoreOutputSchema = z
+  .object({
+    schemaVersion: z.literal("trace.benchmark-per-claim-score.v1"),
+    runId: pathSegmentSchema,
+    runnerName: benchmarkRunnerNameSchema,
+    caseId: caseIdSchema,
+    partition: benchmarkPartitionSchema,
+    status: z.enum(["scored", "failed", "skipped"]),
+    claims: z.array(benchmarkClaimScoreSchema),
     failures: z.array(benchmarkFailureRecordSchema)
   })
   .strict();
@@ -783,6 +894,16 @@ export type BenchmarkNormalizedRunnerOutput = z.infer<
 export type BenchmarkRunnerOutput = z.infer<typeof benchmarkRunnerOutputSchema>;
 export type BenchmarkScorerInput = z.infer<typeof benchmarkScorerInputSchema>;
 export type BenchmarkMetricScore = z.infer<typeof benchmarkMetricScoreSchema>;
+export type BenchmarkScoredClaimKind = z.infer<typeof benchmarkScoredClaimKindSchema>;
+export type BenchmarkClaimSupportStatus = z.infer<typeof benchmarkClaimSupportStatusSchema>;
+export type BenchmarkSourceQualityCategory = z.infer<
+  typeof benchmarkSourceQualityCategorySchema
+>;
+export type BenchmarkCitationScore = z.infer<typeof benchmarkCitationScoreSchema>;
+export type BenchmarkClaimScore = z.infer<typeof benchmarkClaimScoreSchema>;
+export type BenchmarkPerClaimScoreOutput = z.infer<
+  typeof benchmarkPerClaimScoreOutputSchema
+>;
 export type BenchmarkCaseScoreOutput = z.infer<typeof benchmarkCaseScoreOutputSchema>;
 export type BenchmarkAggregateScoreOutput = z.infer<
   typeof benchmarkAggregateScoreOutputSchema

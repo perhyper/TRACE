@@ -193,6 +193,23 @@ export function normalizeEvidenceBundle(input: unknown): EvidenceLedger {
   return evidenceLedgerSchema.parse(ledger);
 }
 
+export function sourceRecordEvidenceIdMap(
+  sourceRecords: readonly EvidenceBundleSourceRecord[]
+): ReadonlyMap<string, string> {
+  return new Map(
+    [...sourceRecords]
+      .sort(compareSourceRecordIds)
+      .map((sourceRecord) => [
+        sourceRecord.id,
+        canonicalEvidenceId(originatingSourceKey(sourceRecord))
+      ])
+  );
+}
+
+export function evidenceIdForSourceUrl(sourceUrl: string): string {
+  return canonicalEvidenceId(canonicalUrl(sourceUrl));
+}
+
 function groupByOriginatingSource(
   sourceRecords: readonly EvidenceBundleSourceRecord[]
 ): Map<string, EvidenceBundleSourceRecord[]> {
@@ -392,6 +409,13 @@ function compareSourceRecordsForRepresentative(
   right: EvidenceBundleSourceRecord
 ): number {
   return compareTuple(representativeSortTuple(left), representativeSortTuple(right));
+}
+
+function compareSourceRecordIds(
+  left: EvidenceBundleSourceRecord,
+  right: EvidenceBundleSourceRecord
+): number {
+  return compareStrings(left.id, right.id);
 }
 
 function representativeSortTuple(record: EvidenceBundleSourceRecord): readonly string[] {

@@ -29,6 +29,7 @@ import {
 import {
   normalizeEvidenceBundle,
   parseEvidenceBundleJson,
+  sourceRecordEvidenceIdMap,
   type EvidenceBundle,
   type EvidenceBundleSourceRecord,
   type EvidenceLedger
@@ -126,11 +127,12 @@ async function compileScoredCase(
     scoredEvidenceBundlePath(rootDir, caseEntry)
   );
   const evidenceLedger = normalizeEvidenceBundle(evidenceBundle);
-  const annotation = canonicalizeBenchmarkAnnotation(
-    await loadBenchmarkAnnotationFromJsonFile(scoredAnnotationPath(rootDir, caseEntry))
+  const rawAnnotation = await loadBenchmarkAnnotationFromJsonFile(
+    scoredAnnotationPath(rootDir, caseEntry)
   );
+  const annotation = canonicalizeBenchmarkAnnotation(rawAnnotation, evidenceBundle.sourceRecords);
 
-  validateScoredCaseAlignment(caseEntry, evidenceBundle, annotation);
+  validateScoredCaseAlignment(caseEntry, evidenceBundle, rawAnnotation);
 
   return benchmarkCompiledCaseSchema.parse({
     schemaVersion: "trace.compiled-benchmark-case.v1",
@@ -216,30 +218,34 @@ function buildBenchmarkCaseInput(
   });
 }
 
-function canonicalizeBenchmarkAnnotation(annotation: BenchmarkAnnotation): BenchmarkAnnotation {
+function canonicalizeBenchmarkAnnotation(
+  annotation: BenchmarkAnnotation,
+  sourceRecords: readonly EvidenceBundleSourceRecord[]
+): BenchmarkAnnotation {
+  const evidenceIdMap = sourceRecordEvidenceIdMap(sourceRecords);
   const canonicalAnnotation = {
     ...annotation,
     expectedRoute: {
       ...annotation.expectedRoute,
       acceptableAlternativeRoutes: sorted(annotation.expectedRoute.acceptableAlternativeRoutes),
-      evidenceIds: sorted(annotation.expectedRoute.evidenceIds)
+      evidenceIds: canonicalEvidenceIds(annotation.expectedRoute.evidenceIds, evidenceIdMap)
     },
     binaryClaims: annotation.binaryClaims
       .map((claim) => ({
         ...claim,
-        evidenceIds: sorted(claim.evidenceIds)
+        evidenceIds: canonicalEvidenceIds(claim.evidenceIds, evidenceIdMap)
       }))
       .sort(compareById),
     observableClaims: annotation.observableClaims
       .map((claim) => ({
         ...claim,
-        evidenceIds: sorted(claim.evidenceIds)
+        evidenceIds: canonicalEvidenceIds(claim.evidenceIds, evidenceIdMap)
       }))
       .sort(compareById),
     expectedAbstentions: annotation.expectedAbstentions
       .map((abstention) => ({
         ...abstention,
-        evidenceIds: sorted(abstention.evidenceIds)
+        evidenceIds: canonicalEvidenceIds(abstention.evidenceIds, evidenceIdMap)
       }))
       .sort(compareById),
     valuationSeparationExpectations: {
@@ -254,11 +260,12 @@ function canonicalizeBenchmarkAnnotation(annotation: BenchmarkAnnotation): Bench
         ...expectation,
         requiredEvidenceClasses: sorted(expectation.requiredEvidenceClasses),
         requiredTopics: sorted(expectation.requiredTopics),
-        evidenceIds: sorted(expectation.evidenceIds)
+        evidenceIds: canonicalEvidenceIds(expectation.evidenceIds, evidenceIdMap)
       }))
       .sort(compareById),
     historicalValuationTargets: canonicalizeHistoricalTargets(
-      annotation.historicalValuationTargets
+      annotation.historicalValuationTargets,
+      evidenceIdMap
     )
   };
 
@@ -266,7 +273,8 @@ function canonicalizeBenchmarkAnnotation(annotation: BenchmarkAnnotation): Bench
 }
 
 function canonicalizeHistoricalTargets(
-  historicalTargets: BenchmarkAnnotation["historicalValuationTargets"]
+  historicalTargets: BenchmarkAnnotation["historicalValuationTargets"],
+  evidenceIdMap: ReadonlyMap<string, string>
 ): BenchmarkAnnotation["historicalValuationTargets"] {
   if (!historicalTargets.eligible) {
     return historicalTargets;
@@ -277,10 +285,19 @@ function canonicalizeHistoricalTargets(
     targets: historicalTargets.targets
       .map((target) => ({
         ...target,
-        sourceEvidenceIds: sorted(target.sourceEvidenceIds)
+        sourceEvidenceIds: canonicalEvidenceIds(target.sourceEvidenceIds, evidenceIdMap)
       }))
       .sort(compareById)
   };
+}
+
+function canonicalEvidenceIds(
+  evidenceIds: readonly string[],
+  evidenceIdMap: ReadonlyMap<string, string>
+): string[] {
+  return Array.from(
+    new Set(evidenceIds.map((evidenceId) => evidenceIdMap.get(evidenceId) ?? evidenceId))
+  ).sort(compareStrings);
 }
 
 function validateScoredCaseAlignment(
