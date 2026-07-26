@@ -8,7 +8,7 @@
     "acceptableAlternativeRoutes": [],
     "evidenceIds": [
       "zopa-2025-04-24-2024-results-blog",
-      "zopa-2025-09-02-h1-trading-update",
+      "zopa-2025-09-01-h1-trading-update",
       "zopa-2025-companies-house-overview"
     ],
     "rationale": "The cutoff evidence describes a UK regulated digital bank and financial-services holding group with deposits, loans, customers and profitability metrics."
@@ -27,7 +27,7 @@
       "statement": "Zopa's H1 2025 trading update was public before the 2025-12-31 cutoff.",
       "expectedValue": true,
       "evidenceIds": [
-        "zopa-2025-09-02-h1-trading-update"
+        "zopa-2025-09-01-h1-trading-update"
       ]
     },
     {
@@ -62,7 +62,7 @@
         "endDate": "2025-06-30"
       },
       "evidenceIds": [
-        "zopa-2025-09-02-h1-trading-update"
+        "zopa-2025-09-01-h1-trading-update"
       ]
     },
     {
@@ -74,7 +74,7 @@
         "instantDate": "2025-05-31"
       },
       "evidenceIds": [
-        "zopa-2025-09-02-h1-trading-update"
+        "zopa-2025-09-01-h1-trading-update"
       ]
     }
   ],
@@ -86,7 +86,7 @@
       "description": "The cutoff evidence does not disclose share rights, a cap table or private security-level fair value.",
       "evidenceIds": [
         "zopa-2025-04-24-2024-results-blog",
-        "zopa-2025-09-02-h1-trading-update"
+        "zopa-2025-09-01-h1-trading-update"
       ]
     },
     {
@@ -115,7 +115,6 @@
       "description": "A complete answer should cover Zopa identity, financial-services route, profitability, loans, deposits, customers, AT1 capital and post-cutoff leakage.",
       "requiredEvidenceClasses": [
         "company-primary",
-        "regulatory-filing",
         "government"
       ],
       "requiredTopics": [
@@ -126,7 +125,7 @@
       ],
       "evidenceIds": [
         "zopa-2025-04-24-2024-results-blog",
-        "zopa-2025-09-02-h1-trading-update",
+        "zopa-2025-09-01-h1-trading-update",
         "zopa-2025-companies-house-overview"
       ]
     }

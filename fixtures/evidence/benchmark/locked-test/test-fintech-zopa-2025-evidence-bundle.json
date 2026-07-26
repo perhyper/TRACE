@@ -89,20 +89,20 @@
       ]
     },
     {
-      "id": "zopa-2025-09-02-h1-trading-update",
-      "sourceUrl": "https://www.research-tree.com/newsfeed/article/zopa-group-plc-half-year-report-2979766",
-      "sourceTitle": "Zopa Group PLC H1 2025 trading update",
+      "id": "zopa-2025-09-01-h1-trading-update",
+      "sourceUrl": "https://www.datocms-assets.com/23873/1756718710-2025-mid-year-reporting-update-vupload.pdf",
+      "sourceTitle": "Zopa Group PLC H1 2025 Trading Update",
       "retrievedDate": "2026-07-26",
-      "publishedDate": "2025-09-02",
+      "publishedDate": "2025-09-01",
       "effectiveDate": "2025-06-30",
-      "sourceClass": "regulatory-filing",
+      "sourceClass": "company-primary",
       "epistemicClass": "extracted",
-      "locator": "RNS 6799X, 02 Sep 2025",
+      "locator": "H1 2025 Update, pages 1–2",
       "shortExcerpt": "The H1 2025 update reported customer count, Biscuit current account uptake, AT1 raise, profitability, loans and deposits.",
       "originatingSource": {
-        "sourceUrl": "https://www.research-tree.com/newsfeed/article/zopa-group-plc-half-year-report-2979766",
-        "sourceTitle": "Zopa Group PLC H1 2025 trading update",
-        "publishedDate": "2025-09-02"
+        "sourceUrl": "https://www.datocms-assets.com/23873/1756718710-2025-mid-year-reporting-update-vupload.pdf",
+        "sourceTitle": "Zopa Group PLC H1 2025 Trading Update",
+        "publishedDate": "2025-09-01"
       },
       "observedFacts": [
         {
