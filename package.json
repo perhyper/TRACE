@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Evidence-first TRACE runtime and CLI scaffold.",
   "scripts": {
-    "trace": "tsx src/cli.ts",
+    "trace": "node --import tsx src/cli.ts",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",

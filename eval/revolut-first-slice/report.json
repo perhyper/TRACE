@@ -1,0 +1,970 @@
+{
+  "schemaVersion": "trace.report.v1",
+  "company": {
+    "legalName": "Revolut Group Holdings Ltd",
+    "jurisdiction": "GB",
+    "identifiers": [
+      {
+        "scheme": "company-number",
+        "value": "GB-12743269",
+        "jurisdiction": "GB"
+      }
+    ],
+    "aliases": [
+      "Revolut"
+    ],
+    "identityConfidence": "resolved"
+  },
+  "measurementDate": "2026-03-24",
+  "decisionMode": "valuation-review",
+  "evidence": [
+    {
+      "id": "ev-0f93378b5977",
+      "sourceUrl": "https://www.federalreserve.gov/releases/h10/hist/dat00_uk.htm",
+      "sourceTitle": "Federal Reserve H.10 historical GBP rate",
+      "retrievedDate": "2026-07-26",
+      "effectiveDate": "2026-03-24",
+      "sourceClass": "government",
+      "epistemicClass": "extracted",
+      "locator": "Historical Rates for the Great British Pound, row 24-MAR-26",
+      "shortExcerpt": "Rates are in U.S. dollars per Great British Pound; 24-MAR-26 is 1.3383.",
+      "observedFacts": [
+        {
+          "id": "fact-678865f66808",
+          "statement": "Federal Reserve H.10 GBP/USD USD per GBP observation for 2026-03-24 was 1.3383.",
+          "epistemicClass": "observed",
+          "value": 1.3383,
+          "unit": "USD per GBP",
+          "period": {
+            "instantDate": "2026-03-24"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ev-6b6628513a49",
+      "sourceUrl": "https://www.revolut.com/news/revolut_completes_fundraising_process_establishing_75_billion_valuation/",
+      "sourceTitle": "Revolut Completes Fundraising Process Establishing $75 Billion Valuation",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2025-11-24",
+      "effectiveDate": "2025-11-24",
+      "sourceClass": "company-primary",
+      "epistemicClass": "extracted",
+      "locator": "Newsroom article, Corporate, 24 November 2025",
+      "shortExcerpt": "Revolut announced completion of a share sale, valuing the company at $75 billion.",
+      "observedFacts": [
+        {
+          "id": "fact-993e3d7a73c7",
+          "statement": "Current employees were given the opportunity to sell as part of the employee share sale.",
+          "epistemicClass": "extracted",
+          "value": "employee share sale",
+          "period": {
+            "instantDate": "2025-11-24"
+          }
+        },
+        {
+          "id": "fact-a65ac197b4d8",
+          "statement": "The transaction was led by Coatue, Greenoaks, Dragoneer, and Fidelity Management & Research Company, with NVentures also participating.",
+          "epistemicClass": "extracted",
+          "value": [
+            "Coatue",
+            "Greenoaks",
+            "Dragoneer",
+            "Fidelity Management & Research Company",
+            "NVentures"
+          ],
+          "period": {
+            "instantDate": "2025-11-24"
+          }
+        },
+        {
+          "id": "fact-5410476fe6fd",
+          "statement": "Transaction terms, share rights, preferences, dilution, discounts, transaction volume, and cap-table data were not disclosed.",
+          "epistemicClass": "inferred",
+          "value": "not disclosed",
+          "period": {
+            "instantDate": "2025-11-24"
+          }
+        },
+        {
+          "id": "fact-e888cae9d643",
+          "statement": "Revolut announced completion of the share sale on 2025-11-24.",
+          "epistemicClass": "observed",
+          "value": "2025-11-24",
+          "period": {
+            "instantDate": "2025-11-24"
+          }
+        },
+        {
+          "id": "fact-835756e25048",
+          "statement": "The share sale established an implied headline valuation of USD 75 billion.",
+          "epistemicClass": "observed",
+          "value": 75,
+          "unit": "USD billions",
+          "period": {
+            "instantDate": "2025-11-24"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ev-86e40ac15712",
+      "sourceUrl": "https://assets.revolut.com/pdf/annualreport2025.pdf",
+      "sourceTitle": "Revolut Group Holdings Ltd Annual Report 2025",
+      "retrievedDate": "2026-07-26",
+      "effectiveDate": "2025-12-31",
+      "sourceClass": "audited-filing",
+      "epistemicClass": "extracted",
+      "locator": "pp. 1, 94-101, 131",
+      "shortExcerpt": "The audited statements cover 2025 and report revenue, profit, total assets and customer liabilities.",
+      "observedFacts": [
+        {
+          "id": "fact-7d49607f5d08",
+          "statement": "BDO LLP audited the 2025 financial statements and gave a true-and-fair-view opinion for the Group and Parent Company.",
+          "epistemicClass": "extracted",
+          "value": true,
+          "period": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "fact-b10f27ed93e0",
+          "statement": "Net profit for the year ended 2025-12-31 was GBP 1,304,628 thousand.",
+          "epistemicClass": "extracted",
+          "value": 1304628,
+          "unit": "GBP thousands",
+          "period": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "fact-0c4e3b09ccab",
+          "statement": "Profit before tax for the year ended 2025-12-31 was GBP 1,713,273 thousand.",
+          "epistemicClass": "extracted",
+          "value": 1713273,
+          "unit": "GBP thousands",
+          "period": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "fact-81cdd24c3e52",
+          "statement": "Revenue for the year ended 2025-12-31 was GBP 4,515,770 thousand.",
+          "epistemicClass": "extracted",
+          "value": 4515770,
+          "unit": "GBP thousands",
+          "period": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "fact-7d967154be42",
+          "statement": "The annual report reports 68.3 million retail customers for 2025.",
+          "epistemicClass": "extracted",
+          "value": 68.3,
+          "unit": "millions",
+          "period": {
+            "endDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "fact-232afd7f133b",
+          "statement": "At 2025-12-31, cash and cash equivalents were GBP 21,021,729 thousand and treasury investments were GBP 17,614,303 thousand.",
+          "epistemicClass": "extracted",
+          "value": [
+            "cash and cash equivalents GBP 21,021,729 thousand",
+            "treasury investments GBP 17,614,303 thousand"
+          ],
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "fact-1a4b4eefb7b1",
+          "statement": "At 2025-12-31, customer deposits were GBP 36,142,908 thousand.",
+          "epistemicClass": "extracted",
+          "value": 36142908,
+          "unit": "GBP thousands",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "fact-b08f35e4ec42",
+          "statement": "At 2025-12-31, customer liabilities were GBP 36,880,199 thousand.",
+          "epistemicClass": "extracted",
+          "value": 36880199,
+          "unit": "GBP thousands",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "fact-5bb70cfe8de9",
+          "statement": "At 2025-12-31, loans and advances to customers were GBP 2,150,128 thousand.",
+          "epistemicClass": "extracted",
+          "value": 2150128,
+          "unit": "GBP thousands",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "fact-7864455c1170",
+          "statement": "At 2025-12-31, the consolidated statement of financial position reported total assets of GBP 43,024,390 thousand.",
+          "epistemicClass": "extracted",
+          "value": 43024390,
+          "unit": "GBP thousands",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "fact-6339447bac6c",
+          "statement": "At 2025-12-31, total customer balances were GBP 50,182,946 thousand.",
+          "epistemicClass": "extracted",
+          "value": 50182946,
+          "unit": "GBP thousands",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "fact-60fbd39c9081",
+          "statement": "Restricted cash and term deposits held in respect of customers include safeguarded funds related to regulated e-money and wealth services.",
+          "epistemicClass": "extracted",
+          "value": "safeguarded funds for regulated e-money and wealth services",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        },
+        {
+          "id": "fact-47607cad6f0c",
+          "statement": "TRACE selects peers qualitatively from the banking, payments, multi-currency account, and consumer-fintech context described in the annual report; no peer metrics are supplied.",
+          "epistemicClass": "inferred",
+          "value": [
+            "Wise plc - qualitative context only for cross-border money movement and multi-currency account functionality.",
+            "Monzo Bank Holding Group Ltd - qualitative context only for UK app-based banking and consumer current-account services.",
+            "Starling Bank Ltd - qualitative context only for UK digital banking and business-account services.",
+            "Klarna Bank AB - qualitative context only for European consumer fintech, checkout payments, and credit products."
+          ]
+        },
+        {
+          "id": "fact-1e64e36c834d",
+          "statement": "Revolut Group Holdings Ltd is the annual-report reporting entity and registered number 12743269 identifies the company.",
+          "epistemicClass": "observed",
+          "value": "GB-12743269",
+          "unit": "company-number",
+          "period": {
+            "instantDate": "2025-12-31"
+          }
+        }
+      ],
+      "documentHash": {
+        "algorithm": "sha256",
+        "value": "969dd74a7213513ef92c02d64d6427fec03adaec6b1f5470602f9872725e5e24",
+        "contentType": "application/pdf",
+        "byteLength": 12279247
+      }
+    }
+  ],
+  "sufficiency": {
+    "status": "sufficient",
+    "score": 1,
+    "criteria": [
+      {
+        "criterion": "Entity resolution",
+        "status": "met",
+        "explanation": "The target identity is resolved and supported by eligible evidence.",
+        "evidenceIds": [
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
+        ]
+      },
+      {
+        "criterion": "Measurement-date eligible evidence",
+        "status": "met",
+        "explanation": "Multiple eligible evidence records remain after cutoff filtering.",
+        "evidenceIds": [
+          "ev-0f93378b5977",
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
+        ]
+      },
+      {
+        "criterion": "Source quality",
+        "status": "met",
+        "explanation": "Multiple high-authority source classes support routing.",
+        "evidenceIds": [
+          "ev-0f93378b5977",
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
+        ]
+      },
+      {
+        "criterion": "Route-defining business-model evidence",
+        "status": "met",
+        "explanation": "Evidence contains multiple business-model facts relevant to routing.",
+        "evidenceIds": [
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
+        ]
+      },
+      {
+        "criterion": "Financial and operating fact coverage",
+        "status": "met",
+        "explanation": "Evidence contains multiple financial or operating facts usable for route selection.",
+        "evidenceIds": [
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
+        ]
+      }
+    ],
+    "missingInformation": [],
+    "rationale": "Evidence coverage is sufficient for route selection before valuation."
+  },
+  "route": {
+    "status": "selected",
+    "selectedRoute": "financial-services",
+    "selectedReasons": [
+      {
+        "summary": "Evidence shows bank-like or deposit-led balance-sheet items.",
+        "evidenceIds": [
+          "ev-86e40ac15712"
+        ]
+      },
+      {
+        "summary": "Evidence shows regulated financial activity such as banking, payments, lending, or electronic money.",
+        "evidenceIds": [
+          "ev-86e40ac15712"
+        ]
+      },
+      {
+        "summary": "Audited or regulator-linked statements provide financial-asset, liability, or balance-sheet facts.",
+        "evidenceIds": [
+          "ev-86e40ac15712"
+        ]
+      },
+      {
+        "summary": "Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation.",
+        "evidenceIds": [
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
+        ]
+      },
+      {
+        "summary": "Transaction evidence is treated as a route context and not as an enterprise-value or security-level conclusion.",
+        "evidenceIds": [
+          "ev-6b6628513a49"
+        ]
+      }
+    ],
+    "candidates": [
+      {
+        "route": "financial-services",
+        "status": "selected",
+        "score": 1,
+        "reasons": [
+          {
+            "summary": "Evidence shows bank-like or deposit-led balance-sheet items.",
+            "evidenceIds": [
+              "ev-86e40ac15712"
+            ]
+          },
+          {
+            "summary": "Evidence shows regulated financial activity such as banking, payments, lending, or electronic money.",
+            "evidenceIds": [
+              "ev-86e40ac15712"
+            ]
+          },
+          {
+            "summary": "Audited or regulator-linked statements provide financial-asset, liability, or balance-sheet facts.",
+            "evidenceIds": [
+              "ev-86e40ac15712"
+            ]
+          },
+          {
+            "summary": "Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation.",
+            "evidenceIds": [
+              "ev-6b6628513a49",
+              "ev-86e40ac15712"
+            ]
+          },
+          {
+            "summary": "Transaction evidence is treated as a route context and not as an enterprise-value or security-level conclusion.",
+            "evidenceIds": [
+              "ev-6b6628513a49"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "recent-transaction",
+        "status": "rejected",
+        "score": 0.3333,
+        "reasons": [
+          {
+            "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+            "evidenceIds": [
+              "ev-6b6628513a49"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "software-saas",
+        "status": "rejected",
+        "score": 0,
+        "reasons": [
+          {
+            "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+            "evidenceIds": [
+              "ev-0f93378b5977",
+              "ev-6b6628513a49",
+              "ev-86e40ac15712"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "marketplace",
+        "status": "rejected",
+        "score": 0,
+        "reasons": [
+          {
+            "summary": "Available evidence does not support the marketplace route.",
+            "evidenceIds": [
+              "ev-0f93378b5977",
+              "ev-6b6628513a49",
+              "ev-86e40ac15712"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "biotech-rnpv",
+        "status": "rejected",
+        "score": 0,
+        "reasons": [
+          {
+            "summary": "Available evidence does not support the biotech rnpv route.",
+            "evidenceIds": [
+              "ev-0f93378b5977",
+              "ev-6b6628513a49",
+              "ev-86e40ac15712"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "asset-based",
+        "status": "rejected",
+        "score": 0,
+        "reasons": [
+          {
+            "summary": "Available evidence does not support the asset based route.",
+            "evidenceIds": [
+              "ev-0f93378b5977",
+              "ev-6b6628513a49",
+              "ev-86e40ac15712"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "general-private-company",
+        "status": "rejected",
+        "score": 0.4,
+        "reasons": [
+          {
+            "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+            "evidenceIds": [
+              "ev-0f93378b5977",
+              "ev-6b6628513a49",
+              "ev-86e40ac15712"
+            ]
+          }
+        ]
+      }
+    ],
+    "rejectedRoutes": [
+      {
+        "route": "recent-transaction",
+        "status": "rejected",
+        "score": 0.3333,
+        "reasons": [
+          {
+            "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+            "evidenceIds": [
+              "ev-6b6628513a49"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "software-saas",
+        "status": "rejected",
+        "score": 0,
+        "reasons": [
+          {
+            "summary": "Financial-services evidence makes generic SaaS enterprise-value treatment unsupported.",
+            "evidenceIds": [
+              "ev-0f93378b5977",
+              "ev-6b6628513a49",
+              "ev-86e40ac15712"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "marketplace",
+        "status": "rejected",
+        "score": 0,
+        "reasons": [
+          {
+            "summary": "Available evidence does not support the marketplace route.",
+            "evidenceIds": [
+              "ev-0f93378b5977",
+              "ev-6b6628513a49",
+              "ev-86e40ac15712"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "biotech-rnpv",
+        "status": "rejected",
+        "score": 0,
+        "reasons": [
+          {
+            "summary": "Available evidence does not support the biotech rnpv route.",
+            "evidenceIds": [
+              "ev-0f93378b5977",
+              "ev-6b6628513a49",
+              "ev-86e40ac15712"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "asset-based",
+        "status": "rejected",
+        "score": 0,
+        "reasons": [
+          {
+            "summary": "Available evidence does not support the asset based route.",
+            "evidenceIds": [
+              "ev-0f93378b5977",
+              "ev-6b6628513a49",
+              "ev-86e40ac15712"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "general-private-company",
+        "status": "rejected",
+        "score": 0.4,
+        "reasons": [
+          {
+            "summary": "Evidence for general private company was considered but did not outrank the selected financial services route.",
+            "evidenceIds": [
+              "ev-0f93378b5977",
+              "ev-6b6628513a49",
+              "ev-86e40ac15712"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "valuation": {
+    "headlineValuation": {
+      "status": "concluded",
+      "field": "headline-valuation",
+      "range": {
+        "low": {
+          "amount": 60,
+          "currency": "USD",
+          "scale": "billions"
+        },
+        "base": {
+          "amount": 75,
+          "currency": "USD",
+          "scale": "billions"
+        },
+        "high": {
+          "amount": 90,
+          "currency": "USD",
+          "scale": "billions"
+        }
+      },
+      "basis": {
+        "method": "recent-secondary-calibration",
+        "description": "Observed recent secondary transaction headline is retained as a company-level calibration reference only.",
+        "evidenceIds": [
+          "ev-6b6628513a49"
+        ],
+        "assumptions": [
+          "Source class company-primary is treated as an observed transaction reference, not independent fair-value proof.",
+          "The base case equals the observed headline transaction value after deterministic currency normalization.",
+          "The disclosed USD headline valuation is retained in USD with no currency conversion.",
+          "The headline transaction reference is not copied into enterprise value, total equity value, or security-level fair value.",
+          "The selected transaction date is 2025-11-24.",
+          "Uncertainty is widened because share rights, preferences, dilution, or cap-table data are unavailable.",
+          "Uncertainty is widened because the transaction is secondary."
+        ],
+        "limitations": [
+          "Cap-table data is not disclosed.",
+          "Cap-table evidence is unavailable in the evidence ledger.",
+          "Dilution evidence is unavailable in the evidence ledger.",
+          "Dilution is not disclosed.",
+          "Share preferences are not disclosed.",
+          "Share preferences are unavailable in the evidence ledger.",
+          "Share rights are not disclosed.",
+          "Share rights are unavailable in the evidence ledger.",
+          "Transaction discounts are not disclosed.",
+          "Transaction terms are not disclosed.",
+          "Transaction volume is not disclosed."
+        ]
+      }
+    },
+    "enterpriseValue": {
+      "status": "abstained",
+      "field": "enterprise-value",
+      "abstention": {
+        "reasonCode": "headline-reference-not-enterprise-value",
+        "explanation": "The observed transaction headline is not an enterprise-value conclusion because operating valuation inputs and bridge evidence are unavailable.",
+        "missingInformation": [
+          {
+            "id": "missing-enterprise-value-support",
+            "topic": "Enterprise-value support",
+            "description": "The evidence ledger does not provide operating valuation inputs, net debt or cash bridge items, or transaction terms needed to infer enterprise value from the headline.",
+            "consequence": "TRACE must keep the headline calibration separate from enterprise value.",
+            "requiredFor": [
+              "enterprise-value"
+            ]
+          }
+        ],
+        "evidenceIds": [
+          "ev-6b6628513a49"
+        ]
+      }
+    },
+    "totalEquityValue": {
+      "status": "abstained",
+      "field": "total-equity-value",
+      "abstention": {
+        "reasonCode": "headline-reference-not-total-equity-value",
+        "explanation": "The observed transaction headline is not a total-equity-value conclusion because capitalization and equity bridge evidence are unavailable.",
+        "missingInformation": [
+          {
+            "id": "missing-total-equity-capitalization",
+            "topic": "Total equity capitalization",
+            "description": "The evidence ledger does not provide fully diluted capitalization, share count, preference stack, or equity bridge data.",
+            "consequence": "TRACE must keep the headline calibration separate from total equity value.",
+            "requiredFor": [
+              "total-equity-value",
+              "security-level-fair-value"
+            ]
+          }
+        ],
+        "evidenceIds": [
+          "ev-6b6628513a49"
+        ]
+      }
+    },
+    "securityLevelFairValue": {
+      "status": "abstained",
+      "field": "security-level-fair-value",
+      "abstention": {
+        "reasonCode": "security-rights-and-cap-table-not-disclosed",
+        "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+        "missingInformation": [
+          {
+            "id": "missing-cap-table",
+            "topic": "Cap table",
+            "description": "The evidence ledger does not disclose capitalization table data.",
+            "consequence": "TRACE cannot allocate value across securities or holders.",
+            "requiredFor": [
+              "total-equity-value",
+              "security-level-fair-value"
+            ]
+          },
+          {
+            "id": "missing-dilution",
+            "topic": "Dilution",
+            "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+            "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+            "requiredFor": [
+              "total-equity-value",
+              "security-level-fair-value"
+            ]
+          },
+          {
+            "id": "missing-share-preferences",
+            "topic": "Share preferences",
+            "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+            "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+            "requiredFor": [
+              "security-level-fair-value"
+            ]
+          },
+          {
+            "id": "missing-share-rights",
+            "topic": "Share rights",
+            "description": "The evidence ledger does not disclose rights attached to the specific security.",
+            "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+            "requiredFor": [
+              "security-level-fair-value"
+            ]
+          }
+        ],
+        "evidenceIds": [
+          "ev-6b6628513a49"
+        ]
+      }
+    }
+  },
+  "review": {
+    "status": "passed",
+    "reviewerVersion": "trace-reviewer.v1",
+    "findings": [
+      {
+        "id": "review-abstention-triggers",
+        "severity": "pass",
+        "category": "abstention",
+        "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
+        "evidenceIds": [
+          "ev-6b6628513a49"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-calculation-integrity",
+        "severity": "pass",
+        "category": "calculation",
+        "message": "Concluded valuation ranges are internally ordered, unit-consistent, and evidence-cited.",
+        "evidenceIds": [
+          "ev-6b6628513a49"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-citation-support",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Sufficiency, route, and valuation claims cite included evidence IDs where citations are required.",
+        "evidenceIds": [
+          "ev-0f93378b5977",
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-cutoff-compliance",
+        "severity": "pass",
+        "category": "cutoff",
+        "message": "Included evidence satisfies the measurement-date publication cutoff.",
+        "evidenceIds": [
+          "ev-0f93378b5977",
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-entity-certainty",
+        "severity": "pass",
+        "category": "entity",
+        "message": "Target identity is resolved and supported by included evidence.",
+        "evidenceIds": [
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-evidence-coverage",
+        "severity": "pass",
+        "category": "evidence",
+        "message": "Evidence coverage satisfies the sufficiency gate for route selection.",
+        "evidenceIds": [
+          "ev-0f93378b5977",
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-route-appropriateness",
+        "severity": "pass",
+        "category": "route",
+        "message": "Route selection is consistent with sufficiency status: financial-services.",
+        "evidenceIds": [
+          "ev-0f93378b5977",
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
+        ],
+        "missingInformation": []
+      },
+      {
+        "id": "review-valuation-field-separation",
+        "severity": "pass",
+        "category": "valuation-separation",
+        "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
+        "evidenceIds": [
+          "ev-6b6628513a49"
+        ],
+        "missingInformation": []
+      }
+    ]
+  },
+  "sections": {
+    "facts": [
+      "At 2025-12-31, cash and cash equivalents were GBP 21,021,729 thousand and treasury investments were GBP 17,614,303 thousand. value=cash and cash equivalents GBP 21,021,729 thousand, treasury investments GBP 17,614,303 thousand; period=instant 2025-12-31; epistemic=extracted [ev-86e40ac15712]",
+      "At 2025-12-31, customer deposits were GBP 36,142,908 thousand. value=36142908; unit=GBP thousands; period=instant 2025-12-31; epistemic=extracted [ev-86e40ac15712]",
+      "At 2025-12-31, customer liabilities were GBP 36,880,199 thousand. value=36880199; unit=GBP thousands; period=instant 2025-12-31; epistemic=extracted [ev-86e40ac15712]",
+      "At 2025-12-31, loans and advances to customers were GBP 2,150,128 thousand. value=2150128; unit=GBP thousands; period=instant 2025-12-31; epistemic=extracted [ev-86e40ac15712]",
+      "At 2025-12-31, the consolidated statement of financial position reported total assets of GBP 43,024,390 thousand. value=43024390; unit=GBP thousands; period=instant 2025-12-31; epistemic=extracted [ev-86e40ac15712]",
+      "At 2025-12-31, total customer balances were GBP 50,182,946 thousand. value=50182946; unit=GBP thousands; period=instant 2025-12-31; epistemic=extracted [ev-86e40ac15712]",
+      "BDO LLP audited the 2025 financial statements and gave a true-and-fair-view opinion for the Group and Parent Company. value=true; period=start 2025-01-01, end 2025-12-31; epistemic=extracted [ev-86e40ac15712]",
+      "Current employees were given the opportunity to sell as part of the employee share sale. value=employee share sale; period=instant 2025-11-24; epistemic=extracted [ev-6b6628513a49]",
+      "Federal Reserve H.10 GBP/USD USD per GBP observation for 2026-03-24 was 1.3383. value=1.3383; unit=USD per GBP; period=instant 2026-03-24; epistemic=observed [ev-0f93378b5977]",
+      "Net profit for the year ended 2025-12-31 was GBP 1,304,628 thousand. value=1304628; unit=GBP thousands; period=start 2025-01-01, end 2025-12-31; epistemic=extracted [ev-86e40ac15712]",
+      "Profit before tax for the year ended 2025-12-31 was GBP 1,713,273 thousand. value=1713273; unit=GBP thousands; period=start 2025-01-01, end 2025-12-31; epistemic=extracted [ev-86e40ac15712]",
+      "Restricted cash and term deposits held in respect of customers include safeguarded funds related to regulated e-money and wealth services. value=safeguarded funds for regulated e-money and wealth services; period=instant 2025-12-31; epistemic=extracted [ev-86e40ac15712]",
+      "Revenue for the year ended 2025-12-31 was GBP 4,515,770 thousand. value=4515770; unit=GBP thousands; period=start 2025-01-01, end 2025-12-31; epistemic=extracted [ev-86e40ac15712]",
+      "Revolut Group Holdings Ltd is the annual-report reporting entity and registered number 12743269 identifies the company. value=GB-12743269; unit=company-number; period=instant 2025-12-31; epistemic=observed [ev-86e40ac15712]",
+      "Revolut announced completion of the share sale on 2025-11-24. value=2025-11-24; period=instant 2025-11-24; epistemic=observed [ev-6b6628513a49]",
+      "TRACE selects peers qualitatively from the banking, payments, multi-currency account, and consumer-fintech context described in the annual report; no peer metrics are supplied. value=Wise plc - qualitative context only for cross-border money movement and multi-currency account functionality., Monzo Bank Holding Group Ltd - qualitative context only for UK app-based banking and consumer current-account services., Starling Bank Ltd - qualitative context only for UK digital banking and business-account services., Klarna Bank AB - qualitative context only for European consumer fintech, checkout payments, and credit products.; epistemic=inferred [ev-86e40ac15712]",
+      "The annual report reports 68.3 million retail customers for 2025. value=68.3; unit=millions; period=end 2025-12-31; epistemic=extracted [ev-86e40ac15712]",
+      "The share sale established an implied headline valuation of USD 75 billion. value=75; unit=USD billions; period=instant 2025-11-24; epistemic=observed [ev-6b6628513a49]",
+      "The transaction was led by Coatue, Greenoaks, Dragoneer, and Fidelity Management & Research Company, with NVentures also participating. value=Coatue, Greenoaks, Dragoneer, Fidelity Management & Research Company, NVentures; period=instant 2025-11-24; epistemic=extracted [ev-6b6628513a49]",
+      "Transaction terms, share rights, preferences, dilution, discounts, transaction volume, and cap-table data were not disclosed. value=not disclosed; period=instant 2025-11-24; epistemic=inferred [ev-6b6628513a49]"
+    ],
+    "inferences": [
+      "Enterprise Value abstained: The observed transaction headline is not an enterprise-value conclusion because operating valuation inputs and bridge evidence are unavailable. [ev-6b6628513a49]",
+      "Headline Valuation concluded at low USD 60 billions; base USD 75 billions; high USD 90 billions using recent-secondary-calibration [ev-6b6628513a49]",
+      "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-6b6628513a49]",
+      "Selected route financial-services: Audited or regulator-linked statements provide financial-asset, liability, or balance-sheet facts. [ev-86e40ac15712]",
+      "Selected route financial-services: Evidence shows bank-like or deposit-led balance-sheet items. [ev-86e40ac15712]",
+      "Selected route financial-services: Evidence shows regulated financial activity such as banking, payments, lending, or electronic money. [ev-86e40ac15712]",
+      "Selected route financial-services: Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation. [ev-6b6628513a49, ev-86e40ac15712]",
+      "Selected route financial-services: Transaction evidence is treated as a route context and not as an enterprise-value or security-level conclusion. [ev-6b6628513a49]",
+      "Sufficiency is sufficient with score 1: Evidence coverage is sufficient for route selection before valuation.",
+      "Total Equity Value abstained: The observed transaction headline is not a total-equity-value conclusion because capitalization and equity bridge evidence are unavailable. [ev-6b6628513a49]"
+    ],
+    "conflicts": [
+      "Duplicate originating-source records were merged and not counted as independent support: revolut-annual-report-2025-audited-statements, revolut-annual-report-2025-primary-context."
+    ],
+    "limitations": [
+      "Cap-table data is not disclosed.",
+      "Cap-table evidence is unavailable in the evidence ledger.",
+      "Dilution evidence is unavailable in the evidence ledger.",
+      "Dilution is not disclosed.",
+      "Merged 2 evidence records that cite the same originating source.",
+      "Share preferences are not disclosed.",
+      "Share preferences are unavailable in the evidence ledger.",
+      "Share rights are not disclosed.",
+      "Share rights are unavailable in the evidence ledger.",
+      "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
+      "TRACE output is decision support, not an appraisal, investment recommendation, benchmark-superiority claim, or contest-compliance claim; official contest rules are not supplied.",
+      "The observed transaction headline is not a total-equity-value conclusion because capitalization and equity bridge evidence are unavailable.",
+      "The observed transaction headline is not an enterprise-value conclusion because operating valuation inputs and bridge evidence are unavailable.",
+      "Transaction discounts are not disclosed.",
+      "Transaction terms are not disclosed.",
+      "Transaction volume is not disclosed."
+    ],
+    "counterarguments": [
+      "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: recent-transaction, software-saas, marketplace, biotech-rnpv, asset-based, general-private-company.",
+      "The headline transaction reference may not transfer to enterprise value, total equity value, or any specific security without capital-structure and instrument-rights evidence [ev-6b6628513a49]."
+    ],
+    "missingInformation": [
+      {
+        "id": "missing-cap-table",
+        "topic": "Cap table",
+        "description": "The evidence ledger does not disclose capitalization table data.",
+        "consequence": "TRACE cannot allocate value across securities or holders.",
+        "requiredFor": [
+          "total-equity-value",
+          "security-level-fair-value"
+        ]
+      },
+      {
+        "id": "missing-dilution",
+        "topic": "Dilution",
+        "description": "The evidence ledger does not disclose fully diluted shares, options, warrants, or convertibles.",
+        "consequence": "TRACE cannot convert company-level headline value into per-security fair value.",
+        "requiredFor": [
+          "total-equity-value",
+          "security-level-fair-value"
+        ]
+      },
+      {
+        "id": "missing-enterprise-value-support",
+        "topic": "Enterprise-value support",
+        "description": "The evidence ledger does not provide operating valuation inputs, net debt or cash bridge items, or transaction terms needed to infer enterprise value from the headline.",
+        "consequence": "TRACE must keep the headline calibration separate from enterprise value.",
+        "requiredFor": [
+          "enterprise-value"
+        ]
+      },
+      {
+        "id": "missing-share-preferences",
+        "topic": "Share preferences",
+        "description": "The evidence ledger does not disclose liquidation or economic preferences.",
+        "consequence": "TRACE cannot determine whether the security participates equally in the headline value.",
+        "requiredFor": [
+          "security-level-fair-value"
+        ]
+      },
+      {
+        "id": "missing-share-rights",
+        "topic": "Share rights",
+        "description": "The evidence ledger does not disclose rights attached to the specific security.",
+        "consequence": "TRACE cannot assign the headline reference to a specific share class.",
+        "requiredFor": [
+          "security-level-fair-value"
+        ]
+      },
+      {
+        "id": "missing-total-equity-capitalization",
+        "topic": "Total equity capitalization",
+        "description": "The evidence ledger does not provide fully diluted capitalization, share count, preference stack, or equity bridge data.",
+        "consequence": "TRACE must keep the headline calibration separate from total equity value.",
+        "requiredFor": [
+          "total-equity-value",
+          "security-level-fair-value"
+        ]
+      }
+    ],
+    "nextDiligenceQuestions": [
+      "What evidence resolves Cap table for total-equity-value, security-level-fair-value?",
+      "What evidence resolves Dilution for total-equity-value, security-level-fair-value?",
+      "What evidence resolves Enterprise-value support for enterprise-value?",
+      "What evidence resolves Share preferences for security-level-fair-value?",
+      "What evidence resolves Share rights for security-level-fair-value?",
+      "What evidence resolves Total equity capitalization for total-equity-value, security-level-fair-value?"
+    ]
+  },
+  "run": {
+    "runId": "run-eeb2e078494576f1",
+    "runtimeVersion": "0.1.0",
+    "command": "trace analyze --input fixtures/evidence/revolut-2025-evidence-bundle.json --out eval/revolut-first-slice",
+    "measurementDate": "2026-03-24",
+    "startedAt": "2026-07-26T08:15:29.384Z",
+    "completedAt": "2026-07-26T08:15:29.399Z",
+    "durationMs": 15,
+    "inputPath": "fixtures/evidence/revolut-2025-evidence-bundle.json",
+    "outputDirectory": "eval/revolut-first-slice",
+    "warnings": [
+      "Merged 2 evidence records that cite the same originating source."
+    ]
+  }
+}
