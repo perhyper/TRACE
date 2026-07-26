@@ -174,6 +174,7 @@ const validReport = {
     identityConfidence: "resolved"
   },
   measurementDate: "2026-03-24",
+  decisionMode: "valuation-review",
   evidence: [validEvidence],
   sufficiency: validSufficiency,
   route: validRoute,

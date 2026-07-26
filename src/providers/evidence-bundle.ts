@@ -5,6 +5,7 @@ import { z } from "zod";
 
 import {
   companyIdentitySchema,
+  decisionModeSchema,
   evidenceRecordSchema,
   isoDateSchema,
   isoDateTimeSchema
@@ -18,12 +19,7 @@ const nonEmptyStringSchema = z.string().trim().min(1);
 const recordIdSchema = nonEmptyStringSchema.max(120);
 const missingDateSortValue = "9999-12-31";
 
-export const evidenceDecisionModeSchema = z.enum([
-  "evidence-ledger",
-  "route-selection",
-  "valuation-review",
-  "full-analysis"
-]);
+export const evidenceDecisionModeSchema = decisionModeSchema;
 
 export const originatingSourceSchema = z
   .object({

@@ -4,7 +4,7 @@ import { pathToFileURL } from "node:url";
 import { CliUsageError, parseTraceArgs, usage } from "./cli/args.js";
 import { runAnalyze } from "./commands/analyze.js";
 
-export function main(argv: readonly string[] = process.argv.slice(2)): number {
+export async function main(argv: readonly string[] = process.argv.slice(2)): Promise<number> {
   if (argv[0] === "--help" || argv[0] === "-h") {
     console.log(usage);
     return 0;
@@ -12,7 +12,7 @@ export function main(argv: readonly string[] = process.argv.slice(2)): number {
 
   try {
     const command = parseTraceArgs(argv);
-    const result = runAnalyze(command);
+    const result = await runAnalyze(command);
     console.log(JSON.stringify(result, null, 2));
     return 0;
   } catch (error) {
@@ -28,5 +28,12 @@ export function main(argv: readonly string[] = process.argv.slice(2)): number {
 const invokedPath = process.argv[1];
 
 if (invokedPath !== undefined && import.meta.url === pathToFileURL(invokedPath).href) {
-  process.exitCode = main();
+  void main()
+    .then((exitCode) => {
+      process.exitCode = exitCode;
+    })
+    .catch((error: unknown) => {
+      console.error(error instanceof Error ? error.message : String(error));
+      process.exitCode = 1;
+    });
 }

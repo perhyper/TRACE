@@ -78,6 +78,13 @@ export const epistemicClassSchema = z.enum([
   "unknown"
 ]);
 
+export const decisionModeSchema = z.enum([
+  "evidence-ledger",
+  "route-selection",
+  "valuation-review",
+  "full-analysis"
+]);
+
 const scalarFactValueSchema = z.union([
   nonEmptyStringSchema,
   z.number(),
@@ -435,6 +442,7 @@ export const reportSchema = z
     schemaVersion: z.literal("trace.report.v1"),
     company: companyIdentitySchema,
     measurementDate: isoDateSchema,
+    decisionMode: decisionModeSchema,
     evidence: z.array(evidenceRecordSchema).min(1),
     sufficiency: sufficiencySchema,
     route: routeDecisionSchema,
@@ -445,10 +453,39 @@ export const reportSchema = z
   })
   .strict();
 
+export const executionLogSchema = z
+  .object({
+    schemaVersion: z.literal("trace.execution-log.v1"),
+    runId: nonEmptyStringSchema.max(160),
+    runtimeVersion: nonEmptyStringSchema.max(80),
+    measurementDate: isoDateSchema,
+    inputPath: nonEmptyStringSchema.max(500),
+    outputPaths: z
+      .object({
+        jsonReport: nonEmptyStringSchema.max(500),
+        markdownReport: nonEmptyStringSchema.max(500),
+        executionLog: nonEmptyStringSchema.max(500)
+      })
+      .strict(),
+    startedAt: isoDateTimeSchema,
+    completedAt: isoDateTimeSchema,
+    durationMs: z.number().nonnegative(),
+    validationWarnings: z.array(nonEmptyStringSchema.max(1_000)),
+    reviewerFindings: z.array(reviewFindingSchema),
+    deterministicIdentifiers: z
+      .object({
+        evidenceLedgerHash: nonEmptyStringSchema.max(80),
+        runtimeResultHash: nonEmptyStringSchema.max(80)
+      })
+      .strict()
+  })
+  .strict();
+
 export type IsoDate = z.infer<typeof isoDateSchema>;
 export type IsoDateTime = z.infer<typeof isoDateTimeSchema>;
 export type SourceClass = z.infer<typeof sourceClassSchema>;
 export type EpistemicClass = z.infer<typeof epistemicClassSchema>;
+export type DecisionMode = z.infer<typeof decisionModeSchema>;
 export type FactValue = z.infer<typeof factValueSchema>;
 export type FactPeriod = z.infer<typeof factPeriodSchema>;
 export type ObservedFact = z.infer<typeof observedFactSchema>;
@@ -478,3 +515,4 @@ export type Review = z.infer<typeof reviewSchema>;
 export type RunMetadata = z.infer<typeof runMetadataSchema>;
 export type ReportSections = z.infer<typeof reportSectionsSchema>;
 export type Report = z.infer<typeof reportSchema>;
+export type ExecutionLog = z.infer<typeof executionLogSchema>;
