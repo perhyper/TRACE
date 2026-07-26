@@ -101,6 +101,24 @@ reproducing the frozen run, followed by `git diff --exit-code` over that run
 directory. Any run with changed frozen hashes must use `--exploratory` and must
 not be reported as the authoritative locked-test result.
 
+## Benchmark Result Snapshot
+
+The once-only locked-test run completed all 18 runner/case executions with no
+technical failures or retries:
+
+| Runner | Claim precision | Route accuracy | Abstention behavior | Completeness |
+| --- | ---: | ---: | ---: | ---: |
+| Baseline A | 0.283019 | 0 | 0 | 0.75 |
+| Baseline B | 0.283019 | 0 | 0 | 0.729167 |
+| TRACE Full | 0.283019 | 0.657407 | 0.708333 | 0.916667 |
+
+TRACE did not improve the frozen primary metric, so the benchmark does not
+support a claim of overall superiority. It did improve the registered route,
+abstention, and completeness measures over both baselines. Remaining locked
+weaknesses include one abstained route, one software case routed as a recent
+transaction, and several route-specific or post-cutoff abstention-reason
+mismatches. Those results are preserved without post-lock tuning.
+
 ## Benchmark Artifacts
 
 Benchmark inputs and outputs are deliberately local and inspectable:

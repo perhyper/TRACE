@@ -128,6 +128,47 @@ Aggregate tables must be regenerated from committed per-case scorer inputs and
 case scores and must match the committed aggregate files before a result is
 reported as locally reproducible.
 
+## Frozen results and hypothesis disposition
+
+The development run `run-dev-generalization-v1` was the final permitted
+pre-freeze tuning run. TRACE Full scored `0.303571` claim precision,
+`0.925926` route accuracy, `1` abstention behavior, and `0.895833`
+completeness. Both baselines had the same `0.303571` claim precision, zero
+route accuracy, and zero abstention behavior.
+
+The authoritative locked-test run `run-locked-test-v1` produced:
+
+| Runner | Claim precision | Citation validity | Route accuracy | Abstention behavior | Completeness | Completion |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Baseline A | 0.283019 | 0.283019 | 0 | 0 | 0.75 | 1 |
+| Baseline B | 0.283019 | 0.283019 | 0 | 0 | 0.729167 | 1 |
+| TRACE Full | 0.283019 | 0.283019 | 0.657407 | 0.708333 | 0.916667 | 1 |
+
+All three runners scored `1` for valuation separation. Historical valuation
+error was `0` where scored because no comparable emitted valuation was
+available; most cases were ineligible or lacked a valid scalar target.
+Reproducibility was skipped because the locked partition was intentionally run
+once. All 18 runner/case executions completed with empty failure records and no
+retry.
+
+Hypothesis disposition:
+
+- H1 is not supported: TRACE Full tied both baselines on the frozen primary
+  claim-precision metric in development and locked-test partitions.
+- H2 is supported on the registered secondary measures: TRACE Full exceeded
+  both baselines on locked route accuracy, abstention behavior, and
+  completeness.
+- H3 is not established by this benchmark: valuation separation held, but
+  claim precision and citation validity did not improve over the baselines.
+- H4 was not tested on the locked partition because the once-only policy takes
+  precedence over a repeated-run reproducibility score.
+
+The locked weaknesses remain visible in the committed case scores: one route
+abstention, one software case selected as `recent-transaction`, and
+route-specific or post-cutoff abstention-reason mismatches. No source, fixture,
+annotation, runner, scorer, weight, aggregate-format, or manifest change was
+made from those results.
+
 ## Source, cutoff, and redistribution audit
 
 Every case has a source audit in the manifest. The audit records approved
