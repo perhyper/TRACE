@@ -1,6 +1,7 @@
 node_modules/
 dist/
 coverage/
+.DS_Store
 .env
 .env.*
 !.env.example
@@ -9,4 +10,3 @@ eval/runs/*
 !eval/runs/.gitkeep
 examples/output/*
 !examples/output/.gitkeep
-
