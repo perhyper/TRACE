@@ -36,3 +36,14 @@
 - Aggregate regeneration: regenerated development aggregate JSON, CSV, and Markdown from stored per-case scorer inputs and case scores; regenerated outputs matched the stored aggregate files.
 - Development-result changes: no code, fixture, annotation, runner-config, scorer, scoring-weight, or aggregate-format changes were made because of development results.
 - Locked-test boundary: the locked-test partition was not run and no locked-test run artifacts were created.
+
+## 2026-07-26 - Development-informed generalization adjustment
+
+- Trigger: review of development run `run-5c191b9ced89d3c9` showed that TRACE Full selected the correct route for only one of six development cases. The failures were caused by general routing gaps: plural clinical and therapeutics terms were not matched, collaboration and developer-tool software language was too narrow, and partner-bank financial technology without deposit-balance evidence could not pass the financial-services gate.
+- Scope: expanded company-agnostic financial-services, software/SaaS, and biotech routing vocabulary; allowed one specific sector record to select a specialized route when the overall sufficiency gate passes; prioritized a supported sector route over an equally scored transaction-context route; and allowed regulated financial activity plus operating metrics to satisfy the financial-services critical-evidence gate.
+- Valuation abstention scope: separated headline, enterprise-value, total-equity-value, and security-level abstention reasons. Added route-specific enterprise-value reasons, explicit post-cutoff pricing/transaction reasons, and a single stable `missing-security-rights-and-cap-table` reason with eligible evidence citations.
+- Tests: added neutral synthetic routing and valuation cases. No company names or locked-test expected outputs were encoded in runtime rules.
+- Reference artifact: regenerated the non-scored Revolut first-slice artifacts because the stable security-level abstention reason changed. Its financial-services route, USD 75 billion headline calibration, and enterprise/security valuation separation remain intact.
+- Development-only verification: a scratch TRACE Full run outside the repository (`dev-routing-check-v1`) completed all six development cases with no failures. Aggregate route accuracy changed from `0.444444` to `0.925926`, abstention behavior from `0.5` to `1`, completeness from `0.854167` to `0.895833`, and evidence-supported claim precision remained `0.303571`.
+- Scoring integrity: the manifest, development fixtures, annotations, baseline runners, scorer, scoring weights, and aggregate format were not changed. The unchanged primary metric is recorded rather than optimized away.
+- Locked-test boundary: the locked-test partition was not run, no locked-test output or score was inspected, and no locked-test run artifacts were created.

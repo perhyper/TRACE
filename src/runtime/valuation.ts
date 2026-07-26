@@ -3,6 +3,7 @@ import {
   valuationOutputSchema
 } from "../domain/schemas.js";
 import type {
+  AnalysisRoute,
   Abstention,
   CurrencyCode,
   EvidenceRecord,
@@ -121,7 +122,10 @@ const limitationPatterns = [
   }
 ];
 
-export function valueFromRecentSecondaryTransaction(ledger: EvidenceLedger): ValuationOutput {
+export function valueFromRecentSecondaryTransaction(
+  ledger: EvidenceLedger,
+  selectedRoute: AnalysisRoute = "general-private-company"
+): ValuationOutput {
   const transactions = extractRecentSecondaryTransactions(ledger);
   const selectedTransaction = selectRecentEligibleTransaction(transactions, ledger.measurementDate);
 
@@ -129,15 +133,15 @@ export function valueFromRecentSecondaryTransaction(ledger: EvidenceLedger): Val
     return valuationOutputSchema.parse({
       headlineValuation: abstainedValuation(
         "headline-valuation",
-        buildNoRecentSecondaryTransactionAbstention(ledger)
+        buildNoHeadlineCalibrationAbstention(ledger)
       ),
       enterpriseValue: abstainedValuation(
         "enterprise-value",
-        buildNoRecentSecondaryTransactionAbstention(ledger)
+        buildEnterpriseValueInputAbstention(ledger, selectedRoute)
       ),
       totalEquityValue: abstainedValuation(
         "total-equity-value",
-        buildNoRecentSecondaryTransactionAbstention(ledger)
+        buildNoTotalEquityValueAbstention(ledger)
       ),
       securityLevelFairValue: abstainedValuation(
         "security-level-fair-value",
@@ -746,8 +750,56 @@ function securityCoverageLimitations(coverage: SecurityInformationCoverage): str
   return limitations.sort(compareStrings);
 }
 
-function buildNoRecentSecondaryTransactionAbstention(ledger: EvidenceLedger): Abstention {
+function buildNoHeadlineCalibrationAbstention(ledger: EvidenceLedger): Abstention {
   const evidenceIds = sortedEvidenceIds(ledger.evidence);
+  const excludedPricing = ledger.excludedRecords.find((record) =>
+    /\b(?:ipo )?pricing\b|\bprice (?:range|per share)\b|\bfully diluted\b/iu.test(
+      `${record.recordId} ${record.sourceTitle}`
+    )
+  );
+  const excludedTransaction = ledger.excludedRecords.find((record) =>
+    /\bacquir(?:e|es|ed|ing|er)|\bacquisition\b|\bmerger\b|\btransaction\b/iu.test(
+      `${record.recordId} ${record.sourceTitle}`
+    )
+  );
+
+  if (excludedPricing !== undefined) {
+    return {
+      reasonCode: "post-cutoff-pricing-not-input",
+      explanation:
+        "TRACE excludes IPO pricing or fully diluted value published after the measurement-date cutoff and does not use it as a headline-valuation input.",
+      missingInformation: [
+        {
+          id: "missing-cutoff-visible-pricing",
+          topic: "Cutoff-visible pricing",
+          description:
+            "The available pricing reference was published after the measurement date and is excluded from model inputs.",
+          consequence: "TRACE abstains from a cutoff-date headline valuation.",
+          requiredFor: ["headline-valuation"]
+        }
+      ],
+      evidenceIds
+    };
+  }
+
+  if (excludedTransaction !== undefined) {
+    return {
+      reasonCode: "post-cutoff-transaction-announcement",
+      explanation:
+        "TRACE excludes an acquisition, merger, or transaction announcement published after the measurement-date cutoff and does not use it as a headline-valuation input.",
+      missingInformation: [
+        {
+          id: "missing-cutoff-visible-transaction",
+          topic: "Cutoff-visible transaction",
+          description:
+            "The available transaction announcement was published after the measurement date and is excluded from model inputs.",
+          consequence: "TRACE abstains from a cutoff-date headline valuation.",
+          requiredFor: ["headline-valuation"]
+        }
+      ],
+      evidenceIds
+    };
+  }
 
   return {
     reasonCode: "recent-secondary-transaction-not-observed",
@@ -761,6 +813,112 @@ function buildNoRecentSecondaryTransactionAbstention(ledger: EvidenceLedger): Ab
           "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
         consequence: "TRACE cannot support the recent-secondary calibration pathway.",
         requiredFor: ["headline-valuation"]
+      }
+    ],
+    evidenceIds
+  };
+}
+
+function buildEnterpriseValueInputAbstention(
+  ledger: EvidenceLedger,
+  selectedRoute: AnalysisRoute
+): Abstention {
+  const evidenceIds = sortedEvidenceIds(ledger.evidence);
+
+  if (selectedRoute === "financial-services") {
+    return {
+      reasonCode: "bank-balance-sheet-not-ev-input",
+      explanation:
+        "Banking, financial-technology, deposit, asset, customer, and operating metrics support the financial-services route but do not by themselves establish enterprise value.",
+      missingInformation: [
+        {
+          id: "missing-financial-services-valuation-inputs",
+          topic: "Financial-services valuation inputs",
+          description:
+            "The evidence does not provide a supported financial-services valuation method and the inputs needed to apply it.",
+          consequence: "TRACE abstains from enterprise value.",
+          requiredFor: ["enterprise-value"]
+        }
+      ],
+      evidenceIds
+    };
+  }
+
+  if (selectedRoute === "biotech-rnpv") {
+    return {
+      reasonCode: "no-product-cash-flow-forecast",
+      explanation:
+        "Clinical, diagnostics, therapeutics, pipeline, or product-stage evidence supports biotech-rNPV routing, but no product cash-flow forecast and probability assumptions support enterprise value.",
+      missingInformation: [
+        {
+          id: "missing-product-cash-flow-forecast",
+          topic: "Product cash-flow forecast",
+          description:
+            "The evidence does not provide product-level cash flows, development probabilities, milestones, and commercial timing required for rNPV.",
+          consequence: "TRACE abstains from enterprise value.",
+          requiredFor: ["enterprise-value"]
+        }
+      ],
+      evidenceIds
+    };
+  }
+
+  if (selectedRoute === "software-saas") {
+    return {
+      reasonCode: "no-public-financial-statements",
+      explanation:
+        "Software product, customer, funding, or qualitative traction evidence supports the software-SaaS route, but no public revenue, margin, or cash-flow statements support enterprise value.",
+      missingInformation: [
+        {
+          id: "missing-public-financial-statements",
+          topic: "Public financial statements",
+          description:
+            "The evidence does not provide a public revenue, margin, cash-flow, or comparable-company base for enterprise value.",
+          consequence: "TRACE abstains from enterprise value.",
+          requiredFor: ["enterprise-value"]
+        }
+      ],
+      evidenceIds
+    };
+  }
+
+  return buildNoRecentSecondaryTransactionAbstention(ledger);
+}
+
+function buildNoTotalEquityValueAbstention(ledger: EvidenceLedger): Abstention {
+  return {
+    reasonCode: "missing-total-equity-capitalization",
+    explanation:
+      "TRACE cannot conclude total equity value without a supported company valuation and fully diluted capitalization or equity-bridge evidence.",
+    missingInformation: [
+      {
+        id: "missing-total-equity-capitalization",
+        topic: "Total equity capitalization",
+        description:
+          "The evidence does not provide a supported company valuation, fully diluted capitalization, share count, preference stack, or equity bridge.",
+        consequence: "TRACE abstains from total equity value.",
+        requiredFor: ["total-equity-value"]
+      }
+    ],
+    evidenceIds: sortedEvidenceIds(ledger.evidence)
+  };
+}
+
+function buildNoRecentSecondaryTransactionAbstention(ledger: EvidenceLedger): Abstention {
+  const evidenceIds = sortedEvidenceIds(ledger.evidence);
+
+  return {
+    reasonCode: "recent-secondary-transaction-not-observed",
+    explanation:
+      "TRACE cannot calibrate a company valuation because no measurement-date-eligible recent secondary transaction with a disclosed headline value was parsed.",
+    missingInformation: [
+      {
+        id: "missing-recent-secondary-transaction",
+        topic: "Recent secondary transaction",
+        description:
+          "The evidence ledger does not contain transaction date, transaction type, currency, and disclosed headline value for a recent secondary transaction.",
+        consequence: "TRACE cannot support the recent-secondary calibration pathway.",
+        requiredFor: ["enterprise-value"]
       }
     ],
     evidenceIds
@@ -836,11 +994,11 @@ function buildSecurityLevelAbstention(
   const missingInformation = buildSecurityLevelMissingInformation(coverage);
 
   return {
-    reasonCode: "security-rights-and-cap-table-not-disclosed",
+    reasonCode: "missing-security-rights-and-cap-table",
     explanation:
       "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
     missingInformation,
-    evidenceIds: [...evidenceIds]
+    evidenceIds: uniqueSorted([...evidenceIds, ...sortedEvidenceIds(ledger.evidence)])
   };
 }
 

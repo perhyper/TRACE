@@ -7,7 +7,7 @@
 - Sufficiency: sufficient (1)
 - Route: financial-services
 - Review: passed
-- Run ID: run-eeb2e078494576f1
+- Run ID: run-2aae4f2c21048a7b
 
 ## Evidence Ledger
 | Evidence ID | Source class | Published | Retrieved | Source | Excerpt |
@@ -41,11 +41,11 @@
 ## Inferences
 - Enterprise Value abstained: The observed transaction headline is not an enterprise-value conclusion because operating valuation inputs and bridge evidence are unavailable. [ev-6b6628513a49]
 - Headline Valuation concluded at low USD 60 billions; base USD 75 billions; high USD 90 billions using recent-secondary-calibration [ev-6b6628513a49]
-- Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-6b6628513a49]
+- Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-0f93378b5977, ev-6b6628513a49, ev-86e40ac15712]
 - Selected route financial-services: Audited or regulator-linked statements provide financial-asset, liability, or balance-sheet facts. [ev-86e40ac15712]
+- Selected route financial-services: Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money. [ev-86e40ac15712]
 - Selected route financial-services: Evidence shows bank-like or deposit-led balance-sheet items. [ev-86e40ac15712]
-- Selected route financial-services: Evidence shows regulated financial activity such as banking, payments, lending, or electronic money. [ev-86e40ac15712]
-- Selected route financial-services: Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation. [ev-6b6628513a49, ev-86e40ac15712]
+- Selected route financial-services: Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation. [ev-6b6628513a49, ev-86e40ac15712]
 - Selected route financial-services: Transaction evidence is treated as a route context and not as an enterprise-value or security-level conclusion. [ev-6b6628513a49]
 - Sufficiency is sufficient with score 1: Evidence coverage is sufficient for route selection before valuation.
 - Total Equity Value abstained: The observed transaction headline is not a total-equity-value conclusion because capitalization and equity bridge evidence are unavailable. [ev-6b6628513a49]
@@ -99,9 +99,9 @@
 
 ### Security-Level Fair Value
 - Status: abstained
-- Reason: security-rights-and-cap-table-not-disclosed
+- Reason: missing-security-rights-and-cap-table
 - Explanation: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.
-- Evidence: ev-6b6628513a49
+- Evidence: ev-0f93378b5977, ev-6b6628513a49, ev-86e40ac15712
 - Missing information:
 | ID | Topic | Required for | Consequence |
 | --- | --- | --- | --- |
@@ -132,7 +132,7 @@
 - Duplicate originating-source records were merged and not counted as independent support: revolut-annual-report-2025-audited-statements, revolut-annual-report-2025-primary-context.
 
 ## Counterarguments
-- Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: recent-transaction, software-saas, marketplace, biotech-rnpv, asset-based, general-private-company.
+- Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: software-saas, marketplace, biotech-rnpv, asset-based, recent-transaction, general-private-company.
 - The headline transaction reference may not transfer to enterprise value, total equity value, or any specific security without capital-structure and instrument-rights evidence [ev-6b6628513a49].
 
 ## Missing Information
@@ -159,23 +159,23 @@
 
 | ID | Severity | Category | Evidence | Message |
 | --- | --- | --- | --- | --- |
-| review-abstention-triggers | pass | abstention | ev-6b6628513a49 | Abstained valuation fields include missing-information reasons, and security-level triggers are respected. |
-| review-calculation-integrity | pass | calculation | ev-6b6628513a49 | Concluded valuation ranges are internally ordered, unit-consistent, and evidence-cited. |
+| review-abstention-triggers | pass | abstention | ev-0f93378b5977, ev-6b6628513a49, ev-86e40ac15712 | Abstained valuation fields include missing-information reasons, and security-level triggers are respected. |
+| review-calculation-integrity | pass | calculation | ev-0f93378b5977, ev-6b6628513a49, ev-86e40ac15712 | Concluded valuation ranges are internally ordered, unit-consistent, and evidence-cited. |
 | review-citation-support | pass | evidence | ev-0f93378b5977, ev-6b6628513a49, ev-86e40ac15712 | Sufficiency, route, and valuation claims cite included evidence IDs where citations are required. |
 | review-cutoff-compliance | pass | cutoff | ev-0f93378b5977, ev-6b6628513a49, ev-86e40ac15712 | Included evidence satisfies the measurement-date publication cutoff. |
 | review-entity-certainty | pass | entity | ev-6b6628513a49, ev-86e40ac15712 | Target identity is resolved and supported by included evidence. |
 | review-evidence-coverage | pass | evidence | ev-0f93378b5977, ev-6b6628513a49, ev-86e40ac15712 | Evidence coverage satisfies the sufficiency gate for route selection. |
 | review-route-appropriateness | pass | route | ev-0f93378b5977, ev-6b6628513a49, ev-86e40ac15712 | Route selection is consistent with sufficiency status: financial-services. |
-| review-valuation-field-separation | pass | valuation-separation | ev-6b6628513a49 | Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields. |
+| review-valuation-field-separation | pass | valuation-separation | ev-0f93378b5977, ev-6b6628513a49, ev-86e40ac15712 | Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields. |
 
 ## Run Metadata
-- Run ID: run-eeb2e078494576f1
+- Run ID: run-2aae4f2c21048a7b
 - Runtime version: 0.1.0
 - Command: trace analyze --input fixtures/evidence/revolut-2025-evidence-bundle.json --out eval/revolut-first-slice
 - Measurement date: 2026-03-24
-- Started at: 2026-07-26T08:15:29.384Z
-- Completed at: 2026-07-26T08:15:29.399Z
-- Duration ms: 15
+- Started at: 2026-07-26T13:28:50.677Z
+- Completed at: 2026-07-26T13:28:50.690Z
+- Duration ms: 13
 - Input path: fixtures/evidence/revolut-2025-evidence-bundle.json
 - Output directory: eval/revolut-first-slice
 - Warnings:

@@ -252,6 +252,124 @@ describe("sufficiency gate and sector routing", () => {
     expect(result.route.selectedRoute).not.toBe("financial-services");
   });
 
+  it("selects financial-services from partner-bank activity and operating metrics without deposit balances", () => {
+    const filing = makeRecord("partner-bank-filing", {
+      sourceClass: "regulatory-filing",
+      shortExcerpt:
+        "Example Wallet Ltd provides financial technology products through partner banks and reports active members and purchase volume.",
+      observedFacts: [
+        makeFact(
+          "partner-bank-model",
+          "Example Wallet Ltd provides financial technology products through partner banks."
+        ),
+        makeFact(
+          "member-volume",
+          "The company reported active members, purchase volume and a net loss."
+        )
+      ]
+    });
+    const filingAnnouncement = makeRecord("filing-announcement", {
+      shortExcerpt: "Example Wallet Ltd filed a public registration statement.",
+      observedFacts: [
+        makeFact(
+          "filing-identity",
+          "Example Wallet Ltd filed a public registration statement."
+        )
+      ]
+    });
+    const result = selectAnalysisRoute(
+      normalizeEvidenceBundle(
+        makeBundle([filing, filingAnnouncement], {
+          target: sparseTarget
+        })
+      )
+    );
+
+    expect(result.sufficiency.status).toBe("sufficient");
+    expect(result.route.status).toBe("selected");
+
+    if (result.route.status !== "selected") {
+      throw new Error("Expected a selected route decision");
+    }
+
+    expect(result.route.selectedRoute).toBe("financial-services");
+    expect(result.route.selectedReasons.map((reason) => reason.summary).join("\n")).toContain(
+      "partner-bank services"
+    );
+  });
+
+  it("selects software-saas from a sparse developer-tool record", () => {
+    const productRecord = makeRecord("developer-tool", {
+      shortExcerpt: "Example Wallet Ltd sells issue tracking software to product teams.",
+      observedFacts: [
+        makeFact(
+          "developer-tool-product",
+          "Example Wallet Ltd sells an issue tracking developer tool to software teams."
+        )
+      ]
+    });
+    const operatingRecord = makeRecord("developer-tool-operations", {
+      sourceClass: "news",
+      shortExcerpt: "The company reports customers and profit.",
+      observedFacts: [
+        makeFact("developer-tool-customers", "The company reports customers and profit.")
+      ]
+    });
+    const result = selectAnalysisRoute(
+      normalizeEvidenceBundle(
+        makeBundle([productRecord, operatingRecord], {
+          target: sparseTarget
+        })
+      )
+    );
+
+    expect(result.route.status).toBe("selected");
+
+    if (result.route.status !== "selected") {
+      throw new Error("Expected a selected route decision");
+    }
+
+    expect(result.route.selectedRoute).toBe("software-saas");
+  });
+
+  it("recognizes plural clinical-trial and therapeutics evidence as biotech-rnpv", () => {
+    const clinicalRecord = makeRecord("clinical-program", {
+      shortExcerpt:
+        "Example Wallet Ltd develops diagnostics and therapeutics supported by clinical trials.",
+      observedFacts: [
+        makeFact(
+          "clinical-program-fact",
+          "Example Wallet Ltd develops diagnostics and therapeutics supported by clinical trials."
+        )
+      ]
+    });
+    const operatingRecord = makeRecord("clinical-operations", {
+      sourceClass: "regulatory-filing",
+      shortExcerpt: "The company reported no revenue and a net loss before commercial launch.",
+      observedFacts: [
+        makeFact(
+          "clinical-operating-fact",
+          "The company reported no revenue and a net loss before commercial launch."
+        )
+      ]
+    });
+    const result = selectAnalysisRoute(
+      normalizeEvidenceBundle(
+        makeBundle([clinicalRecord, operatingRecord], {
+          target: sparseTarget
+        })
+      )
+    );
+
+    expect(result.route.status).toBe("selected");
+
+    if (result.route.status !== "selected") {
+      throw new Error("Expected a selected route decision");
+    }
+
+    expect(result.route.selectedRoute).toBe("biotech-rnpv");
+  });
+
   it("keeps repeated routing deterministic", () => {
     const ledger = makeRevolutLedger();
     const first = selectAnalysisRoute(ledger);

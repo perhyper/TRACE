@@ -58,11 +58,11 @@ const auditedOrRegulatorLinkedSourceClasses = new Set([
 
 const routeOrder = [
   "financial-services",
-  "recent-transaction",
   "software-saas",
   "marketplace",
   "biotech-rnpv",
   "asset-based",
+  "recent-transaction",
   "general-private-company",
   "insufficient-evidence"
 ] satisfies readonly AnalysisRoute[];
@@ -81,11 +81,15 @@ const financialBalanceSheetPatterns = [
 ];
 
 const regulatedFinancialActivityPatterns = [
-  /\bbank(?:ing)?\b/iu,
+  /\bbank(?:s|ing)?\b/iu,
+  /\bpartner[- ]banks?\b/iu,
+  /\bfinancial (?:services?|technology)\b/iu,
   /\belectronic money\b/iu,
   /\be-money\b/iu,
   /\bpayments?\b/iu,
   /\bpayment services?\b/iu,
+  /\bpurchase volume\b/iu,
+  /\bprimary account relationship\b/iu,
   /\blending\b/iu,
   /\bcredit\b/iu,
   /\bregulated\b/iu,
@@ -108,10 +112,15 @@ const operatingFactPatterns = [
   /\brevenue\b/iu,
   /\bincome\b/iu,
   /\bprofit\b/iu,
+  /\bnet loss\b/iu,
   /\bcustomers?\b/iu,
+  /\bactive members?\b/iu,
   /\bdeposits?\b/iu,
   /\bassets?\b/iu,
   /\btransaction volume\b/iu,
+  /\bpurchase volume\b/iu,
+  /\bpayment volume\b/iu,
+  /\bprimary account relationship\b/iu,
   /\bgross merchandise value\b/iu
 ];
 
@@ -127,9 +136,18 @@ const transactionPatterns = [
 const softwarePatterns = [
   /\bsoftware\b/iu,
   /\bsaas\b/iu,
-  /\bsubscription\b/iu,
+  /\bsubscriptions?\b/iu,
   /\barr\b/iu,
-  /\bcloud\b/iu
+  /\bcloud\b/iu,
+  /\bdeveloper tools?\b/iu,
+  /\bissue tracking\b/iu,
+  /\bproduct tracking\b/iu,
+  /\bonline whiteboards?\b/iu,
+  /\bcollaborative design\b/iu,
+  /\bproduct-development collaboration\b/iu,
+  /\bpaid plans?\b/iu,
+  /\bper (?:editor|user|seat)(?: per month)?\b/iu,
+  /\bmultiplayer\b/iu
 ];
 
 const marketplacePatterns = [
@@ -141,12 +159,18 @@ const marketplacePatterns = [
 ];
 
 const biotechPatterns = [
-  /\bbiotech\b/iu,
-  /\bclinical trial\b/iu,
+  /\bbiotech(?:nology)?\b/iu,
+  /\bclinical (?:trials?|stud(?:y|ies)|stage)\b/iu,
   /\bpipeline\b/iu,
   /\bfda\b/iu,
   /\brnpv\b/iu,
-  /\btherapeutic\b/iu
+  /\btherapeutics?\b/iu,
+  /\bdiagnostics?\b/iu,
+  /\bdrug candidates?\b/iu,
+  /\bgenome editing\b/iu,
+  /\bgene editing\b/iu,
+  /\bcrispr\b/iu,
+  /\bcommercial(?:ly)? launch\b/iu
 ];
 
 const assetBasedPatterns = [
@@ -271,7 +295,7 @@ function buildRouteSignals(evidence: readonly EvidenceRecord[]): readonly RouteS
       "software-saas",
       evidence,
       softwarePatterns,
-      "Evidence includes software, SaaS, subscription, ARR, or cloud-business facts."
+      "Evidence describes software products for team collaboration, product or issue tracking, developer tools, and paid or subscription plans."
     ),
     buildPatternSignal(
       "marketplace",
@@ -283,7 +307,7 @@ function buildRouteSignals(evidence: readonly EvidenceRecord[]): readonly RouteS
       "biotech-rnpv",
       evidence,
       biotechPatterns,
-      "Evidence includes biotech, clinical, pipeline, FDA, therapeutic, or rNPV facts."
+      "Evidence describes a biotech, diagnostics, or therapeutics company with clinical studies, pipeline, FDA, CRISPR, product-launch, or rNPV facts."
     ),
     buildPatternSignal(
       "asset-based",
@@ -311,7 +335,7 @@ function buildRouteSignals(evidence: readonly EvidenceRecord[]): readonly RouteS
 function chooseSelectedRoute(signals: readonly RouteSignal[]): AnalysisRoute {
   const financialSignal = signalForRoute(signals, "financial-services");
 
-  if (financialSignal.score >= 0.6 && hasCriticalFinancialServicesEvidence(financialSignal)) {
+  if (financialSignal.score >= 0.4 && hasCriticalFinancialServicesEvidence(financialSignal)) {
     return "financial-services";
   }
 
@@ -319,7 +343,7 @@ function chooseSelectedRoute(signals: readonly RouteSignal[]): AnalysisRoute {
     (signal) => signal.route !== "general-private-company" && signal.route !== "financial-services"
   );
   const selectedSpecializedSignal = [...specializedSignals]
-    .filter((signal) => signal.score >= 0.55)
+    .filter((signal) => signal.score >= 0.3)
     .sort(compareRouteSignalsByScore)[0];
 
   return selectedSpecializedSignal?.route ?? "general-private-company";
@@ -331,10 +355,11 @@ function hasCriticalFinancialServicesEvidence(signal: RouteSignal): boolean {
 
 function hasCriticalFinancialServicesSignals(signals: FinancialSignals): boolean {
   return (
-    signals.balanceSheet.count > 0 &&
-    (signals.regulatedActivity.count > 0 ||
-      signals.auditedFinancials.count > 0 ||
-      signals.operatingFacts.count > 0)
+    (signals.balanceSheet.count > 0 &&
+      (signals.regulatedActivity.count > 0 ||
+        signals.auditedFinancials.count > 0 ||
+        signals.operatingFacts.count > 0)) ||
+    (signals.regulatedActivity.count > 0 && signals.operatingFacts.count > 0)
   );
 }
 
@@ -416,7 +441,7 @@ function buildFinancialServicesReasons(signals: FinancialSignals): RouteReason[]
 
   if (signals.regulatedActivity.evidenceIds.length > 0) {
     reasons.push({
-      summary: "Evidence shows regulated financial activity such as banking, payments, lending, or electronic money.",
+      summary: "Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money.",
       evidenceIds: signals.regulatedActivity.evidenceIds
     });
   }
@@ -430,7 +455,7 @@ function buildFinancialServicesReasons(signals: FinancialSignals): RouteReason[]
 
   if (signals.operatingFacts.evidenceIds.length > 0) {
     reasons.push({
-      summary: "Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation.",
+      summary: "Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation.",
       evidenceIds: signals.operatingFacts.evidenceIds
     });
   }

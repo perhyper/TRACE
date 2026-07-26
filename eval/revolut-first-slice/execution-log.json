@@ -1,6 +1,6 @@
 {
   "schemaVersion": "trace.execution-log.v1",
-  "runId": "run-eeb2e078494576f1",
+  "runId": "run-2aae4f2c21048a7b",
   "runtimeVersion": "0.1.0",
   "measurementDate": "2026-03-24",
   "inputPath": "fixtures/evidence/revolut-2025-evidence-bundle.json",
@@ -9,9 +9,9 @@
     "markdownReport": "eval/revolut-first-slice/report.md",
     "executionLog": "eval/revolut-first-slice/execution-log.json"
   },
-  "startedAt": "2026-07-26T08:15:29.384Z",
-  "completedAt": "2026-07-26T08:15:29.399Z",
-  "durationMs": 15,
+  "startedAt": "2026-07-26T13:28:50.677Z",
+  "completedAt": "2026-07-26T13:28:50.690Z",
+  "durationMs": 13,
   "validationWarnings": [
     "Merged 2 evidence records that cite the same originating source."
   ],
@@ -22,7 +22,9 @@
       "category": "abstention",
       "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
       "evidenceIds": [
-        "ev-6b6628513a49"
+        "ev-0f93378b5977",
+        "ev-6b6628513a49",
+        "ev-86e40ac15712"
       ],
       "missingInformation": []
     },
@@ -32,7 +34,9 @@
       "category": "calculation",
       "message": "Concluded valuation ranges are internally ordered, unit-consistent, and evidence-cited.",
       "evidenceIds": [
-        "ev-6b6628513a49"
+        "ev-0f93378b5977",
+        "ev-6b6628513a49",
+        "ev-86e40ac15712"
       ],
       "missingInformation": []
     },
@@ -101,13 +105,15 @@
       "category": "valuation-separation",
       "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
       "evidenceIds": [
-        "ev-6b6628513a49"
+        "ev-0f93378b5977",
+        "ev-6b6628513a49",
+        "ev-86e40ac15712"
       ],
       "missingInformation": []
     }
   ],
   "deterministicIdentifiers": {
     "evidenceLedgerHash": "f989baa85cb660c376d22b1816fad9adf5edcb30d83165b73b9f490498476ad8",
-    "runtimeResultHash": "eeb2e078494576f18af9d6057580ab82c1356fa9a1444b5e31dda5e65ea7b124"
+    "runtimeResultHash": "2aae4f2c21048a7bcb86e1acb00a1aa94b17c2c31ea3244ddc506f403fe05cb4"
   }
 }

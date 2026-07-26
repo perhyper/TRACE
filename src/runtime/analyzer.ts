@@ -18,7 +18,7 @@ export function runTraceAnalyzer(ledger: EvidenceLedger): ReportRuntimeResult {
   const routeResult = selectAnalysisRoute(ledger);
   const valuation =
     routeResult.route.status === "selected"
-      ? valueFromRecentSecondaryTransaction(ledger)
+      ? valueFromRecentSecondaryTransaction(ledger, routeResult.route.selectedRoute)
       : abstainValuationForRouteAbstention(routeResult.route);
 
   return {

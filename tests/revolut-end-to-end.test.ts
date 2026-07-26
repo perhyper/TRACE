@@ -164,7 +164,7 @@ function expectSecurityLevelAbstention(conclusion: ValuationConclusion): void {
 
   expect(conclusion.field).toBe("security-level-fair-value");
   expect(conclusion.abstention.reasonCode).toBe(
-    "security-rights-and-cap-table-not-disclosed"
+    "missing-security-rights-and-cap-table"
   );
   expect(conclusion.abstention.explanation).toContain("share rights");
   expect(conclusion.abstention.explanation).toContain("cap-table data");

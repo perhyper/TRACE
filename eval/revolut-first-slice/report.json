@@ -338,7 +338,7 @@
         ]
       },
       {
-        "summary": "Evidence shows regulated financial activity such as banking, payments, lending, or electronic money.",
+        "summary": "Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money.",
         "evidenceIds": [
           "ev-86e40ac15712"
         ]
@@ -350,7 +350,7 @@
         ]
       },
       {
-        "summary": "Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation.",
+        "summary": "Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation.",
         "evidenceIds": [
           "ev-6b6628513a49",
           "ev-86e40ac15712"
@@ -376,7 +376,7 @@
             ]
           },
           {
-            "summary": "Evidence shows regulated financial activity such as banking, payments, lending, or electronic money.",
+            "summary": "Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money.",
             "evidenceIds": [
               "ev-86e40ac15712"
             ]
@@ -388,7 +388,7 @@
             ]
           },
           {
-            "summary": "Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation.",
+            "summary": "Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation.",
             "evidenceIds": [
               "ev-6b6628513a49",
               "ev-86e40ac15712"
@@ -396,19 +396,6 @@
           },
           {
             "summary": "Transaction evidence is treated as a route context and not as an enterprise-value or security-level conclusion.",
-            "evidenceIds": [
-              "ev-6b6628513a49"
-            ]
-          }
-        ]
-      },
-      {
-        "route": "recent-transaction",
-        "status": "rejected",
-        "score": 0.3333,
-        "reasons": [
-          {
-            "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
             "evidenceIds": [
               "ev-6b6628513a49"
             ]
@@ -471,6 +458,19 @@
               "ev-0f93378b5977",
               "ev-6b6628513a49",
               "ev-86e40ac15712"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "recent-transaction",
+        "status": "rejected",
+        "score": 0.3333,
+        "reasons": [
+          {
+            "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+            "evidenceIds": [
+              "ev-6b6628513a49"
             ]
           }
         ]
@@ -493,19 +493,6 @@
     ],
     "rejectedRoutes": [
       {
-        "route": "recent-transaction",
-        "status": "rejected",
-        "score": 0.3333,
-        "reasons": [
-          {
-            "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
-            "evidenceIds": [
-              "ev-6b6628513a49"
-            ]
-          }
-        ]
-      },
-      {
         "route": "software-saas",
         "status": "rejected",
         "score": 0,
@@ -561,6 +548,19 @@
               "ev-0f93378b5977",
               "ev-6b6628513a49",
               "ev-86e40ac15712"
+            ]
+          }
+        ]
+      },
+      {
+        "route": "recent-transaction",
+        "status": "rejected",
+        "score": 0.3333,
+        "reasons": [
+          {
+            "summary": "Transaction evidence may support later calibration, but sector routing is governed by bank-like operating and balance-sheet facts.",
+            "evidenceIds": [
+              "ev-6b6628513a49"
             ]
           }
         ]
@@ -682,7 +682,7 @@
       "status": "abstained",
       "field": "security-level-fair-value",
       "abstention": {
-        "reasonCode": "security-rights-and-cap-table-not-disclosed",
+        "reasonCode": "missing-security-rights-and-cap-table",
         "explanation": "TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available.",
         "missingInformation": [
           {
@@ -725,7 +725,9 @@
           }
         ],
         "evidenceIds": [
-          "ev-6b6628513a49"
+          "ev-0f93378b5977",
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
         ]
       }
     }
@@ -740,7 +742,9 @@
         "category": "abstention",
         "message": "Abstained valuation fields include missing-information reasons, and security-level triggers are respected.",
         "evidenceIds": [
-          "ev-6b6628513a49"
+          "ev-0f93378b5977",
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
         ],
         "missingInformation": []
       },
@@ -750,7 +754,9 @@
         "category": "calculation",
         "message": "Concluded valuation ranges are internally ordered, unit-consistent, and evidence-cited.",
         "evidenceIds": [
-          "ev-6b6628513a49"
+          "ev-0f93378b5977",
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
         ],
         "missingInformation": []
       },
@@ -819,7 +825,9 @@
         "category": "valuation-separation",
         "message": "Headline valuation, enterprise value, total equity value, and security-level fair value remain separate fields.",
         "evidenceIds": [
-          "ev-6b6628513a49"
+          "ev-0f93378b5977",
+          "ev-6b6628513a49",
+          "ev-86e40ac15712"
         ],
         "missingInformation": []
       }
@@ -851,11 +859,11 @@
     "inferences": [
       "Enterprise Value abstained: The observed transaction headline is not an enterprise-value conclusion because operating valuation inputs and bridge evidence are unavailable. [ev-6b6628513a49]",
       "Headline Valuation concluded at low USD 60 billions; base USD 75 billions; high USD 90 billions using recent-secondary-calibration [ev-6b6628513a49]",
-      "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-6b6628513a49]",
+      "Security-Level Fair Value abstained: TRACE abstains from security-level fair value because share rights, preferences, dilution, and cap-table data are not sufficiently available. [ev-0f93378b5977, ev-6b6628513a49, ev-86e40ac15712]",
       "Selected route financial-services: Audited or regulator-linked statements provide financial-asset, liability, or balance-sheet facts. [ev-86e40ac15712]",
+      "Selected route financial-services: Evidence describes banking or financial-technology products such as partner-bank services, payments, lending, or electronic money. [ev-86e40ac15712]",
       "Selected route financial-services: Evidence shows bank-like or deposit-led balance-sheet items. [ev-86e40ac15712]",
-      "Selected route financial-services: Evidence shows regulated financial activity such as banking, payments, lending, or electronic money. [ev-86e40ac15712]",
-      "Selected route financial-services: Operating facts such as revenue, income, customers, deposits, or assets require financial-services interpretation. [ev-6b6628513a49, ev-86e40ac15712]",
+      "Selected route financial-services: Operating facts such as revenue, profit or loss, customers or active members, deposits, assets, and purchase or payment volume require financial-services interpretation. [ev-6b6628513a49, ev-86e40ac15712]",
       "Selected route financial-services: Transaction evidence is treated as a route context and not as an enterprise-value or security-level conclusion. [ev-6b6628513a49]",
       "Sufficiency is sufficient with score 1: Evidence coverage is sufficient for route selection before valuation.",
       "Total Equity Value abstained: The observed transaction headline is not a total-equity-value conclusion because capitalization and equity bridge evidence are unavailable. [ev-6b6628513a49]"
@@ -882,7 +890,7 @@
       "Transaction volume is not disclosed."
     ],
     "counterarguments": [
-      "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: recent-transaction, software-saas, marketplace, biotech-rnpv, asset-based, general-private-company.",
+      "Rejected route candidates could become relevant if new evidence changes the sufficiency and route facts: software-saas, marketplace, biotech-rnpv, asset-based, recent-transaction, general-private-company.",
       "The headline transaction reference may not transfer to enterprise value, total equity value, or any specific security without capital-structure and instrument-rights evidence [ev-6b6628513a49]."
     ],
     "missingInformation": [
@@ -954,13 +962,13 @@
     ]
   },
   "run": {
-    "runId": "run-eeb2e078494576f1",
+    "runId": "run-2aae4f2c21048a7b",
     "runtimeVersion": "0.1.0",
     "command": "trace analyze --input fixtures/evidence/revolut-2025-evidence-bundle.json --out eval/revolut-first-slice",
     "measurementDate": "2026-03-24",
-    "startedAt": "2026-07-26T08:15:29.384Z",
-    "completedAt": "2026-07-26T08:15:29.399Z",
-    "durationMs": 15,
+    "startedAt": "2026-07-26T13:28:50.677Z",
+    "completedAt": "2026-07-26T13:28:50.690Z",
+    "durationMs": 13,
     "inputPath": "fixtures/evidence/revolut-2025-evidence-bundle.json",
     "outputDirectory": "eval/revolut-first-slice",
     "warnings": [

@@ -298,11 +298,73 @@ describe("recent-secondary valuation calibration", () => {
     }
 
     expect(valuation.securityLevelFairValue.abstention.reasonCode).toBe(
-      "security-rights-and-cap-table-not-disclosed"
+      "missing-security-rights-and-cap-table"
     );
     expect(
       valuation.securityLevelFairValue.abstention.missingInformation.map((missing) => missing.topic)
     ).toEqual(["Cap table", "Dilution", "Share preferences", "Share rights"]);
+  });
+
+  it("uses route-specific enterprise-value abstention reasons", () => {
+    const ledger = normalizedLedger([
+      makeRecord("biotech-program", {
+        shortExcerpt: "The company has clinical trials but no product cash-flow forecast.",
+        observedFacts: [
+          makeFact(
+            "biotech-program-fact",
+            "The company has clinical trials but no product cash-flow forecast."
+          )
+        ]
+      })
+    ]);
+    const valuation = valueFromRecentSecondaryTransaction(ledger, "biotech-rnpv");
+
+    expect(valuation.enterpriseValue.status).toBe("abstained");
+
+    if (valuation.enterpriseValue.status !== "abstained") {
+      throw new Error("Expected enterprise-value abstention");
+    }
+
+    expect(valuation.enterpriseValue.abstention.reasonCode).toBe(
+      "no-product-cash-flow-forecast"
+    );
+    expect(valuation.enterpriseValue.abstention.evidenceIds).toHaveLength(1);
+  });
+
+  it("labels post-cutoff IPO pricing as excluded input", () => {
+    const eligibleRecord = makeRecord("ipo-filing", {
+      publishedDate: "2026-03-20",
+      shortExcerpt: "The company filed for an IPO but did not determine a price range.",
+      observedFacts: [
+        makeFact(
+          "ipo-filing-fact",
+          "The company filed for an IPO but did not determine a price range."
+        )
+      ]
+    });
+    const postCutoffPricing = makeRecord("ipo-pricing", {
+      sourceTitle: "Company announces IPO pricing",
+      publishedDate: "2026-03-25",
+      shortExcerpt: "The IPO priced after the measurement date.",
+      observedFacts: [
+        makeFact("ipo-pricing-fact", "The IPO priced after the measurement date.")
+      ]
+    });
+    const valuation = valueFromRecentSecondaryTransaction(
+      normalizedLedger([eligibleRecord, postCutoffPricing]),
+      "financial-services"
+    );
+
+    expect(valuation.headlineValuation.status).toBe("abstained");
+
+    if (valuation.headlineValuation.status !== "abstained") {
+      throw new Error("Expected headline-valuation abstention");
+    }
+
+    expect(valuation.headlineValuation.abstention.reasonCode).toBe(
+      "post-cutoff-pricing-not-input"
+    );
+    expect(valuation.headlineValuation.abstention.evidenceIds).toHaveLength(1);
   });
 
   it("keeps calibration arithmetic deterministic across repeated and reordered ledgers", () => {
