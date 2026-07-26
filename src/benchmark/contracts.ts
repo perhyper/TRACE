@@ -772,6 +772,14 @@ export type BenchmarkCaseInput = z.infer<typeof benchmarkCaseInputSchema>;
 export type BenchmarkCompiledCase = z.infer<typeof benchmarkCompiledCaseSchema>;
 export type BenchmarkFailureRecord = z.infer<typeof benchmarkFailureRecordSchema>;
 export type BenchmarkTimingMetadata = z.infer<typeof benchmarkTimingMetadataSchema>;
+export type BenchmarkCitation = z.infer<typeof benchmarkCitationSchema>;
+export type BenchmarkEmittedClaim = z.infer<typeof benchmarkEmittedClaimSchema>;
+export type BenchmarkEmittedRoute = z.infer<typeof benchmarkEmittedRouteSchema>;
+export type BenchmarkEmittedAbstention = z.infer<typeof benchmarkEmittedAbstentionSchema>;
+export type BenchmarkEmittedValuation = z.infer<typeof benchmarkEmittedValuationSchema>;
+export type BenchmarkNormalizedRunnerOutput = z.infer<
+  typeof benchmarkNormalizedRunnerOutputSchema
+>;
 export type BenchmarkRunnerOutput = z.infer<typeof benchmarkRunnerOutputSchema>;
 export type BenchmarkScorerInput = z.infer<typeof benchmarkScorerInputSchema>;
 export type BenchmarkMetricScore = z.infer<typeof benchmarkMetricScoreSchema>;
