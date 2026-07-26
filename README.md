@@ -25,6 +25,9 @@ fair-value conclusion.
 - The authoritative locked-test artifact is
   `eval/benchmark/runs/locked-test/run-locked-test-v1/`. Locked-test results
   must not drive source, fixture, runner, scoring, weight, or manifest changes.
+- The post-v1 metric diagnosis and proposed successor design are recorded in
+  `eval/benchmark/v2-design-proposal.md`; its complete design literature
+  register is `references/benchmark-evaluation-literature.md`.
 - Official contest rules have not been supplied. Contest-specific acceptance
   criteria remain explicitly `UNVERIFIED`.
 - No remote repository or deployment is configured.
