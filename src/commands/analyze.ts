@@ -2,15 +2,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
 import type { AnalyzeCommand } from "../cli/args.js";
-import {
-  runMetadataSchema,
-  valuationOutputSchema
-} from "../domain/schemas.js";
-import type {
-  RouteDecision,
-  ValuationField,
-  ValuationOutput
-} from "../domain/schemas.js";
+import { runMetadataSchema } from "../domain/schemas.js";
 import {
   loadEvidenceLedgerFromJsonFile
 } from "../providers/evidence-bundle.js";
@@ -22,12 +14,13 @@ import {
   serializeExecutionLog,
   serializeReportJson
 } from "../reports/report.js";
-import { reviewRuntimeResult } from "../runtime/reviewer.js";
-import { selectAnalysisRoute } from "../runtime/routing.js";
-import { valueFromRecentSecondaryTransaction } from "../runtime/valuation.js";
-import type { ReportOutputPaths, ReportRuntimeResult } from "../reports/report.js";
+import type { ReportOutputPaths } from "../reports/report.js";
+import {
+  defaultTraceRuntimeVersion,
+  runTraceAnalyzer
+} from "../runtime/analyzer.js";
 
-const runtimeVersion = "0.1.0";
+const runtimeVersion = defaultTraceRuntimeVersion;
 
 export interface AnalyzeRunOptions {
   readonly now?: () => Date;
@@ -50,23 +43,7 @@ export async function runAnalyze(
 ): Promise<AnalyzeRunResult> {
   const startedAtDate = currentDate(options);
   const ledger = await loadEvidenceLedgerFromJsonFile(command.input);
-  const routeResult = selectAnalysisRoute(ledger);
-  const valuation =
-    routeResult.route.status === "selected"
-      ? valueFromRecentSecondaryTransaction(ledger)
-      : abstainValuationForRouteAbstention(routeResult.route);
-  const runtimeResult: ReportRuntimeResult = {
-    ledger,
-    sufficiency: routeResult.sufficiency,
-    route: routeResult.route,
-    valuation,
-    review: reviewRuntimeResult({
-      ledger,
-      sufficiency: routeResult.sufficiency,
-      route: routeResult.route,
-      valuation
-    })
-  };
+  const runtimeResult = runTraceAnalyzer(ledger);
   const version = options.runtimeVersion ?? runtimeVersion;
   const runId = deterministicRunId(runtimeResult, version);
   const completedAtDate = currentDate(options);
@@ -124,42 +101,6 @@ function reportOutputPaths(outputDirectory: string): ReportOutputPaths {
 
 function formatAnalyzeCommand(command: AnalyzeCommand): string {
   return `trace analyze --input ${command.input} --out ${command.out}`;
-}
-
-function abstainValuationForRouteAbstention(
-  route: Extract<RouteDecision, { status: "abstained" }>
-): ValuationOutput {
-  return valuationOutputSchema.parse({
-    headlineValuation: routeAbstainedValuation("headline-valuation", route),
-    enterpriseValue: routeAbstainedValuation("enterprise-value", route),
-    totalEquityValue: routeAbstainedValuation("total-equity-value", route),
-    securityLevelFairValue: routeAbstainedValuation("security-level-fair-value", route)
-  });
-}
-
-function routeAbstainedValuation(
-  field: ValuationField,
-  route: Extract<RouteDecision, { status: "abstained" }>
-) {
-  return {
-    status: "abstained" as const,
-    field,
-    abstention: {
-      reasonCode: "route-abstained",
-      explanation:
-        "TRACE abstains from valuation because the sufficiency gate did not support selecting an analysis route.",
-      missingInformation: [
-        {
-          id: `missing-selected-route-for-${field}`,
-          topic: "Selected analysis route",
-          description: route.abstention.explanation,
-          consequence: `TRACE cannot support ${field} while route selection is abstained.`,
-          requiredFor: [field]
-        }
-      ],
-      evidenceIds: route.abstention.evidenceIds
-    }
-  };
 }
 
 function compareStrings(left: string, right: string): number {

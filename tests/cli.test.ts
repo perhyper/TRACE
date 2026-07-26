@@ -32,6 +32,33 @@ describe("parseTraceArgs", () => {
     });
   });
 
+  it("parses the benchmark command with runner selection and case filters", () => {
+    const command = parseTraceArgs([
+      "benchmark",
+      "--partition",
+      "development",
+      "--runner",
+      "all",
+      "--out",
+      "tmp/benchmark-runs",
+      "--run-id",
+      "local-run-001",
+      "--case-id",
+      "dev-fintech-chime-2025",
+      "--case-id",
+      "dev-fintech-monzo-2025"
+    ]);
+
+    expect(command).toEqual({
+      command: "benchmark",
+      partition: "development",
+      runner: "all",
+      out: "tmp/benchmark-runs",
+      runId: "local-run-001",
+      caseIds: ["dev-fintech-chime-2025", "dev-fintech-monzo-2025"]
+    });
+  });
+
   it("rejects unsupported commands", () => {
     expect(() => parseTraceArgs(["review"])).toThrow(CliUsageError);
   });

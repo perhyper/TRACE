@@ -1,9 +1,14 @@
 import { z } from "zod";
 
+import {
+  benchmarkRunnerNameSchema
+} from "../benchmark/contracts.js";
+
 export const usage = [
   "Usage:",
   "  trace analyze --input <evidence-bundle.json> --out <output-dir>",
-  "  trace validate-benchmark-manifest --manifest <benchmark-manifest.json>"
+  "  trace validate-benchmark-manifest --manifest <benchmark-manifest.json>",
+  "  trace benchmark --partition <development|locked-test> --runner <baseline-a|baseline-b|trace-full|all> --out <artifact-root> [--case-id <case-id>] [--run-id <run-id>]"
 ].join("\n");
 
 const analyzeCommandSchema = z
@@ -26,7 +31,32 @@ const validateBenchmarkManifestCommandSchema = z
 export type ValidateBenchmarkManifestCommand = z.infer<
   typeof validateBenchmarkManifestCommandSchema
 >;
-export type TraceCommand = AnalyzeCommand | ValidateBenchmarkManifestCommand;
+
+const benchmarkPartitionArgSchema = z.enum(["development", "locked-test"]);
+const benchmarkRunnerSelectionSchema = z.union([
+  benchmarkRunnerNameSchema,
+  z.literal("all")
+]);
+const benchmarkRunIdSchema = z
+  .string()
+  .trim()
+  .min(1)
+  .max(160)
+  .regex(/^[A-Za-z0-9][A-Za-z0-9._-]*$/u);
+const benchmarkCommandSchema = z
+  .object({
+    command: z.literal("benchmark"),
+    partition: benchmarkPartitionArgSchema,
+    runner: benchmarkRunnerSelectionSchema,
+    out: z.string().min(1),
+    manifest: z.string().min(1).optional(),
+    runId: benchmarkRunIdSchema.optional(),
+    caseIds: z.array(z.string().min(1)).min(1).optional()
+  })
+  .strict();
+
+export type BenchmarkCommand = z.infer<typeof benchmarkCommandSchema>;
+export type TraceCommand = AnalyzeCommand | ValidateBenchmarkManifestCommand | BenchmarkCommand;
 
 export class CliUsageError extends Error {
   public constructor(message: string) {
@@ -46,7 +76,11 @@ export function parseTraceArgs(argv: readonly string[]): TraceCommand {
     return parseValidateBenchmarkManifestArgs(argv);
   }
 
-  throw new CliUsageError("Expected command: analyze or validate-benchmark-manifest");
+  if (command === "benchmark") {
+    return parseBenchmarkArgs(argv);
+  }
+
+  throw new CliUsageError("Expected command: analyze, validate-benchmark-manifest, or benchmark");
 }
 
 function parseAnalyzeArgs(argv: readonly string[]): AnalyzeCommand {
@@ -80,6 +114,83 @@ function parseAnalyzeArgs(argv: readonly string[]): AnalyzeCommand {
   if (!parsed.success) {
     const details = parsed.error.issues.map((issue) => issue.message).join("; ");
     throw new CliUsageError(`Invalid analyze arguments: ${details}`);
+  }
+
+  return parsed.data;
+}
+
+function parseBenchmarkArgs(argv: readonly string[]): BenchmarkCommand {
+  const command = argv[0];
+  const values: Partial<{
+    partition: string;
+    runner: string;
+    out: string;
+    manifest: string;
+    runId: string;
+    caseIds: string[];
+  }> = {
+    caseIds: []
+  };
+  const rest = argv.slice(1);
+  const valueFlags = new Set([
+    "--partition",
+    "--runner",
+    "--out",
+    "--manifest",
+    "--run-id",
+    "--case-id"
+  ]);
+
+  for (let index = 0; index < rest.length; index += 1) {
+    const token = rest[index];
+
+    if (token === undefined || !valueFlags.has(token)) {
+      throw new CliUsageError(`Unknown argument: ${token ?? "<empty>"}`);
+    }
+
+    const value = rest[index + 1];
+
+    if (value === undefined || value.startsWith("--")) {
+      throw new CliUsageError(`Missing value for ${token}`);
+    }
+
+    switch (token) {
+      case "--partition":
+        values.partition = value;
+        break;
+      case "--runner":
+        values.runner = value;
+        break;
+      case "--out":
+        values.out = value;
+        break;
+      case "--manifest":
+        values.manifest = value;
+        break;
+      case "--run-id":
+        values.runId = value;
+        break;
+      case "--case-id":
+        values.caseIds?.push(value);
+        break;
+    }
+
+    index += 1;
+  }
+
+  const parsed = benchmarkCommandSchema.safeParse({
+    command,
+    partition: values.partition,
+    runner: values.runner,
+    out: values.out,
+    ...(values.manifest !== undefined ? { manifest: values.manifest } : {}),
+    ...(values.runId !== undefined ? { runId: values.runId } : {}),
+    ...(values.caseIds !== undefined && values.caseIds.length > 0 ? { caseIds: values.caseIds } : {})
+  });
+
+  if (!parsed.success) {
+    const details = parsed.error.issues.map((issue) => issue.message).join("; ");
+    throw new CliUsageError(`Invalid benchmark arguments: ${details}`);
   }
 
   return parsed.data;
