@@ -19,6 +19,19 @@ describe("parseTraceArgs", () => {
     });
   });
 
+  it("parses the benchmark manifest validation command", () => {
+    const command = parseTraceArgs([
+      "validate-benchmark-manifest",
+      "--manifest",
+      "eval/benchmark-manifest.json"
+    ]);
+
+    expect(command).toEqual({
+      command: "validate-benchmark-manifest",
+      manifest: "eval/benchmark-manifest.json"
+    });
+  });
+
   it("rejects unsupported commands", () => {
     expect(() => parseTraceArgs(["review"])).toThrow(CliUsageError);
   });
