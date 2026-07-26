@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "trace.benchmark-annotation.v1",
+  "caseId": "dev-fintech-chime-2025",
+  "partition": "development",
+  "measurementDate": "2025-05-13",
+  "expectedRoute": {
+    "route": "financial-services",
+    "acceptableAlternativeRoutes": [],
+    "evidenceIds": [
+      "chime-2025-05-13-sec-s1",
+      "chime-2025-05-13-ipo-filing-news"
+    ],
+    "rationale": "The target is a consumer financial technology company with partner-bank products, purchase volume and active-member metrics."
+  },
+  "binaryClaims": [
+    {
+      "id": "chime-s1-filed-by-cutoff",
+      "statement": "Chime had filed a Form S-1 by the 2025-05-13 cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "chime-2025-05-13-sec-s1",
+        "chime-2025-05-13-ipo-filing-news"
+      ]
+    },
+    {
+      "id": "chime-ipo-price-known-at-cutoff",
+      "statement": "Chime's IPO share count and price range were known at the 2025-05-13 cutoff.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "chime-2025-05-13-ipo-filing-news"
+      ]
+    },
+    {
+      "id": "chime-bank-charter",
+      "statement": "Chime itself was a bank as of the cutoff.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "chime-2025-05-13-sec-s1"
+      ]
+    }
+  ],
+  "observableClaims": [
+    {
+      "id": "chime-q1-2025-active-members",
+      "statement": "Chime had 8.6 million Active Members as of 2025-03-31.",
+      "expectedValue": 8.6,
+      "unit": "millions",
+      "period": {
+        "instantDate": "2025-03-31"
+      },
+      "evidenceIds": [
+        "chime-2025-05-13-sec-s1"
+      ]
+    },
+    {
+      "id": "chime-q1-2025-purchase-volume",
+      "statement": "Q1 2025 Purchase Volume was USD 34.540 billion.",
+      "expectedValue": 34.54,
+      "unit": "USD billions",
+      "period": {
+        "startDate": "2025-01-01",
+        "endDate": "2025-03-31"
+      },
+      "evidenceIds": [
+        "chime-2025-05-13-sec-s1"
+      ]
+    },
+    {
+      "id": "chime-2024-net-loss",
+      "statement": "Chime reported a USD 25.3 million net loss for 2024.",
+      "expectedValue": 25.3,
+      "unit": "USD millions net loss",
+      "period": {
+        "endDate": "2024-12-31"
+      },
+      "evidenceIds": [
+        "chime-2025-05-13-sec-s1"
+      ]
+    }
+  ],
+  "expectedAbstentions": [
+    {
+      "id": "chime-ipo-pricing-input-abstain",
+      "field": "headline-valuation",
+      "reasonCode": "post-cutoff-pricing-not-input",
+      "description": "IPO pricing and fully diluted value were published after the cutoff and may be used only as gold scoring targets.",
+      "evidenceIds": [
+        "chime-2025-05-13-ipo-filing-news"
+      ]
+    },
+    {
+      "id": "chime-security-level-fair-value-abstain",
+      "field": "security-level-fair-value",
+      "reasonCode": "missing-security-rights-and-cap-table",
+      "description": "The S-1 does not provide a security-level fair-value target for private shares at the cutoff.",
+      "evidenceIds": [
+        "chime-2025-05-13-sec-s1"
+      ]
+    }
+  ],
+  "valuationSeparationExpectations": {
+    "allowedValuationFields": [
+      "ipo_equity_value_reference"
+    ],
+    "mustNotConflate": [
+      "IPO gross proceeds with total equity value",
+      "fully diluted IPO equity value with enterprise value",
+      "public IPO price with private security-level fair value"
+    ],
+    "notes": "Historical valuation scoring is limited to the annotated fully diluted IPO equity-value reference."
+  },
+  "completenessExpectations": [
+    {
+      "id": "chime-cover-s1-metrics-and-cutoff",
+      "description": "A complete answer should cover S-1 status, partner-bank model, active members, purchase volume, IPO pricing unknown at cutoff and post-cutoff leakage.",
+      "requiredEvidenceClasses": [
+        "regulatory-filing",
+        "company-primary"
+      ],
+      "requiredTopics": [
+        "identity",
+        "financial-services route",
+        "member metrics",
+        "cutoff abstention"
+      ],
+      "evidenceIds": [
+        "chime-2025-05-13-sec-s1",
+        "chime-2025-05-13-ipo-filing-news"
+      ]
+    }
+  ],
+  "historicalValuationTargets": {
+    "eligible": true,
+    "reason": "Manifest permits historical valuation-error scoring only for the IPO equity-value reference.",
+    "targets": [
+      {
+        "id": "chime-ipo-equity-value-reference",
+        "eligibleField": "ipo_equity_value_reference",
+        "targetDate": "2025-06-11",
+        "targetKind": "fully-diluted-ipo-equity-value",
+        "expectedValue": 11.6,
+        "unit": "USD billions",
+        "sourceEvidenceIds": [
+          "chime-2025-06-11-reuters-ipo-value-post-cutoff"
+        ],
+        "sourceAvailability": "post-cutoff-gold-only",
+        "scoringNotes": "Use as a historical equity-value reference only; do not treat it as enterprise value or security-level fair value."
+      }
+    ]
+  }
+}

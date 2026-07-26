@@ -1,0 +1,192 @@
+{
+  "schemaVersion": "trace.evidence-bundle.v1",
+  "target": {
+    "legalName": "GRAIL, Inc.",
+    "jurisdiction": "US-DE",
+    "identifiers": [
+      {
+        "scheme": "other",
+        "value": "SEC-CIK-0001699031",
+        "jurisdiction": "US"
+      }
+    ],
+    "aliases": [
+      "GRAIL"
+    ],
+    "identityConfidence": "resolved"
+  },
+  "measurementDate": "2020-09-17",
+  "decisionMode": "full-analysis",
+  "sourceRecords": [
+    {
+      "id": "grail-2020-09-17-sec-s1a",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1699031/000162828020013710/grails-1a1.htm",
+      "sourceTitle": "GRAIL, Inc. Form S-1/A",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2020-09-17",
+      "effectiveDate": "2020-09-17",
+      "sourceClass": "regulatory-filing",
+      "epistemicClass": "extracted",
+      "locator": "SEC accession 0001628280-20-013710",
+      "shortExcerpt": "The S-1/A identifies GRAIL, describes late-stage Galleri and DAC development, and reports no generated revenues to date.",
+      "observedFacts": [
+        {
+          "id": "grail-sec-legal-identity",
+          "statement": "The S-1/A identifies the registrant as GRAIL, Inc., incorporated in Delaware, with CIK 0001699031.",
+          "epistemicClass": "observed",
+          "value": "SEC-CIK-0001699031",
+          "unit": "SEC CIK",
+          "period": {
+            "instantDate": "2020-09-17"
+          }
+        },
+        {
+          "id": "grail-no-revenue-to-date",
+          "statement": "GRAIL stated it had not generated revenues to date and did not expect revenues until products were commercialized.",
+          "epistemicClass": "extracted",
+          "value": true,
+          "period": {
+            "instantDate": "2020-09-17"
+          }
+        },
+        {
+          "id": "grail-no-commercial-product",
+          "statement": "GRAIL stated it did not yet have a commercial product for sale.",
+          "epistemicClass": "extracted",
+          "value": true,
+          "period": {
+            "instantDate": "2020-09-17"
+          }
+        },
+        {
+          "id": "grail-galleri-planned-launch",
+          "statement": "GRAIL planned to commercially launch Galleri in 2021 as a laboratory developed test.",
+          "epistemicClass": "extracted",
+          "value": "Galleri planned 2021 LDT launch",
+          "period": {
+            "instantDate": "2020-09-17"
+          }
+        },
+        {
+          "id": "grail-raised-through-june-2020",
+          "statement": "Through 2020-06-30, GRAIL stated it had raised over USD 1.9 billion from venture and strategic partners.",
+          "epistemicClass": "extracted",
+          "value": 1.9,
+          "unit": "USD billions raised, greater than",
+          "period": {
+            "instantDate": "2020-06-30"
+          }
+        },
+        {
+          "id": "grail-2020-six-month-net-loss",
+          "statement": "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30.",
+          "epistemicClass": "extracted",
+          "value": 136.4,
+          "unit": "USD millions net loss",
+          "period": {
+            "startDate": "2020-01-01",
+            "endDate": "2020-06-30"
+          }
+        },
+        {
+          "id": "grail-clinical-study-enrollment",
+          "statement": "GRAIL stated its foundational clinical trials had more than 115,000 subjects already enrolled.",
+          "epistemicClass": "extracted",
+          "value": 115000,
+          "unit": "subjects, greater than",
+          "period": {
+            "instantDate": "2020-08-31"
+          }
+        }
+      ]
+    },
+    {
+      "id": "grail-2020-09-09-ipo-filing-release",
+      "sourceUrl": "https://grail.com/press-releases/grail-announces-filing-of-registration-statement-for-proposed-initial-public-offering/",
+      "sourceTitle": "GRAIL announces filing of registration statement for proposed IPO",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2020-09-09",
+      "effectiveDate": "2020-09-09",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "GRAIL press release, 09 Sep 2020",
+      "shortExcerpt": "GRAIL announced an S-1 filing for a proposed IPO and applied to list common stock under GRAL.",
+      "observedFacts": [
+        {
+          "id": "grail-s1-filing-announced",
+          "statement": "GRAIL announced on 2020-09-09 that it filed a Form S-1 for a proposed IPO.",
+          "epistemicClass": "observed",
+          "value": "Form S-1 filed",
+          "period": {
+            "instantDate": "2020-09-09"
+          }
+        },
+        {
+          "id": "grail-nasdaq-symbol-applied",
+          "statement": "GRAIL said it applied to list common stock on Nasdaq under ticker GRAL.",
+          "epistemicClass": "observed",
+          "value": "GRAL",
+          "unit": "ticker",
+          "period": {
+            "instantDate": "2020-09-09"
+          }
+        },
+        {
+          "id": "grail-ipo-price-not-determined",
+          "statement": "As of the 2020-09-09 release, GRAIL said the number of shares and price range had not yet been determined.",
+          "epistemicClass": "observed",
+          "value": "not determined",
+          "period": {
+            "instantDate": "2020-09-09"
+          }
+        }
+      ]
+    },
+    {
+      "id": "grail-2020-09-21-illumina-acquisition-post-cutoff",
+      "sourceUrl": "https://grail.com/press-releases/illumina-to-acquire-grail-to-launch-new-era-of-cancer-detection/",
+      "sourceTitle": "Illumina to acquire GRAIL",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2020-09-21",
+      "effectiveDate": "2020-09-21",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "GRAIL press release, 21 Sep 2020",
+      "shortExcerpt": "Post-cutoff release announced Illumina would acquire GRAIL for USD 8bn cash-and-stock consideration at closing.",
+      "observedFacts": [
+        {
+          "id": "grail-post-cutoff-illumina-transaction",
+          "statement": "After the case cutoff, Illumina and GRAIL announced a definitive acquisition agreement.",
+          "epistemicClass": "observed",
+          "value": "definitive acquisition agreement",
+          "period": {
+            "instantDate": "2020-09-21"
+          }
+        },
+        {
+          "id": "grail-post-cutoff-transaction-consideration",
+          "statement": "The post-cutoff announcement stated USD 8 billion of cash-and-stock consideration at closing.",
+          "epistemicClass": "observed",
+          "value": 8,
+          "unit": "USD billions headline transaction consideration",
+          "period": {
+            "instantDate": "2020-09-21"
+          }
+        },
+        {
+          "id": "grail-post-cutoff-consideration-mix",
+          "statement": "The post-cutoff announcement described USD 3.5 billion in cash and USD 4.5 billion in Illumina shares, subject to a collar.",
+          "epistemicClass": "observed",
+          "value": [
+            "USD 3.5 billion cash",
+            "USD 4.5 billion Illumina shares subject to collar"
+          ],
+          "period": {
+            "instantDate": "2020-09-21"
+          }
+        }
+      ]
+    }
+  ],
+  "failedNotes": []
+}

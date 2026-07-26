@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "trace.benchmark-annotation.v1",
+  "caseId": "dev-fintech-monzo-2025",
+  "partition": "development",
+  "measurementDate": "2025-12-31",
+  "expectedRoute": {
+    "route": "financial-services",
+    "acceptableAlternativeRoutes": [],
+    "evidenceIds": [
+      "monzo-annual-report-2025-web-summary",
+      "monzo-companies-house-filing-history-2025"
+    ],
+    "rationale": "The case is a banking and consumer-fintech target with deposits, assets, customers and company registry evidence."
+  },
+  "binaryClaims": [
+    {
+      "id": "monzo-identity-resolved",
+      "statement": "Monzo Bank Holding Group Limited is resolved to Companies House number 14785367.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "monzo-companies-house-filing-history-2025"
+      ]
+    },
+    {
+      "id": "monzo-adjusted-profitable-fy2025",
+      "statement": "Monzo reported positive adjusted profit before tax in FY2025.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "monzo-annual-report-2025-web-summary"
+      ]
+    },
+    {
+      "id": "monzo-security-rights-public",
+      "statement": "The committed cutoff evidence discloses share rights and cap-table data sufficient for security-level fair value.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "monzo-companies-house-filing-history-2025"
+      ]
+    }
+  ],
+  "observableClaims": [
+    {
+      "id": "monzo-fy2025-revenue",
+      "statement": "FY2025 revenue was GBP 1.2 billion.",
+      "expectedValue": 1.2,
+      "unit": "GBP billions",
+      "period": {
+        "endDate": "2025-03-31"
+      },
+      "evidenceIds": [
+        "monzo-annual-report-2025-web-summary"
+      ]
+    },
+    {
+      "id": "monzo-fy2025-customer-deposits",
+      "statement": "FY2025 customer deposits were GBP 16.6 billion.",
+      "expectedValue": 16.6,
+      "unit": "GBP billions",
+      "period": {
+        "endDate": "2025-03-31"
+      },
+      "evidenceIds": [
+        "monzo-annual-report-2025-web-summary"
+      ]
+    },
+    {
+      "id": "monzo-fy2025-total-assets",
+      "statement": "FY2025 total assets were GBP 18.3 billion.",
+      "expectedValue": 18.3,
+      "unit": "GBP billions",
+      "period": {
+        "endDate": "2025-03-31"
+      },
+      "evidenceIds": [
+        "monzo-annual-report-2025-web-summary"
+      ]
+    }
+  ],
+  "expectedAbstentions": [
+    {
+      "id": "monzo-security-level-fair-value-abstain",
+      "field": "security-level-fair-value",
+      "reasonCode": "missing-security-rights-and-cap-table",
+      "description": "No committed cutoff evidence discloses share rights, preferences, dilution or a full cap table.",
+      "evidenceIds": [
+        "monzo-companies-house-filing-history-2025"
+      ]
+    },
+    {
+      "id": "monzo-enterprise-value-abstain",
+      "field": "enterprise-value",
+      "reasonCode": "bank-balance-sheet-not-ev-input",
+      "description": "Deposits, assets and adjusted profit do not by themselves establish enterprise value.",
+      "evidenceIds": [
+        "monzo-annual-report-2025-web-summary"
+      ]
+    }
+  ],
+  "valuationSeparationExpectations": {
+    "allowedValuationFields": [],
+    "mustNotConflate": [
+      "customer deposits with enterprise value",
+      "total assets with equity value",
+      "statement of capital with security-level fair value"
+    ],
+    "notes": "No historical valuation-error target is approved for Monzo."
+  },
+  "completenessExpectations": [
+    {
+      "id": "monzo-cover-identity-scale-and-limits",
+      "description": "A complete answer should cover entity identity, fintech banking route, customers, deposits, assets, profitability and missing security-rights limitations.",
+      "requiredEvidenceClasses": [
+        "company-primary",
+        "government"
+      ],
+      "requiredTopics": [
+        "identity",
+        "route",
+        "scale metrics",
+        "valuation abstention"
+      ],
+      "evidenceIds": [
+        "monzo-annual-report-2025-web-summary",
+        "monzo-companies-house-filing-history-2025"
+      ]
+    }
+  ],
+  "historicalValuationTargets": {
+    "eligible": false,
+    "reason": "Manifest marks this case ineligible because no public share-rights, cap-table or security-level fair-value target is approved.",
+    "targets": []
+  }
+}

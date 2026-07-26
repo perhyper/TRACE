@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "trace.evidence-bundle.v1",
+  "target": {
+    "legalName": "Chime Financial, Inc.",
+    "jurisdiction": "US-DE",
+    "identifiers": [
+      {
+        "scheme": "other",
+        "value": "SEC-CIK-0001795586",
+        "jurisdiction": "US"
+      }
+    ],
+    "aliases": [
+      "Chime"
+    ],
+    "identityConfidence": "resolved"
+  },
+  "measurementDate": "2025-05-13",
+  "decisionMode": "full-analysis",
+  "sourceRecords": [
+    {
+      "id": "chime-2025-05-13-sec-s1",
+      "sourceUrl": "https://www.sec.gov/Archives/edgar/data/1795586/000162828025025059/chimefinancialinc-sx1wq1da.htm",
+      "sourceTitle": "Chime Financial, Inc. Form S-1",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2025-05-13",
+      "effectiveDate": "2025-05-13",
+      "sourceClass": "regulatory-filing",
+      "epistemicClass": "extracted",
+      "locator": "SEC accession 0001628280-25-025059",
+      "shortExcerpt": "The Form S-1 identifies Chime, reports Q1 2025 active members, 2024 operating metrics and partner-bank model limitations.",
+      "observedFacts": [
+        {
+          "id": "chime-sec-legal-identity",
+          "statement": "The S-1 identifies the registrant as Chime Financial, Inc., incorporated in Delaware, with CIK 0001795586.",
+          "epistemicClass": "observed",
+          "value": "SEC-CIK-0001795586",
+          "unit": "SEC CIK",
+          "period": {
+            "instantDate": "2025-05-13"
+          }
+        },
+        {
+          "id": "chime-not-a-bank-model",
+          "statement": "Chime describes itself as a technology company, not a bank, with banking services provided by partner banks.",
+          "epistemicClass": "extracted",
+          "value": "technology company with partner-bank services",
+          "period": {
+            "instantDate": "2025-05-13"
+          }
+        },
+        {
+          "id": "chime-2025-q1-active-members",
+          "statement": "Chime reported 8.6 million Active Members as of 2025-03-31.",
+          "epistemicClass": "extracted",
+          "value": 8.6,
+          "unit": "millions",
+          "period": {
+            "instantDate": "2025-03-31"
+          }
+        },
+        {
+          "id": "chime-2025-q1-primary-relationship",
+          "statement": "Chime reported that 67 percent of Active Members relied on Chime as a primary account relationship as of 2025-03-31.",
+          "epistemicClass": "extracted",
+          "value": 67,
+          "unit": "percent",
+          "period": {
+            "instantDate": "2025-03-31"
+          }
+        },
+        {
+          "id": "chime-2025-q1-purchase-volume",
+          "statement": "Chime reported USD 34.540 billion of Purchase Volume for the three months ended 2025-03-31.",
+          "epistemicClass": "extracted",
+          "value": 34.54,
+          "unit": "USD billions",
+          "period": {
+            "startDate": "2025-01-01",
+            "endDate": "2025-03-31"
+          }
+        },
+        {
+          "id": "chime-2024-active-members",
+          "statement": "Chime reported 8.0 million Active Members for 2024.",
+          "epistemicClass": "extracted",
+          "value": 8,
+          "unit": "millions",
+          "period": {
+            "endDate": "2024-12-31"
+          }
+        },
+        {
+          "id": "chime-2024-net-loss",
+          "statement": "Chime reported a USD 25.3 million net loss for 2024.",
+          "epistemicClass": "extracted",
+          "value": 25.3,
+          "unit": "USD millions net loss",
+          "period": {
+            "endDate": "2024-12-31"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chime-2025-05-13-ipo-filing-news",
+      "sourceUrl": "https://www.chime.com/newsroom/news/chime-files-registration-statement-for-proposed-initial-public-offering/",
+      "sourceTitle": "Chime files registration statement for proposed IPO",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2025-05-13",
+      "effectiveDate": "2025-05-13",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "Chime newsroom, 13 May 2025",
+      "shortExcerpt": "Chime announced the S-1 filing, applied for Nasdaq listing as CHYM, and had not yet determined shares or price range.",
+      "observedFacts": [
+        {
+          "id": "chime-s1-filing-announced",
+          "statement": "Chime announced on 2025-05-13 that it filed a Form S-1 for a proposed IPO.",
+          "epistemicClass": "observed",
+          "value": "Form S-1 filed",
+          "period": {
+            "instantDate": "2025-05-13"
+          }
+        },
+        {
+          "id": "chime-nasdaq-symbol-applied",
+          "statement": "Chime said it applied to list Class A common stock on Nasdaq under ticker CHYM.",
+          "epistemicClass": "observed",
+          "value": "CHYM",
+          "unit": "ticker",
+          "period": {
+            "instantDate": "2025-05-13"
+          }
+        },
+        {
+          "id": "chime-ipo-price-not-determined",
+          "statement": "As of the 2025-05-13 announcement, Chime said the number of shares and price range had not yet been determined.",
+          "epistemicClass": "observed",
+          "value": "not determined",
+          "period": {
+            "instantDate": "2025-05-13"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chime-2025-06-11-ipo-pricing-post-cutoff",
+      "sourceUrl": "https://investors.chime.com/news-releases/news-release-details/chime-announces-pricing-initial-public-offering",
+      "sourceTitle": "Chime announces pricing of initial public offering",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2025-06-11",
+      "effectiveDate": "2025-06-11",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "IPO pricing release, 11 Jun 2025",
+      "shortExcerpt": "Post-cutoff pricing release says 32.0m Class A shares were priced at USD 27.00 per share.",
+      "observedFacts": [
+        {
+          "id": "chime-post-cutoff-ipo-shares-priced",
+          "statement": "On 2025-06-11, after the case cutoff, Chime priced 32.0 million Class A shares at USD 27.00 per share.",
+          "epistemicClass": "observed",
+          "value": 32,
+          "unit": "millions of shares",
+          "period": {
+            "instantDate": "2025-06-11"
+          }
+        },
+        {
+          "id": "chime-post-cutoff-ipo-price",
+          "statement": "On 2025-06-11, after the case cutoff, the Chime IPO public offering price was USD 27.00 per share.",
+          "epistemicClass": "observed",
+          "value": 27,
+          "unit": "USD per share",
+          "period": {
+            "instantDate": "2025-06-11"
+          }
+        }
+      ]
+    },
+    {
+      "id": "chime-2025-06-11-reuters-ipo-value-post-cutoff",
+      "sourceUrl": "https://www.investing.com/news/stock-market-news/chime-prices-us-ipo-at-27-per-share-to-raise-864-million-4092169",
+      "sourceTitle": "Reuters report on Chime IPO pricing",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2025-06-11",
+      "effectiveDate": "2025-06-11",
+      "sourceClass": "news",
+      "epistemicClass": "observed",
+      "locator": "Reuters article hosted by Investing.com, 11 Jun 2025",
+      "shortExcerpt": "Post-cutoff Reuters report says Chime raised USD 864m and was valued at roughly USD 11.6bn fully diluted.",
+      "observedFacts": [
+        {
+          "id": "chime-post-cutoff-ipo-raise",
+          "statement": "Reuters reported after cutoff that Chime raised USD 864 million in the IPO.",
+          "epistemicClass": "observed",
+          "value": 864,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2025-06-11"
+          }
+        },
+        {
+          "id": "chime-post-cutoff-fully-diluted-ipo-value",
+          "statement": "Reuters reported after cutoff that the IPO valued Chime at roughly USD 11.6 billion on a fully diluted basis.",
+          "epistemicClass": "observed",
+          "value": 11.6,
+          "unit": "USD billions fully diluted equity value",
+          "period": {
+            "instantDate": "2025-06-11"
+          }
+        }
+      ]
+    }
+  ],
+  "failedNotes": []
+}

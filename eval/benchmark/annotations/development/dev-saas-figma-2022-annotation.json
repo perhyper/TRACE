@@ -1,0 +1,141 @@
+{
+  "schemaVersion": "trace.benchmark-annotation.v1",
+  "caseId": "dev-saas-figma-2022",
+  "partition": "development",
+  "measurementDate": "2022-09-14",
+  "expectedRoute": {
+    "route": "software-saas",
+    "acceptableAlternativeRoutes": [],
+    "evidenceIds": [
+      "figma-2021-06-24-series-e-blog",
+      "figma-2021-06-24-series-e-value-news",
+      "figma-2021-04-21-figjam-launch"
+    ],
+    "rationale": "The cutoff evidence describes collaborative design software, FigJam and subscription software characteristics."
+  },
+  "binaryClaims": [
+    {
+      "id": "figma-series-e-closed",
+      "statement": "Figma closed a Series E financing before the cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "figma-2021-06-24-series-e-blog"
+      ]
+    },
+    {
+      "id": "figma-figjam-launched",
+      "statement": "Figma launched FigJam before the cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "figma-2021-04-21-figjam-launch"
+      ]
+    },
+    {
+      "id": "figma-adobe-deal-known-by-cutoff",
+      "statement": "The Adobe acquisition announcement was public by the 2022-09-14 cutoff.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "figma-2022-09-15-adobe-acquisition-post-cutoff"
+      ],
+      "sourceAvailability": "post-cutoff-excluded"
+    }
+  ],
+  "observableClaims": [
+    {
+      "id": "figma-series-e-amount",
+      "statement": "Figma's Series E amount was reported as USD 200 million.",
+      "expectedValue": 200,
+      "unit": "USD millions",
+      "period": {
+        "instantDate": "2021-06-24"
+      },
+      "evidenceIds": [
+        "figma-2021-06-24-series-e-value-news"
+      ]
+    },
+    {
+      "id": "figma-series-e-headline-valuation",
+      "statement": "Figma's Series E headline valuation was reported as USD 10 billion.",
+      "expectedValue": 10,
+      "unit": "USD billions headline valuation",
+      "period": {
+        "instantDate": "2021-06-24"
+      },
+      "evidenceIds": [
+        "figma-2021-06-24-series-e-value-news"
+      ]
+    },
+    {
+      "id": "figma-figjam-paid-plan-prices",
+      "statement": "Figma said FigJam would have USD 3 and USD 5 paid editor plans in 2022.",
+      "expectedValue": [
+        "USD 3 per editor per month",
+        "USD 5 per editor per month"
+      ],
+      "unit": "monthly editor plan prices",
+      "period": {
+        "instantDate": "2021-04-21"
+      },
+      "evidenceIds": [
+        "figma-2021-04-21-figjam-launch"
+      ]
+    }
+  ],
+  "expectedAbstentions": [
+    {
+      "id": "figma-adobe-transaction-abstain",
+      "field": "headline-valuation",
+      "reasonCode": "post-cutoff-transaction-announcement",
+      "description": "The USD 20bn Adobe announcement was published one day after the cutoff and must be excluded from input evidence.",
+      "evidenceIds": [
+        "figma-2021-06-24-series-e-value-news"
+      ]
+    },
+    {
+      "id": "figma-security-fair-value-abstain",
+      "field": "security-level-fair-value",
+      "reasonCode": "missing-security-rights-and-cap-table",
+      "description": "The Series E headline valuation does not disclose share rights, full cap table or security-level fair value.",
+      "evidenceIds": [
+        "figma-2021-06-24-series-e-value-news"
+      ]
+    }
+  ],
+  "valuationSeparationExpectations": {
+    "allowedValuationFields": [
+      "headline-valuation"
+    ],
+    "mustNotConflate": [
+      "Series E headline valuation with enterprise value",
+      "Series E headline valuation with security-level fair value",
+      "post-cutoff Adobe consideration with pre-cutoff input evidence"
+    ],
+    "notes": "The Adobe transaction did not close and is not an eligible valuation-error target."
+  },
+  "completenessExpectations": [
+    {
+      "id": "figma-cover-product-funding-and-leakage",
+      "description": "A complete answer should cover Figma product route, Series E funding, FigJam evidence, missing security rights and the post-cutoff Adobe leakage warning.",
+      "requiredEvidenceClasses": [
+        "company-primary",
+        "news"
+      ],
+      "requiredTopics": [
+        "software-saas route",
+        "funding context",
+        "product evidence",
+        "post-cutoff exclusion"
+      ],
+      "evidenceIds": [
+        "figma-2021-06-24-series-e-blog",
+        "figma-2021-06-24-series-e-value-news",
+        "figma-2021-04-21-figjam-launch"
+      ]
+    }
+  ],
+  "historicalValuationTargets": {
+    "eligible": false,
+    "reason": "Manifest marks this case ineligible because the announced Adobe acquisition did not close.",
+    "targets": []
+  }
+}

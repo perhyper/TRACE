@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "trace.evidence-bundle.v1",
+  "target": {
+    "legalName": "Linear Orbit, Inc.",
+    "jurisdiction": "US",
+    "identifiers": [
+      {
+        "scheme": "other",
+        "value": "linear.app",
+        "jurisdiction": "US"
+      }
+    ],
+    "aliases": [
+      "Linear"
+    ],
+    "identityConfidence": "resolved"
+  },
+  "measurementDate": "2023-09-14",
+  "decisionMode": "full-analysis",
+  "sourceRecords": [
+    {
+      "id": "linear-2023-09-14-series-b-blog",
+      "sourceUrl": "https://linear.app/now/series-b",
+      "sourceTitle": "Linear raises USD 35M Series B led by Accel",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2023-09-14",
+      "effectiveDate": "2023-09-14",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "Linear Now, 14 Sep 2023",
+      "shortExcerpt": "Linear announced a USD 35m Series B led by Accel with Sequoia and 01 Advisors participating.",
+      "observedFacts": [
+        {
+          "id": "linear-series-b-announced",
+          "statement": "Linear announced a USD 35 million Series B on 2023-09-14.",
+          "epistemicClass": "observed",
+          "value": 35,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        },
+        {
+          "id": "linear-series-b-lead",
+          "statement": "Linear said the Series B was led by Accel.",
+          "epistemicClass": "observed",
+          "value": "Accel",
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        },
+        {
+          "id": "linear-series-b-participants",
+          "statement": "Linear said Sequoia, 01 Advisors and individual software operators participated in the Series B.",
+          "epistemicClass": "observed",
+          "value": [
+            "Sequoia",
+            "01 Advisors",
+            "software operator angels"
+          ],
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        },
+        {
+          "id": "linear-profitable-since-2021",
+          "statement": "Linear said it had been growing and operating profitably since 2021.",
+          "epistemicClass": "observed",
+          "value": "profitable since 2021",
+          "period": {
+            "startDate": "2021-01-01",
+            "endDate": "2023-09-14"
+          }
+        },
+        {
+          "id": "linear-customers-thousands",
+          "statement": "Linear said it was trusted and used by thousands of companies of all sizes.",
+          "epistemicClass": "observed",
+          "value": "thousands of companies",
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        },
+        {
+          "id": "linear-team-size",
+          "statement": "Linear said it was a team of 50 people on 2023-09-14.",
+          "epistemicClass": "observed",
+          "value": 50,
+          "unit": "employees",
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        }
+      ]
+    },
+    {
+      "id": "linear-2023-09-14-forbes-profile",
+      "sourceUrl": "https://www.forbes.com/sites/alexkonrad/2023/09/14/linear-developer-tools-raises-35-million-series-b/",
+      "sourceTitle": "Linear developer tools raise USD 35 million Series B",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2023-09-14",
+      "effectiveDate": "2023-09-14",
+      "sourceClass": "news",
+      "epistemicClass": "observed",
+      "locator": "Forbes, 14 Sep 2023",
+      "shortExcerpt": "Forbes reported Linear's Series B valued the company at about USD 400m and described the company as profitable.",
+      "observedFacts": [
+        {
+          "id": "linear-news-headline-valuation",
+          "statement": "Forbes reported that the Series B valued Linear at about USD 400 million.",
+          "epistemicClass": "observed",
+          "value": 400,
+          "unit": "USD millions headline valuation",
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        },
+        {
+          "id": "linear-news-profitable",
+          "statement": "Forbes reported Linear was profitable around the Series B announcement.",
+          "epistemicClass": "observed",
+          "value": true,
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        },
+        {
+          "id": "linear-news-customer-examples",
+          "statement": "Forbes named customers including Cohere, Ramp and Runway in its Linear profile.",
+          "epistemicClass": "observed",
+          "value": [
+            "Cohere",
+            "Ramp",
+            "Runway"
+          ],
+          "period": {
+            "instantDate": "2023-09-14"
+          }
+        }
+      ]
+    },
+    {
+      "id": "linear-2026-06-09-terms-post-cutoff",
+      "sourceUrl": "https://linear.app/terms",
+      "sourceTitle": "Linear Terms of Service",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2026-06-09",
+      "effectiveDate": "2026-06-09",
+      "sourceClass": "legal-record",
+      "epistemicClass": "observed",
+      "locator": "Terms effective 09 Jun 2026",
+      "shortExcerpt": "Post-cutoff terms identify Linear Orbit, Inc. as the provider of the Linear service.",
+      "observedFacts": [
+        {
+          "id": "linear-post-cutoff-legal-name",
+          "statement": "Linear's post-cutoff terms identify Linear Orbit, Inc. as the service provider.",
+          "epistemicClass": "observed",
+          "value": "Linear Orbit, Inc.",
+          "period": {
+            "instantDate": "2026-06-09"
+          }
+        }
+      ]
+    }
+  ],
+  "failedNotes": [
+    {
+      "id": "linear-pre-cutoff-legal-record-not-found",
+      "stage": "access",
+      "sourceTitle": "Pre-cutoff Linear legal identity record",
+      "attemptedAt": "2026-07-26T00:00:00Z",
+      "note": "No pre-cutoff public legal record resolving Linear Orbit, Inc. was approved for commit; post-cutoff terms are recorded only as excluded evidence."
+    }
+  ]
+}

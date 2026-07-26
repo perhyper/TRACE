@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "trace.benchmark-annotation.v1",
+  "caseId": "dev-saas-linear-2023",
+  "partition": "development",
+  "measurementDate": "2023-09-14",
+  "expectedRoute": {
+    "route": "software-saas",
+    "acceptableAlternativeRoutes": [],
+    "evidenceIds": [
+      "linear-2023-09-14-series-b-blog",
+      "linear-2023-09-14-forbes-profile"
+    ],
+    "rationale": "The cutoff evidence describes product and issue tracking software sold to software teams."
+  },
+  "binaryClaims": [
+    {
+      "id": "linear-series-b-announced",
+      "statement": "Linear announced a Series B by the cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "linear-2023-09-14-series-b-blog"
+      ]
+    },
+    {
+      "id": "linear-profitable-since-2021",
+      "statement": "Linear said it had been operating profitably since 2021.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "linear-2023-09-14-series-b-blog"
+      ]
+    },
+    {
+      "id": "linear-pre-cutoff-legal-record-available",
+      "statement": "A pre-cutoff public legal record resolving Linear Orbit, Inc. is included as model-input evidence.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "linear-2026-06-09-terms-post-cutoff"
+      ],
+      "sourceAvailability": "post-cutoff-excluded"
+    }
+  ],
+  "observableClaims": [
+    {
+      "id": "linear-series-b-amount",
+      "statement": "Linear's Series B amount was USD 35 million.",
+      "expectedValue": 35,
+      "unit": "USD millions",
+      "period": {
+        "instantDate": "2023-09-14"
+      },
+      "evidenceIds": [
+        "linear-2023-09-14-series-b-blog"
+      ]
+    },
+    {
+      "id": "linear-headline-valuation",
+      "statement": "Linear's Series B headline valuation was reported at about USD 400 million.",
+      "expectedValue": 400,
+      "unit": "USD millions headline valuation",
+      "period": {
+        "instantDate": "2023-09-14"
+      },
+      "evidenceIds": [
+        "linear-2023-09-14-forbes-profile"
+      ]
+    },
+    {
+      "id": "linear-team-size",
+      "statement": "Linear said it had a team of 50 people.",
+      "expectedValue": 50,
+      "unit": "employees",
+      "period": {
+        "instantDate": "2023-09-14"
+      },
+      "evidenceIds": [
+        "linear-2023-09-14-series-b-blog"
+      ]
+    }
+  ],
+  "expectedAbstentions": [
+    {
+      "id": "linear-security-level-fair-value-abstain",
+      "field": "security-level-fair-value",
+      "reasonCode": "missing-security-rights-and-cap-table",
+      "description": "The funding announcement and news profile do not disclose security rights or cap table.",
+      "evidenceIds": [
+        "linear-2023-09-14-series-b-blog",
+        "linear-2023-09-14-forbes-profile"
+      ]
+    },
+    {
+      "id": "linear-financial-statements-abstain",
+      "field": "enterprise-value",
+      "reasonCode": "no-public-financial-statements",
+      "description": "The cutoff evidence gives funding and qualitative traction but no audited revenue, margin or cash-flow base.",
+      "evidenceIds": [
+        "linear-2023-09-14-series-b-blog"
+      ]
+    }
+  ],
+  "valuationSeparationExpectations": {
+    "allowedValuationFields": [
+      "headline-valuation"
+    ],
+    "mustNotConflate": [
+      "Series B headline valuation with enterprise value",
+      "Series B headline valuation with security-level fair value",
+      "funding amount with total equity value"
+    ],
+    "notes": "Sparse SaaS case; valuation evidence is a reported headline funding valuation only."
+  },
+  "completenessExpectations": [
+    {
+      "id": "linear-cover-sparse-saas-limitations",
+      "description": "A complete answer should cover product route, Series B facts, reported profitability, customer examples, and sparse-data abstentions.",
+      "requiredEvidenceClasses": [
+        "company-primary",
+        "news"
+      ],
+      "requiredTopics": [
+        "software-saas route",
+        "funding",
+        "traction",
+        "missing financials"
+      ],
+      "evidenceIds": [
+        "linear-2023-09-14-series-b-blog",
+        "linear-2023-09-14-forbes-profile"
+      ]
+    }
+  ],
+  "historicalValuationTargets": {
+    "eligible": false,
+    "reason": "Manifest marks this case ineligible because the cutoff evidence lacks a completed valuation target, share rights, cap table or public financials.",
+    "targets": []
+  }
+}

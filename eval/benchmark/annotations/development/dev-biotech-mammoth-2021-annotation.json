@@ -1,0 +1,151 @@
+{
+  "schemaVersion": "trace.benchmark-annotation.v1",
+  "caseId": "dev-biotech-mammoth-2021",
+  "partition": "development",
+  "measurementDate": "2021-09-09",
+  "expectedRoute": {
+    "route": "biotech-rnpv",
+    "acceptableAlternativeRoutes": [],
+    "evidenceIds": [
+      "mammoth-2021-09-09-series-c-d-businesswire",
+      "mammoth-2020-04-16-detectr-peer-reviewed",
+      "mammoth-2020-08-31-fda-eua-detectr"
+    ],
+    "rationale": "The cutoff evidence describes a CRISPR platform company with therapeutics and diagnostics programs."
+  },
+  "binaryClaims": [
+    {
+      "id": "mammoth-financing-announced",
+      "statement": "Mammoth announced a financing round by the cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "mammoth-2021-09-09-series-c-d-businesswire"
+      ]
+    },
+    {
+      "id": "mammoth-unicorn-status",
+      "statement": "Mammoth said the financing gave it a valuation greater than USD 1 billion.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "mammoth-2021-09-09-series-c-d-businesswire"
+      ]
+    },
+    {
+      "id": "mammoth-product-cash-flow-public",
+      "statement": "The cutoff evidence provides product-level cash-flow forecasts sufficient for rNPV valuation.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "mammoth-2021-09-09-series-c-d-businesswire"
+      ]
+    }
+  ],
+  "observableClaims": [
+    {
+      "id": "mammoth-total-financing",
+      "statement": "The announced financing total was USD 195 million.",
+      "expectedValue": 195,
+      "unit": "USD millions",
+      "period": {
+        "instantDate": "2021-09-09"
+      },
+      "evidenceIds": [
+        "mammoth-2021-09-09-series-c-d-businesswire"
+      ]
+    },
+    {
+      "id": "mammoth-series-d-size",
+      "statement": "The Series D component was USD 150 million.",
+      "expectedValue": 150,
+      "unit": "USD millions",
+      "period": {
+        "instantDate": "2021-09-09"
+      },
+      "evidenceIds": [
+        "mammoth-2021-09-09-series-c-d-businesswire"
+      ]
+    },
+    {
+      "id": "mammoth-team-size",
+      "statement": "Mammoth had expanded to more than 100 employees.",
+      "expectedValue": 100,
+      "unit": "employees, greater than",
+      "period": {
+        "instantDate": "2021-09-09"
+      },
+      "evidenceIds": [
+        "mammoth-2021-09-09-series-c-d-businesswire"
+      ]
+    },
+    {
+      "id": "mammoth-detectr-eua-date",
+      "statement": "FDA historical records list SARS-CoV-2 DETECTR Reagent Kit EUA issued on 2020-08-31.",
+      "expectedValue": "2020-08-31",
+      "unit": "EUA issue date",
+      "period": {
+        "instantDate": "2020-08-31"
+      },
+      "evidenceIds": [
+        "mammoth-2020-08-31-fda-eua-detectr"
+      ]
+    }
+  ],
+  "expectedAbstentions": [
+    {
+      "id": "mammoth-product-rnpv-abstain",
+      "field": "enterprise-value",
+      "reasonCode": "no-product-cash-flow-forecast",
+      "description": "The cutoff evidence supports biotech-rNPV route selection but lacks product cash-flow forecasts, probability assumptions and commercial launch data.",
+      "evidenceIds": [
+        "mammoth-2021-09-09-series-c-d-businesswire",
+        "mammoth-2020-04-16-detectr-peer-reviewed"
+      ]
+    },
+    {
+      "id": "mammoth-security-fair-value-abstain",
+      "field": "security-level-fair-value",
+      "reasonCode": "missing-security-rights-and-cap-table",
+      "description": "The financing headline does not disclose share rights, preferences, cap table or security-level fair value.",
+      "evidenceIds": [
+        "mammoth-2021-09-09-series-c-d-businesswire"
+      ]
+    }
+  ],
+  "valuationSeparationExpectations": {
+    "allowedValuationFields": [
+      "headline-valuation"
+    ],
+    "mustNotConflate": [
+      "financing amount with total equity value",
+      "unicorn headline with security-level fair value",
+      "platform promise with product rNPV output"
+    ],
+    "notes": "Funding headlines do not establish a completed valuation-error target."
+  },
+  "completenessExpectations": [
+    {
+      "id": "mammoth-cover-platform-financing-and-limits",
+      "description": "A complete answer should cover CRISPR platform route, financing facts, diagnostics evidence, FDA EUA context, and rNPV limitations.",
+      "requiredEvidenceClasses": [
+        "company-primary",
+        "peer-reviewed",
+        "government"
+      ],
+      "requiredTopics": [
+        "biotech-rnpv route",
+        "financing",
+        "platform evidence",
+        "valuation abstention"
+      ],
+      "evidenceIds": [
+        "mammoth-2021-09-09-series-c-d-businesswire",
+        "mammoth-2020-04-16-detectr-peer-reviewed",
+        "mammoth-2020-08-31-fda-eua-detectr"
+      ]
+    }
+  ],
+  "historicalValuationTargets": {
+    "eligible": false,
+    "reason": "Manifest marks this case ineligible because funding headlines and platform claims do not establish a completed valuation target.",
+    "targets": []
+  }
+}

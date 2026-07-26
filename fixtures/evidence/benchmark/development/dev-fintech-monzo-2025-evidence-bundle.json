@@ -1,0 +1,160 @@
+{
+  "schemaVersion": "trace.evidence-bundle.v1",
+  "target": {
+    "legalName": "Monzo Bank Holding Group Limited",
+    "jurisdiction": "GB",
+    "identifiers": [
+      {
+        "scheme": "company-number",
+        "value": "GB-14785367",
+        "jurisdiction": "GB"
+      },
+      {
+        "scheme": "lei",
+        "value": "213800WIZ7R66OO87N21"
+      }
+    ],
+    "aliases": [
+      "Monzo"
+    ],
+    "identityConfidence": "resolved"
+  },
+  "measurementDate": "2025-12-31",
+  "decisionMode": "full-analysis",
+  "sourceRecords": [
+    {
+      "id": "monzo-annual-report-2025-web-summary",
+      "sourceUrl": "https://monzo.com/annual-report/2025",
+      "sourceTitle": "Monzo Annual Report 2025 web summary",
+      "retrievedDate": "2026-07-26",
+      "effectiveDate": "2025-03-31",
+      "sourceClass": "company-primary",
+      "epistemicClass": "extracted",
+      "locator": "Year in review 2025",
+      "shortExcerpt": "The 2025 annual report summary reports 12m+ customers, GBP 1.2bn revenue, GBP 16.6bn deposits and GBP 18.3bn assets.",
+      "observedFacts": [
+        {
+          "id": "monzo-2025-total-customers",
+          "statement": "Monzo reported more than 12 million total customers in its 2025 annual report summary.",
+          "epistemicClass": "extracted",
+          "value": "12m+",
+          "unit": "customers",
+          "period": {
+            "endDate": "2025-03-31"
+          }
+        },
+        {
+          "id": "monzo-2025-revenue",
+          "statement": "Monzo reported GBP 1.2 billion of revenue in the 2025 annual report summary.",
+          "epistemicClass": "extracted",
+          "value": 1.2,
+          "unit": "GBP billions",
+          "period": {
+            "endDate": "2025-03-31"
+          }
+        },
+        {
+          "id": "monzo-2025-adjusted-profit-before-tax",
+          "statement": "Monzo reported GBP 113.9 million of adjusted profit before tax in the 2025 annual report summary.",
+          "epistemicClass": "extracted",
+          "value": 113.9,
+          "unit": "GBP millions",
+          "period": {
+            "endDate": "2025-03-31"
+          }
+        },
+        {
+          "id": "monzo-2025-customer-deposits",
+          "statement": "Monzo reported GBP 16.6 billion of customer deposits in the 2025 annual report summary.",
+          "epistemicClass": "extracted",
+          "value": 16.6,
+          "unit": "GBP billions",
+          "period": {
+            "endDate": "2025-03-31"
+          }
+        },
+        {
+          "id": "monzo-2025-total-assets",
+          "statement": "Monzo reported GBP 18.3 billion of total assets in the 2025 annual report summary.",
+          "epistemicClass": "extracted",
+          "value": 18.3,
+          "unit": "GBP billions",
+          "period": {
+            "endDate": "2025-03-31"
+          }
+        },
+        {
+          "id": "monzo-2025-weekly-active-customers",
+          "statement": "Monzo reported weekly active customers increased from 5.4 million to 6.9 million in FY2025.",
+          "epistemicClass": "extracted",
+          "value": 6.9,
+          "unit": "millions",
+          "period": {
+            "endDate": "2025-03-31"
+          }
+        }
+      ]
+    },
+    {
+      "id": "monzo-companies-house-filing-history-2025",
+      "sourceUrl": "https://find-and-update.company-information.service.gov.uk/company/14785367/filing-history?page=2",
+      "sourceTitle": "Companies House filing history for Monzo Bank Holding Group Limited",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2025-04-04",
+      "effectiveDate": "2025-04-04",
+      "sourceClass": "government",
+      "epistemicClass": "observed",
+      "locator": "Company number and 04 Apr 2025 SH01 row",
+      "shortExcerpt": "Companies House identifies company number 14785367 and a 04 Apr 2025 statement of capital filing.",
+      "observedFacts": [
+        {
+          "id": "monzo-companies-house-company-number",
+          "statement": "Companies House identifies Monzo Bank Holding Group Limited with company number 14785367.",
+          "epistemicClass": "observed",
+          "value": "14785367",
+          "unit": "company-number",
+          "period": {
+            "instantDate": "2025-04-04"
+          }
+        },
+        {
+          "id": "monzo-2025-statement-of-capital-filing",
+          "statement": "Companies House lists a 04 Apr 2025 SH01 filing for a statement of capital following an allotment of shares on 2025-03-03.",
+          "epistemicClass": "observed",
+          "value": "SH01 filed 2025-04-04 for allotment on 2025-03-03",
+          "period": {
+            "instantDate": "2025-04-04"
+          }
+        },
+        {
+          "id": "monzo-2025-statement-of-capital-gbp",
+          "statement": "The Companies House filing-history row reports statement-of-capital value GBP 237,479.179.",
+          "epistemicClass": "observed",
+          "value": 237479.179,
+          "unit": "GBP",
+          "period": {
+            "instantDate": "2025-04-04"
+          }
+        }
+      ]
+    }
+  ],
+  "failedNotes": [
+    {
+      "id": "monzo-2026-report-excluded-note",
+      "stage": "extraction",
+      "sourceUrl": "https://monzo.com/annual-report",
+      "sourceTitle": "Monzo latest annual report landing page",
+      "attemptedAt": "2026-07-26T00:00:00Z",
+      "note": "The latest Monzo annual-report landing page shows post-cutoff FY2026 material; it was not used as input for the 2025-12-31 case."
+    },
+    {
+      "id": "monzo-html-hash-not-recorded",
+      "stage": "extraction",
+      "sourceUrl": "https://monzo.com/annual-report/2025",
+      "sourceTitle": "Monzo Annual Report 2025 web summary",
+      "attemptedAt": "2026-07-26T00:00:00Z",
+      "note": "No document hash is recorded for the dynamic HTML page; raw reports and downloads remain outside Git."
+    }
+  ]
+}

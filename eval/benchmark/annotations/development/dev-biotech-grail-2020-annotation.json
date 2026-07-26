@@ -1,0 +1,175 @@
+{
+  "schemaVersion": "trace.benchmark-annotation.v1",
+  "caseId": "dev-biotech-grail-2020",
+  "partition": "development",
+  "measurementDate": "2020-09-17",
+  "expectedRoute": {
+    "route": "biotech-rnpv",
+    "acceptableAlternativeRoutes": [],
+    "evidenceIds": [
+      "grail-2020-09-17-sec-s1a",
+      "grail-2020-09-09-ipo-filing-release"
+    ],
+    "rationale": "The cutoff evidence describes a pre-revenue diagnostics company with late-stage clinical studies and planned product launch."
+  },
+  "binaryClaims": [
+    {
+      "id": "grail-s1a-filed-by-cutoff",
+      "statement": "GRAIL had filed an S-1/A by the 2020-09-17 cutoff.",
+      "expectedValue": true,
+      "evidenceIds": [
+        "grail-2020-09-17-sec-s1a"
+      ]
+    },
+    {
+      "id": "grail-revenue-generated",
+      "statement": "GRAIL had generated product revenue by the cutoff.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "grail-2020-09-17-sec-s1a"
+      ]
+    },
+    {
+      "id": "grail-commercial-product-for-sale",
+      "statement": "GRAIL had a commercial product for sale by the cutoff.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "grail-2020-09-17-sec-s1a"
+      ]
+    },
+    {
+      "id": "grail-illumina-deal-known-by-cutoff",
+      "statement": "The Illumina acquisition announcement was public by the 2020-09-17 cutoff.",
+      "expectedValue": false,
+      "evidenceIds": [
+        "grail-2020-09-21-illumina-acquisition-post-cutoff"
+      ],
+      "sourceAvailability": "post-cutoff-excluded"
+    }
+  ],
+  "observableClaims": [
+    {
+      "id": "grail-six-month-2020-net-loss",
+      "statement": "GRAIL reported a USD 136.4 million net loss for the six months ended 2020-06-30.",
+      "expectedValue": 136.4,
+      "unit": "USD millions net loss",
+      "period": {
+        "startDate": "2020-01-01",
+        "endDate": "2020-06-30"
+      },
+      "evidenceIds": [
+        "grail-2020-09-17-sec-s1a"
+      ]
+    },
+    {
+      "id": "grail-raised-through-june-2020",
+      "statement": "GRAIL had raised over USD 1.9 billion through 2020-06-30.",
+      "expectedValue": 1.9,
+      "unit": "USD billions raised, greater than",
+      "period": {
+        "instantDate": "2020-06-30"
+      },
+      "evidenceIds": [
+        "grail-2020-09-17-sec-s1a"
+      ]
+    },
+    {
+      "id": "grail-clinical-study-enrollment",
+      "statement": "GRAIL's foundational clinical trials had more than 115,000 enrolled subjects.",
+      "expectedValue": 115000,
+      "unit": "subjects, greater than",
+      "period": {
+        "instantDate": "2020-08-31"
+      },
+      "evidenceIds": [
+        "grail-2020-09-17-sec-s1a"
+      ]
+    }
+  ],
+  "expectedAbstentions": [
+    {
+      "id": "grail-security-fair-value-abstain",
+      "field": "security-level-fair-value",
+      "reasonCode": "missing-security-rights-and-cap-table",
+      "description": "The S-1/A and IPO announcement do not support private security-level fair value.",
+      "evidenceIds": [
+        "grail-2020-09-17-sec-s1a",
+        "grail-2020-09-09-ipo-filing-release"
+      ]
+    },
+    {
+      "id": "grail-product-rnpv-abstain",
+      "field": "enterprise-value",
+      "reasonCode": "no-product-cash-flow-forecast",
+      "description": "The cutoff evidence supports biotech-rNPV routing but lacks a public product cash-flow forecast for enterprise value.",
+      "evidenceIds": [
+        "grail-2020-09-17-sec-s1a"
+      ]
+    }
+  ],
+  "valuationSeparationExpectations": {
+    "allowedValuationFields": [
+      "transaction_consideration_reference",
+      "ipo_range_reference"
+    ],
+    "mustNotConflate": [
+      "post-cutoff transaction consideration with cutoff input evidence",
+      "headline transaction consideration with enterprise value",
+      "IPO placeholder or range status with security-level fair value"
+    ],
+    "notes": "The USD 8bn acquisition value is a historical post-cutoff target only."
+  },
+  "completenessExpectations": [
+    {
+      "id": "grail-cover-biotech-and-leakage",
+      "description": "A complete answer should cover pre-revenue biotech route, Galleri/DAC development, trial evidence, S-1/A status and post-cutoff Illumina leakage.",
+      "requiredEvidenceClasses": [
+        "regulatory-filing",
+        "company-primary"
+      ],
+      "requiredTopics": [
+        "biotech-rnpv route",
+        "clinical evidence",
+        "no revenue",
+        "post-cutoff transaction"
+      ],
+      "evidenceIds": [
+        "grail-2020-09-17-sec-s1a",
+        "grail-2020-09-09-ipo-filing-release"
+      ]
+    }
+  ],
+  "historicalValuationTargets": {
+    "eligible": true,
+    "reason": "Manifest permits historical valuation-error scoring for headline transaction and IPO-range reference fields only.",
+    "targets": [
+      {
+        "id": "grail-transaction-consideration-reference",
+        "eligibleField": "transaction_consideration_reference",
+        "targetDate": "2020-09-21",
+        "targetKind": "headline-transaction-consideration",
+        "expectedValue": 8,
+        "unit": "USD billions cash-and-stock consideration",
+        "sourceEvidenceIds": [
+          "grail-2020-09-21-illumina-acquisition-post-cutoff"
+        ],
+        "sourceAvailability": "post-cutoff-gold-only",
+        "scoringNotes": "Use only as headline acquisition consideration; do not convert to enterprise value or security-level fair value."
+      },
+      {
+        "id": "grail-ipo-range-reference",
+        "eligibleField": "ipo_range_reference",
+        "targetDate": "2020-09-17",
+        "targetKind": "ipo-range-status",
+        "expectedValue": "not determined in committed cutoff evidence",
+        "unit": "not applicable",
+        "sourceEvidenceIds": [
+          "grail-2020-09-17-sec-s1a",
+          "grail-2020-09-09-ipo-filing-release"
+        ],
+        "sourceAvailability": "cutoff-input-visible",
+        "scoringNotes": "The expected behavior is abstention from numeric IPO-range scoring unless a valid range is emitted with supporting evidence."
+      }
+    ]
+  }
+}

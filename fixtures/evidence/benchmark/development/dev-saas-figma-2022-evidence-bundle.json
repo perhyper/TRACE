@@ -1,0 +1,217 @@
+{
+  "schemaVersion": "trace.evidence-bundle.v1",
+  "target": {
+    "legalName": "Figma, Inc.",
+    "jurisdiction": "US",
+    "identifiers": [
+      {
+        "scheme": "other",
+        "value": "figma.com",
+        "jurisdiction": "US"
+      }
+    ],
+    "aliases": [
+      "Figma"
+    ],
+    "identityConfidence": "resolved"
+  },
+  "measurementDate": "2022-09-14",
+  "decisionMode": "full-analysis",
+  "sourceRecords": [
+    {
+      "id": "figma-2021-06-24-series-e-blog",
+      "sourceUrl": "https://www.figma.com/blog/figmas-series-e/",
+      "sourceTitle": "Figma's Series E",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2021-06-24",
+      "effectiveDate": "2021-06-24",
+      "sourceClass": "company-primary",
+      "epistemicClass": "observed",
+      "locator": "Figma blog, 24 Jun 2021",
+      "shortExcerpt": "Figma announced a new funding round led by Durable Capital with Counterpoint Global joining as a new investor.",
+      "observedFacts": [
+        {
+          "id": "figma-series-e-closed",
+          "statement": "Figma announced it closed a Series E financing round on 2021-06-24.",
+          "epistemicClass": "observed",
+          "value": "Series E closed",
+          "period": {
+            "instantDate": "2021-06-24"
+          }
+        },
+        {
+          "id": "figma-series-e-lead-investor",
+          "statement": "Figma said the Series E was led by Durable Capital Partners.",
+          "epistemicClass": "observed",
+          "value": "Durable Capital Partners",
+          "period": {
+            "instantDate": "2021-06-24"
+          }
+        },
+        {
+          "id": "figma-series-e-participants",
+          "statement": "Figma said Morgan Stanley Counterpoint Global and prior investors including Index, Greylock, Kleiner Perkins, Sequoia and a16z participated.",
+          "epistemicClass": "observed",
+          "value": [
+            "Morgan Stanley Counterpoint Global",
+            "Index",
+            "Greylock",
+            "Kleiner Perkins",
+            "Sequoia",
+            "a16z"
+          ],
+          "period": {
+            "instantDate": "2021-06-24"
+          }
+        },
+        {
+          "id": "figma-product-vision",
+          "statement": "Figma described its vision as making design accessible to all through multiplayer, expert tools and broader product-development collaboration.",
+          "epistemicClass": "extracted",
+          "value": "collaborative design software",
+          "period": {
+            "instantDate": "2021-06-24"
+          }
+        }
+      ]
+    },
+    {
+      "id": "figma-2021-06-24-series-e-value-news",
+      "sourceUrl": "https://www.theinformation.com/briefings/5a0e84",
+      "sourceTitle": "Figma raises USD 200 million at USD 10 billion valuation",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2021-06-24",
+      "effectiveDate": "2021-06-24",
+      "sourceClass": "news",
+      "epistemicClass": "observed",
+      "locator": "The Information briefing",
+      "shortExcerpt": "Public briefing reports Figma raised USD 200m Series E funding at a USD 10bn valuation.",
+      "observedFacts": [
+        {
+          "id": "figma-series-e-amount",
+          "statement": "Public reporting described Figma's Series E amount as USD 200 million.",
+          "epistemicClass": "observed",
+          "value": 200,
+          "unit": "USD millions",
+          "period": {
+            "instantDate": "2021-06-24"
+          }
+        },
+        {
+          "id": "figma-series-e-headline-valuation",
+          "statement": "Public reporting described Figma's Series E headline valuation as USD 10 billion.",
+          "epistemicClass": "observed",
+          "value": 10,
+          "unit": "USD billions headline valuation",
+          "period": {
+            "instantDate": "2021-06-24"
+          }
+        }
+      ]
+    },
+    {
+      "id": "figma-2021-04-21-figjam-launch",
+      "sourceUrl": "https://www.figma.com/blog/introducing-figjam/",
+      "sourceTitle": "Introducing FigJam",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2021-04-21",
+      "effectiveDate": "2021-04-21",
+      "sourceClass": "company-primary",
+      "epistemicClass": "extracted",
+      "locator": "Figma blog, 21 Apr 2021",
+      "shortExcerpt": "Figma introduced FigJam as an online whiteboard for brainstorming and ideation with teams.",
+      "observedFacts": [
+        {
+          "id": "figma-figjam-launched",
+          "statement": "Figma introduced FigJam on 2021-04-21 as an online whiteboard for teams.",
+          "epistemicClass": "observed",
+          "value": "FigJam launched",
+          "period": {
+            "instantDate": "2021-04-21"
+          }
+        },
+        {
+          "id": "figma-figjam-product-scope",
+          "statement": "FigJam was described as supporting sticky notes, drawing tools, shapes, connectors, stamps, cursor chats and audio collaboration.",
+          "epistemicClass": "extracted",
+          "value": [
+            "sticky notes",
+            "drawing tools",
+            "shapes and connectors",
+            "stamps",
+            "cursor chats",
+            "audio collaboration"
+          ],
+          "period": {
+            "instantDate": "2021-04-21"
+          }
+        },
+        {
+          "id": "figma-figjam-2022-pricing",
+          "statement": "Figma said FigJam would have free and paid plans in 2022 at USD 3 and USD 5 per editor per month.",
+          "epistemicClass": "observed",
+          "value": [
+            "USD 3 per editor per month",
+            "USD 5 per editor per month"
+          ],
+          "period": {
+            "instantDate": "2021-04-21"
+          }
+        }
+      ]
+    },
+    {
+      "id": "figma-2022-09-15-adobe-acquisition-post-cutoff",
+      "sourceUrl": "https://www.businesswire.com/news/home/20220915005546/en/Adobe-to-Acquire-Figma",
+      "sourceTitle": "Adobe to acquire Figma",
+      "retrievedDate": "2026-07-26",
+      "publishedDate": "2022-09-15",
+      "effectiveDate": "2022-09-15",
+      "sourceClass": "news",
+      "epistemicClass": "observed",
+      "locator": "Business Wire release, 15 Sep 2022",
+      "shortExcerpt": "Post-cutoff release announced Adobe's agreement to acquire Figma for approximately USD 20bn in cash and stock.",
+      "observedFacts": [
+        {
+          "id": "figma-post-cutoff-adobe-announcement",
+          "statement": "Adobe announced after the case cutoff that it agreed to acquire Figma.",
+          "epistemicClass": "observed",
+          "value": "Adobe acquisition announcement",
+          "period": {
+            "instantDate": "2022-09-15"
+          }
+        },
+        {
+          "id": "figma-post-cutoff-adobe-headline-consideration",
+          "statement": "The post-cutoff Adobe announcement stated approximately USD 20 billion of cash and stock consideration.",
+          "epistemicClass": "observed",
+          "value": 20,
+          "unit": "USD billions headline transaction consideration",
+          "period": {
+            "instantDate": "2022-09-15"
+          }
+        },
+        {
+          "id": "figma-post-cutoff-arr-claim",
+          "statement": "The post-cutoff Adobe announcement said Figma was expected to surpass USD 400 million of total ARR exiting 2022.",
+          "epistemicClass": "observed",
+          "value": 400,
+          "unit": "USD millions ARR",
+          "period": {
+            "endDate": "2022-12-31"
+          }
+        }
+      ]
+    }
+  ],
+  "failedNotes": [
+    {
+      "id": "figma-sec-cik-post-cutoff-note",
+      "stage": "extraction",
+      "sourceUrl": "https://www.sec.gov/",
+      "sourceTitle": "SEC EDGAR post-cutoff Figma filings",
+      "attemptedAt": "2026-07-26T00:00:00Z",
+      "note": "Figma's SEC CIK is available from post-cutoff public filings, but those filings are not eligible input for the 2022-09-14 case."
+    }
+  ]
+}
