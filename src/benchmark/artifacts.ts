@@ -4,6 +4,7 @@ import { z } from "zod";
 
 import {
   benchmarkCasePartitionSchema,
+  benchmarkScoredOrAllPartitionSchema,
   benchmarkRunnerNameSchema
 } from "./contracts.js";
 
@@ -22,7 +23,10 @@ export const benchmarkArtifactFileNames = {
   perClaimScore: "per-claim-score.json",
   caseScore: "case-score.json",
   failureRecord: "failure-record.json",
-  timingMetadata: "timing-metadata.json"
+  timingMetadata: "timing-metadata.json",
+  aggregateScoreJson: "aggregate-score.json",
+  aggregateScoreCsv: "aggregate-score.csv",
+  aggregateScoreMarkdown: "aggregate-score.md"
 } as const;
 
 export const benchmarkArtifactLayoutSchema = z
@@ -45,6 +49,23 @@ export const benchmarkArtifactLayoutSchema = z
   .strict();
 
 export type BenchmarkArtifactLayout = z.infer<typeof benchmarkArtifactLayoutSchema>;
+
+export const benchmarkAggregateArtifactLayoutSchema = z
+  .object({
+    schemaVersion: z.literal("trace.benchmark-aggregate-artifact-layout.v1"),
+    rootDirectory: nonEmptyStringSchema,
+    partition: benchmarkScoredOrAllPartitionSchema,
+    runId: pathSegmentSchema,
+    aggregateDirectory: nonEmptyStringSchema,
+    aggregateScoreJson: nonEmptyStringSchema,
+    aggregateScoreCsv: nonEmptyStringSchema,
+    aggregateScoreMarkdown: nonEmptyStringSchema
+  })
+  .strict();
+
+export type BenchmarkAggregateArtifactLayout = z.infer<
+  typeof benchmarkAggregateArtifactLayoutSchema
+>;
 
 export interface BenchmarkArtifactLayoutOptions {
   readonly rootDirectory?: string;
@@ -85,5 +106,34 @@ export function benchmarkCaseArtifactLayout(
     caseScore: join(caseDirectory, benchmarkArtifactFileNames.caseScore),
     failureRecord: join(caseDirectory, benchmarkArtifactFileNames.failureRecord),
     timingMetadata: join(caseDirectory, benchmarkArtifactFileNames.timingMetadata)
+  });
+}
+
+export interface BenchmarkAggregateArtifactLayoutOptions {
+  readonly rootDirectory?: string;
+  readonly partition: z.infer<typeof benchmarkScoredOrAllPartitionSchema>;
+  readonly runId: string;
+}
+
+export function benchmarkAggregateArtifactLayout(
+  options: BenchmarkAggregateArtifactLayoutOptions
+): BenchmarkAggregateArtifactLayout {
+  const rootDirectory = options.rootDirectory ?? join("eval", "benchmark", "runs");
+  const partition = benchmarkScoredOrAllPartitionSchema.parse(options.partition);
+  const runId = pathSegmentSchema.parse(options.runId);
+  const aggregateDirectory = join(rootDirectory, partition, runId);
+
+  return benchmarkAggregateArtifactLayoutSchema.parse({
+    schemaVersion: "trace.benchmark-aggregate-artifact-layout.v1",
+    rootDirectory,
+    partition,
+    runId,
+    aggregateDirectory,
+    aggregateScoreJson: join(aggregateDirectory, benchmarkArtifactFileNames.aggregateScoreJson),
+    aggregateScoreCsv: join(aggregateDirectory, benchmarkArtifactFileNames.aggregateScoreCsv),
+    aggregateScoreMarkdown: join(
+      aggregateDirectory,
+      benchmarkArtifactFileNames.aggregateScoreMarkdown
+    )
   });
 }

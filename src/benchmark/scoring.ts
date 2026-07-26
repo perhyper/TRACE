@@ -3,7 +3,8 @@ import type {
   FactPeriod,
   FactValue,
   ObservedFact,
-  SourceClass
+  SourceClass,
+  ValuationField
 } from "../domain/schemas.js";
 import {
   evidenceIdForSourceUrl,
@@ -21,7 +22,11 @@ import type {
   BenchmarkCitationScore,
   BenchmarkClaimScore,
   BenchmarkClaimSupportStatus,
+  BenchmarkEmittedAbstention,
   BenchmarkEmittedClaim,
+  BenchmarkEmittedValuation,
+  BenchmarkExpectedAbstention,
+  BenchmarkHistoricalValuationTarget,
   BenchmarkFailureRecord,
   BenchmarkMetricScore,
   BenchmarkPerClaimScoreOutput,
@@ -71,8 +76,28 @@ interface SourceQualityPolicy {
 const metricIds = [
   "evidence-supported-claim-precision",
   "citation-validity",
-  "source-quality"
+  "source-quality",
+  "route-accuracy",
+  "abstention-behavior",
+  "valuation-separation",
+  "historical-valuation-error",
+  "completeness",
+  "reproducibility",
+  "completion-status",
+  "duration",
+  "failure-records"
 ] as const;
+
+const claimMetricIds = metricIds.slice(0, 3);
+
+const valuationFields = [
+  "headline-valuation",
+  "enterprise-value",
+  "total-equity-value",
+  "security-level-fair-value"
+] satisfies readonly ValuationField[];
+
+const valuationFieldSet = new Set<string>(valuationFields);
 
 const sourceQualityByClass = {
   "audited-filing": {
@@ -174,7 +199,18 @@ export function scoreBenchmarkCase(input: BenchmarkScorerInput): BenchmarkClaimS
     caseId: scorerInput.caseId,
     partition: scorerInput.partition,
     status: "scored",
-    metrics: caseMetrics(emittedClaimScores),
+    metrics: orderedMetrics([
+      ...caseMetrics(emittedClaimScores),
+      scoreRouteAccuracy(scorerInput, evidenceLookup),
+      scoreAbstentionBehavior(scorerInput, evidenceLookup),
+      scoreValuationSeparation(scorerInput),
+      scoreHistoricalValuationError(scorerInput, evidenceLookup),
+      scoreCompleteness(scorerInput, evidenceLookup),
+      reproducibilityCaseMetric(),
+      completionStatusMetric(scorerInput),
+      durationMetric(scorerInput),
+      failureRecordsMetric(scorerInput)
+    ]),
     failures
   });
 
@@ -186,7 +222,7 @@ export function scoreBenchmarkCase(input: BenchmarkScorerInput): BenchmarkClaimS
 
 function failedScoreOutput(scorerInput: BenchmarkScorerInput): BenchmarkClaimScoringResult {
   const failures = [...scorerInput.runnerOutput.failures].sort(compareFailures);
-  const failedMetrics = metricIds.map((metricId) => ({
+  const failedMetrics = claimMetricIds.map((metricId) => ({
     metricId,
     status: "failed" as const,
     notes: ["Runner failed before claim, citation, and source-quality scoring."]
@@ -208,7 +244,30 @@ function failedScoreOutput(scorerInput: BenchmarkScorerInput): BenchmarkClaimSco
     caseId: scorerInput.caseId,
     partition: scorerInput.partition,
     status: "failed",
-    metrics: failedMetrics,
+    metrics: orderedMetrics([
+      ...failedMetrics,
+      failedMetric(
+        "route-accuracy",
+        "Runner failed before route-accuracy scoring."
+      ),
+      failedMetric(
+        "abstention-behavior",
+        "Runner failed before abstention-behavior scoring."
+      ),
+      failedMetric(
+        "valuation-separation",
+        "Runner failed before valuation-separation scoring."
+      ),
+      failedMetric(
+        "historical-valuation-error",
+        "Runner failed before historical valuation-error scoring."
+      ),
+      failedMetric("completeness", "Runner failed before completeness scoring."),
+      reproducibilityCaseMetric(),
+      completionStatusMetric(scorerInput),
+      durationMetric(scorerInput),
+      failureRecordsMetric(scorerInput)
+    ]),
     failures
   });
 
@@ -564,14 +623,14 @@ function ratioMetric(options: {
   readonly numerator: number;
   readonly denominator: number;
   readonly zeroDenominatorNote: string;
-}): BenchmarkMetricScore {
+}, notes: readonly string[] = []): BenchmarkMetricScore {
   if (options.denominator === 0) {
     return {
       metricId: options.metricId,
       status: "skipped",
       numerator: 0,
       denominator: 0,
-      notes: [options.zeroDenominatorNote]
+      notes: uniqueSorted([options.zeroDenominatorNote, ...notes])
     };
   }
 
@@ -581,8 +640,551 @@ function ratioMetric(options: {
     value: roundMetricNumber(options.numerator / options.denominator),
     numerator: options.numerator,
     denominator: options.denominator,
-    notes: []
+    notes: uniqueSorted(notes)
   };
+}
+
+function failedMetric(metricId: string, note: string): BenchmarkMetricScore {
+  return {
+    metricId,
+    status: "failed",
+    notes: [note]
+  };
+}
+
+function scoreRouteAccuracy(
+  scorerInput: BenchmarkScorerInput,
+  evidenceLookup: EvidenceLookup
+): BenchmarkMetricScore {
+  const expectedRoute = scorerInput.annotation.expectedRoute;
+  const emittedRoute = scorerInput.runnerOutput.normalized.route;
+  const acceptableRoutes = new Set([
+    expectedRoute.route,
+    ...expectedRoute.acceptableAlternativeRoutes
+  ]);
+  const emittedEvidenceIds =
+    emittedRoute.status === "omitted" ? [] : uniqueSorted(emittedRoute.evidenceIds);
+  const evidenceCoverage = evidenceIdsCoverage(emittedEvidenceIds, expectedRoute.evidenceIds);
+  const citedEvidenceIsUsable = emittedEvidenceIds.length > 0 &&
+    emittedEvidenceIds.every((evidenceId) => cutoffVisibleEvidenceExists(evidenceId, evidenceLookup));
+  const emittedRationale =
+    emittedRoute.status === "selected"
+      ? emittedRoute.rationale
+      : emittedRoute.status === "abstained"
+        ? emittedRoute.explanation
+        : "";
+  const rationaleScore =
+    emittedRationale.length === 0
+      ? 0
+      : tokenCoverage(expectedRoute.rationale, emittedRationale) >= 0.25
+        ? 1
+        : 0;
+  const routeScore =
+    emittedRoute.status === "selected" && acceptableRoutes.has(emittedRoute.selectedRoute)
+      ? 1
+      : emittedRoute.status === "abstained" && expectedRoute.route === "insufficient-evidence"
+        ? 1
+        : 0;
+  const numerator = routeScore + rationaleScore + (citedEvidenceIsUsable ? evidenceCoverage : 0);
+  const notes = [
+    routeScore === 1
+      ? undefined
+      : emittedRoute.status === "selected"
+        ? `Selected route ${emittedRoute.selectedRoute} did not match expected route ${expectedRoute.route}.`
+        : emittedRoute.status === "abstained"
+          ? `Route selection abstained with reason ${emittedRoute.reasonCode}.`
+          : "Route selection was omitted.",
+    rationaleScore === 1 ? undefined : "Route rationale did not satisfy the annotated rationale requirement.",
+    evidenceCoverage > 0 && citedEvidenceIsUsable
+      ? undefined
+      : "Route rationale did not cite cutoff-visible expected route evidence."
+  ].filter((note): note is string => note !== undefined).sort(compareStrings);
+
+  return ratioMetric({
+    metricId: "route-accuracy",
+    numerator: roundMetricNumber(numerator),
+    denominator: 3,
+    zeroDenominatorNote: "Route accuracy has no denominator."
+  }, notes);
+}
+
+function scoreAbstentionBehavior(
+  scorerInput: BenchmarkScorerInput,
+  evidenceLookup: EvidenceLookup
+): BenchmarkMetricScore {
+  const expectedAbstentions = scorerInput.annotation.expectedAbstentions;
+  let numerator = 0;
+  const notes: string[] = [];
+
+  for (const expectedAbstention of expectedAbstentions) {
+    const result = scoreExpectedAbstention({
+      expectedAbstention,
+      emittedAbstentions: scorerInput.runnerOutput.normalized.abstentions,
+      emittedValuations: scorerInput.runnerOutput.normalized.valuations,
+      evidenceLookup
+    });
+
+    numerator += result.score;
+    notes.push(...result.notes);
+  }
+
+  return ratioMetric({
+    metricId: "abstention-behavior",
+    numerator: roundMetricNumber(numerator),
+    denominator: expectedAbstentions.length,
+    zeroDenominatorNote: "No expected abstentions were annotated."
+  }, uniqueSorted(notes));
+}
+
+function scoreExpectedAbstention(options: {
+  readonly expectedAbstention: BenchmarkExpectedAbstention;
+  readonly emittedAbstentions: readonly BenchmarkEmittedAbstention[];
+  readonly emittedValuations: readonly BenchmarkEmittedValuation[];
+  readonly evidenceLookup: EvidenceLookup;
+}): {
+  readonly score: number;
+  readonly notes: readonly string[];
+} {
+  const expected = options.expectedAbstention;
+  const emittedAbstention = options.emittedAbstentions.find(
+    (candidate) => candidate.field === expected.field
+  );
+  const emittedValuation = options.emittedValuations.find(
+    (candidate) => candidate.field === expected.field
+  );
+  const notes: string[] = [];
+
+  if (emittedAbstention === undefined) {
+    if (emittedValuation?.status === "concluded") {
+      notes.push(`${expected.id}: expected ${expected.field} abstention but valuation was concluded.`);
+    } else if (emittedValuation?.status === "omitted") {
+      notes.push(`${expected.id}: expected ${expected.field} abstention but valuation was omitted.`);
+    } else if (emittedValuation?.status === "abstained") {
+      notes.push(`${expected.id}: expected ${expected.field} abstention lacked a normalized reason code.`);
+    } else {
+      notes.push(`${expected.id}: expected ${expected.field} abstention was not emitted.`);
+    }
+
+    return {
+      score: 0,
+      notes
+    };
+  }
+
+  const reasonScore =
+    emittedAbstention.reasonCode === expected.reasonCode ||
+    tokenCoverage(expected.description, emittedAbstention.explanation) >= 0.25
+      ? 1
+      : 0;
+  const evidenceScore = evidenceIdsCoverage(
+    emittedAbstention.evidenceIds.filter((evidenceId) =>
+      cutoffVisibleEvidenceExists(evidenceId, options.evidenceLookup)
+    ),
+    expected.evidenceIds
+  );
+  const score = (reasonScore + evidenceScore) / 2;
+
+  if (reasonScore === 0) {
+    notes.push(
+      `${expected.id}: emitted reason ${emittedAbstention.reasonCode} did not match ${expected.reasonCode}.`
+    );
+  }
+
+  if (evidenceScore === 0) {
+    notes.push(`${expected.id}: abstention did not cite expected cutoff-visible evidence.`);
+  }
+
+  return {
+    score,
+    notes: notes.sort(compareStrings)
+  };
+}
+
+function scoreValuationSeparation(scorerInput: BenchmarkScorerInput): BenchmarkMetricScore {
+  const expectations = scorerInput.annotation.valuationSeparationExpectations;
+  const allowedFields = new Set(expectations.allowedValuationFields);
+  const concludedValuations = scorerInput.runnerOutput.normalized.valuations
+    .filter((valuation) => valuation.status === "concluded")
+    .sort(compareValuations);
+  const violations: string[] = [];
+
+  for (const valuation of concludedValuations) {
+    if (!allowedFields.has(valuation.field)) {
+      violations.push(`${valuation.field} was concluded without annotation permission.`);
+    }
+  }
+
+  for (let leftIndex = 0; leftIndex < concludedValuations.length; leftIndex += 1) {
+    const left = concludedValuations[leftIndex];
+
+    if (left === undefined || left.value === undefined) {
+      continue;
+    }
+
+    for (let rightIndex = leftIndex + 1; rightIndex < concludedValuations.length; rightIndex += 1) {
+      const right = concludedValuations[rightIndex];
+
+      if (
+        right !== undefined &&
+        right.value !== undefined &&
+        left.field !== right.field &&
+        factValuesEqual(left.value, right.value) &&
+        left.unit === right.unit
+      ) {
+        violations.push(
+          `${left.field} and ${right.field} reused the same value/unit, indicating possible conflation.`
+        );
+      }
+    }
+  }
+
+  const value = violations.length === 0 ? 1 : 0;
+  const notes =
+    violations.length === 0
+      ? [
+          concludedValuations.length === 0
+            ? "No valuation conclusions were emitted, so no valuation-field conflation was detected."
+            : "Concluded valuation fields stayed within the annotation's allowed valuation fields."
+        ]
+      : violations.sort(compareStrings);
+
+  return ratioMetric({
+    metricId: "valuation-separation",
+    numerator: value,
+    denominator: 1,
+    zeroDenominatorNote: "Valuation separation has no denominator."
+  }, notes);
+}
+
+function scoreHistoricalValuationError(
+  scorerInput: BenchmarkScorerInput,
+  evidenceLookup: EvidenceLookup
+): BenchmarkMetricScore {
+  const historicalTargets = scorerInput.annotation.historicalValuationTargets;
+
+  if (!historicalTargets.eligible) {
+    return skippedMetric("historical-valuation-error", historicalTargets.reason);
+  }
+
+  const validTargets = historicalTargets.targets.filter((target) =>
+    isValidHistoricalValuationTarget(target, evidenceLookup)
+  );
+  const invalidTargetNotes = historicalTargets.targets
+    .filter((target) => !isValidHistoricalValuationTarget(target, evidenceLookup))
+    .map((target) => `${target.id}: skipped because the target is not a scalar numeric field with valid target evidence.`);
+
+  if (validTargets.length === 0) {
+    return skippedMetric("historical-valuation-error", [
+      "No valid scalar historical valuation targets were available for this case.",
+      ...invalidTargetNotes
+    ]);
+  }
+
+  let numerator = 0;
+  const notes: string[] = [...invalidTargetNotes];
+
+  for (const target of validTargets) {
+    const emittedValue = emittedHistoricalValuationValue(scorerInput, target);
+    const expectedValue = target.expectedValue;
+
+    if (typeof expectedValue !== "number") {
+      continue;
+    }
+
+    if (emittedValue === undefined) {
+      notes.push(`${target.id}: no comparable emitted valuation was available.`);
+      continue;
+    }
+
+    const targetScore = historicalValuationAccuracy(emittedValue.value, expectedValue);
+
+    numerator += targetScore;
+
+    if (targetScore < 1) {
+      notes.push(
+        `${target.id}: emitted ${String(emittedValue.value)} ${emittedValue.unit ?? ""} versus expected ${String(expectedValue)} ${target.unit}.`.trim()
+      );
+    }
+  }
+
+  return ratioMetric({
+    metricId: "historical-valuation-error",
+    numerator: roundMetricNumber(numerator),
+    denominator: validTargets.length,
+    zeroDenominatorNote: "No valid scalar historical valuation targets were available for this case."
+  }, uniqueSorted(notes));
+}
+
+function scoreCompleteness(
+  scorerInput: BenchmarkScorerInput,
+  evidenceLookup: EvidenceLookup
+): BenchmarkMetricScore {
+  const expectations = scorerInput.annotation.completenessExpectations;
+  const outputText = outputSearchText(scorerInput);
+  const citedEvidenceIds = emittedEvidenceIds(scorerInput);
+  let numerator = 0;
+  const notes: string[] = [];
+
+  for (const expectation of expectations) {
+    const topicCoverage = expectation.requiredTopics.filter((topic) =>
+      tokenCoverage(topic, outputText) >= 0.6
+    ).length / expectation.requiredTopics.length;
+    const classCoverage = expectation.requiredEvidenceClasses.filter((sourceClass) =>
+      citedEvidenceIds.some((evidenceId) => {
+        const record = evidenceLookup.evidenceById.get(evidenceId);
+
+        return record?.sourceClass === sourceClass;
+      })
+    ).length / expectation.requiredEvidenceClasses.length;
+    const expectationScore = (topicCoverage + classCoverage) / 2;
+
+    numerator += expectationScore;
+
+    if (expectationScore < 1) {
+      notes.push(
+        `${expectation.id}: topic coverage ${formatMetricRatio(topicCoverage)}, evidence-class coverage ${formatMetricRatio(classCoverage)}.`
+      );
+    }
+  }
+
+  return ratioMetric({
+    metricId: "completeness",
+    numerator: roundMetricNumber(numerator),
+    denominator: expectations.length,
+    zeroDenominatorNote: "No completeness expectations were annotated."
+  }, uniqueSorted(notes));
+}
+
+function reproducibilityCaseMetric(): BenchmarkMetricScore {
+  return skippedMetric(
+    "reproducibility",
+    "Per-case reproducibility requires aggregate comparison across repeated runs."
+  );
+}
+
+function completionStatusMetric(scorerInput: BenchmarkScorerInput): BenchmarkMetricScore {
+  return ratioMetric({
+    metricId: "completion-status",
+    numerator: scorerInput.runnerOutput.status === "completed" ? 1 : 0,
+    denominator: 1,
+    zeroDenominatorNote: "Completion status has no denominator."
+  }, scorerInput.runnerOutput.status === "completed" ? [] : ["Runner status was failed."]);
+}
+
+function durationMetric(scorerInput: BenchmarkScorerInput): BenchmarkMetricScore {
+  const durationMs = scorerInput.runnerOutput.timing.durationMs;
+
+  if (durationMs === undefined) {
+    return ratioMetric({
+      metricId: "duration",
+      numerator: 0,
+      denominator: 1,
+      zeroDenominatorNote: "Duration has no denominator."
+    }, ["Runner timing did not include durationMs."]);
+  }
+
+  const value = durationScore(durationMs);
+
+  return ratioMetric({
+    metricId: "duration",
+    numerator: value,
+    denominator: 1,
+    zeroDenominatorNote: "Duration has no denominator."
+  }, [`durationMs=${String(durationMs)}`]);
+}
+
+function failureRecordsMetric(scorerInput: BenchmarkScorerInput): BenchmarkMetricScore {
+  const failureCount = scorerInput.runnerOutput.failures.length;
+
+  return ratioMetric({
+    metricId: "failure-records",
+    numerator: failureCount === 0 ? 1 : 0,
+    denominator: 1,
+    zeroDenominatorNote: "Failure records have no denominator."
+  }, failureCount === 0
+    ? []
+    : scorerInput.runnerOutput.failures
+        .map((failure) => `${failure.failureId}: ${failure.message}`)
+        .sort(compareStrings));
+}
+
+function skippedMetric(metricId: string, notes: string | readonly string[]): BenchmarkMetricScore {
+  return {
+    metricId,
+    status: "skipped",
+    numerator: 0,
+    denominator: 0,
+    notes: typeof notes === "string" ? [notes] : [...notes].sort(compareStrings)
+  };
+}
+
+function evidenceIdsCoverage(
+  emittedEvidenceIds: readonly string[],
+  expectedEvidenceIds: readonly string[]
+): number {
+  if (expectedEvidenceIds.length === 0) {
+    return 0;
+  }
+
+  const emitted = new Set(emittedEvidenceIds);
+  const matchedCount = expectedEvidenceIds.filter((evidenceId) => emitted.has(evidenceId)).length;
+
+  return matchedCount / expectedEvidenceIds.length;
+}
+
+function cutoffVisibleEvidenceExists(
+  evidenceId: string,
+  evidenceLookup: EvidenceLookup
+): boolean {
+  return evidenceLookup.evidenceById.has(evidenceId);
+}
+
+function isValidHistoricalValuationTarget(
+  target: BenchmarkHistoricalValuationTarget,
+  evidenceLookup: EvidenceLookup
+): boolean {
+  return (
+    typeof target.expectedValue === "number" &&
+    target.sourceEvidenceIds.every((evidenceId) =>
+      target.sourceAvailability === "cutoff-input-visible"
+        ? evidenceLookup.evidenceById.has(evidenceId)
+        : evidenceLookup.evidenceById.has(evidenceId) || evidenceLookup.excludedById.has(evidenceId)
+    )
+  );
+}
+
+function emittedHistoricalValuationValue(
+  scorerInput: BenchmarkScorerInput,
+  target: BenchmarkHistoricalValuationTarget
+): {
+  readonly value: number;
+  readonly unit?: string;
+} | undefined {
+  if (valuationFieldSet.has(target.eligibleField)) {
+    const emittedValuation = scorerInput.runnerOutput.normalized.valuations.find(
+      (valuation) =>
+        valuation.field === target.eligibleField &&
+        valuation.status === "concluded" &&
+        typeof valuation.value === "number" &&
+        valuation.unit === target.unit
+    );
+
+    if (emittedValuation !== undefined && typeof emittedValuation.value === "number") {
+      return {
+        value: emittedValuation.value,
+        ...(emittedValuation.unit !== undefined ? { unit: emittedValuation.unit } : {})
+      };
+    }
+  }
+
+  const targetNeedles = [
+    target.id,
+    target.eligibleField,
+    target.targetKind
+  ].map(normalizeIdentifierToken);
+  const emittedClaim = scorerInput.runnerOutput.normalized.claims.find((claim) => {
+    if (claim.kind !== "valuation" || typeof claim.value !== "number" || claim.unit !== target.unit) {
+      return false;
+    }
+
+    const haystack = normalizeIdentifierToken(`${claim.id} ${claim.statement}`);
+
+    return targetNeedles.some((needle) => needle.length > 0 && haystack.includes(needle));
+  });
+
+  if (emittedClaim === undefined || typeof emittedClaim.value !== "number") {
+    return undefined;
+  }
+
+  return {
+    value: emittedClaim.value,
+    ...(emittedClaim.unit !== undefined ? { unit: emittedClaim.unit } : {})
+  };
+}
+
+function historicalValuationAccuracy(emittedValue: number, expectedValue: number): number {
+  if (expectedValue === 0) {
+    return emittedValue === 0 ? 1 : 0;
+  }
+
+  const absolutePercentageError = Math.abs(emittedValue - expectedValue) / Math.abs(expectedValue);
+
+  return roundMetricNumber(Math.max(0, 1 - Math.min(1, absolutePercentageError)));
+}
+
+function outputSearchText(scorerInput: BenchmarkScorerInput): string {
+  return [
+    scorerInput.runnerOutput.rawOutput.markdown,
+    scorerInput.runnerOutput.rawOutput.text,
+    stableStringify(scorerInput.runnerOutput.rawOutput.json),
+    ...scorerInput.runnerOutput.normalized.claims.map((claim) => claim.statement),
+    scorerInput.runnerOutput.normalized.route.status === "selected"
+      ? scorerInput.runnerOutput.normalized.route.rationale
+      : scorerInput.runnerOutput.normalized.route.status === "abstained"
+        ? scorerInput.runnerOutput.normalized.route.explanation
+        : undefined,
+    ...scorerInput.runnerOutput.normalized.abstentions.map((abstention) =>
+      `${abstention.reasonCode} ${abstention.explanation}`
+    ),
+    ...scorerInput.runnerOutput.normalized.valuations.map((valuation) =>
+      `${valuation.field} ${valuation.status} ${valuation.rationale ?? ""}`
+    )
+  ].filter((part): part is string => part !== undefined).join("\n");
+}
+
+function emittedEvidenceIds(scorerInput: BenchmarkScorerInput): string[] {
+  return uniqueSorted([
+    ...scorerInput.runnerOutput.normalized.claims.flatMap((claim) =>
+      claim.citations.map((citation) => citation.evidenceId)
+    ),
+    ...(scorerInput.runnerOutput.normalized.route.status === "omitted"
+      ? []
+      : scorerInput.runnerOutput.normalized.route.evidenceIds),
+    ...scorerInput.runnerOutput.normalized.abstentions.flatMap((abstention) =>
+      abstention.evidenceIds
+    ),
+    ...scorerInput.runnerOutput.normalized.valuations.flatMap((valuation) =>
+      valuation.evidenceIds
+    )
+  ]);
+}
+
+function durationScore(durationMs: number): number {
+  const fullCreditMs = 60_000;
+  const zeroCreditMs = 300_000;
+
+  if (durationMs <= fullCreditMs) {
+    return 1;
+  }
+
+  if (durationMs >= zeroCreditMs) {
+    return 0;
+  }
+
+  return roundMetricNumber(1 - (durationMs - fullCreditMs) / (zeroCreditMs - fullCreditMs));
+}
+
+function formatMetricRatio(value: number): string {
+  return roundMetricNumber(value).toFixed(6).replace(/0+$/u, "").replace(/\.$/u, "");
+}
+
+function orderedMetrics(metrics: readonly BenchmarkMetricScore[]): BenchmarkMetricScore[] {
+  const order = new Map<string, number>(metricIds.map((metricId, index) => [metricId, index]));
+
+  return [...metrics].sort((left, right) => {
+    const leftOrder = order.get(left.metricId);
+    const rightOrder = order.get(right.metricId);
+
+    if (leftOrder !== undefined || rightOrder !== undefined) {
+      return (leftOrder ?? Number.MAX_SAFE_INTEGER) - (rightOrder ?? Number.MAX_SAFE_INTEGER);
+    }
+
+    return compareStrings(left.metricId, right.metricId);
+  });
+}
+
+function normalizeIdentifierToken(value: string): string {
+  return value.toLowerCase().replace(/[^a-z0-9]+/gu, "");
 }
 
 function buildEvidenceLookup(scorerInput: BenchmarkScorerInput): EvidenceLookup {
@@ -1083,6 +1685,13 @@ function compareCitations(left: BenchmarkCitation, right: BenchmarkCitation): nu
     [left.evidenceId, left.factId ?? "", left.locator ?? ""],
     [right.evidenceId, right.factId ?? "", right.locator ?? ""]
   );
+}
+
+function compareValuations(
+  left: BenchmarkEmittedValuation,
+  right: BenchmarkEmittedValuation
+): number {
+  return compareTuple([left.field, left.status], [right.field, right.status]);
 }
 
 function compareFailures(left: BenchmarkFailureRecord, right: BenchmarkFailureRecord): number {

@@ -15,6 +15,7 @@ import type {
   BenchmarkClaimScore,
   BenchmarkCompiledCase,
   BenchmarkEmittedClaim,
+  BenchmarkNormalizedRunnerOutput,
   BenchmarkExpectedBinaryClaim,
   BenchmarkExpectedObservableClaim,
   BenchmarkMetricScore,
@@ -24,13 +25,17 @@ import { scoreBenchmarkCase } from "../src/benchmark/scoring.js";
 import type { SourceClass } from "../src/domain/schemas.js";
 
 async function chimeFixture(): Promise<BenchmarkCompiledCase> {
+  return developmentFixture("dev-fintech-chime-2025");
+}
+
+async function developmentFixture(caseId: string): Promise<BenchmarkCompiledCase> {
   const compiledCases = await compileBenchmarkCases({ partitions: ["development"] });
   const compiledCase = compiledCases.find(
-    (candidate) => candidate.caseId === "dev-fintech-chime-2025"
+    (candidate) => candidate.caseId === caseId
   );
 
   if (compiledCase === undefined || compiledCase.scorerReference.kind !== "scored") {
-    throw new Error("Expected the Chime development case to be a scored fixture");
+    throw new Error(`Expected ${caseId} to be a scored fixture`);
   }
 
   return compiledCase;
@@ -98,6 +103,21 @@ function otherEvidenceId(
   return otherEvidenceRecord.id;
 }
 
+function evidenceIdForSourceClass(
+  compiledCase: BenchmarkCompiledCase,
+  sourceClass: SourceClass
+): string {
+  const evidenceRecord = compiledCase.runnerInput.evidenceLedger.evidence.find(
+    (record) => record.sourceClass === sourceClass
+  );
+
+  if (evidenceRecord === undefined) {
+    throw new Error(`Expected source class ${sourceClass}`);
+  }
+
+  return evidenceRecord.id;
+}
+
 function firstPostCutoffEvidenceId(compiledCase: BenchmarkCompiledCase): string {
   const excludedRecord = compiledCase.runnerInput.evidenceLedger.excludedRecords[0];
 
@@ -156,7 +176,13 @@ function emittedBinary(
 
 function runnerOutput(
   compiledCase: BenchmarkCompiledCase,
-  claims: readonly BenchmarkEmittedClaim[]
+  claims: readonly BenchmarkEmittedClaim[],
+  options: {
+    readonly route?: BenchmarkNormalizedRunnerOutput["route"];
+    readonly abstentions?: BenchmarkNormalizedRunnerOutput["abstentions"];
+    readonly valuations?: BenchmarkNormalizedRunnerOutput["valuations"];
+    readonly rawMarkdown?: string;
+  } = {}
 ): BenchmarkRunnerOutput {
   return benchmarkRunnerOutputSchema.parse({
     schemaVersion: "trace.benchmark-runner-output.v1",
@@ -172,15 +198,15 @@ function runnerOutput(
       durationMs: 1000
     },
     rawOutput: {
-      markdown: "# Scoring fixture\n"
+      markdown: options.rawMarkdown ?? "# Scoring fixture\n"
     },
     normalized: {
       claims,
-      route: {
+      route: options.route ?? {
         status: "omitted"
       },
-      abstentions: [],
-      valuations: []
+      abstentions: options.abstentions ?? [],
+      valuations: options.valuations ?? []
     },
     failures: []
   });
@@ -188,14 +214,15 @@ function runnerOutput(
 
 function scoreClaims(
   compiledCase: BenchmarkCompiledCase,
-  claims: readonly BenchmarkEmittedClaim[]
+  claims: readonly BenchmarkEmittedClaim[],
+  options: Parameters<typeof runnerOutput>[2] = {}
 ): {
   readonly claimScores: readonly BenchmarkClaimScore[];
   readonly caseScore: BenchmarkCaseScoreOutput;
 } {
   const scorerInput = createBenchmarkScorerInput({
     compiledCase,
-    runnerOutput: runnerOutput(compiledCase, claims)
+    runnerOutput: runnerOutput(compiledCase, claims, options)
   });
   const score = scoreBenchmarkCase(scorerInput);
 
@@ -498,6 +525,156 @@ describe("benchmark claim, citation, and source-quality scoring", () => {
     expect(metric(caseScore, "citation-validity")).toMatchObject({
       numerator: 1,
       denominator: 6
+    });
+  });
+
+  it("scores route accuracy and expected abstention behavior", async () => {
+    const compiledCase = await chimeFixture();
+    const annotation = scoredAnnotation(compiledCase);
+    const { caseScore } = scoreClaims(compiledCase, [], {
+      route: {
+        status: "selected",
+        selectedRoute: annotation.expectedRoute.route,
+        rationale: annotation.expectedRoute.rationale,
+        evidenceIds: annotation.expectedRoute.evidenceIds
+      },
+      abstentions: annotation.expectedAbstentions.map((abstention) => ({
+        id: `emitted-${abstention.id}`,
+        field: abstention.field,
+        reasonCode: abstention.reasonCode,
+        explanation: abstention.description,
+        evidenceIds: abstention.evidenceIds
+      }))
+    });
+
+    expect(metric(caseScore, "route-accuracy")).toMatchObject({
+      status: "scored",
+      value: 1,
+      numerator: 3,
+      denominator: 3
+    });
+    expect(metric(caseScore, "abstention-behavior")).toMatchObject({
+      status: "scored",
+      value: 1,
+      numerator: 2,
+      denominator: 2
+    });
+  });
+
+  it("detects valuation field conflation", async () => {
+    const compiledCase = await developmentFixture("dev-saas-figma-2022");
+    const annotation = scoredAnnotation(compiledCase);
+    const headlineEvidenceId = evidenceId(
+      observableClaim(annotation, "figma-series-e-headline-valuation")
+    );
+    const { caseScore } = scoreClaims(compiledCase, [], {
+      valuations: [
+        {
+          field: "headline-valuation",
+          status: "concluded",
+          value: 10,
+          unit: "USD billions headline valuation",
+          rationale: "Series E headline valuation only.",
+          evidenceIds: [headlineEvidenceId]
+        },
+        {
+          field: "enterprise-value",
+          status: "concluded",
+          value: 10,
+          unit: "USD billions headline valuation",
+          rationale: "Incorrectly reused the headline valuation as enterprise value.",
+          evidenceIds: [headlineEvidenceId]
+        }
+      ]
+    });
+
+    expect(metric(caseScore, "valuation-separation")).toMatchObject({
+      status: "scored",
+      value: 0,
+      numerator: 0,
+      denominator: 1
+    });
+    expect(metric(caseScore, "valuation-separation").notes.join("\n")).toContain(
+      "enterprise-value"
+    );
+  });
+
+  it("skips historical valuation error when the annotation marks the case ineligible", async () => {
+    const compiledCase = await developmentFixture("dev-saas-figma-2022");
+    const { caseScore } = scoreClaims(compiledCase, []);
+    const historicalMetric = metric(caseScore, "historical-valuation-error");
+
+    expect(historicalMetric).toMatchObject({
+      status: "skipped",
+      numerator: 0,
+      denominator: 0
+    });
+    expect(historicalMetric.notes.join("\n")).toContain("ineligible");
+  });
+
+  it("scores historical valuation error only against valid annotated numeric targets", async () => {
+    const compiledCase = await chimeFixture();
+    const annotation = scoredAnnotation(compiledCase);
+
+    if (!annotation.historicalValuationTargets.eligible) {
+      throw new Error("Expected Chime to be historical-valuation eligible");
+    }
+
+    const target = annotation.historicalValuationTargets.targets[0];
+
+    if (target === undefined || typeof target.expectedValue !== "number") {
+      throw new Error("Expected Chime to have a numeric historical valuation target");
+    }
+
+    const { caseScore } = scoreClaims(compiledCase, [
+      {
+        id: `emitted-${target.id}`,
+        kind: "valuation",
+        statement: `${target.id} ${target.eligibleField} ${target.targetKind}`,
+        value: target.expectedValue * 0.9,
+        unit: target.unit,
+        citations: []
+      }
+    ]);
+
+    expect(metric(caseScore, "historical-valuation-error")).toMatchObject({
+      status: "scored",
+      value: 0.9,
+      numerator: 0.9,
+      denominator: 1
+    });
+  });
+
+  it("scores completeness from required topics and cited evidence classes", async () => {
+    const compiledCase = await chimeFixture();
+    const annotation = scoredAnnotation(compiledCase);
+    const s1Filed = binaryClaim(annotation, "chime-s1-filed-by-cutoff");
+    const ipoPriceKnown = binaryClaim(annotation, "chime-ipo-price-known-at-cutoff");
+    const { caseScore } = scoreClaims(
+      compiledCase,
+      [
+        emittedBinary(s1Filed, {
+          id: "completeness-regulatory-source",
+          evidenceId: evidenceIdForSourceClass(compiledCase, "regulatory-filing")
+        }),
+        emittedBinary(ipoPriceKnown, {
+          id: "completeness-company-source",
+          evidenceId: evidenceIdForSourceClass(compiledCase, "company-primary")
+        })
+      ],
+      {
+        rawMarkdown: [
+          "# Chime",
+          "identity financial-services route member metrics cutoff abstention"
+        ].join("\n")
+      }
+    );
+
+    expect(metric(caseScore, "completeness")).toMatchObject({
+      status: "scored",
+      value: 1,
+      numerator: 1,
+      denominator: 1
     });
   });
 });

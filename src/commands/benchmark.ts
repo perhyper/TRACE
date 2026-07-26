@@ -5,11 +5,21 @@ import { z } from "zod";
 
 import type { BenchmarkCommand } from "../cli/args.js";
 import {
+  benchmarkAggregateArtifactLayout,
   benchmarkCaseArtifactLayout
 } from "../benchmark/artifacts.js";
 import type {
+  BenchmarkAggregateArtifactLayout,
   BenchmarkArtifactLayout
 } from "../benchmark/artifacts.js";
+import {
+  aggregateBenchmarkScores,
+  renderBenchmarkAggregateCsv,
+  renderBenchmarkAggregateMarkdown
+} from "../benchmark/aggregation.js";
+import type {
+  BenchmarkAggregateCaseResult
+} from "../benchmark/aggregation.js";
 import {
   benchmarkCaseInputForRunner,
   compileBenchmarkCases,
@@ -21,6 +31,7 @@ import {
 import type {
   BenchmarkCaseInput,
   BenchmarkCasePartition,
+  BenchmarkCaseScoreOutput,
   BenchmarkCompiledCase,
   BenchmarkFailureRecord,
   BenchmarkRunnerName,
@@ -56,6 +67,7 @@ export interface BenchmarkRunResult {
   readonly artifactCount: number;
   readonly status: "completed" | "completed-with-failures";
   readonly artifacts: readonly BenchmarkWrittenArtifact[];
+  readonly aggregateArtifact: BenchmarkWrittenAggregateArtifact;
   readonly failures: readonly BenchmarkFailureRecord[];
 }
 
@@ -65,7 +77,13 @@ export interface BenchmarkWrittenArtifact {
   readonly partition: BenchmarkCasePartition;
   readonly status: BenchmarkRunnerOutput["status"];
   readonly failureCount: number;
+  readonly caseScore: BenchmarkCaseScoreOutput;
   readonly layout: BenchmarkArtifactLayout;
+}
+
+export interface BenchmarkWrittenAggregateArtifact {
+  readonly groupCount: number;
+  readonly layout: BenchmarkAggregateArtifactLayout;
 }
 
 export type BenchmarkRunnerSelection = BenchmarkRunnerName | "all";
@@ -100,6 +118,7 @@ export async function runBenchmark(
   const parsedRunId = pathSegmentSchema.parse(runId);
   const runner = options.runner ?? runSelectedBenchmarkRunner;
   const artifacts: BenchmarkWrittenArtifact[] = [];
+  const aggregateCaseResults: BenchmarkAggregateCaseResult[] = [];
   const failures: BenchmarkFailureRecord[] = [];
 
   for (const runnerName of runnerNames) {
@@ -118,9 +137,24 @@ export async function runBenchmark(
       });
 
       artifacts.push(artifact);
+      aggregateCaseResults.push({
+        compiledCase,
+        runnerOutput: output,
+        caseScore: artifact.caseScore
+      });
       failures.push(...output.failures);
     }
   }
+
+  const aggregateScore = aggregateBenchmarkScores({
+    runId: parsedRunId,
+    partition: command.partition,
+    caseResults: aggregateCaseResults
+  });
+  const aggregateArtifact = await writeBenchmarkAggregateArtifacts({
+    rootDirectory: command.out,
+    aggregateScore
+  });
 
   return {
     command: "benchmark",
@@ -134,6 +168,7 @@ export async function runBenchmark(
     artifactCount: artifacts.length,
     status: failures.length === 0 ? "completed" : "completed-with-failures",
     artifacts,
+    aggregateArtifact,
     failures
   };
 }
@@ -171,6 +206,36 @@ export async function writeBenchmarkCaseArtifacts(options: {
     partition: options.runnerOutput.partition,
     status: options.runnerOutput.status,
     failureCount: options.runnerOutput.failures.length,
+    caseScore: scoreOutput.caseScore,
+    layout
+  };
+}
+
+export async function writeBenchmarkAggregateArtifacts(options: {
+  readonly rootDirectory: string;
+  readonly aggregateScore: ReturnType<typeof aggregateBenchmarkScores>;
+}): Promise<BenchmarkWrittenAggregateArtifact> {
+  const layout = benchmarkAggregateArtifactLayout({
+    rootDirectory: options.rootDirectory,
+    partition: options.aggregateScore.partition,
+    runId: options.aggregateScore.runId
+  });
+
+  await mkdir(layout.aggregateDirectory, { recursive: true });
+  await writeJson(layout.aggregateScoreJson, options.aggregateScore);
+  await writeFile(
+    layout.aggregateScoreCsv,
+    renderBenchmarkAggregateCsv(options.aggregateScore),
+    "utf8"
+  );
+  await writeFile(
+    layout.aggregateScoreMarkdown,
+    renderBenchmarkAggregateMarkdown(options.aggregateScore),
+    "utf8"
+  );
+
+  return {
+    groupCount: options.aggregateScore.groups.length,
     layout
   };
 }

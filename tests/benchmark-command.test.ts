@@ -6,6 +6,7 @@ import { describe, expect, it } from "vitest";
 
 import { runBenchmark } from "../src/commands/benchmark.js";
 import {
+  benchmarkAggregateScoreOutputSchema,
   benchmarkCaseScoreOutputSchema,
   benchmarkPerClaimScoreOutputSchema,
   benchmarkScorerInputSchema,
@@ -20,6 +21,21 @@ async function temporaryArtifactRoot(): Promise<string> {
 async function readJson(path: string): Promise<unknown> {
   return JSON.parse(await readFile(path, "utf8"));
 }
+
+const expectedCaseMetricIds = [
+  "evidence-supported-claim-precision",
+  "citation-validity",
+  "source-quality",
+  "route-accuracy",
+  "abstention-behavior",
+  "valuation-separation",
+  "historical-valuation-error",
+  "completeness",
+  "reproducibility",
+  "completion-status",
+  "duration",
+  "failure-records"
+] as const;
 
 describe("benchmark command runner", () => {
   it("runs a fixture subset through all benchmark runners and writes artifacts", async () => {
@@ -38,6 +54,7 @@ describe("benchmark command runner", () => {
     expect(result.runners).toEqual(["baseline-a", "baseline-b", "trace-full"]);
     expect(result.caseCount).toBe(1);
     expect(result.artifactCount).toBe(3);
+    expect(result.aggregateArtifact.groupCount).toBeGreaterThan(0);
     expect(result.failures).toEqual([]);
 
     for (const artifact of result.artifacts) {
@@ -70,14 +87,26 @@ describe("benchmark command runner", () => {
       expect(perClaimScore.caseId).toBe("dev-fintech-chime-2025");
       expect(caseScore.runnerName).toBe(artifact.runnerName);
       expect(caseScore.caseId).toBe("dev-fintech-chime-2025");
-      expect(caseScore.metrics.map((scoreMetric) => scoreMetric.metricId)).toEqual([
-        "evidence-supported-claim-precision",
-        "citation-validity",
-        "source-quality"
-      ]);
+      expect(caseScore.metrics.map((scoreMetric) => scoreMetric.metricId)).toEqual(
+        expectedCaseMetricIds
+      );
       expect(failureRecords).toEqual([]);
       expect(timing.schemaVersion).toBe("trace.benchmark-timing.v1");
     }
+
+    const aggregateScore = benchmarkAggregateScoreOutputSchema.parse(
+      await readJson(result.aggregateArtifact.layout.aggregateScoreJson)
+    );
+    const aggregateCsv = await readFile(result.aggregateArtifact.layout.aggregateScoreCsv, "utf8");
+    const aggregateMarkdown = await readFile(
+      result.aggregateArtifact.layout.aggregateScoreMarkdown,
+      "utf8"
+    );
+
+    expect(aggregateScore.runId).toBe("integration-run");
+    expect(aggregateScore.groups.map((group) => group.groupId)).toContain("overall");
+    expect(aggregateCsv).toContain("group_id,group_kind,runner_name");
+    expect(aggregateMarkdown).toContain("| Group | Kind | Runner |");
   });
 
   it("derives deterministic run ids when no run id is supplied", async () => {

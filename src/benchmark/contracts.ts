@@ -807,6 +807,8 @@ export const benchmarkAggregateScoreGroupSchema = z
     groupKind: z.enum(["overall", "partition", "data-tier", "sector-route", "runner"]),
     runnerName: benchmarkRunnerNameSchema.optional(),
     partition: benchmarkScoredOrAllPartitionSchema.optional(),
+    dataTier: benchmarkDataTierSchema.optional(),
+    sectorRoute: analysisRouteSchema.optional(),
     caseCount: z.number().int().nonnegative(),
     scoredCaseCount: z.number().int().nonnegative(),
     failedCaseCount: z.number().int().nonnegative(),
