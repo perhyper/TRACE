@@ -1,0 +1,4 @@
+interface:
+  display_name: "TRACE Private Company Analysis"
+  short_description: "Evidence-first private-company screening and valuation"
+  default_prompt: "Use $trace to screen a private company from public evidence and produce a cited valuation range or abstention."

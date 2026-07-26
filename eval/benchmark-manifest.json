@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "0.1.0",
+  "status": "development",
+  "frozen": false,
+  "primaryMetric": "evidence-supported-claim-precision",
+  "lockBlockers": [
+    "Official contest rules and runtime constraints have not been supplied.",
+    "Candidate company source rights and cutoff leakage audits are incomplete."
+  ],
+  "cases": [
+    {
+      "caseId": "dev-fintech-revolut-2025",
+      "partition": "development",
+      "companyName": "Revolut Group Holdings Ltd",
+      "companyIdentifier": "GB-12743269",
+      "industry": "financial-services",
+      "dataTier": "rich",
+      "measurementDate": "2026-03-24",
+      "purpose": "Route and recent-secondary calibration vertical slice",
+      "expectedSafetyBehavior": [
+        "Keep the USD 75 billion headline separate from enterprise value.",
+        "Abstain from security-level fair value without share rights and cap table."
+      ]
+    }
+  ]
+}
