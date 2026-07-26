@@ -1,26 +1,602 @@
 {
-  "schemaVersion": "0.1.0",
-  "status": "development",
-  "frozen": false,
+  "schemaVersion": "trace.benchmark-manifest.v1",
+  "lockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+  "status": "frozen",
+  "frozen": true,
+  "lockDate": "2026-07-26",
+  "purpose": "internal-product-validation-benchmark",
   "primaryMetric": "evidence-supported-claim-precision",
-  "lockBlockers": [
-    "Official contest rules and runtime constraints have not been supplied.",
-    "Candidate company source rights and cutoff leakage audits are incomplete."
-  ],
-  "cases": [
+  "authorityBoundary": {
+    "benchmarkAuthority": "Internal TRACE product-validation benchmark only.",
+    "officialContestRulesStatus": "not-supplied",
+    "contestComplianceClaimAllowed": false,
+    "missingOfficialRulesHandling": "Missing official contest rules remain documented but do not block this internal benchmark lock.",
+    "prohibitedClaims": [
+      "official contest compliance",
+      "contest readiness",
+      "investment advice",
+      "appraisal status",
+      "benchmark superiority"
+    ]
+  },
+  "caseSelectionPolicy": {
+    "sourceSlate": "Pre-score audited 12-case slate recorded before manifest lock.",
+    "scoreInspectionStatusAtLock": "No benchmark scores, aggregate benchmark results, or score-informed code changes had been inspected or generated.",
+    "demoCasePolicy": "Demo cases are runnable examples and are excluded from development and locked-test scoring counts."
+  },
+  "coverageRequirements": {
+    "scoredCaseCount": 12,
+    "demoCaseCount": 1,
+    "partitionCounts": {
+      "development": 6,
+      "locked-test": 6
+    },
+    "dataTierCounts": {
+      "rich": 4,
+      "medium": 4,
+      "sparse": 4
+    },
+    "requiredSectorRoutes": [
+      "financial-services",
+      "software-saas",
+      "biotech-rnpv"
+    ],
+    "requiredOutcomeContexts": [
+      "success",
+      "failure",
+      "stagnant",
+      "ongoing"
+    ]
+  },
+  "demoCases": [
     {
-      "caseId": "dev-fintech-revolut-2025",
-      "partition": "development",
-      "companyName": "Revolut Group Holdings Ltd",
-      "companyIdentifier": "GB-12743269",
-      "industry": "financial-services",
+      "caseId": "demo-fintech-revolut-2025",
+      "scoringRole": "demo",
+      "countedInScoring": false,
+      "partition": "demo",
+      "companyLegalName": "Revolut Group Holdings Ltd",
+      "identifiers": [
+        {
+          "type": "GB_COMPANIES_HOUSE",
+          "value": "12743269"
+        }
+      ],
+      "sectorRoute": "financial-services",
       "dataTier": "rich",
       "measurementDate": "2026-03-24",
-      "purpose": "Route and recent-secondary calibration vertical slice",
-      "expectedSafetyBehavior": [
-        "Keep the USD 75 billion headline separate from enterprise value.",
-        "Abstain from security-level fair value without share rights and cap table."
-      ]
+      "purpose": "Route and recent-secondary calibration vertical slice.",
+      "outcomeContext": {
+        "label": "demo",
+        "summary": "Non-scored first-slice demonstration case."
+      },
+      "valuationErrorEligibility": {
+        "eligible": false,
+        "reason": "Demo case is excluded from development and locked-test valuation-error scoring."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "audited-filing",
+          "company-primary",
+          "government",
+          "market-data"
+        ],
+        "cutoffDate": "2026-03-24",
+        "knownPostCutoffLeakageRisks": [
+          "Revolut disclosures, secondary-transaction coverage, or financial reports published after the cutoff.",
+          "Any post-cutoff market commentary treating the USD 75 billion headline as enterprise value or security-level fair value."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
+    }
+  ],
+  "scoredCases": [
+    {
+      "caseId": "dev-fintech-monzo-2025",
+      "scoringRole": "scored",
+      "countedInScoring": true,
+      "partition": "development",
+      "companyLegalName": "Monzo Bank Holding Group Limited",
+      "identifiers": [
+        {
+          "type": "GB_COMPANIES_HOUSE",
+          "value": "14785367"
+        },
+        {
+          "type": "LEI",
+          "value": "213800WIZ7R66OO87N21"
+        }
+      ],
+      "sectorRoute": "financial-services",
+      "dataTier": "rich",
+      "measurementDate": "2025-12-31",
+      "outcomeContext": {
+        "label": "success",
+        "summary": "Financial-services scale-up success context; post-cutoff outcome evidence is label-only and must not enter model inputs."
+      },
+      "valuationErrorEligibility": {
+        "eligible": false,
+        "reason": "No public share-rights, cap-table, or security-level fair-value target is approved for scoring."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "audited-filing",
+          "regulatory-filing",
+          "company-primary",
+          "government",
+          "news"
+        ],
+        "cutoffDate": "2025-12-31",
+        "knownPostCutoffLeakageRisks": [
+          "Later Monzo annual reports, fundraising coverage, profitability coverage, and regulatory updates.",
+          "Post-cutoff commentary that could reveal the success outcome label."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
+    },
+    {
+      "caseId": "dev-fintech-chime-2025",
+      "scoringRole": "scored",
+      "countedInScoring": true,
+      "partition": "development",
+      "companyLegalName": "Chime Financial, Inc.",
+      "identifiers": [
+        {
+          "type": "SEC_CIK",
+          "value": "0001795586"
+        }
+      ],
+      "sectorRoute": "financial-services",
+      "dataTier": "medium",
+      "measurementDate": "2025-05-13",
+      "outcomeContext": {
+        "label": "success",
+        "summary": "IPO success context after the S-1 cutoff; IPO pricing and trading data are post-cutoff outcome evidence only."
+      },
+      "valuationErrorEligibility": {
+        "eligible": true,
+        "eligibleFields": [
+          "ipo_equity_value_reference"
+        ],
+        "reason": "Eligible only for annotated historical IPO equity-value fields with disclosed share count and price evidence; enterprise value and security-level fair value remain excluded."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "regulatory-filing",
+          "company-primary",
+          "news",
+          "market-data"
+        ],
+        "cutoffDate": "2025-05-13",
+        "knownPostCutoffLeakageRisks": [
+          "IPO price range amendments, final IPO pricing, first trading data, and post-IPO financial results.",
+          "Post-cutoff reporting that discloses the success outcome label."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
+    },
+    {
+      "caseId": "dev-saas-figma-2022",
+      "scoringRole": "scored",
+      "countedInScoring": true,
+      "partition": "development",
+      "companyLegalName": "Figma, Inc.",
+      "identifiers": [
+        {
+          "type": "SEC_CIK",
+          "value": "0001579878",
+          "note": "Identifier is available from post-cutoff public filings and must not make those filings eligible as pre-cutoff input evidence."
+        }
+      ],
+      "sectorRoute": "software-saas",
+      "dataTier": "medium",
+      "measurementDate": "2022-09-14",
+      "outcomeContext": {
+        "label": "failure",
+        "summary": "Adobe transaction failure context; the acquisition announcement and later termination are post-cutoff label evidence only."
+      },
+      "valuationErrorEligibility": {
+        "eligible": false,
+        "reason": "The proposed acquisition did not close, so its consideration is not a completed valuation target for error scoring."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "company-primary",
+          "legal-record",
+          "regulatory-filing",
+          "news"
+        ],
+        "cutoffDate": "2022-09-14",
+        "knownPostCutoffLeakageRisks": [
+          "Adobe acquisition announcement on 2022-09-15.",
+          "Regulatory-review coverage, the 2023 termination announcement, and post-cutoff SEC or IPO filings."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
+    },
+    {
+      "caseId": "dev-saas-linear-2023",
+      "scoringRole": "scored",
+      "countedInScoring": true,
+      "partition": "development",
+      "companyLegalName": "Linear Orbit, Inc.",
+      "identifiers": [],
+      "identifierNotes": "No stable public registry identifier was approved for commit at manifest lock.",
+      "sectorRoute": "software-saas",
+      "dataTier": "sparse",
+      "measurementDate": "2023-09-14",
+      "outcomeContext": {
+        "label": "ongoing",
+        "summary": "Ongoing private software company context with limited public financial disclosure."
+      },
+      "valuationErrorEligibility": {
+        "eligible": false,
+        "reason": "The cutoff evidence does not include a public valuation, share-rights record, cap table, or completed outcome target."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "company-primary",
+          "legal-record",
+          "news"
+        ],
+        "cutoffDate": "2023-09-14",
+        "knownPostCutoffLeakageRisks": [
+          "Later product metrics, customer claims, fundraising, and valuation coverage.",
+          "Updated legal terms that may preserve the legal name but postdate the cutoff."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
+    },
+    {
+      "caseId": "dev-biotech-grail-2020",
+      "scoringRole": "scored",
+      "countedInScoring": true,
+      "partition": "development",
+      "companyLegalName": "GRAIL, Inc.",
+      "identifiers": [
+        {
+          "type": "SEC_CIK",
+          "value": "0001699031"
+        }
+      ],
+      "sectorRoute": "biotech-rnpv",
+      "dataTier": "rich",
+      "measurementDate": "2020-09-17",
+      "outcomeContext": {
+        "label": "failure",
+        "summary": "Post-cutoff acquisition, regulatory challenge, and divestiture context mark the case as a failed strategic outcome."
+      },
+      "valuationErrorEligibility": {
+        "eligible": true,
+        "eligibleFields": [
+          "transaction_consideration_reference",
+          "ipo_range_reference"
+        ],
+        "reason": "Eligible only for annotated headline transaction or IPO-range reference fields; no enterprise-value or security-level fair-value conversion is allowed without supporting evidence."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "regulatory-filing",
+          "government",
+          "company-primary",
+          "peer-reviewed",
+          "news",
+          "market-data"
+        ],
+        "cutoffDate": "2020-09-17",
+        "knownPostCutoffLeakageRisks": [
+          "Illumina acquisition announcement, regulatory-enforcement records, public-market relisting materials, and divestiture coverage.",
+          "Clinical or commercial updates to Galleri and related products after the cutoff."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
+    },
+    {
+      "caseId": "dev-biotech-mammoth-2021",
+      "scoringRole": "scored",
+      "countedInScoring": true,
+      "partition": "development",
+      "companyLegalName": "Mammoth Biosciences, Inc.",
+      "identifiers": [],
+      "identifierNotes": "No stable public registry identifier was approved for commit at manifest lock.",
+      "sectorRoute": "biotech-rnpv",
+      "dataTier": "medium",
+      "measurementDate": "2021-09-09",
+      "outcomeContext": {
+        "label": "ongoing",
+        "summary": "Ongoing CRISPR platform company context with private-company financing evidence and limited product-level cash-flow evidence."
+      },
+      "valuationErrorEligibility": {
+        "eligible": false,
+        "reason": "Funding headlines and platform claims do not establish a completed valuation target, security rights, or product-level rNPV cash-flow target."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "company-primary",
+          "peer-reviewed",
+          "government",
+          "news"
+        ],
+        "cutoffDate": "2021-09-09",
+        "knownPostCutoffLeakageRisks": [
+          "Later therapeutic-target disclosures, diagnostics updates, financing rounds, partnerships, and clinical progress.",
+          "Post-cutoff reporting that could reveal ongoing status."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
+    },
+    {
+      "caseId": "test-fintech-zopa-2025",
+      "scoringRole": "scored",
+      "countedInScoring": true,
+      "partition": "locked-test",
+      "companyLegalName": "Zopa Group PLC",
+      "identifiers": [
+        {
+          "type": "GB_COMPANIES_HOUSE",
+          "value": "10624955"
+        }
+      ],
+      "sectorRoute": "financial-services",
+      "dataTier": "rich",
+      "measurementDate": "2025-12-31",
+      "outcomeContext": {
+        "label": "success",
+        "summary": "Financial-services success context for locked testing; post-cutoff outcome evidence is label-only."
+      },
+      "valuationErrorEligibility": {
+        "eligible": false,
+        "reason": "No public share-rights, cap-table, or security-level fair-value target is approved for scoring."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "audited-filing",
+          "regulatory-filing",
+          "company-primary",
+          "government",
+          "news"
+        ],
+        "cutoffDate": "2025-12-31",
+        "knownPostCutoffLeakageRisks": [
+          "Later Zopa annual reports, funding coverage, IPO coverage, and regulatory updates.",
+          "Post-cutoff articles that reveal the success outcome label."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
+    },
+    {
+      "caseId": "test-fintech-stripe-2023",
+      "scoringRole": "scored",
+      "countedInScoring": true,
+      "partition": "locked-test",
+      "companyLegalName": "Stripe, Inc.",
+      "identifiers": [
+        {
+          "type": "LEI",
+          "value": "549300CLHGIPTCYHQ143",
+          "note": "The LEI record later reflects Stripe, LLC after a post-cutoff legal-name change; this case uses the historical Stripe, Inc. name."
+        }
+      ],
+      "sectorRoute": "financial-services",
+      "dataTier": "sparse",
+      "measurementDate": "2024-03-15",
+      "outcomeContext": {
+        "label": "ongoing",
+        "summary": "Ongoing private financial infrastructure company context with limited audited public financial disclosure."
+      },
+      "valuationErrorEligibility": {
+        "eligible": false,
+        "reason": "Secondary valuations and tender references lack public share-rights and cap-table evidence needed for security-level valuation-error scoring."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "company-primary",
+          "legal-record",
+          "news",
+          "market-data"
+        ],
+        "cutoffDate": "2024-03-15",
+        "knownPostCutoffLeakageRisks": [
+          "Later annual letters, secondary-tender valuations, legal-name changes, IPO rumors, and financial-performance reporting.",
+          "Post-cutoff commentary that could reveal ongoing status."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
+    },
+    {
+      "caseId": "test-saas-canva-2021",
+      "scoringRole": "scored",
+      "countedInScoring": true,
+      "partition": "locked-test",
+      "companyLegalName": "Canva Pty Ltd",
+      "identifiers": [
+        {
+          "type": "AU_ABN",
+          "value": "80 158 929 938"
+        },
+        {
+          "type": "AU_ACN",
+          "value": "158 929 938"
+        },
+        {
+          "type": "LEI",
+          "value": "98450090RD6DF9XD1546",
+          "note": "LEI became available after the cutoff and is committed only as entity-resolution metadata."
+        }
+      ],
+      "sectorRoute": "software-saas",
+      "dataTier": "medium",
+      "measurementDate": "2021-09-15",
+      "outcomeContext": {
+        "label": "ongoing",
+        "summary": "Ongoing private software company context after the USD 40 billion funding announcement."
+      },
+      "valuationErrorEligibility": {
+        "eligible": false,
+        "reason": "No completed public exit, security-rights record, or audited cap table is approved for historical valuation-error scoring."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "company-primary",
+          "government",
+          "news",
+          "market-data"
+        ],
+        "cutoffDate": "2021-09-15",
+        "knownPostCutoffLeakageRisks": [
+          "Later secondary-valuation marks, acquisitions, ASIC filings, financial-reporting enforcement, and growth disclosures.",
+          "Post-cutoff reporting that could reveal ongoing status."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
+    },
+    {
+      "caseId": "test-saas-github-2018",
+      "scoringRole": "scored",
+      "countedInScoring": true,
+      "partition": "locked-test",
+      "companyLegalName": "GitHub, Inc.",
+      "identifiers": [
+        {
+          "type": "LEI",
+          "value": "6354003LMZZAKOPXLX69"
+        },
+        {
+          "type": "US_DELAWARE_ENTITY_ID",
+          "value": "5157550"
+        }
+      ],
+      "sectorRoute": "software-saas",
+      "dataTier": "sparse",
+      "measurementDate": "2018-06-03",
+      "outcomeContext": {
+        "label": "success",
+        "summary": "Microsoft acquisition success context; announcement and close are post-cutoff label evidence."
+      },
+      "valuationErrorEligibility": {
+        "eligible": true,
+        "eligibleFields": [
+          "completed_transaction_consideration_reference"
+        ],
+        "reason": "Eligible only for annotated completed acquisition consideration; enterprise value and security-level fair value are excluded unless separately evidenced."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "company-primary",
+          "legal-record",
+          "regulatory-filing",
+          "news",
+          "market-data"
+        ],
+        "cutoffDate": "2018-06-03",
+        "knownPostCutoffLeakageRisks": [
+          "Microsoft acquisition announcement on 2018-06-04.",
+          "Microsoft completion announcement, subsequent Microsoft filings, and post-acquisition GitHub operating metrics."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
+    },
+    {
+      "caseId": "test-biotech-recursion-2021",
+      "scoringRole": "scored",
+      "countedInScoring": true,
+      "partition": "locked-test",
+      "companyLegalName": "Recursion Pharmaceuticals, Inc.",
+      "identifiers": [
+        {
+          "type": "SEC_CIK",
+          "value": "0001601830"
+        }
+      ],
+      "sectorRoute": "biotech-rnpv",
+      "dataTier": "rich",
+      "measurementDate": "2021-04-15",
+      "outcomeContext": {
+        "label": "ongoing",
+        "summary": "Ongoing public biotech platform context after IPO, with later clinical and partnership updates excluded from inputs."
+      },
+      "valuationErrorEligibility": {
+        "eligible": true,
+        "eligibleFields": [
+          "ipo_equity_value_reference"
+        ],
+        "reason": "Eligible only for annotated IPO equity-value reference fields with disclosed share count and price evidence."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "regulatory-filing",
+          "government",
+          "company-primary",
+          "peer-reviewed",
+          "market-data",
+          "news"
+        ],
+        "cutoffDate": "2021-04-15",
+        "knownPostCutoffLeakageRisks": [
+          "IPO pricing, first trading data, later clinical updates, partnerships, acquisitions, and public-company filings.",
+          "Post-cutoff reporting that could reveal ongoing status."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
+    },
+    {
+      "caseId": "test-biotech-altos-2022",
+      "scoringRole": "scored",
+      "countedInScoring": true,
+      "partition": "locked-test",
+      "companyLegalName": "Altos Labs, Inc.",
+      "identifiers": [],
+      "identifierNotes": "No stable public legal-entity registry identifier was approved for commit at manifest lock.",
+      "sectorRoute": "biotech-rnpv",
+      "dataTier": "sparse",
+      "measurementDate": "2022-01-19",
+      "outcomeContext": {
+        "label": "stagnant",
+        "summary": "Stagnant context is defined as no qualifying clinical-stage advance within the locked benchmark horizon; post-cutoff evidence is label-only."
+      },
+      "valuationErrorEligibility": {
+        "eligible": false,
+        "reason": "No public product-stage cash-flow target, completed transaction, security-rights record, or qualifying clinical-stage valuation target is approved."
+      },
+      "sourceAudit": {
+        "approvedPublicSourceCategories": [
+          "company-primary",
+          "peer-reviewed",
+          "government",
+          "news"
+        ],
+        "cutoffDate": "2022-01-19",
+        "knownPostCutoffLeakageRisks": [
+          "Later scientific publications, hiring, launch follow-up reporting, financing rumors, and pipeline disclosures.",
+          "Post-cutoff reporting that could reveal the stagnant outcome label."
+        ],
+        "redistributionStatus": "public-urls-redistribution-not-established",
+        "rawDocumentPolicy": "Raw source documents, PDFs, cached pages, and scratch downloads stay out of Git unless redistribution rights are explicitly established.",
+        "onlyUrlsAndShortExcerptsMayBeCommitted": true
+      }
     }
   ]
 }
