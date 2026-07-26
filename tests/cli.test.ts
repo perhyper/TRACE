@@ -32,6 +32,25 @@ describe("parseTraceArgs", () => {
     });
   });
 
+  it("parses the benchmark freeze validation command", () => {
+    const command = parseTraceArgs([
+      "validate-benchmark-freeze",
+      "--freeze",
+      "eval/benchmark/freeze.json",
+      "--mode",
+      "exploratory",
+      "--manifest",
+      "eval/benchmark-manifest.json"
+    ]);
+
+    expect(command).toEqual({
+      command: "validate-benchmark-freeze",
+      freeze: "eval/benchmark/freeze.json",
+      mode: "exploratory",
+      manifest: "eval/benchmark-manifest.json"
+    });
+  });
+
   it("parses the benchmark command with runner selection and case filters", () => {
     const command = parseTraceArgs([
       "benchmark",
@@ -41,6 +60,9 @@ describe("parseTraceArgs", () => {
       "all",
       "--out",
       "tmp/benchmark-runs",
+      "--freeze",
+      "eval/benchmark/freeze.json",
+      "--exploratory",
       "--run-id",
       "local-run-001",
       "--case-id",
@@ -54,6 +76,8 @@ describe("parseTraceArgs", () => {
       partition: "development",
       runner: "all",
       out: "tmp/benchmark-runs",
+      freeze: "eval/benchmark/freeze.json",
+      exploratory: true,
       runId: "local-run-001",
       caseIds: ["dev-fintech-chime-2025", "dev-fintech-monzo-2025"]
     });

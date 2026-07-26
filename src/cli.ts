@@ -4,6 +4,7 @@ import { pathToFileURL } from "node:url";
 import { CliUsageError, parseTraceArgs, usage } from "./cli/args.js";
 import { runAnalyze } from "./commands/analyze.js";
 import { runBenchmark } from "./commands/benchmark.js";
+import { runValidateBenchmarkFreeze } from "./commands/validate-benchmark-freeze.js";
 import { runValidateBenchmarkManifest } from "./commands/validate-benchmark-manifest.js";
 
 export async function main(argv: readonly string[] = process.argv.slice(2)): Promise<number> {
@@ -33,6 +34,8 @@ async function runTraceCommand(command: ReturnType<typeof parseTraceArgs>) {
       return runAnalyze(command);
     case "validate-benchmark-manifest":
       return runValidateBenchmarkManifest(command);
+    case "validate-benchmark-freeze":
+      return runValidateBenchmarkFreeze(command);
     case "benchmark":
       return runBenchmark(command);
   }

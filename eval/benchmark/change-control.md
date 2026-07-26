@@ -65,3 +65,22 @@
 - Baseline comparison: both baselines retained evidence-supported claim precision `0.303571`; both scored `0` for route accuracy and abstention behavior. Baseline A completeness was `0.75`; Baseline B completeness was `0.708333`.
 - Interpretation: the development-informed change fixed the observed routing and abstention defects without changing the locked manifest, fixtures, annotations, scorer, weights, or primary claim-precision result. It does not establish benchmark superiority because the frozen primary metric remains tied.
 - Locked-test boundary: the locked-test partition was not run, no locked-test output or score was inspected, and no locked-test run artifacts were created.
+
+## 2026-07-26 - Code/config/fixture freeze
+
+- Freeze ID: `trace-internal-benchmark-freeze-2026-07-26-v1`
+- Freeze record: `eval/benchmark/freeze.json`
+- Manifest lock ID: `trace-internal-benchmark-lock-2026-07-26-v1`
+- Development run ID: `run-dev-generalization-v1`
+- Basis commit before this unit: `58aeb43` (`Record post-adjustment development benchmark`)
+- Manifest hash: `sha256:b2ef8a7504b7747286aa24daec1f571bef9d531920a797eb83ac2f8dff0943ca`
+- Benchmark source/config hash: `sha256:429d7ea8a7d07777674144366dccfe1f8f91017f8057148730afcadac342e84a`
+- Development evidence fixture hash: `sha256:bd47e49b2ca43e30a4e6072231b2fe3318fd3db9b80ac15b61980c65383f9332`
+- Locked-test evidence fixture hash: `sha256:8da7eb38bcc0d1be30a3dc1c36ec7c9f479410de8d80ce5349700c1d559a9250`
+- Development annotation hash: `sha256:f343e40f1451bffde02edffe9dbc4c44e8929b07a83fb362d38a18b9c15c93cc`
+- Locked-test annotation hash: `sha256:30d0faec65caefe5ef4df514ae3ea382a07e0c8c2dd63fdfad75e9de9da0edbf`
+- Development artifact hash: `sha256:e4f6ff794c43314293f783ea9c2002f1d7fdc1937298858db8585e1ca884494b`
+- Command template: `npm run trace -- benchmark --partition locked-test --runner all --out eval/benchmark/runs --run-id <locked-test-run-id> --freeze eval/benchmark/freeze.json`
+- Validation helper: `npm run trace -- validate-benchmark-freeze --freeze eval/benchmark/freeze.json`
+- No-tuning boundary: after this freeze, locked-test results may not drive source, fixture, scoring, config, or weight changes. Any run made with mismatched frozen hashes must be explicitly exploratory and marked non-authoritative.
+- Locked-test boundary: the locked-test partition was not run, no locked-test output or score was inspected, and no locked-test run artifacts were created.

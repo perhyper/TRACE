@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "trace.benchmark-freeze.v1",
+  "freezeId": "trace-internal-benchmark-freeze-2026-07-26-v1",
+  "freezeDate": "2026-07-26",
+  "status": "frozen",
+  "manifestLockId": "trace-internal-benchmark-lock-2026-07-26-v1",
+  "developmentRunId": "run-dev-generalization-v1",
+  "codeState": {
+    "basisCommit": "58aeb43 Record post-adjustment development benchmark",
+    "finalCommitSelfReference": false,
+    "hashBoundary": "The final freeze cannot name its own future commit SHA. The benchmarkSourceAndConfig hash records the exact source and package/config files used for the locked-test run; freeze.json and change-control.md are outside that hash boundary."
+  },
+  "runnerVersions": {
+    "baseline-a": "trace.baseline-runner-output.v1",
+    "baseline-b": "trace.baseline-runner-output.v1",
+    "trace-full": "trace.trace-full-runner-output.v1"
+  },
+  "scorerVersions": {
+    "scorerInput": "trace.benchmark-scorer-input.v1",
+    "perClaimScore": "trace.benchmark-per-claim-score.v1",
+    "caseScore": "trace.benchmark-case-score.v1",
+    "aggregateScore": "trace.benchmark-aggregate-score.v1",
+    "scoringWeights": "trace.benchmark-scoring-weights.v1-source-quality-and-route-abstention-valuation-completeness"
+  },
+  "commandTemplates": {
+    "freezeValidation": "npm run trace -- validate-benchmark-freeze --freeze eval/benchmark/freeze.json",
+    "authoritativeLockedTest": "npm run trace -- benchmark --partition locked-test --runner all --out eval/benchmark/runs --run-id <locked-test-run-id> --freeze eval/benchmark/freeze.json",
+    "exploratoryLockedTest": "npm run trace -- benchmark --partition locked-test --runner all --out <scratch-artifact-root> --run-id <exploratory-run-id> --freeze eval/benchmark/freeze.json --exploratory"
+  },
+  "environmentAssumptions": {
+    "node": ">=22.18.0",
+    "packageManager": "npm with package-lock.json",
+    "network": "No network access is required or allowed for runners, scoring, aggregation, or freeze validation.",
+    "timezone": "Benchmark runner timing is deterministic UTC metadata; local timezone must not affect scoring.",
+    "secrets": "No secrets or external account credentials are required for the benchmark run."
+  },
+  "allowedVolatileFields": [
+    {
+      "scope": "run-identification",
+      "fields": [
+        "runId"
+      ],
+      "reason": "The locked-test run ID may be supplied at execution time, but it must be recorded and must not alter source, fixtures, annotations, scoring, config, or weights."
+    },
+    {
+      "scope": "artifact-location",
+      "fields": [
+        "out",
+        "artifact root path"
+      ],
+      "reason": "The artifact root may vary between authoritative reproduction and local scratch runs; artifact content is still derived from frozen inputs."
+    },
+    {
+      "scope": "runner-timing-metadata",
+      "fields": [
+        "timing.startedAt",
+        "timing.completedAt",
+        "timing.durationMs"
+      ],
+      "reason": "Current deterministic runners emit stable timing, but timing metadata is non-substantive and must not drive scoring config, source, fixture, annotation, or weight changes."
+    },
+    {
+      "scope": "failure-occurrence-metadata",
+      "fields": [
+        "failure.occurredAt"
+      ],
+      "reason": "If an environmental failure is recorded, occurrence time may vary; the failure must remain preserved rather than tuned away."
+    }
+  ],
+  "frozenHashes": {
+    "manifest": {
+      "kind": "file",
+      "path": "eval/benchmark-manifest.json",
+      "byteLength": 24029,
+      "hash": "sha256:b2ef8a7504b7747286aa24daec1f571bef9d531920a797eb83ac2f8dff0943ca",
+      "description": "Frozen internal benchmark manifest with one demo case and twelve scored cases."
+    },
+    "benchmarkSourceAndConfig": {
+      "kind": "path-set",
+      "paths": [
+        "eslint.config.js",
+        "package-lock.json",
+        "package.json",
+        "src",
+        "tsconfig.json",
+        "vitest.config.ts"
+      ],
+      "fileCount": 28,
+      "hash": "sha256:429d7ea8a7d07777674144366dccfe1f8f91017f8057148730afcadac342e84a",
+      "description": "Benchmark CLI, input compiler, runners, TRACE wrapper, scorer, aggregation, runtime/reporting dependencies, and npm/TypeScript/lint/test config."
+    },
+    "developmentEvidenceFixtures": {
+      "kind": "tree",
+      "path": "fixtures/evidence/benchmark/development",
+      "fileCount": 6,
+      "hash": "sha256:bd47e49b2ca43e30a4e6072231b2fe3318fd3db9b80ac15b61980c65383f9332",
+      "description": "Development partition public-evidence fixture bundles."
+    },
+    "lockedTestEvidenceFixtures": {
+      "kind": "tree",
+      "path": "fixtures/evidence/benchmark/locked-test",
+      "fileCount": 6,
+      "hash": "sha256:8da7eb38bcc0d1be30a3dc1c36ec7c9f479410de8d80ce5349700c1d559a9250",
+      "description": "Locked-test partition public-evidence fixture bundles."
+    },
+    "developmentAnnotations": {
+      "kind": "tree",
+      "path": "eval/benchmark/annotations/development",
+      "fileCount": 6,
+      "hash": "sha256:f343e40f1451bffde02edffe9dbc4c44e8929b07a83fb362d38a18b9c15c93cc",
+      "description": "Development partition scoring annotations."
+    },
+    "lockedTestAnnotations": {
+      "kind": "tree",
+      "path": "eval/benchmark/annotations/locked-test",
+      "fileCount": 6,
+      "hash": "sha256:30d0faec65caefe5ef4df514ae3ea382a07e0c8c2dd63fdfad75e9de9da0edbf",
+      "description": "Locked-test partition scoring annotations."
+    },
+    "developmentRunArtifacts": {
+      "kind": "tree",
+      "path": "eval/benchmark/runs/development/run-dev-generalization-v1",
+      "fileCount": 129,
+      "hash": "sha256:e4f6ff794c43314293f783ea9c2002f1d7fdc1937298858db8585e1ca884494b",
+      "description": "Post-adjustment development run artifacts used to establish the final pre-freeze development result."
+    }
+  },
+  "lockedTestPolicy": {
+    "noTuningStatement": "After this freeze, locked-test results may not drive source, fixture, scoring, config, or weight changes.",
+    "authoritativeRunPolicy": "An authoritative locked-test run must validate this freeze record before runner execution and must use the frozen manifest, fixtures, annotations, runner/scorer code, scoring weights, command shape, and package/config state.",
+    "exploratoryRunPolicy": "A locked-test run with mismatched frozen hashes is allowed only with explicit exploratory mode and is non-authoritative; its results must not be reported as the locked-test benchmark result."
+  }
+}

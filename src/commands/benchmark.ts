@@ -39,6 +39,12 @@ import type {
   BenchmarkTimingMetadata
 } from "../benchmark/contracts.js";
 import {
+  validateBenchmarkFreezeForLockedTest
+} from "../benchmark/freeze.js";
+import type {
+  BenchmarkFreezeValidationResult
+} from "../benchmark/freeze.js";
+import {
   allBenchmarkRunnerNames,
   runSelectedBenchmarkRunner
 } from "../benchmark/runners.js";
@@ -69,6 +75,7 @@ export interface BenchmarkRunResult {
   readonly artifacts: readonly BenchmarkWrittenArtifact[];
   readonly aggregateArtifact: BenchmarkWrittenAggregateArtifact;
   readonly failures: readonly BenchmarkFailureRecord[];
+  readonly freezeValidation?: BenchmarkFreezeValidationResult;
 }
 
 export interface BenchmarkWrittenArtifact {
@@ -107,9 +114,11 @@ export async function runBenchmark(
   command: BenchmarkCommand,
   options: BenchmarkRunOptions = {}
 ): Promise<BenchmarkRunResult> {
+  const rootDir = options.rootDir ?? process.cwd();
+  const freezeValidation = await validateLockedTestFreeze(command, rootDir);
   const runnerNames = selectedRunnerNames(command.runner);
   const compiledCases = options.compiledCases ?? await compileBenchmarkCases({
-    ...(options.rootDir !== undefined ? { rootDir: options.rootDir } : {}),
+    rootDir,
     ...(command.manifest !== undefined ? { manifestPath: command.manifest } : {}),
     partitions: [command.partition]
   });
@@ -169,8 +178,25 @@ export async function runBenchmark(
     status: failures.length === 0 ? "completed" : "completed-with-failures",
     artifacts,
     aggregateArtifact,
-    failures
+    failures,
+    ...(freezeValidation !== undefined ? { freezeValidation } : {})
   };
+}
+
+async function validateLockedTestFreeze(
+  command: BenchmarkCommand,
+  rootDir: string
+): Promise<BenchmarkFreezeValidationResult | undefined> {
+  if (command.partition !== "locked-test") {
+    return undefined;
+  }
+
+  return validateBenchmarkFreezeForLockedTest({
+    rootDir,
+    ...(command.freeze !== undefined ? { freezePath: command.freeze } : {}),
+    ...(command.manifest !== undefined ? { manifestPath: command.manifest } : {}),
+    mode: command.exploratory === true ? "exploratory" : "authoritative"
+  });
 }
 
 export async function writeBenchmarkCaseArtifacts(options: {
