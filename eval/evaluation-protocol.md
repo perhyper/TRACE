@@ -1,8 +1,9 @@
-# TRACE evaluation protocol v0.1
+# TRACE evaluation protocol v0.2
 
-Protocol status: frozen for the first vertical slice on 2026-07-26. The
-company-level locked test manifest is not frozen; see the documented blockers
-below.
+Protocol status: frozen for the internal product-validation benchmark on
+2026-07-26. This protocol governs local TRACE engineering evaluation only. It
+does not claim official contest compliance because official contest rules,
+rubrics, submission formats, and execution constraints have not been supplied.
 
 ## Decision context
 
@@ -10,6 +11,26 @@ Primary user: a VC analyst conducting an initial private-company screen.
 
 Primary question: does TRACE produce material claims whose cited evidence
 actually supports the entity, value, period, unit, and wording of the claim?
+
+## Benchmark authority
+
+The frozen internal benchmark is identified by
+`trace-internal-benchmark-lock-2026-07-26-v1` in
+`eval/benchmark-manifest.json`.
+
+The benchmark contains one non-scored Revolut demo case and exactly 12 scored
+real-public-data cases. The scored cases are split into six development cases
+and six locked-test cases. Across the 12 scored cases, the manifest enforces
+four `rich`, four `medium`, and four `sparse` data tiers, with coverage across
+`financial-services`, `software-saas`, and `biotech-rnpv`. Every scored case
+has an outcome context of `success`, `failure`, `stagnant`, or `ongoing`, plus
+an explicit historical valuation-error eligibility decision.
+
+The internal benchmark can be valid for local product validation while every
+official contest item remains unverified. Missing official materials must not
+be filled in by inference. TRACE must not present benchmark output as contest
+readiness, contest compliance, benchmark superiority, investment advice, or an
+appraisal.
 
 ## Preregistered hypotheses
 
@@ -21,6 +42,9 @@ actually supports the entity, value, period, unit, and wording of the claim?
   claims and numerical inconsistencies.
 - H4: three runs over identical structured input agree on entity, route,
   material facts, abstention state, and deterministic value ranges.
+
+These hypotheses are local engineering hypotheses. They do not imply official
+contest scoring alignment or superiority.
 
 ## Primary metric
 
@@ -42,62 +66,145 @@ item:
 5. Numeric unit, currency, scale, and observed/calculated/assumed status match.
 6. A company-originated assertion is labelled as such.
 
-Unsupported, uncited, and citation-mismatched material claims all remain in the
-denominator. Duplicate wording of the same claim is counted once.
+Unsupported, uncited, citation-mismatched, post-cutoff, and non-retrievable
+material claims all remain in the denominator. Duplicate wording of the same
+claim is counted once.
 
 ## Secondary metrics
 
-- citation validity and retrievability
-- primary/official source share
-- contradiction detection recall on seeded fixtures
-- arithmetic and normalization test pass rate
-- route and abstention rubric accuracy
-- EV/equity/headline-value confusion count
-- required report-section coverage
-- route, fact, and result agreement across three identical runs
-- end-to-end completion rate, duration, and recorded failures
+- `citation-validity`: valid claim citations divided by citation denominator
+  items, with uncited material claims still counted.
+- `source-quality`: weighted quality of cited source classes, distinguishing
+  audited, regulatory, government, legal, company-originated, market-data,
+  news, expert, peer-reviewed, commercial, and other sources.
+- `route-accuracy`: selected or abstained route, rationale coverage, and
+  cutoff-visible route evidence against the annotation.
+- `abstention-behavior`: expected valuation abstentions, reason-code or
+  explanation coverage, and expected evidence coverage.
+- `valuation-separation`: headline valuation, enterprise value, total equity
+  value, and security-level fair value remain distinct fields and are not
+  concluded without annotation permission.
+- `historical-valuation-error`: scored only for cases with valid scalar
+  historical valuation targets; ineligible cases are skipped with their stated
+  reason.
+- `completeness`: annotated topic coverage plus cited evidence-class coverage.
+- `reproducibility`: scored only when repeated runner/case outputs are
+  available. A once-only locked-test run is skipped for reproducibility rather
+  than rerun for that metric.
+- `completion-status`, `duration`, and `failure-records`: runner completion,
+  deterministic timing score, and preserved failure accounting.
 
 ## Comparisons
 
-- Baseline A: general narrative synthesis from the same evidence bundle
+- Baseline A: general narrative synthesis from the same evidence bundle.
 - Baseline B: fixed report template with no route, sufficiency gate, or
-  adversarial review
+  adversarial review.
 - TRACE Full: structured ledger, sufficiency gate, route, deterministic
-  calculations, reviewer, and report composer
+  calculations, reviewer, and report composer.
 
-Prompts, evidence, cutoff, and available context must be identical where the
-system contract permits. Baselines may not receive intentionally weaker
-instructions.
+Evidence, cutoff, target identity, measurement date, and available structured
+context must be identical where the runner contract permits. Baselines may not
+receive intentionally weaker inputs.
 
-## First-slice pass criteria
+## Artifacts
 
-- 100% schema and deterministic calculation tests pass.
-- No material numeric claim lacks an evidence or assumption ID.
-- The route is `financial-services` for the Revolut fixture.
-- The result keeps the USD 75 billion headline separate from enterprise value
-  and security-level fair value.
-- Missing share rights/cap table cause a security-level abstention.
-- Markdown and JSON represent the same values and limitations.
-- Three identical structured-input runs produce byte-identical JSON after
-  excluding run timestamp and duration.
+Benchmark artifacts are stored under:
 
-These are engineering gates, not claims of statistical superiority.
+- Manifest: `eval/benchmark-manifest.json`
+- Freeze record: `eval/benchmark/freeze.json`
+- Change-control log: `eval/benchmark/change-control.md`
+- Evidence fixtures:
+  `fixtures/evidence/benchmark/{development,locked-test}/`
+- Annotations: `eval/benchmark/annotations/{development,locked-test}/`
+- Development run:
+  `eval/benchmark/runs/development/run-dev-generalization-v1/`
+- Locked-test run:
+  `eval/benchmark/runs/locked-test/run-locked-test-v1/`
+
+Each runner/case directory contains raw runner output JSON and Markdown,
+normalized scorer input, per-claim score, case score, failure record, and
+timing metadata. Each run directory contains aggregate JSON, CSV, and Markdown.
+Aggregate tables must be regenerated from committed per-case scorer inputs and
+case scores and must match the committed aggregate files before a result is
+reported as locally reproducible.
+
+## Source, cutoff, and redistribution audit
+
+Every case has a source audit in the manifest. The audit records approved
+public source categories, cutoff date, known post-cutoff leakage risks,
+redistribution status, raw document policy, and whether only URLs and short
+excerpts may be committed.
+
+Evidence published after the cutoff is excluded from runner inputs. It may be
+recorded only as an explicit warning, excluded record, or gold-only historical
+target when the annotation contract permits it. Search snippets are never
+evidence.
+
+Redistribution statuses are interpreted as follows:
+
+- `public-urls-redistribution-not-established`: commit URLs, retrieval
+  metadata, hashes when available, and short excerpts only.
+- `public-domain`: redistribution rights are established as public domain.
+- `redistribution-permitted`: source terms permit redistribution.
+- `licensed-for-redistribution`: a license permits redistribution.
+- `redistribution-prohibited`: do not commit source content beyond allowed
+  metadata or short excerpts.
+
+Raw PDFs, cached source documents, secrets, scratch downloads, deployment
+files, remote configuration changes, and external-account artifacts must stay
+out of Git.
 
 ## Leakage and change control
 
-- Evidence published after a case cutoff is excluded from model inputs.
-- Search snippets are never evidence.
-- Development and demo cases may drive code changes; locked-test outputs may
-  not.
-- Any post-lock change records the trigger, files, expected effect, and whether
-  results are exploratory.
-- Technical retries preserve the failed run and do not silently replace it.
+The manifest lock came before benchmark scores or per-case benchmark outputs.
+Development results could drive code, fixture, and scoring fixes before the
+freeze, but every such change had to be recorded in
+`eval/benchmark/change-control.md`.
 
-## Manifest lock blockers
+The freeze record `trace-internal-benchmark-freeze-2026-07-26-v1` records the
+manifest lock ID, development run ID, runner versions, scorer versions,
+fixture and annotation hashes, command templates, environment assumptions, and
+allowed volatile fields. After the freeze, locked-test results may not drive
+changes to source, fixtures, annotations, runner behavior, scoring config,
+weights, aggregate format, or manifest membership.
 
-The full company manifest is not frozen because official contest constraints
-are absent and candidate source/cutoff rights have not been audited. A locked
-manifest must contain at least three industries and rich/medium/sparse cases,
-but its final size will follow the official runtime and scoring constraints
-rather than the brief's unverified 12–18 recommendation.
+An authoritative locked-test run must pass freeze validation before runner
+execution. A locked-test run with mismatched frozen hashes is allowed only in
+explicit exploratory mode and is non-authoritative. Technical retries preserve
+the failed run and do not silently replace it.
 
+## Historical valuation-error eligibility
+
+Historical valuation-error scoring is case-specific. Eligible cases list the
+exact annotated fields that can be compared to a public historical outcome.
+The target must be scalar, numeric, unit-aligned, and supported by valid target
+evidence under the annotation's source-availability label. If no valid target
+exists, or if the manifest marks the case ineligible, the metric is skipped
+with the recorded reason. Headline transaction valuation, enterprise value,
+total equity value, and security-level fair value must never be substituted for
+one another.
+
+## Local verification
+
+The required local checks are:
+
+```bash
+npm run trace -- validate-benchmark-manifest --manifest eval/benchmark-manifest.json
+npm run trace -- validate-benchmark-freeze --freeze eval/benchmark/freeze.json --manifest eval/benchmark-manifest.json
+npm run check
+```
+
+Development artifacts can be reproduced with:
+
+```bash
+npm run trace -- benchmark --partition development --runner all --out eval/benchmark/runs --run-id run-dev-generalization-v1
+git diff --exit-code -- eval/benchmark/runs/development/run-dev-generalization-v1
+```
+
+The locked-test artifact to inspect is:
+
+```bash
+eval/benchmark/runs/locked-test/run-locked-test-v1/
+```
+
+Do not infer official contest compliance from any local check.
